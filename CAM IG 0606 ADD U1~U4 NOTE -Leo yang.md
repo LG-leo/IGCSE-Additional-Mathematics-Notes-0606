@@ -49,6 +49,34 @@ This means you first apply $g$ to $x$, then apply $f$ to the result.
 - *Modulus* means *absolute value*.
 - $f(x)=|x|$ is a modulus function.
 
+---
+
+1. Trigonometric Modulus Graphs y = |a sin(bx) + c|
+
+Syllabus reference: 1.4 (modulus function can be applied to trigonometric functions)
+
+Common issue with textbooks: they only cover linear/quadratic modulus; trigonometric modulus is either omitted or explained too briefly.
+
+Drawing steps (using y = |2 sin x - 1| as an example):
+
+1. First draw the original function y = 2 sin x - 1
+   - Amplitude = 2, equilibrium line y = -1, period = 2π
+   - Draw half a period of the wave, mark the intersections with the x-axis (solve 2 sin x - 1 = 0 → sin x = 0.5 → x = π/6, 5π/6, etc.)
+
+2. Identify the parts of the original function that lie below the x-axis
+   - The original function is negative when sin x < 0.5, i.e. intervals like (-π, π/6), etc.
+
+3. Reflection
+   - Reflect the parts below the x-axis upward across the x-axis, creating "sharp points" or "rounded tips"
+
+4. Final graph
+   - The result is a series of "peaks" or "W" shapes; the original x-intercepts become cusp points (non‑differentiable)
+
+Key points:
+- The modulus of a trigonometric function turns troughs into peaks
+- The period stays the same, but the peaks may become wider because negative parts are flipped up
+- The points where the original graph crossed the x-axis become cusps (sharp corners)
+
 ## Graphs of $y=|f(x)|$ where $f(x)$ is linear
 
 Steps:
