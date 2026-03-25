@@ -137,19 +137,18 @@ This means you first apply $g$ to $x$, then apply $f$ to the result.
 
 ## One linear and one non‑linear
 
-Key words:
-- **Parabola**: a curve such as the path of something thrown up then down.
-- **Turning point** / **stationary point**: a point where the derivative is zero ($f'(x)=0$). In a quadratic function, turning point = stationary point.
-- **Discriminant**: $\Delta = b^2-4ac$.
+**Parabola**: a U‑shaped curve (like the path of a thrown ball).
+**Turning point / stationary point**: where the gradient is zero ($f'(x)=0$). For quadratics, the turning point is also the stationary point.
+**Discriminant**: $\Delta = b^2-4ac$ — tells us about the roots.
 
 Solve a linear and a non‑linear system:
+To solve a pair of equations where one is linear and the other is quadratic, substitute the linear expression into the quadratic.
+
+Example:
 $$
-\begin{cases}
-y = x^2 - 5 \\
-y = x + 1
-\end{cases}
+\begin{cases} y = x^2 - 5 \\ y = x + 1 \end{cases}
 $$
-Set $x+1 = x^2-5$ → $x^2 - x - 6 = 0$ → $(x+2)(x-3)=0$ → $x=-2$ or $x=3$.
+Substitute: $x+1 = x^2-5$ → …
 
 ## Maximum & minimum values of a quadratic function
 
@@ -214,14 +213,14 @@ y = 2(x-3)(x-1)
 $$
 
 ## Graphs of $y=|f(x)|$ where $f(x)$ is quadratic
-
 - Form: $y = |ax^2+bx+c|$.
-- Step: reflect the part below the $x$-axis upwards across the $x$-axis (through the zero points).
+- Step: take the original quadratic graph, and flip any part that lies below the $x$-axis to above it (the $x$-intercepts stay fixed).
 
 ## Quadratic inequalities
 
 Solve as equalities, then consider direction.
 
+Treat the inequality as an equation first, then decide which side satisfies the inequality.
 Example: $2x-5 < 9$ → $2x < 14$ → $x < 7$.
 
 ## Roots of a quadratic & intersection of a line and a curve
@@ -379,11 +378,9 @@ $$
 
 ## Solving equations of the type $|ax+b| = |cx+d|$
 
-$|p| = |q| \iff p^2 = q^2$, so:
-$$
-ax+b = cx+d \quad \text{OR} \quad ax+b = -(cx+d)
-$$
-Solve both linear equations, then combine solutions.
+Since $|p| = |q|$ means $p$ and $q$ are either equal or opposites, we can square both sides: $p^2 = q^2$. This leads to two linear equations:
+$$ ax+b = cx+d \quad \text{or} \quad ax+b = -(cx+d) $$
+Solve each and collect all solutions.
 
 - Each absolute value graph is a “V”.
 - The number of intersection points of two “V” shapes can be $0$, $1$, $2$, or infinitely many (if the lines coincide).
