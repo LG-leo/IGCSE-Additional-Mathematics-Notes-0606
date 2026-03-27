@@ -373,68 +373,120 @@ Thus \(f^{-1}(x) = \frac12 \ln x\).
 **Core idea**: Number of solutions → convert to number of intersection points of graphs, or to root distribution of a quadratic equation.
 
 ────────────────────────────────
+# Supplement: Exponential/Logarithmic Equations with Parameters
+
+**Core idea**: Reduce the problem of counting solutions to either the number of intersection points of two graphs, or to the distribution of roots of a quadratic equation after substitution.
+
+---
+
 ## Method 1: Graphical Method
-────────────────────────────────
 
 **When to use**: The two sides of the equation have very different forms (e.g., exponential vs. line, logarithmic vs. line).
 
 **Steps**:
-1. Write the equation as \( f(x) = g(x) \), with the parameter appearing in one of them.
-2. Sketch the graph of the function without the parameter.
+1. Rewrite the equation as \( f(x) = g(x) \), placing the parameter in one of the functions.
+2. Sketch the graph of the function that does not contain the parameter.
 3. Sketch the graph of the line (or curve) that contains the parameter; observe how the number of intersection points changes as the parameter varies.
-4. Find the **tangency** condition (critical case for a unique solution):
-   - Let the point of tangency be \((x_0, y_0)\).
-   - Slopes equal: \( f'(x_0) = g'(x_0) \).
-   - Function values equal: \( f(x_0) = g(x_0) \).
+4. Find the **tangency** condition (the critical case for a unique solution):
+   - Let the tangency point be \((x_0, y_0)\).
+   - Equal slopes: \( f'(x_0) = g'(x_0) \).
+   - Equal function values: \( f(x_0) = g(x_0) \).
 5. Solve for the critical parameter value(s).
-6. From the sketch, determine the parameter range that matches the required number of solutions.
+6. Use the sketch to determine the parameter range that gives the required number of solutions.
 
 **Example**: \( e^x = kx \) has exactly one solution. Find \( k \).
 
-- Tangency condition: let the tangency point be \((t, e^t)\).
+- Tangency condition: let the point of tangency be \((t, e^t)\).
   \[
-  e^t = k t \quad \text{and} \quad e^t = k \quad (\text{derivative of } e^x \text{ is } e^x)
+  e^t = kt, \quad e^t = k
   \]
-  From \( e^t = k \) and \( e^t = k t \), we get \( k = k t \) → \( t = 1 \).
-  Hence \( k = e^1 = e \).
-
-- For \( k > e \): no intersection.
-- For \( k = e \): one intersection (tangent).
-- For \( 0 < k < e \): two intersections.
-
+  Substituting \( e^t = k \) into the first equation gives \( k = kt \Rightarrow t = 1 \), hence \( k = e \).
+- Graphical analysis:
+  - \( k > e \): no intersection.
+  - \( k = e \): one intersection (tangent).
+  - \( 0 < k < e \): two intersections.
 - **Answer**: \( k = e \).
 
-────────────────────────────────
-## Method 2: Discriminant Method (Substitution)
-────────────────────────────────
+---
 
-**When to use**: The equation can be turned into a quadratic by a substitution, such as \( a^{2x} \) and \( a^x \), or \( (\log x)^2 \) and \( \log x \).
+## Method 2: Discriminant Method (Substitution)
+
+**When to use**: The equation can be transformed into a quadratic by a substitution, e.g., \( a^{2x} \) and \( a^x \), or \( (\log x)^2 \) and \( \log x \).
 
 **Steps**:
-1. Substitute: let \( t = a^x \) or \( t = \log x \). Note the domain of \( t \):
-   - If \( t = a^x \) (\( a > 0, a \neq 1 \)), then \( t > 0 \).
-   - If \( t = \log_a x \), then \( x = a^t \) (no extra restriction on \( t \) except that it is real).
+1. Substitute: let \( t = a^x \) (with \( t > 0 \)) or \( t = \log_a x \).
 2. Obtain a quadratic equation in \( t \): \( A t^2 + B t + C = 0 \).
-3. Translate the condition on the original equation (“has solution”, “has unique solution”, etc.) into conditions on the roots of this quadratic.
-4. Use:
-   - Discriminant \( \Delta = B^2 - 4AC \):
-     - \( \Delta \ge 0 \) (real roots)
-     - \( \Delta = 0 \) (double root)
-     - \( \Delta < 0 \) (no real root)
-   - Vieta’s formulas: sum of roots \( = -B/A \), product \( = C/A \).
-   - Additional restrictions on the roots (e.g., positive, negative, within an interval).
-5. Solve for the parameter range.
+3. Translate the condition on the original equation (“has solution”, “has no solution”, “has a unique solution”) into conditions on the roots of this quadratic:
+   - Has solution → the quadratic has a real root that lies in the allowed domain of \( t \).
+   - No solution → no real root, or all real roots are outside the domain.
+   - Unique solution → a double root that lies inside the domain, or exactly one of the two real roots lies inside the domain.
+4. Use the discriminant \( \Delta \) and Vieta’s formulas (sum and product of roots) together with domain restrictions.
+5. Solve for the parameter range and verify boundary cases (endpoints, domain conditions).
 
 **Example**: \( 4^x - k \cdot 2^x + 1 = 0 \) has a solution. Find \( k \).
 
-- Let \( t = 2^x > 0 \). The equation becomes \( t^2 - k t + 1 = 0 \).
-- For a solution in \( x \), we need a real \( t > 0 \) that satisfies the quadratic.
+- Substitute \( t = 2^x > 0 \). Then \( 4^x = t^2 \), so the equation becomes \( t^2 - k t + 1 = 0 \).
+- We need this quadratic to have a real root with \( t > 0 \).
 - Discriminant: \( \Delta = k^2 - 4 \ge 0 \) → \( k \ge 2 \) or \( k \le -2 \).
-- Product of roots = \( 1 > 0 \) → roots have the same sign.
-- Sum of roots = \( k > 0 \) → for positive roots we need \( k > 0 \).
-- Combine: \( k \ge 2 \).
+- Vieta’s formulas: \( t_1 + t_2 = k \), \( t_1 t_2 = 1 > 0 \). The product is positive, so the two roots have the same sign.
+- For a root to be positive, the sum must be positive (because both roots share the same sign). Hence \( k > 0 \).
+- Combine with the discriminant condition: \( k \ge 2 \).
+- Check boundary \( k = 2 \): \( t^2 - 2t + 1 = (t-1)^2 = 0 \), \( t = 1 > 0 \), valid.
 - **Answer**: \( k \ge 2 \).
 
+---
+
+**Note**: After solving, always verify boundary cases and domain restrictions (e.g., the argument of a logarithm must be positive, exponential functions are positive).
+
+---
+
+## Vieta’s Formulas (韦达定理)
+
+For a quadratic equation \( A t^2 + B t + C = 0 \) (\( A \neq 0 \)), let its two roots be \( t_1 \) and \( t_2 \). Then:
+
+\[
+t_1 + t_2 = -\frac{B}{A}, \qquad t_1 t_2 = \frac{C}{A}.
+\]
+
+---
+
+### Application in Parameter Problems
+
+After substitution, Vieta’s formulas help determine the sign or range of the roots, which translates into conditions on the parameter.
+
+| Condition | Translated into Vieta |
+|-----------|------------------------|
+| Both roots have the same sign | \( t_1 t_2 > 0 \) |
+| Roots have opposite signs | \( t_1 t_2 < 0 \) |
+| Both roots are positive | \( t_1 + t_2 > 0 \) and \( t_1 t_2 > 0 \) |
+| Both roots are negative | \( t_1 + t_2 < 0 \) and \( t_1 t_2 > 0 \) |
+| At least one root is positive | Combine discriminant, sum/product, or use graph |
+| One root lies in an interval, the other outside | Use \( f(m)f(n) < 0 \) (intermediate value property) |
+
+---
+
+### Example (continuing the previous one)
+
+Equation \( 4^x - k \cdot 2^x + 1 = 0 \) has a solution. Find \( k \).
+
+Substitute \( t = 2^x > 0 \), get \( t^2 - k t + 1 = 0 \).
+
+From Vieta:
+\[
+t_1 + t_2 = k,\quad t_1 t_2 = 1.
+\]
+
+- Product \( = 1 > 0 \) → both roots have the same sign.
+- Sum \( = k \): if \( k > 0 \) then both roots are positive; if \( k < 0 \) then both are negative.
+- Since we need at least one root positive (because \( t > 0 \)), we require \( k > 0 \).
+- Combined with discriminant \( \Delta = k^2 - 4 \ge 0 \) → \( k \ge 2 \) or \( k \le -2 \).
+- Intersection: \( k \ge 2 \).
+
+---
+
+**Note**: Vieta gives only the sum and product, not the roots themselves. It must be used together with the discriminant and domain conditions.
+---
+---
 ────────────────────────────────
 **Note**: Always verify boundary cases (endpoints, domain restrictions) after solving.
 
