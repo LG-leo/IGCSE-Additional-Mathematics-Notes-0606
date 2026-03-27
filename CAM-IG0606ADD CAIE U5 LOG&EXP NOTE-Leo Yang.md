@@ -505,6 +505,20 @@ Before you start, ask yourself:
 7. **Applications**: For growth/decay, identify the initial value and use one data point to find the growth constant.
 
 ---
+In calculus, the derivative formulas for the natural logarithm \(\ln x\) and the general logarithm \(\log_a x\) are:
+
+\[
+\frac{d}{dx}(\ln x) = \frac{1}{x} \quad (x>0)
+\]
+
+\[
+\frac{d}{dx}(\log_a x) = \frac{1}{x \ln a} \quad (a>0, a\neq 1, x>0)
+\]
+
+When using the graphical method, if we set the point of tangency as \((t, \ln t)\), the slope of the curve \(y = \ln x\) at \(x = t\) is \(\frac{1}{t}\). This is why we have \(k = \frac{1}{t}\).
+
+> Note: Differentiation belongs to Topic 14 (Calculus) in the syllabus, but these formulas can be used directly when applying the graphical method; derivation is not required.
+---
 
 ## One‑Line Summary
 
