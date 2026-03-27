@@ -511,6 +511,18 @@ Solve \((\lg x)^2 - 3\lg x + 2 = 0\).
 ---
 ────────────────────────────────
 **Note**: Always verify boundary cases (endpoints, domain restrictions) after solving.
+## exponengtial&logarium function with f(x)=x
+
+### type of question
+方程 \(a^x = kx\) 或 \(\log_a x = kx\) 有唯一解，求参数 \(k\) 的值或范围。
+
+### formula
+
+| type of function | point of tangence \(t\) | gradient \(k\) |
+|----------|----------------|----------------|
+| \(y = \log_a x\) 与 \(y = kx\) | \(t = e\) | \(k = \dfrac{1}{e \ln a}\) |
+| \(y = a^x\) 与 \(y = kx\) | \(t = \dfrac{1}{\ln a}\) | \(k = e \ln a\) |
+
 
 ---
 
