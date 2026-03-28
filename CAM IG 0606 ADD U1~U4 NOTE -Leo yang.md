@@ -191,6 +191,32 @@ Vertex form: $y = 2(x-2)^2 - 3$ → vertex $(2,-3)$, symmetry $x=2$, minimum val
 
 Vertex: $(-2,-3)$, minimum value $-3$.
 
+---
+supplyment:
+### Factoring quadratics: cross‑multiplication (criss‑cross)
+
+For \(ax^2 + bx + c\):
+
+1. Write the factors of \(a\) and \(c\) as two pairs.
+2. Arrange them in a cross:  
+   \[
+   \begin{array}{c|c}
+   a_1 & c_1 \\
+   a_2 & c_2
+   \end{array}
+   \]  
+   where \(a_1a_2 = a\) and \(c_1c_2 = c\).
+3. Cross‑multiply: \(a_1c_2 + a_2c_1\) must equal \(b\).
+4. If the sum matches \(b\), the factorisation is \((a_1x + c_1)(a_2x + c_2)\) (adjust signs accordingly).
+
+**Example**: \(3x^2 + 2x - 1\)  
+- \(3 = 3 \times 1\),  \(-1 = (-1) \times 1\)  
+- Cross: \(3 \times 1 + 1 \times (-1) = 2\) → correct  
+- Factor: \((3x - 1)(x + 1)\)
+
+If cross‑multiplication is tricky, use the quadratic formula.
+---
+
 ### From simple form to radical roots
 
 1. Write the function.
