@@ -523,7 +523,34 @@ Solve \((\lg x)^2 - 3\lg x + 2 = 0\).
 | \(y = \log_a x\) 与 \(y = kx\) | \(t = e\) | \(k = \dfrac{1}{e \ln a}\) |
 | \(y = a^x\) 与 \(y = kx\) | \(t = \dfrac{1}{\ln a}\) | \(k = e \ln a\) |
 
+"So \(5^{2x+1}\) can be split as \(5^{x+1} \times 5^x\)"—actually captures the core insight of this type of substitution problem: **write the exponent as a sum, then factor out the common part \(5^x\)**.
+For the equation \(\ln(3x) = 4 + \ln 2\), you want to “wrap” the constant \(4\) inside a logarithm so that you can combine the right‑hand side.
 
+**Method**:  
+Since \(4 = \ln(e^4)\), the right‑hand side becomes
+\[
+4 + \ln 2 = \ln(e^4) + \ln 2 = \ln(2e^4)
+\]
+Thus the equation is
+\[
+\ln(3x) = \ln(2e^4)
+\]
+Because the natural logarithm is one‑to‑one, we can drop the logs:
+\[
+3x = 2e^4 \quad\Longrightarrow\quad x = \frac{2e^4}{3}
+\]
+
+**General approach**: For any equation of the form \(\ln(\text{expression}) = k + \ln(\text{constant})\), write \(k = \ln(e^k)\), then use \(\ln A + \ln B = \ln(AB)\) to combine the right‑hand side into a single logarithm. Finally, equate the arguments and solve.
+\[
+5^{2x+1} = 5^{(x+1)+x} = 5^{x+1} \cdot 5^x
+\]
+Then with \(y = 5^x\) and \(5^{x+1} = 5y\), we get \(5y \cdot y = 5y^2\).
+
+Of course, a more direct way is:
+\[
+5^{2x+1} = 5 \cdot 5^{2x} = 5 \cdot (5^x)^2 = 5y^2
+\]
+Both ways are essentially the same, just different perspectives—you split by adding exponents, I split by extracting the constant factor. The fact that you found this relationship shows you already have a solid grasp of exponential operations.
 ---
 
 ## Exam Checklist
@@ -552,6 +579,48 @@ In calculus, the derivative formulas for the natural logarithm \(\ln x\) and the
 When using the graphical method, if we set the point of tangency as \((t, \ln t)\), the slope of the curve \(y = \ln x\) at \(x = t\) is \(\frac{1}{t}\). This is why we have \(k = \frac{1}{t}\).
 
 > Note: Differentiation belongs to Topic 14 (Calculus) in the syllabus, but these formulas can be used directly when applying the graphical method; derivation is not required.
+
+## Exponential Equation (taking logs)
+
+**Example**: Solve \(5^{2x} = 7^{x-1}\), giving the exact value.
+
+**Solution**  
+1. Take natural logs: \(\ln(5^{2x}) = \ln(7^{x-1})\)  
+2. Use the power rule: \(2x\ln 5 = (x-1)\ln 7\)  
+3. Expand: \(2x\ln 5 = x\ln 7 - \ln 7\)  
+4. Bring terms together: \(2x\ln 5 - x\ln 7 = -\ln 7\)  
+5. Factor \(x\): \(x(2\ln 5 - \ln 7) = -\ln 7\)  
+6. Solve: \(\displaystyle x = \frac{-\ln 7}{2\ln 5 - \ln 7} = \frac{\ln 7}{\ln 7 - 2\ln 5}\)
+
+---
+
+## Change of Base
+
+**Example**: Given \(\log_2 5 = a\), express \(\log_4 20\) in terms of \(a\).
+
+**Solution**  
+\[
+\log_4 20 = \frac{\log_2 20}{\log_2 4} = \frac{\log_2(4\times5)}{2} = \frac{\log_2 4 + \log_2 5}{2} = \frac{2 + a}{2}
+\]
+
+---
+
+## Exponential Equation Reducible to Quadratic
+
+**Example** (2023 June 0606/21 Q5): Solve \(3^{2x} - 10\cdot 3^{x} + 9 = 0\).
+
+**Solution**  
+Let \(t = 3^{x}\;(t>0)\). Then \(t^2 - 10t + 9 = 0\).  
+Factor: \((t-1)(t-9)=0\) → \(t = 1\) or \(t = 9\).  
+Back‑substitute:
+- \(3^{x} = 1\) → \(x = 0\)
+- \(3^{x} = 9\) → \(x = 2\)
+
+Thus \(x = 0\) or \(x = 2\).
+
+\[
+\log_{27} x = \frac{\log_3 x}{\log_3 27} = \frac{\log_3 x}{3} = \frac{1}{3} \log_3 x
+\]
 ---
 
 ## One‑Line Summary
