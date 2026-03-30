@@ -211,79 +211,56 @@ A-B-C中，AB和BC有不同的斜率，那么：
 ## 一、向量的表示
 
 ### 1. 两种常见形式
-- **列向量**：\(\mathbf{a} = \begin{pmatrix} x \\ y \end{pmatrix}\)  
-- **单位向量组合**：\(\mathbf{a} = x\mathbf{i} + y\mathbf{j}\)，其中 \(\mathbf{i}=\begin{pmatrix}1\\0\end{pmatrix},\ \mathbf{j}=\begin{pmatrix}0\\1\end{pmatrix}\)
+- **列向量**：\(\begin{pmatrix} x \\ y \end{pmatrix}\)，例如 \(\begin{pmatrix}3\\4\end{pmatrix}\)
+- **单位向量组合**：\(a\mathbf{i} + b\mathbf{j}\)，其中 \(\mathbf{i} = \begin{pmatrix}1\\0\end{pmatrix},\ \mathbf{j} = \begin{pmatrix}0\\1\end{pmatrix}\)
 
-考试中两种形式均可，但需按题目要求书写。
+考试中两种形式均可，按题目要求书写。
 
 ### 2. 有向线段
-\(\overrightarrow{AB}\) 表示从 \(A\) 指向 \(B\) 的向量，其坐标：
+\(\overrightarrow{AB}\) 表示从 \(A\) 指向 \(B\) 的向量，其坐标为  
 \[
 \overrightarrow{AB} = \begin{pmatrix} x_B - x_A \\ y_B - y_A \end{pmatrix} = \mathbf{b} - \mathbf{a}
-\]
-**易错**：\(\overrightarrow{BA} = \mathbf{a} - \mathbf{b}\)，注意方向。
+\]  
+**注意**：\(\overrightarrow{BA} = \mathbf{a} - \mathbf{b}\)，方向相反。
 
 ---
 
 ## 二、位置向量与单位向量
 
 ### 1. 位置向量
-点 \(P(x,y)\) 的位置向量 \(\overrightarrow{OP} = \begin{pmatrix} x \\ y \end{pmatrix}\)，即从原点指向该点的向量。
-
+点 \(P(x,y)\) 的位置向量是从原点 \(O\) 到 \(P\) 的向量，记作 \(\overrightarrow{OP} = \begin{pmatrix}x\\y\end{pmatrix}\)。  
 任意向量 \(\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA}\)。
 
 ### 2. 单位向量
-与 \(\mathbf{a}\) 同向且长度为 1 的向量：
-\[
-\hat{\mathbf{a}} = \frac{\mathbf{a}}{|\mathbf{a}|}
-\]
-其中模长 \(|\mathbf{a}| = \sqrt{a_1^2 + a_2^2}\)。
+与向量 \(\mathbf{a}\) 同方向且长度为 1 的向量：\(\hat{\mathbf{a}} = \dfrac{\mathbf{a}}{|\mathbf{a}|}\)，其中 \(|\mathbf{a}| = \sqrt{a_1^2 + a_2^2}\)。  
+反向单位向量：\(-\dfrac{\mathbf{a}}{|\mathbf{a}|}\)。
 
-**反向单位向量**：\(-\dfrac{\mathbf{a}}{|\mathbf{a}|}\)。
-
-**示例**：\(\mathbf{a}=\begin{pmatrix}3\\4\end{pmatrix}\)，\(|\mathbf{a}|=5\)，单位向量 \(\begin{pmatrix}3/5\\4/5\end{pmatrix}\)。
+**示例**：\(\mathbf{a} = \begin{pmatrix}3\\4\end{pmatrix}\)，\(|\mathbf{a}| = 5\)，单位向量 \(\begin{pmatrix}3/5\\4/5\end{pmatrix}\)。
 
 ---
 
 ## 三、向量的基本运算
 
 ### 1. 加法
-代数形式：
-\[
-\begin{pmatrix}a\\b\end{pmatrix} + \begin{pmatrix}c\\d\end{pmatrix} = \begin{pmatrix}a+c\\b+d\end{pmatrix}
-\]
-几何意义：  
-- **三角形法则**：首尾相接，从起点到终点的向量。  
-- **平行四边形法则**：以两向量为邻边作平行四边形，对角线为和。
-
-运算性质：交换律、结合律、零向量、负向量。
+- **代数**：\(\begin{pmatrix}a\\b\end{pmatrix} + \begin{pmatrix}c\\d\end{pmatrix} = \begin{pmatrix}a+c\\b+d\end{pmatrix}\)
+- **几何**：三角形法则（首尾相接）或平行四边形法则。
 
 ### 2. 减法
-\[
-\mathbf{a} - \mathbf{b} = \mathbf{a} + (-\mathbf{b})
-\]
-几何上，\(\mathbf{a} - \mathbf{b}\) 相当于从 \(\mathbf{b}\) 的终点指向 \(\mathbf{a}\) 的终点的向量（起点重合时）。
-
+\(\mathbf{a} - \mathbf{b} = \mathbf{a} + (-\mathbf{b})\)  
+几何上，从 \(\mathbf{b}\) 的终点指向 \(\mathbf{a}\) 的终点（起点重合时）。  
 坐标中：\(\overrightarrow{AB} = \mathbf{b} - \mathbf{a}\) 正是减法的应用。
 
 ### 3. 数乘
-\[
-k \begin{pmatrix}a\\b\end{pmatrix} = \begin{pmatrix}ka\\kb\end{pmatrix}
-\]
-- \(k>0\)：方向相同，长度变为 \(|k|\) 倍  
-- \(k<0\)：方向相反，长度变为 \(|k|\) 倍  
+\(k\begin{pmatrix}a\\b\end{pmatrix} = \begin{pmatrix}ka\\kb\end{pmatrix}\)
+- \(k>0\)：方向相同，长度变为 \(|k|\) 倍
+- \(k<0\)：方向相反，长度变为 \(|k|\) 倍
 - \(k=0\)：零向量
 
 ### 4. 模长
-\[
-|\mathbf{a}| = \sqrt{a^2 + b^2}
-\]
+\(|\mathbf{a}| = \sqrt{a^2 + b^2}\)
 
 ### 5. 中点公式
-若 \(M\) 是 \(AB\) 中点，则
-\[
-\overrightarrow{OM} = \frac{\overrightarrow{OA} + \overrightarrow{OB}}{2}
-\]
+若 \(M\) 是 \(AB\) 中点，则 \(\overrightarrow{OM} = \dfrac{\overrightarrow{OA} + \overrightarrow{OB}}{2}\)  
 坐标形式：\(M\left(\dfrac{x_A+x_B}{2},\ \dfrac{y_A+y_B}{2}\right)\)。
 
 ---
@@ -292,26 +269,26 @@ k \begin{pmatrix}a\\b\end{pmatrix} = \begin{pmatrix}ka\\kb\end{pmatrix}
 
 ### 1. 平行
 \(\mathbf{a} \parallel \mathbf{b} \iff \mathbf{a} = k\mathbf{b}\ (k \neq 0)\)  
-坐标形式：\(\dfrac{a_1}{b_1} = \dfrac{a_2}{b_2}\)（分母不为 0）。
+坐标形式（分母不为 0 时）：\(\dfrac{a_1}{b_1} = \dfrac{a_2}{b_2}\)。
 
 ### 2. 三点共线
 \(A,B,C\) 共线 \(\iff\) \(\overrightarrow{AB} = \lambda \overrightarrow{AC}\)（或 \(\overrightarrow{AB} \parallel \overrightarrow{BC}\)）。  
-\(\lambda\) 可为任意非零实数（包括负数和分数）。
+\(\lambda\) 可以为任意非零实数（包括负数）。
 
 **示例**：\(A(1,2), B(3,5), C(5,8)\)  
-\(\overrightarrow{AB}=(2,3),\ \overrightarrow{AC}=(4,6)=2(2,3)\)，故共线。
+\(\overrightarrow{AB} = (2,3),\ \overrightarrow{AC} = (4,6) = 2(2,3)\)，故共线。
 
 ### 3. 垂直（点积）
 在 IGCSE 0606 中，垂直条件用坐标点积：
 \[
 \mathbf{a} \cdot \mathbf{b} = a_1b_1 + a_2b_2 = 0
 \]
-**几何意义**：\(\mathbf{a}\cdot\mathbf{b}=|\mathbf{a}||\mathbf{b}|\cos\theta\)，当 \(\theta=90^\circ\) 时为零。
+几何意义：\(\mathbf{a}\cdot\mathbf{b}=|\mathbf{a}||\mathbf{b}|\cos\theta\)，当 \(\theta=90^\circ\) 时为零。
 
 **示例**：\(\mathbf{a}=(2,3),\ \mathbf{b}=(3,-2)\)，\(2\cdot3+3\cdot(-2)=0\)，垂直。
 
-**易混淆**：  
-- 平行 → 分量成比例  
+**易混淆**：
+- 平行 → 分量成比例
 - 垂直 → 对应分量乘积和为零
 
 ---
@@ -319,26 +296,17 @@ k \begin{pmatrix}a\\b\end{pmatrix} = \begin{pmatrix}ka\\kb\end{pmatrix}
 ## 五、运动学应用（速度与合成）
 
 ### 1. 匀速直线运动的位置向量
-\[
-\mathbf{r}(t) = \mathbf{r}_0 + t\mathbf{v}
-\]
-其中 \(\mathbf{r}_0\) 为初始位置，\(\mathbf{v}\) 为速度向量。
+\(\mathbf{r}(t) = \mathbf{r}_0 + t\mathbf{v}\)，其中 \(\mathbf{r}_0\) 为初始位置，\(\mathbf{v}\) 为速度向量。
 
 ### 2. 相对速度
-物体 \(A\) 相对于物体 \(B\) 的速度：
-\[
-\mathbf{v}_{A/B} = \mathbf{v}_A - \mathbf{v}_B
-\]
-表示从 \(B\) 看 \(A\) 的运动速度。
+物体 \(A\) 相对物体 \(B\) 的速度：\(\mathbf{v}_{A/B} = \mathbf{v}_A - \mathbf{v}_B\)。
 
 ### 3. 相遇条件
 存在同一时刻 \(t \ge 0\) 使 \(\mathbf{r}_A(t) = \mathbf{r}_B(t)\)，即两个坐标分量分别相等。
 
 **经典例题**：船 \(A\) 从 \((0,0)\) 以速度 \((2,3)\) 出发，船 \(B\) 从 \((10,0)\) 以速度 \((1,4)\) 出发，问是否会相遇？  
-解：\(\mathbf{r}_A(t)=(2t,3t),\ \mathbf{r}_B(t)=(10+t,4t)\)  
-由 \(2t=10+t\) 得 \(t=10\)，此时 \(y_A=30,\ y_B=40\)，不相等，故不会相遇。
-
-**坑**：必须两个坐标同时相等，且 \(t\) 非负且相同。
+解：\(\mathbf{r}_A(t) = (2t, 3t),\ \mathbf{r}_B(t) = (10+t, 4t)\)  
+由 \(2t = 10+t\) 得 \(t=10\)，此时 \(y_A=30,\ y_B=40\)，不相等，故不会相遇。
 
 ### 4. 距离最近问题（进阶）
 若不相遇，求何时距离最近。  
@@ -349,14 +317,14 @@ k \begin{pmatrix}a\\b\end{pmatrix} = \begin{pmatrix}ka\\kb\end{pmatrix}
 ## 六、向量与直线、圆的结合
 
 ### 1. 直线的方向向量
-- 斜截式 \(y = mx + c\)：方向向量可取 \((1, m)\)  
+- 斜截式 \(y = mx + c\)：方向向量可取 \((1, m)\)
 - 一般式 \(Ax + By + C = 0\)：方向向量可取 \((B, -A)\)（因为与法向量垂直）
 
 ### 2. 直线的法向量
 直线 \(Ax + By + C = 0\) 的法向量 \(\mathbf{n} = (A, B)\)，与直线垂直。
 
 ### 3. 圆与切线
-- 圆心 \(C\)，切点 \(T\)，半径 \(\overrightarrow{CT}\) 与切线垂直。  
+- 圆心 \(C\)，切点 \(T\)，半径 \(\overrightarrow{CT}\) 与切线垂直。
 - 若切线方向向量为 \(\mathbf{d}\)，则 \(\overrightarrow{CT} \cdot \mathbf{d} = 0\)。
 
 **示例**：圆 \(x^2+y^2=25\)，点 \(P(3,4)\) 在圆上，圆心 \(O(0,0)\)，半径向量 \((3,4)\)，切线方向与它垂直，可取 \((4,-3)\)，切线方程过 \(P\) 可求得。
@@ -384,6 +352,7 @@ k \begin{pmatrix}a\\b\end{pmatrix} = \begin{pmatrix}ka\\kb\end{pmatrix}
 | 运动相遇只列一个坐标方程 | 两个坐标必须同时满足，\(t\) 相同 |
 | 单位向量忘记除以模长 | \(\hat{\mathbf{a}} = \dfrac{\mathbf{a}}{|\mathbf{a}|}\) |
 
+---
 ---
 
 # Topic 7: 圆的坐标几何 (Coordinate Geometry of the Circle)
