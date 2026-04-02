@@ -112,102 +112,79 @@ $$
 
 ---
 
-### 9.2.2 General Form: $y = a\sin(bx+c)+d$ (and similarly for cosine, tangent)
-
-**Steps to analyse**:
-1. Amplitude: $|a|$ (for sine/cosine).
-2. Period: $T = \frac{2\pi}{|b|}$ (for sine/cosine), $T = \frac{\pi}{|b|}$ (for tangent).
-3. Phase shift: $-\frac{c}{b}$ (right if positive, left if negative).
-4. Vertical shift: $d$.
-
-**Example**: $y = 2\sin(3x-\frac{\pi}{2}) + 1$
-- Amplitude = 2
-- Period = $2\pi/3$
-- Phase shift: set $3x-\frac{\pi}{2}=0$ → $x=\frac{\pi}{6}$ → shift right by $\frac{\pi}{6}$
-- Vertical shift = +1
-
-**Pitfall**: Phase shift formula is $-\frac{c}{b}$; be careful with sign.
 
 ## General Form
 For a sine or cosine function:
-\[
+$$
 y = a\sin(bx + c) + d \quad \text{or} \quad y = a\cos(bx + c) + d
-\]
+$$
 
-- **Amplitude** (振幅): \( |a| \) – the maximum vertical distance from the equilibrium line \(y = d\).
-- **Period** (周期): \( T = \frac{2\pi}{|b|} \) (for sine/cosine)  
-  For tangent: \( T = \frac{\pi}{|b|} \).
-- **Phase shift** (相位移动): \( -\frac{c}{b} \) (right if positive, left if negative).
-- **Vertical shift** (垂直位移): \( d \).
+- **Amplitude**: $|a|$ – the maximum vertical distance from the equilibrium line $y = d$.
+- **Period**: $\frac{2\pi}{|b|}$ (for sine/cosine); for tangent: $\frac{\pi}{|b|}$.
+- **Phase shift**: $-\frac{c}{b}$ (right if positive, left if negative).
+- **Vertical shift**: $d$.
 
 ---
 
-## Example: \( y = 3\sin(2x + 6) + 4 \)
+## Example: $y = 3\sin(2x + 6) + 4$
 
 ### 1. Amplitude
-\[
+$$
 \text{Amplitude} = |a| = |3| = 3
-\]
-The graph oscillates 3 units above and below the line \(y = 4\).
-
----
+$$
+The graph oscillates 3 units above and below the line $y = 4$.
 
 ### 2. y‑intercept
-Set \(x = 0\):
-\[
+Set $x = 0$:
+$$
 y(0) = 3\sin(6) + 4
-\]
-Here \(6\) is in radians.  
-\(\sin 6 \approx -0.2794\) (since \(6\ \text{rad} \approx 343.8^\circ\)).  
-\[
+$$
+Here $6$ is in radians.  
+$\sin 6 \approx -0.2794$ (because $6\ \text{rad} \approx 343.8^\circ$).  
+$$
 y(0) \approx 3 \times (-0.2794) + 4 = -0.8382 + 4 = 3.1618 \approx 3
-\]
-So the graph crosses the \(y\)-axis near \(y = 3\).
-
----
+$$
+So the graph crosses the $y$-axis near $y = 3$.
 
 ### 3. Maximum and Minimum Values
-The sine function ranges from \(-1\) to \(1\). Thus:
-\[
+The sine function ranges from $-1$ to $1$. Thus:
+$$
 3\sin(2x + 6) \in [-3, 3]
-\]
-Adding the vertical shift \(d = 4\):
-\[
+$$
+Adding the vertical shift $d = 4$:
+$$
 y \in [1, 7]
-\]
-- **Maximum**: when \(\sin(2x + 6) = 1\),  
-  \(y_{\max} = 3 \times 1 + 4 = 7\).
-- **Minimum**: when \(\sin(2x + 6) = -1\),  
-  \(y_{\min} = 3 \times (-1) + 4 = 1\).
+$$
+- **Maximum**: when $\sin(2x + 6) = 1$,  
+  $y_{\max} = 3 \times 1 + 4 = 7$.
+- **Minimum**: when $\sin(2x + 6) = -1$,  
+  $y_{\min} = 3 \times (-1) + 4 = 1$.
 
 The extreme values depend only on the amplitude and vertical shift, not on the phase shift.
 
----
-
-### 4. Phase Shift (optional)
+### 4. Phase Shift
 Rewrite the argument:
-\[
+$$
 2x + 6 = 2\left(x + 3\right)
-\]
-Then \(y = 3\sin\big(2(x+3)\big) + 4\).  
-The graph of \(y = 3\sin(2x) + 4\) is shifted **left** by 3 units (because \(x\) is replaced by \(x+3\)).  
+$$
+Then $y = 3\sin\big(2(x+3)\big) + 4$.  
+The graph of $y = 3\sin(2x) + 4$ is shifted **left** by 3 units (because $x$ is replaced by $x+3$).  
 Check using the formula:
-\[
+$$
 -\frac{c}{b} = -\frac{6}{2} = -3 \quad\text{(negative means left shift)}
-\]
+$$
 
 ---
 
 ## Key Points
-- **Amplitude** \( = |a| \)  
-- **Period** \( = \frac{2\pi}{|b|} \) (sine/cosine)  
-- **Phase shift** \( = -\frac{c}{b} \) (positive → right, negative → left)  
-- **Vertical shift** \( = d \)  
-- **Maximum value** \( = |a| + d \)  
-- **Minimum value** \( = -|a| + d \)  
+- **Amplitude** $ = |a| $
+- **Period** $ = \frac{2\pi}{|b|} $ (sine/cosine)
+- **Phase shift** $ = -\frac{c}{b} $ (positive → right, negative → left)
+- **Vertical shift** $ = d $
+- **Maximum value** $ = |a| + d $
+- **Minimum value** $ = -|a| + d $
 
-These formulas work for cosine as well; for tangent, use period \(\frac{\pi}{|b|}\) and no amplitude (range all real numbers).
-
+These formulas work for cosine as well; for tangent, use period $\frac{\pi}{|b|}$ and no amplitude (range all real numbers).
 ---
 
 ### 9.2.3 Determine Equation from Graph
