@@ -9,43 +9,80 @@
 
 你目前教材看到第 5/17 单元，但其实你已经覆盖了考纲的 **前 6 个 topic**（因为教材把“对数与指数”放在第 6 章，而你刚写完 U5 笔记）。按知识点占比算，你大概完成了 **40% 左右**，不是 30%。下面我把考纲 14 个 topic 列出来，并标注你现在的进度和每块需要的时间。
 
+# 📚 IGCSE 0606 Additional Mathematics Notes
 
-# IGCSE 0606 考纲顺序（2028–2030）【没做的】
+> 官方教材的“补丁”：按考纲 Topic 1–14 重排，补上缺失的步骤、题型和坑。
 
-## Topic 5 – 联立方程 (Simultaneous equations)  
-**教材对应**：U4 后半部分（你已涉及）  
-**状态**：⚠️ 部分完成（你笔记里有线性+非线性的解法，但没单独成章）  
-**核心考点**：代入法、消元法、一元二次与直线联立
+---
 
-## Topic 9 – 弧度制 (Circular measure)  
-**教材对应**：Cambridge 教材 U8  
-**状态**：⏳ 未开始  
-**核心考点**：弧长 l = rθ、扇形面积 A = ½ r²θ、复合图形问题
+## ✨ 特点
 
-## Topic 10 – 三角函数 (Trigonometry)  
-**教材对应**：Cambridge 教材 U9–U10  
-**状态**：⏳ 未开始（这是大章节，预计耗时较长）  
-**核心考点**：六种三角函数、图像（振幅、周期）、恒等式、解三角方程、证明恒等式
+- **按考纲顺序**：Topic 1–14 直接排列，不用自己“映射”
+- **题型分类 + 步骤化**：每种题拆成“识别→步骤→坑”
+- **持续更新**：已完成 Topic 1–12，13–14 计划中
 
-## Topic 11 – 排列组合 (Permutations and combinations)  
-**教材对应**：Cambridge 教材 U11  
-**状态**：⏳ 未开始  
-**核心考点**：阶乘、排列 nPr、组合 nCr、区分排列与组合、应用题（不包含圆排列、重复对象）
+---
 
-## Topic 12 – 数列 (Series)  
-**教材对应**：Cambridge 教材 U12  
-**状态**：⏳ 未开始  
-**核心考点**：二项式展开、通项公式、等差/等比数列、求和公式、无穷等比数列
+## 📊 进度
 
-## Topic 13 – 二维向量 (Vectors in two dimensions)  
-**教材对应**：Cambridge 教材 U13  
-**状态**：✅   
-**核心考点**：向量表示、位置向量、单位向量、加减法、数量积、速度合成
+| Topic | 内容 | 状态 |
+|-------|------|------|
+| 1 | 函数 | ✅ |
+| 2 | 二次函数 | ✅ |
+| 3 | 多项式因式 | ✅ |
+| 4 | 方程、不等式与图像 | ✅ |
+| 5 | 联立方程 | ✅ |
+| 6 | 对数与指数函数 | ✅ |
+| 7 | 直线图 | ✅ |
+| 8 | 圆的坐标几何 | ✅ |
+| 9 | 弧度制 | ✅ |
+| 10 | 三角函数 | ✅ |
+| 11 | 排列组合 | ✅ (beta) |
+| 12 | 数列 | ✅ (beta) |
+| 13 | 向量 | 📅 计划中 |
+| 14 | 微积分 | 📅 计划中 |
 
-## Topic 14 – 微积分 (Calculus)  
-**教材对应**：Cambridge 教材 U14–U16  
-**状态**：⏳ 未开始（这是最大的一块，但很多内容在 0606 里只要求基础）  
-**核心考点**：  
-- 微分：导数定义、基本函数求导、链式法则、乘积/商法则、切线法线、驻点、极值、变化率  
-- 积分：不定积分、定积分、面积、运动学（位移-速度-加速度）
->(已经覆盖40%的内容，30%的考试点）
+---
+
+## 🚀 使用
+
+1. 配合 **Cambridge IGCSE Additional Mathematics 3rd edition** 教材  
+2. 按左侧文件树顺序学习  
+3. 会 Git：`git clone` + 定期 `git pull`；不会：点 “Download ZIP”
+
+---
+
+## 📈 最近更新
+
+- U1–U4 完善  
+- U5 显示错误修复  
+- U6–U7 直线图 & 圆完成  
+- U8–U9 三角函数（弧度制 + 三角）完成  
+- U10–U11 排列组合 & 数列 (beta) 完成  
+
+---
+
+## 📬 链接
+
+- **GitHub**：[https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE](https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE)
+- **GitCode（国内镜像）**：[https://gitcode.com/oiiioiiiooiiioio/IG0606ADD_NOTEwithCAMcoursebook](https://gitcode.com/oiiioiiiooiiioio/IG0606ADD_NOTEwithCAMcoursebook)
+
+---
+
+> 一个人课余时间写的，如有疏漏欢迎提 Issue。希望帮你少走弯路。
+
+**学习没有捷径，但路可以铺平些。**
+
+##AI 检索区域：
+https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE/blob/main/CAM%20IG%200606%20ADD%20U1~U4%20NOTE%20-Leo%20yang.md
+https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE/blob/main/CAM-IG0606%20Ch8%269%20trigometry%20part-Leo%20Yang.md
+https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE/blob/main/CAM-IG0606ADD%20CAIE%20U5%20LOG%26EXP%20NOTE-Leo%20Yang.md
+https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE/blob/main/%7Bbeta%7DCAM%20IG%200606%20ADD%20Ch10~11-LEO%20YANG%20NOTE.md
+https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE/blob/main/%7Bchinese-%7DCAM-IG0606ADD%20CAIE%20U6%26U7%20straight%20line%26circle%20NOTE-Leo%20Yang.md
+
+https://gitcode.com/oiiioiiiooiiioio/IG0606ADD_NOTEwithCAMcoursebook/blob/main/CAM%20IG%200606%20ADD%20U1~U4%20NOTE%20-Leo%20yang.md
+https://gitcode.com/oiiioiiiooiiioio/IG0606ADD_NOTEwithCAMcoursebook/blob/main/CAM-IG0606%20Ch8&9%20trigometry%20part-Leo%20Yang.md
+https://gitcode.com/oiiioiiiooiiioio/IG0606ADD_NOTEwithCAMcoursebook/blob/main/CAM-IG0606ADD%20CAIE%20U5%20LOG&EXP%20NOTE-Leo%20Yang.md
+https://gitcode.com/oiiioiiiooiiioio/IG0606ADD_NOTEwithCAMcoursebook/blob/main/CN-CAM-IG0606ADD%20CAIE%20U6&U7%20straight%20line&circle%20NOTE-Leo%20Yang.md
+https://gitcode.com/oiiioiiiooiiioio/IG0606ADD_NOTEwithCAMcoursebook/blob/main/EN-CAM-IG0606ADD%20CAIE%20Ch6&7%20staight%20line&circle%20NOTE-Leo%20Yang.md
+https://gitcode.com/oiiioiiiooiiioio/IG0606ADD_NOTEwithCAMcoursebook/blob/main/%7Bbeta%7DCAM%20IG%200606%20ADD%20Ch10~11-LEO%20YANG%20NOTE.md
