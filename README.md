@@ -1,4 +1,7 @@
 # NOTE-of-IG0606-ADD-with-CAM-course-book
+<a href="https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE">IG0606ADD-with-CAM-coursebook-NOTE</a> © 2026 by <a href="https://github.com/LG-leo">Leo Yang</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+
+
 ##在4月3号北京时间（UTC+8）00:30时候，BING搜索引擎中（github网页）：
 
 提示词：IG0606ADD
