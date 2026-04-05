@@ -76,6 +76,36 @@ $$
 
 因为 d/dx ln|x| = 1/x。
 
+### 求导与不定积分对照表
+
+| 函数 $f(x)$ | 导数 $f'(x)$ | 不定积分 $\int f(x) dx$ |
+| :--- | :--- | :--- |
+| $x^n \ (n \neq -1)$ | $n x^{n-1}$ | $x^{n+1}/(n+1) + C$ |
+| $x^{-1}$ | $-1/x^2$ | $ln|x| + C$ |
+| $e^x$ | $e^x$ | $e^x + C$ |
+| $a^x \ (a>0)$ | $a^x ln a$ | $a^x / ln a + C$ |
+| $ln|x|$ | $1/x$ | $x ln|x| - x + C$ |
+| $log_a x$ | $1/(x ln a)$ | $(x ln|x| - x)/ln a + C$ |
+| $sin x$ | $cos x$ | $-cos x + C$ |
+| $cos x$ | $-sin x$ | $sin x + C$ |
+| $tan x$ | $sec^2 x$ | $ln|sec x| + C$ |
+| $cot x$ | $-csc^2 x$ | $ln|sin x| + C$ |
+| $sec x$ | $sec x tan x$ | $ln|sec x + tan x| + C$ |
+| $csc x$ | $-csc x cot x$ | $ln|csc x - cot x| + C$ |
+| $arcsin x$ | $1/√(1-x^2)$ | $x arcsin x + √(1-x^2) + C$ |
+| $arccos x$ | $-1/√(1-x^2)$ | $x arccos x - √(1-x^2) + C$ |
+| $arctan x$ | $1/(1+x^2)$ | $x arctan x - (1/2) ln(1+x^2) + C$ |
+
+### 运算规则
+
+| 操作 | 求导 | 不定积分 |
+| :--- | :--- | :--- |
+| 常数倍 | $(c f)' = c f'$ | $\int c f dx = c \int f dx$ |
+| 和差 | $(f ± g)' = f' ± g'$ | $\int (f ± g) dx = \int f dx ± \int g dx$ |
+| 乘积 | $(f g)' = f' g + f g'$ | 分部积分：$\int f g' dx = f g - \int f' g dx$ |
+| 商 | $(f/g)' = (f' g - f g')/g^2$ | 无直接公式 |
+| 链式法则 | $[f(g(x))]' = f'(g(x)) g'(x)$ | 换元：$\int f'(g(x)) g'(x) dx = f(g(x)) + C$ |
+
 ### 2.2 线性性质
 
 $$
