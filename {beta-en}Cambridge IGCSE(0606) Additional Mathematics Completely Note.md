@@ -332,6 +332,15 @@ Let’s start with a simple example. Suppose an object moves along a straight li
 ### How do we calculate average velocity?
 From time 1 to time 1 + Δt, the distance traveled is s(1+Δt) − s(1). Average velocity = distance divided by Δt.
 
+$$
+\mathbf{v}(t) = \lim_{\Delta t\to 0} \frac{\mathbf{r}(t+\Delta t) - \mathbf{r}(t)}{\Delta t} = \left( \frac{dx}{dt}, \frac{dy}{dt} \right)
+$$
+
+The variation of speed over time：
+$$
+\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = \left( \frac{d^2 x}{dt^2}, \frac{d^2 y}{dt^2} \right)
+$$
+
 Let’s try smaller and smaller Δt:
 
 - Δt = 0.5 : position goes from 1 to 2.25, distance = 1.25, average = 1.25 / 0.5 = 2.5
@@ -353,6 +362,15 @@ The basic formulas (for vectors, but they work for one‑dimensional motion too)
 
 - Velocity v(t) = ∫ a(t) dt + initial velocity v₀
 - Position r(t) = ∫ v(t) dt + initial position r₀
+
+If we know the acceleration $\mathbf{a}(t)$ and the condition $\mathbf{v}(0) = \mathbf{v}_0,\ \mathbf{r}(0) = \mathbf{r}_0$，then：
+$$
+\mathbf{v}(t) = \int \mathbf{a}(t)\, dt + \mathbf{v}_0
+$$
+$$
+\mathbf{r}(t) = \int \mathbf{v}(t)\, dt + \mathbf{r}_0
+$$
+Integration is carried out component by component.
 
 **Example: Projectile motion**  
 A ball is thrown from the ground. Its initial velocity has horizontal component v₀x and vertical component v₀y. Gravity pulls downward with acceleration g. So a(t) = (0, -g).
