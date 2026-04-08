@@ -456,7 +456,8 @@ If some of the differentiation or integration steps feel unfamiliar, don’t wor
 $f(x)=ax^2+bx+c$ ($a≠0$) is a parabola.
 - $a>0$: opens upward; $a<0$: opens downward.
 - Vertex at $x = -b/(2a)$, $y = f(-b/(2a))$.
-- Axis of symmetry: $x = -b/(2a)$.
+- Axis of symmetry/Vertex point x coordinate axis: $x = -b/(2a)$.
+- Vertex point y coordinate axis: $y = 4ac-b^2/(4a)$.
 
 **Example**: $f(x)=2x^2-4x+1$, vertex $x=4/4=1$, $y=2-4+1=-1$.
 
