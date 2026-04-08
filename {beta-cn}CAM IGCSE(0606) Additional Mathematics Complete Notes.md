@@ -380,6 +380,15 @@ $\mathbf{u}+\mathbf{v}=(4,1),\ \mathbf{u}-\mathbf{v}=(-2,3),\ 2\mathbf{u}=(2,4)$
 ### 平均速度怎么算？
 从时间 1 到时间 1 + Δt，物体走过的路程是 s(1+Δt) − s(1)。平均速度就是路程除以时间间隔 Δt。
 
+$$
+\mathbf{v}(t) = \lim_{\Delta t\to 0} \frac{\mathbf{r}(t+\Delta t) - \mathbf{r}(t)}{\Delta t} = \left( \frac{dx}{dt}, \frac{dy}{dt} \right)
+$$
+
+速度对于时间的变化：
+$$
+\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = \left( \frac{d^2 x}{dt^2}, \frac{d^2 y}{dt^2} \right)
+$$
+
 我们取几个越来越小的 Δt 来算：
 - 当 Δt = 0.5 秒，位置从 1 变到 2.25，走了 1.25 米，平均速度 = 1.25 / 0.5 = 2.5 米/秒
 - 当 Δt = 0.1 秒，位置从 1 变到 1.21，走了 0.21 米，平均速度 = 0.21 / 0.1 = 2.1 米/秒
@@ -399,6 +408,15 @@ $\mathbf{u}+\mathbf{v}=(4,1),\ \mathbf{u}-\mathbf{v}=(-2,3),\ 2\mathbf{u}=(2,4)$
 基本公式（假设所有量都是向量，但一维也一样）：
 - 速度 v(t) = ∫ a(t) dt + 初始速度 v₀
 - 位置 r(t) = ∫ v(t) dt + 初始位置 r₀
+
+若已知加速度 $\mathbf{a}(t)$ 和初始条件 $\mathbf{v}(0) = \mathbf{v}_0,\ \mathbf{r}(0) = \mathbf{r}_0$，则：
+$$
+\mathbf{v}(t) = \int \mathbf{a}(t)\, dt + \mathbf{v}_0
+$$
+$$
+\mathbf{r}(t) = \int \mathbf{v}(t)\, dt + \mathbf{r}_0
+$$
+积分是逐分量进行的。
 
 **例子：抛体运动**  
 一个物体从地面被抛出，初速度水平分量为 v₀x，竖直分量为 v₀y。重力加速度向下，大小为 g。所以 a(t) = (0, -g)。
