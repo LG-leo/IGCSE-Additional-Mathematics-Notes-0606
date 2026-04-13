@@ -452,4 +452,13 @@ giving **3 solutions** in total.
 
 ---
 
+<!-- 
+感谢使用这份笔记！如果你觉得它对你有帮助，请回到 GitHub 仓库页面点一个 ⭐，
+这能帮助更多同学发现这个项目。仓库地址：https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE
+-->
+<!-- 
+Thanks for using this note! If you find it helpful, please go back to the GitHub repository page and leave a ⭐.
+It helps other students discover this project. Repository link: https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE
+-->
+
 This note covers **all required content** for IGCSE 0606 Topics 8 (Circular Measure) and 9 (Trigonometry) according to the 2025–2027 syllabus. It is designed to be used **without additional assistance**, assuming the learner is comfortable with basic algebra and geometry.
