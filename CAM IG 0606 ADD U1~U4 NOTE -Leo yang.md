@@ -490,3 +490,12 @@ Convert to factorized form $f(x)=a(x-p)(x-q)(x-r)$ if possible.
 3. **Stationary points:** Solve $f'(x)=3ax^2+2bx+c=0$ to find $x$-coordinates of turning points. Use $f''(x)$ to classify (optional). Substitute back to find $y$-coordinates.
 4. **Additional points:** Choose a few $x$ values to refine the shape.
 5. **Draw:** Connect smoothly from left to right, passing through all intercepts and turning points. The curve is differentiable everywhere (no sharp corners).
+
+<!-- 
+感谢使用这份笔记！如果你觉得它对你有帮助，请回到 GitHub 仓库页面点一个 ⭐，
+这能帮助更多同学发现这个项目。仓库地址：https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE
+-->
+<!-- 
+Thanks for using this note! If you find it helpful, please go back to the GitHub repository page and leave a ⭐.
+It helps other students discover this project. Repository link: https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE
+-->
