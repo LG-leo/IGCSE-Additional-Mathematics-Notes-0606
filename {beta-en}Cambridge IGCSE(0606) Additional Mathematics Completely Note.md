@@ -653,7 +653,26 @@ If point $(p, q)$ lies on the exponential graph, i.e., $q = a^p$, then $p = log_
 
 **Special bases**:  
 - $a = 10$ gives the common logarithm, sometimes written as $lg x$ (but we use $log_{10} x$ or $log x$).  
-- $a = e$ ($e ≈ 2.71828$) gives the natural logarithm, denoted $ln x$. Natural log has the simplest derivative: $1/x$, without extra constants.
+-Find the derivative of $f(x) = ln(2x)$.
+
+Solution: Use the chain rule. The derivative of the outer function $ln(u)$ is $1/u$, and the inner $u = 2x$ has derivative $2$. Thus
+$$
+f'(x) = \frac{1}{2x} \times 2 = \frac{1}{x}.
+$$
+
+For a common logarithm $g(x) = log_{10}(2x)$, change the base first:
+$$
+g(x) = \frac{ln(2x)}{ln(10)}.
+$$
+Its derivative is
+$$
+g'(x) = \frac{1}{x \cdot ln(10)}.
+$$
+An extra constant $1/ln(10)$ appears. The natural logarithm $ln$ avoids such extra constants.
+
+
+$a = e$ ($e ≈ 2.71828$) gives the natural logarithm, denoted $ln x$. Natural log has the simplest derivative: $1/x$, without extra constants.
+
 
 **Graph features (for $a>1$)**:  
 - As $x → 0^+$, $log_a x → -∞$ (very slow descent).  
