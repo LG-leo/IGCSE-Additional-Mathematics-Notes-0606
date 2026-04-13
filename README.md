@@ -78,6 +78,9 @@ It is recommended to **Clone** the repository so you can easily `git pull` futur
 
 > This guide is a personal study compilation. Some content is adapted from the original textbook for educational, non‑commercial purposes. It does not replace the original textbook.
 
+# 📚 My best Note
+Is the most important, completely Note：[点击查看 - Cambridge IGCSE 0606 Additional Mathematics Complete Note](link-to-your-best-note)
+
 ---
 
 ## 📌 About this project
