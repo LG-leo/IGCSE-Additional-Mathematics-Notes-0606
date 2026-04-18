@@ -12,6 +12,8 @@ You are free to share and adapt for **non-commercial purposes**, with attributio
 
 > A "patch" for the official textbook: reorganized by syllabus Topics 1–14, filling in missing steps, question types, and common pitfalls.
 
+**⭐ Star this repository** → You'll get notified when I add new chapters or fix errors. Perfect for staying up-to-date with the 2027 syllabus!
+
 ## ✨ Features
 
 - **Syllabus order**: Topics 1–14 directly arranged – no need to “map” from the textbook.
