@@ -1,0 +1,16 @@
+# 保存脚本
+# 用 vim/nano 把代码写入 md2docx.py
+
+# 安装依赖（Ubuntu/Debian 示例）
+sudo apt install python3-pip
+pip3 install python-docx
+
+# Run
+python3 md2docx.py input.md
+
+
+# change the input.md to (real name of the markdown).md
+
+example:
+
+python3 md2docx.py AXompletely_note_2ed_CAIE_LATEX_en.md 

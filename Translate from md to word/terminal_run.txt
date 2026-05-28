@@ -1,0 +1,1 @@
+python3 md2docx.py file_name.md

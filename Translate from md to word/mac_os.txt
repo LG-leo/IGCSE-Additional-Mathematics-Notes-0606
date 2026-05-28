@@ -1,0 +1,9 @@
+pip3 install python-docx
+python3 md2docx.py input.md
+
+
+# change the input.md to (real name of the markdown).md
+
+example:
+
+python3 md2docx.py AXompletely_note_2ed_CAIE_LATEX_en.md 
