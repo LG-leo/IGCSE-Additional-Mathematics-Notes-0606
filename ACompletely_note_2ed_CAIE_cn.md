@@ -2208,6 +2208,7 @@ $$
 | 向量表示 | $\mathbf{v} = x\mathbf{i} + y\mathbf{j} = (x, y)^\mathrm{T}$ |
 | 模 | $|\mathbf{v}| = \sqrt{x^2 + y^2}$ |
 | 单位向量 | $\hat{\mathbf{v}} = \dfrac{\mathbf{v}}{|\mathbf{v}|}$ |
+| 位移 | $\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A$ |
 | 中点 | $\mathbf{r}_M = \dfrac{\mathbf{r}_A + \mathbf{r}_B}{2}$ |
 | 分点（$AP:PB = m:n$） | $\mathbf{r}_P = \dfrac{n\mathbf{r}_A + m\mathbf{r}_B}{m+n}$ |
 | 平行条件 | $\mathbf{a} = k\mathbf{b}$（存在标量 $k$） |
