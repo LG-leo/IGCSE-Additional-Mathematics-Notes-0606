@@ -1,12 +1,9 @@
 site_name: "IGCSE-additional-math-note"
 theme: material  # 选择一个好看的默认主题
 
-# 启用公式渲染扩展
 markdown_extensions:
   - pymdownx.arithmatex:
-      generic: true   # 开启通用 LaTeX 支持
-
-# 加载 MathJax 的 JS 资源
+      generic: true
 extra_javascript:
   - javascripts/config.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
