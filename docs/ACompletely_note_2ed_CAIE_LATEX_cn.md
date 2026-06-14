@@ -246,8 +246,8 @@ $r^{\,n}$ 在 $n \to \infty$ 时的行为决定了级数是否收敛：
 
 | $r$ 的取值范围 | $n \to \infty$ 时 $r^{\,n}$ 的行为 | 级数是否收敛 | 无穷和 |
 |:-------------:|----------------------------------|:-----------:|:------:|
-| $\|r\| < 1$ | $r^{\,n} \to 0$ | ✅ **收敛** | $\displaystyle S_\infty = \frac{a}{1-r}$ |
-| $\|r\| > 1$ | $\|r^{\,n}\| \to \infty$ | ❌ **发散** | 无有限和 |
+| $\lvert r\rvert < 1$ | $r^{\,n} \to 0$ | ✅ **收敛** | $\displaystyle S_\infty = \frac{a}{1-r}$ |
+| $\lvert r\rvert > 1$ | $\lvert r\rvert^{\,n} \to \infty$ | ❌ **发散** | 无有限和 |
 | $r = 1$ | $r^{\,n} = 1$（恒定） | ❌ **发散** | $S_n = n a \to \infty$ |
 | $r = -1$ | 在 $1$ 和 $-1$ 之间振荡 | ❌ **发散** | 和不确定 |
 
@@ -572,7 +572,7 @@ n=5:   1 5 10 10 5 1
 | AP 前 $n$ 项和 | $S_n = \dfrac{n}{2}[2a + (n-1)d]$ | — |
 | GP 第 $n$ 项 | $a_n = a r^{\,n-1}$ | — |
 | GP 前 $n$ 项和 | $S_n = a\dfrac{1-r^n}{1-r}$ | $r \neq 1$ |
-| GP 无穷和 | $S_\infty = \dfrac{a}{1-r}$ | $\|r\| < 1$ |
+| GP 无穷和 | $S_\infty = \dfrac{a}{1-r}$ | $\lvert r\rvert < 1$ |
 | 排列数 | $^nP_r = \dfrac{n!}{(n-r)!}$ | 顺序重要 |
 | 组合数 | $\displaystyle\binom{n}{r} = \dfrac{n!}{r!(n-r)!}$ | 顺序不重要 |
 | 二项式定理 | $(a+b)^n = \displaystyle\sum_{r=0}^{n}\binom{n}{r}a^{n-r}b^{r}$ | $n \in \mathbb{Z}^+$ |
@@ -2548,15 +2548,26 @@ $$
 由已知条件：
 
 $$
-\begin{aligned}
-f(1) &= 1 + a + b + c = 0 &\Rightarrow\quad a + b + c = -1 \tag{1}\\
-f(2) &= 8 + 4a + 2b + c = 0 &\Rightarrow\quad 4a + 2b + c = -8 \tag{2}\\
-f(-1) &= -1 + a - b + c = -12 &\Rightarrow\quad a - b + c = -11 \tag{3}
-\end{aligned}
+f(1) = 1 + a + b + c = 0 \quad\Rightarrow\quad a + b + c = -1 \tag{1}
 $$
 
-(2) - (1)：$3a + b = -7 \tag{4}$
-(1) - (3)：$2b = 10 \Rightarrow b = 5$
+$$
+f(2) = 8 + 4a + 2b + c = 0 \quad\Rightarrow\quad 4a + 2b + c = -8 \tag{2}
+$$
+
+$$
+f(-1) = -1 + a - b + c = -12 \quad\Rightarrow\quad a - b + c = -11 \tag{3}
+$$
+
+然后：
+
+$$
+(2)-(1):\; 3a + b = -7 \tag{4}
+$$
+
+$$
+(1)-(3):\; 2b = 10 \Rightarrow b = 5
+$$
 
 代入 (4)：$3a + 5 = -7 \Rightarrow 3a = -12 \Rightarrow a = -4$
 

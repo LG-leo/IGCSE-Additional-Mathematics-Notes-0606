@@ -246,8 +246,8 @@ The behaviour of $r^{\,n}$ as $n \to \infty$ determines whether the series conve
 
 | Range of $r$ | Behaviour of $r^{\,n}$ as $n \to \infty$ | Does the series converge? | Sum to Infinity |
 |:-------------:|----------------------------------|:-----------:|:------:|
-| $\|r\| < 1$ | $r^{\,n} \to 0$ | ✅ **Converges** | $\displaystyle S_\infty = \frac{a}{1-r}$ |
-| $\|r\| > 1$ | $\|r^{\,n}\| \to \infty$ | ❌ **Diverges** | No finite sum |
+| $\lvert r\rvert < 1$ | $r^{\,n} \to 0$ | ✅ **Converges** | $\displaystyle S_\infty = \frac{a}{1-r}$ |
+| $\lvert r\rvert > 1$ | $\lvert r\rvert^{\,n} \to \infty$ | ❌ **Diverges** | No finite sum |
 | $r = 1$ | $r^{\,n} = 1$ (constant) | ❌ **Diverges** | $S_n = n a \to \infty$ |
 | $r = -1$ | Oscillates between $1$ and $-1$ | ❌ **Diverges** | Sum is undefined |
 
@@ -572,7 +572,7 @@ n=5:   1 5 10 10 5 1
 | AP sum of first $n$ terms | $S_n = \dfrac{n}{2}[2a + (n-1)d]$ | — |
 | GP $n$th term | $a_n = a r^{\,n-1}$ | — |
 | GP sum of first $n$ terms | $S_n = a\dfrac{1-r^n}{1-r}$ | $r \neq 1$ |
-| GP sum to infinity | $S_\infty = \dfrac{a}{1-r}$ | $\|r\| < 1$ |
+| GP sum to infinity | $S_\infty = \dfrac{a}{1-r}$ | $\lvert r\rvert < 1$ |
 | Permutations | $^nP_r = \dfrac{n!}{(n-r)!}$ | Order matters |
 | Combinations | $\displaystyle\binom{n}{r} = \dfrac{n!}{r!(n-r)!}$ | Order does not matter |
 | Binomial theorem | $(a+b)^n = \displaystyle\sum_{r=0}^{n}\binom{n}{r}a^{n-r}b^{r}$ | $n \in \mathbb{Z}^+$ |
@@ -588,7 +588,7 @@ This chapter covers the following sections of the Cambridge IGCSE Additional Mat
 
 | Syllabus Ref | Content | Description |
 |---------|------|------|
-| **13.1** | Understand and use vector notation | Column vectors, $\mathbf{i}$-$\mathbf{j}$ form, $\overrightarrow{AB}$, $p$等形式 |
+| **13.1** | Understand and use vector notation | Column vectors, $\mathbf{i}$-$\mathbf{j}$ form, $\overrightarrow{AB}$, $p$ form |
 | **13.2** | Position vectors and unit vectors | Find unit vectors $\hat{\mathbf{a}} = \frac{\mathbf{a}}{|\mathbf{a}|}$ |
 | **13.3** | Magnitude, addition, subtraction and scalar multiplication of vectors | Including equal vectors, vector geometry problems (given diagrams) |
 | **13.4** | Composition and resolution of velocities | Find resultant vectors, use velocity vectors to find position, collision problems |
@@ -2537,15 +2537,26 @@ $$
 From the given conditions:
 
 $$
-\begin{aligned}
-f(1) &= 1 + a + b + c = 0 &\Rightarrow\quad a + b + c = -1 \tag{1}\\
-f(2) &= 8 + 4a + 2b + c = 0 &\Rightarrow\quad 4a + 2b + c = -8 \tag{2}\\
-f(-1) &= -1 + a - b + c = -12 &\Rightarrow\quad a - b + c = -11 \tag{3}
-\end{aligned}
+f(1) = 1 + a + b + c = 0 \quad\Rightarrow\quad a + b + c = -1 \tag{1}
 $$
 
-(2) − (1): $3a + b = -7 \tag{4}$
-(1) − (3): $2b = 10 \Rightarrow b = 5$
+$$
+f(2) = 8 + 4a + 2b + c = 0 \quad\Rightarrow\quad 4a + 2b + c = -8 \tag{2}
+$$
+
+$$
+f(-1) = -1 + a - b + c = -12 \quad\Rightarrow\quad a - b + c = -11 \tag{3}
+$$
+
+Then：
+
+$$
+(2)-(1):\; 3a + b = -7 \tag{4}
+$$
+
+$$
+(1)-(3):\; 2b = 10 \Rightarrow b = 5
+$$
 
 Substitute into (4): $3a + 5 = -7 \Rightarrow 3a = -12 \Rightarrow a = -4$
 
@@ -12309,17 +12320,6 @@ Ask yourself these questions before solving a problem:
 
 ---
 ---
-
-好的！先读取第8章的内容！
-
-
-
-
-
-
-
-
-好的老板！第8章内容非常长，我分两段发。先发第一段（§8.1–§8.4）！
 
 ---
 

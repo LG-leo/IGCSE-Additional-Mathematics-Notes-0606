@@ -642,7 +642,7 @@ n=5: 1 5 10 10 5 1
 #### 表示法 1：列向量
 
 $$
-`\mathbf{v} = \begin{pmatrix} x \\ y \end{pmatrix}`
+\mathbf{v} = \begin{pmatrix} x \\ y \end{pmatrix}
 $$
 
 其中 $x$ 是水平分量，$y$ 是垂直分量。这种表示法在解方程组时非常方便，因为我们可以直接对分量进行操作。
@@ -652,19 +652,19 @@ $$
 定义两个基本单位向量：
 
 $$
-`\mathbf{i} = (1, 0)^\mathrm{T},\quad \mathbf{j} = (0, 1)^\mathrm{T}`
+\mathbf{i} = (1, 0)^\mathrm{T},\quad \mathbf{j} = (0, 1)^\mathrm{T}
 $$
 
 **i** 指向正 $x$ 轴方向（向右），**j** 指向正 $y$ 轴方向（向上）。那么任意向量可以写为：
 
 $$
-`\mathbf{v} = x\mathbf{i} + y\mathbf{j}`
+\mathbf{v} = x\mathbf{i} + y\mathbf{j}
 $$
 
 **两种表示法的等价性**：
 
 $$
-`x\mathbf{i} + y\mathbf{j} = (x, y)^\mathrm{T}`
+x\mathbf{i} + y\mathbf{j} = (x, y)^\mathrm{T}
 $$
 
 例如，向量 $3\mathbf{i} - 2\mathbf{j}$ 与列向量 $(3, -2)^\mathrm{T}$ 是同一个向量。
@@ -674,7 +674,7 @@ $$
 从点 $A$ 到点 $B$ 的向量记作 $\overrightarrow{AB}$。它等于终点位置减去起点位置：
 
 $$
-`\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A`
+\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A
 $$
 
 > **为什么是"终点减起点"？** 假设你想从家 $A$ 走到学校 $B$。你的位移（从 $A$ 到 $B$）就是你最终到达的位置（学校的位置）减去你出发时的位置（家的位置）。如果 $A$ 在 $(1,1)$，$B$ 在 $(4,5)$，那么你需要向右走 3 个单位、向上走 4 个单位，即 $\overrightarrow{AB} = (3,4)$。
@@ -686,7 +686,7 @@ $$
 设 $O$ 为原点。任意点 $P(x, y)$ 的**位置向量**是：
 
 $$
-`\mathbf{r} = \overrightarrow{OP} = (x, y)^\mathrm{T} = x\mathbf{i} + y\mathbf{j}`
+\mathbf{r} = \overrightarrow{OP} = (x, y)^\mathrm{T} = x\mathbf{i} + y\mathbf{j}
 $$
 
 位置向量告诉我们点 $P$ 相对于原点的位置。这里的关键区分是：**点** $P(x, y)$ 是空间中的一个位置，而**向量** $\mathbf{r} = (x, y)$ 是从原点到该点的有向线段——它包含了位移的信息。
@@ -700,7 +700,7 @@ $$
 向量 $\mathbf{v} = x\mathbf{i} + y\mathbf{j}$ 的模（或称长度、大小）由勾股定理给出：
 
 $$
-`|\mathbf{v}| = \sqrt{x^2 + y^2}`
+|\mathbf{v}| = \sqrt{x^2 + y^2}
 $$
 
 模一定是非负实数。当且仅当向量是零向量 $\mathbf{0} = (0, 0)^\mathrm{T}$ 时，模为零。
@@ -714,7 +714,7 @@ $$
 **单位向量**是模为 1 的向量。给定任意非零向量 $\mathbf{v}$，我们可以构造与它同方向的单位向量 $\hat{\mathbf{v}}$：
 
 $$
-`\hat{\mathbf{v}} = \frac{\mathbf{v}}{|\mathbf{v}|}`
+\hat{\mathbf{v}} = \frac{\mathbf{v}}{|\mathbf{v}|}
 $$
 
 也就是说，将原向量除以它自己的模。这个操作称为**归一化**。
@@ -734,13 +734,13 @@ $$
 两个向量的加法，就是将它们的对应分量分别相加：
 
 $$
-`(x_1, y_1)^\mathrm{T} + (x_2, y_2)^\mathrm{T} = (x_1 + x_2,\; y_1 + y_2)^\mathrm{T}`
+(x_1, y_1)^\mathrm{T} + (x_2, y_2)^\mathrm{T} = (x_1 + x_2,\; y_1 + y_2)^\mathrm{T}
 $$
 
 减法同理：
 
 $$
-`(x_1, y_1)^\mathrm{T} - (x_2, y_2)^\mathrm{T} = (x_1 - x_2,\; y_1 - y_2)^\mathrm{T}`
+(x_1, y_1)^\mathrm{T} - (x_2, y_2)^\mathrm{T} = (x_1 - x_2,\; y_1 - y_2)^\mathrm{T}
 $$
 
 **几何意义——为什么是"平行四边形法则"？**
@@ -761,7 +761,7 @@ $$
 向量乘以一个标量 $c$，相当于每个分量都乘以 $c$：
 
 $$
-`c\,(x, y)^\mathrm{T} = (cx,\; cy)^\mathrm{T}`
+c\,(x, y)^\mathrm{T} = (cx,\; cy)^\mathrm{T}
 $$
 
 数乘的几何效果：
@@ -771,7 +771,7 @@ $$
 数乘后的模：
 
 $$
-`|c\mathbf{v}| = |c| \cdot |\mathbf{v}|`
+|c\mathbf{v}| = |c| \cdot |\mathbf{v}|
 $$
 
 > **为什么模会乘以 $|c|$ 而不是 $c$？** 因为如果 $c = -2$，向量的长度变为原来的 2 倍，方向反转。长度是正数，所以取 $|c| = 2$。
@@ -783,7 +783,7 @@ $$
 两个向量相等当且仅当它们的对应分量分别相等。即：
 
 $$
-`(x_1, y_1)^\mathrm{T} = (x_2, y_2)^\mathrm{T} \iff x_1 = x_2 \;\text{且}\; y_1 = y_2`
+(x_1, y_1)^\mathrm{T} = (x_2, y_2)^\mathrm{T} \iff x_1 = x_2 \;\text{且}\; y_1 = y_2
 $$
 
 这称为**向量相等原理**（equating like vectors）——它是解向量方程的核心工具。
@@ -803,7 +803,7 @@ $$
 两个向量的**点积（内积，dot product）**定义为：
 
 $$
-`\mathbf{u} \cdot \mathbf{v} = u_x v_x + u_y v_y`
+\mathbf{u} \cdot \mathbf{v} = u_x v_x + u_y v_y
 $$
 
 点积的结果是一个**标量**（不是向量），因此也称为"标量积"。
@@ -811,7 +811,7 @@ $$
 **垂直的判定条件**：
 
 $$
-`\mathbf{u} \perp \mathbf{v} \iff \mathbf{u} \cdot \mathbf{v} = 0`
+\mathbf{u} \perp \mathbf{v} \iff \mathbf{u} \cdot \mathbf{v} = 0
 $$
 
 > **为什么点积为零代表垂直？**
@@ -845,7 +845,7 @@ $$
 水平向量总是垂直于垂直向量。用点积验证：
 
 $$
-`(h_x, 0) \cdot (0, v_y) = h_x \cdot 0 + 0 \cdot v_y = 0`
+(h_x, 0) \cdot (0, v_y) = h_x \cdot 0 + 0 \cdot v_y = 0
 $$
 
 #### 通过斜率判断垂直
@@ -886,19 +886,19 @@ $$
 （a）
 
 $$
-`\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A = (5\mathbf{i} - \mathbf{j}) - (\mathbf{i} + 2\mathbf{j}) = (5-1)\mathbf{i} + (-1-2)\mathbf{j} = 4\mathbf{i} - 3\mathbf{j}`
+\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A = (5\mathbf{i} - \mathbf{j}) - (\mathbf{i} + 2\mathbf{j}) = (5-1)\mathbf{i} + (-1-2)\mathbf{j} = 4\mathbf{i} - 3\mathbf{j}
 $$
 
 （b）
 
 $$
-`|\overrightarrow{AB}| = \sqrt{4^2 + (-3)^2} = \sqrt{16 + 9} = \sqrt{25} = 5`
+|\overrightarrow{AB}| = \sqrt{4^2 + (-3)^2} = \sqrt{16 + 9} = \sqrt{25} = 5
 $$
 
 （c）同方向的单位向量为：
 
 $$
-`\hat{\mathbf{v}} = \frac{4\mathbf{i} - 3\mathbf{j}}{5} = \frac{4}{5}\mathbf{i} - \frac{3}{5}\mathbf{j}`
+\hat{\mathbf{v}} = \frac{4\mathbf{i} - 3\mathbf{j}}{5} = \frac{4}{5}\mathbf{i} - \frac{3}{5}\mathbf{j}
 $$
 
 验证模长：$\sqrt{(4/5)^2 + (-3/5)^2} = \sqrt{16/25 + 9/25} = \sqrt{25/25} = 1$。✓
@@ -922,46 +922,46 @@ $$
 （a）
 
 $$
-`\mathbf{a} + \mathbf{b} = (2\mathbf{i} + 3\mathbf{j}) + (-\mathbf{i} + 2\mathbf{j}) = (2-1)\mathbf{i} + (3+2)\mathbf{j} = \mathbf{i} + 5\mathbf{j}`
+\mathbf{a} + \mathbf{b} = (2\mathbf{i} + 3\mathbf{j}) + (-\mathbf{i} + 2\mathbf{j}) = (2-1)\mathbf{i} + (3+2)\mathbf{j} = \mathbf{i} + 5\mathbf{j}
 $$
 
 （b）
 
 $$
-`2\mathbf{a} - 3\mathbf{b} = 2(2\mathbf{i} + 3\mathbf{j}) - 3(-\mathbf{i} + 2\mathbf{j}) = (4\mathbf{i} + 6\mathbf{j}) + (3\mathbf{i} - 6\mathbf{j}) = 7\mathbf{i} + 0\mathbf{j} = 7\mathbf{i}`
+2\mathbf{a} - 3\mathbf{b} = 2(2\mathbf{i} + 3\mathbf{j}) - 3(-\mathbf{i} + 2\mathbf{j}) = (4\mathbf{i} + 6\mathbf{j}) + (3\mathbf{i} - 6\mathbf{j}) = 7\mathbf{i} + 0\mathbf{j} = 7\mathbf{i}
 $$
 
 （c）设 $p\mathbf{a} + q\mathbf{b} = 7\mathbf{i} + 8\mathbf{j}$，即：
 
 $$
-`p(2\mathbf{i} + 3\mathbf{j}) + q(-\mathbf{i} + 2\mathbf{j}) = 7\mathbf{i} + 8\mathbf{j}`
+p(2\mathbf{i} + 3\mathbf{j}) + q(-\mathbf{i} + 2\mathbf{j}) = 7\mathbf{i} + 8\mathbf{j}
 $$
 
 先展开括号：
 
 $$
-`2p\mathbf{i} + 3p\mathbf{j} - q\mathbf{i} + 2q\mathbf{j} = 7\mathbf{i} + 8\mathbf{j}`
+2p\mathbf{i} + 3p\mathbf{j} - q\mathbf{i} + 2q\mathbf{j} = 7\mathbf{i} + 8\mathbf{j}
 $$
 
 合并 **i** 和 **j** 的系数：
 
 $$
-`(2p - q)\mathbf{i} + (3p + 2q)\mathbf{j} = 7\mathbf{i} + 8\mathbf{j}`
+(2p - q)\mathbf{i} + (3p + 2q)\mathbf{j} = 7\mathbf{i} + 8\mathbf{j}
 $$
 
 利用向量相等原理，**i** 的系数必须相等，**j** 的系数也必须相等：
 
 $$
-`\begin{cases}
+\begin{cases}
 2p - q = 7 \quad (\text{① } \mathbf{i} \text{ 系数相等}) \\[4pt]
 3p + 2q = 8 \quad (\text{② } \mathbf{j} \text{ 系数相等})
-\end{cases}`
+\end{cases}
 $$
 
 解这个方程组。从①式得 $q = 2p - 7$，代入②式：
 
 $$
-`3p + 2(2p - 7) = 8 \;\Longrightarrow\; 3p + 4p - 14 = 8 \;\Longrightarrow\; 7p = 22 \;\Longrightarrow\; p = \frac{22}{7}`
+3p + 2(2p - 7) = 8 \;\Longrightarrow\; 3p + 4p - 14 = 8 \;\Longrightarrow\; 7p = 22 \;\Longrightarrow\; p = \frac{22}{7}
 $$
 
 于是 $q = 2 \times \frac{22}{7} - 7 = \frac{44}{7} - \frac{49}{7} = -\frac{5}{7}$。
@@ -988,23 +988,23 @@ $$
 （a）
 
 $$
-`\overrightarrow{PQ} = \mathbf{q} - \mathbf{p} = (5\mathbf{i} - 2\mathbf{j}) - (3\mathbf{i} + \mathbf{j}) = 2\mathbf{i} - 3\mathbf{j}`
+\overrightarrow{PQ} = \mathbf{q} - \mathbf{p} = (5\mathbf{i} - 2\mathbf{j}) - (3\mathbf{i} + \mathbf{j}) = 2\mathbf{i} - 3\mathbf{j}
 $$
 
 $$
-`\overrightarrow{PR} = \mathbf{r} - \mathbf{p} = (-2\mathbf{i} + 4\mathbf{j}) - (3\mathbf{i} + \mathbf{j}) = -5\mathbf{i} + 3\mathbf{j}`
+\overrightarrow{PR} = \mathbf{r} - \mathbf{p} = (-2\mathbf{i} + 4\mathbf{j}) - (3\mathbf{i} + \mathbf{j}) = -5\mathbf{i} + 3\mathbf{j}
 $$
 
 （b）设 $S$ 的位置向量为 $\mathbf{s}$。由 $\overrightarrow{PS} = \mathbf{s} - \mathbf{p}$ 且 $\overrightarrow{PS} = 2\overrightarrow{PQ}$，得：
 
 $$
-`\mathbf{s} - \mathbf{p} = 2(2\mathbf{i} - 3\mathbf{j}) = 4\mathbf{i} - 6\mathbf{j}`
+\mathbf{s} - \mathbf{p} = 2(2\mathbf{i} - 3\mathbf{j}) = 4\mathbf{i} - 6\mathbf{j}
 $$
 
 所以：
 
 $$
-`\mathbf{s} = \mathbf{p} + (4\mathbf{i} - 6\mathbf{j}) = (3\mathbf{i} + \mathbf{j}) + (4\mathbf{i} - 6\mathbf{j}) = 7\mathbf{i} - 5\mathbf{j}`
+\mathbf{s} = \mathbf{p} + (4\mathbf{i} - 6\mathbf{j}) = (3\mathbf{i} + \mathbf{j}) + (4\mathbf{i} - 6\mathbf{j}) = 7\mathbf{i} - 5\mathbf{j}
 $$
 
 因此 $S$ 的坐标为 $(7, -5)$。
@@ -1012,7 +1012,7 @@ $$
 （c）计算点积：
 
 $$
-`\overrightarrow{PQ} \cdot \overrightarrow{PR} = (2)(-5) + (-3)(3) = -10 - 9 = -19 \neq 0`
+\overrightarrow{PQ} \cdot \overrightarrow{PR} = (2)(-5) + (-3)(3) = -10 - 9 = -19 \neq 0
 $$
 
 因为点积不为零，所以 $\overrightarrow{PQ}$ 与 $\overrightarrow{PR}$ **不垂直**。
@@ -1049,7 +1049,7 @@ $$
 设 $M$ 是 $AB$ 的中点。从 $A$ 到 $M$ 的位移是 $\overrightarrow{AB}$ 的一半：
 
 $$
-`\mathbf{r}_M = \mathbf{r}_A + \frac{1}{2}\overrightarrow{AB} = \mathbf{r}_A + \frac{1}{2}(\mathbf{r}_B - \mathbf{r}_A) = \frac{2\mathbf{r}_A + \mathbf{r}_B - \mathbf{r}_A}{2} = \frac{\mathbf{r}_A + \mathbf{r}_B}{2}`
+\mathbf{r}_M = \mathbf{r}_A + \frac{1}{2}\overrightarrow{AB} = \mathbf{r}_A + \frac{1}{2}(\mathbf{r}_B - \mathbf{r}_A) = \frac{2\mathbf{r}_A + \mathbf{r}_B - \mathbf{r}_A}{2} = \frac{\mathbf{r}_A + \mathbf{r}_B}{2}
 $$
 
 #### 分点公式——详细推导
@@ -1059,12 +1059,12 @@ $$
 这意味着 $P$ 位于从 $A$ 到 $B$ 的 $\dfrac{m}{m+n}$ 处（从 $A$ 算起）。所以：
 
 $$
-`\begin{aligned}
+\begin{aligned}
 \mathbf{r}_P &= \mathbf{r}_A + \frac{m}{m+n}\overrightarrow{AB} \\
 &= \mathbf{r}_A + \frac{m}{m+n}(\mathbf{r}_B - \mathbf{r}_A) \\
 &= \frac{(m+n)\mathbf{r}_A + m\mathbf{r}_B - m\mathbf{r}_A}{m+n} \\
 &= \frac{n\mathbf{r}_A + m\mathbf{r}_B}{m+n}
-\end{aligned}`
+\end{aligned}
 $$
 
 > **记忆技巧**：分点公式中，$A$ 的系数是 $n$（对面那段的比例），$B$ 的系数是 $m$（对面那段的比例）。交叉相乘！
@@ -1078,7 +1078,7 @@ $$
 两个非零向量 $\mathbf{a}$ 和 $\mathbf{b}$ 平行（即方向相同或相反）当且仅当存在一个实数 $k$ 使得：
 
 $$
-`\mathbf{a} = k\mathbf{b}`
+\mathbf{a} = k\mathbf{b}
 $$
 
 即一个向量是另一个向量的标量倍。
@@ -1123,13 +1123,13 @@ $$
 先求 $\overrightarrow{BC} = \mathbf{c} - \mathbf{b}$：
 
 $$
-`\overrightarrow{BC} = (6\mathbf{i} + \mathbf{j}) - (4\mathbf{i} + 3\mathbf{j}) = 2\mathbf{i} - 2\mathbf{j}`
+\overrightarrow{BC} = (6\mathbf{i} + \mathbf{j}) - (4\mathbf{i} + 3\mathbf{j}) = 2\mathbf{i} - 2\mathbf{j}
 $$
 
 因为 $\overrightarrow{AD} = \overrightarrow{BC} = 2\mathbf{i} - 2\mathbf{j}$，而 $\overrightarrow{AD} = \mathbf{d} - \mathbf{a}$，所以：
 
 $$
-`\mathbf{d} = \mathbf{a} + \overrightarrow{AD} = (\mathbf{i} + 2\mathbf{j}) + (2\mathbf{i} - 2\mathbf{j}) = 3\mathbf{i}`
+\mathbf{d} = \mathbf{a} + \overrightarrow{AD} = (\mathbf{i} + 2\mathbf{j}) + (2\mathbf{i} - 2\mathbf{j}) = 3\mathbf{i}
 $$
 
 所以 $D$ 的坐标为 $(3, 0)$。
@@ -1143,7 +1143,7 @@ $\overrightarrow{DC} = \mathbf{c} - \mathbf{d}$，所以 $\mathbf{c} - \mathbf{d
 用 $AC$ 的中点计算：
 
 $$
-`\mathbf{m} = \frac{\mathbf{a} + \mathbf{c}}{2} = \frac{(\mathbf{i} + 2\mathbf{j}) + (6\mathbf{i} + \mathbf{j})}{2} = \frac{7\mathbf{i} + 3\mathbf{j}}{2} = 3.5\mathbf{i} + 1.5\mathbf{j}`
+\mathbf{m} = \frac{\mathbf{a} + \mathbf{c}}{2} = \frac{(\mathbf{i} + 2\mathbf{j}) + (6\mathbf{i} + \mathbf{j})}{2} = \frac{7\mathbf{i} + 3\mathbf{j}}{2} = 3.5\mathbf{i} + 1.5\mathbf{j}
 $$
 
 验证用 $BD$ 的中点：$\frac{\mathbf{b} + \mathbf{d}}{2} = \frac{(4\mathbf{i} + 3\mathbf{j}) + 3\mathbf{i}}{2} = \frac{7\mathbf{i} + 3\mathbf{j}}{2}$，一致。✓
@@ -1169,11 +1169,11 @@ $$
 （a）计算向量：
 
 $$
-`\overrightarrow{AB} = \mathbf{b} - \mathbf{a} = (5\mathbf{i} + 4\mathbf{j}) - (2\mathbf{i} + \mathbf{j}) = 3\mathbf{i} + 3\mathbf{j}`
+\overrightarrow{AB} = \mathbf{b} - \mathbf{a} = (5\mathbf{i} + 4\mathbf{j}) - (2\mathbf{i} + \mathbf{j}) = 3\mathbf{i} + 3\mathbf{j}
 $$
 
 $$
-`\overrightarrow{BC} = \mathbf{c} - \mathbf{b} = (8\mathbf{i} + 7\mathbf{j}) - (5\mathbf{i} + 4\mathbf{j}) = 3\mathbf{i} + 3\mathbf{j}`
+\overrightarrow{BC} = \mathbf{c} - \mathbf{b} = (8\mathbf{i} + 7\mathbf{j}) - (5\mathbf{i} + 4\mathbf{j}) = 3\mathbf{i} + 3\mathbf{j}
 $$
 
 观察发现 $\overrightarrow{BC} = \overrightarrow{AB}$，即 $\overrightarrow{BC} = 1 \cdot \overrightarrow{AB}$。存在标量 $k = 1$ 使得 $\overrightarrow{BC} = k\overrightarrow{AB}$，所以 $\overrightarrow{AB} \parallel \overrightarrow{BC}$。又因为这两个向量都通过点 $B$，故 $A$、$B$、$C$ 共线。
@@ -1215,19 +1215,19 @@ $$
 由分点公式（$m=3, n=1$）：
 
 $$
-`\mathbf{r}_D = \frac{n\mathbf{r}_A + m\mathbf{r}_B}{m+n} = \frac{1 \cdot \mathbf{a} + 3 \cdot \mathbf{b}}{3+1} = \frac{\mathbf{a} + 3\mathbf{b}}{4}`
+\mathbf{r}_D = \frac{n\mathbf{r}_A + m\mathbf{r}_B}{m+n} = \frac{1 \cdot \mathbf{a} + 3 \cdot \mathbf{b}}{3+1} = \frac{\mathbf{a} + 3\mathbf{b}}{4}
 $$
 
 方法二（直接法）：从 $A$ 出发走到 $B$ 的 $\frac{3}{4}$ 处。
 
 $$
-`\overrightarrow{OD} = \overrightarrow{OA} + \frac{3}{4}\overrightarrow{AB}`
+\overrightarrow{OD} = \overrightarrow{OA} + \frac{3}{4}\overrightarrow{AB}
 $$
 
 而 $\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA} = \mathbf{b} - \mathbf{a}$，所以：
 
 $$
-`\overrightarrow{OD} = \mathbf{a} + \frac{3}{4}(\mathbf{b} - \mathbf{a}) = \mathbf{a} + \frac{3}{4}\mathbf{b} - \frac{3}{4}\mathbf{a} = \frac{1}{4}\mathbf{a} + \frac{3}{4}\mathbf{b}`
+\overrightarrow{OD} = \mathbf{a} + \frac{3}{4}(\mathbf{b} - \mathbf{a}) = \mathbf{a} + \frac{3}{4}\mathbf{b} - \frac{3}{4}\mathbf{a} = \frac{1}{4}\mathbf{a} + \frac{3}{4}\mathbf{b}
 $$
 
 注意 $\frac{\mathbf{a} + 3\mathbf{b}}{4} = \frac{1}{4}\mathbf{a} + \frac{3}{4}\mathbf{b}$，两种方法结果一致。✓
@@ -1235,13 +1235,13 @@ $$
 （b）$C$ 在 $OA$ 上且 $OC:CA = 2:1$，所以 $C$ 分 $\overrightarrow{OA}$ 为 $2:1$（从 $O$ 算起）。因此：
 
 $$
-`\overrightarrow{OC} = \frac{2}{3}\overrightarrow{OA} = \frac{2}{3}\mathbf{a}`
+\overrightarrow{OC} = \frac{2}{3}\overrightarrow{OA} = \frac{2}{3}\mathbf{a}
 $$
 
 于是：
 
 $$
-`\overrightarrow{CD} = \overrightarrow{OD} - \overrightarrow{OC} = \left(\frac{1}{4}\mathbf{a} + \frac{3}{4}\mathbf{b}\right) - \frac{2}{3}\mathbf{a}`
+\overrightarrow{CD} = \overrightarrow{OD} - \overrightarrow{OC} = \left(\frac{1}{4}\mathbf{a} + \frac{3}{4}\mathbf{b}\right) - \frac{2}{3}\mathbf{a}
 $$
 
 通分计算 $\mathbf{a}$ 的系数：$\frac{1}{4} - \frac{2}{3} = \frac{3}{12} - \frac{8}{12} = -\frac{5}{12}$。
@@ -1249,7 +1249,7 @@ $$
 所以：
 
 $$
-`\overrightarrow{CD} = -\frac{5}{12}\mathbf{a} + \frac{3}{4}\mathbf{b}`
+\overrightarrow{CD} = -\frac{5}{12}\mathbf{a} + \frac{3}{4}\mathbf{b}
 $$
 
 （c）代入 $\mathbf{a} = 3\mathbf{i} + 2\mathbf{j}$，$\mathbf{b} = \mathbf{i} + 6\mathbf{j}$：
@@ -1257,24 +1257,24 @@ $$
 先求 $\overrightarrow{OC}$：
 
 $$
-`\overrightarrow{OC} = \frac{2}{3}(3\mathbf{i} + 2\mathbf{j}) = 2\mathbf{i} + \frac{4}{3}\mathbf{j}`
+\overrightarrow{OC} = \frac{2}{3}(3\mathbf{i} + 2\mathbf{j}) = 2\mathbf{i} + \frac{4}{3}\mathbf{j}
 $$
 
 再求 $\overrightarrow{OD}$：
 
 $$
-`\begin{aligned}
+\begin{aligned}
 \overrightarrow{OD} &= \frac{1}{4}(3\mathbf{i} + 2\mathbf{j}) + \frac{3}{4}(\mathbf{i} + 6\mathbf{j}) \\
 &= \left(\frac{3}{4} + \frac{3}{4}\right)\mathbf{i} + \left(\frac{1}{2} + \frac{9}{2}\right)\mathbf{j} \\
 &= \frac{6}{4}\mathbf{i} + \frac{10}{2}\mathbf{j} \\
 &= \frac{3}{2}\mathbf{i} + 5\mathbf{j}
-\end{aligned}`
+\end{aligned}
 $$
 
 计算点积：
 
 $$
-`\overrightarrow{OC} \cdot \overrightarrow{OD} = (2)\left(\frac{3}{2}\right) + \left(\frac{4}{3}\right)(5) = 3 + \frac{20}{3} = \frac{9}{3} + \frac{20}{3} = \frac{29}{3} \neq 0`
+\overrightarrow{OC} \cdot \overrightarrow{OD} = (2)\left(\frac{3}{2}\right) + \left(\frac{4}{3}\right)(5) = 3 + \frac{20}{3} = \frac{9}{3} + \frac{20}{3} = \frac{29}{3} \neq 0
 $$
 
 点积不为零，所以 $\overrightarrow{OC}$ 与 $\overrightarrow{OD}$ **不垂直**。
@@ -1290,7 +1290,7 @@ $$
 设物体 $A$ 相对于参考系 $C$ 的速度为 $\mathbf{v}_{A/C}$，物体 $A$ 相对于物体 $B$ 的速度为 $\mathbf{v}_{A/B}$，物体 $B$ 相对于参考系 $C$ 的速度为 $\mathbf{v}_{B/C}$，则：
 
 $$
-`\mathbf{v}_{A/C} = \mathbf{v}_{A/B} + \mathbf{v}_{B/C}`
+\mathbf{v}_{A/C} = \mathbf{v}_{A/B} + \mathbf{v}_{B/C}
 $$
 
 > **直观理解**：
@@ -1310,7 +1310,7 @@ $$
 设速度 $\mathbf{v}$ 的大小为 $v$（速率），与水平方向的夹角为 $\theta$，则：
 
 $$
-`\mathbf{v} = (v\cos\theta)\,\mathbf{i} + (v\sin\theta)\,\mathbf{j}`
+\mathbf{v} = (v\cos\theta)\,\mathbf{i} + (v\sin\theta)\,\mathbf{j}
 $$
 
 其中 $v_x = v\cos\theta$ 是水平分量，$v_y = v\sin\theta$ 是垂直分量。
@@ -1324,19 +1324,19 @@ $$
 两个运动物体相撞的条件是：在**同一时刻**，它们的位置向量**相等**。即：
 
 $$
-`\mathbf{r}_1(t) = \mathbf{r}_2(t)`
+\mathbf{r}_1(t) = \mathbf{r}_2(t)
 $$
 
 对于匀速直线运动，位置向量满足：
 
 $$
-`\mathbf{r}(t) = \mathbf{r}_0 + \mathbf{v}t`
+\mathbf{r}(t) = \mathbf{r}_0 + \mathbf{v}t
 $$
 
 其中 $\mathbf{r}_0$ 是初始位置向量，$\mathbf{v}$ 是速度向量。因此相撞条件可以展开为：
 
 $$
-`\mathbf{r}_{01} + \mathbf{v}_1 t = \mathbf{r}_{02} + \mathbf{v}_2 t`
+\mathbf{r}_{01} + \mathbf{v}_1 t = \mathbf{r}_{02} + \mathbf{v}_2 t
 $$
 
 这是一个关于时间 $t$ 的向量方程。它等价于两个分量方程分别相等，从而可以解出 $t$ 并验证是否一致。
@@ -1371,19 +1371,19 @@ $$
 由速度合成公式：
 
 $$
-`\mathbf{v}_{B/G} = \mathbf{v}_{B/W} + \mathbf{v}_{W/G} = 6\mathbf{i} + 4\mathbf{j}`
+\mathbf{v}_{B/G} = \mathbf{v}_{B/W} + \mathbf{v}_{W/G} = 6\mathbf{i} + 4\mathbf{j}
 $$
 
 合速度的大小（速率）：
 
 $$
-`|\mathbf{v}_{B/G}| = \sqrt{6^2 + 4^2} = \sqrt{36 + 16} = \sqrt{52} = 2\sqrt{13} \approx 7.21\ \text{m/s}`
+|\mathbf{v}_{B/G}| = \sqrt{6^2 + 4^2} = \sqrt{36 + 16} = \sqrt{52} = 2\sqrt{13} \approx 7.21\ \text{m/s}
 $$
 
 合速度的方向：设 $\theta$ 为与正东方向的夹角（逆时针为正）。
 
 $$
-`\tan\theta = \frac{4}{6} = \frac{2}{3} \;\Longrightarrow\; \theta = \arctan\!\left(\frac{2}{3}\right) \approx 33.69^\circ`
+\tan\theta = \frac{4}{6} = \frac{2}{3} \;\Longrightarrow\; \theta = \arctan\!\left(\frac{2}{3}\right) \approx 33.69^\circ
 $$
 
 因此船相对于地面的速度大小为 $2\sqrt{13}\ \text{m/s}$，方向为北偏东 $33.69^\circ$（即从正东方向逆时针旋转 $33.69^\circ$）。
@@ -1410,19 +1410,19 @@ $$
 水平分量：
 
 $$
-`v_x = v\cos\theta = 20 \times \cos 30^\circ = 20 \times \frac{\sqrt{3}}{2} = 10\sqrt{3} \approx 17.32\ \text{m/s}`
+v_x = v\cos\theta = 20 \times \cos 30^\circ = 20 \times \frac{\sqrt{3}}{2} = 10\sqrt{3} \approx 17.32\ \text{m/s}
 $$
 
 垂直分量：
 
 $$
-`v_y = v\sin\theta = 20 \times \sin 30^\circ = 20 \times \frac{1}{2} = 10\ \text{m/s}`
+v_y = v\sin\theta = 20 \times \sin 30^\circ = 20 \times \frac{1}{2} = 10\ \text{m/s}
 $$
 
 （b）初速度的向量形式：
 
 $$
-`\mathbf{v}_0 = 10\sqrt{3}\ \mathbf{i} + 10\ \mathbf{j}\ \text{m/s}`
+\mathbf{v}_0 = 10\sqrt{3}\ \mathbf{i} + 10\ \mathbf{j}\ \text{m/s}
 $$
 
 > **物理意义**：
@@ -1450,28 +1450,28 @@ $$
 $P$ 的位置向量（从原点出发）：
 
 $$
-`\mathbf{r}_P(t) = (0, 0)^\mathrm{T} + (3, 4)^\mathrm{T}\,t = (3t,\; 4t)^\mathrm{T}`
+\mathbf{r}_P(t) = (0, 0)^\mathrm{T} + (3, 4)^\mathrm{T}\,t = (3t,\; 4t)^\mathrm{T}
 $$
 
 $Q$ 的位置向量（从 $(10,5)$ 出发）：
 
 $$
-`\mathbf{r}_Q(t) = (10, 5)^\mathrm{T} + (-2, 1)^\mathrm{T}\,t = (10 - 2t,\; 5 + t)^\mathrm{T}`
+\mathbf{r}_Q(t) = (10, 5)^\mathrm{T} + (-2, 1)^\mathrm{T}\,t = (10 - 2t,\; 5 + t)^\mathrm{T}
 $$
 
 如果两船相撞，则存在某个 $t \geq 0$ 使得 $\mathbf{r}_P(t) = \mathbf{r}_Q(t)$，即：
 
 $$
-`(3t,\; 4t)^\mathrm{T} = (10 - 2t,\; 5 + t)^\mathrm{T}`
+(3t,\; 4t)^\mathrm{T} = (10 - 2t,\; 5 + t)^\mathrm{T}
 $$
 
 这给出两个分量方程：
 
 $$
-`\begin{cases}
+\begin{cases}
 x\text{分量：} & 3t = 10 - 2t \;\Longrightarrow\; 5t = 10 \;\Longrightarrow\; t = 2 \\[4pt]
 y\text{分量：} & 4t = 5 + t \;\Longrightarrow\; 3t = 5 \;\Longrightarrow\; t = \dfrac{5}{3}
-\end{cases}`
+\end{cases}
 $$
 
 两个 $t$ 值不相等（$2 \neq \frac{5}{3}$），因此不存在同时满足两个分量方程的时刻。两船不会相撞。
@@ -1497,7 +1497,7 @@ $$
 一个质点沿直线运动，它的位移 $s$（单位：米）与时间 $t$（单位：秒）的关系为：
 
 $$
-`s(t) = t^2`
+s(t) = t^2
 $$
 
 我们想知道 $t = 1$ 秒这一**瞬间**的速度。
@@ -1507,13 +1507,13 @@ $$
 如果取一个时间区间 $[1, 1 + \Delta t]$，质点在区间内的平均速度是：
 
 $$
-`\text{平均速度} = \frac{s(1 + \Delta t) - s(1)}{\Delta t}`
+\text{平均速度} = \frac{s(1 + \Delta t) - s(1)}{\Delta t}
 $$
 
 代入 $s(t) = t^2$：
 
 $$
-`\frac{(1 + \Delta t)^2 - 1^2}{\Delta t} = \frac{1 + 2\Delta t + (\Delta t)^2 - 1}{\Delta t} = \frac{2\Delta t + (\Delta t)^2}{\Delta t} = 2 + \Delta t`
+\frac{(1 + \Delta t)^2 - 1^2}{\Delta t} = \frac{1 + 2\Delta t + (\Delta t)^2 - 1}{\Delta t} = \frac{2\Delta t + (\Delta t)^2}{\Delta t} = 2 + \Delta t
 $$
 
 #### 第二步：让 $\Delta t$ 越来越小
@@ -1535,7 +1535,7 @@ $$
 当 $\Delta t$ 趋近于 0 时，平均速度 $2 + \Delta t$ 趋近于 2。我们记：
 
 $$
-`v(1) = \lim_{\Delta t \to 0} \frac{s(1 + \Delta t) - s(1)}{\Delta t} = \lim_{\Delta t \to 0} (2 + \Delta t) = 2`
+v(1) = \lim_{\Delta t \to 0} \frac{s(1 + \Delta t) - s(1)}{\Delta t} = \lim_{\Delta t \to 0} (2 + \Delta t) = 2
 $$
 
 这个极限值就是质点在 $t = 1$ 时的**瞬时速度**。
@@ -1551,7 +1551,7 @@ $$
 一般地，对于函数 $y = f(x)$，它在 $x = a$ 处的**导数**（即瞬时变化率）定义为：
 
 $$
-`f'(a) = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}`
+f'(a) = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}
 $$
 
 其中 $h$ 就是前面例子中的 $\Delta x$ 或 $\Delta t$。
@@ -1574,13 +1574,13 @@ $$
 #### 推导 1：$f(x) = x^2$
 
 $$
-`\begin{aligned}
+\begin{aligned}
 f'(x) &= \lim_{h \to 0} \frac{(x + h)^2 - x^2}{h} \\
 &= \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} \\
 &= \lim_{h \to 0} \frac{2xh + h^2}{h} \\
 &= \lim_{h \to 0} (2x + h) \\
 &= 2x
-\end{aligned}`
+\end{aligned}
 $$
 
 因此 $\dfrac{d}{dx}(x^2) = 2x$。
@@ -1590,20 +1590,20 @@ $$
 #### 推导 2：$f(x) = x^3$
 
 $$
-`\begin{aligned}
+\begin{aligned}
 f'(x) &= \lim_{h \to 0} \frac{(x + h)^3 - x^3}{h}
-\end{aligned}`
+\end{aligned}
 $$
 
 展开 $(x + h)^3 = x^3 + 3x^2h + 3xh^2 + h^3$：
 
 $$
-`\begin{aligned}
+\begin{aligned}
 f'(x) &= \lim_{h \to 0} \frac{x^3 + 3x^2h + 3xh^2 + h^3 - x^3}{h} \\
 &= \lim_{h \to 0} \frac{3x^2h + 3xh^2 + h^3}{h} \\
 &= \lim_{h \to 0} (3x^2 + 3xh + h^2) \\
 &= 3x^2
-\end{aligned}`
+\end{aligned}
 $$
 
 因此 $\dfrac{d}{dx}(x^3) = 3x^2$。
@@ -1611,25 +1611,25 @@ $$
 #### 推导 3：$f(x) = \dfrac{1}{x}$（$x \neq 0$）
 
 $$
-`\begin{aligned}
+\begin{aligned}
 f'(x) &= \lim_{h \to 0} \frac{\frac{1}{x + h} - \frac{1}{x}}{h}
-\end{aligned}`
+\end{aligned}
 $$
 
 先通分分子：
 
 $$
-`\frac{1}{x + h} - \frac{1}{x} = \frac{x - (x + h)}{x(x + h)} = \frac{-h}{x(x + h)}`
+\frac{1}{x + h} - \frac{1}{x} = \frac{x - (x + h)}{x(x + h)} = \frac{-h}{x(x + h)}
 $$
 
 所以：
 
 $$
-`\begin{aligned}
+\begin{aligned}
 f'(x) &= \lim_{h \to 0} \frac{-h}{x(x + h)} \cdot \frac{1}{h} \\
 &= \lim_{h \to 0} \frac{-1}{x(x + h)} \\
 &= -\frac{1}{x^2}
-\end{aligned}`
+\end{aligned}
 $$
 
 因此 $\dfrac{d}{dx}\!\left(\dfrac{1}{x}\right) = -\dfrac{1}{x^2}$。
@@ -1655,7 +1655,7 @@ $$
 这个模式就是**幂法则**：对任意实数 $n$，
 
 $$
-\boxed{`\dfrac{d}{dx}(x^n) = n x^{n-1}`}
+\boxed{\dfrac{d}{dx}(x^n) = n x^{n-1}}
 $$
 
 > **幂法则的完整推导**（利用二项式定理展开，仅对正整数 $n$）：
@@ -1683,11 +1683,11 @@ $$
 设 $\mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j}$，则：
 
 $$
-`\mathbf{v}(t) = \frac{d\mathbf{r}}{dt} = \frac{dx}{dt}\mathbf{i} + \frac{dy}{dt}\mathbf{j}`
+\mathbf{v}(t) = \frac{d\mathbf{r}}{dt} = \frac{dx}{dt}\mathbf{i} + \frac{dy}{dt}\mathbf{j}
 $$
 
 $$
-`\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = \frac{d^2\mathbf{r}}{dt^2} = \frac{d^2x}{dt^2}\mathbf{i} + \frac{d^2y}{dt^2}\mathbf{j}`
+\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = \frac{d^2\mathbf{r}}{dt^2} = \frac{d^2x}{dt^2}\mathbf{i} + \frac{d^2y}{dt^2}\mathbf{j}
 $$
 
 也就是说，对向量函数求导，就是对它的各个分量分别求导。
@@ -1706,7 +1706,7 @@ $$
 或者用定积分的形式（更适合已知确定时间段的问题）：
 
 $$
-`\mathbf{v}(t) = \mathbf{v}_0 + \int_0^t \mathbf{a}(u) \, du,\quad \mathbf{r}(t) = \mathbf{r}_0 + \int_0^t \mathbf{v}(u) \, du`
+\mathbf{v}(t) = \mathbf{v}_0 + \int_0^t \mathbf{a}(u) \, du,\quad \mathbf{r}(t) = \mathbf{r}_0 + \int_0^t \mathbf{v}(u) \, du
 $$
 
 这里先建立直观理解：**微分**是求变化率（位置 → 速度 → 加速度），**积分**是求累积量（加速度 → 速度 → 位置），两者互为逆运算。
@@ -1731,20 +1731,20 @@ $$
 （a）
 
 $$
-`\begin{aligned}
+\begin{aligned}
 \text{平均速度} &= \frac{s(2 + h) - s(2)}{h} \\
 &= \frac{[3(2+h)^2 - 2(2+h) + 1] - [3(4) - 4 + 1]}{h} \\
 &= \frac{[3(4 + 4h + h^2) - 4 - 2h + 1] - [12 - 4 + 1]}{h} \\
 &= \frac{[12 + 12h + 3h^2 - 4 - 2h + 1] - 9}{h} \\
 &= \frac{[9 + 10h + 3h^2] - 9}{h} \\
 &= \frac{10h + 3h^2}{h} = 10 + 3h
-\end{aligned}`
+\end{aligned}
 $$
 
 （b）瞬时速度是 $h \to 0$ 时平均速度的极限：
 
 $$
-`v(2) = \lim_{h \to 0} (10 + 3h) = 10\ \text{m/s}`
+v(2) = \lim_{h \to 0} (10 + 3h) = 10\ \text{m/s}
 $$
 
 因此质点在 $t = 2$ 秒时的瞬时速度为 $10\ \text{m/s}$。
@@ -1760,14 +1760,14 @@ $$
 **解**：
 
 $$
-`\begin{aligned}
+\begin{aligned}
 f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h} \\
 &= \lim_{h \to 0} \frac{[4(x + h) - (x + h)^2] - [4x - x^2]}{h} \\
 &= \lim_{h \to 0} \frac{4x + 4h - (x^2 + 2xh + h^2) - 4x + x^2}{h} \\
 &= \lim_{h \to 0} \frac{4h - 2xh - h^2}{h} \\
 &= \lim_{h \to 0} (4 - 2x - h) \\
 &= 4 - 2x
-\end{aligned}`
+\end{aligned}
 $$
 
 因此 $f'(x) = 4 - 2x$。
@@ -1784,7 +1784,7 @@ $$
 一个质点在平面内运动，它的位置向量为：
 
 $$
-`\mathbf{r}(t) = (t^3 - 3t)\mathbf{i} + (t^2 - 2t)\mathbf{j}`
+\mathbf{r}(t) = (t^3 - 3t)\mathbf{i} + (t^2 - 2t)\mathbf{j}
 $$
 
 其中 $t$ 以秒为单位，位置以米为单位。
@@ -1805,7 +1805,7 @@ $$
 （a）速度是位置对时间的导数，对各分量分别求导：
 
 $$
-`\mathbf{v}(t) = \frac{d\mathbf{r}}{dt} = \frac{d}{dt}(t^3 - 3t)\,\mathbf{i} + \frac{d}{dt}(t^2 - 2t)\,\mathbf{j}`
+\mathbf{v}(t) = \frac{d\mathbf{r}}{dt} = \frac{d}{dt}(t^3 - 3t)\,\mathbf{i} + \frac{d}{dt}(t^2 - 2t)\,\mathbf{j}
 $$
 
 使用幂法则：
@@ -1817,29 +1817,29 @@ $$
 因此：
 
 $$
-`\mathbf{v}(t) = (3t^2 - 3)\mathbf{i} + (2t - 2)\mathbf{j}`
+\mathbf{v}(t) = (3t^2 - 3)\mathbf{i} + (2t - 2)\mathbf{j}
 $$
 
 （b）加速度是速度对时间的导数：
 
 $$
-`\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = \frac{d}{dt}(3t^2 - 3)\,\mathbf{i} + \frac{d}{dt}(2t - 2)\,\mathbf{j}`
+\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = \frac{d}{dt}(3t^2 - 3)\,\mathbf{i} + \frac{d}{dt}(2t - 2)\,\mathbf{j}
 $$
 
 $$
-`\mathbf{a}(t) = (6t)\mathbf{i} + 2\mathbf{j}`
+\mathbf{a}(t) = (6t)\mathbf{i} + 2\mathbf{j}
 $$
 
 （c）代入 $t = 2$：
 
 $$
-`\mathbf{v}(2) = (3 \times 4 - 3)\mathbf{i} + (4 - 2)\mathbf{j} = 9\mathbf{i} + 2\mathbf{j}\ \text{m/s}`
+\mathbf{v}(2) = (3 \times 4 - 3)\mathbf{i} + (4 - 2)\mathbf{j} = 9\mathbf{i} + 2\mathbf{j}\ \text{m/s}
 $$
 
 速度的大小：$|\mathbf{v}(2)| = \sqrt{9^2 + 2^2} = \sqrt{81 + 4} = \sqrt{85} \approx 9.22\ \text{m/s}$
 
 $$
-`\mathbf{a}(2) = (6 \times 2)\mathbf{i} + 2\mathbf{j} = 12\mathbf{i} + 2\mathbf{j}\ \text{m/s}^2`
+\mathbf{a}(2) = (6 \times 2)\mathbf{i} + 2\mathbf{j} = 12\mathbf{i} + 2\mathbf{j}\ \text{m/s}^2
 $$
 
 加速度的大小：$|\mathbf{a}(2)| = \sqrt{12^2 + 2^2} = \sqrt{144 + 4} = \sqrt{148} = 2\sqrt{37} \approx 12.17\ \text{m/s}^2$
@@ -1847,17 +1847,17 @@ $$
 （d）已知 $\mathbf{a}(t) = (6t)\mathbf{i} + 2\mathbf{j}$，对加速度积分求速度：
 
 $$
-`\mathbf{v}(t) = \int \mathbf{a}(t) \, dt = \left(\int 6t \, dt\right)\mathbf{i} + \left(\int 2 \, dt\right)\mathbf{j}`
+\mathbf{v}(t) = \int \mathbf{a}(t) \, dt = \left(\int 6t \, dt\right)\mathbf{i} + \left(\int 2 \, dt\right)\mathbf{j}
 $$
 
 $$
-`= (3t^2 + C_1)\mathbf{i} + (2t + C_2)\mathbf{j}`
+= (3t^2 + C_1)\mathbf{i} + (2t + C_2)\mathbf{j}
 $$
 
 由 $\mathbf{v}_0 = \mathbf{v}(0) = -3\mathbf{i} - 2\mathbf{j}$，代入 $t = 0$ 得 $C_1 = -3$，$C_2 = -2$。所以：
 
 $$
-`\mathbf{v}(t) = (3t^2 - 3)\mathbf{i} + (2t - 2)\mathbf{j}`
+\mathbf{v}(t) = (3t^2 - 3)\mathbf{i} + (2t - 2)\mathbf{j}
 $$
 
 与（a）一致。✓
@@ -1865,17 +1865,17 @@ $$
 再对速度积分求位置：
 
 $$
-`\mathbf{r}(t) = \int \mathbf{v}(t) \, dt = \left(\int (3t^2 - 3) \, dt\right)\mathbf{i} + \left(\int (2t - 2) \, dt\right)\mathbf{j}`
+\mathbf{r}(t) = \int \mathbf{v}(t) \, dt = \left(\int (3t^2 - 3) \, dt\right)\mathbf{i} + \left(\int (2t - 2) \, dt\right)\mathbf{j}
 $$
 
 $$
-`= (t^3 - 3t + D_1)\mathbf{i} + (t^2 - 2t + D_2)\mathbf{j}`
+= (t^3 - 3t + D_1)\mathbf{i} + (t^2 - 2t + D_2)\mathbf{j}
 $$
 
 由 $\mathbf{r}_0 = \mathbf{r}(0) = \mathbf{0}$，代入 $t = 0$ 得 $D_1 = 0$，$D_2 = 0$。所以：
 
 $$
-`\mathbf{r}(t) = (t^3 - 3t)\mathbf{i} + (t^2 - 2t)\mathbf{j}`
+\mathbf{r}(t) = (t^3 - 3t)\mathbf{i} + (t^2 - 2t)\mathbf{j}
 $$
 
 与原始位置函数一致。✓
@@ -1949,7 +1949,7 @@ $$
 **8.** 一个质点在平面内运动，它的位置向量为：
 
 $$
-`\mathbf{r}(t) = (2t^2 + t)\mathbf{i} + (3t - 1)\mathbf{j}`
+\mathbf{r}(t) = (2t^2 + t)\mathbf{i} + (3t - 1)\mathbf{j}
 $$
 
 （a）求速度向量 $\mathbf{v}(t)$。
@@ -1993,12 +1993,12 @@ $|7\mathbf{i}| = 7$，所以单位向量 $= \dfrac{7\mathbf{i}}{7} = \mathbf{i}$
 （b）$P$ 是 $BC$ 的中点，所以 $\mathbf{r}_P = \dfrac{\mathbf{r}_B + \mathbf{r}_C}{2}$。$Q$ 是 $CA$ 的中点，所以 $\mathbf{r}_Q = \dfrac{\mathbf{r}_C + \mathbf{r}_A}{2}$。
 
 $$
-`\begin{aligned}
+\begin{aligned}
 \overrightarrow{PQ} &= \mathbf{r}_Q - \mathbf{r}_P \\
 &= \frac{\mathbf{r}_C + \mathbf{r}_A}{2} - \frac{\mathbf{r}_B + \mathbf{r}_C}{2} \\
 &= \frac{\mathbf{r}_A - \mathbf{r}_B}{2} \\
 &= \frac{1}{2}\overrightarrow{BA} = -\frac{1}{2}\overrightarrow{AB} = -\frac{1}{2}\mathbf{p}
-\end{aligned}`
+\end{aligned}
 $$
 
 （c）由（b）得 $\overrightarrow{PQ} = -\dfrac{1}{2}\mathbf{p} = -\dfrac{1}{2}\overrightarrow{AB}$，所以 $\overrightarrow{PQ} \parallel \overrightarrow{AB}$ 且 $|\overrightarrow{PQ}| = \dfrac{1}{2}|\overrightarrow{AB}|$，即 $PQ = \dfrac{1}{2}AB$。✓
@@ -2012,11 +2012,11 @@ $$
 （a）
 
 $$
-`\overrightarrow{AB} = \mathbf{b} - \mathbf{a} = (5\mathbf{i} + 6\mathbf{j}) - (3\mathbf{i} + 2\mathbf{j}) = 2\mathbf{i} + 4\mathbf{j}`
+\overrightarrow{AB} = \mathbf{b} - \mathbf{a} = (5\mathbf{i} + 6\mathbf{j}) - (3\mathbf{i} + 2\mathbf{j}) = 2\mathbf{i} + 4\mathbf{j}
 $$
 
 $$
-`\overrightarrow{BC} = \mathbf{c} - \mathbf{b} = (9\mathbf{i} + 14\mathbf{j}) - (5\mathbf{i} + 6\mathbf{j}) = 4\mathbf{i} + 8\mathbf{j}`
+\overrightarrow{BC} = \mathbf{c} - \mathbf{b} = (9\mathbf{i} + 14\mathbf{j}) - (5\mathbf{i} + 6\mathbf{j}) = 4\mathbf{i} + 8\mathbf{j}
 $$
 
 $\overrightarrow{BC} = 2(2\mathbf{i} + 4\mathbf{j}) = 2\overrightarrow{AB}$，存在 $k = 2$ 使得 $\overrightarrow{BC} = k\overrightarrow{AB}$，所以 $A$、$B$、$C$ 共线。
@@ -2036,18 +2036,18 @@ $|\overrightarrow{BC}| = \sqrt{4^2 + 8^2} = \sqrt{16 + 64} = \sqrt{80} = 4\sqrt{
 （b）$AQ:QB = 2:3$，所以 $AQ:AB = 2:5$，$Q$ 从 $A$ 到 $B$ 的 $\dfrac{2}{5}$ 处。
 
 $$
-`\begin{aligned}
+\begin{aligned}
 \overrightarrow{OQ} &= \overrightarrow{OA} + \frac{2}{5}\overrightarrow{AB} \\
 &= \mathbf{a} + \frac{2}{5}(\mathbf{b} - \mathbf{a}) \\
 &= \mathbf{a} + \frac{2}{5}\mathbf{b} - \frac{2}{5}\mathbf{a} \\
 &= \frac{3}{5}\mathbf{a} + \frac{2}{5}\mathbf{b}
-\end{aligned}`
+\end{aligned}
 $$
 
 （c）
 
 $$
-`\overrightarrow{PQ} = \overrightarrow{OQ} - \overrightarrow{OP} = \left(\frac{3}{5}\mathbf{a} + \frac{2}{5}\mathbf{b}\right) - \frac{1}{3}\mathbf{a} = \left(\frac{3}{5} - \frac{1}{3}\right)\mathbf{a} + \frac{2}{5}\mathbf{b}`
+\overrightarrow{PQ} = \overrightarrow{OQ} - \overrightarrow{OP} = \left(\frac{3}{5}\mathbf{a} + \frac{2}{5}\mathbf{b}\right) - \frac{1}{3}\mathbf{a} = \left(\frac{3}{5} - \frac{1}{3}\right)\mathbf{a} + \frac{2}{5}\mathbf{b}
 $$
 
 通分：$\dfrac{3}{5} - \dfrac{1}{3} = \dfrac{9}{15} - \dfrac{5}{15} = \dfrac{4}{15}$
@@ -2061,20 +2061,20 @@ $$
 （a）
 
 $$
-`\mathbf{r}_A(t) = (0, 5)^\mathrm{T} + (2, 3)^\mathrm{T}\,t = (2t,\; 5 + 3t)^\mathrm{T}`
+\mathbf{r}_A(t) = (0, 5)^\mathrm{T} + (2, 3)^\mathrm{T}\,t = (2t,\; 5 + 3t)^\mathrm{T}
 $$
 
 $$
-`\mathbf{r}_B(t) = (10, 0)^\mathrm{T} + (-3, 4)^\mathrm{T}\,t = (10 - 3t,\; 4t)^\mathrm{T}`
+\mathbf{r}_B(t) = (10, 0)^\mathrm{T} + (-3, 4)^\mathrm{T}\,t = (10 - 3t,\; 4t)^\mathrm{T}
 $$
 
 （b）令 $\mathbf{r}_A(t) = \mathbf{r}_B(t)$：
 
 $$
-`\begin{cases}
+\begin{cases}
 2t = 10 - 3t \;\Longrightarrow\; 5t = 10 \;\Longrightarrow\; t = 2 \\[4pt]
 5 + 3t = 4t \;\Longrightarrow\; 5 = t \;\Longrightarrow\; t = 5
-\end{cases}`
+\end{cases}
 $$
 
 两个 $t$ 值不相等（$2 \neq 5$），所以两船不会相撞。
@@ -2095,7 +2095,7 @@ $$
 方向：设 $\theta$ 为与正北方向的夹角。
 
 $$
-`\tan\theta = \frac{6}{10} = 0.6 \;\Longrightarrow\; \theta = \arctan(0.6) \approx 30.96^\circ`
+\tan\theta = \frac{6}{10} = 0.6 \;\Longrightarrow\; \theta = \arctan(0.6) \approx 30.96^\circ
 $$
 
 所以方向为东偏北 $30.96^\circ$（或北偏东 $59.04^\circ$）。

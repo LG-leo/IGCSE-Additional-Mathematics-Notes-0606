@@ -1,0 +1,4 @@
+{
+    "deepseek-copilot.maxTokens": 13000,
+    "deepseek-copilot.experimental.stabilizeToolList": true
+}
