@@ -1,0 +1,37 @@
+name: Render Markdown with Math
+
+# 触发条件：当代码被推送到 main 或 master 分支时运行
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 拉取你的仓库代码
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. 设置 Python 环境 (我们用 Python 来渲染公式)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # 3. 安装必要的 Python 库
+      - name: Install dependencies
+        run: |
+          pip install mkdocs mkdocs-material mkdocs-mathjax
+
+      # 4. 构建文档网站 (核心步骤: 将 Markdown 转换成带公式的 HTML)
+      - name: Build site with MkDocs
+        run: mkdocs build
+
+      # 5. 部署到 gh-pages 分支
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages
