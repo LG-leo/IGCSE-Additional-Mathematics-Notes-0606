@@ -16,7 +16,6 @@ jobs:
         with:
           python-version: '3.x'
 
-      # 关键修正：只安装这两个包即可
       - name: Install dependencies
         run: |
           pip install mkdocs mkdocs-material
