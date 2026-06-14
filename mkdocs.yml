@@ -1,0 +1,11 @@
+site_name: "我的数学笔记"
+theme: material  # 选择一个好看的默认主题
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true  # 开启通用 LaTeX 支持
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
