@@ -1,14 +1,15 @@
-# 不定积分与求导：变化率视角
+# 求导与不定积分：变化率视角
 - 这份笔记由 LG-leo 整理和维护。如果你觉得这份笔记对你有帮助，欢迎在 GitHub 上关注我或给我一个 ⭐，这能帮助我持续产出更多免费的学习资源。
 - 我的其他课程笔记：https://github.com/LG-leo?tab=repositories
-- This note is maintained by LG-leo. If you find it helpful, feel free to follow me or leave a ⭐ on GitHub. It helps me keep producing more free study resources. Check out my other notes: https://github.com/LG-leo?tab=repositories
-## 1. 变化率与导数的基本概念
+- This note is maintained by LG-leo. If you find it helpful, please feel free to follow me or leave a ⭐ on GitHub. It helps me keep producing more free study resources. Check out my other notes: https://github.com/LG-leo?tab=repositories
 
-导数表示函数在某一点的变化快慢。对于函数 y = f(x)，导数记作 dy/dx 或 f'(x)。
+## 1. 变化率与微分的概念
 
-**物理意义**：如果 x 是时间，y 是位置，那么 dy/dx 就是速度。
+导数表示函数在某一点的变化快慢。对于函数 y = f(x)，导数记作 dy/dx 或 f'(x)表示变化率。
 
-**几何意义**：导数就是曲线切线的斜率。
+**物理意义**：如果 x 是时间，y 是位移，则 dy/dx 是速度。
+
+**几何意义**：导数是曲线切线的斜率。
 
 ### 1.1 幂函数的导数公式
 
@@ -325,26 +326,19 @@ $$
 - y = tan x = sin x / cos x，利用商法则：  
   y' = (cos x·cos x - sin x·(- sin x))/cos^2 x = (cos^2 x + sin^2 x)/cos^2 x = 1/cos^2 x = sec^2 x
 
-### 5.6 三角函数与多项式组合的积分（分部积分）
+### 5.6 三角函数与多项式组合的积分（换元法）
 
-分部积分公式：  
+**换元法（Substitution）**：
+当被积函数可以写成复合函数的形式时，使用换元法 $u = g(x)$，$du = g'(x)dx$。
+
+**例**：求 $\int x \cos(x^2) dx$
+
+令 $u = x^2$，$du = 2x\,dx$，则 $x\,dx = \frac{1}{2} du$：
 $$
-\int u dv = u v - \int v du
+\int x \cos(x^2) dx = \frac{1}{2} \int \cos u \, du = \frac{1}{2} \sin(x^2) + C
 $$
 
-**例1**：∫ x cos x dx  
-令 u = x，dv = cos x dx，则 du = dx，v = sin x  
-所以 ∫ x cos x dx = x sin x - ∫ sin x dx = x sin x + cos x + C
-
-**例2**：∫ x sin x dx  
-令 u = x，dv = sin x dx，则 du = dx，v = - cos x  
-所以 ∫ x sin x dx = -x cos x + ∫ cos x dx = -x cos x + sin x + C
-
-**例3**：∫ x^2 sin x dx（两次分部积分）  
-先令 u = x^2，dv = sin x dx，则 du = 2x dx，v = - cos x  
-得 ∫ x^2 sin x dx = -x^2 cos x + ∫ 2x cos x dx  
-再计算 ∫ 2x cos x dx = 2(x sin x + cos x) + C₁  
-所以 ∫ x^2 sin x dx = -x^2 cos x + 2x sin x + 2 cos x + C
+**验证**：对 $\frac{1}{2} \sin(x^2)$ 求导得 $\frac{1}{2} \cdot \cos(x^2) \cdot 2x = x \cos(x^2)$，正确。
 
 ### 5.7 三角函数幂的导数与积分
 
@@ -430,16 +424,15 @@ dr/dt = (sin t + t cos t, cos t - t sin t)
 **积分**  
 ∫ r(t) dt = ( ∫ t sin t dt, ∫ t cos t dt ) = ( -t cos t + sin t, t sin t + cos t ) + C
 
-### 6.7 数量积与向量积的导数
+### 6.7 向量函数的微分性质
 
-设 u(t) 和 v(t) 为向量函数，则  
+向量函数的微分满足线性性质：
 $$
-\frac{d}{dt} (\mathbf{u}·\mathbf{v}) = \mathbf{u}'·\mathbf{v} + \mathbf{u}·\mathbf{v}'
+\frac{d}{dt} [\mathbf{u}(t) + \mathbf{v}(t)] = \frac{d\mathbf{u}}{dt} + \frac{d\mathbf{v}}{dt}
 $$
 $$
-\frac{d}{dt} (\mathbf{u}×\mathbf{v}) = \mathbf{u}'×\mathbf{v} + \mathbf{u}×\mathbf{v}'
+\frac{d}{dt} [c\,\mathbf{u}(t)] = c\,\frac{d\mathbf{u}}{dt} \quad (c\text{ 为常数})
 $$
-这些公式在力学中常用，例如角动量 L = r × p 的导数等于力矩。
 
 ## 7. 综合例题（变化率与多种组合）
 
@@ -578,6 +571,9 @@ x^2 + y^2 = 25，求 dy/dx。
 （以上内容覆盖了多项式、三角函数、向量的求导与积分，以及变化率的各种应用场景，每一条公式和例题均已单独列出并配有简短解释，避免大段文字。）
 
 # 微分与不定积分：变化率视角
+- 这份笔记由 LG-leo 整理和维护。如果你觉得这份笔记对你有帮助，欢迎在 GitHub 上关注我或给我一个 ⭐，这能帮助我持续产出更多免费的学习资源。
+- 我的其他课程笔记：https://github.com/LG-leo?tab=repositories
+- This note is maintained by LG-leo. If you find it helpful, feel free to follow me or leave a ⭐ on GitHub. It helps me keep producing more free study resources. Check out my other notes: https://github.com/LG-leo?tab=repositories
 
 ## 1. 变化率与微分的概念
 
@@ -934,7 +930,27 @@ f'''''(x)=120
 | sec x | sec x tan x |
 | csc x | - csc x cot x |
 
-**推导提示**：利用极限 lim_{h→0} sin h / h = 1 和 lim_{h→0} (cos h - 1)/h = 0。
+**推导过程（$\sin x$ 的导数）**：
+
+从导数的极限定义出发：
+$$
+\frac{d}{dx} \sin x = \lim_{h \to 0} \frac{\sin(x+h) - \sin x}{h}
+$$
+
+利用三角恒等式 $\sin(x+h) = \sin x \cos h + \cos x \sin h$：
+$$
+= \lim_{h \to 0} \frac{\sin x \cos h + \cos x \sin h - \sin x}{h}
+= \lim_{h \to 0} \left[ \sin x \cdot \frac{\cos h - 1}{h} + \cos x \cdot \frac{\sin h}{h} \right]
+$$
+
+利用两个重要极限 $\displaystyle\lim_{h \to 0} \frac{\sin h}{h} = 1$ 和 $\displaystyle\lim_{h \to 0} \frac{\cos h - 1}{h} = 0$：
+$$
+= \sin x \cdot 0 + \cos x \cdot 1 = \cos x
+$$
+
+因此 $\displaystyle\frac{d}{dx} \sin x = \cos x$。
+
+类似地，利用 $\cos(x+h) = \cos x \cos h - \sin x \sin h$ 可推导 $\displaystyle\frac{d}{dx} \cos x = -\sin x$。
 
 ### 5.2 基本不定积分公式
 
@@ -1008,6 +1024,20 @@ $$
 
 - y = x sin x，y' = 1·sin x + x·cos x = sin x + x cos x
 - y = x^2 cos x，y' = 2x cos x + x^2·(- sin x) = 2x cos x - x^2 sin x
+
+**推导过程（乘积法则）**：
+
+设 $u(x)$ 和 $v(x)$ 可导，由导数定义：
+$$
+\begin{aligned}
+\frac{d}{dx}[u(x)v(x)] &= \lim_{h \to 0} \frac{u(x+h)v(x+h) - u(x)v(x)}{h} \\
+&= \lim_{h \to 0} \frac{u(x+h)v(x+h) - u(x)v(x+h) + u(x)v(x+h) - u(x)v(x)}{h} \\
+&= \lim_{h \to 0} \left[ \frac{u(x+h) - u(x)}{h} v(x+h) + u(x) \frac{v(x+h) - v(x)}{h} \right] \\
+&= u'(x)v(x) + u(x)v'(x)
+\end{aligned}
+$$
+
+因此 $(uv)' = u'v + uv'$。
 
 ### 5.5 商法则与三角函数
 
@@ -1266,7 +1296,7 @@ $$
 h(t) = \sqrt[3]{\frac{3k H^2}{\pi R^2} t}
 $$
 
-## 8. 隐函数与参数方程中的微分
+## 8. 隐函数中的求导（Implicit Differentiation）
 
 ### 8.1 隐函数求导
 
@@ -1276,23 +1306,7 @@ $$
 
 解：两边对 x 求导：2x + 2y (dy/dx) = 0 ⇒ dy/dx = -x/y
 
-### 8.2 参数方程求导
-
-参数方程 x = f(t)，y = g(t)，则
-
-$$
-\frac{dy}{dx} = \frac{dy/dt}{dx/dt}
-$$
-
-前提 dx/dt ≠ 0。
-
-**例题**：x = t^2，y = sin t，求 dy/dx 在 t = π/2 处的值。
-
-解：dx/dt = 2t，dy/dt = cos t
-
-dy/dx = cos t / (2t)
-
-当 t = π/2 时，cos(π/2)=0，所以 dy/dx = 0/(π) = 0
+<!-- 参数方程求导（IGCSE 0606 不要求，已移除）
 
 不定积分在参数形式中通常需要转换为 x 的函数，但有时可直接对 t 积分。
 
@@ -1309,7 +1323,7 @@ dy/dx = cos t / (2t)
 - 积分时务必加上常数 C。
 - 变化率的核心是“瞬时变化”与“累积”的互逆关系。
 - 向量函数的微分和积分是标量微积分在分量上的推广。
-- 多练习复合函数、隐函数、参数方程以及物理应用。
+- 多练习复合函数、隐函数以及物理应用。
 
 <!-- 
 感谢使用这份笔记！如果你觉得它对你有帮助，请回到 GitHub 仓库页面点一个 ⭐，
