@@ -308,27 +308,123 @@ P(x) = (x-k) \cdot Q(x) + R
 $$
 where $Q(x)$ is the quotient (degree $n-1$) and $R$ is a constant remainder.
 
-### Long division (example: $2x^3-5x^2+3x-4$ divided by $x-2$)
+### Long division
+
+#### Pre‑knowledge / What you need to know first
+
+Before doing polynomial long division, make sure you are comfortable with these ideas:
+
+1. **Like terms** — You can only add/subtract terms with the same power of $x$ (e.g. $x^2$ with $x^2$, $x$ with $x$).
+2. **Descending powers** — Always write a polynomial from highest power to lowest:
+   $$ 3x^2 + 2x - 5 \quad\text{(good)}\qquad 2x - 5 + 3x^2 \quad\text{(confusing)} $$
+3. **Missing terms** — If a power is missing, insert it with coefficient $0$ as a placeholder.  
+   For example, $x^3 + 2x - 5$ becomes $x^3 + 0x^2 + 2x - 5$ before dividing.
+4. **The core relationship** — For any division:
+   $$ \text{Dividend} = \text{Divisor} \times \text{Quotient} + \text{Remainder} $$
+   In polynomial form:
+   $$ P(x) = (x - k) \cdot Q(x) + R $$
+
+Polynomial long division works **exactly like numeric long division** — you compare leading terms, multiply, subtract, and bring down the next term. The only difference is that you are working with powers of $x$ instead of digits.
+
+---
+
+#### Example 1: Simple linear divisor (no missing terms)
+
+Divide $P(x) = 2x^3 - 5x^2 + 3x - 4$ by $x - 2$.
 
 ```
-        2x^2 - x + 1
+        2x^2 -  x + 1
 x-2 ) 2x^3 - 5x^2 + 3x - 4
-      2x^3 - 4x^2
+      2x^3 - 4x^2                 ← 2x^2 · (x-2)
       ----------
             -x^2 + 3x
-            -x^2 + 2x
+            -x^2 + 2x             ← (-x) · (x-2)
             ----------
                    x - 4
-                   x - 2
+                   x - 2           ← 1 · (x-2)
                    -----
-                      -2
+                      -2           ← remainder
 ```
 
-**Rule (in Chinese and English):**
-- Arrange dividend and divisor in descending powers; fill missing terms with 0.
-- Divide first term of dividend by first term of divisor → first term of quotient.
-- Multiply quotient term by divisor, write below, subtract.
-- Bring down next term, repeat until remainder degree < divisor degree.
+**Step‑by‑step:**
+
+| Step | What you do | Why |
+|------|-------------|-----|
+| 1 | Divide the leading term: $2x^3 \div x = 2x^2$ | First term of quotient |
+| 2 | Multiply back: $2x^2 \cdot (x-2) = 2x^3 - 4x^2$, write below | Subtract from dividend |
+| 3 | Subtract: $(2x^3-5x^2) - (2x^3-4x^2) = -x^2$, bring down $+3x$ | |
+| 4 | Repeat: $-x^2 \div x = -x$ | Second term of quotient |
+| 5 | Multiply: $-x \cdot (x-2) = -x^2 + 2x$, subtract → $x$, bring down $-4$ | |
+| 6 | Repeat: $x \div x = 1$ | Third term of quotient |
+| 7 | Multiply: $1 \cdot (x-2) = x - 2$, subtract → $-2$ | Remainder (degree 0 < divisor degree 1) |
+
+**Result:** $Q(x) = 2x^2 - x + 1$, $R = -2$.
+
+Check: $(x-2)(2x^2 - x + 1) + (-2) = 2x^3 - x^2 + x - 4x^2 + 2x - 2 - 2$
+$= 2x^3 - 5x^2 + 3x - 4$ ✓
+
+---
+
+#### Example 2: Missing term (use zero placeholder)
+
+Divide $P(x) = x^3 + 2x - 5$ by $x - 2$.
+
+First insert the missing $x^2$ term: $P(x) = x^3 + 0x^2 + 2x - 5$.
+
+```
+          x^2 + 2x + 6
+x-2 ) x^3 + 0x^2 + 2x - 5
+      x^3 - 2x^2            ← x^2 · (x-2)
+      ----------
+            2x^2 + 2x
+            2x^2 - 4x        ← 2x · (x-2)
+            ----------
+                   6x - 5
+                   6x - 12   ← 6 · (x-2)
+                   -------
+                        7    ← remainder
+```
+
+**Result:** $Q(x) = x^2 + 2x + 6$, $R = 7$.
+
+Check: $P(2) = 2^3 + 2(2) - 5 = 8 + 4 - 5 = 7$ ✓ (matches the Remainder Theorem).
+
+---
+
+#### Example 3: Divisor with leading coefficient $\neq 1$
+
+Divide $P(x) = 6x^3 + x^2 - 10x - 3$ by $2x + 1$.
+
+Here the divisor is $2x+1$, not $x-k$. The process is the same — just divide leading terms: $6x^3 \div 2x = 3x^2$.
+
+```
+           3x^2 -  x - 3
+2x+1 ) 6x^3 + x^2 - 10x - 3
+       6x^3 + 3x^2            ← 3x^2 · (2x+1)
+       ----------
+            -2x^2 - 10x
+            -2x^2 -  x        ← (-x) · (2x+1)
+            ----------
+                  -9x - 3
+                  -9x - 3      ← (-3) · (2x+1)
+                  -------
+                       0       ← remainder
+```
+
+**Result:** $Q(x) = 3x^2 - x - 3$, $R = 0$ — so $2x+1$ is a **factor** of $P(x)$.
+
+Check: $(2x+1)(3x^2 - x - 3) = 6x^3 - 2x^2 - 6x + 3x^2 - x - 3 = 6x^3 + x^2 - 10x - 3$ ✓
+
+---
+
+#### Quick reference (steps)
+
+1. Write dividend and divisor in **descending powers**; fill any missing terms with $0$.
+2. Divide the **first term** of the dividend by the **first term** of the divisor → first term of quotient.
+3. Multiply the whole divisor by this term, write it below the dividend, **subtract**.
+4. **Bring down** the next term of the dividend.
+5. Repeat steps 2–4 until the remainder has a **lower degree** than the divisor.
+6. Write the final answer as: $P(x) = \text{Divisor} \times Q(x) + R$.
 
 ### Remainder theorem
 

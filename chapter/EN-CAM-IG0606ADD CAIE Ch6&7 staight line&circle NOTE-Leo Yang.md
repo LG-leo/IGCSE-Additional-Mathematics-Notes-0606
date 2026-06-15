@@ -209,7 +209,7 @@ Geometric: triangle rule (head‑to‑tail) or parallelogram rule.
 ### 3.2 Subtraction
 a − b = a + (−b)  
 Geometric: from the tip of b to the tip of a (when both start at the same point).  
-In coordinates: \(\overrightarrow{AB} = OB − OA\) is an example of subtraction.
+In coordinates: \(\overrightarrow{AB} = OB - OA\) is an example of subtraction.
 
 ### 3.3 Scalar multiplication
 k·(a,b) = (k·a, k·b)  
@@ -233,7 +233,7 @@ a ∥ b iff a = k·b (k ≠ 0).
 In coordinates: a₁/b₁ = a₂/b₂ (provided denominators ≠ 0).
 
 ### 4.2 Collinear points
-A, B, C are collinear iff \(\overrightarrow{AB} = λ·\overrightarrow{AC}\) (or AB ∥ BC). λ can be any non‑zero real number (including negative).  
+A, B, C are collinear iff \(\overrightarrow{AB} = \lambda\cdot\overrightarrow{AC}\) (or AB ∥ BC). λ can be any non‑zero real number (including negative).  
 Example: A(1,2), B(3,5), C(5,8): AB = (2,3), AC = (4,6) = 2·(2,3) → collinear.
 
 ### 4.3 Perpendicular (dot product)
@@ -434,7 +434,7 @@ If AB is a diameter and C is any point on the circle (C ≠ A, B), then \(\angle
 **Problem**: Circle \(x^2 + y^2 = 25\), points A(3,4), B(−4,3) on the circle. Find \(\angle AOB\) and \(\angle ACB\) (C another point on the circle).
 
 **Solution**:
-- Centre O(0,0). \(\overrightarrow{OA} = (3,4)\), \(\overrightarrow{OB} = (-4,3)\). Dot product: \(3×(-4)+4×3 = -12+12=0\), so \(OA \perp OB\). Hence \(\angle AOB = 90^\circ\).
+- Centre O(0,0). \(\overrightarrow{OA} = (3,4)\), \(\overrightarrow{OB} = (-4,3)\). Dot product: \(3\times(-4)+4\times3 = -12+12=0\), so \(OA \perp OB\). Hence \(\angle AOB = 90^\circ\).
 - By the inscribed angle theorem, \(\angle ACB = \frac12 \angle AOB = 45^\circ\) (if C lies on the major arc AB) or \(135^\circ\) (if on the minor arc AB).
 
 ---
