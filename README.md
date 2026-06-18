@@ -13,6 +13,9 @@
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
 You are free to share and adapt for **non-commercial purposes**, with attribution and same license for derivatives.
 
+# next step: AP pre-calculus notes (2027 syllabus) coming soon! 
+
+## deadline of AP pre-calculus completely notes: NOVEMBER 2027 ?
 
 # 📖 IGCSE 0606 Additional Mathematics Notes
 
