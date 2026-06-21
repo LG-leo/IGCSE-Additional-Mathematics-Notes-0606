@@ -13,6 +13,29 @@
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
 You are free to share and adapt for **non-commercial purposes**, with attribution and same license for derivatives.
 
+## TIPS！！！
+
+> 40.5% A*
+> 60.5% above A*
+> 85% above B
+----2026
+> 30.3% A*
+> 54.1% above A
+> 74.5% above B
+--2025
+
+- 2026:
+- A*=139
+- A=119
+
+- 2025:
+- A*=135~137
+- A=110~115
+
+## REMEMBER! TRY HARDER NOW...
+
+---
+
 # next step: AP pre-calculus notes (2026 syllabus) coming soon! 
 
 ## deadline of AP pre-calculus completely notes: NOVEMBER 2026 ?
