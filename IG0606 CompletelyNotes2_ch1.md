@@ -63,24 +63,43 @@ $$
 \sum_{k=1}^{n} a_k = a_1 + a_2 + a_3 + \cdots + a_n
 $$
 
-The summation operation satisfies three basic rules:
+The summation operation satisfies three basic rules. Their derivations follow directly from expanding the sigma notation:
 
 **Rule 1 — Constant Factor Extraction**:
 
+Expand the sum:
 $$
-\sum_{k=1}^{n} (c \cdot a_k) = c \cdot \sum_{k=1}^{n} a_k
+\sum_{k=1}^{n} (c \cdot a_k) = c \cdot a_1 + c \cdot a_2 + \cdots + c \cdot a_n
+$$
+Factor out $c$ from each term:
+$$
+= c\,(a_1 + a_2 + \cdots + a_n) = c \cdot \sum_{k=1}^{n} a_k
+$$
+$$
+\boxed{\sum_{k=1}^{n} (c \cdot a_k) = c \cdot \sum_{k=1}^{n} a_k}
 $$
 
 **Rule 2 — Splitting a Sum**:
 
+Expand the sum and regroup:
 $$
-\sum_{k=1}^{n} (a_k \pm b_k) = \sum_{k=1}^{n} a_k \pm \sum_{k=1}^{n} b_k
+\begin{aligned}
+\sum_{k=1}^{n} (a_k \pm b_k) &= (a_1 \pm b_1) + (a_2 \pm b_2) + \cdots + (a_n \pm b_n) \\
+&= (a_1 + a_2 + \cdots + a_n) \pm (b_1 + b_2 + \cdots + b_n)
+\end{aligned}
+$$
+$$
+\boxed{\sum_{k=1}^{n} (a_k \pm b_k) = \sum_{k=1}^{n} a_k \pm \sum_{k=1}^{n} b_k}
 $$
 
 **Rule 3 — Sum of a Constant**:
 
+When each term equals the constant $c$, the sum is $c$ added $n$ times:
 $$
-\sum_{k=1}^{n} c = n c
+\sum_{k=1}^{n} c = \underbrace{c + c + \cdots + c}_{n \text{ times}} = n c
+$$
+$$
+\boxed{\sum_{k=1}^{n} c = n c}
 $$
 
 **Example**: Evaluate $\displaystyle\sum_{k=1}^{5} (3k - 2)$.
@@ -103,49 +122,65 @@ $$
 
 **Example**: $5, 9, 13, 17, 21$ is an arithmetic progression, with $d=4$, $a=5$.
 
-#### Formula for the $n$th Term (Derivation)
+#### Formula for the $n$th Term — Derivation
 
-Let the first term be $a_1 = a$. Then:
+Let the first term be $a_1 = a$. The defining property of an AP is $a_{k+1} - a_k = d$, i.e. $a_{k+1} = a_k + d$ for every $k \ge 1$.
+
+Starting from the first term and applying the recurrence repeatedly:
 
 $$
 \begin{aligned}
-a_2 &= a + d \\
-a_3 &= a_2 + d = a + 2d \\
-a_4 &= a_3 + d = a + 3d
+a_2 &= a_1 + d = a + d \\[4pt]
+a_3 &= a_2 + d = (a + d) + d = a + 2d \\[4pt]
+a_4 &= a_3 + d = (a + 2d) + d = a + 3d \\[4pt]
+&\;\;\vdots
 \end{aligned}
 $$
 
-The pattern: the $n$th term is obtained by adding the common difference $(n-1)$ times to the first term.
+Observing the pattern: the coefficient of $d$ is always one less than the term index. After $(n-1)$ steps from $a_1$, we have added $d$ exactly $(n-1)$ times:
 
 $$
 \boxed{a_n = a + (n-1)d}
 $$
 
-**Verification**: For $n=1$, $a_1 = a$; for $n=2$, $a_2 = a + d$. Correct.
+> **Verification**: For $n=1$, $a_1 = a + 0 \cdot d = a$ ✓; for $n=2$, $a_2 = a + 1 \cdot d = a + d$ ✓.
 
-#### Formula for the Sum of the First $n$ Terms (Derivation — Reverse Addition Method)
+#### Formula for the Sum of the First $n$ Terms — Derivation (Reverse Addition Method)
 
-$$
-\begin{aligned}
-S_n &= a + (a+d) + (a+2d) + \cdots + [a+(n-1)d] \\
-S_n &= [a+(n-1)d] + [a+(n-2)d] + \cdots + a
-\end{aligned}
-$$
-
-Adding the two equations, each pair sums to $2a + (n-1)d$, and there are $n$ pairs:
+Let $S_n$ be the sum of the first $n$ terms:
 
 $$
-2S_n = n[2a + (n-1)d]
+S_n = a + (a+d) + (a+2d) + \cdots + [a+(n-1)d] \tag{1}
 $$
 
-$$
-\boxed{S_n = \frac{n}{2}[2a + (n-1)d]}
-$$
-
-If the last term $l = a_n = a + (n-1)d$, then:
+Now write the same sum in reverse order, from the last term back to the first:
 
 $$
-\boxed{S_n = \frac{n}{2}(a + l)}
+S_n = [a+(n-1)d] + [a+(n-2)d] + \cdots + (a+d) + a \tag{2}
+$$
+
+Add equations (1) and (2) term by term. There are $n$ columns; the $k$th column (counting from the left) pairs:
+
+$$
+\bigl[a + (k-1)d\bigr] + \bigl[a + (n-k)d\bigr] = 2a + (n-1)d
+$$
+
+Notice that each column gives the **same** sum, $2a + (n-1)d$. Since there are $n$ such columns:
+
+$$
+2S_n = \underbrace{[2a + (n-1)d] + [2a + (n-1)d] + \cdots + [2a + (n-1)d]}_{n \text{ times}} = n\,[2a + (n-1)d]
+$$
+
+Dividing both sides by $2$:
+
+$$
+\boxed{S_n = \frac{n}{2}\,[\,2a + (n-1)d\,]}
+$$
+
+If the last term is $l = a_n = a + (n-1)d$, then $2a + (n-1)d = a + l$, giving the alternative form:
+
+$$
+\boxed{S_n = \frac{n}{2}\,(a + l)}
 $$
 
 #### Examples
@@ -194,46 +229,73 @@ $$
 
 **Example**: $2, 6, 18, 54, 162$ is a geometric progression, with $r=3$, $a=2$.
 
-#### Formula for the $n$th Term
+#### Formula for the $n$th Term — Derivation
+
+Let the first term be $a_1 = a$. The defining property of a GP is $\dfrac{a_{k+1}}{a_k} = r$, i.e. $a_{k+1} = a_k \cdot r$ for every $k \ge 1$.
+
+Starting from the first term and applying the recurrence repeatedly:
 
 $$
 \begin{aligned}
-a_2 &= a r \\
-a_3 &= a_2 \cdot r = a r^2 \\
-a_4 &= a_3 \cdot r = a r^3
+a_2 &= a_1 \cdot r = a r \\[4pt]
+a_3 &= a_2 \cdot r = (a r) \cdot r = a r^2 \\[4pt]
+a_4 &= a_3 \cdot r = (a r^2) \cdot r = a r^3 \\[4pt]
+&\;\;\vdots
 \end{aligned}
 $$
+
+Observing the pattern: the exponent of $r$ is always one less than the term index. After $(n-1)$ multiplications by $r$ starting from $a_1$, we obtain:
 
 $$
 \boxed{a_n = a r^{\,n-1}}
 $$
 
-#### Formula for the Sum of the First $n$ Terms (Derivation — Subtraction Method)
+> **Verification**: For $n=1$, $a_1 = a r^{0} = a$ ✓; for $n=2$, $a_2 = a r^{1} = a r$ ✓.
+
+#### Formula for the Sum of the First $n$ Terms — Derivation (Subtraction Method)
+
+Let $S_n$ be the sum of the first $n$ terms:
 
 $$
-S_n = a + a r + a r^2 + \cdots + a r^{\,n-1}
+S_n = a + a r + a r^2 + \cdots + a r^{\,n-1} \tag{1}
 $$
 
+Multiply both sides of (1) by the common ratio $r$:
+
 $$
-r S_n = a r + a r^2 + a r^3 + \cdots + a r^{\,n}
+r S_n = a r + a r^2 + a r^3 + \cdots + a r^{\,n-1} + a r^{\,n} \tag{2}
 $$
 
-Subtracting:
+Now compare (1) and (2). Almost all terms appear in both sums — the only differences are:
+- $a$ appears only in (1) (the first term)
+- $a r^{\,n}$ appears only in (2) (the last term)
+
+Therefore, subtract (2) from (1):
 
 $$
 S_n - r S_n = a - a r^{\,n}
 $$
 
+Factor out $S_n$ on the left and $a$ on the right:
+
 $$
 S_n(1 - r) = a(1 - r^{\,n})
 $$
 
-If $r = 1$: $S_n = n a$.
+Now consider two cases:
 
-If $r \neq 1$:
+- **If $r = 1$**: Every term equals $a$, so $S_n = \underbrace{a + a + \cdots + a}_{n \text{ times}} = n a$.
+
+- **If $r \neq 1$**: Divide both sides by $(1-r)$:
 
 $$
-\boxed{S_n = a \cdot \frac{1 - r^{\,n}}{1 - r}} \quad \text{or equivalently} \quad \boxed{S_n = a \cdot \frac{r^{\,n} - 1}{r - 1}}
+\boxed{S_n = a \cdot \frac{1 - r^{\,n}}{1 - r}}
+$$
+
+An equivalent form (multiply numerator and denominator by $-1$) is:
+
+$$
+\boxed{S_n = a \cdot \frac{r^{\,n} - 1}{r - 1}}
 $$
 
 #### Convergence Condition and Sum to Infinity of an Infinite Geometric Series (**Syllabus 12.5 Key Point**)
