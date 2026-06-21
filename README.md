@@ -29,25 +29,18 @@ You are free to share and adapt for **non-commercial purposes**, with attributio
 - **Question type + step‑by‑step**: Each type broken down into “recognise → steps → traps”.
 - **Continuously updated**: Topics 1–12 done, 13–14 planned.
 
-## 📊 Progress
+## summerize part
 
-| Topic | Content | Status |
-|-------|---------|--------|
-| 1 | Functions | ✅ |
-| 2 | Quadratic functions | ✅ |
-| 3 | Factors of polynomials | ✅ |
-| 4 | Equations, inequalities & graphs | ✅ |
-| 5 | Simultaneous equations | ✅ |
-| 6 | Logarithmic & exponential functions | ✅ |
-| 7 | Straight‑line graphs | ✅ |
-| 8 | Coordinate geometry of the circle | ✅ |
-| 9 | Circular measure | ✅ |
-| 10 | Trigonometry | ✅ |
-| 11 | Permutations & combinations | ✅ (beta) |
-| 12 | Series | ✅ (beta) |
-| 13 | Vectors in two dimensions | 📅 planned |
-| 14 | Calculus | ✅ (beta) |
-| 15 |completely | ✅ |
+- ALL course book of IGCSE 0606 are useless. To be honest, I am a students too, I just cannot understand the coursebook, so I use AI to complete it again.
+1. I didn't find any completely notes before.
+2. The chapter 6~14 are not be able to understand.
+3. The missing & wrong & not clear part & the order is scrambled in the chapter is more than 40%.
+4. Most of IGCSE book are wrong: the differentiation should be in the function part not behind the function part (like AP & pre-AP). OR just like my notes, before the function parts to makes people have tools to try.
+5. I just fix lots. If you see the **Releases**, you can find the note which is based on coursebook & syllabus chapter. BUT, **I cannnot fix that alls, because I cannot understand**.
+6. The sequence of coursebook makes people cannot understand, so I just make the **completely note**
+7. If you just find here, which might means that you cannot find anything that can makes you understand.
+
+>Welcome — this is the end of the road
 
 ## 🚀 How to use
 
@@ -88,12 +81,6 @@ It is recommended to **Clone** the repository so you can easily `git pull` futur
 - Prerequisite: you need a copy of **Cambridge IGCSE Additional Mathematics 3rd edition** (Sue Pemberton; Cambridge University Press).
 
 > This guide is a personal study compilation. Some content is adapted from the original textbook for educational, non‑commercial purposes. It does not replace the original textbook.
-
-# 📚 My best Note
-Is the most important, completely Note：[[点击查看 - Cambridge IGCSE 0606 Additional Mathematics Complete Note](https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE/blob/main/%7Bbeta-en%7DCambridge%20IGCSE(0606)%20Additional%20Mathematics%20Completely%20Note.md)](https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606/blob/main/CAMbridge%20IGCSE(0606)%20Additional%20Mathematics%20Completely%20Note_beta.md)
-
-[[点击查看 - Cambridge IGCSE 0606 Additional Mathematics Complete Note](https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE/blob/main/%7Bbeta-cn%7DCAM%20IGCSE(0606)%20Additional%20Mathematics%20Complete%20Notes.md)](https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606/blob/main/CAM%20IGCSE(0606)%20Additional%20Mathematics%20Complete%20Notes_beta.md)
-
 
 ---
 
