@@ -180,6 +180,55 @@ Imagine two people pulling a box at the same time. One person pulls with force $
 - For displacement vectors: **endpoint minus starting point**. The vector from $A$ to $B$ is $\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A$
 - For addition: connect head to tail, from the first start to the last end
 
+#### Geometric Derivation of the Parallelogram Rule
+
+Why is vector addition defined by adding components? Let's prove the equivalence between the algebraic and geometric definitions.
+
+**Theorem**: Let $\mathbf{a} = \begin{pmatrix} a_x \\ a_y \end{pmatrix}$ and $\mathbf{b} = \begin{pmatrix} b_x \\ b_y \end{pmatrix}$. Then the diagonal of the parallelogram formed by $\mathbf{a}$ and $\mathbf{b}$ is $\mathbf{a} + \mathbf{b}$.
+
+**Proof**:
+
+Place $\mathbf{a}$ starting from the origin $O(0,0)$, so its endpoint is $A(a_x, a_y)$.
+Place $\mathbf{b}$ also starting from $O$, so its endpoint is $B(b_x, b_y)$.
+
+Now construct the parallelogram $OACB$:
+- $OA$ is $\mathbf{a}$, so $A = (a_x, a_y)$
+- $OB$ is $\mathbf{b}$, so $B = (b_x, b_y)$
+- Since $OACB$ is a parallelogram, $\overrightarrow{AC} = \overrightarrow{OB} = \mathbf{b}$
+- Therefore $C = A + \mathbf{b} = (a_x + b_x, a_y + b_y)$
+
+Alternatively, $\overrightarrow{BC} = \overrightarrow{OA} = \mathbf{a}$, so $C = B + \mathbf{a} = (b_x + a_x, b_y + a_y)$, same result.
+
+The diagonal $\overrightarrow{OC}$ from the origin to $C$ is:
+$$
+\overrightarrow{OC} = \begin{pmatrix} a_x + b_x \\ a_y + b_y \end{pmatrix} = \mathbf{a} + \mathbf{b}
+$$
+
+This proves that the diagonal of the parallelogram equals the component-wise sum. ✓
+
+**Triangle Rule (alternative geometric view)**:
+Place the tail of $\mathbf{b}$ at the head of $\mathbf{a}$. The vector from the tail of $\mathbf{a}$ to the head of $\mathbf{b}$ is $\mathbf{a} + \mathbf{b}$. This is equivalent to the parallelogram rule — the triangle formed is exactly half of the parallelogram.
+
+**Commutativity of vector addition**:
+$$
+\mathbf{a} + \mathbf{b} = \begin{pmatrix} a_x + b_x \\ a_y + b_y \end{pmatrix} = \begin{pmatrix} b_x + a_x \\ b_y + a_y \end{pmatrix} = \mathbf{b} + \mathbf{a}
+$$
+So vector addition is commutative — the order does not matter.
+
+**Associativity**: $(\mathbf{a} + \mathbf{b}) + \mathbf{c} = \mathbf{a} + (\mathbf{b} + \mathbf{c})$, because each component adds associatively.
+
+**Subtraction as a special case of addition**:
+$$
+\mathbf{a} - \mathbf{b} = \mathbf{a} + (-\mathbf{b}) = \mathbf{a} + (-1)\mathbf{b}
+$$
+Geometrically, $-\mathbf{b}$ is $\mathbf{b}$ reversed (rotated by $180^\circ$). So $\mathbf{a} - \mathbf{b}$ is the vector from the tip of $\mathbf{b}$ to the tip of $\mathbf{a}$ when both start from the same point.
+
+**Proof**: Let both $\mathbf{a}$ and $\mathbf{b}$ start from $O$. Then the vector from the tip of $\mathbf{b}$ (point $B$) to the tip of $\mathbf{a}$ (point $A$) is:
+$$
+\overrightarrow{BA} = \mathbf{a} - \mathbf{b}
+$$
+So $\mathbf{a} - \mathbf{b}$ is the vector that, when added to $\mathbf{b}$, gives $\mathbf{a}$: $(\mathbf{a} - \mathbf{b}) + \mathbf{b} = \mathbf{a}$. ✓
+
 ---
 
 ### 2.1.6 Scalar Multiplication
@@ -289,6 +338,61 @@ $$
 > i.e., $k_1 \cdot k_2 = -1$.
 
 > **Note on the zero vector**: The zero vector $\mathbf{0} = (0, 0)$ has no fixed direction. By convention, in technical discussions it is considered to be both parallel and perpendicular to all vectors, but in practical problem-solving we generally exclude it.
+
+#### Dot Product Properties — A Deeper Look
+
+The dot product has several important algebraic properties (for any vectors $\mathbf{u}, \mathbf{v}, \mathbf{w}$ and scalar $c$):
+
+| Property | Formula |
+|:---|:---|
+| Commutativity | $\mathbf{u} \cdot \mathbf{v} = \mathbf{v} \cdot \mathbf{u}$ |
+| Distributivity | $\mathbf{u} \cdot (\mathbf{v} + \mathbf{w}) = \mathbf{u} \cdot \mathbf{v} + \mathbf{u} \cdot \mathbf{w}$ |
+| Scalar multiplication | $(c\mathbf{u}) \cdot \mathbf{v} = c(\mathbf{u} \cdot \mathbf{v})$ |
+| Self dot product | $\mathbf{u} \cdot \mathbf{u} = |\mathbf{u}|^2$ |
+
+**Derivation of commutativity**:
+$$
+\mathbf{u} \cdot \mathbf{v} = u_x v_x + u_y v_y = v_x u_x + v_y u_y = \mathbf{v} \cdot \mathbf{u}
+$$
+
+**Derivation of self dot product**:
+$$
+\mathbf{u} \cdot \mathbf{u} = u_x^2 + u_y^2 = |\mathbf{u}|^2
+$$
+This provides a quick way to compute the squared magnitude: $|\mathbf{u}|^2 = \mathbf{u} \cdot \mathbf{u}$.
+
+#### Finding the Angle Between Two Vectors
+
+From the geometric definition $\mathbf{u} \cdot \mathbf{v} = |\mathbf{u}||\mathbf{v}|\cos\theta$, we can solve for $\theta$:
+
+$$
+\boxed{\cos\theta = \frac{\mathbf{u} \cdot \mathbf{v}}{|\mathbf{u}||\mathbf{v}|}}
+$$
+
+This formula is extremely useful:
+- If $\cos\theta = 0$, then $\theta = 90^\circ$ (perpendicular)
+- If $\cos\theta = 1$, then $\theta = 0^\circ$ (same direction, parallel)
+- If $\cos\theta = -1$, then $\theta = 180^\circ$ (opposite direction, parallel)
+- If $\cos\theta > 0$, the angle is acute ($< 90^\circ$)
+- If $\cos\theta < 0$, the angle is obtuse ($> 90^\circ$)
+
+> **Why does the sign of the dot product tell us about the angle?** Since $|\mathbf{u}||\mathbf{v}| > 0$ (for non-zero vectors), the sign of $\mathbf{u} \cdot \mathbf{v}$ is the same as the sign of $\cos\theta$. So:
+> - $\mathbf{u} \cdot \mathbf{v} > 0 \iff$ acute angle
+> - $\mathbf{u} \cdot \mathbf{v} = 0 \iff$ right angle
+> - $\mathbf{u} \cdot \mathbf{v} < 0 \iff$ obtuse angle
+
+#### Projection of One Vector onto Another
+
+The **scalar projection** of $\mathbf{u}$ onto $\mathbf{v}$ (i.e., the length of the "shadow" of $\mathbf{u}$ on the line of $\mathbf{v}$) is:
+
+$$
+\text{proj}_{\mathbf{v}}\mathbf{u} = \frac{\mathbf{u} \cdot \mathbf{v}}{|\mathbf{v}|}
+$$
+
+**Derivation**: From the right triangle, the adjacent side length is $|\mathbf{u}|\cos\theta$. Using $\mathbf{u} \cdot \mathbf{v} = |\mathbf{u}||\mathbf{v}|\cos\theta$:
+$$
+|\mathbf{u}|\cos\theta = \frac{\mathbf{u} \cdot \mathbf{v}}{|\mathbf{v}|}
+$$
 
 ---
 
@@ -443,6 +547,151 @@ Since the dot product is non-zero, $\overrightarrow{PQ}$ and $\overrightarrow{PR
 > $k_{PR} = \dfrac{3}{-5} = -0.6$
 > $k_{PQ} \cdot k_{PR} = (-1.5)(-0.6) = 0.9 \neq -1$
 > This also shows they are not perpendicular. ✓
+
+---
+
+**Example 4** (Finding the angle between two vectors using dot product)
+
+Given $\mathbf{a} = 3\mathbf{i} + 4\mathbf{j}$ and $\mathbf{b} = \mathbf{i} - 2\mathbf{j}$. Find:
+
+(a) $\mathbf{a} \cdot \mathbf{b}$
+(b) The angle $\theta$ between $\mathbf{a}$ and $\mathbf{b}$, correct to the nearest $0.1^\circ$
+(c) The scalar projection of $\mathbf{a}$ onto $\mathbf{b}$
+
+**Solution approach**:
+- Dot product = sum of products of corresponding components
+- Angle: use $\cos\theta = \dfrac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}||\mathbf{b}|}$
+- Projection: $\dfrac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{b}|}$
+
+**Solution**:
+
+(a)
+$$
+\mathbf{a} \cdot \mathbf{b} = (3)(1) + (4)(-2) = 3 - 8 = -5
+$$
+
+(b) First compute the magnitudes:
+$$
+|\mathbf{a}| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5
+$$
+$$
+|\mathbf{b}| = \sqrt{1^2 + (-2)^2} = \sqrt{1 + 4} = \sqrt{5}
+$$
+
+Then:
+$$
+\cos\theta = \frac{-5}{5 \times \sqrt{5}} = \frac{-5}{5\sqrt{5}} = -\frac{1}{\sqrt{5}} = -\frac{\sqrt{5}}{5} \approx -0.4472
+$$
+
+$$
+\theta = \arccos\left(-\frac{\sqrt{5}}{5}\right) \approx 116.6^\circ
+$$
+
+Since $\cos\theta < 0$, the angle is obtuse ($> 90^\circ$), which makes sense — the dot product was negative.
+
+(c) Scalar projection of $\mathbf{a}$ onto $\mathbf{b}$:
+$$
+\text{proj}_{\mathbf{b}}\mathbf{a} = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{b}|} = \frac{-5}{\sqrt{5}} = -\sqrt{5} \approx -2.236
+$$
+
+The negative sign means the projection points in the opposite direction to $\mathbf{b}$ — which is consistent with the obtuse angle.
+
+---
+
+**Example 5** (Finding an unknown component to satisfy a perpendicular condition)
+
+Given $\mathbf{u} = 2\mathbf{i} + k\mathbf{j}$ and $\mathbf{v} = 3\mathbf{i} - 4\mathbf{j}$. Find the value of $k$ such that:
+
+(a) $\mathbf{u}$ is perpendicular to $\mathbf{v}$
+(b) $\mathbf{u}$ is parallel to $\mathbf{v}$
+
+**Solution approach**:
+- Perpendicular: $\mathbf{u} \cdot \mathbf{v} = 0$
+- Parallel: components must be proportional, i.e., $\dfrac{u_x}{v_x} = \dfrac{u_y}{v_y}$
+
+**Solution**:
+
+(a) For perpendicularity:
+$$
+\mathbf{u} \cdot \mathbf{v} = (2)(3) + (k)(-4) = 6 - 4k = 0
+$$
+$$
+4k = 6 \implies k = \frac{3}{2}
+$$
+
+**Verification**: When $k = \frac{3}{2}$, $\mathbf{u} = 2\mathbf{i} + \frac{3}{2}\mathbf{j}$.
+Using slopes: $k_u = \dfrac{3/2}{2} = \dfrac{3}{4}$, $k_v = \dfrac{-4}{3}$, product $= \dfrac{3}{4} \times \dfrac{-4}{3} = -1$. ✓
+
+(b) For parallelism, the ratio of components must be equal:
+$$
+\frac{2}{3} = \frac{k}{-4}
+$$
+
+Cross-multiply:
+$$
+2(-4) = 3k \implies -8 = 3k \implies k = -\frac{8}{3}
+$$
+
+**Verification**: When $k = -\frac{8}{3}$, $\mathbf{u} = 2\mathbf{i} - \frac{8}{3}\mathbf{j} = \frac{2}{3}(3\mathbf{i} - 4\mathbf{j}) = \frac{2}{3}\mathbf{v}$. ✓
+
+---
+
+**Example 6** (Complex system of vector equations — finding unknown coefficients)
+
+Given $\mathbf{p} = \mathbf{i} + 2\mathbf{j}$ and $\mathbf{q} = 3\mathbf{i} - \mathbf{j}$. Find scalars $\alpha$ and $\beta$ such that:
+$$
+\alpha(\mathbf{p} + \mathbf{q}) + \beta(\mathbf{p} - \mathbf{q}) = 5\mathbf{i} + 11\mathbf{j}
+$$
+
+**Solution approach**:
+1. First compute $\mathbf{p} + \mathbf{q}$ and $\mathbf{p} - \mathbf{q}$
+2. Substitute into the equation and expand
+3. Equate $\mathbf{i}$ and $\mathbf{j}$ coefficients to form a system
+4. Solve for $\alpha$ and $\beta$
+
+**Solution**:
+
+First:
+$$
+\mathbf{p} + \mathbf{q} = (\mathbf{i} + 2\mathbf{j}) + (3\mathbf{i} - \mathbf{j}) = 4\mathbf{i} + \mathbf{j}
+$$
+$$
+\mathbf{p} - \mathbf{q} = (\mathbf{i} + 2\mathbf{j}) - (3\mathbf{i} - \mathbf{j}) = -2\mathbf{i} + 3\mathbf{j}
+$$
+
+Substitute:
+$$
+\alpha(4\mathbf{i} + \mathbf{j}) + \beta(-2\mathbf{i} + 3\mathbf{j}) = 5\mathbf{i} + 11\mathbf{j}
+$$
+
+Expand:
+$$
+(4\alpha - 2\beta)\mathbf{i} + (\alpha + 3\beta)\mathbf{j} = 5\mathbf{i} + 11\mathbf{j}
+$$
+
+Equate coefficients:
+$$
+\begin{cases}
+4\alpha - 2\beta = 5 \quad \text{(① } \mathbf{i} \text{ coefficients)} \\[4pt]
+\alpha + 3\beta = 11 \quad \text{(② } \mathbf{j} \text{ coefficients)}
+\end{cases}
+$$
+
+From ②: $\alpha = 11 - 3\beta$. Substitute into ①:
+$$
+4(11 - 3\beta) - 2\beta = 5 \implies 44 - 12\beta - 2\beta = 5 \implies -14\beta = -39 \implies \beta = \frac{39}{14}
+$$
+
+Then:
+$$
+\alpha = 11 - 3 \times \frac{39}{14} = 11 - \frac{117}{14} = \frac{154}{14} - \frac{117}{14} = \frac{37}{14}
+$$
+
+Therefore $\alpha = \dfrac{37}{14}$, $\beta = \dfrac{39}{14}$. ✓
+
+**Verification**:
+$4\alpha - 2\beta = 4 \times \frac{37}{14} - 2 \times \frac{39}{14} = \frac{148}{14} - \frac{78}{14} = \frac{70}{14} = 5$ ✓
+$\alpha + 3\beta = \frac{37}{14} + 3 \times \frac{39}{14} = \frac{37 + 117}{14} = \frac{154}{14} = 11$ ✓
 
 ---
 
@@ -702,6 +951,128 @@ The dot product is non-zero, so $\overrightarrow{OC}$ and $\overrightarrow{OD}$ 
 
 ---
 
+**Example 4** (Proving a quadrilateral is a parallelogram + finding centroid)
+
+Four points have position vectors:
+$\mathbf{a} = \mathbf{i} + \mathbf{j}$, $\mathbf{b} = 4\mathbf{i} + 2\mathbf{j}$, $\mathbf{c} = 5\mathbf{i} + 5\mathbf{j}$, $\mathbf{d} = 2\mathbf{i} + 4\mathbf{j}$.
+
+(a) Prove that $ABCD$ is a parallelogram.
+(b) Find the position vector of the centroid (intersection of diagonals).
+(c) Find the position vectors of the midpoints of all four sides, and show they form a parallelogram.
+
+**Solution approach**:
+- For a parallelogram: opposite sides must be parallel and equal, i.e., $\overrightarrow{AB} = \overrightarrow{DC}$
+- Centroid = midpoint of either diagonal
+- Midpoint of a side = average of endpoint position vectors
+
+**Solution**:
+
+(a) Compute the side vectors:
+$$
+\overrightarrow{AB} = \mathbf{b} - \mathbf{a} = (4\mathbf{i} + 2\mathbf{j}) - (\mathbf{i} + \mathbf{j}) = 3\mathbf{i} + \mathbf{j}
+$$
+$$
+\overrightarrow{DC} = \mathbf{c} - \mathbf{d} = (5\mathbf{i} + 5\mathbf{j}) - (2\mathbf{i} + 4\mathbf{j}) = 3\mathbf{i} + \mathbf{j}
+$$
+
+Since $\overrightarrow{AB} = \overrightarrow{DC}$, sides $AB$ and $DC$ are parallel and equal.
+
+Also check the other pair:
+$$
+\overrightarrow{BC} = \mathbf{c} - \mathbf{b} = (5\mathbf{i} + 5\mathbf{j}) - (4\mathbf{i} + 2\mathbf{j}) = \mathbf{i} + 3\mathbf{j}
+$$
+$$
+\overrightarrow{AD} = \mathbf{d} - \mathbf{a} = (2\mathbf{i} + 4\mathbf{j}) - (\mathbf{i} + \mathbf{j}) = \mathbf{i} + 3\mathbf{j}
+$$
+
+$\overrightarrow{BC} = \overrightarrow{AD}$, so both pairs of opposite sides are parallel and equal. Therefore $ABCD$ is a parallelogram. ✓
+
+(b) The centroid (intersection of diagonals) is the midpoint of either diagonal:
+$$
+\mathbf{m} = \frac{\mathbf{a} + \mathbf{c}}{2} = \frac{(\mathbf{i} + \mathbf{j}) + (5\mathbf{i} + 5\mathbf{j})}{2} = \frac{6\mathbf{i} + 6\mathbf{j}}{2} = 3\mathbf{i} + 3\mathbf{j}
+$$
+
+Verification using the other diagonal: $\frac{\mathbf{b} + \mathbf{d}}{2} = \frac{(4\mathbf{i} + 2\mathbf{j}) + (2\mathbf{i} + 4\mathbf{j})}{2} = \frac{6\mathbf{i} + 6\mathbf{j}}{2} = 3\mathbf{i} + 3\mathbf{j}$. ✓
+
+(c) Midpoints of the four sides:
+$$
+M_{AB} = \frac{\mathbf{a} + \mathbf{b}}{2} = \frac{(\mathbf{i} + \mathbf{j}) + (4\mathbf{i} + 2\mathbf{j})}{2} = \frac{5}{2}\mathbf{i} + \frac{3}{2}\mathbf{j}
+$$
+$$
+M_{BC} = \frac{\mathbf{b} + \mathbf{c}}{2} = \frac{(4\mathbf{i} + 2\mathbf{j}) + (5\mathbf{i} + 5\mathbf{j})}{2} = \frac{9}{2}\mathbf{i} + \frac{7}{2}\mathbf{j}
+$$
+$$
+M_{CD} = \frac{\mathbf{c} + \mathbf{d}}{2} = \frac{(5\mathbf{i} + 5\mathbf{j}) + (2\mathbf{i} + 4\mathbf{j})}{2} = \frac{7}{2}\mathbf{i} + \frac{9}{2}\mathbf{j}
+$$
+$$
+M_{DA} = \frac{\mathbf{d} + \mathbf{a}}{2} = \frac{(2\mathbf{i} + 4\mathbf{j}) + (\mathbf{i} + \mathbf{j})}{2} = \frac{3}{2}\mathbf{i} + \frac{5}{2}\mathbf{j}
+$$
+
+Now check if these four midpoints form a parallelogram:
+$$
+\overrightarrow{M_{AB}M_{BC}} = \left(\frac{9}{2} - \frac{5}{2}\right)\mathbf{i} + \left(\frac{7}{2} - \frac{3}{2}\right)\mathbf{j} = 2\mathbf{i} + 2\mathbf{j}
+$$
+$$
+\overrightarrow{M_{DA}M_{CD}} = \left(\frac{7}{2} - \frac{3}{2}\right)\mathbf{i} + \left(\frac{9}{2} - \frac{5}{2}\right)\mathbf{j} = 2\mathbf{i} + 2\mathbf{j}
+$$
+
+$\overrightarrow{M_{AB}M_{BC}} = \overrightarrow{M_{DA}M_{CD}}$, so they do form a parallelogram.
+
+> **Interesting fact**: The quadrilateral formed by joining the midpoints of any quadrilateral is always a parallelogram (Varignon's Theorem). The proof using vectors is very elegant — give it a try!
+
+---
+
+**Example 5** (Section formula + proving collinearity of three points with unknown parameters)
+
+The position vectors of points $P$, $Q$, $R$ are:
+$\mathbf{p} = 2\mathbf{i} + 3\mathbf{j}$, $\mathbf{q} = 8\mathbf{i} + k\mathbf{j}$, $\mathbf{r} = 14\mathbf{i} + 15\mathbf{j}$.
+
+(a) Given that $P$, $Q$, $R$ are collinear, find the value of $k$.
+(b) Hence find the ratio $PQ:QR$.
+
+**Solution approach**:
+- For collinearity, $\overrightarrow{PQ}$ must be parallel to $\overrightarrow{PR}$ (or $\overrightarrow{QR}$)
+- This means there exists a scalar $\lambda$ such that $\overrightarrow{PQ} = \lambda \overrightarrow{PR}$
+- Equate components to form equations, solve for $k$ and $\lambda$
+
+**Solution**:
+
+(a) Compute:
+$$
+\overrightarrow{PR} = \mathbf{r} - \mathbf{p} = (14\mathbf{i} + 15\mathbf{j}) - (2\mathbf{i} + 3\mathbf{j}) = 12\mathbf{i} + 12\mathbf{j}
+$$
+$$
+\overrightarrow{PQ} = \mathbf{q} - \mathbf{p} = (8\mathbf{i} + k\mathbf{j}) - (2\mathbf{i} + 3\mathbf{j}) = 6\mathbf{i} + (k-3)\mathbf{j}
+$$
+
+For collinearity, there exists $\lambda$ such that $\overrightarrow{PQ} = \lambda \overrightarrow{PR}$:
+$$
+6\mathbf{i} + (k-3)\mathbf{j} = \lambda(12\mathbf{i} + 12\mathbf{j}) = 12\lambda\mathbf{i} + 12\lambda\mathbf{j}
+$$
+
+Equate $\mathbf{i}$ components:
+$$
+6 = 12\lambda \implies \lambda = \frac{1}{2}
+$$
+
+Equate $\mathbf{j}$ components:
+$$
+k - 3 = 12\lambda = 12 \times \frac{1}{2} = 6 \implies k = 9
+$$
+
+Therefore $k = 9$, giving $\mathbf{q} = 8\mathbf{i} + 9\mathbf{j}$.
+
+(b) With $\lambda = \frac{1}{2}$, we have $\overrightarrow{PQ} = \frac{1}{2}\overrightarrow{PR}$.
+
+This means $Q$ is the midpoint of $PR$. Therefore $PQ:QR = 1:1$.
+
+**Verification**:
+$\overrightarrow{QR} = \mathbf{r} - \mathbf{q} = (14\mathbf{i} + 15\mathbf{j}) - (8\mathbf{i} + 9\mathbf{j}) = 6\mathbf{i} + 6\mathbf{j}$
+$\overrightarrow{PQ} = 6\mathbf{i} + 6\mathbf{j}$
+So $\overrightarrow{PQ} = \overrightarrow{QR}$, confirming $Q$ is the midpoint. ✓
+
+---
+
 ### 2.2.2 Composition and Resolution of Velocities
 
 Velocity is a vector quantity. When an object is simultaneously involved in two or more motions, its resultant velocity is the vector sum of these velocities.
@@ -901,6 +1272,95 @@ The two $t$ values are not equal ($2 \neq \frac{5}{3}$), so there is no time tha
 
 ---
 
+**Example 4** (Collision with different departure times)
+
+Ship $A$ departs from $(0, 0)$ at $t = 0$ with velocity $\mathbf{v}_A = (4\mathbf{i} + 2\mathbf{j})\,\text{km/h}$.
+Ship $B$ departs from $(12, 6)\,\text{km}$ at $t = 1$ (one hour later) with velocity $\mathbf{v}_B = (-2\mathbf{i} + 4\mathbf{j})\,\text{km/h}$.
+
+Determine whether the two ships will collide.
+
+**Solution approach**:
+- Write $\mathbf{r}_A(t)$ for $t \geq 0$
+- Write $\mathbf{r}_B(t)$ — note $B$ starts at $t = 1$, so for $t \geq 1$, $\mathbf{r}_B(t) = \mathbf{r}_{B0} + \mathbf{v}_B(t - 1)$
+- Set equal and solve
+
+**Solution**:
+
+For $t \geq 1$ (both ships are underway):
+
+$$
+\mathbf{r}_A(t) = \begin{pmatrix} 0 \\ 0 \end{pmatrix} + \begin{pmatrix} 4 \\ 2 \end{pmatrix} t = \begin{pmatrix} 4t \\ 2t \end{pmatrix}
+$$
+
+$$
+\mathbf{r}_B(t) = \begin{pmatrix} 12 \\ 6 \end{pmatrix} + \begin{pmatrix} -2 \\ 4 \end{pmatrix} (t - 1) = \begin{pmatrix} 12 - 2(t-1) \\ 6 + 4(t-1) \end{pmatrix} = \begin{pmatrix} 14 - 2t \\ 2 + 4t \end{pmatrix}
+$$
+
+Set $\mathbf{r}_A(t) = \mathbf{r}_B(t)$:
+$$
+\begin{cases}
+4t = 14 - 2t \implies 6t = 14 \implies t = \dfrac{7}{3} \approx 2.333 \\[4pt]
+2t = 2 + 4t \implies -2t = 2 \implies t = -1
+\end{cases}
+$$
+
+The two $t$ values are not equal ($\frac{7}{3} \neq -1$), so the ships do not collide.
+
+> **Note**: The $y$-component equation gives $t = -1$, which is before either ship departed — this is a meaningless solution in the physical context. The $x$-component equation gives $t = \frac{7}{3}$, but this doesn't satisfy the $y$-equation. No collision.
+
+---
+
+**Example 5** (Finding the course to steer — boat crossing a river)
+
+A river flows at $3\,\text{m/s}$ from west to east. A boat has a speed of $5\,\text{m/s}$ in still water. The boat aims to travel directly north (perpendicular to the river bank).
+
+(a) In what direction should the boat be steered (angle relative to north)?
+(b) What is the boat's resultant speed relative to the ground?
+
+**Solution approach**:
+- Let the boat's velocity relative to water be $\mathbf{v}_{B/W}$ with magnitude $5$ and unknown direction $\theta$ west of north
+- Water velocity: $\mathbf{v}_{W/G} = 3\mathbf{i}$ (east)
+- Desired resultant: $\mathbf{v}_{B/G} = v\mathbf{j}$ (pure north)
+- Use $\mathbf{v}_{B/G} = \mathbf{v}_{B/W} + \mathbf{v}_{W/G}$ to solve for $\theta$ and $v$
+
+**Solution**:
+
+Let due east be $+x$ and due north be $+y$.
+
+Water velocity: $\mathbf{v}_{W/G} = 3\mathbf{i}$
+
+Boat's velocity relative to water: steering at angle $\theta$ west of north means:
+$$
+\mathbf{v}_{B/W} = 5\cos(90^\circ + \theta)\mathbf{i} + 5\sin(90^\circ + \theta)\mathbf{j} = -5\sin\theta\,\mathbf{i} + 5\cos\theta\,\mathbf{j}
+$$
+
+(Alternatively: the boat points to the left of north by $\theta$, so its $x$-component is $-5\sin\theta$ and $y$-component is $5\cos\theta$.)
+
+Desired resultant (pure north): $\mathbf{v}_{B/G} = 0\mathbf{i} + v\mathbf{j}$
+
+Using $\mathbf{v}_{B/G} = \mathbf{v}_{B/W} + \mathbf{v}_{W/G}$:
+$$
+0\mathbf{i} + v\mathbf{j} = (-5\sin\theta + 3)\mathbf{i} + 5\cos\theta\,\mathbf{j}
+$$
+
+Equate $\mathbf{i}$ components:
+$$
+-5\sin\theta + 3 = 0 \implies \sin\theta = \frac{3}{5} = 0.6 \implies \theta = \arcsin(0.6) \approx 36.87^\circ
+$$
+
+Equate $\mathbf{j}$ components:
+$$
+v = 5\cos\theta = 5 \times \sqrt{1 - 0.6^2} = 5 \times \sqrt{0.64} = 5 \times 0.8 = 4
+$$
+
+(a) The boat should be steered $36.87^\circ$ west of north (or equivalently, at a bearing of $360^\circ - 36.87^\circ = 323.13^\circ$).
+
+(b) The resultant speed relative to the ground is $4\,\text{m/s}$ due north.
+
+> **Real-life insight**: Notice the resultant speed ($4\,\text{m/s}$) is less than the boat's still-water speed ($5\,\text{m/s}$). This is because part of the boat's effort goes into counteracting the current. This is why crossing a river with a strong current takes longer than crossing still water of the same width.
+
+---
+
 ## 2.3 Introduction to Rates of Change (Calculus Foundation)
 
 ### 2.3.1 Why Study Rates of Change?
@@ -1054,6 +1514,80 @@ f'(x) &= \lim_{h \to 0} \frac{-h}{x(x + h)} \cdot \frac{1}{h} \\
 $$
 
 Thus $\dfrac{d}{dx}\left(\dfrac{1}{x}\right) = -\dfrac{1}{x^2}$.
+
+#### Derivation 4: $f(x) = \sqrt{x}$ ($x > 0$)
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{\sqrt{x + h} - \sqrt{x}}{h}
+\end{aligned}
+$$
+
+This one requires a clever trick: multiply numerator and denominator by the conjugate $\sqrt{x + h} + \sqrt{x}$:
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{(\sqrt{x + h} - \sqrt{x})(\sqrt{x + h} + \sqrt{x})}{h(\sqrt{x + h} + \sqrt{x})} \\
+&= \lim_{h \to 0} \frac{(x + h) - x}{h(\sqrt{x + h} + \sqrt{x})} \\
+&= \lim_{h \to 0} \frac{h}{h(\sqrt{x + h} + \sqrt{x})} \\
+&= \lim_{h \to 0} \frac{1}{\sqrt{x + h} + \sqrt{x}} \\
+&= \frac{1}{\sqrt{x} + \sqrt{x}} = \frac{1}{2\sqrt{x}}
+\end{aligned}
+$$
+
+Therefore $\dfrac{d}{dx}(\sqrt{x}) = \dfrac{1}{2\sqrt{x}}$. Note that this is consistent with the Power Rule: $\sqrt{x} = x^{1/2}$, so $\dfrac{d}{dx}(x^{1/2}) = \dfrac{1}{2}x^{-1/2} = \dfrac{1}{2\sqrt{x}}$. ✓
+
+> **Why the conjugate trick?** When direct substitution gives $0/0$, multiplying by the conjugate is a standard technique to rationalise the numerator and eliminate the indeterminacy.
+
+#### Derivation 5: $f(x) = c$ (constant function)
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h} \\
+&= \lim_{h \to 0} \frac{c - c}{h} \\
+&= \lim_{h \to 0} \frac{0}{h} \\
+&= \lim_{h \to 0} 0 = 0
+\end{aligned}
+$$
+
+Therefore $\dfrac{d}{dx}(c) = 0$. The rate of change of a constant is zero — a horizontal line has zero slope everywhere. This also fits the Power Rule: $c = c \cdot x^0$, and $\dfrac{d}{dx}(c \cdot x^0) = c \cdot 0 \cdot x^{-1} = 0$.
+
+#### Derivation 6: $f(x) = ax + b$ (linear function)
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{[a(x + h) + b] - [ax + b]}{h} \\
+&= \lim_{h \to 0} \frac{ax + ah + b - ax - b}{h} \\
+&= \lim_{h \to 0} \frac{ah}{h} \\
+&= \lim_{h \to 0} a = a
+\end{aligned}
+$$
+
+Therefore $\dfrac{d}{dx}(ax + b) = a$. The derivative of a linear function is its slope — exactly what we expect.
+
+#### Derivation 7: $f(x) = \dfrac{1}{x^2}$ ($x \neq 0$)
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{\frac{1}{(x + h)^2} - \frac{1}{x^2}}{h}
+\end{aligned}
+$$
+
+Combine the fractions in the numerator:
+$$
+\frac{1}{(x + h)^2} - \frac{1}{x^2} = \frac{x^2 - (x + h)^2}{x^2(x + h)^2} = \frac{x^2 - (x^2 + 2xh + h^2)}{x^2(x + h)^2} = \frac{-2xh - h^2}{x^2(x + h)^2}
+$$
+
+Therefore:
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{-2xh - h^2}{x^2(x + h)^2} \cdot \frac{1}{h} \\
+&= \lim_{h \to 0} \frac{-2x - h}{x^2(x + h)^2} \\
+&= \frac{-2x}{x^2 \cdot x^2} = -\frac{2x}{x^4} = -\frac{2}{x^3}
+\end{aligned}
+$$
+
+Thus $\dfrac{d}{dx}\left(\dfrac{1}{x^2}\right) = -\dfrac{2}{x^3}$. Consistent with the Power Rule: $x^{-2} \to -2x^{-3}$. ✓
 
 ---
 
@@ -1299,6 +1833,101 @@ This is consistent with the original position function. ✓
 
 ---
 
+**Example 4** (First principles derivation for a cubic function)
+
+Use the limit definition of the derivative to find $f'(x)$ for $f(x) = 2x^3 - x$.
+
+**Solution**:
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h} \\
+&= \lim_{h \to 0} \frac{[2(x + h)^3 - (x + h)] - [2x^3 - x]}{h}
+\end{aligned}
+$$
+
+Expand $(x + h)^3 = x^3 + 3x^2h + 3xh^2 + h^3$:
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{2(x^3 + 3x^2h + 3xh^2 + h^3) - x - h - 2x^3 + x}{h} \\
+&= \lim_{h \to 0} \frac{2x^3 + 6x^2h + 6xh^2 + 2h^3 - x - h - 2x^3 + x}{h} \\
+&= \lim_{h \to 0} \frac{6x^2h + 6xh^2 + 2h^3 - h}{h} \\
+&= \lim_{h \to 0} (6x^2 + 6xh + 2h^2 - 1) \\
+&= 6x^2 - 1
+\end{aligned}
+$$
+
+Therefore $f'(x) = 6x^2 - 1$.
+
+**Verification** using the Power Rule term by term:
+- $\dfrac{d}{dx}(2x^3) = 2 \cdot 3x^2 = 6x^2$
+- $\dfrac{d}{dx}(-x) = -1$
+- Sum: $6x^2 - 1$. ✓
+
+---
+
+**Example 5** (Kinematics: from acceleration to position via integration, with non-zero initial conditions)
+
+A particle moves along a straight line. Its acceleration is $a(t) = 12t - 4\,\text{m/s}^2$. At $t = 0$, its velocity is $v_0 = 5\,\text{m/s}$ and its displacement is $s_0 = 10\,\text{m}$.
+
+(a) Find the velocity $v(t)$.
+(b) Find the displacement $s(t)$.
+(c) Find the displacement at $t = 3$ seconds.
+(d) Find the time(s) when the particle is momentarily at rest.
+(e) Find the acceleration when the particle is at rest.
+
+**Solution approach**:
+- Integrate acceleration to get velocity (don't forget $+C$, use initial condition)
+- Integrate velocity to get displacement (don't forget $+C$, use initial condition)
+- "At rest" means $v(t) = 0$
+
+**Solution**:
+
+(a) Integrate $a(t) = 12t - 4$:
+$$
+v(t) = \int (12t - 4)\,dt = 6t^2 - 4t + C
+$$
+
+Use $v(0) = 5$:
+$$
+5 = 6(0)^2 - 4(0) + C \implies C = 5
+$$
+
+Therefore $v(t) = 6t^2 - 4t + 5\,\text{m/s}$.
+
+(b) Integrate $v(t) = 6t^2 - 4t + 5$:
+$$
+s(t) = \int (6t^2 - 4t + 5)\,dt = 2t^3 - 2t^2 + 5t + D
+$$
+
+Use $s(0) = 10$:
+$$
+10 = 0 - 0 + 0 + D \implies D = 10
+$$
+
+Therefore $s(t) = 2t^3 - 2t^2 + 5t + 10\,\text{m}$.
+
+(c) At $t = 3$:
+$$
+s(3) = 2(27) - 2(9) + 5(3) + 10 = 54 - 18 + 15 + 10 = 61\,\text{m}
+$$
+
+(d) At rest when $v(t) = 0$:
+$$
+6t^2 - 4t + 5 = 0
+$$
+
+Discriminant: $\Delta = (-4)^2 - 4(6)(5) = 16 - 120 = -104 < 0$
+
+No real solutions — the particle never comes to rest. Its velocity is always positive (check: $v(t) = 6t^2 - 4t + 5$, discriminant $< 0$, leading coefficient positive $\implies$ always positive).
+
+(e) Since the particle is never at rest, this part is not applicable. However, we can still verify the relationship: $a(t) = v'(t) = 12t - 4$, and $v(t) = \int a(t)\,dt + v_0$, $s(t) = \int v(t)\,dt + s_0$. ✓
+
+> **Key insight**: The constant of integration is not arbitrary — it is determined by the initial (or boundary) conditions. This is why in physics problems, knowing the initial position and velocity is crucial. This idea is formalised in Chapter 7 (Integration).
+
+---
+
 ## 2.4 Practice Problems
 
 The following practice problems are written to examination difficulty, covering all the knowledge points in this chapter. The relevant syllabus reference number is indicated at the start of each problem set.
@@ -1384,6 +2013,52 @@ $$
 (c) Find the area of parallelogram $ABCD$.
 
 > Hint: The area of a parallelogram $= |\overrightarrow{AB}| \times |\overrightarrow{AD}| \times \sin\theta$, where $\theta$ is the angle between the two sides. Alternatively, use the determinant formula: Area $= |x_1 y_2 - x_2 y_1|$, where $\overrightarrow{AB} = (x_1, y_1)$, $\overrightarrow{AD} = (x_2, y_2)$.
+
+---
+
+**Problem Set — Additional Practice**
+
+**10.** Given $\mathbf{u} = 4\mathbf{i} + k\mathbf{j}$ and $\mathbf{v} = 2\mathbf{i} - 3\mathbf{j}$.
+
+(a) Find the value of $k$ such that $\mathbf{u}$ is perpendicular to $\mathbf{v}$.
+(b) Find the value of $k$ such that $\mathbf{u}$ is parallel to $\mathbf{v}$.
+(c) For $k = 1$, find the angle between $\mathbf{u}$ and $\mathbf{v}$ to the nearest $0.1^\circ$.
+
+---
+
+**11.** In $\triangle ABC$, $D$ lies on $AB$ such that $AD:DB = 1:2$, and $E$ lies on $AC$ such that $AE:EC = 3:1$. Let $\overrightarrow{AB} = \mathbf{p}$, $\overrightarrow{AC} = \mathbf{q}$.
+
+(a) Express $\overrightarrow{AD}$ in terms of $\mathbf{p}$.
+(b) Express $\overrightarrow{AE}$ in terms of $\mathbf{q}$.
+(c) Express $\overrightarrow{DE}$ in terms of $\mathbf{p}$ and $\mathbf{q}$.
+(d) Show that $DE$ is not parallel to $BC$.
+
+---
+
+**12.** Ship $P$ departs from $(2, 8)\,\text{km}$ at velocity $\mathbf{v}_P = (3\mathbf{i} - 2\mathbf{j})\,\text{km/h}$. Ship $Q$ departs from $(-4, 0)\,\text{km}$ at the same time with velocity $\mathbf{v}_Q = (5\mathbf{i} + 2\mathbf{j})\,\text{km/h}$.
+
+(a) Write the position vectors $\mathbf{r}_P(t)$ and $\mathbf{r}_Q(t)$.
+(b) Find the time $t$ at which the distance between the two ships is minimised.
+
+> Hint: The distance $d(t) = |\mathbf{r}_P(t) - \mathbf{r}_Q(t)|$. Minimise $d^2(t)$ (which is equivalent to minimising $d(t)$ and avoids dealing with square roots).
+
+---
+
+**13.** Use the limit definition of the derivative (first principles) to find $f'(x)$ for:
+
+(a) $f(x) = x^2 + 3x$
+(b) $f(x) = \dfrac{2}{x}$
+
+Verify each result using the Power Rule.
+
+---
+
+**14.** A particle moves in a plane. Its velocity vector is $\mathbf{v}(t) = (6t^2 - 4)\mathbf{i} + (2t + 1)\mathbf{j}$. At $t = 0$, its position vector is $\mathbf{r}_0 = 3\mathbf{i} - 2\mathbf{j}$.
+
+(a) Find the acceleration vector $\mathbf{a}(t)$.
+(b) Find the position vector $\mathbf{r}(t)$.
+(c) Find the speed of the particle at $t = 2$.
+(d) Determine whether the particle ever passes through the origin.
 
 ---
 
@@ -1600,6 +2275,194 @@ The area of the parallelogram is $11$ square units. ✓
 
 ---
 
+**10.**
+
+(a) For perpendicularity: $\mathbf{u} \cdot \mathbf{v} = 0$
+$$
+(4)(2) + (k)(-3) = 0 \implies 8 - 3k = 0 \implies k = \frac{8}{3}
+$$
+
+(b) For parallelism: ratio of components must be equal
+$$
+\frac{4}{2} = \frac{k}{-3} \implies 2 = \frac{k}{-3} \implies k = -6
+$$
+
+**Verification**: $\mathbf{u} = 4\mathbf{i} - 6\mathbf{j} = 2(2\mathbf{i} - 3\mathbf{j}) = 2\mathbf{v}$. ✓
+
+(c) For $k = 1$, $\mathbf{u} = 4\mathbf{i} + \mathbf{j}$.
+$$
+\mathbf{u} \cdot \mathbf{v} = (4)(2) + (1)(-3) = 8 - 3 = 5
+$$
+$$
+|\mathbf{u}| = \sqrt{4^2 + 1^2} = \sqrt{17}, \quad |\mathbf{v}| = \sqrt{2^2 + (-3)^2} = \sqrt{13}
+$$
+$$
+\cos\theta = \frac{5}{\sqrt{17}\sqrt{13}} = \frac{5}{\sqrt{221}} \approx 0.3363
+$$
+$$
+\theta = \arccos\left(\frac{5}{\sqrt{221}}\right) \approx 70.3^\circ
+$$
+
+---
+
+**11.**
+
+(a) $AD:DB = 1:2$, so $D$ divides $AB$ in the ratio $1:2$ (counting from $A$).
+
+Using the section formula ($m = 1, n = 2$, from $A$ to $B$):
+$$
+\mathbf{r}_D = \frac{2\mathbf{r}_A + 1\mathbf{r}_B}{1+2} = \frac{2\mathbf{r}_A + \mathbf{r}_B}{3}
+$$
+
+So $\overrightarrow{AD} = \mathbf{r}_D - \mathbf{r}_A = \frac{2\mathbf{r}_A + \mathbf{r}_B}{3} - \mathbf{r}_A = \frac{\mathbf{r}_B - \mathbf{r}_A}{3} = \frac{1}{3}\overrightarrow{AB} = \frac{1}{3}\mathbf{p}$.
+
+Alternatively, directly: $AD = \frac{1}{3}AB$, so $\overrightarrow{AD} = \frac{1}{3}\mathbf{p}$.
+
+(b) $AE:EC = 3:1$, so $E$ divides $AC$ in the ratio $3:1$ (counting from $A$). $AE = \frac{3}{4}AC$.
+
+$$
+\overrightarrow{AE} = \frac{3}{4}\overrightarrow{AC} = \frac{3}{4}\mathbf{q}
+$$
+
+(c)
+$$
+\overrightarrow{DE} = \overrightarrow{AE} - \overrightarrow{AD} = \frac{3}{4}\mathbf{q} - \frac{1}{3}\mathbf{p}
+$$
+
+(d) $\overrightarrow{BC} = \overrightarrow{BA} + \overrightarrow{AC} = -\mathbf{p} + \mathbf{q}$.
+
+For $DE \parallel BC$, there must exist a scalar $\lambda$ such that $\overrightarrow{DE} = \lambda \overrightarrow{BC}$:
+$$
+\frac{3}{4}\mathbf{q} - \frac{1}{3}\mathbf{p} = \lambda(-\mathbf{p} + \mathbf{q}) = -\lambda\mathbf{p} + \lambda\mathbf{q}
+$$
+
+Equate $\mathbf{p}$ coefficients: $-\frac{1}{3} = -\lambda \implies \lambda = \frac{1}{3}$
+Equate $\mathbf{q}$ coefficients: $\frac{3}{4} = \lambda \implies \lambda = \frac{3}{4}$
+
+$\frac{1}{3} \neq \frac{3}{4}$, so no such $\lambda$ exists. Therefore $DE$ is not parallel to $BC$.
+
+---
+
+**12.**
+
+(a)
+$$
+\mathbf{r}_P(t) = \begin{pmatrix} 2 \\ 8 \end{pmatrix} + \begin{pmatrix} 3 \\ -2 \end{pmatrix} t = \begin{pmatrix} 2 + 3t \\ 8 - 2t \end{pmatrix}
+$$
+$$
+\mathbf{r}_Q(t) = \begin{pmatrix} -4 \\ 0 \end{pmatrix} + \begin{pmatrix} 5 \\ 2 \end{pmatrix} t = \begin{pmatrix} -4 + 5t \\ 2t \end{pmatrix}
+$$
+
+(b) The relative position vector:
+$$
+\mathbf{r}_P(t) - \mathbf{r}_Q(t) = \begin{pmatrix} 2 + 3t - (-4 + 5t) \\ 8 - 2t - 2t \end{pmatrix} = \begin{pmatrix} 6 - 2t \\ 8 - 4t \end{pmatrix}
+$$
+
+Squared distance:
+$$
+d^2(t) = (6 - 2t)^2 + (8 - 4t)^2
+$$
+$$
+= 36 - 24t + 4t^2 + 64 - 64t + 16t^2 = 20t^2 - 88t + 100
+$$
+
+This is a quadratic in $t$ (opening upwards, so it has a minimum). The minimum occurs at:
+$$
+t = -\frac{b}{2a} = -\frac{-88}{2 \times 20} = \frac{88}{40} = 2.2
+$$
+
+So the distance between the ships is minimised at $t = 2.2$ hours.
+
+The minimum distance is:
+$$
+d(2.2) = \sqrt{20(2.2)^2 - 88(2.2) + 100} = \sqrt{96.8 - 193.6 + 100} = \sqrt{3.2} \approx 1.79\,\text{km}
+$$
+
+---
+
+**13.**
+
+(a) $f(x) = x^2 + 3x$
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{[(x+h)^2 + 3(x+h)] - [x^2 + 3x]}{h} \\
+&= \lim_{h \to 0} \frac{x^2 + 2xh + h^2 + 3x + 3h - x^2 - 3x}{h} \\
+&= \lim_{h \to 0} \frac{2xh + h^2 + 3h}{h} \\
+&= \lim_{h \to 0} (2x + h + 3) \\
+&= 2x + 3
+\end{aligned}
+$$
+
+Verification: $\dfrac{d}{dx}(x^2) = 2x$, $\dfrac{d}{dx}(3x) = 3$, sum $= 2x + 3$. ✓
+
+(b) $f(x) = \dfrac{2}{x} = 2x^{-1}$
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{\frac{2}{x+h} - \frac{2}{x}}{h} \\
+&= \lim_{h \to 0} \frac{2x - 2(x+h)}{x(x+h)} \cdot \frac{1}{h} \\
+&= \lim_{h \to 0} \frac{2x - 2x - 2h}{x(x+h)} \cdot \frac{1}{h} \\
+&= \lim_{h \to 0} \frac{-2h}{h \cdot x(x+h)} \\
+&= \lim_{h \to 0} \frac{-2}{x(x+h)} \\
+&= -\frac{2}{x^2}
+\end{aligned}
+$$
+
+Verification: $\dfrac{d}{dx}(2x^{-1}) = 2 \cdot (-1)x^{-2} = -\dfrac{2}{x^2}$. ✓
+
+---
+
+**14.**
+
+(a) $\mathbf{a}(t) = \dfrac{d\mathbf{v}}{dt} = 12t\,\mathbf{i} + 2\,\mathbf{j}$
+
+(b) Integrate velocity to get position:
+$$
+\mathbf{r}(t) = \int \mathbf{v}(t)\,dt = \int (6t^2 - 4)\,dt\,\mathbf{i} + \int (2t + 1)\,dt\,\mathbf{j}
+$$
+$$
+= (2t^3 - 4t + C_1)\mathbf{i} + (t^2 + t + C_2)\mathbf{j}
+$$
+
+Using $\mathbf{r}(0) = 3\mathbf{i} - 2\mathbf{j}$:
+At $t = 0$: $C_1\mathbf{i} + C_2\mathbf{j} = 3\mathbf{i} - 2\mathbf{j} \implies C_1 = 3, C_2 = -2$
+
+Therefore:
+$$
+\mathbf{r}(t) = (2t^3 - 4t + 3)\mathbf{i} + (t^2 + t - 2)\mathbf{j}
+$$
+
+(c) At $t = 2$:
+$$
+\mathbf{v}(2) = (6 \times 4 - 4)\mathbf{i} + (4 + 1)\mathbf{j} = 20\mathbf{i} + 5\mathbf{j}
+$$
+
+Speed $= |\mathbf{v}(2)| = \sqrt{20^2 + 5^2} = \sqrt{400 + 25} = \sqrt{425} = 5\sqrt{17} \approx 20.62\,\text{m/s}$
+
+(d) The particle passes through the origin when $\mathbf{r}(t) = \mathbf{0}$:
+$$
+\begin{cases}
+2t^3 - 4t + 3 = 0 \quad \text{(x-component)} \\
+t^2 + t - 2 = 0 \quad \text{(y-component)}
+\end{cases}
+$$
+
+From the y-component: $t^2 + t - 2 = 0 \implies (t+2)(t-1) = 0 \implies t = -2$ or $t = 1$.
+
+$t \geq 0$ (physical time), so $t = 1$ is the only candidate.
+
+Check the x-component at $t = 1$:
+$$
+2(1)^3 - 4(1) + 3 = 2 - 4 + 3 = 1 \neq 0
+$$
+
+So the particle never passes through the origin.
+
+> **Note**: Even though the y-component is zero at $t = 1$, the x-component is 1, so the position at $t = 1$ is $(1, 0)$, not the origin.
+
+---
+
 ## Chapter Summary
 
 ### Syllabus Coverage Checklist
@@ -1608,9 +2471,9 @@ The area of the parallelogram is $11$ square units. ✓
 |:---:|------|:---:|:---:|:---:|
 | 13.1 | Vector notation | 2.1.1 | 2.1(1) | 1 |
 | 13.2 | Position vectors and unit vectors | 2.1.2, 2.1.4 | 2.1(1) | 1(c) |
-| 13.3 | Magnitude, addition/subtraction, scalar multiplication, vector geometry | 2.1.3, 2.1.5–2.1.8, 2.2.1 | 2.1, 2.2 | 1–4, 9 |
-| 13.4 | Composition and resolution of velocities, collision problems | 2.2.2 | 2.3 | 5, 6 |
-| 14.1 | Rates of change and the idea of limits | 2.3 | 2.4 | 7, 8 |
+| 13.3 | Magnitude, addition/subtraction, scalar multiplication, vector geometry | 2.1.3, 2.1.5–2.1.8, 2.2.1 | 2.1, 2.2 | 1–4, 9, 10, 11 |
+| 13.4 | Composition and resolution of velocities, collision problems | 2.2.2 | 2.3 | 5, 6, 12 |
+| 14.1 | Rates of change and the idea of limits | 2.3 | 2.4 | 7, 8, 13, 14 |
 
 ### Quick Reference Formula Table
 
