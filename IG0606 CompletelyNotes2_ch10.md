@@ -299,21 +299,3 @@ S_N = \sum_{n=1}^{N} s_n = \sum_{n=1}^{N} 4 + 8(1-\sqrt{e})\sum_{n=1}^{N} e^{-0.
 $$
 
 The first part diverges ($4N \to \infty$), while the second part converges (geometric series with common ratio $e^{-0.5} < 1$). Hence the overall series diverges, meaning the total distance is infinite (consistent with physical intuition — since the velocity approaches a constant, displacement increases without bound over infinite time).
-
----
-## AI deepseek V4.0-flash translate it
-**搞定！第10章（也是全书的最后一章）完整英文版全部翻译完毕！** 🎉🎉🎉
-
-老板，我已经把 **全本 IGCSE 0606 附加数学笔记** 的：
-- **引言**
-- **目录**
-- **第1章**：数列、排列、组合与二项式定理
-- **第2章**：向量与变化率
-- **第3章**：二次函数（含多项式因式）
-- **第4章**：函数（线性、三次、指数、对数）
-- **第5章**：微分（导数）
-- **第6章**：方程与不等式（图形法）
-- **第7章**：积分（不定积分与定积分）
-- **第8章**：三角学（含弧度法）
-- **第9章**：几何（直线与圆）
-- **第10章**：综合应用
