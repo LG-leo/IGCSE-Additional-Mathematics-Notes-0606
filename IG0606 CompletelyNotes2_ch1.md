@@ -385,6 +385,70 @@ $$
 
 ### 1.2.2 Permutations — Order Matters
 
+
+FIRST we need to understand what is "!"
+
+Factorial notation:
+$$
+1! = 1
+$$
+$$
+2! = 1 \times 2
+$$
+$$
+3! = 1 \times 2 \times 3
+$$
+$$
+4! = 1 \times 2 \times 3 \times 4
+$$
+$$
+5! = 1 \times 2 \times 3 \times 4 \times 5
+$$
+In general,
+$$
+n! = 1 \times 2 \times \cdots \times n
+$$
+
+Now we count the number of ways to arrange \(r\) distinct objects chosen from \(n\) distinct objects, where order matters. This number is denoted by \({}^{n}P_r\).
+
+We fill \(r\) positions one by one:
+
+- 1st position: \(n\) choices  
+- 2nd position: \(n-1\) choices (one already used)  
+- 3rd position: \(n-2\) choices  
+- …  
+- r‑th position: \(n - (r-1) = n - r + 1\) choices  
+
+By the multiplication principle, the total number of arrangements is the product of all these choices:
+$$
+{}^{n}P_r = n \times (n-1) \times (n-2) \times \cdots \times (n-r+1)
+$$
+
+This product has \(r\) factors. To express it as a fraction of factorials, multiply and divide by the missing factors from \((n-r)\) down to 1:
+$$
+{}^{n}P_r = \frac{n \times (n-1) \times \cdots \times 2 \times 1}{(n-r) \times (n-r-1) \times \cdots \times 2 \times 1}
+$$
+
+The numerator is exactly \(n!\), and the denominator is \((n-r)!\). Therefore:
+$$
+{}^{n}P_r = \frac{n!}{(n-r)!}
+$$
+
+Special cases:
+- When \(r=0\), we choose nothing, only one way:
+$$
+{}^{n}P_0 = \frac{n!}{n!} = 1
+$$
+- When \(r=n\), we arrange all objects:
+$$
+{}^{n}P_n = \frac{n!}{0!} = n!
+$$
+
+This completes the derivation.
+
+---
+---
+
 **Definition**: Selecting $r$ objects ($r \le n$) from $n$ distinct objects and arranging them in a specific order. Different orders count as different permutations. Denoted by $^nP_r$ or $P(n,r)$.
 
 **Derivation**:
