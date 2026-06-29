@@ -15,26 +15,13 @@ You are free to share and adapt for **non-commercial purposes**, with attributio
 
 ## TIPS！！！
 
-> 40.5% A*
-> 60.5% above A*
-> 85% above B
+## github is not successfully support the LATEX MATH FORMULA in the website. 
 
-----2026 MARCH 
+## So I suggest people download "Visula Studio Code", and add a extension "MARKDOWN ALL IN ONE" to successdul demo the LATEX MATH FORMULA
 
-> 30.3% A*
-> 54.1% above A
-> 74.5% above B
---2025
+## WHICH WILL MAKES YOU HAVE A GREAT FEEL WHEN YOU READ THE NOTE
 
-- 2026:
-- A*=139
-- A=119
-
-- 2025:
-- A*=135~137
-- A=110~115
-
-## REMEMBER! TRY HARDER NOW...
+## IF YOU ARE A TEACHER, YOU CAN ctrl+C/V (Cmd+C/V) the note in the demo places to the word document.
 
 ---
 
