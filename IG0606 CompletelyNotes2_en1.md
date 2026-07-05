@@ -983,7 +983,7 @@ $$
 \boxed{\binom{n}{r} + \binom{n}{r-1} = \binom{n+1}{r}}
 $$
 
-**Pascal's Triangle**:
+**Pascal's Triangle**: *supplement only
 
 ```
 n=0:        1
