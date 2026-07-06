@@ -54,9 +54,576 @@ This chapter builds a complete knowledge system for two-dimensional vectors from
 
 ---
 
-## 2.1 Fundamentals of Two-Dimensional Vectors
+## 2.1 Introduction to Rates of Change (Calculus Foundation)
 
-### 2.1.1 What is a Vector?
+### 2.1.1 Why Study Rates of Change?
+
+In the physical world, very few things remain static. A moving car — its position changes. An inflating balloon — its volume changes. A heated metal rod — its temperature changes. A **rate of change** is the mathematical tool that describes "how quickly one quantity changes with respect to another."
+
+In sections 2.2 and 2.3, we used vectors to describe position, velocity, and acceleration. Now we ask a deeper question: **How do we precisely define "instantaneous" rate of change?**
+
+---
+
+### 2.1.2 From Average Rate of Change to Instantaneous Rate of Change
+
+Let's start with a concrete kinematics example.
+
+A particle moves along a straight line. Its displacement $s$ (in metres) as a function of time $t$ (in seconds) is:
+
+$$
+s(t) = t^2
+$$
+
+We want to find the velocity at the **instant** $t = 1$ second.
+
+#### Step 1: Average Velocity
+
+If we take a time interval $[1, 1 + \Delta t]$, the average velocity of the particle over this interval is:
+
+$$
+\text{Average velocity} = \frac{s(1 + \Delta t) - s(1)}{\Delta t}
+$$
+
+Substituting $s(t) = t^2$:
+
+$$
+\frac{(1 + \Delta t)^2 - 1^2}{\Delta t} = \frac{1 + 2\Delta t + (\Delta t)^2 - 1}{\Delta t} = \frac{2\Delta t + (\Delta t)^2}{\Delta t} = 2 + \Delta t
+$$
+
+#### Step 2: Let $\Delta t$ Become Smaller and Smaller
+
+We let $\Delta t$ gradually approach 0 and observe how the average velocity changes:
+
+| $\Delta t$ (seconds) | Average Velocity (m/s) |
+|:---:|:---:|
+| 0.1 | $2 + 0.1 = 2.1$ |
+| 0.01 | $2 + 0.01 = 2.01$ |
+| 0.001 | $2 + 0.001 = 2.001$ |
+| 0.0001 | $2 + 0.0001 = 2.0001$ |
+| $\to 0$ | $\to 2$ |
+
+As $\Delta t$ gets closer and closer to 0, the average velocity gets closer and closer to **2**.
+
+#### Step 3: The Limit
+
+When $\Delta t$ approaches 0, the average velocity $2 + \Delta t$ approaches 2. We write:
+
+$$
+v(1) = \lim_{\Delta t \to 0} \frac{s(1 + \Delta t) - s(1)}{\Delta t} = \lim_{\Delta t \to 0} (2 + \Delta t) = 2
+$$
+
+This limiting value is the **instantaneous velocity** of the particle at $t = 1$.
+
+> **Important understanding**: We never set $\Delta t = 0$ (that would give $0/0$, which is meaningless). We let $\Delta t$ approach 0 infinitely closely and observe what fixed value the ratio approaches. This "target of approach" is the derivative.
+>
+> In the language of limits: **As $\Delta t$ approaches 0, the limit of the average velocity is the instantaneous velocity.**
+
+---
+
+### 2.1.3 General Definition of the Derivative
+
+In general, for a function $y = f(x)$, its **derivative** (i.e., instantaneous rate of change) at $x = a$ is defined as:
+
+$$
+f'(a) = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}
+$$
+
+where $h$ corresponds to $\Delta x$ or $\Delta t$ in the earlier example.
+
+If this limit exists, we say that $f$ is **differentiable** at $x = a$.
+
+**Notation for derivatives**:
+- Leibniz notation: $\dfrac{dy}{dx}$ or $\dfrac{d}{dx}f(x)$
+- Lagrange notation: $f'(x)$
+- Newton notation (commonly used in physics): $\dot{y}$
+
+> In syllabus point 14.1, only an intuitive understanding of limits is required; differentiation from first principles is not required. However, we will still present a few basic derivations here to help build your intuition.
+
+---
+
+### 2.1.4 Derivatives from First Principles — Basic Derivations
+
+Let's use the limit definition to derive the derivatives of some basic functions.
+
+#### Derivation 1: $f(x) = x^2$
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{(x + h)^2 - x^2}{h} \\
+&= \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} \\
+&= \lim_{h \to 0} \frac{2xh + h^2}{h} \\
+&= \lim_{h \to 0} (2x + h) \\
+&= 2x
+\end{aligned}
+$$
+
+Therefore $\dfrac{d}{dx}(x^2) = 2x$.
+
+**Geometric meaning**: The slope of the tangent line to the function $y = x^2$ at any point $x$ is $2x$. At $x = 1$, the slope is $2$; at $x = 3$, the slope is $6$.
+
+#### Derivation 2: $f(x) = x^3$
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{(x + h)^3 - x^3}{h}
+\end{aligned}
+$$
+
+Expanding $(x + h)^3 = x^3 + 3x^2h + 3xh^2 + h^3$:
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{x^3 + 3x^2h + 3xh^2 + h^3 - x^3}{h} \\
+&= \lim_{h \to 0} \frac{3x^2h + 3xh^2 + h^3}{h} \\
+&= \lim_{h \to 0} (3x^2 + 3xh + h^2) \\
+&= 3x^2
+\end{aligned}
+$$
+
+Therefore $\dfrac{d}{dx}(x^3) = 3x^2$.
+
+#### Derivation 3: $f(x) = \dfrac{1}{x}$ ($x \neq 0$)
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{\frac{1}{x + h} - \frac{1}{x}}{h}
+\end{aligned}
+$$
+
+First, combine the fractions in the numerator:
+
+$$
+\frac{1}{x + h} - \frac{1}{x} = \frac{x - (x + h)}{x(x + h)} = \frac{-h}{x(x + h)}
+$$
+
+Therefore:
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{-h}{x(x + h)} \cdot \frac{1}{h} \\
+&= \lim_{h \to 0} \frac{-1}{x(x + h)} \\
+&= -\frac{1}{x^2}
+\end{aligned}
+$$
+
+Thus $\dfrac{d}{dx}\left(\dfrac{1}{x}\right) = -\dfrac{1}{x^2}$.
+
+#### Derivation 4: $f(x) = \sqrt{x}$ ($x > 0$)
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{\sqrt{x + h} - \sqrt{x}}{h}
+\end{aligned}
+$$
+
+This one requires a clever trick: multiply numerator and denominator by the conjugate $\sqrt{x + h} + \sqrt{x}$:
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{(\sqrt{x + h} - \sqrt{x})(\sqrt{x + h} + \sqrt{x})}{h(\sqrt{x + h} + \sqrt{x})} \\
+&= \lim_{h \to 0} \frac{(x + h) - x}{h(\sqrt{x + h} + \sqrt{x})} \\
+&= \lim_{h \to 0} \frac{h}{h(\sqrt{x + h} + \sqrt{x})} \\
+&= \lim_{h \to 0} \frac{1}{\sqrt{x + h} + \sqrt{x}} \\
+&= \frac{1}{\sqrt{x} + \sqrt{x}} = \frac{1}{2\sqrt{x}}
+\end{aligned}
+$$
+
+Therefore $\dfrac{d}{dx}(\sqrt{x}) = \dfrac{1}{2\sqrt{x}}$. Note that this is consistent with the Power Rule: $\sqrt{x} = x^{1/2}$, so $\dfrac{d}{dx}(x^{1/2}) = \dfrac{1}{2}x^{-1/2} = \dfrac{1}{2\sqrt{x}}$. ✓
+
+> **Why the conjugate trick?** When direct substitution gives $0/0$, multiplying by the conjugate is a standard technique to rationalise the numerator and eliminate the indeterminacy.
+
+#### Derivation 5: $f(x) = c$ (constant function)
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h} \\
+&= \lim_{h \to 0} \frac{c - c}{h} \\
+&= \lim_{h \to 0} \frac{0}{h} \\
+&= \lim_{h \to 0} 0 = 0
+\end{aligned}
+$$
+
+Therefore $\dfrac{d}{dx}(c) = 0$. The rate of change of a constant is zero — a horizontal line has zero slope everywhere. This also fits the Power Rule: $c = c \cdot x^0$, and $\dfrac{d}{dx}(c \cdot x^0) = c \cdot 0 \cdot x^{-1} = 0$.
+
+#### Derivation 6: $f(x) = ax + b$ (linear function)
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{[a(x + h) + b] - [ax + b]}{h} \\
+&= \lim_{h \to 0} \frac{ax + ah + b - ax - b}{h} \\
+&= \lim_{h \to 0} \frac{ah}{h} \\
+&= \lim_{h \to 0} a = a
+\end{aligned}
+$$
+
+Therefore $\dfrac{d}{dx}(ax + b) = a$. The derivative of a linear function is its slope — exactly what we expect.
+
+#### Derivation 7: $f(x) = \dfrac{1}{x^2}$ ($x \neq 0$)
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{\frac{1}{(x + h)^2} - \frac{1}{x^2}}{h}
+\end{aligned}
+$$
+
+Combine the fractions in the numerator:
+$$
+\frac{1}{(x + h)^2} - \frac{1}{x^2} = \frac{x^2 - (x + h)^2}{x^2(x + h)^2} = \frac{x^2 - (x^2 + 2xh + h^2)}{x^2(x + h)^2} = \frac{-2xh - h^2}{x^2(x + h)^2}
+$$
+
+Therefore:
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{-2xh - h^2}{x^2(x + h)^2} \cdot \frac{1}{h} \\
+&= \lim_{h \to 0} \frac{-2x - h}{x^2(x + h)^2} \\
+&= \frac{-2x}{x^2 \cdot x^2} = -\frac{2x}{x^4} = -\frac{2}{x^3}
+\end{aligned}
+$$
+
+Thus $\dfrac{d}{dx}\left(\dfrac{1}{x^2}\right) = -\dfrac{2}{x^3}$. Consistent with the Power Rule: $x^{-2} \to -2x^{-3}$. ✓
+
+---
+
+### 2.1.5 The Power Rule
+
+From the derivations above, we can observe a pattern:
+
+| $f(x)$ | $f'(x)$ |
+|:---:|:---:|
+| $x^2$ | $2x$ |
+| $x^3$ | $3x^2$ |
+| $x^1$ | $1$ (i.e., $1 \cdot x^0$) |
+| $\dfrac{1}{x} = x^{-1}$ | $-\dfrac{1}{x^2} = -x^{-2}$ |
+
+This pattern is the **Power Rule**: for any real number $n$,
+
+$$
+\boxed{\frac{d}{dx}(x^n) = n x^{n-1}}
+$$
+
+> **Full derivation of the Power Rule** (using the Binomial Theorem, for positive integers $n$ only):
+>
+> Consider $f(x) = x^n$, where $n$ is a positive integer. Expand $(x + h)^n$ using the Binomial Theorem:
+> $$
+> (x + h)^n = x^n + n x^{n-1}h + \binom{n}{2}x^{n-2}h^2 + \binom{n}{3}x^{n-3}h^3 + \dots + h^n
+> $$
+> Therefore:
+> $$
+> \begin{aligned}
+> f'(x) &= \lim_{h \to 0} \frac{x^n + n x^{n-1}h + \binom{n}{2}x^{n-2}h^2 + \dots + h^n - x^n}{h} \\
+> &= \lim_{h \to 0} \left( n x^{n-1} + \binom{n}{2}x^{n-2}h + \binom{n}{3}x^{n-3}h^2 + \dots + h^{n-1} \right) \\
+> &= n x^{n-1}
+> \end{aligned}
+> $$
+> because all terms containing $h$ tend to 0 as $h \to 0$.
+
+---
+
+### 2.1.6 Rates of Change in the Context of Vectors: Kinematics
+
+Now let's return to the context of vectors. If a particle's position vector $\mathbf{r}(t)$ changes with time, then its velocity vector and acceleration vector are the rates of change of the position vector with respect to time.
+
+Let $\mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j}$. Then:
+
+$$
+\mathbf{v}(t) = \frac{d\mathbf{r}}{dt} = \frac{dx}{dt}\mathbf{i} + \frac{dy}{dt}\mathbf{j}
+$$
+
+$$
+\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = \frac{d^2\mathbf{r}}{dt^2} = \frac{d^2x}{dt^2}\mathbf{i} + \frac{d^2y}{dt^2}\mathbf{j}
+$$
+
+That is, differentiating a vector function means differentiating each of its components separately.
+
+---
+
+### 2.1.7 From Acceleration to Velocity and Position (Integration Foundation)
+
+In physics, acceleration $\mathbf{a}(t)$ is the rate of change of velocity $\mathbf{v}(t)$. If we know the acceleration and want to recover the velocity, we need to perform the inverse operation of differentiation — this is called **integration** (which will be studied in detail in Chapter 7).
+
+The basic relationships are:
+
+- Velocity $\mathbf{v}(t) = \int \mathbf{a}(t) \, dt + \mathbf{v}_0$ (where $\mathbf{v}_0$ is the initial velocity)
+- Position $\mathbf{r}(t) = \int \mathbf{v}(t) \, dt + \mathbf{r}_0$ (where $\mathbf{r}_0$ is the initial position)
+
+Or, using definite integrals (more suitable for problems with specific time intervals):
+
+$$
+\mathbf{v}(t) = \mathbf{v}_0 + \int_0^t \mathbf{a}(u) \, du,
+\quad
+\mathbf{r}(t) = \mathbf{r}_0 + \int_0^t \mathbf{v}(u) \, du
+$$
+
+The intuition to establish here is: **Differentiation** finds the rate of change (position → velocity → acceleration), while **Integration** finds the accumulated quantity (acceleration → velocity → position). They are inverse operations of each other.
+
+---
+
+### 📌 Worked Examples 2.4: Introduction to Rates of Change
+
+**Example 1** (Using the limit definition to find instantaneous velocity)
+
+A particle's displacement (in metres) as a function of time (in seconds) is $s(t) = 3t^2 - 2t + 1$.
+
+(a) Find the average velocity from $t = 2$ to $t = 2 + h$.
+(b) Use the limit to find the instantaneous velocity at $t = 2$.
+
+**Solution approach**:
+- Average velocity = $\dfrac{s(2+h) - s(2)}{h}$
+- Instantaneous velocity = $\displaystyle\lim_{h \to 0}$ (average velocity)
+
+**Solution**:
+
+(a)
+$$
+\begin{aligned}
+\text{Average velocity} &= \frac{s(2 + h) - s(2)}{h} \\
+&= \frac{[3(2+h)^2 - 2(2+h) + 1] - [3(4) - 4 + 1]}{h} \\
+&= \frac{[3(4 + 4h + h^2) - 4 - 2h + 1] - [12 - 4 + 1]}{h} \\
+&= \frac{[12 + 12h + 3h^2 - 4 - 2h + 1] - 9}{h} \\
+&= \frac{[9 + 10h + 3h^2] - 9}{h} \\
+&= \frac{10h + 3h^2}{h} = 10 + 3h
+\end{aligned}
+$$
+
+(b) The instantaneous velocity is the limit of the average velocity as $h \to 0$:
+
+$$
+v(2) = \lim_{h \to 0} (10 + 3h) = 10\,\text{m/s}
+$$
+
+Therefore, the particle's instantaneous velocity at $t = 2$ seconds is $10\,\text{m/s}$.
+
+> **Verification**: Using the Power Rule to differentiate directly: $s'(t) = 6t - 2$, $s'(2) = 12 - 2 = 10$, consistent. ✓
+
+---
+
+**Example 2** (Using the limit definition to find a general derivative + verification by the Power Rule)
+
+Use the limit definition of the derivative to find $f'(x)$ for $f(x) = 4x - x^2$.
+
+**Solution**:
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h} \\
+&= \lim_{h \to 0} \frac{[4(x + h) - (x + h)^2] - [4x - x^2]}{h} \\
+&= \lim_{h \to 0} \frac{4x + 4h - (x^2 + 2xh + h^2) - 4x + x^2}{h} \\
+&= \lim_{h \to 0} \frac{4h - 2xh - h^2}{h} \\
+&= \lim_{h \to 0} (4 - 2x - h) \\
+&= 4 - 2x
+\end{aligned}
+$$
+
+Therefore $f'(x) = 4 - 2x$.
+
+**Verification**: Using the Power Rule to differentiate $f(x) = 4x - x^2$ term by term:
+- $\dfrac{d}{dx}(4x) = 4 \cdot 1 \cdot x^{0} = 4$
+- $\dfrac{d}{dx}(-x^2) = -2x^{1} = -2x$
+- Adding gives $f'(x) = 4 - 2x$, consistent with the result from the limit. ✓
+
+---
+
+**Example 3** (Rates of change of vectors + integration as the inverse operation)
+
+A particle moves in a plane. Its position vector is:
+
+$$
+\mathbf{r}(t) = (t^3 - 3t)\mathbf{i} + (t^2 - 2t)\mathbf{j}
+$$
+
+where $t$ is in seconds and position is in metres.
+
+(a) Find the velocity vector $\mathbf{v}(t)$.
+(b) Find the acceleration vector $\mathbf{a}(t)$.
+(c) Find the velocity and acceleration vectors at $t = 2$ seconds.
+(d) Given that the particle's acceleration is $\mathbf{a}(t) = 6t\mathbf{i} + 2\mathbf{j}$, initial velocity $\mathbf{v}_0 = -3\mathbf{i} - 2\mathbf{j}$, and initial position $\mathbf{r}_0 = \mathbf{0}$, use integration to find $\mathbf{v}(t)$ and $\mathbf{r}(t)$, and verify they are consistent with parts (a) and (b).
+
+**Solution approach**:
+- Velocity = derivative of position (differentiate each component separately)
+- Acceleration = derivative of velocity (differentiate each component separately)
+- Integration is the inverse of differentiation: given acceleration, integrate once to get velocity (add constant), then integrate again to get position (add constant)
+- Constants are determined by the initial conditions
+
+**Solution**:
+
+(a) Velocity is the derivative of position with respect to time; differentiate each component:
+
+$$
+\mathbf{v}(t) = \frac{d\mathbf{r}}{dt} = \frac{d}{dt}(t^3 - 3t)\,\mathbf{i} + \frac{d}{dt}(t^2 - 2t)\,\mathbf{j}
+$$
+
+Using the Power Rule:
+- $\dfrac{d}{dt}(t^3) = 3t^2$
+- $\dfrac{d}{dt}(-3t) = -3$
+- $\dfrac{d}{dt}(t^2) = 2t$
+- $\dfrac{d}{dt}(-2t) = -2$
+
+Therefore:
+
+$$
+\mathbf{v}(t) = (3t^2 - 3)\mathbf{i} + (2t - 2)\mathbf{j}
+$$
+
+(b) Acceleration is the derivative of velocity with respect to time:
+
+$$
+\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = \frac{d}{dt}(3t^2 - 3)\,\mathbf{i} + \frac{d}{dt}(2t - 2)\,\mathbf{j}
+$$
+
+$$
+\mathbf{a}(t) = (6t)\mathbf{i} + 2\mathbf{j}
+$$
+
+(c) Substitute $t = 2$:
+
+$$
+\mathbf{v}(2) = (3 \times 4 - 3)\mathbf{i} + (4 - 2)\mathbf{j} = 9\mathbf{i} + 2\mathbf{j}\,\text{m/s}
+$$
+
+Magnitude of velocity: $|\mathbf{v}(2)| = \sqrt{9^2 + 2^2} = \sqrt{81 + 4} = \sqrt{85} \approx 9.22\,\text{m/s}$
+
+$$
+\mathbf{a}(2) = (6 \times 2)\mathbf{i} + 2\mathbf{j} = 12\mathbf{i} + 2\mathbf{j}\,\text{m/s}^2
+$$
+
+Magnitude of acceleration: $|\mathbf{a}(2)| = \sqrt{12^2 + 2^2} = \sqrt{144 + 4} = \sqrt{148} = 2\sqrt{37} \approx 12.17\,\text{m/s}^2$
+
+(d) Given $\mathbf{a}(t) = (6t)\mathbf{i} + 2\mathbf{j}$, integrate the acceleration to find velocity:
+
+$$
+\mathbf{v}(t) = \int \mathbf{a}(t) \, dt = \left(\int 6t \, dt\right)\mathbf{i} + \left(\int 2 \, dt\right)\mathbf{j}
+$$
+
+$$
+= (3t^2 + C_1)\mathbf{i} + (2t + C_2)\mathbf{j}
+$$
+
+From $\mathbf{v}_0 = \mathbf{v}(0) = -3\mathbf{i} - 2\mathbf{j}$, substituting $t = 0$ gives $C_1 = -3$, $C_2 = -2$. So:
+
+$$
+\mathbf{v}(t) = (3t^2 - 3)\mathbf{i} + (2t - 2)\mathbf{j}
+$$
+
+This is consistent with part (a). ✓
+
+Now integrate the velocity to find position:
+
+$$
+\mathbf{r}(t) = \int \mathbf{v}(t) \, dt = \left(\int (3t^2 - 3) \, dt\right)\mathbf{i} + \left(\int (2t - 2) \, dt\right)\mathbf{j}
+$$
+
+$$
+= (t^3 - 3t + D_1)\mathbf{i} + (t^2 - 2t + D_2)\mathbf{j}
+$$
+
+From $\mathbf{r}_0 = \mathbf{r}(0) = \mathbf{0}$, substituting $t = 0$ gives $D_1 = 0$, $D_2 = 0$. So:
+
+$$
+\mathbf{r}(t) = (t^3 - 3t)\mathbf{i} + (t^2 - 2t)\mathbf{j}
+$$
+
+This is consistent with the original position function. ✓
+
+---
+
+**Example 4** (First principles derivation for a cubic function)
+
+Use the limit definition of the derivative to find $f'(x)$ for $f(x) = 2x^3 - x$.
+
+**Solution**:
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h} \\
+&= \lim_{h \to 0} \frac{[2(x + h)^3 - (x + h)] - [2x^3 - x]}{h}
+\end{aligned}
+$$
+
+Expand $(x + h)^3 = x^3 + 3x^2h + 3xh^2 + h^3$:
+
+$$
+\begin{aligned}
+f'(x) &= \lim_{h \to 0} \frac{2(x^3 + 3x^2h + 3xh^2 + h^3) - x - h - 2x^3 + x}{h} \\
+&= \lim_{h \to 0} \frac{2x^3 + 6x^2h + 6xh^2 + 2h^3 - x - h - 2x^3 + x}{h} \\
+&= \lim_{h \to 0} \frac{6x^2h + 6xh^2 + 2h^3 - h}{h} \\
+&= \lim_{h \to 0} (6x^2 + 6xh + 2h^2 - 1) \\
+&= 6x^2 - 1
+\end{aligned}
+$$
+
+Therefore $f'(x) = 6x^2 - 1$.
+
+**Verification** using the Power Rule term by term:
+- $\dfrac{d}{dx}(2x^3) = 2 \cdot 3x^2 = 6x^2$
+- $\dfrac{d}{dx}(-x) = -1$
+- Sum: $6x^2 - 1$. ✓
+
+---
+
+**Example 5** (Kinematics: from acceleration to position via integration, with non-zero initial conditions)
+
+A particle moves along a straight line. Its acceleration is $a(t) = 12t - 4\,\text{m/s}^2$. At $t = 0$, its velocity is $v_0 = 5\,\text{m/s}$ and its displacement is $s_0 = 10\,\text{m}$.
+
+(a) Find the velocity $v(t)$.
+(b) Find the displacement $s(t)$.
+(c) Find the displacement at $t = 3$ seconds.
+(d) Find the time(s) when the particle is momentarily at rest.
+(e) Find the acceleration when the particle is at rest.
+
+**Solution approach**:
+- Integrate acceleration to get velocity (don't forget $+C$, use initial condition)
+- Integrate velocity to get displacement (don't forget $+C$, use initial condition)
+- "At rest" means $v(t) = 0$
+
+**Solution**:
+
+(a) Integrate $a(t) = 12t - 4$:
+$$
+v(t) = \int (12t - 4)\,dt = 6t^2 - 4t + C
+$$
+
+Use $v(0) = 5$:
+$$
+5 = 6(0)^2 - 4(0) + C \implies C = 5
+$$
+
+Therefore $v(t) = 6t^2 - 4t + 5\,\text{m/s}$.
+
+(b) Integrate $v(t) = 6t^2 - 4t + 5$:
+$$
+s(t) = \int (6t^2 - 4t + 5)\,dt = 2t^3 - 2t^2 + 5t + D
+$$
+
+Use $s(0) = 10$:
+$$
+10 = 0 - 0 + 0 + D \implies D = 10
+$$
+
+Therefore $s(t) = 2t^3 - 2t^2 + 5t + 10\,\text{m}$.
+
+(c) At $t = 3$:
+$$
+s(3) = 2(27) - 2(9) + 5(3) + 10 = 54 - 18 + 15 + 10 = 61\,\text{m}
+$$
+
+(d) At rest when $v(t) = 0$:
+$$
+6t^2 - 4t + 5 = 0
+$$
+
+Discriminant: $\Delta = (-4)^2 - 4(6)(5) = 16 - 120 = -104 < 0$
+
+No real solutions — the particle never comes to rest. Its velocity is always positive (check: $v(t) = 6t^2 - 4t + 5$, discriminant $< 0$, leading coefficient positive $\implies$ always positive).
+
+(e) Since the particle is never at rest, this part is not applicable. However, we can still verify the relationship: $a(t) = v'(t) = 12t - 4$, and $v(t) = \int a(t)\,dt + v_0$, $s(t) = \int v(t)\,dt + s_0$. ✓
+
+> **Key insight**: The constant of integration is not arbitrary — it is determined by the initial (or boundary) conditions. This is why in physics problems, knowing the initial position and velocity is crucial. This idea is formalised in Chapter 7 (Integration).
+
+---
+
+## 2.2 Fundamentals of Two-Dimensional Vectors
+
+### 2.2.1 What is a Vector?
 
 A **vector** is a quantity that has both **magnitude** and **direction**. In contrast, a **scalar** has only magnitude, not direction. For example:
 
@@ -107,7 +674,7 @@ $$
 
 ---
 
-### 2.1.2 Position Vectors
+### 2.2.2 Position Vectors
 
 Let $O$ be the origin. The **position vector** of any point $P(x, y)$ is:
 
@@ -121,7 +688,7 @@ The position vector tells us where point $P$ is located relative to the origin. 
 
 ---
 
-### 2.1.3 Magnitude of a Vector
+### 2.2.3 Magnitude of a Vector
 
 The magnitude (or length, or size) of the vector $\mathbf{v} = x\mathbf{i} + y\mathbf{j}$ is given by the Pythagorean theorem:
 
@@ -135,7 +702,7 @@ The magnitude is always a non-negative real number. It is zero if and only if th
 
 ---
 
-### 2.1.4 Unit Vectors
+### 2.2.4 Unit Vectors
 
 A **unit vector** is a vector with magnitude 1. Given any non-zero vector $\mathbf{v}$, we can construct a unit vector $\hat{\mathbf{v}}$ in the same direction:
 
@@ -155,7 +722,7 @@ That is, we divide the original vector by its own magnitude. This operation is c
 
 ---
 
-### 2.1.5 Vector Addition and Subtraction
+### 2.2.5 Vector Addition and Subtraction
 
 To add two vectors, we add their corresponding components separately:
 
@@ -231,7 +798,7 @@ So $\mathbf{a} - \mathbf{b}$ is the vector that, when added to $\mathbf{b}$, giv
 
 ---
 
-### 2.1.6 Scalar Multiplication
+### 2.2.6 Scalar Multiplication
 
 Multiplying a vector by a scalar $c$ is equivalent to multiplying each component by $c$:
 
@@ -253,7 +820,7 @@ $$
 
 ---
 
-### 2.1.7 Equal Vectors
+### 2.2.7 Equal Vectors
 
 Two vectors are equal if and only if their corresponding components are equal respectively. That is:
 
@@ -267,7 +834,7 @@ This is called the **principle of equating like vectors** — it is the core too
 
 ---
 
-### 2.1.8 Perpendicular Vectors (Orthogonal Vectors)
+### 2.2.8 Perpendicular Vectors (Orthogonal Vectors)
 
 #### What is Perpendicular?
 
@@ -360,6 +927,68 @@ $$
 \mathbf{u} \cdot \mathbf{u} = u_x^2 + u_y^2 = |\mathbf{u}|^2
 $$
 This provides a quick way to compute the squared magnitude: $|\mathbf{u}|^2 = \mathbf{u} \cdot \mathbf{u}$.
+
+**A key application** — expanding $|\mathbf{a} + \mathbf{b}|^2$:
+$$
+|\mathbf{a} + \mathbf{b}|^2 = (\mathbf{a} + \mathbf{b}) \cdot (\mathbf{a} + \mathbf{b}) = \mathbf{a} \cdot \mathbf{a} + 2\mathbf{a} \cdot \mathbf{b} + \mathbf{b} \cdot \mathbf{b} = |\mathbf{a}|^2 + 2\mathbf{a} \cdot \mathbf{b} + |\mathbf{b}|^2
+$$
+
+**Property 5: The Zero Vector Dot Product — The Logical Cornerstone**
+
+This property may seem "too obvious," but it is actually **the most important logical foundation** of the entire dot product system. Together with Property 4 (self dot product), it defines what "length" and "zero" mean. Let us unpack it from four levels.
+
+**Level 1: Direct Algebraic Computation**
+
+Let the zero vector be $\mathbf{0} = (0, 0)$ and an arbitrary vector be $\mathbf{v} = (v_x, v_y)$. Substituting directly into the coordinate dot product formula:
+
+$$
+\mathbf{0} \cdot \mathbf{v} = 0 \times v_x + 0 \times v_y = 0 + 0 = 0
+$$
+
+No matter how large or small $v_x$ and $v_y$ are, multiplying by 0 makes everything zero. This is the **absolute nullifying power** of the zero vector in algebra.
+
+**Level 2: Geometric and Physical Intuition**
+
+Using the geometric formula for the dot product:
+
+$$
+\mathbf{0} \cdot \mathbf{v} = |\mathbf{0}| \cdot |\mathbf{v}| \cdot \cos\theta
+$$
+
+Since the length of the zero vector is $|\mathbf{0}| = 0$:
+
+$$
+0 \cdot |\mathbf{v}| \cdot \cos\theta = 0
+$$
+
+> **Physical analogy**: Imagine pushing a box with all your strength (the force vector is $\mathbf{v}$), but the box has **zero displacement** (the displacement vector is $\mathbf{0}$). No matter how hard you push, the work done (work = force $\cdot$ displacement) is always 0. **"Zero length" means "no action took place," so the dot product must be zero.**
+
+**Level 3: ⚠️ The Most Common Pitfall — Logical Clarification**
+
+This is the critical conceptual divide. **You must distinguish between two completely different "zeros":**
+
+| Case | Expression | Meaning | Geometric Interpretation |
+| :--- | :--- | :--- | :--- |
+| **Property 5** | $\mathbf{0} \cdot \mathbf{v} = 0$ | The product is zero because the **zero vector itself has length 0** | There is no angle to speak of (the zero vector has no direction) |
+| **Perpendicularity condition** | $\mathbf{u} \cdot \mathbf{v} = 0$ (with $\mathbf{u}, \mathbf{v}$ both non-zero) | The product is zero because the **angle is 90°**, so $\cos 90^\circ = 0$ | Two arrows form a right angle in space |
+
+> **Never say that "the zero vector is perpendicular to every vector because the angle is 90°"** — the zero vector has no direction at all, so where would 90° come from?
+>
+> The rigorous mathematical statement is: **We adopt the convention that the zero vector is orthogonal to every vector (for algebraic convenience), but geometrically it does not point in any direction.**
+>
+> Property 5 holds because of "length equals zero," NOT because of "angle equals 90°." Although both cases produce an algebraic result of 0, **the underlying physical reasons are fundamentally different.**
+
+**Level 4: Property 5 + Property 4 = Defining "Positive-Definiteness" (Cornerstone of Mathematical Foundations)**
+
+In advanced mathematics (functional analysis, linear algebra), the dot product (inner product) must satisfy an iron law — **positive-definiteness**:
+
+1. $\mathbf{v} \cdot \mathbf{v} \ge 0$ (always non-negative, from Property 4)
+2. $\mathbf{v} \cdot \mathbf{v} = 0$ **if and only if** $\mathbf{v} = \mathbf{0}$
+
+Do you see it? **Property 5 exists precisely to cooperate with Property 4, to lock down the identity of the "zero vector."**
+Without Property 5, when we compute a dot product of zero, we would not be able to tell whether it is because "the vector has length zero" or because "the angle is 90°." With Property 5, we can uniquely identify the "zero element" in the algebraic world.
+
+> **Summary**: The zero vector is the **absorbing element** of the dot product operation — any vector multiplied by it yields 0. The reason is **length equals zero**, not angle equals 90°. Together with Property 4, this ensures that we can uniquely determine the length of a vector through $\sqrt{\mathbf{v} \cdot \mathbf{v}}$, and the length is zero only when $\mathbf{v} = \mathbf{0}$.
 
 #### Finding the Angle Between Two Vectors
 
@@ -695,9 +1324,9 @@ $\alpha + 3\beta = \frac{37}{14} + 3 \times \frac{39}{14} = \frac{37 + 117}{14} 
 
 ---
 
-## 2.2 Practical Applications of Vectors
+## 2.3 Practical Applications of Vectors
 
-### 2.2.1 Vector Geometry — In-Depth Analysis
+### 2.3.1 Vector Geometry — In-Depth Analysis
 
 Vectors are a powerful tool for solving plane geometry problems. By converting geometric relationships into vector equations, we can use algebraic methods to obtain precise solutions, avoiding the imprecision of drawing diagrams.
 
@@ -1073,7 +1702,7 @@ So $\overrightarrow{PQ} = \overrightarrow{QR}$, confirming $Q$ is the midpoint. 
 
 ---
 
-### 2.2.2 Composition and Resolution of Velocities
+### 2.3.2 Composition and Resolution of Velocities
 
 Velocity is a vector quantity. When an object is simultaneously involved in two or more motions, its resultant velocity is the vector sum of these velocities.
 
@@ -1097,48 +1726,224 @@ $$
 
 #### Resolution of Velocities
 
-The opposite of composition: breaking a velocity vector into two perpendicular components (usually horizontal and vertical directions) is called **resolution of velocities**.
+The opposite of composition: breaking a velocity vector into two perpendicular components (usually horizontal and vertical) is called **resolution of velocities**.
+
+##### Why Decompose Velocity?
+
+In practical problems, we often need to analyse motion in different directions separately:
+
+- **Projectile motion**: Horizontally, no force acts (constant velocity); vertically, gravity acts (constant acceleration). Only by decomposing the initial velocity can we analyse the two directions independently.
+- **Motion on an incline**: Decompose into directions parallel and perpendicular to the slope.
+- **Navigation**: Decompose the aircraft's velocity into components parallel and perpendicular to the flight path to correct for wind.
+
+The core idea: **a vector can be uniquely represented by two perpendicular components**, whose effects are independent of each other and can be analysed separately before being recombined.
+
+##### Standard Decomposition: Horizontal and Vertical
 
 Let the magnitude of velocity $\mathbf{v}$ be $v$ (speed), and let the angle it makes with the horizontal be $\theta$. Then:
 
 $$
-\mathbf{v} = (v\cos\theta)\mathbf{i} + (v\sin\theta)\mathbf{j}
+\boxed{\mathbf{v} = (v\cos\theta)\mathbf{i} + (v\sin\theta)\mathbf{j}}
 $$
 
 where $v_x = v\cos\theta$ is the horizontal component and $v_y = v\sin\theta$ is the vertical component.
 
-> **Derivation**: Project the velocity vector onto the $x$-axis and $y$-axis. In the right-angled triangle, the adjacent side $=$ hypotenuse $\times \cos\theta$, and the opposite side $=$ hypotenuse $\times \sin\theta$.
+> **🎯 Core Intuition — The Story of a Stick**
+>
+> Imagine you have a stick of length $v$, with one end resting on the floor and the other leaning against a wall, at an angle $\theta$ to the floor (the horizontal).
+>
+> ```
+>      Wall
+>      |\
+>      | \
+>      |  \  Stick (length v)
+>      |   \
+>      |    \
+>      |θ    \
+>      ———————— Floor
+> ```
+>
+> The stick's **shadow on the floor** (horizontal projection) has length $v\cos\theta$ — this is the **horizontal component**.
+> The stick's **shadow on the wall** (vertical projection) has length $v\sin\theta$ — this is the **vertical component**.
+>
+> This is the geometric definition of sine and cosine:
+> - **$\cos\theta$ = adjacent / hypotenuse**: adjacent (horizontal shadow) = hypotenuse (stick length) $\times \cos\theta$
+> - **$\sin\theta$ = opposite / hypotenuse**: opposite (vertical shadow) = hypotenuse (stick length) $\times \sin\theta$
+>
+> No matter how you tilt the stick, the Pythagorean theorem always holds:
+> $$
+> (v\cos\theta)^2 + (v\sin\theta)^2 = v^2(\cos^2\theta + \sin^2\theta) = v^2
+> $$
+> This is the geometric origin of $\cos^2\theta + \sin^2\theta = 1$!
+>
+> > **Memory tip**: Think of the velocity vector as this stick.
+> > - **$\cos$ connects to the horizontal** (floor) — "cos" for "contact," touching the ground
+> > - **$\sin$ connects to the vertical** (wall)
+> > - The angle $\theta$ is measured from the horizontal (floor)
+
+##### Sign of Components by Quadrant
+
+The sign of each component depends on which quadrant the angle $\theta$ lies in:
+
+| $\theta$ Range | Quadrant | $\cos\theta$ | $\sin\theta$ | $v_x$ | $v_y$ |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+| $0^\circ < \theta < 90^\circ$ | I | $+$ | $+$ | $+$ (right) | $+$ (up) |
+| $90^\circ < \theta < 180^\circ$ | II | $-$ | $+$ | $-$ (left) | $+$ (up) |
+| $180^\circ < \theta < 270^\circ$ | III | $-$ | $-$ | $-$ (left) | $-$ (down) |
+| $270^\circ < \theta < 360^\circ$ | IV | $+$ | $-$ | $+$ (right) | $-$ (down) |
+
+> **Mnemonic**: "Right positive, left negative; up positive, down negative." $+\mathbf{i}$ points right, $-\mathbf{i}$ points left; $+\mathbf{j}$ points up, $-\mathbf{j}$ points down.
+
+##### From Components Back to Magnitude and Direction
+
+The reverse process — given components $v_x$ and $v_y$, find the magnitude and direction:
+
+$$
+\boxed{v = \sqrt{v_x^2 + v_y^2}}, \qquad
+\boxed{\theta = \arctan\left(\frac{v_y}{v_x}\right)}
+$$
+
+> **⚠️ Arctan range warning**: $\arctan$ returns values in $(-90^\circ, 90^\circ)$, covering only quadrants I and IV. If $v_x < 0$ (velocity points left), you must **add $180^\circ$** to get the correct angle:
+> $$
+> \theta = \begin{cases}
+> \arctan\left(\dfrac{v_y}{v_x}\right), & v_x > 0 \\[8pt]
+> \arctan\left(\dfrac{v_y}{v_x}\right) + 180^\circ, & v_x < 0
+> \end{cases}
+> $$
+> If $v_x = 0$: $v_y > 0 \implies \theta = 90^\circ$; $v_y < 0 \implies \theta = 270^\circ$ (or $-90^\circ$).
+
+##### Quick-Reference Table of Common Angles
+
+| $\theta$ | $\cos\theta$ | $\sin\theta$ | $v_x$ | $v_y$ |
+|:---:|:---:|:---:|:---:|:---:|
+| $0^\circ$ | $1$ | $0$ | $v$ | $0$ |
+| $30^\circ$ | $\frac{\sqrt{3}}{2}$ | $\frac{1}{2}$ | $\frac{\sqrt{3}}{2}v$ | $\frac{1}{2}v$ |
+| $45^\circ$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{2}}{2}v$ | $\frac{\sqrt{2}}{2}v$ |
+| $60^\circ$ | $\frac{1}{2}$ | $\frac{\sqrt{3}}{2}$ | $\frac{1}{2}v$ | $\frac{\sqrt{3}}{2}v$ |
+| $90^\circ$ | $0$ | $1$ | $0$ | $v$ |
+| $180^\circ$ | $-1$ | $0$ | $-v$ | $0$ |
 
 ---
 
 #### Collision Problems
 
-The condition for two moving objects to collide is that at the **same time**, their position vectors are **equal**. That is:
+Collision problems are a direct application of velocity composition and decomposition. They appear everywhere in real life — from missile interception and air traffic control to maritime search and rescue and autonomous driving. All these problems share the same core: determining whether two moving objects will arrive at the **same position at the same time**.
+
+##### 1. Core Logic — The "GPS Tracking" Analogy
+
+Imagine opening a map app on your phone. Two pedestrians' live locations are moving:
+
+- **Position** $\mathbf{r}(t)$ — the **"real-time coordinates"** on the map. These coordinates change with time $t$.
+- **Initial position** $\mathbf{r}_0$ — the starting coordinates at $t = 0$, the "starting point" of the entire motion.
+- **Velocity vector** $\mathbf{v}$ — tells you **"how many metres per second"** and **in which direction**. It is like the direction arrow on GPS — the arrow's length is the speed, and its direction indicates where you are heading.
+
+For constant-velocity linear motion, the position formula $\mathbf{r}(t) = \mathbf{r}_0 + \mathbf{v}t$ translates simply to:
+
+> **"Current coordinates = starting coordinates + time elapsed × distance travelled per second"**
+
+> **A concrete example**: A ship departs from $(2, 1)$ with velocity $\mathbf{v} = (3, 4)$.
+> - $t = 0$ s: position is $(2, 1)$ (hasn't left yet)
+> - $t = 1$ s: position is $(2+3, 1+4) = (5, 5)$ (3 right, 4 up)
+> - $t = 2$ s: position is $(2+6, 1+8) = (8, 9)$
+> - In general: $\mathbf{r}(t) = (2, 1) + (3, 4)t = (2+3t, 1+4t)$
+>
+> Every second, the $x$-coordinate increases by 3 and the $y$-coordinate increases by 4 — the velocity vector $(3, 4)$ tells us "how to move per second."
+
+##### 2. The Mathematical Condition — "Same Time, Same Place"
+
+Two moving objects collide if and only if there exists some time $t$ at which their position vectors are **equal**:
 
 $$
-\mathbf{r}_1(t) = \mathbf{r}_2(t)
+\boxed{\mathbf{r}_1(t) = \mathbf{r}_2(t)}
 $$
 
-For motion with constant velocity, the position vector satisfies:
+> **Intuition**: Arranging to meet a friend:
+> - "Same place" = you both arrive at the café
+> - "Same time" = you both push the door open at the same moment
+> - If you arrive at 2pm and your friend arrives at 3pm — you were both at the café (same place), but you didn't meet (different times). That's called "missing each other," not "meeting."
 
-$$
-\mathbf{r}(t) = \mathbf{r}_0 + \mathbf{v}t
-$$
-
-where $\mathbf{r}_0$ is the initial position vector and $\mathbf{v}$ is the velocity vector. Therefore, the collision condition can be expanded to:
-
+For constant-velocity motion, this expands to:
 $$
 \mathbf{r}_{01} + \mathbf{v}_1 t = \mathbf{r}_{02} + \mathbf{v}_2 t
 $$
 
-This is a vector equation in time $t$. It is equivalent to two scalar equations (one for each component) being equal, allowing us to solve for $t$ and verify consistency.
+##### 3. Why Two Component Equations? — "Two Locks, One Key"
 
-**Solution steps**:
-1. Write the position vectors $\mathbf{r}_1(t)$ and $\mathbf{r}_2(t)$ for both objects.
-2. Set $\mathbf{r}_1(t) = \mathbf{r}_2(t)$, obtaining two component equations.
-3. Solve for $t$ from each equation. If the two $t$ values are equal and $t \geq 0$, they collide; otherwise, they do not.
+A position vector $\mathbf{r}$ is a **2D coordinate** $(x, y)$. Two vectors being equal means **each component must match** — like two locks that need the same key to open simultaneously:
 
-> **Note**: "Collision" requires both objects to be at the same position at the same time. If two ships reach the same point at different times, that is called "meeting" rather than "colliding".
+$$
+\begin{pmatrix} x_1(t) \\ y_1(t) \end{pmatrix} = \begin{pmatrix} x_2(t) \\ y_2(t) \end{pmatrix}
+\quad\Longleftrightarrow\quad
+\begin{cases}
+x_1(t) = x_2(t) \\[4pt]
+y_1(t) = y_2(t)
+\end{cases}
+$$
+
+The underlying logic is **velocity decomposition** — separate the diagonal motion into horizontal and vertical, then check whether the two objects can reach the same $x$-coordinate AND the same $y$-coordinate at the same time:
+
+$$
+\begin{cases}
+x_{01} + v_{1x}\,t = x_{02} + v_{2x}\,t \\[4pt]
+y_{01} + v_{1y}\,t = y_{02} + v_{2y}\,t
+\end{cases}
+$$
+
+> **Geometric intuition**:
+> - **First equation ($x$-direction)**: Project both objects onto the horizontal line — will they pass through the same vertical line at the same time?
+> - **Second equation ($y$-direction)**: Project both objects onto the vertical line — will they pass through the same horizontal line at the same time?
+>
+> Only when **both** conditions are satisfied will the two objects reach the **same point in the plane at the same instant**.
+
+##### 4. Exam Three-Step Framework
+
+**Step 1: Decompose velocity** 🔧
+
+- **Case 1**: Given speed $v$ and direction angle $\theta$ → use $v_x = v\cos\theta$, $v_y = v\sin\theta$
+- **Case 2**: Given coordinate form (e.g., $\mathbf{v} = 3\mathbf{i} + 4\mathbf{j}$) → read directly: $v_x = 3$, $v_y = 4$
+
+> **⚠️ Common mistake**: If the problem says "$10\,\text{m/s}$ northeast", do NOT plug 10 directly into equations — first find $\theta = 45^\circ$, then $v_x = 10\cos45^\circ = 5\sqrt{2}$.
+
+**Step 2: Write the two time equations** 📝
+
+From each component equation, solve for $t$:
+- From $x$-equation → $t_1$ (time when $x$-coordinates match)
+- From $y$-equation → $t_2$ (time when $y$-coordinates match)
+
+**Step 3: Judge the result** ✅
+
+$$
+\boxed{\text{Collision} \iff t_1 = t_2 \geq 0}
+$$
+
+| $t_1$ vs $t_2$ | $t \geq 0$? | Result | Explanation |
+|:---:|:---:|:---:|:---|
+| $t_1 = t_2$ | Yes | ✅ **Collision** | Same time, same place |
+| $t_1 = t_2$ | No | ❌ No collision | They were together before departure (e.g., at the same starting point), not a future collision |
+| $t_1 \neq t_2$ | — | ❌ **No collision** | $x$ and $y$ align at different times — they miss each other |
+| No solution | — | ❌ **No collision** | They can never align in one of the directions (e.g., parallel motion) |
+
+##### 5. ⚠️ Common Exam Traps
+
+**Trap 1: Shortest distance follow-up**
+
+If they don't collide, 99% of the time the next question will be: **"Find the shortest distance between them."**
+
+Write the squared distance: $D(t) = [\Delta x(t)]^2 + [\Delta y(t)]^2$. For constant-velocity motion, this is a quadratic $D(t) = at^2 + bt + c$ (with $a > 0$). The minimum occurs at $t = -\frac{b}{2a}$ (either by completing the square or by differentiating). Then $d_{\min} = \sqrt{D_{\min}}$.
+
+> **Important**: Check $t \geq 0$. If $t < 0$, the closest approach happened before departure — use $t = 0$ instead.
+
+**Trap 2: Forgetting to decompose with $\sin$ and $\cos$**
+
+If the problem gives speed $v$ and direction angle $\theta$, you MUST first decompose:
+$$
+v_x = v\cos\theta, \qquad v_y = v\sin\theta
+$$
+Plugging $\theta$ or the raw speed directly into the equations is completely wrong.
+
+**Trap 3: Negative $t$ values**
+
+A negative $t$ means they were at the same position **before** departure. That doesn't count as a future collision. Always require $t \geq 0$.
 
 ---
 
@@ -1358,573 +2163,6 @@ $$
 (b) The resultant speed relative to the ground is $4\,\text{m/s}$ due north.
 
 > **Real-life insight**: Notice the resultant speed ($4\,\text{m/s}$) is less than the boat's still-water speed ($5\,\text{m/s}$). This is because part of the boat's effort goes into counteracting the current. This is why crossing a river with a strong current takes longer than crossing still water of the same width.
-
----
-
-## 2.3 Introduction to Rates of Change (Calculus Foundation)
-
-### 2.3.1 Why Study Rates of Change?
-
-In the physical world, very few things remain static. A moving car — its position changes. An inflating balloon — its volume changes. A heated metal rod — its temperature changes. A **rate of change** is the mathematical tool that describes "how quickly one quantity changes with respect to another."
-
-In sections 2.1 and 2.2, we used vectors to describe position, velocity, and acceleration. Now we ask a deeper question: **How do we precisely define "instantaneous" rate of change?**
-
----
-
-### 2.3.2 From Average Rate of Change to Instantaneous Rate of Change
-
-Let's start with a concrete kinematics example.
-
-A particle moves along a straight line. Its displacement $s$ (in metres) as a function of time $t$ (in seconds) is:
-
-$$
-s(t) = t^2
-$$
-
-We want to find the velocity at the **instant** $t = 1$ second.
-
-#### Step 1: Average Velocity
-
-If we take a time interval $[1, 1 + \Delta t]$, the average velocity of the particle over this interval is:
-
-$$
-\text{Average velocity} = \frac{s(1 + \Delta t) - s(1)}{\Delta t}
-$$
-
-Substituting $s(t) = t^2$:
-
-$$
-\frac{(1 + \Delta t)^2 - 1^2}{\Delta t} = \frac{1 + 2\Delta t + (\Delta t)^2 - 1}{\Delta t} = \frac{2\Delta t + (\Delta t)^2}{\Delta t} = 2 + \Delta t
-$$
-
-#### Step 2: Let $\Delta t$ Become Smaller and Smaller
-
-We let $\Delta t$ gradually approach 0 and observe how the average velocity changes:
-
-| $\Delta t$ (seconds) | Average Velocity (m/s) |
-|:---:|:---:|
-| 0.1 | $2 + 0.1 = 2.1$ |
-| 0.01 | $2 + 0.01 = 2.01$ |
-| 0.001 | $2 + 0.001 = 2.001$ |
-| 0.0001 | $2 + 0.0001 = 2.0001$ |
-| $\to 0$ | $\to 2$ |
-
-As $\Delta t$ gets closer and closer to 0, the average velocity gets closer and closer to **2**.
-
-#### Step 3: The Limit
-
-When $\Delta t$ approaches 0, the average velocity $2 + \Delta t$ approaches 2. We write:
-
-$$
-v(1) = \lim_{\Delta t \to 0} \frac{s(1 + \Delta t) - s(1)}{\Delta t} = \lim_{\Delta t \to 0} (2 + \Delta t) = 2
-$$
-
-This limiting value is the **instantaneous velocity** of the particle at $t = 1$.
-
-> **Important understanding**: We never set $\Delta t = 0$ (that would give $0/0$, which is meaningless). We let $\Delta t$ approach 0 infinitely closely and observe what fixed value the ratio approaches. This "target of approach" is the derivative.
->
-> In the language of limits: **As $\Delta t$ approaches 0, the limit of the average velocity is the instantaneous velocity.**
-
----
-
-### 2.3.3 General Definition of the Derivative
-
-In general, for a function $y = f(x)$, its **derivative** (i.e., instantaneous rate of change) at $x = a$ is defined as:
-
-$$
-f'(a) = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}
-$$
-
-where $h$ corresponds to $\Delta x$ or $\Delta t$ in the earlier example.
-
-If this limit exists, we say that $f$ is **differentiable** at $x = a$.
-
-**Notation for derivatives**:
-- Leibniz notation: $\dfrac{dy}{dx}$ or $\dfrac{d}{dx}f(x)$
-- Lagrange notation: $f'(x)$
-- Newton notation (commonly used in physics): $\dot{y}$
-
-> In syllabus point 14.1, only an intuitive understanding of limits is required; differentiation from first principles is not required. However, we will still present a few basic derivations here to help build your intuition.
-
----
-
-### 2.3.4 Derivatives from First Principles — Basic Derivations
-
-Let's use the limit definition to derive the derivatives of some basic functions.
-
-#### Derivation 1: $f(x) = x^2$
-
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{(x + h)^2 - x^2}{h} \\
-&= \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} \\
-&= \lim_{h \to 0} \frac{2xh + h^2}{h} \\
-&= \lim_{h \to 0} (2x + h) \\
-&= 2x
-\end{aligned}
-$$
-
-Therefore $\dfrac{d}{dx}(x^2) = 2x$.
-
-**Geometric meaning**: The slope of the tangent line to the function $y = x^2$ at any point $x$ is $2x$. At $x = 1$, the slope is $2$; at $x = 3$, the slope is $6$.
-
-#### Derivation 2: $f(x) = x^3$
-
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{(x + h)^3 - x^3}{h}
-\end{aligned}
-$$
-
-Expanding $(x + h)^3 = x^3 + 3x^2h + 3xh^2 + h^3$:
-
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{x^3 + 3x^2h + 3xh^2 + h^3 - x^3}{h} \\
-&= \lim_{h \to 0} \frac{3x^2h + 3xh^2 + h^3}{h} \\
-&= \lim_{h \to 0} (3x^2 + 3xh + h^2) \\
-&= 3x^2
-\end{aligned}
-$$
-
-Therefore $\dfrac{d}{dx}(x^3) = 3x^2$.
-
-#### Derivation 3: $f(x) = \dfrac{1}{x}$ ($x \neq 0$)
-
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{\frac{1}{x + h} - \frac{1}{x}}{h}
-\end{aligned}
-$$
-
-First, combine the fractions in the numerator:
-
-$$
-\frac{1}{x + h} - \frac{1}{x} = \frac{x - (x + h)}{x(x + h)} = \frac{-h}{x(x + h)}
-$$
-
-Therefore:
-
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{-h}{x(x + h)} \cdot \frac{1}{h} \\
-&= \lim_{h \to 0} \frac{-1}{x(x + h)} \\
-&= -\frac{1}{x^2}
-\end{aligned}
-$$
-
-Thus $\dfrac{d}{dx}\left(\dfrac{1}{x}\right) = -\dfrac{1}{x^2}$.
-
-#### Derivation 4: $f(x) = \sqrt{x}$ ($x > 0$)
-
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{\sqrt{x + h} - \sqrt{x}}{h}
-\end{aligned}
-$$
-
-This one requires a clever trick: multiply numerator and denominator by the conjugate $\sqrt{x + h} + \sqrt{x}$:
-
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{(\sqrt{x + h} - \sqrt{x})(\sqrt{x + h} + \sqrt{x})}{h(\sqrt{x + h} + \sqrt{x})} \\
-&= \lim_{h \to 0} \frac{(x + h) - x}{h(\sqrt{x + h} + \sqrt{x})} \\
-&= \lim_{h \to 0} \frac{h}{h(\sqrt{x + h} + \sqrt{x})} \\
-&= \lim_{h \to 0} \frac{1}{\sqrt{x + h} + \sqrt{x}} \\
-&= \frac{1}{\sqrt{x} + \sqrt{x}} = \frac{1}{2\sqrt{x}}
-\end{aligned}
-$$
-
-Therefore $\dfrac{d}{dx}(\sqrt{x}) = \dfrac{1}{2\sqrt{x}}$. Note that this is consistent with the Power Rule: $\sqrt{x} = x^{1/2}$, so $\dfrac{d}{dx}(x^{1/2}) = \dfrac{1}{2}x^{-1/2} = \dfrac{1}{2\sqrt{x}}$. ✓
-
-> **Why the conjugate trick?** When direct substitution gives $0/0$, multiplying by the conjugate is a standard technique to rationalise the numerator and eliminate the indeterminacy.
-
-#### Derivation 5: $f(x) = c$ (constant function)
-
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h} \\
-&= \lim_{h \to 0} \frac{c - c}{h} \\
-&= \lim_{h \to 0} \frac{0}{h} \\
-&= \lim_{h \to 0} 0 = 0
-\end{aligned}
-$$
-
-Therefore $\dfrac{d}{dx}(c) = 0$. The rate of change of a constant is zero — a horizontal line has zero slope everywhere. This also fits the Power Rule: $c = c \cdot x^0$, and $\dfrac{d}{dx}(c \cdot x^0) = c \cdot 0 \cdot x^{-1} = 0$.
-
-#### Derivation 6: $f(x) = ax + b$ (linear function)
-
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{[a(x + h) + b] - [ax + b]}{h} \\
-&= \lim_{h \to 0} \frac{ax + ah + b - ax - b}{h} \\
-&= \lim_{h \to 0} \frac{ah}{h} \\
-&= \lim_{h \to 0} a = a
-\end{aligned}
-$$
-
-Therefore $\dfrac{d}{dx}(ax + b) = a$. The derivative of a linear function is its slope — exactly what we expect.
-
-#### Derivation 7: $f(x) = \dfrac{1}{x^2}$ ($x \neq 0$)
-
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{\frac{1}{(x + h)^2} - \frac{1}{x^2}}{h}
-\end{aligned}
-$$
-
-Combine the fractions in the numerator:
-$$
-\frac{1}{(x + h)^2} - \frac{1}{x^2} = \frac{x^2 - (x + h)^2}{x^2(x + h)^2} = \frac{x^2 - (x^2 + 2xh + h^2)}{x^2(x + h)^2} = \frac{-2xh - h^2}{x^2(x + h)^2}
-$$
-
-Therefore:
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{-2xh - h^2}{x^2(x + h)^2} \cdot \frac{1}{h} \\
-&= \lim_{h \to 0} \frac{-2x - h}{x^2(x + h)^2} \\
-&= \frac{-2x}{x^2 \cdot x^2} = -\frac{2x}{x^4} = -\frac{2}{x^3}
-\end{aligned}
-$$
-
-Thus $\dfrac{d}{dx}\left(\dfrac{1}{x^2}\right) = -\dfrac{2}{x^3}$. Consistent with the Power Rule: $x^{-2} \to -2x^{-3}$. ✓
-
----
-
-### 2.3.5 The Power Rule
-
-From the derivations above, we can observe a pattern:
-
-| $f(x)$ | $f'(x)$ |
-|:---:|:---:|
-| $x^2$ | $2x$ |
-| $x^3$ | $3x^2$ |
-| $x^1$ | $1$ (i.e., $1 \cdot x^0$) |
-| $\dfrac{1}{x} = x^{-1}$ | $-\dfrac{1}{x^2} = -x^{-2}$ |
-
-This pattern is the **Power Rule**: for any real number $n$,
-
-$$
-\boxed{\frac{d}{dx}(x^n) = n x^{n-1}}
-$$
-
-> **Full derivation of the Power Rule** (using the Binomial Theorem, for positive integers $n$ only):
->
-> Consider $f(x) = x^n$, where $n$ is a positive integer. Expand $(x + h)^n$ using the Binomial Theorem:
-> $$
-> (x + h)^n = x^n + n x^{n-1}h + \binom{n}{2}x^{n-2}h^2 + \binom{n}{3}x^{n-3}h^3 + \dots + h^n
-> $$
-> Therefore:
-> $$
-> \begin{aligned}
-> f'(x) &= \lim_{h \to 0} \frac{x^n + n x^{n-1}h + \binom{n}{2}x^{n-2}h^2 + \dots + h^n - x^n}{h} \\
-> &= \lim_{h \to 0} \left( n x^{n-1} + \binom{n}{2}x^{n-2}h + \binom{n}{3}x^{n-3}h^2 + \dots + h^{n-1} \right) \\
-> &= n x^{n-1}
-> \end{aligned}
-> $$
-> because all terms containing $h$ tend to 0 as $h \to 0$.
-
----
-
-### 2.3.6 Rates of Change in the Context of Vectors: Kinematics
-
-Now let's return to the context of vectors. If a particle's position vector $\mathbf{r}(t)$ changes with time, then its velocity vector and acceleration vector are the rates of change of the position vector with respect to time.
-
-Let $\mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j}$. Then:
-
-$$
-\mathbf{v}(t) = \frac{d\mathbf{r}}{dt} = \frac{dx}{dt}\mathbf{i} + \frac{dy}{dt}\mathbf{j}
-$$
-
-$$
-\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = \frac{d^2\mathbf{r}}{dt^2} = \frac{d^2x}{dt^2}\mathbf{i} + \frac{d^2y}{dt^2}\mathbf{j}
-$$
-
-That is, differentiating a vector function means differentiating each of its components separately.
-
----
-
-### 2.3.7 From Acceleration to Velocity and Position (Integration Foundation)
-
-In physics, acceleration $\mathbf{a}(t)$ is the rate of change of velocity $\mathbf{v}(t)$. If we know the acceleration and want to recover the velocity, we need to perform the inverse operation of differentiation — this is called **integration** (which will be studied in detail in Chapter 7).
-
-The basic relationships are:
-
-- Velocity $\mathbf{v}(t) = \int \mathbf{a}(t) \, dt + \mathbf{v}_0$ (where $\mathbf{v}_0$ is the initial velocity)
-- Position $\mathbf{r}(t) = \int \mathbf{v}(t) \, dt + \mathbf{r}_0$ (where $\mathbf{r}_0$ is the initial position)
-
-Or, using definite integrals (more suitable for problems with specific time intervals):
-
-$$
-\mathbf{v}(t) = \mathbf{v}_0 + \int_0^t \mathbf{a}(u) \, du,
-\quad
-\mathbf{r}(t) = \mathbf{r}_0 + \int_0^t \mathbf{v}(u) \, du
-$$
-
-The intuition to establish here is: **Differentiation** finds the rate of change (position → velocity → acceleration), while **Integration** finds the accumulated quantity (acceleration → velocity → position). They are inverse operations of each other.
-
----
-
-### 📌 Worked Examples 2.4: Introduction to Rates of Change
-
-**Example 1** (Using the limit definition to find instantaneous velocity)
-
-A particle's displacement (in metres) as a function of time (in seconds) is $s(t) = 3t^2 - 2t + 1$.
-
-(a) Find the average velocity from $t = 2$ to $t = 2 + h$.
-(b) Use the limit to find the instantaneous velocity at $t = 2$.
-
-**Solution approach**:
-- Average velocity = $\dfrac{s(2+h) - s(2)}{h}$
-- Instantaneous velocity = $\displaystyle\lim_{h \to 0}$ (average velocity)
-
-**Solution**:
-
-(a)
-$$
-\begin{aligned}
-\text{Average velocity} &= \frac{s(2 + h) - s(2)}{h} \\
-&= \frac{[3(2+h)^2 - 2(2+h) + 1] - [3(4) - 4 + 1]}{h} \\
-&= \frac{[3(4 + 4h + h^2) - 4 - 2h + 1] - [12 - 4 + 1]}{h} \\
-&= \frac{[12 + 12h + 3h^2 - 4 - 2h + 1] - 9}{h} \\
-&= \frac{[9 + 10h + 3h^2] - 9}{h} \\
-&= \frac{10h + 3h^2}{h} = 10 + 3h
-\end{aligned}
-$$
-
-(b) The instantaneous velocity is the limit of the average velocity as $h \to 0$:
-
-$$
-v(2) = \lim_{h \to 0} (10 + 3h) = 10\,\text{m/s}
-$$
-
-Therefore, the particle's instantaneous velocity at $t = 2$ seconds is $10\,\text{m/s}$.
-
-> **Verification**: Using the Power Rule to differentiate directly: $s'(t) = 6t - 2$, $s'(2) = 12 - 2 = 10$, consistent. ✓
-
----
-
-**Example 2** (Using the limit definition to find a general derivative + verification by the Power Rule)
-
-Use the limit definition of the derivative to find $f'(x)$ for $f(x) = 4x - x^2$.
-
-**Solution**:
-
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h} \\
-&= \lim_{h \to 0} \frac{[4(x + h) - (x + h)^2] - [4x - x^2]}{h} \\
-&= \lim_{h \to 0} \frac{4x + 4h - (x^2 + 2xh + h^2) - 4x + x^2}{h} \\
-&= \lim_{h \to 0} \frac{4h - 2xh - h^2}{h} \\
-&= \lim_{h \to 0} (4 - 2x - h) \\
-&= 4 - 2x
-\end{aligned}
-$$
-
-Therefore $f'(x) = 4 - 2x$.
-
-**Verification**: Using the Power Rule to differentiate $f(x) = 4x - x^2$ term by term:
-- $\dfrac{d}{dx}(4x) = 4 \cdot 1 \cdot x^{0} = 4$
-- $\dfrac{d}{dx}(-x^2) = -2x^{1} = -2x$
-- Adding gives $f'(x) = 4 - 2x$, consistent with the result from the limit. ✓
-
----
-
-**Example 3** (Rates of change of vectors + integration as the inverse operation)
-
-A particle moves in a plane. Its position vector is:
-
-$$
-\mathbf{r}(t) = (t^3 - 3t)\mathbf{i} + (t^2 - 2t)\mathbf{j}
-$$
-
-where $t$ is in seconds and position is in metres.
-
-(a) Find the velocity vector $\mathbf{v}(t)$.
-(b) Find the acceleration vector $\mathbf{a}(t)$.
-(c) Find the velocity and acceleration vectors at $t = 2$ seconds.
-(d) Given that the particle's acceleration is $\mathbf{a}(t) = 6t\mathbf{i} + 2\mathbf{j}$, initial velocity $\mathbf{v}_0 = -3\mathbf{i} - 2\mathbf{j}$, and initial position $\mathbf{r}_0 = \mathbf{0}$, use integration to find $\mathbf{v}(t)$ and $\mathbf{r}(t)$, and verify they are consistent with parts (a) and (b).
-
-**Solution approach**:
-- Velocity = derivative of position (differentiate each component separately)
-- Acceleration = derivative of velocity (differentiate each component separately)
-- Integration is the inverse of differentiation: given acceleration, integrate once to get velocity (add constant), then integrate again to get position (add constant)
-- Constants are determined by the initial conditions
-
-**Solution**:
-
-(a) Velocity is the derivative of position with respect to time; differentiate each component:
-
-$$
-\mathbf{v}(t) = \frac{d\mathbf{r}}{dt} = \frac{d}{dt}(t^3 - 3t)\,\mathbf{i} + \frac{d}{dt}(t^2 - 2t)\,\mathbf{j}
-$$
-
-Using the Power Rule:
-- $\dfrac{d}{dt}(t^3) = 3t^2$
-- $\dfrac{d}{dt}(-3t) = -3$
-- $\dfrac{d}{dt}(t^2) = 2t$
-- $\dfrac{d}{dt}(-2t) = -2$
-
-Therefore:
-
-$$
-\mathbf{v}(t) = (3t^2 - 3)\mathbf{i} + (2t - 2)\mathbf{j}
-$$
-
-(b) Acceleration is the derivative of velocity with respect to time:
-
-$$
-\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = \frac{d}{dt}(3t^2 - 3)\,\mathbf{i} + \frac{d}{dt}(2t - 2)\,\mathbf{j}
-$$
-
-$$
-\mathbf{a}(t) = (6t)\mathbf{i} + 2\mathbf{j}
-$$
-
-(c) Substitute $t = 2$:
-
-$$
-\mathbf{v}(2) = (3 \times 4 - 3)\mathbf{i} + (4 - 2)\mathbf{j} = 9\mathbf{i} + 2\mathbf{j}\,\text{m/s}
-$$
-
-Magnitude of velocity: $|\mathbf{v}(2)| = \sqrt{9^2 + 2^2} = \sqrt{81 + 4} = \sqrt{85} \approx 9.22\,\text{m/s}$
-
-$$
-\mathbf{a}(2) = (6 \times 2)\mathbf{i} + 2\mathbf{j} = 12\mathbf{i} + 2\mathbf{j}\,\text{m/s}^2
-$$
-
-Magnitude of acceleration: $|\mathbf{a}(2)| = \sqrt{12^2 + 2^2} = \sqrt{144 + 4} = \sqrt{148} = 2\sqrt{37} \approx 12.17\,\text{m/s}^2$
-
-(d) Given $\mathbf{a}(t) = (6t)\mathbf{i} + 2\mathbf{j}$, integrate the acceleration to find velocity:
-
-$$
-\mathbf{v}(t) = \int \mathbf{a}(t) \, dt = \left(\int 6t \, dt\right)\mathbf{i} + \left(\int 2 \, dt\right)\mathbf{j}
-$$
-
-$$
-= (3t^2 + C_1)\mathbf{i} + (2t + C_2)\mathbf{j}
-$$
-
-From $\mathbf{v}_0 = \mathbf{v}(0) = -3\mathbf{i} - 2\mathbf{j}$, substituting $t = 0$ gives $C_1 = -3$, $C_2 = -2$. So:
-
-$$
-\mathbf{v}(t) = (3t^2 - 3)\mathbf{i} + (2t - 2)\mathbf{j}
-$$
-
-This is consistent with part (a). ✓
-
-Now integrate the velocity to find position:
-
-$$
-\mathbf{r}(t) = \int \mathbf{v}(t) \, dt = \left(\int (3t^2 - 3) \, dt\right)\mathbf{i} + \left(\int (2t - 2) \, dt\right)\mathbf{j}
-$$
-
-$$
-= (t^3 - 3t + D_1)\mathbf{i} + (t^2 - 2t + D_2)\mathbf{j}
-$$
-
-From $\mathbf{r}_0 = \mathbf{r}(0) = \mathbf{0}$, substituting $t = 0$ gives $D_1 = 0$, $D_2 = 0$. So:
-
-$$
-\mathbf{r}(t) = (t^3 - 3t)\mathbf{i} + (t^2 - 2t)\mathbf{j}
-$$
-
-This is consistent with the original position function. ✓
-
----
-
-**Example 4** (First principles derivation for a cubic function)
-
-Use the limit definition of the derivative to find $f'(x)$ for $f(x) = 2x^3 - x$.
-
-**Solution**:
-
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h} \\
-&= \lim_{h \to 0} \frac{[2(x + h)^3 - (x + h)] - [2x^3 - x]}{h}
-\end{aligned}
-$$
-
-Expand $(x + h)^3 = x^3 + 3x^2h + 3xh^2 + h^3$:
-
-$$
-\begin{aligned}
-f'(x) &= \lim_{h \to 0} \frac{2(x^3 + 3x^2h + 3xh^2 + h^3) - x - h - 2x^3 + x}{h} \\
-&= \lim_{h \to 0} \frac{2x^3 + 6x^2h + 6xh^2 + 2h^3 - x - h - 2x^3 + x}{h} \\
-&= \lim_{h \to 0} \frac{6x^2h + 6xh^2 + 2h^3 - h}{h} \\
-&= \lim_{h \to 0} (6x^2 + 6xh + 2h^2 - 1) \\
-&= 6x^2 - 1
-\end{aligned}
-$$
-
-Therefore $f'(x) = 6x^2 - 1$.
-
-**Verification** using the Power Rule term by term:
-- $\dfrac{d}{dx}(2x^3) = 2 \cdot 3x^2 = 6x^2$
-- $\dfrac{d}{dx}(-x) = -1$
-- Sum: $6x^2 - 1$. ✓
-
----
-
-**Example 5** (Kinematics: from acceleration to position via integration, with non-zero initial conditions)
-
-A particle moves along a straight line. Its acceleration is $a(t) = 12t - 4\,\text{m/s}^2$. At $t = 0$, its velocity is $v_0 = 5\,\text{m/s}$ and its displacement is $s_0 = 10\,\text{m}$.
-
-(a) Find the velocity $v(t)$.
-(b) Find the displacement $s(t)$.
-(c) Find the displacement at $t = 3$ seconds.
-(d) Find the time(s) when the particle is momentarily at rest.
-(e) Find the acceleration when the particle is at rest.
-
-**Solution approach**:
-- Integrate acceleration to get velocity (don't forget $+C$, use initial condition)
-- Integrate velocity to get displacement (don't forget $+C$, use initial condition)
-- "At rest" means $v(t) = 0$
-
-**Solution**:
-
-(a) Integrate $a(t) = 12t - 4$:
-$$
-v(t) = \int (12t - 4)\,dt = 6t^2 - 4t + C
-$$
-
-Use $v(0) = 5$:
-$$
-5 = 6(0)^2 - 4(0) + C \implies C = 5
-$$
-
-Therefore $v(t) = 6t^2 - 4t + 5\,\text{m/s}$.
-
-(b) Integrate $v(t) = 6t^2 - 4t + 5$:
-$$
-s(t) = \int (6t^2 - 4t + 5)\,dt = 2t^3 - 2t^2 + 5t + D
-$$
-
-Use $s(0) = 10$:
-$$
-10 = 0 - 0 + 0 + D \implies D = 10
-$$
-
-Therefore $s(t) = 2t^3 - 2t^2 + 5t + 10\,\text{m}$.
-
-(c) At $t = 3$:
-$$
-s(3) = 2(27) - 2(9) + 5(3) + 10 = 54 - 18 + 15 + 10 = 61\,\text{m}
-$$
-
-(d) At rest when $v(t) = 0$:
-$$
-6t^2 - 4t + 5 = 0
-$$
-
-Discriminant: $\Delta = (-4)^2 - 4(6)(5) = 16 - 120 = -104 < 0$
-
-No real solutions — the particle never comes to rest. Its velocity is always positive (check: $v(t) = 6t^2 - 4t + 5$, discriminant $< 0$, leading coefficient positive $\implies$ always positive).
-
-(e) Since the particle is never at rest, this part is not applicable. However, we can still verify the relationship: $a(t) = v'(t) = 12t - 4$, and $v(t) = \int a(t)\,dt + v_0$, $s(t) = \int v(t)\,dt + s_0$. ✓
-
-> **Key insight**: The constant of integration is not arbitrary — it is determined by the initial (or boundary) conditions. This is why in physics problems, knowing the initial position and velocity is crucial. This idea is formalised in Chapter 7 (Integration).
 
 ---
 
@@ -2469,11 +2707,11 @@ So the particle never passes through the origin.
 
 | Syllabus Ref | Content | Section | Worked Examples | Practice Problems |
 |:---:|------|:---:|:---:|:---:|
-| 13.1 | Vector notation | 2.1.1 | 2.1(1) | 1 |
-| 13.2 | Position vectors and unit vectors | 2.1.2, 2.1.4 | 2.1(1) | 1(c) |
-| 13.3 | Magnitude, addition/subtraction, scalar multiplication, vector geometry | 2.1.3, 2.1.5–2.1.8, 2.2.1 | 2.1, 2.2 | 1–4, 9, 10, 11 |
-| 13.4 | Composition and resolution of velocities, collision problems | 2.2.2 | 2.3 | 5, 6, 12 |
-| 14.1 | Rates of change and the idea of limits | 2.3 | 2.4 | 7, 8, 13, 14 |
+| 13.1 | Vector notation | 2.2.1 | 2.1(1) | 1 |
+| 13.2 | Position vectors and unit vectors | 2.2.2, 2.2.4 | 2.1(1) | 1(c) |
+| 13.3 | Magnitude, addition/subtraction, scalar multiplication, vector geometry | 2.2.3, 2.2.5–2.2.8, 2.3.1 | 2.1, 2.2 | 1–4, 9, 10, 11 |
+| 13.4 | Composition and resolution of velocities, collision problems | 2.3.2 | 2.3 | 5, 6, 12 |
+| 14.1 | Rates of change and the idea of limits | 2.1 | 2.4 | 7, 8, 13, 14 |
 
 ### Quick Reference Formula Table
 
