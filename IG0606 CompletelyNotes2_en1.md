@@ -104,29 +104,9 @@ $$
 
 **Example**: Evaluate $\displaystyle\sum_{k=1}^{5} (3k - 2)$.
 
-**Method 1 (Direct expansion)**: Substitute $k=1,2,3,4,5$ and add term by term:
-
 $$
-\begin{aligned}
-\sum_{k=1}^{5} (3k - 2) &= (3\cdot1 - 2) + (3\cdot2 - 2) + (3\cdot3 - 2) + (3\cdot4 - 2) + (3\cdot5 - 2) \\[4pt]
-&= 1 + 4 + 7 + 10 + 13 \\[4pt]
-&= 35
-\end{aligned}
+\sum_{k=1}^{5} (3k - 2) = 3\sum_{k=1}^{5} k - \sum_{k=1}^{5} 2 = 3 \times (1+2+3+4+5) - 5 \times 2 = 3 \times 15 - 10 = 45 - 10 = 35
 $$
-
-**Method 2 (Using summation rules)**: Apply the constant factor and splitting rules:
-
-$$
-\begin{aligned}
-\sum_{k=1}^{5} (3k - 2) 
-&= 3\sum_{k=1}^{5} k - \sum_{k=1}^{5} 2 \qquad \text{(Rules 1 and 2)} \\[4pt]
-&= 3 \times (1+2+3+4+5) - 5 \times 2 \qquad \text{(expand $\sum k$, apply Rule 3)} \\[4pt]
-&= 3 \times 15 - 10 \\[4pt]
-&= 45 - 10 = 35
-\end{aligned}
-$$
-
-Both methods give the same result ✓. **Method 1** is more intuitive and good for small $n$; **Method 2** is more efficient, especially when $n$ is large.
 
 ---
 
@@ -215,51 +195,15 @@ $$
 
 **Example 2**: First term $2$, common difference $5$, sum of the first $n$ terms is $156$, find $n$.
 
-**Solution** (step-by-step):
-
-**Step 1**: Substitute into the AP sum formula.
-
 $$
-S_n = \frac{n}{2}[2a + (n-1)d] = \frac{n}{2}[2\times2 + (n-1)\times5] = \frac{n}{2}[4 + 5(n-1)]
+\frac{n}{2}[4 + (n-1) \times 5] = 156 \quad\Rightarrow\quad \frac{n}{2}(5n - 1) = 156
 $$
 
-**Step 2**: Simplify inside the brackets.
-
 $$
-4 + 5(n-1) = 4 + 5n - 5 = 5n - 1
+5n^2 - n - 312 = 0 \quad\Rightarrow\quad n = \frac{1 \pm \sqrt{1 + 6240}}{10} = \frac{1 \pm 79}{10}
 $$
 
-Set $S_n = 156$:
-
-$$
-\frac{n}{2}(5n - 1) = 156
-$$
-
-**Step 3**: Multiply both sides by $2$ and expand.
-
-$$
-n(5n - 1) = 312 \quad\Rightarrow\quad 5n^2 - n - 312 = 0
-$$
-
-**Step 4**: Solve the quadratic using $n = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}$, with $a=5$, $b=-1$, $c=-312$:
-
-$$
-n = \frac{1 \pm \sqrt{(-1)^2 - 4\cdot5\cdot(-312)}}{2\cdot5} = \frac{1 \pm \sqrt{1 + 6240}}{10} = \frac{1 \pm \sqrt{6241}}{10}
-$$
-
-Since $6241 = 79^2$ ($79 \times 79 = 6241$):
-
-$$
-n = \frac{1 \pm 79}{10}
-$$
-
-**Step 5**: $n$ represents the number of terms, so it must be a positive integer. Discard the negative root:
-
-$$
-n = \frac{1 + 79}{10} = \frac{80}{10} = 8
-$$
-
-> **Verification**: $S_8 = \dfrac{8}{2}[2\cdot2 + 7\cdot5] = 4 \times (4 + 35) = 4 \times 39 = 156$ ✓
+Since $n$ is a positive integer, $n = \frac{80}{10} = 8$.
 
 ---
 
@@ -322,31 +266,15 @@ $$
 r S_n = a r + a r^2 + a r^3 + \cdots + a r^{\,n-1} + a r^{\,n} \tag{2}
 $$
 
-Now compare (1) and (2) by aligning them term by term:
+Now compare (1) and (2). Almost all terms appear in both sums — the only differences are:
+- $a$ appears only in (1) (the first term)
+- $a r^{\,n}$ appears only in (2) (the last term)
+
+Therefore, subtract (2) from (1):
 
 $$
-\begin{array}{cccccccccc}
-S_n   & = & a      & + & a r    & + & a r^2  & + & \cdots & + & a r^{\,n-1} &   \\[4pt]
-r S_n & = &        &   & a r    & + & a r^2  & + & a r^3  & + & \cdots        & + & a r^{\,n}
-\end{array}
+S_n - r S_n = a - a r^{\,n}
 $$
-
-This alignment reveals the "shift" effect:
-- The first term $a$ appears only in $S_n$.
-- The last term $a r^{\,n}$ appears only in $r S_n$.
-- All middle terms ($a r$ through $a r^{\,n-1}$) appear in **both** sums, perfectly aligned.
-
-Therefore, subtract (2) from (1) — all middle terms cancel out, leaving only the first and last:
-
-$$
-\begin{aligned}
-S_n - r S_n &= \bigl(a + a r + a r^2 + \cdots + a r^{\,n-1}\bigr) - \bigl(a r + a r^2 + \cdots + a r^{\,n-1} + a r^{\,n}\bigr) \\[4pt]
-&= a \;+\; \underbrace{(a r - a r)}_{=0} \;+\; \underbrace{(a r^2 - a r^2)}_{=0} \;+\; \cdots \;+\; \underbrace{(a r^{\,n-1} - a r^{\,n-1})}_{=0} \;-\; a r^{\,n} \\[4pt]
-&= a - a r^{\,n}
-\end{aligned}
-$$
-
-> **💡 The essence of the subtraction method**: Because the $n-1$ middle terms ($a r$ to $a r^{\,n-1}$) are identical in both sums, they cancel out completely. This is why the method is called the **"shift and subtract" method** — multiplying by $r$ shifts the terms so the middle ones align, and subtracting leaves only the first and last terms.
 
 Factor out $S_n$ on the left and $a$ on the right:
 
@@ -370,8 +298,6 @@ $$
 \boxed{S_n = a \cdot \frac{r^{\,n} - 1}{r - 1}}
 $$
 
-> **Why does $r=1$ need special treatment?** Substituting $r=1$ into the formula $S_n = a\dfrac{1-r^n}{1-r}$ gives $\dfrac{0}{0}$, which is undefined. So we must handle this case separately. In an exam, if a geometric progression might have $r=1$ (e.g., $3, 3, 3, 3, \ldots$), remember to write $S_n = n a$ directly.
-
 #### Convergence Condition and Sum to Infinity of an Infinite Geometric Series (**Syllabus 12.5 Key Point**)
 
 $$
@@ -389,61 +315,7 @@ The behaviour of $r^{\,n}$ as $n \to \infty$ determines whether the series conve
 
 Therefore, **the necessary and sufficient condition for a geometric series to converge is $|r| < 1$**.
 
----
-
-**Intuitive understanding**: Why does the series converge when $|r| < 1$?
-
-Take $r = \dfrac{1}{2}$ as an example:
-$$
-\left(\frac{1}{2}\right)^1 = \frac{1}{2},\; \left(\frac{1}{2}\right)^2 = \frac{1}{4},\; \left(\frac{1}{2}\right)^3 = \frac{1}{8},\; \ldots
-$$
-
-Each successive term is half of the previous one, so the terms get smaller and smaller, approaching $0$. The new terms added become negligible, and the total sum approaches a **finite value**.
-
-Conversely, if $|r| > 1$ (e.g., $r = 2$):
-$$
-2^1 = 2,\; 2^2 = 4,\; 2^3 = 8,\; \ldots
-$$
-
-The terms grow larger and larger, the sum increases without bound, and the series diverges.
-
----
-
-**Step-by-step derivation of $S_\infty$ when $|r| < 1$**:
-
-**Step 1**: Start with the formula for $S_n$:
-$$
-S_n = a \cdot \frac{1 - r^{\,n}}{1 - r}
-$$
-
-**Step 2**: Take the limit as $n \to \infty$. Since $|r| < 1$, we have $r^{\,n} \to 0$:
-$$
-S_\infty = \lim_{n \to \infty} S_n = \lim_{n \to \infty} a \cdot \frac{1 - r^{\,n}}{1 - r}
-$$
-
-**Step 3**: The constants $a$ and $1-r$ do not depend on $n$, so they can be factored out of the limit:
-$$
-S_\infty = \frac{a}{1-r} \cdot \lim_{n \to \infty} (1 - r^{\,n})
-$$
-
-**Step 4**: Since $r^{\,n} \to 0$, we have $(1 - r^{\,n}) \to 1$:
-$$
-S_\infty = \frac{a}{1-r} \cdot 1
-$$
-
-**Step 5**: The final result:
-$$
-\boxed{S_\infty = \frac{a}{1-r}}
-$$
-
----
-
-**📝 Exam answer template** (when asked to "explain why a particular geometric series has or does not have a sum to infinity"):
-
-1. **Has** a sum to infinity: When $|r| < 1$, as $n \to \infty$, $r^{\,n} \to 0$. Substituting into $S_n = a\dfrac{1-r^n}{1-r}$ gives $S_n \to \dfrac{a}{1-r}$ (the limit exists and is finite), so the series converges to $\dfrac{a}{1-r}$.
-2. **Does not have** a sum to infinity: When $|r| \ge 1$, $r^{\,n}$ does not approach $0$ (for $|r|>1$ it grows without bound, for $r=1$ it stays constant at $1$, for $r=-1$ it oscillates between $\pm1$). Therefore $S_n$ does not approach any finite value, the limit does not exist, and the series diverges.
-
----
+In the exam, if asked to "explain why a particular geometric series has or does not have a sum to infinity," you should state: when $|r| < 1$, as $n \to \infty$, $r^{\,n} \to 0$, so $S_n \to \dfrac{a}{1-r}$; when $|r| \ge 1$, $r^{\,n}$ does not approach $0$, so $S_n$ does not approach a finite value.
 
 #### Examples
 
@@ -457,78 +329,23 @@ $$
 
 **Example 2** (Convergence check + sum to infinity): $12 + 6 + 3 + \dfrac{3}{2} + \cdots$
 
-**Solution** (step-by-step):
+First term $a = 12$, common ratio $r = \dfrac{6}{12} = \dfrac{1}{2}$.
 
-**Step 1**: Identify the first term $a$ and common ratio $r$.
-
-The first term is $12$, so $a = 12$. Divide the second term by the first to find $r$:
-$$
-r = \frac{6}{12} = \frac{1}{2}
-$$
-
-**Step 2**: Check convergence.
-
-$|r| = \dfrac{1}{2} < 1$, which satisfies the convergence condition. Therefore the series converges and has a finite sum to infinity.
-
-**Step 3**: Apply the sum to infinity formula.
+Since $|r| = \dfrac{1}{2} < 1$, as $n \to \infty$, $\left(\dfrac{1}{2}\right)^{\!n} \to 0$, so the series converges.
 
 $$
-S_\infty = \frac{a}{1-r} = \frac{12}{1 - \frac{1}{2}}
+S_\infty = \frac{12}{1 - \frac{1}{2}} = \frac{12}{\frac{1}{2}} = 24
 $$
-
-**Step 4**: Simplify.
-
-$$
-S_\infty = \frac{12}{\frac{1}{2}} = 12 \times 2 = 24
-$$
-
-Thus the sum to infinity is $\boxed{24}$.
-
-> **Verification**: The first few terms are $12 + 6 + 3 + 1.5 + 0.75 + 0.375 + \cdots$ The sum of the first $5$ terms is $12+6+3+1.5+0.75 = 23.25$, already close to $24$. Each additional term adds a smaller and smaller amount, and the total approaches $24$ ✓
 
 ---
 
 **Example 3** (Given $S_\infty$ to find $r$): An infinite geometric series converges, its sum is $8$, and its first term is $4$. Find the common ratio $r$.
 
-**Solution** (step-by-step):
-
-**Step 1**: Write down the known values.
-
-$a = 4$, $S_\infty = 8$, and the series converges (so $|r| < 1$).
-
-**Step 2**: Substitute into the sum to infinity formula and set up the equation.
-
 $$
-S_\infty = \frac{a}{1-r} \quad\Rightarrow\quad 8 = \frac{4}{1 - r}
+8 = \frac{4}{1 - r} \quad\Rightarrow\quad 8(1 - r) = 4 \quad\Rightarrow\quad 1 - r = \frac{1}{2} \quad\Rightarrow\quad r = \frac{1}{2}
 $$
 
-**Step 3**: Solve for $r$.
-
-Multiply both sides by $(1-r)$:
-$$
-8(1 - r) = 4
-$$
-
-Expand:
-$$
-8 - 8r = 4
-$$
-
-Rearrange:
-$$
--8r = 4 - 8 = -4
-$$
-
-Divide by $-8$:
-$$
-r = \frac{-4}{-8} = \frac{1}{2}
-$$
-
-**Step 4**: Verify the convergence condition.
-
-$|r| = \dfrac{1}{2} < 1$, which satisfies the convergence condition, confirming the answer is valid.
-
-Thus the common ratio is $\boxed{r = \dfrac{1}{2}}$.
+Verification: $|r| = \dfrac{1}{2} < 1$, satisfying the convergence condition.
 
 ---
 
@@ -543,27 +360,12 @@ Thus the common ratio is $\boxed{r = \dfrac{1}{2}}$.
 | **Growth pattern** | **Linear growth** (add constant each time) | **Exponential growth/decay** (multiply by constant each time) |
 | **Sum to infinity** | Does not exist (except constant sequence with $d=0$) | Converges to $\dfrac{a}{1-r}$ when $|r| < 1$ |
 
-**Practice identifying (with detailed analysis)**:
+**Practice identifying**:
 
-1. **$5, 8, 11, 14, 17, \ldots$**
-   - Check AP: $8-5=3$, $11-8=3$, $14-11=3$, $17-14=3$ → constant difference of $3$ ✓
-   - Check GP: $\dfrac{8}{5}=1.6$, $\dfrac{11}{8}=1.375$, $\dfrac{14}{11}\approx1.273$, → not constant ✗
-   - **Conclusion**: **AP** ✓ ($a=5,\; d=3$)
-
-2. **$5, 10, 20, 40, 80, \ldots$**
-   - Check AP: $10-5=5$, $20-10=10$, $40-20=20$ → not constant ✗
-   - Check GP: $\dfrac{10}{5}=2$, $\dfrac{20}{10}=2$, $\dfrac{40}{20}=2$, $\dfrac{80}{40}=2$ → constant ratio of $2$ ✓
-   - **Conclusion**: **GP** ✓ ($a=5,\; r=2$)
-
-3. **$1, 4, 9, 16, 25, \ldots$**
-   - Check AP: $4-1=3$, $9-4=5$, $16-9=7$, $25-16=9$ → differences increase, not constant ✗
-   - Check GP: $\dfrac{4}{1}=4$, $\dfrac{9}{4}=2.25$, $\dfrac{16}{9}\approx1.78$, $\dfrac{25}{16}=1.5625$ → ratios decrease, not constant ✗
-   - **Conclusion**: **Neither** ✗ (this is the square number sequence $a_n = n^2$)
-
-4. **$100, 50, 25, 12.5, \ldots$**
-   - Check AP: $50-100=-50$, $25-50=-25$ → not constant ✗
-   - Check GP: $\dfrac{50}{100}=0.5$, $\dfrac{25}{50}=0.5$, $\dfrac{12.5}{25}=0.5$ → constant ratio of $\dfrac{1}{2}$ ✓
-   - **Conclusion**: **GP** ✓ ($a=100,\; r=\dfrac{1}{2}$), and $|r| = \dfrac{1}{2} < 1$, so it is **convergent**
+1. $5, 8, 11, 14, 17, \ldots$ → constant difference of $3$ → **AP** ✓
+2. $5, 10, 20, 40, 80, \ldots$ → constant ratio of $2$ → **GP** ✓
+3. $1, 4, 9, 16, 25, \ldots$ → differences are $3,5,7,9$ (not constant), ratios are $4, 2.25, 1.78,\ldots$ (not constant) → **Neither** ✗
+4. $100, 50, 25, 12.5, \ldots$ → constant ratio of $\dfrac{1}{2}$ → **GP** (convergent) ✓
 
 ---
 
@@ -732,28 +534,28 @@ $$
 \binom{8}{3} + \binom{8}{2} = \binom{9}{3} = \frac{9 \times 8 \times 7}{3 \times 2 \times 1} = 84
 $$
 
-### 1.2.5.1 0606 Exam Pitfalls: The "Selection vs Arrangement" Nature
+### 1.2.5.1 0606 Exam Pitfalls: The Essence of "Selecting/Arranging" in Permutations and Combinations
 
-Many mistakes in exams come not from the formulas themselves, but from **deciding whether to use permutations or combinations**. Remember the core criterion:
+In exams, many mistakes stem not from the formulas themselves, but from **"should I use permutations or combinations?"** Remember the core criterion:
 
-- **Permutation** $^nP_r$: First select $r$ items, then **arrange** them into distinct positions (e.g., seats, rankings, order, passwords).
-- **Combination** $^nC_r$: Only select $r$ items, **without** considering internal order.
+- **Permutation** $^nP_r$: First select $r$ items, then arrange them in different positions (e.g., seats, rankings, order, passwords).
+- **Combination** $^nC_r$: Only select $r$ items, without considering internal order.
 
-For **"at least/at most"** problems, if the complement has few cases, use the **complement method**:
+For **"at least/at most"** type problems, if the number of undesirable cases is small, prioritise the **complement method**:
 
 $$
-\text{Required} = \text{Total} - \text{Complement}
+\text{Desired} = \text{Total} - \text{Undesirable}
 $$
 
-For example, when a problem says "at least 2 women", the complement is only "0 women" and "1 woman" — this is more efficient than enumerating "2 women, 3 women, 4 women" directly.
+Especially when the problem says "at least 2 women", the complement only has "0 women" and "1 woman" — this is more efficient than enumerating "2 women, 3 women, 4 women" directly.
 
-**Quick self-check**: After computing a combination, verify the symmetry property:
+**Quick self-check**: After computing a combination, verify that it satisfies symmetry:
 
 $$
 \binom{n}{r} = \binom{n}{n-r}
 $$
 
-For instance, $\binom{5}{2}$ should equal $10$, not $20$. If you get an unusual result, you likely missed a step in the factorial calculation.
+For example, $\binom{5}{2}$ should not be 20 — it must be 10. If the result seems off, you likely missed a step in the factorial calculation or simplification.
 
 ---
 
@@ -795,40 +597,63 @@ $$
 
 Note that each coefficient has been **simplified** (e.g., $4 \times 3 = 12$, $6 \times 9 = 54$), as explicitly required by the syllabus.
 
+----
+**💡 Understanding the Formula Step by Step**
+
+Let's break down the meaning of each part of the summation:
+
+$$
+\sum_{r=0}^{n} \binom{n}{r} a^{\,n-r} b^{\,r}
+$$
+
+**Component 1: $\sum_{r=0}^{n}$ (The Summation Counter)**
+
+- The $r=0$ below is the **starting value**.
+- The $n$ above is the **ending value**.
+
+**Translation**: Take a blank piece of paper. Let $r$ take the values $0, 1, 2, 3, \dots$, counting all the way up to $n$. For each value of $r$, compute the remaining three components and write the result on the paper. Finally, add up all the results on the paper.
+
 ---
-**Example 2** — Understanding the summation formula step by step:
 
-The formula $\displaystyle\sum_{r=0}^{n} \binom{n}{r} a^{\,n-r} b^{\,r}$ consists of four components:
+**Component 2: $\binom{n}{r}$ (The Binomial Coefficient)**
 
-1. **$\displaystyle\sum_{r=0}^{n}$** — The summation counter. Let $r$ take values $0, 1, 2, \ldots, n$. For each $r$, compute the remaining parts and add all results together.
+- This is the combination formula: $\frac{n!}{r!(n-r)!}$.
 
-2. **$\displaystyle\binom{n}{r}$** — The binomial coefficient (the number of ways to choose $r$ items from $n$).
+**Translation**: Compute this combination number and multiply it in front of the letters. This becomes the **coefficient** of that term in the expansion.
 
-3. **$a^{\,n-r}$** — The power of $a$, which decreases as $r$ increases.
+---
 
-4. **$b^{\,r}$** — The power of $b$, which increases as $r$ increases.
+**Components 3 and 4: $a^{\,n-r} b^{\,r}$ (Distributing the Letters)**
 
-**Key invariant**: In every term, the exponents satisfy $(n-r) + r = n$, so the sum of the exponents of $a$ and $b$ always equals $n$.
+There is a **fixed rule**:
+> The exponent of $a$ + the exponent of $b$ = $n$
+> i.e., $(n-r) + r = n$
 
-**Walkthrough for $n=4$**:
+**Translation**:
+- $r$ represents how many $b$'s you "take".
+- Since there must be a total of $n$ letters multiplied together, the remaining $(n-r)$ positions are all filled with $a$.
 
-| $r$ | Binomial Coefficient | Letter Part | Resulting Term |
-|:---:|:---|:---|:---|
-| $r=0$ | $\binom{4}{0}=1$ | $a^{4-0}b^0 = a^4$ | $1a^4$ |
-| $r=1$ | $\binom{4}{1}=4$ | $a^{4-1}b^1 = a^3b$ | $4a^3b$ |
-| $r=2$ | $\binom{4}{2}=6$ | $a^{4-2}b^2 = a^2b^2$ | $6a^2b^2$ |
-| $r=3$ | $\binom{4}{3}=4$ | $a^{4-3}b^3 = ab^3$ | $4ab^3$ |
-| $r=4$ | $\binom{4}{4}=1$ | $a^{4-4}b^4 = b^4$ | $1b^4$ |
+---
 
-Adding all terms together:
+**Walkthrough: Running the Loop (with $n=4$)**
+
+The command says: $r$ runs from 0 to 4. Let's calculate step by step:
+
+| $r$ value | Binomial coefficient | Letter part | Resulting term |
+| :---: | :--- | :--- | :--- |
+| **$r=0$** | $\binom{4}{0}=1$ | $a^{4-0}b^0 = a^4$ | $\mathbf{1a^4}$ |
+| **$r=1$** | $\binom{4}{1}=4$ | $a^{4-1}b^1 = a^3b$ | $\mathbf{4a^3b}$ |
+| **$r=2$** | $\binom{4}{2}=6$ | $a^{4-2}b^2 = a^2b^2$ | $\mathbf{6a^2b^2}$ |
+| **$r=3$** | $\binom{4}{3}=4$ | $a^{4-3}b^3 = ab^3$ | $\mathbf{4ab^3}$ |
+| **$r=4$** | $\binom{4}{4}=1$ | $a^{4-4}b^4 = b^4$ | $\mathbf{1b^4}$ |
+
+---
+
+## The Final Step: Add Up All 5 "Cards" Above
 
 $$
 (a+b)^4 = 1a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + 1b^4
 $$
-
-This matches the result from Example 1.
-
----
 
 ### 1.3.2 General Term and Specific Terms (**Syllabus 12.2**)
 
@@ -917,55 +742,56 @@ Answer: The coefficient of $x^2$ is $24$.
 
 ---
 
-### 1.3.3.1 0606 Exam Pitfalls: Splitting the General Term, Signs, and Coefficient Distinctions
+### 1.3.3.1 0606 Exam Pitfalls: General Term Breakdown, Signs, and Coefficient Identification
 
-Binomial theorem mistakes most often arise from **splitting the general term** and **confusing coefficient types**, not from the formula itself.
+The most error-prone parts of binomial problems are not the formula itself, but **splitting the general term** and **understanding the meaning of coefficients**.
 
-#### 1. Split the general term down to the smallest unit
+#### 1. Break the General Term Down to Its Smallest Units
 
-When finding a term in $\left(2x + \dfrac{1}{x}\right)^7$, first break $a$ and $b$ into "numeric constant × power of $x$":
+When finding a specific term in $\left(2x + \dfrac{1}{x}\right)^7$, first break $a$ and $b$ into "numerical constant × power of $x$":
 
-- $a = 2x$ → numeric part $2$, $x$-power $x^1$
-- $b = \dfrac{1}{x}$ → numeric part $1$, $x$-power $x^{-1}$
+- $a = 2x$ can be seen as the number $2$ times $x^1$
+- $b = \dfrac{1}{x}$ can be seen as the number $1$ times $x^{-1}$
 
-Then the general term becomes:
+Hence the general term becomes:
 
 $$
 T_{r+1} = \binom{7}{r}(2)^{7-r}(1)^r x^{(7-r)\cdot 1 + r\cdot(-1)}
 = \binom{7}{r}2^{7-r}x^{7-2r}
 $$
 
-Note: the exponent of $x$ in $\dfrac{1}{x}$ is $-1$, not $0$. If solving for $r$ gives a non-integer or a value outside $0 \le r \le n$, that term does not exist — do not force it.
+Note: the exponent of $x$ in $\frac{1}{x}$ is $-1$, not $0$. If the value of $r$ you solve for is not an integer, or lies outside $0 \le r \le n$, then the term does not exist — do not force it.
 
-#### 2. Don't forget the negative sign when multiplying two binomials
+#### 2. When Multiplying Two Binomials, Don't Forget the Sign
 
-For example, when finding the coefficient of $x^2$ in $(1+x)^5(2-x)^4$, the second binomial's general term contains $(-x)^k$, so you **must** keep $(-1)^k$. Forgetting the sign will give a completely wrong answer.
+For example, when finding the coefficient of $x^2$ in $(1+x)^5(2-x)^4$, the general term of the right factor contains $(-x)^k$, so you must keep $(-1)^k$. Otherwise the sign will be completely wrong.
 
-The safest approach:
-1. Write out the two general terms separately.
-2. Let the total exponent match the required power.
-3. Use a table or systematic enumeration to list all possible $(r,k)$ pairs.
+The safest method is:
 
-#### 3. Binomial coefficient vs full coefficient of a term
+1. Write out the general terms of both binomials separately;
+2. Set the sum of the exponents equal to the required power;
+3. List all possible cases using a table or systematic enumeration to avoid missing terms.
 
-This is where many students lose marks:
+#### 3. Binomial Coefficient vs Full Coefficient
 
-- **Binomial coefficient**: only $\binom{n}{r}$
-- **Full coefficient**: $\binom{n}{r}$ multiplied by any constant factors and signs from $a$ and $b$
+This is where students most commonly feel they "know how to do it" but still get the answer wrong:
 
-For example, in $(1-2x)^5$, the $x^3$ term:
+- **Binomial coefficient**: refers only to $\binom{n}{r}$
+- **Full coefficient**: also includes the constant factors and signs
+
+For example, in $(1-2x)^5$, for $x^3$:
 
 - Binomial coefficient: $\binom{5}{3}=10$
-- Full coefficient: $\binom{5}{3}(1)^2(-2)^3 = 10\times(-8) = -80$
+- Full coefficient: $\binom{5}{3}(1)^2(-2)^3 = 10\times(-8)=-80$
 
 So if the question asks for the "coefficient of $x^3$", the answer is $-80$; if it asks for the "binomial coefficient of $x^3$", the answer is $10$.
 
-#### 4. Speed tips for non-calculator exams
+#### 4. Speed Tips for Non-Calculator Exams
 
-- See "queuing, ranking, passwords, seating" → think **permutation** $^nP_r$
-- See "selecting people, forming teams, committees, lottery" → think **combination** $^nC_r$
-- To find the constant term, set the total exponent of $x$ to $0$
-- Substitute $x=1$ to verify: the sum of all coefficients equals the original expression evaluated at $x=1$
+- When you see "queuing, ranking, password, seating", immediately think permutation $^nP_r$
+- When you see "selecting people, forming teams, committees, lottery", immediately think combination $^nC_r$
+- When finding the constant term, set the total exponent of $x$ to $0$
+- Substitute $x=1$ to verify: the sum of all coefficients should equal the original expression evaluated at $x=1$
 
 ---
 
@@ -983,7 +809,7 @@ $$
 \boxed{\binom{n}{r} + \binom{n}{r-1} = \binom{n+1}{r}}
 $$
 
-**Pascal's Triangle**: *supplement only
+**Pascal's Triangle**:
 
 ```
 n=0:        1
