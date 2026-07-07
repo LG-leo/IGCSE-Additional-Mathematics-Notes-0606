@@ -1,79 +1,134 @@
-# NOTE-of-IGCSE additional math (0606) note
-<a href="https://github.com/LG-leo/IG0606ADD-with-CAM-coursebook-NOTE">IG0606ADD-with-CAM-coursebook-NOTE</a> © 2026 by <a href="https://github.com/LG-leo">Leo Yang</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
-- This note is maintained by LG-leo.
-- If you find it helpful, feel free to follow me or leave a ⭐ on GitHub.
-- It helps me keep producing more free study resources.
-- Check out my other notes: https://github.com/LG-leo?tab=repositories
-- 这份笔记由 LG-leo 整理和维护。如果你觉得这份笔记对你有帮助，欢迎在 GitHub 上关注我或给我一个 ⭐，这能帮助我持续产出更多免费的学习资源。
-- 我的其他课程笔记：https://github.com/LG-leo?tab=repositories
+# 📚 IGCSE Additional Mathematics (0606) — Complete Notes
+
+> A **patch** for the official Cambridge textbook: reorganized by syllabus Topics 1–14, filling in missing steps, question types, and common pitfalls.
+
+<a href="https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606">
+  <img src="https://img.shields.io/github/stars/LG-leo/IGCSE-Additional-Mathematics-Notes-0606?style=social" alt="GitHub stars">
+</a>
+<a href="https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606">
+  <img src="https://img.shields.io/github/forks/LG-leo/IGCSE-Additional-Mathematics-Notes-0606?style=social" alt="GitHub forks">
+</a>
+<a href="https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606/watchers">
+  <img src="https://img.shields.io/github/watchers/LG-leo/IGCSE-Additional-Mathematics-Notes-0606?style=social" alt="GitHub watchers">
+</a>
+
+---
 
 ## 📜 License
 
 © 2026 Leo Yang. This work is licensed under  
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).  
-You are free to share and adapt for **non-commercial purposes**, with attribution and same license for derivatives.
+You are free to **share** and **adapt** for **non-commercial purposes**, with attribution and same license for derivatives.
 
-## TIPS！！！
-
-## github is not successfully support the LATEX MATH FORMULA in the website. 
-
-## So I suggest people download "Visula Studio Code", and add a extension "MARKDOWN ALL IN ONE" to successdul demo the LATEX MATH FORMULA
-
-## WHICH WILL MAKES YOU HAVE A GREAT FEEL WHEN YOU READ THE NOTE
-
-## IF YOU ARE A TEACHER, YOU CAN ctrl+C/V (Cmd+C/V) the note in the demo places to the word document.
+<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+  <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" alt="CC BY-NC-SA 4.0" height="40">
+</a>
 
 ---
 
-# next step: AP pre-calculus notes (2026 syllabus) coming soon! 
-
-## deadline of AP pre-calculus completely notes: NOVEMBER 2026 ?
-
-# 📖 IGCSE 0606 Additional Mathematics Notes
-
-> A "patch" for the official textbook: reorganized by syllabus Topics 1–14, filling in missing steps, question types, and common pitfalls.
-
-**⭐ Star this repository** → You'll get notified when I add new chapters or fix errors. Perfect for staying up-to-date with the 2027 syllabus!
-
 ## ✨ Features
 
-- **Syllabus order**: Topics 1–14 directly arranged – no need to “map” from the textbook.
-- **Question type + step‑by‑step**: Each type broken down into “recognise → steps → traps”.
-- **Continuously updated**: Topics 1–12 done, 13–14 planned.
+- > **Syllabus order**: comprehensive it.
+- > **time efficency**: from 200~300 H learning -> 70~100 hours! (previa: IGCSE 0580 Math OR Pre-AP algebra 1&2
+- > **Question type + step‑by‑step**: Each type broken down into “recognise → steps → traps”.
+- > **Free & open source**: No paywalls, no registration — just learning.
 
-## summerize part
+---
 
-- ALL course book of IGCSE 0606 are useless. To be honest, I am a students too, I just cannot understand the coursebook, so I use AI to complete it again.
-1. I didn't find any completely notes before.
-2. The chapter 6~14 are not be able to understand.
-3. The missing & wrong & not clear part & the order is scrambled in the chapter is more than 40%.
-4. Most of IGCSE book are wrong: the differentiation should be in the function part not behind the function part (like AP & pre-AP). OR just like my notes, before the function parts to makes people have tools to try.
-5. I just fix lots. If you see the **Releases**, you can find the note which is based on coursebook & syllabus chapter. BUT, **I cannnot fix that alls, because I cannot understand**.
-6. The sequence of coursebook makes people cannot understand, so I just make the **completely note**
-7. If you just find here, which might means that you cannot find anything that can makes you understand.
+## 📖 Why this note exists
 
->Welcome — this is the end of the road
+> **Honest opinion:** The official Cambridge IGCSE Additional Mathematics (3rd edition) textbook is, frankly, poorly structured. Topics 2, 3 and parts of Topic 4 are missing more than 40% of the content — with skipped steps, scrambled order, and unclear explanations.
+
+I'm also a student. I couldn't understand the coursebook either — so I used AI and my own understanding to rebuild it from scratch.
+
+- **Before this note**: I found no complete, free, open‑source notes for 0606.
+- **What I fixed**: Missing content, unclear explanations, wrong sequencing (e.g. differentiation should be placed *with* functions, not buried later).
+- **What I couldn't fix**: The official textbook's fundamental logic — but I've reduced the gap to about 10% when using this note alongside it.
+
+> **Welcome — this is the end of the road.**  
+> If you found this repo, it probably means you've searched everywhere else and couldn't find anything that made sense.
+
+---
 
 ## 🚀 How to use
 
-1. Use together with the **Cambridge IGCSE Additional Mathematics 3rd edition** textbook.  
-2. Follow the file tree in order.  
-3. If you know Git: `git clone` + regular `git pull`; otherwise click “Download ZIP”.
+1. Use together with the **Cambridge IGCSE Additional Mathematics 3rd edition** textbook (Sue Pemberton; CUP).
+2. Follow the file tree in order.
+3. If you know Git: `git clone` + regular `git pull`; otherwise click **Download ZIP**.
 
-## 📈 Recent updates
+---
 
-- U1–U4 improved  
-- U5 display error fixed  
-- U6–U7 (straight‑line graphs & circles) completed  
-- U8–U9 (circular measure & trigonometry) completed  
-- U10–U11 (permutations & series) completed (beta)
+## ⚠️ Important: Viewing LaTeX formulas
+
+**GitHub does NOT render LaTeX formulas correctly in its web interface.**
+
+To view the formulas properly:
+
+1. Download **Visual Studio Code**
+2. Install the extension **Markdown All in One**
+3. Open the note folder in VS Code — formulas will render correctly
+
+> 💡 **Teachers**: You can copy-paste the rendered content into Word documents.
+
+---
 
 ## 📬 Links
 
-- **GitHub**: [https://github.com/LG_leo/IG0606ADD_NOTEwithCAMcoursebook](https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606) 
-- **GitCode (China mirror)**: [https://gitcode.com/oiiioiiiooiiioio/IG0606ADD_NOTEwithCAMcoursebook](https://gitcode.com/oiiioiiiooiiioio/IG0606ADD_NOTEwithCAMcoursebook)
+| Platform | Link |
+| :--- | :--- |
+| **GitHub** | [LG-leo/IGCSE-Additional-Mathematics-Notes-0606](https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606) |
+| **GitCode (China mirror)** | [gitcode.com/.../IG0606ADD_NOTEwithCAMcoursebook](https://gitcode.com/oiiioiiiooiiioio/IG0606ADD_NOTEwithCAMcoursebook) |
 
-## 💬 About this project
+---
+
+## ⭐ Support
+
+If you find these notes useful:
+
+- Give a **⭐ Star** — it helps others find this repo
+- Click **👁️ Watch** — get notified when I add new chapters or fix errors
+- **Clone** the repository — so you can easily `git pull` future improvements
+
+> The original textbook is quite bad, so some sections will be continuously refined. Cloning ensures you always have the latest version.
+
+---
+
+## ⚠️ Disclaimer
+
+- These are beginner’s notes written by a student, not a teacher.
+- If there is a conflict between the textbook and these notes, **the textbook takes precedence**.
+- Prerequisite: You need a copy of **Cambridge IGCSE Additional Mathematics 3rd edition** (Sue Pemberton; CUP).
+- Some content is adapted from the original textbook for **educational, non‑commercial purposes**. This note does **not** replace the original textbook.
+
+---
+
+## 📌 About this project
+
+- **Maintained by**: [LG-leo](https://github.com/LG-leo)
+- **Motivation**: The official textbook is poorly written. I had to rewrite and supplement large parts of Topics 2–4 on my own. This note reflects my own understanding and might help you avoid the same frustration.
+- **Ongoing updates**: Because the textbook is so poorly structured, I continue to revise and supplement older chapters.
+
+---
+
+## 🌱 What's next?
+
+### 📐 AP Precalculus Notes (2026 syllabus)
+
+> Coming soon! The complete notes for AP Precalculus (2026 syllabus) are in progress.
+> 
+> **Estimated completion**: November 2026
+
+### 🔬 Other IGCSE notes
+
+I'm also working on notes for other IGCSE subjects to fix similar textbook issues:
+
+- [IGCSE Chemistry Note](https://github.com/LG-leo/IGCSE-chemistry-note) — fixes over 60% missing content
+- [IGCSE Biology Note](https://github.com/LG-leo/IGCSE-biology-note) — provides AO2-level explanations
+- [IGCSE Physics Note](https://github.com/LG-leo/IGCSE-physics-note) — bridges textbook-exam gap
+
+---
+
+## 💬 Final words
 
 > Written in my spare time. If you find any mistakes, please open an Issue. Hope it helps you spend less time struggling and more time learning.
 
@@ -81,44 +136,6 @@ You are free to share and adapt for **non-commercial purposes**, with attributio
 
 ---
 
-## ⭐ Support
-
-If you find these notes useful, please give a **Star** or click **Watch** to follow updates.  
-It is recommended to **Clone** the repository so you can easily `git pull` future improvements (the original textbook is quite bad, and some sections will be continuously refined).
-
-## ⚠️ Disclaimer
-
-- These are beginner’s notes. The original textbook is truly disappointing (Topics 2, 3 and parts of Topic 4 have more than 40% missing content). Using this guide together with the textbook reduces the gap to about 10%.
-- If there is a conflict between the textbook and these notes, **the textbook takes precedence**.
-- Prerequisite: you need a copy of **Cambridge IGCSE Additional Mathematics 3rd edition** (Sue Pemberton; Cambridge University Press).
-
-> This guide is a personal study compilation. Some content is adapted from the original textbook for educational, non‑commercial purposes. It does not replace the original textbook.
-
----
-
-## 📌 About this project
-
-- **Why this note exists**  
-  The official textbook (Cambridge IGCSE Additional Mathematics 3rd edition) has significant gaps – Topics 2, 3 and parts of Topic 4 are missing more than 40% of the content. This note is my attempt to fill those gaps, reorganize the material by syllabus order, and add step‑by‑step worked examples and common pitfalls.
-
-- **Ongoing updates**  
-  Because the textbook is so poorly structured, I continue to revise and supplement older chapters. **It is recommended to `clone` this repository** so you can easily `git pull` future improvements.
-
-- **Who this is for**  
-  You should have already completed IGCSE Mathematics (0580 Extended / 0607 Extended) or an equivalent course and achieved at least a grade A/A* (or >80%). This note assumes that background and focuses on the additional topics required for 0606.
-
-- **A beginner’s perspective**  
-  I am also a student, not a teacher. This is my personal study guide. If you find any errors or unclear parts, please open an Issue – I will try my best to improve it.
-
-> The note does not replace the original textbook. When in doubt, always follow the official syllabus and your teacher’s advice.
-
-- **Honest opinion**  
-  The official textbook is, frankly, poorly written. I had to rewrite and supplement large parts of Topics 2–4 on my own. This note reflects my own understanding and might help you avoid the same frustration.
-
-
----
-
-<?xml version="1.0"?>
-<users>
-	<user>CAAB53FA05D993C4390715E328742117</user>
-</users>
+<div align="center">
+  <sub>Maintained by <a href="https://github.com/LG-leo">Leo Yang</a> · © 2026 · CC BY-NC-SA 4.0</sub>
+</div>
