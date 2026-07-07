@@ -37,7 +37,7 @@ You are free to **share** and **adapt** for **non-commercial purposes**, with at
 
 ## 📖 Why this note exists
 
-> **Honest opinion:** The official Cambridge IGCSE Additional Mathematics (3rd edition) textbook is, frankly, poorly structured. Topics 2, 3 and parts of Topic 4 are missing more than 40% of the content — with skipped steps, scrambled order, and unclear explanations.
+> **Honest opinion:** The official Cambridge IGCSE Additional Mathematics (3rd edition) textbook is, frankly, poorly structured. Whole book are missing more than 50% of the contents + no order — with skipped steps, scrambled order, and unclear explanations.
 
 I'm also a student. I couldn't understand the coursebook either — so I used AI and my own understanding to rebuild it from scratch.
 
