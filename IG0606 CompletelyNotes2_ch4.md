@@ -376,7 +376,7 @@ $$
 1. **三个线性因式乘积形式**：$f(x) = a(x - p)(x - q)(x - r)$，与 $x$ 轴交于 $x = p, q, r$。
 2. **一个线性因式与一个二次因式的乘积**：$f(x) = (x - p)(Ax^2 + Bx + C)$，可能只有一个实根。
 
-**端部行为（leading term test）**：
+**END BEHAVIOR 末端行为**：
 - 若 $a > 0$：当 $x \to -\infty$ 时 $f(x) \to -\infty$；当 $x \to \infty$ 时 $f(x) \to \infty$。
 - 若 $a < 0$：当 $x \to -\infty$ 时 $f(x) \to \infty$；当 $x \to \infty$ 时 $f(x) \to -\infty$。
 
