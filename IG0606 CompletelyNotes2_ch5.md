@@ -382,6 +382,78 @@ $$
 \frac{d}{dx}(a^x) = \frac{d}{dx}(e^{x\ln a}) = e^{x\ln a} \cdot \ln a = a^x \ln a
 $$
 
+---
+
+---
+
+### 第 1 步：利用恒等式改写底数
+任何正数 $a$ 都可以写成自然对数 $e$ 的指数形式：
+$$
+a = e^{\ln a}
+$$
+
+### 第 2 步：代入原函数
+将上式两边同时取 $x$ 次方：
+$$
+a^x = (e^{\ln a})^x
+$$
+
+### 第 3 步：化简指数（幂的运算法则）
+根据 $(e^{m})^n = e^{m \cdot n}$，将指数相乘：
+$$
+(e^{\ln a})^x = e^{x \cdot \ln a}
+$$
+此时原函数变为：
+$$
+y = e^{x \ln a}
+$$
+
+### 第 4 步：设定中间变量（为链式法则做准备）
+令：
+$$
+u = x \cdot \ln a
+$$
+注意：因为 $a$ 是常数，所以 $\ln a$ 也是常数。
+
+则原函数变为：
+$$
+y = e^{u}
+$$
+
+### 第 5 步：分别求导
+
+**（1）对 $u$ 关于 $x$ 求导**（$\ln a$ 是常数系数）：
+$$
+\frac{du}{dx} = \ln a
+$$
+
+**（2）对 $y$ 关于 $u$ 求导**（指数函数的导数等于它本身）：
+$$
+\frac{dy}{du} = e^{u}
+$$
+
+### 第 6 步：应用链式法则
+链式法则公式为：
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
+$$
+将第 5 步的结果代入：
+$$
+\frac{dy}{dx} = e^{u} \cdot (\ln a)
+$$
+
+### 第 7 步：代回并还原
+将 $u = x \ln a$ 代回表达式：
+$$
+\frac{dy}{dx} = e^{x \ln a} \cdot \ln a
+$$
+因为第 3 步已知 $e^{x \ln a} = a^x$，所以最终化简为：
+$$
+\boxed{\frac{d}{dx}(a^x) = a^x \ln a}
+$$
+
+----
+
 对于自然对数：
 
 $$
@@ -574,7 +646,7 @@ $$
 
 ### 5.3.2 链式法则的直观理解
 
-为什么链式法则成立？考虑微小变化量：
+为什么链式法则成立？考虑微小变化量（仅供理解，不需要记忆该 5.3.2 节，因为太难了。该节告诉你为什么这个东西成立以及大概的原理是什么）：
 
 - 当 $x$ 变化 $\delta x$ 时，$u = g(x)$ 变化 $\delta u \approx g'(x)\delta x$
 - 当 $u$ 变化 $\delta u$ 时，$y = f(u)$ 变化 $\delta y \approx f'(u)\delta u$
@@ -587,50 +659,298 @@ $$
 
 当 $\delta x \to 0$ 时，近似变成精确等式。
 
-### 5.3.3 链式法则的常见应用模式
+### 5.3.3 链式法则的常见应用模式（核心）
 
-**模式一**：$y = (ax+b)^n$
+以下六种模式涵盖了 IGCSE 附加数学中链式法则最常见的应用。每个模式都配有完整的逐步推导过程和典型例题。
 
-设 $u = ax + b$，则 $y = u^n$，$\frac{dy}{du} = nu^{n-1}$，$\frac{du}{dx} = a$，所以：
+---
 
-$$
-\frac{dy}{dx} = n(ax+b)^{n-1} \cdot a = \boxed{a n (ax+b)^{n-1}}
-$$
+#### 模式一：$y = (ax+b)^n$
 
-**模式二**：$y = \sin(ax+b)$
+**公式**：$\displaystyle \frac{dy}{dx} = a n (ax+b)^{n-1}$
 
-设 $u = ax+b$，则 $y = \sin u$，$\frac{dy}{du} = \cos u$，$\frac{du}{dx} = a$，所以：
+**逐步推导**：
 
-$$
-\frac{dy}{dx} = \cos(ax+b) \cdot a = \boxed{a\cos(ax+b)}
-$$
+**第 1 步：设定中间变量**
 
-**模式三**：$y = \cos(ax+b)$
+令 $u = ax + b$，则原函数可以写成 $y = u^n$ 的形式。这里 $u$ 是中间变量，它是 $x$ 的一次函数。
 
-$$
-\frac{dy}{dx} = -\sin(ax+b) \cdot a = \boxed{-a\sin(ax+b)}
-$$
+- 外层函数：$y = u^n$（幂函数）
+- 内层函数：$u = ax + b$（线性函数）
 
-**模式四**：$y = e^{ax+b}$
+**第 2 步：分别求导**
 
-设 $u = ax+b$，则 $y = e^u$，$\frac{dy}{du} = e^u$，$\frac{du}{dx} = a$，所以：
+分别计算 $y$ 对 $u$ 的导数和 $u$ 对 $x$ 的导数：
 
 $$
-\frac{dy}{dx} = e^{ax+b} \cdot a = \boxed{a e^{ax+b}}
+\frac{dy}{du} = \frac{d}{du}(u^n) = n u^{n-1}
 $$
 
-**模式五**：$y = \ln(ax+b)$
-
-设 $u = ax+b$，则 $y = \ln u$，$\frac{dy}{du} = \frac{1}{u}$，$\frac{du}{dx} = a$，所以：
-
 $$
-\frac{dy}{dx} = \frac{1}{ax+b} \cdot a = \boxed{\frac{a}{ax+b}}
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
 $$
 
-**模式六**：$y = \tan(ax+b)$
+**第 3 步：应用链式法则**
+
+链式法则说 $\displaystyle \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$。将第 2 步的结果代入：
 
 $$
-\frac{dy}{dx} = \sec^2(ax+b) \cdot a = \boxed{a\sec^2(ax+b)}
+\frac{dy}{dx} = (n u^{n-1}) \cdot a = a n u^{n-1}
+$$
+
+**第 4 步：代回原变量**
+
+将 $u = ax + b$ 代回表达式中：
+
+$$
+\boxed{\frac{dy}{dx} = a n (ax+b)^{n-1}}
+$$
+
+**📌 例题**：求 $y = (3x - 2)^5$ 的导数。
+
+由公式，$a = 3$，$n = 5$，所以：
+
+$$
+\frac{dy}{dx} = 3 \times 5 \times (3x - 2)^{4} = 15(3x-2)^4
+$$
+
+---
+
+#### 模式二：$y = \sin(ax+b)$
+
+**公式**：$\displaystyle \frac{dy}{dx} = a\cos(ax+b)$
+
+**逐步推导**：
+
+**第 1 步：设定中间变量**
+
+令 $u = ax + b$，则 $y = \sin u$。
+
+- 外层函数：$y = \sin u$（正弦函数）
+- 内层函数：$u = ax + b$（线性函数）
+
+**第 2 步：分别求导**
+
+$$
+\frac{dy}{du} = \frac{d}{du}(\sin u) = \cos u
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**第 3 步：应用链式法则**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (\cos u) \cdot a = a \cos u
+$$
+
+**第 4 步：代回原变量**
+
+将 $u = ax + b$ 代回：
+
+$$
+\boxed{\frac{dy}{dx} = a\cos(ax+b)}
+$$
+
+**📌 例题**：求 $y = \sin\left(2x + \frac{\pi}{3}\right)$ 的导数。
+
+由公式，$a = 2$，所以：
+
+$$
+\frac{dy}{dx} = 2\cos\left(2x + \frac{\pi}{3}\right)
+$$
+
+---
+
+#### 模式三：$y = \cos(ax+b)$
+
+**公式**：$\displaystyle \frac{dy}{dx} = -a\sin(ax+b)$
+
+**逐步推导**：
+
+**第 1 步：设定中间变量**
+
+令 $u = ax + b$，则 $y = \cos u$。
+
+- 外层函数：$y = \cos u$（余弦函数）
+- 内层函数：$u = ax + b$（线性函数）
+
+**第 2 步：分别求导**
+
+$$
+\frac{dy}{du} = \frac{d}{du}(\cos u) = -\sin u
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**第 3 步：应用链式法则**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (-\sin u) \cdot a = -a \sin u
+$$
+
+**第 4 步：代回原变量**
+
+将 $u = ax + b$ 代回：
+
+$$
+\boxed{\frac{dy}{dx} = -a\sin(ax+b)}
+$$
+
+**📌 例题**：求 $y = \cos\left(\frac{x}{2}\right)$ 的导数。
+
+由公式，$a = \frac{1}{2}$，所以：
+
+$$
+\frac{dy}{dx} = -\frac{1}{2}\sin\left(\frac{x}{2}\right)
+$$
+
+---
+
+#### 模式四：$y = e^{ax+b}$
+
+**公式**：$\displaystyle \frac{dy}{dx} = a e^{ax+b}$
+
+**逐步推导**：
+
+**第 1 步：设定中间变量**
+
+令 $u = ax + b$，则 $y = e^u$。
+
+- 外层函数：$y = e^u$（指数函数，底数为 $e$）
+- 内层函数：$u = ax + b$（线性函数）
+
+**第 2 步：分别求导**
+
+$$
+\frac{dy}{du} = \frac{d}{du}(e^u) = e^u
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**第 3 步：应用链式法则**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (e^u) \cdot a = a e^u
+$$
+
+**第 4 步：代回原变量**
+
+将 $u = ax + b$ 代回：
+
+$$
+\boxed{\frac{dy}{dx} = a e^{ax+b}}
+$$
+
+**📌 例题**：求 $y = e^{-3x+1}$ 的导数。
+
+由公式，$a = -3$，所以：
+
+$$
+\frac{dy}{dx} = -3 e^{-3x+1}
+$$
+
+---
+
+#### 模式五：$y = \ln(ax+b)$
+
+**公式**：$\displaystyle \frac{dy}{dx} = \frac{a}{ax+b}$
+
+**逐步推导**：
+
+**第 1 步：设定中间变量**
+
+令 $u = ax + b$，则 $y = \ln u$。
+
+- 外层函数：$y = \ln u$（自然对数函数）
+- 内层函数：$u = ax + b$（线性函数）
+
+**第 2 步：分别求导**
+
+$$
+\frac{dy}{du} = \frac{d}{du}(\ln u) = \frac{1}{u}
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**第 3 步：应用链式法则**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = \frac{1}{u} \cdot a = \frac{a}{u}
+$$
+
+**第 4 步：代回原变量**
+
+将 $u = ax + b$ 代回：
+
+$$
+\boxed{\frac{dy}{dx} = \frac{a}{ax+b}}
+$$
+
+**📌 例题**：求 $y = \ln(3x^2 + 1)$ 的导数。
+
+注意这里的内层是 $3x^2 + 1$，不是 $ax+b$ 的简单线性形式。我们需要用一般的链式法则：
+
+令 $u = 3x^2 + 1$，则 $y = \ln u$。
+
+$$
+\frac{dy}{dx} = \frac{1}{u} \cdot \frac{du}{dx} = \frac{1}{3x^2 + 1} \cdot 6x = \frac{6x}{3x^2 + 1}
+$$
+
+---
+
+#### 模式六：$y = \tan(ax+b)$
+
+**公式**：$\displaystyle \frac{dy}{dx} = a\sec^2(ax+b)$
+
+**逐步推导**：
+
+**第 1 步：设定中间变量**
+
+令 $u = ax + b$，则 $y = \tan u$。
+
+- 外层函数：$y = \tan u$（正切函数）
+- 内层函数：$u = ax + b$（线性函数）
+
+**第 2 步：分别求导**
+
+正切函数的导数为 $\displaystyle \frac{d}{du}(\tan u) = \sec^2 u$（该公式可通过 $\tan u = \frac{\sin u}{\cos u}$ 及商法则推导得出）。
+
+$$
+\frac{dy}{du} = \frac{d}{du}(\tan u) = \sec^2 u
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**第 3 步：应用链式法则**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (\sec^2 u) \cdot a = a \sec^2 u
+$$
+
+**第 4 步：代回原变量**
+
+将 $u = ax + b$ 代回：
+
+$$
+\boxed{\frac{dy}{dx} = a\sec^2(ax+b)}
+$$
+
+**📌 例题**：求 $y = \tan(5x)$ 的导数。
+
+由公式，$a = 5$，所以：
+
+$$
+\frac{dy}{dx} = 5\sec^2(5x)
 $$
 
 ### 5.3.4 多层链式法则
