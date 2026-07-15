@@ -368,11 +368,81 @@ $$
 \frac{d}{dx}(a^x) = a^x \ln a
 $$
 
-**Derivation process**: Write $a^x$ as $e^{\ln(a^x)} = e^{x\ln a}$, then use the chain rule:
+**Concise derivation**: Write $a^x$ as $e^{\ln(a^x)} = e^{x\ln a}$, then use the chain rule:
 
 $$
 \frac{d}{dx}(a^x) = \frac{d}{dx}(e^{x\ln a}) = e^{x\ln a} \cdot \ln a = a^x \ln a
 $$
+
+**Detailed step-by-step derivation**:
+
+### Step 1: Rewrite the base using an identity
+Any positive number $a$ can be written as an exponential of $e$ using the natural logarithm:
+$$
+a = e^{\ln a}
+$$
+
+### Step 2: Substitute into the original function
+Raise both sides to the power of $x$:
+$$
+a^x = (e^{\ln a})^x
+$$
+
+### Step 3: Simplify the exponent (power rule)
+Using $(e^{m})^n = e^{m \cdot n}$, multiply the exponents:
+$$
+(e^{\ln a})^x = e^{x \cdot \ln a}
+$$
+Now the original function becomes:
+$$
+y = e^{x \ln a}
+$$
+
+### Step 4: Set up the intermediate variable (prepare for the chain rule)
+Let:
+$$
+u = x \cdot \ln a
+$$
+Note: since $a$ is a constant, $\ln a$ is also a constant.
+
+Then the original function becomes:
+$$
+y = e^{u}
+$$
+
+### Step 5: Differentiate separately
+
+**(1) Differentiate $u$ with respect to $x$** ($\ln a$ is a constant coefficient):
+$$
+\frac{du}{dx} = \ln a
+$$
+
+**(2) Differentiate $y$ with respect to $u$** (the derivative of the exponential function is itself):
+$$
+\frac{dy}{du} = e^{u}
+$$
+
+### Step 6: Apply the chain rule
+The chain rule states:
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
+$$
+Substituting the results from Step 5:
+$$
+\frac{dy}{dx} = e^{u} \cdot (\ln a)
+$$
+
+### Step 7: Substitute back and simplify
+Replace $u$ with $x \ln a$:
+$$
+\frac{dy}{dx} = e^{x \ln a} \cdot \ln a
+$$
+From Step 3 we know $e^{x \ln a} = a^x$, so this simplifies to:
+$$
+\boxed{\frac{d}{dx}(a^x) = a^x \ln a}
+$$
+
+---
 
 For the natural logarithm:
 
@@ -578,48 +648,296 @@ As $\delta x \to 0$, the approximation becomes an exact equality.
 
 ### 5.3.3 Common Application Patterns of the Chain Rule
 
-**Pattern 1**: $y = (ax+b)^n$
+The following six patterns cover the most common applications of the chain rule in IGCSE Additional Mathematics. Each pattern is accompanied by a complete step-by-step derivation and a typical example.
 
-Let $u = ax + b$, then $y = u^n$, $\frac{dy}{du} = nu^{n-1}$, $\frac{du}{dx} = a$, so:
+---
 
-$$
-\frac{dy}{dx} = n(ax+b)^{n-1} \cdot a = \boxed{a n (ax+b)^{n-1}}
-$$
+#### Pattern 1: $y = (ax+b)^n$
 
-**Pattern 2**: $y = \sin(ax+b)$
+**Formula**: $\displaystyle \frac{dy}{dx} = a n (ax+b)^{n-1}$
 
-Let $u = ax+b$, then $y = \sin u$, $\frac{dy}{du} = \cos u$, $\frac{du}{dx} = a$, so:
+**Step-by-step derivation**:
 
-$$
-\frac{dy}{dx} = \cos(ax+b) \cdot a = \boxed{a\cos(ax+b)}
-$$
+**Step 1: Set up the intermediate variable**
 
-**Pattern 3**: $y = \cos(ax+b)$
+Let $u = ax + b$, then the original function can be written as $y = u^n$.
 
-$$
-\frac{dy}{dx} = -\sin(ax+b) \cdot a = \boxed{-a\sin(ax+b)}
-$$
+- Outer function: $y = u^n$ (power function)
+- Inner function: $u = ax + b$ (linear function)
 
-**Pattern 4**: $y = e^{ax+b}$
+**Step 2: Differentiate separately**
 
-Let $u = ax+b$, then $y = e^u$, $\frac{dy}{du} = e^u$, $\frac{du}{dx} = a$, so:
+Compute the derivative of $y$ with respect to $u$ and the derivative of $u$ with respect to $x$:
 
 $$
-\frac{dy}{dx} = e^{ax+b} \cdot a = \boxed{a e^{ax+b}}
+\frac{dy}{du} = \frac{d}{du}(u^n) = n u^{n-1}
 $$
 
-**Pattern 5**: $y = \ln(ax+b)$
-
-Let $u = ax+b$, then $y = \ln u$, $\frac{dy}{du} = \frac{1}{u}$, $\frac{du}{dx} = a$, so:
-
 $$
-\frac{dy}{dx} = \frac{1}{ax+b} \cdot a = \boxed{\frac{a}{ax+b}}
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
 $$
 
-**Pattern 6**: $y = \tan(ax+b)$
+**Step 3: Apply the chain rule**
+
+The chain rule states $\displaystyle \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$. Substituting the results from Step 2:
 
 $$
-\frac{dy}{dx} = \sec^2(ax+b) \cdot a = \boxed{a\sec^2(ax+b)}
+\frac{dy}{dx} = (n u^{n-1}) \cdot a = a n u^{n-1}
+$$
+
+**Step 4: Substitute back the original variable**
+
+Replace $u$ with $ax + b$:
+
+$$
+\boxed{\frac{dy}{dx} = a n (ax+b)^{n-1}}
+$$
+
+**📌 Example**: Find the derivative of $y = (3x - 2)^5$.
+
+Using the formula, $a = 3$, $n = 5$, so:
+
+$$
+\frac{dy}{dx} = 3 \times 5 \times (3x - 2)^{4} = 15(3x-2)^4
+$$
+
+---
+
+#### Pattern 2: $y = \sin(ax+b)$
+
+**Formula**: $\displaystyle \frac{dy}{dx} = a\cos(ax+b)$
+
+**Step-by-step derivation**:
+
+**Step 1: Set up the intermediate variable**
+
+Let $u = ax + b$, then $y = \sin u$.
+
+- Outer function: $y = \sin u$ (sine function)
+- Inner function: $u = ax + b$ (linear function)
+
+**Step 2: Differentiate separately**
+
+$$
+\frac{dy}{du} = \frac{d}{du}(\sin u) = \cos u
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**Step 3: Apply the chain rule**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (\cos u) \cdot a = a \cos u
+$$
+
+**Step 4: Substitute back the original variable**
+
+Replace $u$ with $ax + b$:
+
+$$
+\boxed{\frac{dy}{dx} = a\cos(ax+b)}
+$$
+
+**📌 Example**: Find the derivative of $y = \sin\left(2x + \frac{\pi}{3}\right)$.
+
+Using the formula, $a = 2$, so:
+
+$$
+\frac{dy}{dx} = 2\cos\left(2x + \frac{\pi}{3}\right)
+$$
+
+---
+
+#### Pattern 3: $y = \cos(ax+b)$
+
+**Formula**: $\displaystyle \frac{dy}{dx} = -a\sin(ax+b)$
+
+**Step-by-step derivation**:
+
+**Step 1: Set up the intermediate variable**
+
+Let $u = ax + b$, then $y = \cos u$.
+
+- Outer function: $y = \cos u$ (cosine function)
+- Inner function: $u = ax + b$ (linear function)
+
+**Step 2: Differentiate separately**
+
+$$
+\frac{dy}{du} = \frac{d}{du}(\cos u) = -\sin u
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**Step 3: Apply the chain rule**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (-\sin u) \cdot a = -a \sin u
+$$
+
+**Step 4: Substitute back the original variable**
+
+Replace $u$ with $ax + b$:
+
+$$
+\boxed{\frac{dy}{dx} = -a\sin(ax+b)}
+$$
+
+**📌 Example**: Find the derivative of $y = \cos\left(\frac{x}{2}\right)$.
+
+Using the formula, $a = \frac{1}{2}$, so:
+
+$$
+\frac{dy}{dx} = -\frac{1}{2}\sin\left(\frac{x}{2}\right)
+$$
+
+---
+
+#### Pattern 4: $y = e^{ax+b}$
+
+**Formula**: $\displaystyle \frac{dy}{dx} = a e^{ax+b}$
+
+**Step-by-step derivation**:
+
+**Step 1: Set up the intermediate variable**
+
+Let $u = ax + b$, then $y = e^u$.
+
+- Outer function: $y = e^u$ (exponential function, base $e$)
+- Inner function: $u = ax + b$ (linear function)
+
+**Step 2: Differentiate separately**
+
+$$
+\frac{dy}{du} = \frac{d}{du}(e^u) = e^u
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**Step 3: Apply the chain rule**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (e^u) \cdot a = a e^u
+$$
+
+**Step 4: Substitute back the original variable**
+
+Replace $u$ with $ax + b$:
+
+$$
+\boxed{\frac{dy}{dx} = a e^{ax+b}}
+$$
+
+**📌 Example**: Find the derivative of $y = e^{-3x+1}$.
+
+Using the formula, $a = -3$, so:
+
+$$
+\frac{dy}{dx} = -3 e^{-3x+1}
+$$
+
+---
+
+#### Pattern 5: $y = \ln(ax+b)$
+
+**Formula**: $\displaystyle \frac{dy}{dx} = \frac{a}{ax+b}$
+
+**Step-by-step derivation**:
+
+**Step 1: Set up the intermediate variable**
+
+Let $u = ax + b$, then $y = \ln u$.
+
+- Outer function: $y = \ln u$ (natural logarithm function)
+- Inner function: $u = ax + b$ (linear function)
+
+**Step 2: Differentiate separately**
+
+$$
+\frac{dy}{du} = \frac{d}{du}(\ln u) = \frac{1}{u}
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**Step 3: Apply the chain rule**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = \frac{1}{u} \cdot a = \frac{a}{u}
+$$
+
+**Step 4: Substitute back the original variable**
+
+Replace $u$ with $ax + b$:
+
+$$
+\boxed{\frac{dy}{dx} = \frac{a}{ax+b}}
+$$
+
+**📌 Example**: Find the derivative of $y = \ln(3x^2 + 1)$.
+
+Note: Here the inner function is $3x^2 + 1$, not a simple linear $ax+b$ form. We use the general chain rule:
+
+Let $u = 3x^2 + 1$, then $y = \ln u$.
+
+$$
+\frac{dy}{dx} = \frac{1}{u} \cdot \frac{du}{dx} = \frac{1}{3x^2 + 1} \cdot 6x = \frac{6x}{3x^2 + 1}
+$$
+
+---
+
+#### Pattern 6: $y = \tan(ax+b)$
+
+**Formula**: $\displaystyle \frac{dy}{dx} = a\sec^2(ax+b)$
+
+**Step-by-step derivation**:
+
+**Step 1: Set up the intermediate variable**
+
+Let $u = ax + b$, then $y = \tan u$.
+
+- Outer function: $y = \tan u$ (tangent function)
+- Inner function: $u = ax + b$ (linear function)
+
+**Step 2: Differentiate separately**
+
+The derivative of $\tan u$ is $\displaystyle \frac{d}{du}(\tan u) = \sec^2 u$ (derived using $\tan u = \frac{\sin u}{\cos u}$ and the quotient rule).
+
+$$
+\frac{dy}{du} = \frac{d}{du}(\tan u) = \sec^2 u
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**Step 3: Apply the chain rule**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (\sec^2 u) \cdot a = a \sec^2 u
+$$
+
+**Step 4: Substitute back the original variable**
+
+Replace $u$ with $ax + b$:
+
+$$
+\boxed{\frac{dy}{dx} = a\sec^2(ax+b)}
+$$
+
+**📌 Example**: Find the derivative of $y = \tan(5x)$.
+
+Using the formula, $a = 5$, so:
+
+$$
+\frac{dy}{dx} = 5\sec^2(5x)
 $$
 
 ### 5.3.4 Multi-layer Chain Rule

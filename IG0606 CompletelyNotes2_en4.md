@@ -420,6 +420,76 @@ $$
 
 ## 4.3 Exponential Functions and Logarithmic Functions
 
+> **Prerequisite Knowledge**: If you are already familiar with exponential operations (e.g., $2^3 = 8$) and logarithms (e.g., $\log_2 8 = 3$), you can skip ahead directly to §4.3.1. If this is your first encounter, the following content will help you build an intuitive understanding.
+
+**Exponents** and **logarithms** are like a pair of "opposites" — one asks "what is the result?", the other asks "how many times was it used?"
+
+---
+
+**🔢 Exponents — Repeated Multiplication**
+
+The exponential operation $a^n$ means "multiply $a$ by itself $n$ times":
+
+$$
+2^3 = 2 \times 2 \times 2 = 8
+$$
+
+Here $a$ is called the **base**, $n$ is called the **exponent**, and the result $8$ is called the **power**.
+
+A classic example of **exponential growth**: fold a sheet of paper once and it becomes 2 layers, fold twice and it becomes 4 layers. After $x$ folds, the number of layers is $2^x$. This is why exponential growth is so astonishing — after 10 folds, it exceeds 1000 layers.
+
+---
+
+**🔄 Logarithms — The "Reverse Operation" of Exponents**
+
+A logarithm answers: **"How many times must the base $a$ be multiplied to obtain $x$?"**
+
+$$
+\log_2 8 = 3 \quad\Longleftrightarrow\quad 2^3 = 8
+$$
+
+Read as: "the logarithm of $8$ to the base $2$ is $3$", meaning "$2$ needs to be multiplied $3$ times to get $8$".
+
+| Exponential form | Logarithmic form | How to read it |
+|:---|:---|:---|
+| $2^3 = 8$ | $\log_2 8 = 3$ | The logarithm of 8 to the base 2 is 3 |
+| $10^2 = 100$ | $\log_{10} 100 = 2$ | The logarithm of 100 to the base 10 is 2 |
+| $e^1 = e$ | $\ln e = 1$ | The natural logarithm of $e$ is 1 |
+
+**Key insight**: Exponents and logarithms are **inverse operations** — just like addition and subtraction, multiplication and division.
+
+$$
+\underbrace{2^3 = 8}_{\text{Exponential: given base and exponent, find the power}} \quad \Longleftrightarrow \quad \underbrace{\log_2 8 = 3}_{\text{Logarithm: given base and power, find the exponent}}
+$$
+
+---
+
+**📊 Why Are They So Important?**
+
+Exponential functions describe processes that "grow faster and faster":
+- Bacterial reproduction (doubles every 20 minutes)
+- Compound interest (interest earning interest)
+- Radioactive decay (substance decreasing over time)
+
+Logarithmic functions "compress" this explosive growth into a readable scale:
+- The Richter scale for earthquakes ($\log$ scale)
+- Decibels for sound ($\log$ scale)
+- pH values ($\log$ scale)
+
+---
+
+**🗺️ Learning Path for This Section**
+
+```
+Exponential function $a^x$         Logarithmic function $\log_a x$
+       ↓                                  ↑
+       ├── Basic properties ────────────┤ Mutually inverse
+       ├── Natural base $e$              └── Laws (product, quotient, power, change of base)
+       └── Graphs and asymptotes              └── Solving exponential equations $a^x = b$
+```
+
+---
+
 ### 4.3.1 Exponential Functions $f(x) = a^x$ ($a > 0$, $a \neq 1$)
 
 The core characteristic of an exponential function is that the rate of growth (or decay) is proportional to the function value itself.
@@ -1258,6 +1328,8 @@ $$
 | **Trigonometric** $|a\sin bx + c|$ | Period halved (for $\sin$, from $2\pi$ to $\pi$), troughs become peaks |
 | **Trigonometric** $|a\cos bx + c|$ | Period halved (for $\cos$, from $2\pi$ to $\pi$), troughs become peaks |
 | **Trigonometric** $|a\tan bx + c|$ | Vertical asymptotes unchanged, graph reflected to make $y \geq 0$ |
+| **Exponential** $|a^x|$ | Same as $a^x$ (since $a^x > 0$) |
+| **Logarithmic** $|\log_a x|$ | Cusp at $x$-intercept, part where $x < 1$ reflected upward |
 
 ### 4.5.3 Solving Absolute Value Equations and Inequalities
 
