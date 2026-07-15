@@ -247,386 +247,9 @@ $$
 
 ---
 
-## 5.2 基本求导公式
+## 5.2 链式法则（Chain Rule）
 
-有了导数的概念，我们现在需要一套高效的求导工具，而不是每次都用极限定义来计算。以下是最基本的求导公式，必须熟练掌握。
-
-### 5.2.1 幂函数求导公式的推导
-
-对于 $f(x) = x^n$，其中 $n$ 为正整数，我们先用二项式定理来推导。
-
-由导数定义：
-
-$$
-f'(x) = \lim_{\delta x \to 0} \frac{(x + \delta x)^n - x^n}{\delta x}
-$$
-
-根据二项式定理：
-
-$$
-(x + \delta x)^n = x^n + nx^{n-1}\delta x + \frac{n(n-1)}{2}x^{n-2}(\delta x)^2 + \cdots + (\delta x)^n
-$$
-
-代入：
-
-$$
-f'(x) = \lim_{\delta x \to 0} \frac{nx^{n-1}\delta x + \frac{n(n-1)}{2}x^{n-2}(\delta x)^2 + \cdots + (\delta x)^n}{\delta x}
-$$
-
-$$
-= \lim_{\delta x \to 0} \left[ nx^{n-1} + \frac{n(n-1)}{2}x^{n-2}\delta x + \cdots + (\delta x)^{n-1} \right]
-$$
-
-当 $\delta x \to 0$ 时，除第一项外所有项都趋于 $0$，因此：
-
-$$
-\boxed{\frac{d}{dx}(x^n) = n x^{n-1}}
-$$
-
-这个公式不仅对正整数成立，对**任意有理数** $n$ 都成立。这是考纲明确要求的。
-
-下表展示了常见情形：
-
-| $f(x)$ | 改写为 $x^n$ 形式 | $f'(x)$ | 说明 |
-|--------|-----------------|---------|------|
-| $x^2$ | $x^2$ | $2x$ | $n=2$ |
-| $x^3$ | $x^3$ | $3x^2$ | $n=3$ |
-| $x$ | $x^1$ | $1$ | $n=1$ |
-| $1$ | $x^0$ | $0$ | $n=0$ |
-| $\sqrt{x}$ | $x^{1/2}$ | $\frac{1}{2}x^{-1/2} = \frac{1}{2\sqrt{x}}$ | $n = \frac{1}{2}$ |
-| $\frac{1}{x}$ | $x^{-1}$ | $-x^{-2} = -\frac{1}{x^2}$ | $n = -1$ |
-| $\frac{1}{x^2}$ | $x^{-2}$ | $-2x^{-3} = -\frac{2}{x^3}$ | $n = -2$ |
-| $\sqrt[3]{x}$ | $x^{1/3}$ | $\frac{1}{3}x^{-2/3} = \frac{1}{3\sqrt[3]{x^2}}$ | $n = \frac{1}{3}$ |
-
-### 5.2.2 常数倍与和/差法则
-
-函数的线性组合求导非常简单：
-
-- **常数倍法则**：$\frac{d}{dx}[c \cdot f(x)] = c \cdot f'(x)$
-  - 推导：$\lim_{\delta x \to 0} \frac{c f(x+\delta x) - c f(x)}{\delta x} = c \cdot \lim_{\delta x \to 0} \frac{f(x+\delta x) - f(x)}{\delta x} = c f'(x)$
-
-- **和法则**：$\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$
-  - 推导：$\lim_{\delta x \to 0} \frac{[f(x+\delta x)+g(x+\delta x)] - [f(x)+g(x)]}{\delta x} = \lim_{\delta x \to 0} \frac{f(x+\delta x)-f(x)}{\delta x} + \lim_{\delta x \to 0} \frac{g(x+\delta x)-g(x)}{\delta x} = f'(x) + g'(x)$
-
-- **差法则**：$\frac{d}{dx}[f(x) - g(x)] = f'(x) - g'(x)$
-
-**示例**：$f(x) = 3x^2 - 4x + 5$
-
-$$
-f'(x) = 3 \cdot (2x) - 4 \cdot (1) + 0 = 6x - 4
-$$
-
-### 5.2.3 三角函数的导数
-
-**核心条件**：所有三角函数的角度**必须使用弧度制**。
-
-为什么必须用弧度？因为在弧度制下，$\lim_{\theta \to 0} \frac{\sin\theta}{\theta} = 1$。这个极限是三角函数求导的基础。如果使用角度制，这个极限会多出一个因子 $\frac{\pi}{180}$，导数公式就不再简洁了。
-
-**$\sin x$ 导数的推导**：
-
-$$
-\frac{d}{dx}(\sin x) = \lim_{\delta x \to 0} \frac{\sin(x+\delta x) - \sin x}{\delta x}
-$$
-
-使用三角恒等式 $\sin(A+B) = \sin A\cos B + \cos A\sin B$：
-
-$$
-= \lim_{\delta x \to 0} \frac{\sin x\cos(\delta x) + \cos x\sin(\delta x) - \sin x}{\delta x}
-$$
-
-$$
-= \lim_{\delta x \to 0} \left[ \sin x \cdot \frac{\cos(\delta x) - 1}{\delta x} + \cos x \cdot \frac{\sin(\delta x)}{\delta x} \right]
-$$
-
-利用两个重要极限：$\lim_{\theta \to 0} \frac{\sin\theta}{\theta} = 1$ 和 $\lim_{\theta \to 0} \frac{\cos\theta - 1}{\theta} = 0$，得到：
-
-$$
-\frac{d}{dx}(\sin x) = \sin x \cdot 0 + \cos x \cdot 1 = \cos x
-$$
-
-类似地可以推导 $\frac{d}{dx}(\cos x) = -\sin x$。
-
-对于 $\tan x$，我们利用 $\tan x = \frac{\sin x}{\cos x}$ 和商法则推导（见 5.4 节）。
-
-标准公式汇总：
-
-$$
-\boxed{\frac{d}{dx}(\sin x) = \cos x}
-$$
-
-$$
-\boxed{\frac{d}{dx}(\cos x) = -\sin x}
-$$
-
-$$
-\boxed{\frac{d}{dx}(\tan x) = \sec^2 x}
-$$
-
-### 5.2.4 指数函数与对数函数的导数
-
-$$
-\boxed{\frac{d}{dx}(e^x) = e^x}
-$$
-
-这是微积分中最优美的公式之一——$e^x$ 的导数就是它本身。从几何上看，这意味着曲线 $y = e^x$ 在任意一点处的切线斜率都等于该点的函数值。
-
-对于一般的指数函数 $a^x$（$a > 0, a \neq 1$）：
-
-$$
-\frac{d}{dx}(a^x) = a^x \ln a
-$$
-
-**推导过程**：将 $a^x$ 写成 $e^{\ln(a^x)} = e^{x\ln a}$，然后使用链式法则：
-
-$$
-\frac{d}{dx}(a^x) = \frac{d}{dx}(e^{x\ln a}) = e^{x\ln a} \cdot \ln a = a^x \ln a
-$$
-
----
-
----
-
-### 第 1 步：利用恒等式改写底数
-任何正数 $a$ 都可以写成自然对数 $e$ 的指数形式：
-$$
-a = e^{\ln a}
-$$
-
-### 第 2 步：代入原函数
-将上式两边同时取 $x$ 次方：
-$$
-a^x = (e^{\ln a})^x
-$$
-
-### 第 3 步：化简指数（幂的运算法则）
-根据 $(e^{m})^n = e^{m \cdot n}$，将指数相乘：
-$$
-(e^{\ln a})^x = e^{x \cdot \ln a}
-$$
-此时原函数变为：
-$$
-y = e^{x \ln a}
-$$
-
-### 第 4 步：设定中间变量（为链式法则做准备）
-令：
-$$
-u = x \cdot \ln a
-$$
-注意：因为 $a$ 是常数，所以 $\ln a$ 也是常数。
-
-则原函数变为：
-$$
-y = e^{u}
-$$
-
-### 第 5 步：分别求导
-
-**（1）对 $u$ 关于 $x$ 求导**（$\ln a$ 是常数系数）：
-$$
-\frac{du}{dx} = \ln a
-$$
-
-**（2）对 $y$ 关于 $u$ 求导**（指数函数的导数等于它本身）：
-$$
-\frac{dy}{du} = e^{u}
-$$
-
-### 第 6 步：应用链式法则
-链式法则公式为：
-$$
-\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
-$$
-将第 5 步的结果代入：
-$$
-\frac{dy}{dx} = e^{u} \cdot (\ln a)
-$$
-
-### 第 7 步：代回并还原
-将 $u = x \ln a$ 代回表达式：
-$$
-\frac{dy}{dx} = e^{x \ln a} \cdot \ln a
-$$
-因为第 3 步已知 $e^{x \ln a} = a^x$，所以最终化简为：
-$$
-\boxed{\frac{d}{dx}(a^x) = a^x \ln a}
-$$
-
-----
-
-对于自然对数：
-
-$$
-\boxed{\frac{d}{dx}(\ln x) = \frac{1}{x}}
-$$
-
-对于一般底数的对数：
-
-$$
-\frac{d}{dx}(\log_a x) = \frac{1}{x \ln a}
-$$
-
-**$\ln x$ 导数的推导**：
-
-设 $y = \ln x$，则 $e^y = x$。两边对 $x$ 求导（隐函数微分）：
-
-$$
-e^y \cdot \frac{dy}{dx} = 1 \quad \Rightarrow \quad \frac{dy}{dx} = \frac{1}{e^y} = \frac{1}{x}
-$$
-
----
-
-### 例题 5.2A（多项式求导）
-
-> 求下列函数的导数：
-> (a) $f(x) = 2x^5 - 3x^3 + 7x - 10$
-> (b) $g(x) = \frac{1}{3}x^6 + \frac{4}{x^2} - \sqrt{x}$
-> (c) $h(x) = (x+1)(x-2)$（先展开再求导）
-> (d) $p(x) = 5x^4 + 2x^{-3} - 3x^{1/2} + 8$
-
-**解**：
-
-(a) 逐项求导：
-
-$$
-f'(x) = 2 \cdot 5x^4 - 3 \cdot 3x^2 + 7 - 0 = 10x^4 - 9x^2 + 7
-$$
-
-(b) 先写成幂的形式：$\frac{4}{x^2} = 4x^{-2}$，$\sqrt{x} = x^{1/2}$。
-
-$$
-g(x) = \frac{1}{3}x^6 + 4x^{-2} - x^{1/2}
-$$
-
-$$
-g'(x) = \frac{1}{3} \cdot 6x^5 + 4 \cdot (-2)x^{-3} - \frac{1}{2}x^{-1/2}
-= 2x^5 - 8x^{-3} - \frac{1}{2}x^{-1/2}
-$$
-
-化为分数形式：
-
-$$
-g'(x) = 2x^5 - \frac{8}{x^3} - \frac{1}{2\sqrt{x}}
-$$
-
-(c) 先展开：$(x+1)(x-2) = x^2 - x - 2$，然后求导：
-
-$$
-h'(x) = 2x - 1
-$$
-
-(d) 
-
-$$
-p'(x) = 5 \cdot 4x^3 + 2 \cdot (-3)x^{-4} - 3 \cdot \frac{1}{2}x^{-1/2} + 0
-= 20x^3 - 6x^{-4} - \frac{3}{2}x^{-1/2}
-$$
-
----
-
-### 例题 5.2B（三角函数求导）
-
-> 求下列函数的导数：
-> (a) $f(x) = 3\sin x - 2\cos x$
-> (b) $g(x) = \tan x + 5$
-> (c) 求 $f'(0)$，其中 $f(x) = \sin x - \cos x$
-> (d) $h(x) = 4\sin x + \frac{1}{2}\cos x$
-
-**解**：
-
-(a)
-
-$$
-f'(x) = 3\cos x - 2(-\sin x) = 3\cos x + 2\sin x
-$$
-
-(b)
-
-$$
-g'(x) = \sec^2 x + 0 = \sec^2 x
-$$
-
-(c) 先求导：$f'(x) = \cos x + \sin x$
-
-代入 $x = 0$：$f'(0) = \cos 0 + \sin 0 = 1 + 0 = 1$
-
-(d)
-
-$$
-h'(x) = 4\cos x + \frac{1}{2}(-\sin x) = 4\cos x - \frac{1}{2}\sin x
-$$
-
----
-
-### 例题 5.2C（指数与对数求导）
-
-> 求下列函数的导数：
-> (a) $f(x) = 4e^x - \frac{1}{2}\ln x$
-> (b) $g(x) = 3^x + \log_2 x$
-> (c) 已知 $h(x) = e^x + \ln x$，求 $h'(1)$
-> (d) $p(x) = 5^x - 2e^x + 3\ln x$
-
-**解**：
-
-(a)
-
-$$
-f'(x) = 4e^x - \frac{1}{2} \cdot \frac{1}{x} = 4e^x - \frac{1}{2x}
-$$
-
-(b) 使用公式：$\frac{d}{dx}(3^x) = 3^x \ln 3$，$\frac{d}{dx}(\log_2 x) = \frac{1}{x\ln 2}$
-
-$$
-g'(x) = 3^x \ln 3 + \frac{1}{x\ln 2}
-$$
-
-(c) 先求导：$h'(x) = e^x + \frac{1}{x}$
-
-代入 $x = 1$：$h'(1) = e^1 + \frac{1}{1} = e + 1$
-
-(d)
-
-$$
-p'(x) = 5^x \ln 5 - 2e^x + 3 \cdot \frac{1}{x} = 5^x \ln 5 - 2e^x + \frac{3}{x}
-$$
-
----
-
-### 例题 5.2D（综合求导——重新表达后再求导）
-
-> 求下列函数的导数：
-> (a) $f(x) = \frac{2}{\sqrt[3]{x}}$
-> (b) $g(x) = (2x)^3$（注意与 $2x^3$ 的区别）
-
-**解**：
-
-(a) 先改写：$\frac{2}{\sqrt[3]{x}} = 2x^{-1/3}$
-
-$$
-f'(x) = 2 \cdot \left(-\frac{1}{3}\right)x^{-4/3} = -\frac{2}{3}x^{-4/3} = -\frac{2}{3\sqrt[3]{x^4}}
-$$
-
-(b) $(2x)^3 = 8x^3$，所以 $g'(x) = 8 \cdot 3x^2 = 24x^2$
-
-注意：如果是 $2x^3$，导数为 $6x^2$，两者不同。
-
----
-
-### 练习题 5.2
-
-1. 求 $f(x) = 4x^3 - 2x^2 + 5x - 7$ 的导数。
-
-2. 求 $g(x) = \frac{3}{x^2} - \frac{1}{2\sqrt{x}} + 6x^{1/3}$ 的导数。
-
-3. 求 $h(x) = 5\sin x - 3\cos x + 2\tan x$ 的导数。
-
-4. 求 $p(x) = 2e^x + 4^x - \frac{1}{3}\ln x$ 的导数。
-
----
-
-## 5.3 链式法则（Chain Rule）
-
-### 5.3.1 链式法则的原理
+### 5.2.1 链式法则的原理
 
 当想要求解复合函数的导数时——比如 $y = (2x+1)^3$ 或 $y = \sin(3x)$——就需要用到**链式法则**。
 
@@ -644,9 +267,9 @@ $$
 
 即：**外层函数对中间变量的导数，乘以中间变量对自变量的导数**。
 
-### 5.3.2 链式法则的直观理解
+### 5.2.2 链式法则的直观理解
 
-为什么链式法则成立？考虑微小变化量（仅供理解，不需要记忆该 5.3.2 节，因为太难了。该节告诉你为什么这个东西成立以及大概的原理是什么）：
+为什么链式法则成立？考虑微小变化量（仅供理解，不需要记忆该 5.2.2 节，因为太难了。该节告诉你为什么这个东西成立以及大概的原理是什么）：
 
 - 当 $x$ 变化 $\delta x$ 时，$u = g(x)$ 变化 $\delta u \approx g'(x)\delta x$
 - 当 $u$ 变化 $\delta u$ 时，$y = f(u)$ 变化 $\delta y \approx f'(u)\delta u$
@@ -659,7 +282,7 @@ $$
 
 当 $\delta x \to 0$ 时，近似变成精确等式。
 
-### 5.3.3 链式法则的常见应用模式（核心）
+### 5.2.3 链式法则的常见应用模式（核心）
 
 以下六种模式涵盖了 IGCSE 附加数学中链式法则最常见的应用。每个模式都配有完整的逐步推导过程和典型例题。
 
@@ -953,7 +576,7 @@ $$
 \frac{dy}{dx} = 5\sec^2(5x)
 $$
 
-### 5.3.4 多层链式法则
+### 5.2.4 多层链式法则
 
 当函数有三层甚至更多层复合时，链式法则可以连续使用多次。例如 $y = f(g(h(x)))$：
 
@@ -1095,7 +718,7 @@ $$
 
 ---
 
-### 练习题 5.3
+### 练习题 5.2
 
 1. 求 $y = (5x + 2)^4$ 的导数。
 
@@ -1106,6 +729,383 @@ $$
 4. 求 $y = \ln(x^2 + 4)$ 的导数。
 
 5. 求 $y = \cos^3(2x)$ 的导数。
+
+---
+
+## 5.3 基本求导公式
+
+有了导数的概念，我们现在需要一套高效的求导工具，而不是每次都用极限定义来计算。以下是最基本的求导公式，必须熟练掌握。
+
+### 5.3.1 幂函数求导公式的推导
+
+对于 $f(x) = x^n$，其中 $n$ 为正整数，我们先用二项式定理来推导。
+
+由导数定义：
+
+$$
+f'(x) = \lim_{\delta x \to 0} \frac{(x + \delta x)^n - x^n}{\delta x}
+$$
+
+根据二项式定理：
+
+$$
+(x + \delta x)^n = x^n + nx^{n-1}\delta x + \frac{n(n-1)}{2}x^{n-2}(\delta x)^2 + \cdots + (\delta x)^n
+$$
+
+代入：
+
+$$
+f'(x) = \lim_{\delta x \to 0} \frac{nx^{n-1}\delta x + \frac{n(n-1)}{2}x^{n-2}(\delta x)^2 + \cdots + (\delta x)^n}{\delta x}
+$$
+
+$$
+= \lim_{\delta x \to 0} \left[ nx^{n-1} + \frac{n(n-1)}{2}x^{n-2}\delta x + \cdots + (\delta x)^{n-1} \right]
+$$
+
+当 $\delta x \to 0$ 时，除第一项外所有项都趋于 $0$，因此：
+
+$$
+\boxed{\frac{d}{dx}(x^n) = n x^{n-1}}
+$$
+
+这个公式不仅对正整数成立，对**任意有理数** $n$ 都成立。这是考纲明确要求的。
+
+下表展示了常见情形：
+
+| $f(x)$ | 改写为 $x^n$ 形式 | $f'(x)$ | 说明 |
+|--------|-----------------|---------|------|
+| $x^2$ | $x^2$ | $2x$ | $n=2$ |
+| $x^3$ | $x^3$ | $3x^2$ | $n=3$ |
+| $x$ | $x^1$ | $1$ | $n=1$ |
+| $1$ | $x^0$ | $0$ | $n=0$ |
+| $\sqrt{x}$ | $x^{1/2}$ | $\frac{1}{2}x^{-1/2} = \frac{1}{2\sqrt{x}}$ | $n = \frac{1}{2}$ |
+| $\frac{1}{x}$ | $x^{-1}$ | $-x^{-2} = -\frac{1}{x^2}$ | $n = -1$ |
+| $\frac{1}{x^2}$ | $x^{-2}$ | $-2x^{-3} = -\frac{2}{x^3}$ | $n = -2$ |
+| $\sqrt[3]{x}$ | $x^{1/3}$ | $\frac{1}{3}x^{-2/3} = \frac{1}{3\sqrt[3]{x^2}}$ | $n = \frac{1}{3}$ |
+
+### 5.3.2 常数倍与和/差法则
+
+函数的线性组合求导非常简单：
+
+- **常数倍法则**：$\frac{d}{dx}[c \cdot f(x)] = c \cdot f'(x)$
+  - 推导：$\lim_{\delta x \to 0} \frac{c f(x+\delta x) - c f(x)}{\delta x} = c \cdot \lim_{\delta x \to 0} \frac{f(x+\delta x) - f(x)}{\delta x} = c f'(x)$
+
+- **和法则**：$\frac{d}{dx}[f(x) + g(x)] = f'(x) + g'(x)$
+  - 推导：$\lim_{\delta x \to 0} \frac{[f(x+\delta x)+g(x+\delta x)] - [f(x)+g(x)]}{\delta x} = \lim_{\delta x \to 0} \frac{f(x+\delta x)-f(x)}{\delta x} + \lim_{\delta x \to 0} \frac{g(x+\delta x)-g(x)}{\delta x} = f'(x) + g'(x)$
+
+- **差法则**：$\frac{d}{dx}[f(x) - g(x)] = f'(x) - g'(x)$
+
+**示例**：$f(x) = 3x^2 - 4x + 5$
+
+$$
+f'(x) = 3 \cdot (2x) - 4 \cdot (1) + 0 = 6x - 4
+$$
+
+### 5.3.3 三角函数的导数
+
+**核心条件**：所有三角函数的角度**必须使用弧度制**。
+
+为什么必须用弧度？因为在弧度制下，$\lim_{\theta \to 0} \frac{\sin\theta}{\theta} = 1$。这个极限是三角函数求导的基础。如果使用角度制，这个极限会多出一个因子 $\frac{\pi}{180}$，导数公式就不再简洁了。
+
+**$\sin x$ 导数的推导**：
+
+$$
+\frac{d}{dx}(\sin x) = \lim_{\delta x \to 0} \frac{\sin(x+\delta x) - \sin x}{\delta x}
+$$
+
+使用三角恒等式 $\sin(A+B) = \sin A\cos B + \cos A\sin B$：
+
+$$
+= \lim_{\delta x \to 0} \frac{\sin x\cos(\delta x) + \cos x\sin(\delta x) - \sin x}{\delta x}
+$$
+
+$$
+= \lim_{\delta x \to 0} \left[ \sin x \cdot \frac{\cos(\delta x) - 1}{\delta x} + \cos x \cdot \frac{\sin(\delta x)}{\delta x} \right]
+$$
+
+利用两个重要极限：$\lim_{\theta \to 0} \frac{\sin\theta}{\theta} = 1$ 和 $\lim_{\theta \to 0} \frac{\cos\theta - 1}{\theta} = 0$，得到：
+
+$$
+\frac{d}{dx}(\sin x) = \sin x \cdot 0 + \cos x \cdot 1 = \cos x
+$$
+
+类似地可以推导 $\frac{d}{dx}(\cos x) = -\sin x$。
+
+对于 $\tan x$，我们利用 $\tan x = \frac{\sin x}{\cos x}$ 和商法则推导（见 5.4 节）。
+
+标准公式汇总：
+
+$$
+\boxed{\frac{d}{dx}(\sin x) = \cos x}
+$$
+
+$$
+\boxed{\frac{d}{dx}(\cos x) = -\sin x}
+$$
+
+$$
+\boxed{\frac{d}{dx}(\tan x) = \sec^2 x}
+$$
+
+### 5.3.4 指数函数与对数函数的导数
+
+$$
+\boxed{\frac{d}{dx}(e^x) = e^x}
+$$
+
+这是微积分中最优美的公式之一——$e^x$ 的导数就是它本身。从几何上看，这意味着曲线 $y = e^x$ 在任意一点处的切线斜率都等于该点的函数值。
+
+对于一般的指数函数 $a^x$（$a > 0, a \neq 1$）：
+
+$$
+\frac{d}{dx}(a^x) = a^x \ln a
+$$
+
+**推导过程**：将 $a^x$ 写成 $e^{\ln(a^x)} = e^{x\ln a}$，然后使用链式法则：
+
+$$
+\frac{d}{dx}(a^x) = \frac{d}{dx}(e^{x\ln a}) = e^{x\ln a} \cdot \ln a = a^x \ln a
+$$
+
+---
+
+---
+
+### 第 1 步：利用恒等式改写底数
+任何正数 $a$ 都可以写成自然对数 $e$ 的指数形式：
+$$
+a = e^{\ln a}
+$$
+
+### 第 2 步：代入原函数
+将上式两边同时取 $x$ 次方：
+$$
+a^x = (e^{\ln a})^x
+$$
+
+### 第 3 步：化简指数（幂的运算法则）
+根据 $(e^{m})^n = e^{m \cdot n}$，将指数相乘：
+$$
+(e^{\ln a})^x = e^{x \cdot \ln a}
+$$
+此时原函数变为：
+$$
+y = e^{x \ln a}
+$$
+
+### 第 4 步：设定中间变量（为链式法则做准备）
+令：
+$$
+u = x \cdot \ln a
+$$
+注意：因为 $a$ 是常数，所以 $\ln a$ 也是常数。
+
+则原函数变为：
+$$
+y = e^{u}
+$$
+
+### 第 5 步：分别求导
+
+**（1）对 $u$ 关于 $x$ 求导**（$\ln a$ 是常数系数）：
+$$
+\frac{du}{dx} = \ln a
+$$
+
+**（2）对 $y$ 关于 $u$ 求导**（指数函数的导数等于它本身）：
+$$
+\frac{dy}{du} = e^{u}
+$$
+
+### 第 6 步：应用链式法则
+链式法则公式为：
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}
+$$
+将第 5 步的结果代入：
+$$
+\frac{dy}{dx} = e^{u} \cdot (\ln a)
+$$
+
+### 第 7 步：代回并还原
+将 $u = x \ln a$ 代回表达式：
+$$
+\frac{dy}{dx} = e^{x \ln a} \cdot \ln a
+$$
+因为第 3 步已知 $e^{x \ln a} = a^x$，所以最终化简为：
+$$
+\boxed{\frac{d}{dx}(a^x) = a^x \ln a}
+$$
+
+----
+
+对于自然对数：
+
+$$
+\boxed{\frac{d}{dx}(\ln x) = \frac{1}{x}}
+$$
+
+对于一般底数的对数：
+
+$$
+\frac{d}{dx}(\log_a x) = \frac{1}{x \ln a}
+$$
+
+**$\ln x$ 导数的推导**：
+
+设 $y = \ln x$，则 $e^y = x$。两边对 $x$ 求导（隐函数微分）：
+
+$$
+e^y \cdot \frac{dy}{dx} = 1 \quad \Rightarrow \quad \frac{dy}{dx} = \frac{1}{e^y} = \frac{1}{x}
+$$
+
+---
+
+### 例题 5.2A（多项式求导）
+
+> 求下列函数的导数：
+> (a) $f(x) = 2x^5 - 3x^3 + 7x - 10$
+> (b) $g(x) = \frac{1}{3}x^6 + \frac{4}{x^2} - \sqrt{x}$
+> (c) $h(x) = (x+1)(x-2)$（先展开再求导）
+> (d) $p(x) = 5x^4 + 2x^{-3} - 3x^{1/2} + 8$
+
+**解**：
+
+(a) 逐项求导：
+
+$$
+f'(x) = 2 \cdot 5x^4 - 3 \cdot 3x^2 + 7 - 0 = 10x^4 - 9x^2 + 7
+$$
+
+(b) 先写成幂的形式：$\frac{4}{x^2} = 4x^{-2}$，$\sqrt{x} = x^{1/2}$。
+
+$$
+g(x) = \frac{1}{3}x^6 + 4x^{-2} - x^{1/2}
+$$
+
+$$
+g'(x) = \frac{1}{3} \cdot 6x^5 + 4 \cdot (-2)x^{-3} - \frac{1}{2}x^{-1/2}
+= 2x^5 - 8x^{-3} - \frac{1}{2}x^{-1/2}
+$$
+
+化为分数形式：
+
+$$
+g'(x) = 2x^5 - \frac{8}{x^3} - \frac{1}{2\sqrt{x}}
+$$
+
+(c) 先展开：$(x+1)(x-2) = x^2 - x - 2$，然后求导：
+
+$$
+h'(x) = 2x - 1
+$$
+
+(d) 
+
+$$
+p'(x) = 5 \cdot 4x^3 + 2 \cdot (-3)x^{-4} - 3 \cdot \frac{1}{2}x^{-1/2} + 0
+= 20x^3 - 6x^{-4} - \frac{3}{2}x^{-1/2}
+$$
+
+---
+
+### 例题 5.2B（三角函数求导）
+
+> 求下列函数的导数：
+> (a) $f(x) = 3\sin x - 2\cos x$
+> (b) $g(x) = \tan x + 5$
+> (c) 求 $f'(0)$，其中 $f(x) = \sin x - \cos x$
+> (d) $h(x) = 4\sin x + \frac{1}{2}\cos x$
+
+**解**：
+
+(a)
+
+$$
+f'(x) = 3\cos x - 2(-\sin x) = 3\cos x + 2\sin x
+$$
+
+(b)
+
+$$
+g'(x) = \sec^2 x + 0 = \sec^2 x
+$$
+
+(c) 先求导：$f'(x) = \cos x + \sin x$
+
+代入 $x = 0$：$f'(0) = \cos 0 + \sin 0 = 1 + 0 = 1$
+
+(d)
+
+$$
+h'(x) = 4\cos x + \frac{1}{2}(-\sin x) = 4\cos x - \frac{1}{2}\sin x
+$$
+
+---
+
+### 例题 5.2C（指数与对数求导）
+
+> 求下列函数的导数：
+> (a) $f(x) = 4e^x - \frac{1}{2}\ln x$
+> (b) $g(x) = 3^x + \log_2 x$
+> (c) 已知 $h(x) = e^x + \ln x$，求 $h'(1)$
+> (d) $p(x) = 5^x - 2e^x + 3\ln x$
+
+**解**：
+
+(a)
+
+$$
+f'(x) = 4e^x - \frac{1}{2} \cdot \frac{1}{x} = 4e^x - \frac{1}{2x}
+$$
+
+(b) 使用公式：$\frac{d}{dx}(3^x) = 3^x \ln 3$，$\frac{d}{dx}(\log_2 x) = \frac{1}{x\ln 2}$
+
+$$
+g'(x) = 3^x \ln 3 + \frac{1}{x\ln 2}
+$$
+
+(c) 先求导：$h'(x) = e^x + \frac{1}{x}$
+
+代入 $x = 1$：$h'(1) = e^1 + \frac{1}{1} = e + 1$
+
+(d)
+
+$$
+p'(x) = 5^x \ln 5 - 2e^x + 3 \cdot \frac{1}{x} = 5^x \ln 5 - 2e^x + \frac{3}{x}
+$$
+
+---
+
+### 例题 5.2D（综合求导——重新表达后再求导）
+
+> 求下列函数的导数：
+> (a) $f(x) = \frac{2}{\sqrt[3]{x}}$
+> (b) $g(x) = (2x)^3$（注意与 $2x^3$ 的区别）
+
+**解**：
+
+(a) 先改写：$\frac{2}{\sqrt[3]{x}} = 2x^{-1/3}$
+
+$$
+f'(x) = 2 \cdot \left(-\frac{1}{3}\right)x^{-4/3} = -\frac{2}{3}x^{-4/3} = -\frac{2}{3\sqrt[3]{x^4}}
+$$
+
+(b) $(2x)^3 = 8x^3$，所以 $g'(x) = 8 \cdot 3x^2 = 24x^2$
+
+注意：如果是 $2x^3$，导数为 $6x^2$，两者不同。
+
+---
+
+### 练习题 5.3
+
+1. 求 $f(x) = 4x^3 - 2x^2 + 5x - 7$ 的导数。
+
+2. 求 $g(x) = \frac{3}{x^2} - \frac{1}{2\sqrt{x}} + 6x^{1/3}$ 的导数。
+
+3. 求 $h(x) = 5\sin x - 3\cos x + 2\tan x$ 的导数。
+
+4. 求 $p(x) = 2e^x + 4^x - \frac{1}{3}\ln x$ 的导数。
 
 ---
 
@@ -2094,10 +2094,10 @@ $$
 | 知识点 | 公式/方法 | 章节 |
 |--------|-----------|:----:|
 | 导数的极限定义 | $\displaystyle f'(x) = \lim_{\delta x \to 0} \frac{f(x+\delta x) - f(x)}{\delta x}$ | 5.1 |
-| 幂函数求导 | $\frac{d}{dx}(x^n) = nx^{n-1}$（$n$ 为任意有理数） | 5.2 |
-| 三角函数求导 | $\frac{d}{dx}(\sin x) = \cos x$，$\frac{d}{dx}(\cos x) = -\sin x$，$\frac{d}{dx}(\tan x) = \sec^2 x$ | 5.2 |
-| 指数对数求导 | $\frac{d}{dx}(e^x) = e^x$，$\frac{d}{dx}(\ln x) = \frac{1}{x}$，$\frac{d}{dx}(a^x) = a^x\ln a$ | 5.2 |
-| 链式法则 | $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$ | 5.3 |
+| 幂函数求导 | $\frac{d}{dx}(x^n) = nx^{n-1}$（$n$ 为任意有理数） | 5.3 |
+| 三角函数求导 | $\frac{d}{dx}(\sin x) = \cos x$，$\frac{d}{dx}(\cos x) = -\sin x$，$\frac{d}{dx}(\tan x) = \sec^2 x$ | 5.3 |
+| 指数对数求导 | $\frac{d}{dx}(e^x) = e^x$，$\frac{d}{dx}(\ln x) = \frac{1}{x}$，$\frac{d}{dx}(a^x) = a^x\ln a$ | 5.3 |
+| 链式法则 | $\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$ | 5.2 |
 | 积法则 | $(uv)' = uv' + vu'$ | 5.4 |
 | 商法则 | $\left(\frac{u}{v}\right)' = \frac{vu' - uv'}{v^2}$ | 5.4 |
 | 切线方程 | $y - f(a) = f'(a)(x - a)$ | 5.5 |
@@ -2125,7 +2125,7 @@ $$
 3. $8$
    - $\lim_{x \to 4} \frac{x^2 - 16}{x - 4} = \lim_{x \to 4} \frac{(x-4)(x+4)}{x-4} = \lim_{x \to 4} (x+4) = 8$
 
-### 5.2 基本求导公式
+### 5.3 基本求导公式
 
 1. $f'(x) = 12x^2 - 4x + 5$
 
@@ -2136,7 +2136,7 @@ $$
 
 4. $p'(x) = 2e^x + 4^x\ln 4 - \frac{1}{3x}$
 
-### 5.3 链式法则
+### 5.2 链式法则
 
 1. $y' = 20(5x+2)^3$
 2. $y = (3x-1)^{-1/2}$，$y' = -\frac{3}{2}(3x-1)^{-3/2} = -\frac{3}{2\sqrt{(3x-1)^3}}$
