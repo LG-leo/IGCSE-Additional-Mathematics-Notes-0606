@@ -299,3 +299,56 @@ S_N = \sum_{n=1}^{N} s_n = \sum_{n=1}^{N} 4 + 8(1-\sqrt{e})\sum_{n=1}^{N} e^{-0.
 $$
 
 The first part diverges ($4N \to \infty$), while the second part converges (geometric series with common ratio $e^{-0.5} < 1$). Hence the overall series diverges, meaning the total distance is infinite (consistent with physical intuition — since the velocity approaches a constant, displacement increases without bound over infinite time).
+
+
+-----
+8 台BMPT看着你
+```
+              ₙ  l                    
+            ⁸☰°°☰⁸                                 
+       𠂆 匚匚匚匚匚乀乀二二乀乀
+         ╲O O O O O╱╱——╱╱
+```
+
+```
+              ₙ  l                    
+            ⁸☰°°☰⁸                                 
+       𠂆 匚匚匚匚匚乀乀二二乀乀
+         ╲O O O O O╱╱——╱╱
+```
+```
+              ₙ  l                    
+            ⁸☰°°☰⁸                                 
+       𠂆 匚匚匚匚匚乀乀二二乀乀
+         ╲O O O O O╱╱——╱╱
+```
+```
+              ₙ  l                    
+            ⁸☰°°☰⁸                                 
+       𠂆 匚匚匚匚匚乀乀二二乀乀
+         ╲O O O O O╱╱——╱╱
+```
+```
+              ₙ  l                    
+            ⁸☰°°☰⁸                                 
+       𠂆 匚匚匚匚匚乀乀二二乀乀
+         ╲O O O O O╱╱——╱╱
+```
+```
+              ₙ  l                    
+            ⁸☰°°☰⁸                                 
+       𠂆 匚匚匚匚匚乀乀二二乀乀
+         ╲O O O O O╱╱——╱╱
+```
+```
+              ₙ  l                    
+            ⁸☰°°☰⁸                                 
+       𠂆 匚匚匚匚匚乀乀二二乀乀
+         ╲O O O O O╱╱——╱╱
+```
+```
+              ₙ  l                    
+            ⁸☰°°☰⁸                                 
+       𠂆 匚匚匚匚匚乀乀二二乀乀
+         ╲O O O O O╱╱——╱╱
+```
