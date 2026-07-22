@@ -37,8 +37,8 @@
 |---------|------|---------|
 | 14.1 | 理解导函数的概念（非正式极限理解，不考第一原理） | 5.1 |
 | 14.2 | 使用记号 $f'(x), f''(x), \frac{dy}{dx}, \frac{d^2y}{dx^2}, \delta x, \delta x \to 0$ | 5.1 |
-| 14.3 | 已知并使用标准函数的导数：$x^n$（任意有理数 $n$）、$\sin x$、$\cos x$、$\tan x$、$e^x$、$\ln x$（含常数倍、和差、复合函数） | 5.2, 5.3 |
-| 14.4 | 积法则与商法则 | 5.4 |
+| 14.3 | 已知并使用标准函数的导数：$x^n$（任意有理数 $n$）、$\sin x$、$\cos x$、$\tan x$、$e^x$、$\ln x$（含常数倍、和差、复合函数） | 5.3, 5.4 |
+| 14.4 | 积法则与商法则 | 5.2 |
 | 14.5 | 求切线（tangent）与法线（normal） | 5.5 |
 | 14.6 | 求驻点（stationary points），不含拐点 | 5.6 |
 | 14.7 | 相关变化率（connected rates of change）、微小增量与近似（small increments and approximations） | 5.7 |
@@ -61,7 +61,7 @@
 
 为什么要学微分？因为自然界中几乎一切都在变化：物体的运动、人口的增减、温度的升降、利润的涨落。微分给了我们一把精确描述这些变化的数学工具。掌握了微分，后续的积分（求累积量）、最优化（求最佳方案）、运动学分析等问题都将迎刃而解。
 
-本章将从导数的基本概念出发，依次学习基本求导公式、链式法则、积法则与商法则，然后将这些工具应用于切线与法线、极值判断、相关变化率以及实际最值问题。每个知识点配有丰富的例题和练习题，帮助你完全掌握。
+本章将从导数的基本概念出发，依次学习积法则与商法则、基本求导公式、链式法则，然后将这些工具应用于切线与法线、极值判断、相关变化率以及实际最值问题。每个知识点配有丰富的例题和练习题，帮助你完全掌握。
 
 ---
 
@@ -247,518 +247,220 @@ $$
 
 ---
 
-## 5.2 链式法则（Chain Rule）
 
-### 5.2.1 链式法则的原理
+## 5.2 积法则与商法则
 
-当想要求解复合函数的导数时——比如 $y = (2x+1)^3$ 或 $y = \sin(3x)$——就需要用到**链式法则**。
+当两个函数相乘或相除时，它们的导数不能简单地对每个部分分别求导再相乘或相除。这时需要专门的法则。
 
-链式法则的核心思想是"层层求导，逐层相乘"。设 $y$ 是 $u$ 的函数，而 $u$ 又是 $x$ 的函数，即 $y = f(u)$ 且 $u = g(x)$，则：
+### 5.2.1 积法则（Product Rule）
 
-$$
-\boxed{\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}}
-$$
-
-用另一种形式写出：如果 $y = f(g(x))$，那么：
+设 $y = u \cdot v$，其中 $u$ 和 $v$ 都是 $x$ 的函数，则：
 
 $$
-\frac{dy}{dx} = f'(g(x)) \cdot g'(x)
+\boxed{\frac{dy}{dx} = u\frac{dv}{dx} + v\frac{du}{dx}}
 $$
 
-即：**外层函数对中间变量的导数，乘以中间变量对自变量的导数**。
+或简记为：$(uv)' = uv' + vu'$
 
-### 5.2.2 链式法则的直观理解
+记忆口诀："**前导后不导 + 后导前不导**"——第一个函数求导乘以第二个函数不动，加上第二个函数求导乘以第一个函数不动。
 
-为什么链式法则成立？考虑微小变化量（仅供理解，不需要记忆该 5.2.2 节，因为太难了。该节告诉你为什么这个东西成立以及大概的原理是什么）：
+**积法则的详细推导**：
 
-- 当 $x$ 变化 $\delta x$ 时，$u = g(x)$ 变化 $\delta u \approx g'(x)\delta x$
-- 当 $u$ 变化 $\delta u$ 时，$y = f(u)$ 变化 $\delta y \approx f'(u)\delta u$
-
-因此：
+从导数的极限定义出发：
 
 $$
-\frac{\delta y}{\delta x} \approx \frac{f'(u)\delta u}{\delta x} \approx f'(u) \cdot \frac{\delta u}{\delta x} \approx f'(u) \cdot g'(x)
+(uv)' = \lim_{\delta x \to 0} \frac{u(x+\delta x)v(x+\delta x) - u(x)v(x)}{\delta x}
 $$
 
-当 $\delta x \to 0$ 时，近似变成精确等式。
-
-### 5.2.3 链式法则的常见应用模式（核心）
-
-以下六种模式涵盖了 IGCSE 附加数学中链式法则最常见的应用。每个模式都配有完整的逐步推导过程和典型例题。
-
----
-
-#### 模式一：$y = (ax+b)^n$
-
-**公式**：$\displaystyle \frac{dy}{dx} = a n (ax+b)^{n-1}$
-
-**逐步推导**：
-
-**第 1 步：设定中间变量**
-
-令 $u = ax + b$，则原函数可以写成 $y = u^n$ 的形式。这里 $u$ 是中间变量，它是 $x$ 的一次函数。
-
-- 外层函数：$y = u^n$（幂函数）
-- 内层函数：$u = ax + b$（线性函数）
-
-**第 2 步：分别求导**
-
-分别计算 $y$ 对 $u$ 的导数和 $u$ 对 $x$ 的导数：
+在分子中巧妙地加减 $u(x+\delta x)v(x)$：
 
 $$
-\frac{dy}{du} = \frac{d}{du}(u^n) = n u^{n-1}
+= \lim_{\delta x \to 0} \frac{u(x+\delta x)v(x+\delta x) - u(x+\delta x)v(x) + u(x+\delta x)v(x) - u(x)v(x)}{\delta x}
 $$
 
 $$
-\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+= \lim_{\delta x \to 0} \left[ u(x+\delta x) \cdot \frac{v(x+\delta x) - v(x)}{\delta x} + v(x) \cdot \frac{u(x+\delta x) - u(x)}{\delta x} \right]
 $$
 
-**第 3 步：应用链式法则**
-
-链式法则说 $\displaystyle \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$。将第 2 步的结果代入：
+当 $\delta x \to 0$ 时，$u(x+\delta x) \to u(x)$，于是：
 
 $$
-\frac{dy}{dx} = (n u^{n-1}) \cdot a = a n u^{n-1}
+(uv)' = u(x) \cdot v'(x) + v(x) \cdot u'(x) = uv' + vu'
 $$
 
-**第 4 步：代回原变量**
+### 5.2.2 商法则（Quotient Rule）
 
-将 $u = ax + b$ 代回表达式中：
-
-$$
-\boxed{\frac{dy}{dx} = a n (ax+b)^{n-1}}
-$$
-
-**📌 例题**：求 $y = (3x - 2)^5$ 的导数。
-
-由公式，$a = 3$，$n = 5$，所以：
+设 $y = \frac{u}{v}$，其中 $u$ 和 $v$ 都是 $x$ 的函数，且 $v \neq 0$，则：
 
 $$
-\frac{dy}{dx} = 3 \times 5 \times (3x - 2)^{4} = 15(3x-2)^4
+\boxed{\frac{dy}{dx} = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2}}
+$$
+
+或简记为：$\left(\frac{u}{v}\right)' = \frac{vu' - uv'}{v^2}$
+
+记忆口诀："**上导下不导减下导上不导，除以分母的平方**"。
+
+**商法则的推导**（从积法则导出）：
+
+将 $\frac{u}{v}$ 写成 $u \cdot v^{-1}$，然后用积法则和链式法则：
+
+$$
+\frac{d}{dx}\left(\frac{u}{v}\right) = \frac{d}{dx}(u \cdot v^{-1}) = u \cdot \frac{d}{dx}(v^{-1}) + v^{-1} \cdot \frac{du}{dx}
+$$
+
+$$
+= u \cdot (-1)v^{-2} \cdot \frac{dv}{dx} + \frac{1}{v} \cdot \frac{du}{dx}
+= -\frac{u}{v^2}\frac{dv}{dx} + \frac{1}{v}\frac{du}{dx}
+$$
+
+通分：
+
+$$
+= \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2}
 $$
 
 ---
 
-#### 模式二：$y = \sin(ax+b)$
-
-**公式**：$\displaystyle \frac{dy}{dx} = a\cos(ax+b)$
-
-**逐步推导**：
-
-**第 1 步：设定中间变量**
-
-令 $u = ax + b$，则 $y = \sin u$。
-
-- 外层函数：$y = \sin u$（正弦函数）
-- 内层函数：$u = ax + b$（线性函数）
-
-**第 2 步：分别求导**
-
-$$
-\frac{dy}{du} = \frac{d}{du}(\sin u) = \cos u
-$$
-
-$$
-\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
-$$
-
-**第 3 步：应用链式法则**
-
-$$
-\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (\cos u) \cdot a = a \cos u
-$$
-
-**第 4 步：代回原变量**
-
-将 $u = ax + b$ 代回：
-
-$$
-\boxed{\frac{dy}{dx} = a\cos(ax+b)}
-$$
-
-**📌 例题**：求 $y = \sin\left(2x + \frac{\pi}{3}\right)$ 的导数。
-
-由公式，$a = 2$，所以：
-
-$$
-\frac{dy}{dx} = 2\cos\left(2x + \frac{\pi}{3}\right)
-$$
-
----
-
-#### 模式三：$y = \cos(ax+b)$
-
-**公式**：$\displaystyle \frac{dy}{dx} = -a\sin(ax+b)$
-
-**逐步推导**：
-
-**第 1 步：设定中间变量**
-
-令 $u = ax + b$，则 $y = \cos u$。
-
-- 外层函数：$y = \cos u$（余弦函数）
-- 内层函数：$u = ax + b$（线性函数）
-
-**第 2 步：分别求导**
-
-$$
-\frac{dy}{du} = \frac{d}{du}(\cos u) = -\sin u
-$$
-
-$$
-\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
-$$
-
-**第 3 步：应用链式法则**
-
-$$
-\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (-\sin u) \cdot a = -a \sin u
-$$
-
-**第 4 步：代回原变量**
-
-将 $u = ax + b$ 代回：
-
-$$
-\boxed{\frac{dy}{dx} = -a\sin(ax+b)}
-$$
-
-**📌 例题**：求 $y = \cos\left(\frac{x}{2}\right)$ 的导数。
-
-由公式，$a = \frac{1}{2}$，所以：
-
-$$
-\frac{dy}{dx} = -\frac{1}{2}\sin\left(\frac{x}{2}\right)
-$$
-
----
-
-#### 模式四：$y = e^{ax+b}$
-
-**公式**：$\displaystyle \frac{dy}{dx} = a e^{ax+b}$
-
-**逐步推导**：
-
-**第 1 步：设定中间变量**
-
-令 $u = ax + b$，则 $y = e^u$。
-
-- 外层函数：$y = e^u$（指数函数，底数为 $e$）。这里 $u$ 是中间变量，它是 $x$ 的一次函数。
-- 内层函数：$u = ax + b$（线性函数）
-
-**第 2 步：分别求导**
-
-分别计算 $y$ 对 $u$ 的导数和 $u$ 对 $x$ 的导数：
-
-首先，$y$ 对 $u$ 求导：$e^u$ 的导数是它本身，即：
-
-$$
-\frac{dy}{du} = \frac{d}{du}(e^u) = e^u
-$$
-
-其次，$u$ 对 $x$ 求导：$u = ax + b$ 是一个关于 $x$ 的一次函数（线性函数），其图像是一条斜率为 $a$ 的直线。根据幂函数求导公式 $\frac{d}{dx}(x^n) = nx^{n-1}$，我们分别对两项求导：
-
-- $ax$ 项：将 $a$ 视为常数系数，$ax = a \cdot x^1$，导数为 $a \cdot 1 \cdot x^{0} = a$
-- $b$ 项：常数 $b$ 的导数为 $0$
-
-因此，$ax + b$ 的导数就是系数 $a$，即：
-
-$$
-\frac{du}{dx} = \frac{d}{dx}(ax + b) = \frac{d}{dx}(ax) + \frac{d}{dx}(b) = a + 0 = a
-$$
-
-这个结果在几何上非常直观：一次函数 $u = ax + b$ 的斜率恒为 $a$，意味着无论 $x$ 取何值，$u$ 关于 $x$ 的变化率始终等于 $a$——这正是导数所描述的瞬时变化率。
-
-> **关键理解：$a$ 为什么必须保留？**  
-> 初学者可能会想："既然 $e^u$ 的导数还是 $e^u$，那结果为什么不直接等于 $e^u$ 而是 $a e^u$？"
->
-> 原因在于链式法则的乘法结构：$\displaystyle \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$。即使 $\frac{dy}{du} = e^u$ 很简单，但 $\frac{du}{dx} = a$ 是另一个因子，两者必须**相乘**。这里的 $a$ 是内层函数 $u = ax + b$ 对 $x$ 的**变化率**——它衡量的是当 $x$ 变化 1 个单位时，$u$ 会变化 $a$ 个单位。这个"传输系数"会随着链式法则层层传递到最终结果中，不能被忽略或"吸收"掉。
->
-> 举例来说，$y = e^{2x}$ 的导数是 $2e^{2x}$，而 $y = e^{x}$ 的导数是 $e^x$。两者的差别就是系数 $2$ 造成的——正是因为内层 $2x$ 比 $x$ 变化得更快（快 2 倍），所以导数也要乘以 2。如果去掉 $a$，就无法区分 $e^{2x}$ 和 $e^{x}$ 在变化率上的差异了。
-
-**第 3 步：应用链式法则**
-
-链式法则指出 $\displaystyle \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$。将第 2 步的结果代入：
-
-$$
-\frac{dy}{dx} = e^u \cdot a = a e^u
-$$
-
-**第 4 步：代回原变量**
-
-将 $u = ax + b$ 代回到表达式中，得到最终的导数公式：
-
-$$
-\boxed{\frac{dy}{dx} = a e^{ax+b}}
-$$
-
-这个公式的含义是：指数函数 $e^{ax+b}$ 的导数等于其本身乘以 $a$（即内层函数 $ax+b$ 的导数）。
-
-**📌 例题**：求 $y = e^{-3x+1}$ 的导数。
-
-这里 $a = -3$，$b = 1$，由公式 $\frac{dy}{dx} = a e^{ax+b}$ 可直接写出结果：
-
-$$
-\frac{dy}{dx} = -3 e^{-3x+1}
-$$
-
-注意：$a = -3$ 为负数，因此导数的符号为负，说明函数 $y = e^{-3x+1}$ 在定义域内是单调递减的（因为 $e^{-3x+1} > 0$ 恒成立，乘以 $-3$ 后导数为负，函数递减）。
-
----
-
-#### 模式五：$y = \ln(ax+b)$
-
-**公式**：$\displaystyle \frac{dy}{dx} = \frac{a}{ax+b}$
-
-**逐步推导**：
-
-**第 1 步：设定中间变量**
-
-令 $u = ax + b$，则 $y = \ln u$。
-
-- 外层函数：$y = \ln u$（自然对数函数）
-- 内层函数：$u = ax + b$（线性函数）
-
-**第 2 步：分别求导**
-
-$$
-\frac{dy}{du} = \frac{d}{du}(\ln u) = \frac{1}{u}
-$$
-
-$$
-\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
-$$
-
-**第 3 步：应用链式法则**
-
-$$
-\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = \frac{1}{u} \cdot a = \frac{a}{u}
-$$
-
-**第 4 步：代回原变量**
-
-将 $u = ax + b$ 代回：
-
-$$
-\boxed{\frac{dy}{dx} = \frac{a}{ax+b}}
-$$
-
-**📌 例题**：求 $y = \ln(3x^2 + 1)$ 的导数。
-
-注意这里的内层是 $3x^2 + 1$，不是 $ax+b$ 的简单线性形式。我们需要用一般的链式法则：
-
-令 $u = 3x^2 + 1$，则 $y = \ln u$。
-
-$$
-\frac{dy}{dx} = \frac{1}{u} \cdot \frac{du}{dx} = \frac{1}{3x^2 + 1} \cdot 6x = \frac{6x}{3x^2 + 1}
-$$
-
----
-
-#### 模式六：$y = \tan(ax+b)$
-
-**公式**：$\displaystyle \frac{dy}{dx} = a\sec^2(ax+b)$
-
-**逐步推导**：
-
-**第 1 步：设定中间变量**
-
-令 $u = ax + b$，则 $y = \tan u$。
-
-- 外层函数：$y = \tan u$（正切函数）
-- 内层函数：$u = ax + b$（线性函数）
-
-**第 2 步：分别求导**
-
-正切函数的导数为 $\displaystyle \frac{d}{du}(\tan u) = \sec^2 u$（该公式可通过 $\tan u = \frac{\sin u}{\cos u}$ 及商法则推导得出）。
-
-$$
-\frac{dy}{du} = \frac{d}{du}(\tan u) = \sec^2 u
-$$
-
-$$
-\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
-$$
-
-**第 3 步：应用链式法则**
-
-$$
-\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (\sec^2 u) \cdot a = a \sec^2 u
-$$
-
-**第 4 步：代回原变量**
-
-将 $u = ax + b$ 代回：
-
-$$
-\boxed{\frac{dy}{dx} = a\sec^2(ax+b)}
-$$
-
-$$
-\boxed{\displaystyle \frac{dy}{dx} = \frac{a}{\cos^2(ax+b)}}
-$$
-
-**📌 例题**：求 $y = \tan(5x)$ 的导数。
-
-由公式，$a = 5$，所以：
-
-$$
-\frac{dy}{dx} = 5\sec^2(5x)
-$$
-
-### 5.2.4 多层链式法则
-
-当函数有三层甚至更多层复合时，链式法则可以连续使用多次。例如 $y = f(g(h(x)))$：
-
-$$
-\frac{dy}{dx} = f'(g(h(x))) \cdot g'(h(x)) \cdot h'(x)
-$$
-
-从最外层开始，逐层向内求导，每层相乘。
-
----
-
-### 例题 5.3A（多项式复合函数）
+### 例题 5.2A（积法则基础）
 
 > 求下列函数的导数：
-> (a) $y = (3x - 2)^5$
-> (b) $y = \frac{1}{(2x+1)^3}$
-> (c) $y = \sqrt{4x - 1}$
-> (d) $y = (5 - 2x)^{-4}$
+> (a) $y = (x^2 + 1)(x^3 - 2x)$
+> (b) $y = x\sin x$
+> (c) $y = e^x \cos x$
+> (d) $y = x^2\ln x$
 
 **解**：
 
-(a) 令 $u = 3x - 2$，则 $y = u^5$。
+(a) 设 $u = x^2 + 1$，$v = x^3 - 2x$。
+
+则 $u' = 2x$，$v' = 3x^2 - 2$。
 
 $$
-\frac{dy}{dx} = 5u^4 \cdot 3 = 5(3x-2)^4 \cdot 3 = 15(3x-2)^4
+y' = uv' + vu' = (x^2 + 1)(3x^2 - 2) + (x^3 - 2x)(2x)
 $$
 
-(b) 写成 $y = (2x+1)^{-3}$，令 $u = 2x+1$。
+展开：
 
 $$
-\frac{dy}{dx} = (-3)u^{-4} \cdot 2 = -6(2x+1)^{-4} = -\frac{6}{(2x+1)^4}
+= 3x^4 - 2x^2 + 3x^2 - 2 + 2x^4 - 4x^2 = 5x^4 - 3x^2 - 2
 $$
 
-(c) 写成 $y = (4x-1)^{1/2}$，令 $u = 4x-1$。
+（也可先展开原式再求导来验证）
+
+(b) 设 $u = x$，$v = \sin x$，则 $u' = 1$，$v' = \cos x$。
 
 $$
-\frac{dy}{dx} = \frac{1}{2}u^{-1/2} \cdot 4 = \frac{1}{2}(4x-1)^{-1/2} \cdot 4 = \frac{2}{\sqrt{4x-1}}
+y' = x\cos x + \sin x \cdot 1 = x\cos x + \sin x
 $$
 
-(d) 令 $u = 5 - 2x$，则 $y = u^{-4}$。
+(c) 设 $u = e^x$，$v = \cos x$，则 $u' = e^x$，$v' = -\sin x$。
 
 $$
-\frac{dy}{dx} = (-4)u^{-5} \cdot (-2) = 8(5-2x)^{-5} = \frac{8}{(5-2x)^5}
+y' = e^x \cdot (-\sin x) + \cos x \cdot e^x = e^x(\cos x - \sin x)
+$$
+
+(d) 设 $u = x^2$，$v = \ln x$，则 $u' = 2x$，$v' = \frac{1}{x}$。
+
+$$
+y' = x^2 \cdot \frac{1}{x} + \ln x \cdot 2x = x + 2x\ln x
 $$
 
 ---
 
-### 例题 5.3B（三角与指数复合函数）
+### 例题 5.2B（商法则基础）
 
 > 求下列函数的导数：
-> (a) $y = \sin\left(2x + \frac{\pi}{3}\right)$
-> (b) $y = e^{-3x + 1}$
-> (c) $y = \tan(5x)$
-> (d) $y = \cos\left(\frac{x}{2}\right)$
+> (a) $y = \frac{x}{x+1}$
+> (b) $y = \frac{x^2}{\sin x}$
+> (c) $y = \frac{e^x}{x^2 + 1}$
+> (d) $y = \frac{\ln x}{x}$
 
 **解**：
 
-(a) 令 $u = 2x + \frac{\pi}{3}$，则 $y = \sin u$。
+(a) 设 $u = x$，$v = x+1$，则 $u' = 1$，$v' = 1$。
 
 $$
-\frac{dy}{dx} = \cos u \cdot 2 = 2\cos\left(2x + \frac{\pi}{3}\right)
+y' = \frac{vu' - uv'}{v^2} = \frac{(x+1)(1) - x(1)}{(x+1)^2} = \frac{x+1-x}{(x+1)^2} = \frac{1}{(x+1)^2}
 $$
 
-(b) 令 $u = -3x + 1$，则 $y = e^u$。
+(b) 设 $u = x^2$，$v = \sin x$，则 $u' = 2x$，$v' = \cos x$。
 
 $$
-\frac{dy}{dx} = e^u \cdot (-3) = -3e^{-3x+1}
+y' = \frac{(\sin x)(2x) - (x^2)(\cos x)}{\sin^2 x} = \frac{2x\sin x - x^2\cos x}{\sin^2 x}
 $$
 
-(c) 令 $u = 5x$，则 $y = \tan u$。
+(c) 设 $u = e^x$，$v = x^2 + 1$，则 $u' = e^x$，$v' = 2x$。
 
 $$
-\frac{dy}{dx} = \sec^2 u \cdot 5 = 5\sec^2(5x)
+y' = \frac{(x^2+1)e^x - e^x(2x)}{(x^2+1)^2} = \frac{e^x(x^2 + 1 - 2x)}{(x^2+1)^2} = \frac{e^x(x-1)^2}{(x^2+1)^2}
 $$
 
-(d) 令 $u = \frac{x}{2}$，则 $y = \cos u$。
+(d) 设 $u = \ln x$，$v = x$，则 $u' = \frac{1}{x}$，$v' = 1$。
 
 $$
-\frac{dy}{dx} = -\sin u \cdot \frac{1}{2} = -\frac{1}{2}\sin\left(\frac{x}{2}\right)
+y' = \frac{x \cdot \frac{1}{x} - \ln x \cdot 1}{x^2} = \frac{1 - \ln x}{x^2}
 $$
 
 ---
 
-### 例题 5.3C（对数复合与多层链式）
+### 例题 5.2C（积法则与商法则综合）
 
-> 求下列函数的导数：
-> (a) $y = \ln(3x^2 + 1)$
-> (b) $y = e^{\sin x}$
-> (c) $y = \sin^3 x$（即 $(\sin x)^3$）
-> (d) $y = \sqrt{\cos x}$
-
-**解**：
-
-(a) 令 $u = 3x^2 + 1$，则 $y = \ln u$。
-
-$$
-\frac{dy}{dx} = \frac{1}{u} \cdot 6x = \frac{6x}{3x^2 + 1}
-$$
-
-(b) 令 $u = \sin x$，则 $y = e^u$。
-
-$$
-\frac{dy}{dx} = e^u \cdot \cos x = e^{\sin x} \cdot \cos x
-$$
-
-(c) 这里有两层复合：令 $u = \sin x$，$y = u^3$，则：
-
-$$
-\frac{dy}{dx} = 3u^2 \cdot \cos x = 3\sin^2 x \cdot \cos x
-$$
-
-(d) 写成 $y = (\cos x)^{1/2}$，令 $u = \cos x$，$y = u^{1/2}$。
-
-$$
-\frac{dy}{dx} = \frac{1}{2}u^{-1/2} \cdot (-\sin x) = \frac{1}{2}(\cos x)^{-1/2} \cdot (-\sin x) = -\frac{\sin x}{2\sqrt{\cos x}}
-$$
-
----
-
-### 例题 5.3D（三层链式法则）
-
-> 求 $y = \sin^2(3x)$ 的导数。
+> (a) 已知 $y = (x^2 + 1)\ln x$，求 $\frac{dy}{dx}$。
+> (b) 已知 $y = \frac{\sin x}{e^x}$，求 $\frac{dy}{dx}$。
+> (c) 已知 $y = \tan x$，用 $\tan x = \frac{\sin x}{\cos x}$ 及商法则验证 $\frac{d}{dx}(\tan x) = \sec^2 x$。
+> (d) 求 $y = \frac{2x-1}{x^2+3}$ 的导数。
 
 **解**：
 
-这里有三层复合：$y = (\sin(3x))^2$
-
-令 $v = 3x$，$u = \sin v$，$y = u^2$。
+(a) 积法则。设 $u = x^2 + 1$，$v = \ln x$，则 $u' = 2x$，$v' = \frac{1}{x}$。
 
 $$
-\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dv} \cdot \frac{dv}{dx} = (2u) \cdot (\cos v) \cdot (3)
+\frac{dy}{dx} = (x^2+1)\cdot\frac{1}{x} + \ln x \cdot 2x = \frac{x^2+1}{x} + 2x\ln x = x + \frac{1}{x} + 2x\ln x
 $$
 
+(b) 商法则。设 $u = \sin x$，$v = e^x$，则 $u' = \cos x$，$v' = e^x$。
+
 $$
-= 2\sin(3x) \cdot \cos(3x) \cdot 3 = 6\sin(3x)\cos(3x) = 3\sin(6x)
+\frac{dy}{dx} = \frac{e^x\cos x - \sin x \cdot e^x}{(e^x)^2} = \frac{e^x(\cos x - \sin x)}{e^{2x}} = \frac{\cos x - \sin x}{e^x}
 $$
 
-（最后一步使用了倍角公式 $\sin 2\theta = 2\sin\theta\cos\theta$）
+(c) 设 $u = \sin x$，$v = \cos x$，则 $u' = \cos x$，$v' = -\sin x$。
+
+$$
+\frac{d}{dx}\left(\frac{\sin x}{\cos x}\right) = \frac{\cos x \cdot \cos x - \sin x \cdot (-\sin x)}{\cos^2 x}
+= \frac{\cos^2 x + \sin^2 x}{\cos^2 x}
+$$
+
+由三角恒等式 $\sin^2 x + \cos^2 x = 1$：
+
+$$
+\frac{d}{dx}(\tan x) = \frac{1}{\cos^2 x} = \sec^2 x
+$$
+
+验证完毕。
+
+(d) 设 $u = 2x-1$，$v = x^2+3$，则 $u' = 2$，$v' = 2x$。
+
+$$
+y' = \frac{(x^2+3)(2) - (2x-1)(2x)}{(x^2+3)^2}
+= \frac{2x^2+6 - 4x^2 + 2x}{(x^2+3)^2}
+= \frac{-2x^2 + 2x + 6}{(x^2+3)^2}
+= \frac{-2(x^2 - x - 3)}{(x^2+3)^2}
+$$
 
 ---
 
 ### 练习题 5.2
 
-1. 求 $y = (5x + 2)^4$ 的导数。
+1. 求 $y = x^2 e^x$ 的导数。
 
-2. 求 $y = \frac{1}{\sqrt{3x - 1}}$ 的导数。
+2. 求 $y = \frac{3x}{x-2}$ 的导数。
 
-3. 求 $y = e^{2x-3}$ 的导数。
+3. 求 $y = x\cos x$ 的导数。
 
-4. 求 $y = \ln(x^2 + 4)$ 的导数。
+4. 求 $y = \frac{x+1}{x^2+1}$ 的导数。
 
-5. 求 $y = \cos^3(2x)$ 的导数。
+5. 求 $y = e^x \sin x$ 的导数。
 
 ---
 
@@ -991,7 +693,7 @@ $$
 
 ---
 
-### 例题 5.2A（多项式求导）
+### 例题 5.3A（多项式求导）
 
 > 求下列函数的导数：
 > (a) $f(x) = 2x^5 - 3x^3 + 7x - 10$
@@ -1039,7 +741,7 @@ $$
 
 ---
 
-### 例题 5.2B（三角函数求导）
+### 例题 5.3B（三角函数求导）
 
 > 求下列函数的导数：
 > (a) $f(x) = 3\sin x - 2\cos x$
@@ -1073,7 +775,7 @@ $$
 
 ---
 
-### 例题 5.2C（指数与对数求导）
+### 例题 5.3C（指数与对数求导）
 
 > 求下列函数的导数：
 > (a) $f(x) = 4e^x - \frac{1}{2}\ln x$
@@ -1107,7 +809,7 @@ $$
 
 ---
 
-### 例题 5.2D（综合求导——重新表达后再求导）
+### 例题 5.3D（综合求导——重新表达后再求导）
 
 > 求下列函数的导数：
 > (a) $f(x) = \frac{2}{\sqrt[3]{x}}$
@@ -1138,220 +840,466 @@ $$
 4. 求 $p(x) = 2e^x + 4^x - \frac{1}{3}\ln x$ 的导数。
 
 ---
+## 5.4 链式法则（Chain Rule）
 
-## 5.4 积法则与商法则
+### 5.4.1 链式法则的原理
 
-当两个函数相乘或相除时，它们的导数不能简单地对每个部分分别求导再相乘或相除。这时需要专门的法则。
+当想要求解复合函数的导数时——比如 $y = (2x+1)^3$ 或 $y = \sin(3x)$——就需要用到**链式法则**。
 
-### 5.4.1 积法则（Product Rule）
-
-设 $y = u \cdot v$，其中 $u$ 和 $v$ 都是 $x$ 的函数，则：
-
-$$
-\boxed{\frac{dy}{dx} = u\frac{dv}{dx} + v\frac{du}{dx}}
-$$
-
-或简记为：$(uv)' = uv' + vu'$
-
-记忆口诀："**前导后不导 + 后导前不导**"——第一个函数求导乘以第二个函数不动，加上第二个函数求导乘以第一个函数不动。
-
-**积法则的详细推导**：
-
-从导数的极限定义出发：
+链式法则的核心思想是"层层求导，逐层相乘"。设 $y$ 是 $u$ 的函数，而 $u$ 又是 $x$ 的函数，即 $y = f(u)$ 且 $u = g(x)$，则：
 
 $$
-(uv)' = \lim_{\delta x \to 0} \frac{u(x+\delta x)v(x+\delta x) - u(x)v(x)}{\delta x}
+\boxed{\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}}
 $$
 
-在分子中巧妙地加减 $u(x+\delta x)v(x)$：
+用另一种形式写出：如果 $y = f(g(x))$，那么：
 
 $$
-= \lim_{\delta x \to 0} \frac{u(x+\delta x)v(x+\delta x) - u(x+\delta x)v(x) + u(x+\delta x)v(x) - u(x)v(x)}{\delta x}
+\frac{dy}{dx} = f'(g(x)) \cdot g'(x)
+$$
+
+即：**外层函数对中间变量的导数，乘以中间变量对自变量的导数**。
+
+### 5.4.2 链式法则的直观理解
+
+为什么链式法则成立？考虑微小变化量（仅供理解，不需要记忆该 5.2.2 节，因为太难了。该节告诉你为什么这个东西成立以及大概的原理是什么）：
+
+- 当 $x$ 变化 $\delta x$ 时，$u = g(x)$ 变化 $\delta u \approx g'(x)\delta x$
+- 当 $u$ 变化 $\delta u$ 时，$y = f(u)$ 变化 $\delta y \approx f'(u)\delta u$
+
+因此：
+
+$$
+\frac{\delta y}{\delta x} \approx \frac{f'(u)\delta u}{\delta x} \approx f'(u) \cdot \frac{\delta u}{\delta x} \approx f'(u) \cdot g'(x)
+$$
+
+当 $\delta x \to 0$ 时，近似变成精确等式。
+
+### 5.4.3 链式法则的常见应用模式（核心）
+
+以下六种模式涵盖了 IGCSE 附加数学中链式法则最常见的应用。每个模式都配有完整的逐步推导过程和典型例题。
+
+---
+
+#### 模式一：$y = (ax+b)^n$
+
+**公式**：$\displaystyle \frac{dy}{dx} = a n (ax+b)^{n-1}$
+
+**逐步推导**：
+
+**第 1 步：设定中间变量**
+
+令 $u = ax + b$，则原函数可以写成 $y = u^n$ 的形式。这里 $u$ 是中间变量，它是 $x$ 的一次函数。
+
+- 外层函数：$y = u^n$（幂函数）
+- 内层函数：$u = ax + b$（线性函数）
+
+**第 2 步：分别求导**
+
+分别计算 $y$ 对 $u$ 的导数和 $u$ 对 $x$ 的导数：
+
+$$
+\frac{dy}{du} = \frac{d}{du}(u^n) = n u^{n-1}
 $$
 
 $$
-= \lim_{\delta x \to 0} \left[ u(x+\delta x) \cdot \frac{v(x+\delta x) - v(x)}{\delta x} + v(x) \cdot \frac{u(x+\delta x) - u(x)}{\delta x} \right]
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
 $$
 
-当 $\delta x \to 0$ 时，$u(x+\delta x) \to u(x)$，于是：
+**第 3 步：应用链式法则**
+
+链式法则说 $\displaystyle \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$。将第 2 步的结果代入：
 
 $$
-(uv)' = u(x) \cdot v'(x) + v(x) \cdot u'(x) = uv' + vu'
+\frac{dy}{dx} = (n u^{n-1}) \cdot a = a n u^{n-1}
 $$
 
-### 5.4.2 商法则（Quotient Rule）
+**第 4 步：代回原变量**
 
-设 $y = \frac{u}{v}$，其中 $u$ 和 $v$ 都是 $x$ 的函数，且 $v \neq 0$，则：
-
-$$
-\boxed{\frac{dy}{dx} = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2}}
-$$
-
-或简记为：$\left(\frac{u}{v}\right)' = \frac{vu' - uv'}{v^2}$
-
-记忆口诀："**上导下不导减下导上不导，除以分母的平方**"。
-
-**商法则的推导**（从积法则导出）：
-
-将 $\frac{u}{v}$ 写成 $u \cdot v^{-1}$，然后用积法则和链式法则：
+将 $u = ax + b$ 代回表达式中：
 
 $$
-\frac{d}{dx}\left(\frac{u}{v}\right) = \frac{d}{dx}(u \cdot v^{-1}) = u \cdot \frac{d}{dx}(v^{-1}) + v^{-1} \cdot \frac{du}{dx}
-$$
-
-$$
-= u \cdot (-1)v^{-2} \cdot \frac{dv}{dx} + \frac{1}{v} \cdot \frac{du}{dx}
-= -\frac{u}{v^2}\frac{dv}{dx} + \frac{1}{v}\frac{du}{dx}
-$$
-
-通分：
-
-$$
-= \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2}
+\boxed{\frac{dy}{dx} = a n (ax+b)^{n-1}}
 $$
 
 ---
 
-### 例题 5.4A（积法则基础）
+#### 模式二：$y = \sin(ax+b)$
+
+**公式**：$\displaystyle \frac{dy}{dx} = a\cos(ax+b)$
+
+**逐步推导**：
+
+**第 1 步：设定中间变量**
+
+令 $u = ax + b$，则 $y = \sin u$。
+
+- 外层函数：$y = \sin u$（正弦函数）
+- 内层函数：$u = ax + b$（线性函数）
+
+**第 2 步：分别求导**
+
+$$
+\frac{dy}{du} = \frac{d}{du}(\sin u) = \cos u
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**第 3 步：应用链式法则**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (\cos u) \cdot a = a \cos u
+$$
+
+**第 4 步：代回原变量**
+
+将 $u = ax + b$ 代回：
+
+$$
+\boxed{\frac{dy}{dx} = a\cos(ax+b)}
+$$
+
+---
+
+#### 模式三：$y = \cos(ax+b)$
+
+**公式**：$\displaystyle \frac{dy}{dx} = -a\sin(ax+b)$
+
+**逐步推导**：
+
+**第 1 步：设定中间变量**
+
+令 $u = ax + b$，则 $y = \cos u$。
+
+- 外层函数：$y = \cos u$（余弦函数）
+- 内层函数：$u = ax + b$（线性函数）
+
+**第 2 步：分别求导**
+
+$$
+\frac{dy}{du} = \frac{d}{du}(\cos u) = -\sin u
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**第 3 步：应用链式法则**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (-\sin u) \cdot a = -a \sin u
+$$
+
+**第 4 步：代回原变量**
+
+将 $u = ax + b$ 代回：
+
+$$
+\boxed{\frac{dy}{dx} = -a\sin(ax+b)}
+$$
+
+---
+
+#### 模式四：$y = e^{ax+b}$
+
+**公式**：$\displaystyle \frac{dy}{dx} = a e^{ax+b}$
+
+**逐步推导**：
+
+**第 1 步：设定中间变量**
+
+令 $u = ax + b$，则 $y = e^u$。
+
+- 外层函数：$y = e^u$（指数函数，底数为 $e$）。这里 $u$ 是中间变量，它是 $x$ 的一次函数。
+- 内层函数：$u = ax + b$（线性函数）
+
+**第 2 步：分别求导**
+
+分别计算 $y$ 对 $u$ 的导数和 $u$ 对 $x$ 的导数：
+
+首先，$y$ 对 $u$ 求导：$e^u$ 的导数是它本身，即：
+
+$$
+\frac{dy}{du} = \frac{d}{du}(e^u) = e^u
+$$
+
+其次，$u$ 对 $x$ 求导：$u = ax + b$ 是一个关于 $x$ 的一次函数（线性函数），其图像是一条斜率为 $a$ 的直线。根据幂函数求导公式 $\frac{d}{dx}(x^n) = nx^{n-1}$，我们分别对两项求导：
+
+- $ax$ 项：将 $a$ 视为常数系数，$ax = a \cdot x^1$，导数为 $a \cdot 1 \cdot x^{0} = a$
+- $b$ 项：常数 $b$ 的导数为 $0$
+
+因此，$ax + b$ 的导数就是系数 $a$，即：
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = \frac{d}{dx}(ax) + \frac{d}{dx}(b) = a + 0 = a
+$$
+
+这个结果在几何上非常直观：一次函数 $u = ax + b$ 的斜率恒为 $a$，意味着无论 $x$ 取何值，$u$ 关于 $x$ 的变化率始终等于 $a$——这正是导数所描述的瞬时变化率。
+
+> **关键理解：$a$ 为什么必须保留？**  
+> 初学者可能会想："既然 $e^u$ 的导数还是 $e^u$，那结果为什么不直接等于 $e^u$ 而是 $a e^u$？"
+>
+> 原因在于链式法则的乘法结构：$\displaystyle \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$。即使 $\frac{dy}{du} = e^u$ 很简单，但 $\frac{du}{dx} = a$ 是另一个因子，两者必须**相乘**。这里的 $a$ 是内层函数 $u = ax + b$ 对 $x$ 的**变化率**——它衡量的是当 $x$ 变化 1 个单位时，$u$ 会变化 $a$ 个单位。这个"传输系数"会随着链式法则层层传递到最终结果中，不能被忽略或"吸收"掉。
+>
+> 举例来说，$y = e^{2x}$ 的导数是 $2e^{2x}$，而 $y = e^{x}$ 的导数是 $e^x$。两者的差别就是系数 $2$ 造成的——正是因为内层 $2x$ 比 $x$ 变化得更快（快 2 倍），所以导数也要乘以 2。如果去掉 $a$，就无法区分 $e^{2x}$ 和 $e^{x}$ 在变化率上的差异了。
+
+**第 3 步：应用链式法则**
+
+链式法则指出 $\displaystyle \frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$。将第 2 步的结果代入：
+
+$$
+\frac{dy}{dx} = e^u \cdot a = a e^u
+$$
+
+**第 4 步：代回原变量**
+
+将 $u = ax + b$ 代回到表达式中，得到最终的导数公式：
+
+$$
+\boxed{\frac{dy}{dx} = a e^{ax+b}}
+$$
+
+这个公式的含义是：指数函数 $e^{ax+b}$ 的导数等于其本身乘以 $a$（即内层函数 $ax+b$ 的导数）。
+
+---
+
+#### 模式五：$y = \ln(ax+b)$
+
+**公式**：$\displaystyle \frac{dy}{dx} = \frac{a}{ax+b}$
+
+**逐步推导**：
+
+**第 1 步：设定中间变量**
+
+令 $u = ax + b$，则 $y = \ln u$。
+
+- 外层函数：$y = \ln u$（自然对数函数）
+- 内层函数：$u = ax + b$（线性函数）
+
+**第 2 步：分别求导**
+
+$$
+\frac{dy}{du} = \frac{d}{du}(\ln u) = \frac{1}{u}
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**第 3 步：应用链式法则**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = \frac{1}{u} \cdot a = \frac{a}{u}
+$$
+
+**第 4 步：代回原变量**
+
+将 $u = ax + b$ 代回：
+
+$$
+\boxed{\frac{dy}{dx} = \frac{a}{ax+b}}
+$$
+
+---
+
+#### 模式六：$y = \tan(ax+b)$
+
+**公式**：$\displaystyle \frac{dy}{dx} = a\sec^2(ax+b)$
+
+**逐步推导**：
+
+**第 1 步：设定中间变量**
+
+令 $u = ax + b$，则 $y = \tan u$。
+
+- 外层函数：$y = \tan u$（正切函数）
+- 内层函数：$u = ax + b$（线性函数）
+
+**第 2 步：分别求导**
+
+正切函数的导数为 $\displaystyle \frac{d}{du}(\tan u) = \sec^2 u$（该公式可通过 $\tan u = \frac{\sin u}{\cos u}$ 及商法则推导得出）。
+
+$$
+\frac{dy}{du} = \frac{d}{du}(\tan u) = \sec^2 u
+$$
+
+$$
+\frac{du}{dx} = \frac{d}{dx}(ax + b) = a
+$$
+
+**第 3 步：应用链式法则**
+
+$$
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx} = (\sec^2 u) \cdot a = a \sec^2 u
+$$
+
+**第 4 步：代回原变量**
+
+将 $u = ax + b$ 代回：
+
+$$
+\boxed{\frac{dy}{dx} = a\sec^2(ax+b)}
+$$
+
+$$
+\boxed{\displaystyle \frac{dy}{dx} = \frac{a}{\cos^2(ax+b)}}
+$$
+
+### 5.4.4 多层链式法则
+
+当函数有三层甚至更多层复合时，链式法则可以连续使用多次。例如 $y = f(g(h(x)))$：
+
+$$
+\frac{dy}{dx} = f'(g(h(x))) \cdot g'(h(x)) \cdot h'(x)
+$$
+
+从最外层开始，逐层向内求导，每层相乘。
+
+---
+
+### 例题 5.4A（多项式复合函数）
 
 > 求下列函数的导数：
-> (a) $y = (x^2 + 1)(x^3 - 2x)$
-> (b) $y = x\sin x$
-> (c) $y = e^x \cos x$
-> (d) $y = x^2\ln x$
+> (a) $y = (3x - 2)^5$
+> (b) $y = \frac{1}{(2x+1)^3}$
+> (c) $y = \sqrt{4x - 1}$
+> (d) $y = (5 - 2x)^{-4}$
 
 **解**：
 
-(a) 设 $u = x^2 + 1$，$v = x^3 - 2x$。
-
-则 $u' = 2x$，$v' = 3x^2 - 2$。
+(a) 令 $u = 3x - 2$，则 $y = u^5$。
 
 $$
-y' = uv' + vu' = (x^2 + 1)(3x^2 - 2) + (x^3 - 2x)(2x)
+\frac{dy}{dx} = 5u^4 \cdot 3 = 5(3x-2)^4 \cdot 3 = 15(3x-2)^4
 $$
 
-展开：
+(b) 写成 $y = (2x+1)^{-3}$，令 $u = 2x+1$。
 
 $$
-= 3x^4 - 2x^2 + 3x^2 - 2 + 2x^4 - 4x^2 = 5x^4 - 3x^2 - 2
+\frac{dy}{dx} = (-3)u^{-4} \cdot 2 = -6(2x+1)^{-4} = -\frac{6}{(2x+1)^4}
 $$
 
-（也可先展开原式再求导来验证）
-
-(b) 设 $u = x$，$v = \sin x$，则 $u' = 1$，$v' = \cos x$。
+(c) 写成 $y = (4x-1)^{1/2}$，令 $u = 4x-1$。
 
 $$
-y' = x\cos x + \sin x \cdot 1 = x\cos x + \sin x
+\frac{dy}{dx} = \frac{1}{2}u^{-1/2} \cdot 4 = \frac{1}{2}(4x-1)^{-1/2} \cdot 4 = \frac{2}{\sqrt{4x-1}}
 $$
 
-(c) 设 $u = e^x$，$v = \cos x$，则 $u' = e^x$，$v' = -\sin x$。
+(d) 令 $u = 5 - 2x$，则 $y = u^{-4}$。
 
 $$
-y' = e^x \cdot (-\sin x) + \cos x \cdot e^x = e^x(\cos x - \sin x)
-$$
-
-(d) 设 $u = x^2$，$v = \ln x$，则 $u' = 2x$，$v' = \frac{1}{x}$。
-
-$$
-y' = x^2 \cdot \frac{1}{x} + \ln x \cdot 2x = x + 2x\ln x
+\frac{dy}{dx} = (-4)u^{-5} \cdot (-2) = 8(5-2x)^{-5} = \frac{8}{(5-2x)^5}
 $$
 
 ---
 
-### 例题 5.4B（商法则基础）
+### 例题 5.4B（三角与指数复合函数）
 
 > 求下列函数的导数：
-> (a) $y = \frac{x}{x+1}$
-> (b) $y = \frac{x^2}{\sin x}$
-> (c) $y = \frac{e^x}{x^2 + 1}$
-> (d) $y = \frac{\ln x}{x}$
+> (a) $y = \sin\left(2x + \frac{\pi}{3}\right)$
+> (b) $y = e^{-3x + 1}$
+> (c) $y = \tan(5x)$
+> (d) $y = \cos\left(\frac{x}{2}\right)$
 
 **解**：
 
-(a) 设 $u = x$，$v = x+1$，则 $u' = 1$，$v' = 1$。
+(a) 令 $u = 2x + \frac{\pi}{3}$，则 $y = \sin u$。
 
 $$
-y' = \frac{vu' - uv'}{v^2} = \frac{(x+1)(1) - x(1)}{(x+1)^2} = \frac{x+1-x}{(x+1)^2} = \frac{1}{(x+1)^2}
+\frac{dy}{dx} = \cos u \cdot 2 = 2\cos\left(2x + \frac{\pi}{3}\right)
 $$
 
-(b) 设 $u = x^2$，$v = \sin x$，则 $u' = 2x$，$v' = \cos x$。
+(b) 令 $u = -3x + 1$，则 $y = e^u$。
 
 $$
-y' = \frac{(\sin x)(2x) - (x^2)(\cos x)}{\sin^2 x} = \frac{2x\sin x - x^2\cos x}{\sin^2 x}
+\frac{dy}{dx} = e^u \cdot (-3) = -3e^{-3x+1}
 $$
 
-(c) 设 $u = e^x$，$v = x^2 + 1$，则 $u' = e^x$，$v' = 2x$。
+(c) 令 $u = 5x$，则 $y = \tan u$。
 
 $$
-y' = \frac{(x^2+1)e^x - e^x(2x)}{(x^2+1)^2} = \frac{e^x(x^2 + 1 - 2x)}{(x^2+1)^2} = \frac{e^x(x-1)^2}{(x^2+1)^2}
+\frac{dy}{dx} = \sec^2 u \cdot 5 = 5\sec^2(5x)
 $$
 
-(d) 设 $u = \ln x$，$v = x$，则 $u' = \frac{1}{x}$，$v' = 1$。
+(d) 令 $u = \frac{x}{2}$，则 $y = \cos u$。
 
 $$
-y' = \frac{x \cdot \frac{1}{x} - \ln x \cdot 1}{x^2} = \frac{1 - \ln x}{x^2}
+\frac{dy}{dx} = -\sin u \cdot \frac{1}{2} = -\frac{1}{2}\sin\left(\frac{x}{2}\right)
 $$
 
 ---
 
-### 例题 5.4C（积法则与商法则综合）
+### 例题 5.4C（对数复合与多层链式）
 
-> (a) 已知 $y = (x^2 + 1)\ln x$，求 $\frac{dy}{dx}$。
-> (b) 已知 $y = \frac{\sin x}{e^x}$，求 $\frac{dy}{dx}$。
-> (c) 已知 $y = \tan x$，用 $\tan x = \frac{\sin x}{\cos x}$ 及商法则验证 $\frac{d}{dx}(\tan x) = \sec^2 x$。
-> (d) 求 $y = \frac{2x-1}{x^2+3}$ 的导数。
+> 求下列函数的导数：
+> (a) $y = \ln(3x^2 + 1)$
+> (b) $y = e^{\sin x}$
+> (c) $y = \sin^3 x$（即 $(\sin x)^3$）
+> (d) $y = \sqrt{\cos x}$
 
 **解**：
 
-(a) 积法则。设 $u = x^2 + 1$，$v = \ln x$，则 $u' = 2x$，$v' = \frac{1}{x}$。
+(a) 令 $u = 3x^2 + 1$，则 $y = \ln u$。
 
 $$
-\frac{dy}{dx} = (x^2+1)\cdot\frac{1}{x} + \ln x \cdot 2x = \frac{x^2+1}{x} + 2x\ln x = x + \frac{1}{x} + 2x\ln x
+\frac{dy}{dx} = \frac{1}{u} \cdot 6x = \frac{6x}{3x^2 + 1}
 $$
 
-(b) 商法则。设 $u = \sin x$，$v = e^x$，则 $u' = \cos x$，$v' = e^x$。
+(b) 令 $u = \sin x$，则 $y = e^u$。
 
 $$
-\frac{dy}{dx} = \frac{e^x\cos x - \sin x \cdot e^x}{(e^x)^2} = \frac{e^x(\cos x - \sin x)}{e^{2x}} = \frac{\cos x - \sin x}{e^x}
+\frac{dy}{dx} = e^u \cdot \cos x = e^{\sin x} \cdot \cos x
 $$
 
-(c) 设 $u = \sin x$，$v = \cos x$，则 $u' = \cos x$，$v' = -\sin x$。
+(c) 这里有两层复合：令 $u = \sin x$，$y = u^3$，则：
 
 $$
-\frac{d}{dx}\left(\frac{\sin x}{\cos x}\right) = \frac{\cos x \cdot \cos x - \sin x \cdot (-\sin x)}{\cos^2 x}
-= \frac{\cos^2 x + \sin^2 x}{\cos^2 x}
+\frac{dy}{dx} = 3u^2 \cdot \cos x = 3\sin^2 x \cdot \cos x
 $$
 
-由三角恒等式 $\sin^2 x + \cos^2 x = 1$：
+(d) 写成 $y = (\cos x)^{1/2}$，令 $u = \cos x$，$y = u^{1/2}$。
 
 $$
-\frac{d}{dx}(\tan x) = \frac{1}{\cos^2 x} = \sec^2 x
+\frac{dy}{dx} = \frac{1}{2}u^{-1/2} \cdot (-\sin x) = \frac{1}{2}(\cos x)^{-1/2} \cdot (-\sin x) = -\frac{\sin x}{2\sqrt{\cos x}}
 $$
 
-验证完毕。
+---
 
-(d) 设 $u = 2x-1$，$v = x^2+3$，则 $u' = 2$，$v' = 2x$。
+### 例题 5.4D（三层链式法则）
+
+> 求 $y = \sin^2(3x)$ 的导数。
+
+**解**：
+
+这里有三层复合：$y = (\sin(3x))^2$
+
+令 $v = 3x$，$u = \sin v$，$y = u^2$。
 
 $$
-y' = \frac{(x^2+3)(2) - (2x-1)(2x)}{(x^2+3)^2}
-= \frac{2x^2+6 - 4x^2 + 2x}{(x^2+3)^2}
-= \frac{-2x^2 + 2x + 6}{(x^2+3)^2}
-= \frac{-2(x^2 - x - 3)}{(x^2+3)^2}
+\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dv} \cdot \frac{dv}{dx} = (2u) \cdot (\cos v) \cdot (3)
 $$
+
+$$
+= 2\sin(3x) \cdot \cos(3x) \cdot 3 = 6\sin(3x)\cos(3x) = 3\sin(6x)
+$$
+
+（最后一步使用了倍角公式 $\sin 2\theta = 2\sin\theta\cos\theta$）
 
 ---
 
 ### 练习题 5.4
 
-1. 求 $y = x^2 e^x$ 的导数。
+1. 求 $y = (5x + 2)^4$ 的导数。
 
-2. 求 $y = \frac{3x}{x-2}$ 的导数。
+2. 求 $y = \frac{1}{\sqrt{3x - 1}}$ 的导数。
 
-3. 求 $y = x\cos x$ 的导数。
+3. 求 $y = e^{2x-3}$ 的导数。
 
-4. 求 $y = \frac{x+1}{x^2+1}$ 的导数。
+4. 求 $y = \ln(x^2 + 4)$ 的导数。
 
-5. 求 $y = e^x \sin x$ 的导数。
+5. 求 $y = \cos^3(2x)$ 的导数。
 
 ---
 
