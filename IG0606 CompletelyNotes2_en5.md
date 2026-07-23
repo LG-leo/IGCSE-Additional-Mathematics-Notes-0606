@@ -40,8 +40,8 @@ This chapter covers the following entries from **Unit 14: Calculus** of the **Ca
 |---------|------|---------|
 | 14.1 | Understand the concept of a derivative (informal understanding of limits; differentiation from first principles is not required) | 5.1 |
 | 14.2 | Use notation $f'(x), f''(x), \frac{dy}{dx}, \frac{d^2y}{dx^2}, \delta x, \delta x \to 0$ | 5.1 |
-| 14.3 | Know and use derivatives of standard functions: $x^n$ (any rational $n$), $\sin x$, $\cos x$, $\tan x$, $e^x$, $\ln x$ (including constant multiples, sums/differences, composite functions) | 5.2, 5.3 |
-| 14.4 | Product rule and quotient rule | 5.4 |
+| 14.3 | Know and use derivatives of standard functions: $x^n$ (any rational $n$), $\sin x$, $\cos x$, $\tan x$, $e^x$, $\ln x$ (including constant multiples, sums/differences, composite functions) | 5.3, 5.4 |
+| 14.4 | Product rule and quotient rule | 5.2 |
 | 14.5 | Find tangents and normals | 5.5 |
 | 14.6 | Find stationary points (points of inflexion not required) | 5.6 |
 | 14.7 | Connected rates of change, small increments and approximations | 5.7 |
@@ -64,7 +64,7 @@ Imagine you are driving along a winding road. The reading on your speedometer is
 
 Why study differentiation? Because almost everything in nature is changing: the motion of objects, the growth of populations, the rise and fall of temperatures, the fluctuations of profit. Differentiation gives us a precise mathematical tool to describe these changes. Once you master differentiation, subsequent topics like integration (finding accumulated quantities), optimisation (finding the best solution), and kinematics analysis will all fall into place.
 
-This chapter starts from the basic concept of the derivative, then covers basic differentiation formulas, the chain rule, the product rule and the quotient rule, and then applies these tools to tangents and normals, determining extreme values, connected rates of change, and practical maxima and minima problems. Each topic is accompanied by numerous worked examples and practice problems to ensure thorough understanding.
+This chapter starts from the basic concept of the derivative, then covers the product rule and the quotient rule, basic differentiation formulas, the chain rule, and then applies these tools to tangents and normals, determining extreme values, connected rates of change, and practical maxima and minima problems. Each topic is accompanied by numerous worked examples and practice problems to ensure thorough understanding.
 
 ---
 
@@ -239,11 +239,222 @@ $$
 
 ---
 
-## 5.2 Basic Differentiation Formulas
+## 5.2 Product Rule and Quotient Rule
+
+When two functions are multiplied or divided, their derivatives cannot be found by simply differentiating each part separately and then multiplying or dividing. Special rules are needed.
+
+### 5.2.1 Product Rule
+
+Let $y = u \cdot v$, where $u$ and $v$ are both functions of $x$. Then:
+
+$$
+\boxed{\frac{dy}{dx} = u\frac{dv}{dx} + v\frac{du}{dx}}
+$$
+
+Or briefly: $(uv)' = uv' + vu'$
+
+Memory aid: "**first times derivative of second plus second times derivative of first**" — or, more mnemonically: "differentiate the first, leave the second, plus differentiate the second, leave the first."
+
+**Detailed derivation of the Product Rule**:
+
+Starting from the limit definition of the derivative:
+
+$$
+(uv)' = \lim_{\delta x \to 0} \frac{u(x+\delta x)v(x+\delta x) - u(x)v(x)}{\delta x}
+$$
+
+Cleverly add and subtract $u(x+\delta x)v(x)$ in the numerator:
+
+$$
+= \lim_{\delta x \to 0} \frac{u(x+\delta x)v(x+\delta x) - u(x+\delta x)v(x) + u(x+\delta x)v(x) - u(x)v(x)}{\delta x}
+$$
+
+$$
+= \lim_{\delta x \to 0} \left[ u(x+\delta x) \cdot \frac{v(x+\delta x) - v(x)}{\delta x} + v(x) \cdot \frac{u(x+\delta x) - u(x)}{\delta x} \right]
+$$
+
+As $\delta x \to 0$, $u(x+\delta x) \to u(x)$, so:
+
+$$
+(uv)' = u(x) \cdot v'(x) + v(x) \cdot u'(x) = uv' + vu'
+$$
+
+### 5.2.2 Quotient Rule
+
+Let $y = \frac{u}{v}$, where $u$ and $v$ are both functions of $x$, and $v \neq 0$. Then:
+
+$$
+\boxed{\frac{dy}{dx} = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2}}
+$$
+
+Or briefly: $\left(\frac{u}{v}\right)' = \frac{vu' - uv'}{v^2}$
+
+Memory aid: "**bottom times derivative of top minus top times derivative of bottom, all over bottom squared**" — remember that the derivative of the top comes first, and subtract.
+
+**Derivation of the Quotient Rule** (derived from the Product Rule):
+
+Write $\frac{u}{v}$ as $u \cdot v^{-1}$, then use the Product Rule and Chain Rule:
+
+$$
+\frac{d}{dx}\left(\frac{u}{v}\right) = \frac{d}{dx}(u \cdot v^{-1}) = u \cdot \frac{d}{dx}(v^{-1}) + v^{-1} \cdot \frac{du}{dx}
+$$
+
+$$
+= u \cdot (-1)v^{-2} \cdot \frac{dv}{dx} + \frac{1}{v} \cdot \frac{du}{dx}
+= -\frac{u}{v^2}\frac{dv}{dx} + \frac{1}{v}\frac{du}{dx}
+$$
+
+Putting over a common denominator:
+
+$$
+= \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2}
+$$
+
+---
+
+### Worked Example 5.2A (Product Rule Basics)
+
+> Find the derivatives of the following functions:
+> (a) $y = (x^2 + 1)(x^3 - 2x)$
+> (b) $y = x\sin x$
+> (c) $y = e^x \cos x$
+> (d) $y = x^2\ln x$
+
+**Solution**:
+
+(a) Let $u = x^2 + 1$, $v = x^3 - 2x$.
+Then $u' = 2x$, $v' = 3x^2 - 2$.
+
+$$
+y' = uv' + vu' = (x^2 + 1)(3x^2 - 2) + (x^3 - 2x)(2x)
+$$
+
+Expanding:
+
+$$
+= 3x^4 - 2x^2 + 3x^2 - 2 + 2x^4 - 4x^2 = 5x^4 - 3x^2 - 2
+$$
+
+(Can also verify by expanding the original expression first and then differentiating.)
+
+(b) Let $u = x$, $v = \sin x$, then $u' = 1$, $v' = \cos x$.
+
+$$
+y' = x\cos x + \sin x \cdot 1 = x\cos x + \sin x
+$$
+
+(c) Let $u = e^x$, $v = \cos x$, then $u' = e^x$, $v' = -\sin x$.
+
+$$
+y' = e^x \cdot (-\sin x) + \cos x \cdot e^x = e^x(\cos x - \sin x)
+$$
+
+(d) Let $u = x^2$, $v = \ln x$, then $u' = 2x$, $v' = \frac{1}{x}$.
+
+$$
+y' = x^2 \cdot \frac{1}{x} + \ln x \cdot 2x = x + 2x\ln x
+$$
+
+---
+
+### Worked Example 5.2B (Quotient Rule Basics)
+
+> Find the derivatives of the following functions:
+> (a) $y = \frac{x}{x+1}$
+> (b) $y = \frac{x^2}{\sin x}$
+> (c) $y = \frac{e^x}{x^2 + 1}$
+> (d) $y = \frac{\ln x}{x}$
+
+**Solution**:
+
+(a) Let $u = x$, $v = x+1$, then $u' = 1$, $v' = 1$.
+
+$$
+y' = \frac{vu' - uv'}{v^2} = \frac{(x+1)(1) - x(1)}{(x+1)^2} = \frac{x+1-x}{(x+1)^2} = \frac{1}{(x+1)^2}
+$$
+
+(b) Let $u = x^2$, $v = \sin x$, then $u' = 2x$, $v' = \cos x$.
+
+$$
+y' = \frac{(\sin x)(2x) - (x^2)(\cos x)}{\sin^2 x} = \frac{2x\sin x - x^2\cos x}{\sin^2 x}
+$$
+
+(c) Let $u = e^x$, $v = x^2 + 1$, then $u' = e^x$, $v' = 2x$.
+
+$$
+y' = \frac{(x^2+1)e^x - e^x(2x)}{(x^2+1)^2} = \frac{e^x(x^2 + 1 - 2x)}{(x^2+1)^2} = \frac{e^x(x-1)^2}{(x^2+1)^2}
+$$
+
+(d) Let $u = \ln x$, $v = x$, then $u' = \frac{1}{x}$, $v' = 1$.
+
+$$
+y' = \frac{x \cdot \frac{1}{x} - \ln x \cdot 1}{x^2} = \frac{1 - \ln x}{x^2}
+$$
+
+---
+
+### Worked Example 5.2C (Integrated Product and Quotient Rule)
+
+> (a) Given $y = (x^2 + 1)\ln x$, find $\frac{dy}{dx}$.
+> (b) Given $y = \frac{\sin x}{e^x}$, find $\frac{dy}{dx}$.
+> (c) Given $y = \tan x$, use $\tan x = \frac{\sin x}{\cos x}$ and the quotient rule to verify $\frac{d}{dx}(\tan x) = \sec^2 x$.
+> (d) Find the derivative of $y = \frac{2x-1}{x^2+3}$.
+
+**Solution**:
+
+(a) Product Rule. Let $u = x^2 + 1$, $v = \ln x$, then $u' = 2x$, $v' = \frac{1}{x}$.
+
+$$
+\frac{dy}{dx} = (x^2+1)\cdot\frac{1}{x} + \ln x \cdot 2x = \frac{x^2+1}{x} + 2x\ln x = x + \frac{1}{x} + 2x\ln x
+$$
+
+(b) Quotient Rule. Let $u = \sin x$, $v = e^x$, then $u' = \cos x$, $v' = e^x$.
+
+$$
+\frac{dy}{dx} = \frac{e^x\cos x - \sin x \cdot e^x}{(e^x)^2} = \frac{e^x(\cos x - \sin x)}{e^{2x}} = \frac{\cos x - \sin x}{e^x}
+$$
+
+(c) Let $u = \sin x$, $v = \cos x$, then $u' = \cos x$, $v' = -\sin x$.
+
+$$
+\frac{d}{dx}\left(\frac{\sin x}{\cos x}\right) = \frac{\cos x \cdot \cos x - \sin x \cdot (-\sin x)}{\cos^2 x}
+= \frac{\cos^2 x + \sin^2 x}{\cos^2 x}
+$$
+
+By the trigonometric identity $\sin^2 x + \cos^2 x = 1$:
+
+$$
+\frac{d}{dx}(\tan x) = \frac{1}{\cos^2 x} = \sec^2 x
+$$
+
+Verification complete.
+
+(d) Let $u = 2x-1$, $v = x^2+3$, then $u' = 2$, $v' = 2x$.
+
+$$
+y' = \frac{(x^2+3)(2) - (2x-1)(2x)}{(x^2+3)^2}
+= \frac{2x^2+6 - 4x^2 + 2x}{(x^2+3)^2}
+= \frac{-2x^2 + 2x + 6}{(x^2+3)^2}
+= \frac{-2(x^2 - x - 3)}{(x^2+3)^2}
+$$
+
+---
+
+### Practice Problems 5.2
+
+1. Find the derivative of $y = x^2 e^x$.
+2. Find the derivative of $y = \frac{3x}{x-2}$.
+3. Find the derivative of $y = x\cos x$.
+4. Find the derivative of $y = \frac{x+1}{x^2+1}$.
+5. Find the derivative of $y = e^x \sin x$.
+
+---
+
+## 5.3 Basic Differentiation Formulas
 
 Now that we have the concept of the derivative, we need an efficient set of tools for differentiation, rather than using the limit definition every time. Below are the most basic differentiation formulas, which must be mastered thoroughly.
 
-### 5.2.1 Derivation of the Power Rule
+### 5.3.1 Derivation of the Power Rule
 
 For $f(x) = x^n$, where $n$ is a positive integer, we first derive using the Binomial Theorem.
 
@@ -290,7 +501,7 @@ The following table shows common cases:
 | $\frac{1}{x^2}$ | $x^{-2}$ | $-2x^{-3} = -\frac{2}{x^3}$ | $n = -2$ |
 | $\sqrt[3]{x}$ | $x^{1/3}$ | $\frac{1}{3}x^{-2/3} = \frac{1}{3\sqrt[3]{x^2}}$ | $n = \frac{1}{3}$ |
 
-### 5.2.2 Constant Multiple and Sum/Difference Rules
+### 5.3.2 Constant Multiple and Sum/Difference Rules
 
 Differentiating linear combinations of functions is very straightforward:
 
@@ -308,7 +519,7 @@ $$
 f'(x) = 3 \cdot (2x) - 4 \cdot (1) + 0 = 6x - 4
 $$
 
-### 5.2.3 Derivatives of Trigonometric Functions
+### 5.3.3 Derivatives of Trigonometric Functions
 
 **Core condition**: All angles in trigonometric functions **must be in radians**.
 
@@ -338,7 +549,7 @@ $$
 
 Similarly, $\frac{d}{dx}(\cos x) = -\sin x$ can be derived.
 
-For $\tan x$, we use $\tan x = \frac{\sin x}{\cos x}$ and the quotient rule (see Section 5.4).
+For $\tan x$, we use $\tan x = \frac{\sin x}{\cos x}$ and the quotient rule (see Section 5.2).
 
 Summary of standard formulas:
 
@@ -354,7 +565,7 @@ $$
 \boxed{\frac{d}{dx}(\tan x) = \sec^2 x}
 $$
 
-### 5.2.4 Derivatives of Exponential and Logarithmic Functions
+### 5.3.4 Derivatives of Exponential and Logarithmic Functions
 
 $$
 \boxed{\frac{d}{dx}(e^x) = e^x}
@@ -466,7 +677,7 @@ $$
 
 ---
 
-### Worked Example 5.2A (Differentiating Polynomials)
+### Worked Example 5.3A (Differentiating Polynomials)
 
 > Find the derivatives of the following functions:
 > (a) $f(x) = 2x^5 - 3x^3 + 7x - 10$
@@ -514,7 +725,7 @@ $$
 
 ---
 
-### Worked Example 5.2B (Differentiating Trigonometric Functions)
+### Worked Example 5.3B (Differentiating Trigonometric Functions)
 
 > Find the derivatives of the following functions:
 > (a) $f(x) = 3\sin x - 2\cos x$
@@ -548,7 +759,7 @@ $$
 
 ---
 
-### Worked Example 5.2C (Differentiating Exponential and Logarithmic Functions)
+### Worked Example 5.3C (Differentiating Exponential and Logarithmic Functions)
 
 > Find the derivatives of the following functions:
 > (a) $f(x) = 4e^x - \frac{1}{2}\ln x$
@@ -582,7 +793,7 @@ $$
 
 ---
 
-### Worked Example 5.2D (Comprehensive Differentiation — Rewriting First)
+### Worked Example 5.3D (Comprehensive Differentiation — Rewriting First)
 
 > Find the derivatives of the following functions:
 > (a) $f(x) = \frac{2}{\sqrt[3]{x}}$
@@ -602,7 +813,7 @@ Note: If it were $2x^3$, the derivative would be $6x^2$ — they are different.
 
 ---
 
-### Practice Problems 5.2
+### Practice Problems 5.3
 
 1. Find the derivative of $f(x) = 4x^3 - 2x^2 + 5x - 7$.
 2. Find the derivative of $g(x) = \frac{3}{x^2} - \frac{1}{2\sqrt{x}} + 6x^{1/3}$.
@@ -611,9 +822,9 @@ Note: If it were $2x^3$, the derivative would be $6x^2$ — they are different.
 
 ---
 
-## 5.3 Chain Rule
+## 5.4 Chain Rule
 
-### 5.3.1 Principle of the Chain Rule
+### 5.4.1 Principle of the Chain Rule
 
 When we want to differentiate a composite function — for example, $y = (2x+1)^3$ or $y = \sin(3x)$ — we need the **chain rule**.
 
@@ -631,7 +842,7 @@ $$
 
 That is: **the derivative of the outer function with respect to the intermediate variable, multiplied by the derivative of the intermediate variable with respect to the independent variable**.
 
-### 5.3.2 Intuitive Understanding of the Chain Rule
+### 5.4.2 Intuitive Understanding of the Chain Rule
 
 Why does the chain rule work? Consider small changes:
 
@@ -646,7 +857,7 @@ $$
 
 As $\delta x \to 0$, the approximation becomes an exact equality.
 
-### 5.3.3 Common Application Patterns of the Chain Rule
+### 5.4.3 Common Application Patterns of the Chain Rule
 
 The following six patterns cover the most common applications of the chain rule in IGCSE Additional Mathematics. Each pattern is accompanied by a complete step-by-step derivation and a typical example.
 
@@ -940,7 +1151,7 @@ $$
 \frac{dy}{dx} = 5\sec^2(5x)
 $$
 
-### 5.3.4 Multi-layer Chain Rule
+### 5.4.4 Multi-layer Chain Rule
 
 When a function has three or more layers of composition, the chain rule can be applied multiple times in succession. For example, $y = f(g(h(x)))$:
 
@@ -952,7 +1163,7 @@ Start from the outermost layer and work inward, multiplying at each step.
 
 ---
 
-### Worked Example 5.3A (Polynomial Composite Functions)
+### Worked Example 5.4A (Polynomial Composite Functions)
 
 > Find the derivatives of the following functions:
 > (a) $y = (3x - 2)^5$
@@ -988,7 +1199,7 @@ $$
 
 ---
 
-### Worked Example 5.3B (Trigonometric and Exponential Composite Functions)
+### Worked Example 5.4B (Trigonometric and Exponential Composite Functions)
 
 > Find the derivatives of the following functions:
 > (a) $y = \sin\left(2x + \frac{\pi}{3}\right)$
@@ -1024,7 +1235,7 @@ $$
 
 ---
 
-### Worked Example 5.3C (Logarithmic Composite and Multi-layer Chain Rule)
+### Worked Example 5.4C (Logarithmic Composite and Multi-layer Chain Rule)
 
 > Find the derivatives of the following functions:
 > (a) $y = \ln(3x^2 + 1)$
@@ -1060,7 +1271,7 @@ $$
 
 ---
 
-### Worked Example 5.3D (Three-layer Chain Rule)
+### Worked Example 5.4D (Three-layer Chain Rule)
 
 > Find the derivative of $y = \sin^2(3x)$.
 
@@ -1082,224 +1293,13 @@ $$
 
 ---
 
-### Practice Problems 5.3
+### Practice Problems 5.4
 
 1. Find the derivative of $y = (5x + 2)^4$.
 2. Find the derivative of $y = \frac{1}{\sqrt{3x - 1}}$.
 3. Find the derivative of $y = e^{2x-3}$.
 4. Find the derivative of $y = \ln(x^2 + 4)$.
 5. Find the derivative of $y = \cos^3(2x)$.
-
----
-
-## 5.4 Product Rule and Quotient Rule
-
-When two functions are multiplied or divided, their derivatives cannot be found by simply differentiating each part separately and then multiplying or dividing. Special rules are needed.
-
-### 5.4.1 Product Rule
-
-Let $y = u \cdot v$, where $u$ and $v$ are both functions of $x$. Then:
-
-$$
-\boxed{\frac{dy}{dx} = u\frac{dv}{dx} + v\frac{du}{dx}}
-$$
-
-Or briefly: $(uv)' = uv' + vu'$
-
-Memory aid: "**first times derivative of second plus second times derivative of first**" — or, more mnemonically: "differentiate the first, leave the second, plus differentiate the second, leave the first."
-
-**Detailed derivation of the Product Rule**:
-
-Starting from the limit definition of the derivative:
-
-$$
-(uv)' = \lim_{\delta x \to 0} \frac{u(x+\delta x)v(x+\delta x) - u(x)v(x)}{\delta x}
-$$
-
-Cleverly add and subtract $u(x+\delta x)v(x)$ in the numerator:
-
-$$
-= \lim_{\delta x \to 0} \frac{u(x+\delta x)v(x+\delta x) - u(x+\delta x)v(x) + u(x+\delta x)v(x) - u(x)v(x)}{\delta x}
-$$
-
-$$
-= \lim_{\delta x \to 0} \left[ u(x+\delta x) \cdot \frac{v(x+\delta x) - v(x)}{\delta x} + v(x) \cdot \frac{u(x+\delta x) - u(x)}{\delta x} \right]
-$$
-
-As $\delta x \to 0$, $u(x+\delta x) \to u(x)$, so:
-
-$$
-(uv)' = u(x) \cdot v'(x) + v(x) \cdot u'(x) = uv' + vu'
-$$
-
-### 5.4.2 Quotient Rule
-
-Let $y = \frac{u}{v}$, where $u$ and $v$ are both functions of $x$, and $v \neq 0$. Then:
-
-$$
-\boxed{\frac{dy}{dx} = \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2}}
-$$
-
-Or briefly: $\left(\frac{u}{v}\right)' = \frac{vu' - uv'}{v^2}$
-
-Memory aid: "**bottom times derivative of top minus top times derivative of bottom, all over bottom squared**" — remember that the derivative of the top comes first, and subtract.
-
-**Derivation of the Quotient Rule** (derived from the Product Rule):
-
-Write $\frac{u}{v}$ as $u \cdot v^{-1}$, then use the Product Rule and Chain Rule:
-
-$$
-\frac{d}{dx}\left(\frac{u}{v}\right) = \frac{d}{dx}(u \cdot v^{-1}) = u \cdot \frac{d}{dx}(v^{-1}) + v^{-1} \cdot \frac{du}{dx}
-$$
-
-$$
-= u \cdot (-1)v^{-2} \cdot \frac{dv}{dx} + \frac{1}{v} \cdot \frac{du}{dx}
-= -\frac{u}{v^2}\frac{dv}{dx} + \frac{1}{v}\frac{du}{dx}
-$$
-
-Putting over a common denominator:
-
-$$
-= \frac{v\frac{du}{dx} - u\frac{dv}{dx}}{v^2}
-$$
-
----
-
-### Worked Example 5.4A (Product Rule Basics)
-
-> Find the derivatives of the following functions:
-> (a) $y = (x^2 + 1)(x^3 - 2x)$
-> (b) $y = x\sin x$
-> (c) $y = e^x \cos x$
-> (d) $y = x^2\ln x$
-
-**Solution**:
-
-(a) Let $u = x^2 + 1$, $v = x^3 - 2x$.
-Then $u' = 2x$, $v' = 3x^2 - 2$.
-
-$$
-y' = uv' + vu' = (x^2 + 1)(3x^2 - 2) + (x^3 - 2x)(2x)
-$$
-
-Expanding:
-
-$$
-= 3x^4 - 2x^2 + 3x^2 - 2 + 2x^4 - 4x^2 = 5x^4 - 3x^2 - 2
-$$
-
-(Can also verify by expanding the original expression first and then differentiating.)
-
-(b) Let $u = x$, $v = \sin x$, then $u' = 1$, $v' = \cos x$.
-
-$$
-y' = x\cos x + \sin x \cdot 1 = x\cos x + \sin x
-$$
-
-(c) Let $u = e^x$, $v = \cos x$, then $u' = e^x$, $v' = -\sin x$.
-
-$$
-y' = e^x \cdot (-\sin x) + \cos x \cdot e^x = e^x(\cos x - \sin x)
-$$
-
-(d) Let $u = x^2$, $v = \ln x$, then $u' = 2x$, $v' = \frac{1}{x}$.
-
-$$
-y' = x^2 \cdot \frac{1}{x} + \ln x \cdot 2x = x + 2x\ln x
-$$
-
----
-
-### Worked Example 5.4B (Quotient Rule Basics)
-
-> Find the derivatives of the following functions:
-> (a) $y = \frac{x}{x+1}$
-> (b) $y = \frac{x^2}{\sin x}$
-> (c) $y = \frac{e^x}{x^2 + 1}$
-> (d) $y = \frac{\ln x}{x}$
-
-**Solution**:
-
-(a) Let $u = x$, $v = x+1$, then $u' = 1$, $v' = 1$.
-
-$$
-y' = \frac{vu' - uv'}{v^2} = \frac{(x+1)(1) - x(1)}{(x+1)^2} = \frac{x+1-x}{(x+1)^2} = \frac{1}{(x+1)^2}
-$$
-
-(b) Let $u = x^2$, $v = \sin x$, then $u' = 2x$, $v' = \cos x$.
-
-$$
-y' = \frac{(\sin x)(2x) - (x^2)(\cos x)}{\sin^2 x} = \frac{2x\sin x - x^2\cos x}{\sin^2 x}
-$$
-
-(c) Let $u = e^x$, $v = x^2 + 1$, then $u' = e^x$, $v' = 2x$.
-
-$$
-y' = \frac{(x^2+1)e^x - e^x(2x)}{(x^2+1)^2} = \frac{e^x(x^2 + 1 - 2x)}{(x^2+1)^2} = \frac{e^x(x-1)^2}{(x^2+1)^2}
-$$
-
-(d) Let $u = \ln x$, $v = x$, then $u' = \frac{1}{x}$, $v' = 1$.
-
-$$
-y' = \frac{x \cdot \frac{1}{x} - \ln x \cdot 1}{x^2} = \frac{1 - \ln x}{x^2}
-$$
-
----
-
-### Worked Example 5.4C (Integrated Product and Quotient Rule)
-
-> (a) Given $y = (x^2 + 1)\ln x$, find $\frac{dy}{dx}$.
-> (b) Given $y = \frac{\sin x}{e^x}$, find $\frac{dy}{dx}$.
-> (c) Given $y = \tan x$, use $\tan x = \frac{\sin x}{\cos x}$ and the quotient rule to verify $\frac{d}{dx}(\tan x) = \sec^2 x$.
-> (d) Find the derivative of $y = \frac{2x-1}{x^2+3}$.
-
-**Solution**:
-
-(a) Product Rule. Let $u = x^2 + 1$, $v = \ln x$, then $u' = 2x$, $v' = \frac{1}{x}$.
-
-$$
-\frac{dy}{dx} = (x^2+1)\cdot\frac{1}{x} + \ln x \cdot 2x = \frac{x^2+1}{x} + 2x\ln x = x + \frac{1}{x} + 2x\ln x
-$$
-
-(b) Quotient Rule. Let $u = \sin x$, $v = e^x$, then $u' = \cos x$, $v' = e^x$.
-
-$$
-\frac{dy}{dx} = \frac{e^x\cos x - \sin x \cdot e^x}{(e^x)^2} = \frac{e^x(\cos x - \sin x)}{e^{2x}} = \frac{\cos x - \sin x}{e^x}
-$$
-
-(c) Let $u = \sin x$, $v = \cos x$, then $u' = \cos x$, $v' = -\sin x$.
-
-$$
-\frac{d}{dx}\left(\frac{\sin x}{\cos x}\right) = \frac{\cos x \cdot \cos x - \sin x \cdot (-\sin x)}{\cos^2 x}
-= \frac{\cos^2 x + \sin^2 x}{\cos^2 x}
-$$
-
-By the trigonometric identity $\sin^2 x + \cos^2 x = 1$:
-
-$$
-\frac{d}{dx}(\tan x) = \frac{1}{\cos^2 x} = \sec^2 x
-$$
-
-Verification complete.
-
-(d) Let $u = 2x-1$, $v = x^2+3$, then $u' = 2$, $v' = 2x$.
-
-$$
-y' = \frac{(x^2+3)(2) - (2x-1)(2x)}{(x^2+3)^2}
-= \frac{2x^2+6 - 4x^2 + 2x}{(x^2+3)^2}
-= \frac{-2x^2 + 2x + 6}{(x^2+3)^2}
-= \frac{-2(x^2 - x - 3)}{(x^2+3)^2}
-$$
-
----
-
-### Practice Problems 5.4
-
-1. Find the derivative of $y = x^2 e^x$.
-2. Find the derivative of $y = \frac{3x}{x-2}$.
-3. Find the derivative of $y = x\cos x$.
-4. Find the derivative of $y = \frac{x+1}{x^2+1}$.
-5. Find the derivative of $y = e^x \sin x$.
 
 ---
 
@@ -2094,7 +2094,17 @@ $$
 3. $8$
    - $\lim_{x \to 4} \frac{x^2 - 16}{x - 4} = \lim_{x \to 4} \frac{(x-4)(x+4)}{x-4} = \lim_{x \to 4} (x+4) = 8$
 
-### 5.2 Basic Differentiation Formulas
+
+### 5.2 Product Rule and Quotient Rule
+
+1. $y' = 2xe^x + x^2e^x = xe^x(2 + x)$
+2. $y' = \frac{3(x-2) - 3x(1)}{(x-2)^2} = \frac{3x-6-3x}{(x-2)^2} = -\frac{6}{(x-2)^2}$
+3. $y' = \cos x - x\sin x$
+4. $y' = \frac{(1)(x^2+1) - (x+1)(2x)}{(x^2+1)^2} = \frac{x^2+1 - 2x^2 - 2x}{(x^2+1)^2} = \frac{-x^2 - 2x + 1}{(x^2+1)^2}$
+5. $y' = e^x\sin x + e^x\cos x = e^x(\sin x + \cos x)$
+
+
+### 5.3 Basic Differentiation Formulas
 
 1. $f'(x) = 12x^2 - 4x + 5$
 
@@ -2105,7 +2115,8 @@ $$
 
 4. $p'(x) = 2e^x + 4^x\ln 4 - \frac{1}{3x}$
 
-### 5.3 Chain Rule
+
+### 5.4 Chain Rule
 
 1. $y' = 20(5x+2)^3$
 2. $y = (3x-1)^{-1/2}$, $y' = -\frac{3}{2}(3x-1)^{-3/2} = -\frac{3}{2\sqrt{(3x-1)^3}}$
@@ -2113,13 +2124,6 @@ $$
 4. $y' = \frac{2x}{x^2+4}$
 5. $y' = 3\cos^2(2x) \cdot (-\sin(2x)) \cdot 2 = -6\cos^2(2x)\sin(2x) = -3\cos(2x)\sin(4x)$
 
-### 5.4 Product Rule and Quotient Rule
-
-1. $y' = 2xe^x + x^2e^x = xe^x(2 + x)$
-2. $y' = \frac{3(x-2) - 3x(1)}{(x-2)^2} = \frac{3x-6-3x}{(x-2)^2} = -\frac{6}{(x-2)^2}$
-3. $y' = \cos x - x\sin x$
-4. $y' = \frac{(1)(x^2+1) - (x+1)(2x)}{(x^2+1)^2} = \frac{x^2+1 - 2x^2 - 2x}{(x^2+1)^2} = \frac{-x^2 - 2x + 1}{(x^2+1)^2}$
-5. $y' = e^x\sin x + e^x\cos x = e^x(\sin x + \cos x)$
 
 ### 5.5 Tangents and Normals
 
@@ -2143,6 +2147,7 @@ $$
    - $a = 1 + \sqrt{3}$: slope $m = 2\sqrt{3}$, tangent $y = 2\sqrt{3}x - 2\sqrt{3} - 4$
    - $a = 1 - \sqrt{3}$: slope $m = -2\sqrt{3}$, tangent $y = -2\sqrt{3}x + 2\sqrt{3} - 4$
 
+
 ### 5.6 Stationary Points
 
 1. $f'(x) = 3x^2 - 12x + 9 = 3(x-1)(x-3)$
@@ -2160,6 +2165,7 @@ $$
    $x = -1$: $f(-1) = -2 - 3 + 12 + 5 = 12$, $f''(-1) = -12 - 6 = -18 < 0$ → maximum $12$
    $x = 2$: $f(2) = 16 - 12 - 24 + 5 = -15$, $f''(2) = 24 - 6 = 18 > 0$ → minimum $-15$
 
+
 ### 5.7 Connected Rates of Change and Small Increments Approximation
 
 1. $A = s^2$, $\frac{dA}{dt} = 2s\frac{ds}{dt} = 2(10)(3) = 60$ cm²/s
@@ -2170,6 +2176,7 @@ $$
 
 3. $V = \frac{4}{3}\pi r^3$, $\frac{dV}{dt} = 4\pi r^2\frac{dr}{dt}$
    $16\pi = 4\pi(2)^2\frac{dr}{dt} = 16\pi\frac{dr}{dt}$ → $\frac{dr}{dt} = 1$ m/s
+
 
 ### 5.8 Practical Maxima and Minima Problems
 
@@ -2198,11 +2205,4 @@ $$
 
 ---
 ---
-
-
-
-
-
-
-
 
