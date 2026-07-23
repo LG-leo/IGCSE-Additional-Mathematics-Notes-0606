@@ -1169,7 +1169,7 @@ $$
 三次多项式 $f(x) = (x - a)(x - b)(x - c)$（其中 $a < b < c$）的图像具有以下特征：
 
 - **与 $x$ 轴的交点**：$x = a, x = b, x = c$（三个实数根）
-- **端部行为**：若最高次项系数为正，当 $x \to \infty$ 时 $f(x) \to \infty$；当 $x \to -\infty$ 时 $f(x) \to -\infty$
+- **末端行为End Behavior**：若最高次项系数为正，当 $x \to \infty$ 时 $f(x) \to \infty$；当 $x \to -\infty$ 时 $f(x) \to -\infty$
 - **图像形状**：从第三象限进入，依次穿过 $x = a, x = b, x = c$，进入第一象限
 - **在每个区间上的符号**：
 
