@@ -1351,6 +1351,16 @@ If the problem says "the tangent passing through point $P$" (rather than "at poi
 
 ---
 
+### 📋 0606 Exam Checklist (Must Check After Solving)
+
+- [ ] **Keyword check**: Is the problem **"at"** the point or **"passes through"** a point? → Determines whether to use the three-step method or set an unknown point of tangency.
+- [ ] **Point of tangency coordinates**: When setting the point of tangency, is $f(a)$ substituted back into the **original function**? (Never substitute into the derivative!)
+- [ ] **Normal slope**: Is it $-\frac{1}{m}$? Forgetting the negative sign is a common mistake.
+- [ ] **Final form**: Unless it's a vertical line, write the answer as $y = ...$; if the tangent/normal is vertical, it must be written as $x = a$.
+- [ ] **Multiple solutions check**: If the problem says "passes through", the number of $a$ values found equals the number of tangents (all must be listed).
+
+---
+
 ### Worked Example 5.5A (Tangent and Normal When the Point of Tangency is Known)
 
 > What are the equations of the tangent and normal to the curve $y = x^2 - 3x + 2$ at the point $(2, 0)$?
@@ -1599,6 +1609,243 @@ Find the second derivative: $f''(x) = -\sin x - \cos x$.
 
 ---
 
+#### Explanation 1: Why $\tan x = 1$ gives $x = \frac{\pi}{4}$ and $x = \frac{5\pi}{4}$
+
+Because the **period of $\tan x$ is $\pi$** (not $2\pi$).
+
+**Step-by-step derivation**:
+
+1. **Find the basic solution**:  
+   On $[0, 2\pi]$, the smallest positive root satisfying $\tan x = 1$ is:
+   $$
+   x = \arctan(1) = \frac{\pi}{4}
+   $$
+
+2. **Use periodicity to write the general solution**:  
+   Since $\tan x$ has period $\pi$, all solutions to $\tan x = 1$ are:
+   $$
+   x = \frac{\pi}{4} + k\pi \quad (k \in \mathbb{Z})
+   $$
+
+3. **Filter within the given interval**:  
+   Given interval $[0, 2\pi]$, substitute different integers $k$:
+   - $k = 0$: $x = \frac{\pi}{4}$ (valid)
+   - $k = 1$: $x = \frac{\pi}{4} + \pi = \frac{5\pi}{4}$ (valid)
+   - $k = 2$: $x = \frac{\pi}{4} + 2\pi = \frac{9\pi}{4} > 2\pi$ (out of range)
+   - $k = -1$: $x = \frac{\pi}{4} - \pi = -\frac{3\pi}{4} < 0$ (out of range)
+
+So only these two solutions exist on $[0, 2\pi]$.
+
+**Intuitive understanding (unit circle)**:  
+$\tan x = 1$ means $\sin x = \cos x$, i.e., points on the unit circle where the $x$ and $y$ coordinates are equal. On the unit circle, only the **first quadrant angle bisector** ($\pi/4$) and the **third quadrant angle bisector** ($\pi/4 + \pi = 5\pi/4$) satisfy this.
+
+---
+
+#### Explanation 2: Deriving $\sin x = \cos x$ via General Solution Formulas
+
+### 1. Basic General Solution Formulas (Comparison)
+
+- **$\sin x = \sin \theta$** general solution:
+  $$
+  x = k\pi + (-1)^k \theta \quad (k \in \mathbb{Z})
+  $$
+
+- **$\cos x = \cos \theta$** general solution:
+  $$
+  x = 2k\pi \pm \theta \quad (k \in \mathbb{Z})
+  $$
+
+- **$\tan x = \tan \theta$** general solution:
+  $$
+  x = k\pi + \theta \quad (k \in \mathbb{Z})
+  $$
+
+---
+
+### 2. Derivation for $\sin x = \cos x$ (for understanding, not required to memorise)
+
+We convert the equation into standard form to apply the above formulas.
+
+#### Method 1: Convert to $\sin$ (using $\cos x = \sin(\frac{\pi}{2} - x)$)
+
+The equation becomes:
+$$
+\sin x = \sin\left(\frac{\pi}{2} - x\right)
+$$
+
+Apply the $\sin$ general solution formula ($x = k\pi + (-1)^k \theta$):
+
+- **When $k$ is even (set $k=2n$)**:
+  $$
+  x = 2n\pi + \left(\frac{\pi}{2} - x\right) \;\Rightarrow\; 2x = 2n\pi + \frac{\pi}{2} \;\Rightarrow\; x = n\pi + \frac{\pi}{4}
+  $$
+
+- **When $k$ is odd (set $k=2n+1$)**:
+  $$
+  x = (2n+1)\pi - \left(\frac{\pi}{2} - x\right) \;\Rightarrow\; x = 2n\pi + \pi - \frac{\pi}{2} + x \;\Rightarrow\; 0 = 2n\pi + \frac{\pi}{2}
+  $$
+  This is clearly impossible, so the odd case yields no solutions.
+
+Thus:
+$$
+x = n\pi + \frac{\pi}{4} \quad (n \in \mathbb{Z})
+$$
+
+---
+
+#### Method 2: Convert to $\cos$ (using $\sin x = \cos(\frac{\pi}{2} - x)$) (for understanding only)
+
+The equation becomes:
+$$
+\cos\left(\frac{\pi}{2} - x\right) = \cos x
+$$
+
+Apply the $\cos$ general solution formula ($A = 2k\pi \pm B$):
+
+- **Taking $+$**:
+  $$
+  \frac{\pi}{2} - x = 2k\pi + x \;\Rightarrow\; 2x = \frac{\pi}{2} - 2k\pi \;\Rightarrow\; x = \frac{\pi}{4} - k\pi
+  $$
+  Equivalent to $x = n\pi + \frac{\pi}{4}$.
+
+- **Taking $-$**:
+  $$
+  \frac{\pi}{2} - x = 2k\pi - x \;\Rightarrow\; \frac{\pi}{2} = 2k\pi
+  $$
+  This is impossible, discard.
+
+Thus:
+$$
+x = n\pi + \frac{\pi}{4} \quad (n \in \mathbb{Z})
+$$
+
+---
+
+### 3. Conclusion
+
+Regardless of whether we use $\tan$, $\sin$, or $\cos$ general solutions, the final result is the same:
+$$
+\boxed{x = \frac{\pi}{4} + n\pi \quad (n \in \mathbb{Z})}
+$$
+
+Taking $n=0, 1$ on $[0, 2\pi]$ gives $\frac{\pi}{4}$ and $\frac{5\pi}{4}$.
+
+---
+
+#### Explanation 3: Complete Guide to Solving Trigonometric Equations
+
+### 1. Essential Preliminary Definitions (not in textbooks, but essential for exams)
+
+1. **Reference Angle (denoted $\alpha$)**:
+   - **Definition**: The **positive acute angle** (less than $90^\circ$ or $\pi/2$) obtained by taking the absolute value after pressing $\sin^{-1}$, $\cos^{-1}$, or $\tan^{-1}$ on a calculator.
+   - **Purpose**: It serves as the "template" for finding angles in the other three quadrants.
+   - **Procedure**: Regardless of whether the right-hand side is positive or negative, first remove the negative sign and calculate the reference angle.
+
+2. **CAST Quadrant Diagram (Unit Circle Coordinate Essence)**:
+   - Don't memorise symmetry rules; just use coordinate signs.
+   - In the four quadrants, the signs of the $x$-coordinate ($\cos$) and $y$-coordinate ($\sin$) determine the signs of the functions:
+     1. **Quadrant I (top right)**: $x$ positive, $y$ positive → $\sin, \cos, \tan$ all positive (**A**ll).
+     2. **Quadrant II (top left)**: $x$ negative, $y$ positive → only $\sin$ positive (**S**ine).
+     3. **Quadrant III (bottom left)**: $x$ negative, $y$ negative → only $\tan$ positive (**T**angent).
+     4. **Quadrant IV (bottom right)**: $x$ positive, $y$ negative → only $\cos$ positive (**C**osine).
+   - Memory order (clockwise from bottom right): **C - A - S - T**
+
+---
+
+### 2. Solving Pure Trigonometric Equations (Survival Table for $[0, 2\pi]$)
+
+After calculating the reference angle $\alpha$, directly substitute into the table below (in radians).
+
+1. **$\tan x = a$** (simplest):
+   - Positive ($+a$): Solutions in Quadrants I, III → $\alpha$ and $\pi + \alpha$
+   - Negative ($-a$): Solutions in Quadrants II, IV → $\pi - \alpha$ and $2\pi - \alpha$
+2. **$\sin x = a$**:
+   - Positive ($+a$): Solutions in Quadrants I, II → $\alpha$ and $\pi - \alpha$
+   - Negative ($-a$): Solutions in Quadrants III, IV → $\pi + \alpha$ and $2\pi - \alpha$
+3. **$\cos x = a$**:
+   - Positive ($+a$): Solutions in Quadrants I, IV → $\alpha$ and $2\pi - \alpha$
+   - Negative ($-a$): Solutions in Quadrants II, III → $\pi - \alpha$ and $\pi + \alpha$
+4. **Golden Rule (prevent missing solutions)**: Never divide both sides by $\sin x$ or $\cos x$. Always move terms to one side and factor (e.g., $\sin x \cos x = \sin x \Rightarrow \sin x(\cos x - 1)=0$).
+
+---
+
+### 3. Composite Angle Substitution (Paper 1 & 2 Hot Topic)
+
+When the angle inside the trig function is not simply $x$, but something like $2x$, $3x + \frac{\pi}{4}$, **never expand directly**.
+
+1. **Step 1 (Substitution)**: Let $u$ equal the entire angle inside the brackets.
+2. **Step 2 (Transform the interval — this is where 90% of marks are lost)**: Substitute both boundaries of the original $x$ interval into the expression for $u$ to find the new interval for $u$. **Only search for solutions within this new $u$ interval, not $[0, 2\pi]$**.
+3. **Step 3 (Solve for $u$)**: Use the Survival Table in Part 2 to find all valid $u$ values.
+4. **Step 4 (Back-substitute)**: Solve the linear equation $u = 2x + \cdots$ to find the final $x$ values.
+
+---
+
+### 4. The Auxiliary Angle Formula (Hidden Boss)
+
+When the expression takes the form $a\sin x \pm b\cos x = c$, you cannot simply divide by $\cos x$. You must combine them into a single sine function.
+
+1. **Standard form**:
+   $$
+   a\sin x + b\cos x = R\sin(x + \alpha)
+   $$
+   - Calculate $R = \sqrt{a^2 + b^2}$
+   - Calculate $\alpha = \tan^{-1}\left(\frac{b}{a}\right)$ (note: numerator is the coefficient $b$ of $\cos$)
+2. **Subtraction case**: $a\sin x - b\cos x = R\sin(x - \alpha)$, same formula.
+3. **Further processing**: After converting to $R\sin(x+\alpha)=c$, let $u = x+\alpha$ and immediately switch to **Part 3 (Composite Angle Substitution)**.
+4. **Quick application (extremum problems)**: If asked for the maximum/minimum of $f(x)=a\sin x + b\cos x$, no differentiation needed — the maximum is $+R$ and the minimum is $-R$.
+
+---
+
+### 5. About General Solution Formulas (for understanding, not for exam answers)
+
+General solutions express infinitely many repeating solutions as algebraic formulas. In the 0606 exam (which always gives a specific interval), **never write only the general solution** — you must calculate the specific angles within the interval.
+
+1. **$\sin x = \sin \theta$ graphically**:
+   - General solution: $x = n\pi + (-1)^n \theta$. When $n$ is even, take the right-hand point (Quadrant I); when $n$ is odd, take the left-hand point (Quadrant II) — alternating jumps.
+2. **$\cos x = \cos \theta$ graphically**:
+   - General solution: $x = 2n\pi \pm \theta$. Pairs appear symmetrically around $0$.
+3. **$\tan x = \tan \theta$ graphically**:
+   - General solution: $x = n\pi + \theta$. Because the period is $\pi$, each segment of the curve replicates a point at the same position, equally spaced.
+4. **Conclusion**: General solutions are for the **entire real number line**, while your exam paper only extracts a small segment $[0, 2\pi]$. Using the quadrant table from Part 2 is ten thousand times safer than memorising general solution formulas.
+
+---
+
+#### Appendix: General Solution Formulas (Advanced Supplement — for Understanding; Use the "Quadrant Table" in the Exam)
+
+**1. Why do we mention "general solutions"?**  
+Because the specific angles you calculate in 0606 using the "quadrant table" are essentially just the concrete values of the general solution formula at $n=0, 1, 2, \dots$. Understanding general solutions helps you verify whether you have missed any solutions, and it is also necessary for future A-Level Pure Mathematics (P3).
+
+**2. The Three General Solution Formulas (radians only)**  
+Let the reference angle be $\alpha$, $n$ any integer ($n \in \mathbb{Z}$):
+
+| Equation form | General solution | Memory aid |
+| :--- | :--- | :--- |
+| $\sin x = \sin \alpha$ | $\boxed{x = n\pi + (-1)^n \alpha}$ | **Alternating jumps**: even $n$ → right (QI), odd $n$ → left (QII). |
+| $\cos x = \cos \alpha$ | $\boxed{x = 2n\pi \pm \alpha}$ | **Symmetrical**: $+$ takes right (QIV), $-$ takes left (QII). |
+| $\tan x = \tan \alpha$ | $\boxed{x = n\pi + \alpha}$ | **Equally spaced**: every half-turn ($\pi$) replicates the point — simplest. |
+
+**3. How does this match your "quadrant table"? (Using the 0606 interval $[0, 2\pi]$)**
+
+- **$\sin x = 0.5$**: Reference angle $\alpha = \frac{\pi}{6}$  
+  - Quadrant method gives $\frac{\pi}{6}$ (QI) and $\frac{5\pi}{6}$ (QII).  
+  - General solution: $n=0$ (even) → $x = \frac{\pi}{6}$; $n=1$ (odd) → $x = \pi - \frac{\pi}{6} = \frac{5\pi}{6}$. Perfect match.
+
+- **$\cos x = -0.5$**:  
+  - Quadrant method gives $\frac{2\pi}{3}$ (QII) and $\frac{4\pi}{3}$ (QIII).  
+  - General solution: $\cos x = \cos\left(\frac{2\pi}{3}\right)$, $x = 2n\pi \pm \frac{2\pi}{3}$. $n=0, +$ → $\frac{2\pi}{3}$; $n=0, -$ → $-\frac{2\pi}{3}$ (out of range); $n=1, -$ → $2\pi - \frac{2\pi}{3} = \frac{4\pi}{3}$. Fully covered.
+
+- **$\tan x = 1$**: Reference angle $\alpha = \frac{\pi}{4}$  
+  - Quadrant method gives $\frac{\pi}{4}$ and $\frac{5\pi}{4}$.  
+  - General solution: $n=0$ → $\frac{\pi}{4}$; $n=1$ → $\pi + \frac{\pi}{4} = \frac{5\pi}{4}$. Clean addition.
+
+**4. Ultimate Advice for 0606 Beginners**
+
+1. **In the exam**: Forget $n$ and $(-1)^n$. Use only "reference angle + quadrant table" mechanically — it's fast and error-proof.
+2. **When checking**: Use a calculator to verify your specific angles by substituting them back into the original equation — this prevents missing solutions better than memorising formulas.
+3. **If you have extra time**: Come back to the table above and think about why $\sin$ needs even/odd cases but $\tan$ doesn't — it will significantly boost your mathematical intuition.
+
+---
+
 ### Worked Example 5.6C (Stationary Points with Exponential Functions)
 
 > Find the stationary point of $f(x) = xe^{-x}$ and determine its type. Find the maximum value of the function.
@@ -1707,6 +1954,79 @@ $$
 where $\delta y = f(x + \delta x) - f(x)$ is the actual change in the function value, and $\frac{dy}{dx} \cdot \delta x$ is the change along the tangent line (the approximate value).
 
 **Why does this work?** Geometrically, the tangent line is the best approximation to the curve near the point of tangency. When $\delta x$ is small, the point $(a+\delta x, f(a+\delta x))$ on the curve is very close to the point $(a+\delta x, f(a) + f'(a)\delta x)$ on the tangent line, so we can use the change on the tangent line to approximate the change on the curve.
+
+---
+
+#### Step-by-Step Derivation of the Small Increments Formula
+
+**Step 1: Start from the official definition of the derivative**
+
+$$
+f'(a) = \lim_{\delta x \to 0} \frac{f(a + \delta x) - f(a)}{\delta x}
+$$
+
+**In plain English**: When $\delta x$ tends to $0$, the "secant slope" becomes the "tangent slope".
+
+**Step 2: Remove the "limit" restriction (core derivation)**
+
+If $\delta x$ is **very small** (but not infinitesimal, e.g. $0.01$), then it is no longer a strict limit, but an **approximation**.
+
+So the equals sign ($=$) can temporarily become an approximation sign ($\approx$):
+$$
+f'(a) \approx \frac{f(a + \delta x) - f(a)}{\delta x}
+$$
+
+**Why can we change it to $\approx$?**  
+$f'(a)$ is the tangent slope, while $\frac{f(a + \delta x) - f(a)}{\delta x}$ is the secant slope. When $\delta x$ is small, **secant slope $\approx$ tangent slope**. This is the geometric justification for the derivation.
+
+**Step 3: Pure algebraic manipulation (multiply across)**
+
+Now we have:
+$$
+f'(a) \approx \frac{f(a + \delta x) - f(a)}{\delta x}
+$$
+
+Multiply both sides by $\delta x$:
+$$
+f'(a) \cdot \delta x \approx f(a + \delta x) - f(a)
+$$
+
+**Step 4: Move $f(a)$ across (simple rearrangement)**
+
+Add $f(a)$ to both sides:
+$$
+\boxed{f(a) + f'(a) \cdot \delta x \approx f(a + \delta x)}
+$$
+
+Swapping sides for readability:
+$$
+\boxed{f(a + \delta x) \approx f(a) + f'(a) \cdot \delta x}
+$$
+
+**Step 5: The $\delta y$ shorthand version**
+
+If we let $y = f(x)$:
+
+- Change in height: $\delta y = f(a + \delta x) - f(a)$
+- Derivative (slope): $\frac{dy}{dx} = f'(a)$
+
+Substituting into $f'(a) \cdot \delta x \approx f(a + \delta x) - f(a)$ from Step 3 gives:
+$$
+\boxed{\delta y \approx \frac{dy}{dx} \cdot \delta x}
+$$
+
+**Step 6: Why "approximately equal" and not "exactly equal"? (Where does the error come from?)**
+
+Tracing the derivation backwards, the only "non-rigorous" step is **Step 2, where the limit equals sign was replaced with an approximation sign**.
+
+- If $\delta x$ is **infinitesimal (tends to $0$)** , then $\frac{f(a + \delta x) - f(a)}{\delta x}$ is **strictly equal** to $f'(a)$, and the formula is exact (this is the fundamental theorem of calculus).
+- But if $\delta x$ is **finite (e.g. $0.01$)** , the secant slope does not equal the tangent slope — there is a small deviation. **This deviation is roughly on the order of $(\delta x)^2$ (e.g. $0.0001$)** . Since $\delta x$ is small, its square is even smaller, so we can ignore it and use $\approx$.
+
+**Summary (full derivation chain)**:
+
+$$
+\text{Derivative definition} \xrightarrow[\text{to approximation}]{\text{Remove limit}} \text{Secant slope} \approx \text{Tangent slope} \xrightarrow[\text{and rearrange}]{\text{Multiply by }\delta x} \text{Approximation formula}
+$$
 
 ---
 
@@ -1886,6 +2206,161 @@ At this point, $y = 100 - 2(25) = 50$.
 Maximum area: $A = 25 \times 50 = 1250$ m².
 
 **Answer**: When the sides perpendicular to the wall are $25$ m and the side parallel to the wall is $50$ m, the maximum area is $1250$ m².
+
+Below is a **complete breakdown** of this optimisation problem. Every step explains both "how to calculate" and "why we do it this way" — no steps skipped and no "obviously" statements.
+
+---
+
+#### Step 1: Define the variables
+
+**How**:  
+Let the two sides perpendicular to the wall be $x$ m each, and the side parallel to the wall be $y$ m.
+
+**Why this way?**
+
+- A rectangle has four sides, but the wall replaces one side, so only **three sides** need fencing.
+- Of these three sides, **two are "perpendicular to the wall" (equal in length, both $x$) and one is "parallel to the wall" (length $y$)** .
+- We set up two variables $x$ and $y$ so we can first express "total fence length" and then "area" in terms of them. These are the final quantities the problem asks for.
+
+> **Why choose the "perpendicular to wall" side as $x$?**  
+> Because the total length equation is $2x + y = 100$, putting the "repeated side" at coefficient $2$ makes the equation most natural. If you set the parallel side as $x$, you'd get $x + 2y = 100$ — essentially the same, but the coefficient in the area expression changes. Either is fine; the key is **consistency**.
+
+---
+
+#### Step 2: Write the constraint (total fence length)
+
+**How**:
+$$
+2x + y = 100 \quad \Rightarrow \quad y = 100 - 2x
+$$
+
+**Why this way?**
+
+- The fence encloses **two perpendicular sides** (each $x$) and **one parallel side** ($y$), with total length $2x + y$.
+- The problem states the total length is $100$ m, so $2x + y = 100$ is a **hard constraint** — it ties $y$ to $x$.
+- Rearranging to $y = 100 - 2x$ eliminates one variable, turning the area formula into a **single-variable function of $x$**. Only single-variable functions can be differentiated.
+
+---
+
+#### Step 3: Write the area formula and eliminate variables
+
+**How**:
+$$
+A = x \cdot y = x(100 - 2x) = 100x - 2x^2
+$$
+
+**Why this way?**
+
+- Rectangle area = length × width, i.e. $x \times y$.
+- Using $x \times y$ directly has two unknowns, so we cannot differentiate. Substituting $y = 100 - 2x$ from Step 2 gives $A(x) = 100x - 2x^2$.
+- Now the area $A$ is a function of $x$ alone — **as $x$ changes, the area changes with it**. We can plot this function and see where it peaks.
+
+---
+
+#### Step 4: Determine the domain ($x$ range)
+
+**How**:
+$$
+x > 0, \quad y > 0 \quad \Rightarrow \quad x > 0, \quad 100 - 2x > 0 \quad \Rightarrow \quad 0 < x < 50
+$$
+
+**Why is this step necessary? (90% of textbooks skip it!)**
+
+- $x$ is a length — cannot be negative or zero (otherwise there's no side), so $x > 0$.
+- $y$ is also a length — $y = 100 - 2x$ must be positive, so $100 - 2x > 0$, giving $x < 50$.
+- **The domain determines where to look for the maximum**. Without constraints, $A(x) = 100x - 2x^2$ would become negative for large $x$ (physically meaningless). The domain restricts it to $0 < x < 50$.
+- Within this interval, $x=0$ or $x=50$ both give area $0$ (one side has zero length), so the maximum must lie **inside the interval**.
+
+---
+
+#### Step 5: Differentiate
+
+**How**:
+$$
+A'(x) = 100 - 4x
+$$
+
+**Why differentiate?**
+
+- The derivative $A'(x)$ represents the **slope (rate of change)** of the function at any point.
+- When the function reaches its highest point, the tangent is horizontal — the slope is exactly $0$.
+- So to find the maximum, we look for points where the **derivative is $0$** (stationary points).
+- Using the Power Rule: derivative of $100x$ is $100$, derivative of $-2x^2$ is $-4x$.
+
+---
+
+#### Step 6: Set the derivative to $0$ and solve for $x$
+
+**How**:
+$$
+100 - 4x = 0 \quad \Rightarrow \quad x = 25
+$$
+
+**Why do this?**
+
+- $A'(x) = 100 - 4x$ tells us the "instantaneous speed" at which area changes with $x$.
+- When $x < 25$, $A'(x) > 0$ (e.g. at $x=10$, derivative is $60$), meaning the area is still increasing.
+- When $x > 25$, $A'(x) < 0$ (e.g. at $x=30$, derivative is $-20$), meaning the area starts decreasing.
+- At $x=25$, the rate of change is exactly $0$ — this is the turning point where the area switches from "increasing" to "decreasing", i.e. the **peak**.
+
+> **Why not just sketch the graph?**  
+> Because this function is a parabola that you can sketch. But if the function were cubic, quartic, or involving square roots, you couldn't sketch it easily. Differentiation is a universal method applicable to all differentiable functions.
+
+---
+
+#### Step 7: Use the second derivative to confirm it's a maximum (not a minimum)
+
+**How**:
+$$
+A''(x) = -4 < 0
+$$
+
+**Why is the second derivative necessary?**
+
+- Setting $A'(x)=0$ only finds "stationary points" (points where the slope is zero). But this point could be: a hilltop (maximum), a valley (minimum), or a plateau (point of inflection).
+- **The second derivative $A''(x)$ tells us how the slope itself is changing**:
+  - $A''(x) < 0$: the slope is decreasing (the graph is concave down, like an upside-down bowl) → this is a **maximum**.
+  - $A''(x) > 0$: the slope is increasing (the graph is concave up, like a bowl) → this is a **minimum**.
+- Here $A''(x) = -4$, which is always negative, so $x=25$ is a maximum.
+
+> **What if $A''(x)=0$?**  
+> Then you'd need higher-order derivatives or sign tests to decide. However, in 0606, second derivatives almost always give a clear answer. Here $-4 < 0$ is sufficient.
+
+---
+
+#### Step 8: Substitute back to find $y$ and the maximum area
+
+**How**:
+$$
+y = 100 - 2(25) = 50, \quad A_{\max} = 25 \times 50 = 1250
+$$
+
+**Why this final step?**
+
+- The problem asks for both "the area" and "the dimensions" — you cannot just write $x=25$.
+- The constraint $y = 100 - 2x$ from Step 2 is what you use to find the other side.
+- The maximum area $1250$ is the final answer — don't forget the units (m²).
+
+---
+
+### Complete Answer Checklist (Use in the Exam)
+
+1. ✅ Set up two variables ($x$ perpendicular to wall, $y$ parallel to wall).
+2. ✅ Wrote the total length constraint $2x + y = 100$.
+3. ✅ Reduced the area function to a single-variable function of $x$.
+4. ✅ Wrote the domain $0 < x < 50$.
+5. ✅ Differentiated $A'(x) = 100 - 4x$.
+6. ✅ Set derivative to $0$, solved for stationary point $x=25$.
+7. ✅ Second derivative $A''(x) = -4 < 0$, confirmed maximum.
+8. ✅ Substituted back to find $y=50$, calculated area $1250$, wrote the complete answer.
+
+---
+
+### What If the Wall Isn't Long Enough?
+
+If the wall is only $30$ m long, then $y$ cannot exceed $30$. The domain becomes $0 < y \leq 30$, i.e. $0 < 100 - 2x \leq 30$, giving $35 \leq x < 50$.
+
+In this case, $x=25$ is **not in the domain** — you cannot simply set the derivative to $0$ to find the maximum. Since the function is **monotonically decreasing** over the entire domain, the maximum occurs at the **boundary** of the domain, i.e. $y=30$ (the far end of the wall). Then $x=35$, and the maximum area is $1050$ m².
 
 ---
 
