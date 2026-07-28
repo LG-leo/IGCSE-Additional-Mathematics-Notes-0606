@@ -529,7 +529,7 @@ $\theta = \frac{\pi}{2}$ 时终边与正 $y$ 轴重合，交点为 $(0, 1)$，�
 | III | $\pi < \theta < \dfrac{3\pi}{2}$ | $-$ | $-$ | $+$ | **T**an（及 cot） |
 | IV | $\dfrac{3\pi}{2} < \theta < 2\pi$ | $+$ | $-$ | $-$ | **C**os（及 sec） |
 
-**记忆口诀**：逆时针从第一象限开始，ASTC —— "All Students Take Calculus"（所有学生学微积分）。
+**记忆口诀**：逆时针从第一象限开始，ASTC
 
 完整的六个函数符号表：
 
