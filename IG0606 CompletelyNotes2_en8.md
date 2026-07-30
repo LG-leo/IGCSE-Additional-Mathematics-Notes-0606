@@ -559,6 +559,21 @@ For any angle $\theta$ (taken in $[0, 2\pi)$), the reference angle $\alpha$ is:
 > $$
 > The sign is determined by the quadrant in which $\theta$ lies.
 
+> **💡 Quick memory aid for reference angle formulas**
+>
+> Think of the reference angle as **"the shortest distance from the terminal side to the $x$-axis"**:
+>
+> | Quadrant | $\theta$ range | Intuition | Reference angle $\alpha$ |
+> |:--------:|:--------------:|:---------|:------------------------:|
+> | **I** | $0 < \theta < \dfrac{\pi}{2}$ | $\theta$ is already acute | $\alpha = \theta$ |
+> | **II** | $\dfrac{\pi}{2} < \theta < \pi$ | $\theta$ is a bit less than $\pi$ | $\alpha = \pi - \theta$ |
+> | **III** | $\pi < \theta < \dfrac{3\pi}{2}$ | $\theta$ is a bit more than $\pi$ | $\alpha = \theta - \pi$ |
+> | **IV** | $\dfrac{3\pi}{2} < \theta < 2\pi$ | $\theta$ is a bit less than $2\pi$ | $\alpha = 2\pi - \theta$ |
+>
+> 🔑 **Rule of thumb**: "Q1 direct, Q2 $\pi-$, Q3 $-\pi$, Q4 $2\pi-$"
+>
+> **Self-check**: After computing $\alpha$, verify that $0 \leq \alpha \leq \dfrac{\pi}{2}$ — if not, you used the wrong formula.
+
 ### 8.2.7 Worked Examples
 
 ---
@@ -839,6 +854,21 @@ Key points and asymptotes:
 
 Graph shape: In each period $(-\frac{\pi}{2}, \frac{\pi}{2})$, the function rises from $-\infty$, passes through $0$, to $+\infty$.
 
+> **📊 Core properties comparison table**
+>
+> | Property | $y = \sin x$ | $y = \cos x$ | $y = \tan x$ |
+> |:---------|:------------|:------------|:------------|
+> | **Domain** | $\mathbb{R}$ | $\mathbb{R}$ | $x \neq \dfrac{\pi}{2} + n\pi$ |
+> | **Range** | $[-1, 1]$ | $[-1, 1]$ | $\mathbb{R}$ |
+> | **Period** | $2\pi$ | $2\pi$ | $\pi$ |
+> | **Parity** | odd (origin symmetry) | even ($y$-axis symmetry) | odd (origin symmetry) |
+> | **Zeros** | $x = n\pi$ | $x = \dfrac{\pi}{2} + n\pi$ | $x = n\pi$ |
+> | **Maximum** | $1$ at $x=\frac{\pi}{2}+2n\pi$ | $1$ at $x=2n\pi$ | none ($\to +\infty$) |
+> | **Minimum** | $-1$ at $x=\frac{3\pi}{2}+2n\pi$ | $-1$ at $x=\pi+2n\pi$ | none ($\to -\infty$) |
+> | **Asymptotes** | none | none | $x = \dfrac{\pi}{2} + n\pi$ |
+>
+> Keep this table handy when solving equations or sketching transformed graphs.
+
 #### $y = \sec x$, $y = \csc x$, $y = \cot x$ — Summary
 
 - $y = \sec x = \frac{1}{\cos x}$: vertical asymptotes where $\cos x = 0$ ($x = \frac{\pi}{2} + n\pi$), range $(-\infty, -1] \cup [1, \infty)$, period $2\pi$, even function
@@ -1075,6 +1105,35 @@ $$
 i.e., $\csc^2\theta = 1 + \cot^2\theta$.
 
 > ✅ **Exam tip**: These three identities are provided on the syllabus **formula sheet** and can be directly quoted in the exam.
+
+> **📋 All algebraic rearrangements of the three identities**
+>
+> Beginners often miss that identities can be rearranged — choose the form that best fits the problem:
+>
+> **Identity 1: $\sin^2\theta + \cos^2\theta = 1$**
+>
+> $$
+> \boxed{\sin^2\theta = 1 - \cos^2\theta}, \qquad
+> \boxed{\cos^2\theta = 1 - \sin^2\theta}
+> $$
+>
+> **Identity 2: $\sec^2\theta = 1 + \tan^2\theta$**
+>
+> $$
+> \boxed{\tan^2\theta = \sec^2\theta - 1}, \qquad
+> \boxed{\sec^2\theta - \tan^2\theta = 1}
+> $$
+>
+> **Identity 3: $\csc^2\theta = 1 + \cot^2\theta$**
+>
+> $$
+> \boxed{\cot^2\theta = \csc^2\theta - 1}, \qquad
+> \boxed{\csc^2\theta - \cot^2\theta = 1}
+> $$
+>
+> **Unified memory framework**: All three identities are related—start from $\sin^2\theta + \cos^2\theta = 1$,
+> divide by $\cos^2\theta$ to get $\tan^2\theta + 1 = \sec^2\theta$,
+> divide by $\sin^2\theta$ to get $1 + \cot^2\theta = \csc^2\theta$.
 
 ### 8.4.2 Double Angle Formulas
 

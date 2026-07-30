@@ -384,6 +384,29 @@ $$
 
 ---
 
+### 练习题 8.1（弧度制）
+
+1. 将下列角度转换为弧度（保留 $\pi$ 形式）：
+   (a) $45^\circ$ \quad (b) $120^\circ$ \quad (c) $210^\circ$ \quad (d) $315^\circ$
+
+2. 将下列弧度转换为角度：
+   (a) $\dfrac{3\pi}{4}$ \quad (b) $\dfrac{7\pi}{6}$ \quad (c) $\dfrac{5\pi}{3}$ \quad (d) $\dfrac{11\pi}{12}$
+
+3. 一个扇形的半径为 $8$ cm，圆心角为 $1.5$ 弧度。求：(a) 弧长 (b) 扇形面积。
+
+4. 一个扇形的弧长为 $12\pi$ cm，半径为 $9$ cm。求扇形的圆心角（弧度）和面积。
+
+5. 一个半径为 $6$ cm 的扇形面积为 $24$ cm²，求：(a) 圆心角（弧度）(b) 弧长。
+
+6. 一个半径为 $10$ cm 的圆中，圆心角为 $\dfrac{2\pi}{5}$ 的弓形，求弓形面积。
+
+7. 图中由一个半径为 $7$ cm 的大扇形（圆心角 $\dfrac{\pi}{4}$）和一个半径为 $4$ cm 的小扇形（相同圆心角）组成。求两个扇形之间区域的面积。
+
+8. 一个扇形的周长为 $20$ cm，半径为 $r$ cm，圆心角为 $\theta$ 弧度。
+   (a) 用 $r$ 表示 $\theta$。(b) 求扇形面积的最大值。
+
+---
+
 ## 8.2 六个三角函数（任意角）
 
 ### 8.2.1 从锐角三角比到任意角三角函数
@@ -558,6 +581,21 @@ $\theta = \frac{\pi}{2}$ 时终边与正 $y$ 轴重合，交点为 $(0, 1)$，�
 > \sin\theta = \pm\sin\alpha,\quad \cos\theta = \pm\cos\alpha,\quad \tan\theta = \pm\tan\alpha
 > $$
 > 其中正负号由 $\theta$ 所在象限决定。
+
+> **💡 参考角公式速记法**
+>
+> 四个象限的参考角公式可以统一理解为**"找终边到 $x$ 轴的最短距离"**：
+>
+> | 象限 | $\theta$ 范围 | $\theta$ 比谁多一点/少一点 | 参考角 $\alpha$ |
+> |:----:|:------------:|:------------------------|:--------------:|
+> | **I** | $0 < \theta < \dfrac{\pi}{2}$ | $\theta$ 本身已在 $[0,\frac{\pi}{2}]$ | $\alpha = \theta$ |
+> | **II** | $\dfrac{\pi}{2} < \theta < \pi$ | $\theta$ 比 $\pi$ **少**一点 | $\alpha = \pi - \theta$ |
+> | **III** | $\pi < \theta < \dfrac{3\pi}{2}$ | $\theta$ 比 $\pi$ **多**一点 | $\alpha = \theta - \pi$ |
+> | **IV** | $\dfrac{3\pi}{2} < \theta < 2\pi$ | $\theta$ 比 $2\pi$ **少**一点 | $\alpha = 2\pi - \theta$ |
+>
+> 🔑 **口诀**："一直接、二减π、三减π、四用2π减"
+>
+> **验证方法**：无论用哪个公式，计算出的 $\alpha$ 都应落在 $[0, \frac{\pi}{2}]$ 内。若算出负数或大于 $\frac{\pi}{2}$，说明公式选错了。
 
 ### 8.2.7 例题
 
@@ -789,6 +827,27 @@ $$
 
 ---
 
+### 练习题 8.2（六个三角函数）
+
+1. 已知 $\sin\theta = \frac{12}{13}$ 且 $0 < \theta < \frac{\pi}{2}$，求 $\cos\theta$、$\tan\theta$、$\sec\theta$、$\csc\theta$、$\cot\theta$。
+
+2. 已知 $\cos\theta = -\frac{3}{5}$ 且 $\pi < \theta < \frac{3\pi}{2}$，求 $\sin\theta$、$\tan\theta$、$\sec\theta$、$\csc\theta$、$\cot\theta$。
+
+3. 已知 $\tan\theta = -\frac{5}{12}$ 且 $\frac{\pi}{2} < \theta < \pi$，求 $\sin\theta$、$\cos\theta$、$\sec\theta$。
+
+4. 已知 $\sec\theta = 2$ 且 $\frac{3\pi}{2} < \theta < 2\pi$，求 $\sin\theta$、$\cos\theta$、$\tan\theta$、$\csc\theta$、$\cot\theta$。
+
+5. 用参考角法求精确值：
+   (a) $\sin\frac{4\pi}{3}$ \quad (b) $\cos\frac{5\pi}{4}$ \quad (c) $\tan\frac{11\pi}{6}$
+   (d) $\sin(-\frac{\pi}{6})$ \quad (e) $\cos\frac{7\pi}{4}$ \quad (f) $\tan(-\frac{3\pi}{4})$
+
+6. 已知 $\cot\theta = 2$ 且 $\pi < \theta < \frac{3\pi}{2}$，求 $\theta$（弧度，三位有效数字）。
+
+7. 判断下列各角所在象限，指明 $\sin$、$\cos$、$\tan$ 的符号：
+   (a) $\frac{7\pi}{6}$ \quad (b) $\frac{5\pi}{3}$ \quad (c) $-\frac{\pi}{4}$ \quad (d) $\frac{9\pi}{8}$ \quad (e) $\frac{11\pi}{6}$ \quad (f) $\frac{7\pi}{4}$
+
+---
+
 ## 8.3 三角函数的图像（振幅、周期、渐近线）
 
 ### 8.3.1 基本三角函数的图像
@@ -848,17 +907,38 @@ $$
 |-----|-------------------|-----|-----------------|-------|-------------------|
 | $\tan x$ | 无定义 | $0$ | 无定义 | $0$ | 无定义 |
 
-**性质总结**：
+设 $f(x)=\tan x$，其严谨的数学性质如下：
 
-- **定义域**：$x \neq \frac{\pi}{2} + n\pi$（在这些点 $\cos x = 0$，正切无定义）
-- **值域**：$\mathbb{R}$（全体实数）
-- **周期性**：周期 $\pi$，即 $\tan(x + \pi) = \tan x$
-- **奇偶性**：奇函数，$\tan(-x) = -\tan x$，关于原点对称
-- **零点**：$x = n\pi$
-- **渐近线**：$x = \frac{\pi}{2} + n\pi$（垂直渐近线）
+$$
+\begin{aligned}
+&\text{1. 定义域：} \quad D_f = \mathbb{R} \setminus \left\{ \frac{\pi}{2} + k\pi \;\big|\; k \in \mathbb{Z} \right\} \\[2pt]
+&\text{2. 对应法则：} \quad f(x) = \frac{\sin x}{\cos x} \\[2pt]
+&\text{3. 周期性：} \quad \text{最小正周期 } T = \pi \\[2pt]
+&\text{4. 单调性：} \quad \forall k \in \mathbb{Z},\; \text{在区间 } I_k = \left( -\frac{\pi}{2} + k\pi,\; \frac{\pi}{2} + k\pi \right) \text{ 上严格单调递增} \\[2pt]
+&\text{5. 渐近线：} \\[2pt]
+&\qquad \text{直线 } x = \frac{\pi}{2} + k\pi \;(k \in \mathbb{Z}) \text{ 为所有垂直渐近线} \\[2pt]
+&\qquad \text{在每条渐近线左侧，}\tan x \to +\infty\text{；右侧，}\tan x \to -\infty \\[2pt]
+&\text{6. 零点（经过原点）：} \quad f(x)=0 \iff x = k\pi \;(k\in\mathbb{Z}) \\[2pt]
+&\text{7. 值域：} \quad R_f = (-\infty, +\infty) = \mathbb{R} \\[2pt]
+&\text{8. 奇偶性：} \quad f(-x) = -f(x)，\text{为奇函数，图像关于原点对称}
+\end{aligned}
+$$
 
-图像形态：在每个周期 $(-\frac{\pi}{2}, \frac{\pi}{2})$ 内，从负无穷经过 $0$ 上升到正无穷。
 
+> **📊 三函数核心属性对比表**
+>
+> | 属性 | $y = \sin x$ | $y = \cos x$ | $y = \tan x$ |
+> |:----|:------------|:------------|:------------|
+> | **定义域** | $\mathbb{R}$ | $\mathbb{R}$ | $x \neq \dfrac{\pi}{2} + n\pi$ |
+> | **值域** | $[-1, 1]$ | $[-1, 1]$ | $\mathbb{R}$ |
+> | **周期** | $2\pi$ | $2\pi$ | $\pi$ |
+> | **奇偶性** | 奇（原点对称） | 偶（$y$ 轴对称） | 奇（原点对称） |
+> | **零点** | $x = n\pi$ | $x = \dfrac{\pi}{2} + n\pi$ | $x = n\pi$ |
+> | **最大值** | $1$（$x=\frac{\pi}{2}+2n\pi$） | $1$（$x=2n\pi$） | 无（$\to +\infty$） |
+> | **最小值** | $-1$（$x=\frac{3\pi}{2}+2n\pi$） | $-1$（$x=\pi+2n\pi$） | 无（$\to -\infty$） |
+> | **渐近线** | 无 | 无 | $x = \dfrac{\pi}{2} + n\pi$ |
+>
+> 此表是后续解方程、画变换图像时的**快速参考**。
 #### $y = \sec x$、$y = \csc x$、$y = \cot x$ 的图像概要
 
 - $y = \sec x = \frac{1}{\cos x}$：在 $\cos x = 0$（$x = \frac{\pi}{2} + n\pi$）处有垂直渐近线，值域 $(-\infty, -1] \cup [1, \infty)$，周期 $2\pi$，偶函数
@@ -915,8 +995,8 @@ $$
 
 | 参数 | 名称 | 计算公式 |
 |------|------|---------|
-| $|a|$ | 振幅 | 最大值 $= d + |a|$，最小值 $= d - |a|$ |
-| $T = \dfrac{2\pi}{|b|}$ | 周期 | 对 $\tan$ 为 $\dfrac{\pi}{|b|}$ |
+| $\vert a \vert$ | 振幅 | 最大值 $= d + \vert a \vert$，最小值 $= d - \vert a \vert$ |
+| $T = \frac{2\pi}{\vert b \vert}$ | 周期 | 对 $\tan$ 为 $\dfrac{\pi}{\vert b \vert}$ |
 | $-\dfrac{c}{b}$ | 相移 | $>0$ 右移，$<0$ 左移 |
 | $d$ | 垂直平移 | 新中心线为 $y = d$ |
 
@@ -955,71 +1035,6 @@ $$
 **最大值**：$d + |a| = -2 + 4 = 2$
 
 **最小值**：$d - |a| = -2 - 4 = -6$
-
----
-
-**例题 2（由图像特征求函数表达式）**：一个正弦型函数的图像满足以下条件：振幅为 $3$，周期为 $4\pi$，在 $x = 0$ 处的函数值为 $0$ 且正在上升，图像被垂直平移使得中轴线为 $y = 2$。写出该函数的一个可能表达式。
-
-**解**：
-
-**步骤 1**：设函数为 $y = a\sin(bx + c) + d$。
-
-**步骤 2**：由振幅 $3$ 得 $|a| = 3$，取 $a = 3$。
-
-**步骤 3**：由周期 $T = 4\pi$ 得 $T = \frac{2\pi}{|b|} = 4\pi$，所以 $|b| = \frac{2\pi}{4\pi} = \frac{1}{2}$，取 $b = \frac{1}{2}$。
-
-**步骤 4**：由中轴线 $y = 2$ 得 $d = 2$。
-
-**步骤 5**：由 $x = 0$ 时 $y = 0$ 且正在上升：
-
-$$
-y(0) = 3\sin\left(\frac{1}{2} \times 0 + c\right) + 2 = 3\sin c + 2 = 0
-$$
-
-$$
-\sin c = -\frac{2}{3}
-$$
-
-这个条件给出的 $c$ 不是一个标准角，看起来不太对。让我重新思考——题目说"在 $x = 0$ 处的函数值为 $0$ 且正在上升"，对于正弦函数，$x = 0$ 处为 $0$ 且上升意味着没有相移（$\sin 0 = 0$，且在 $0$ 附近 $\sin x$ 上升）。但由于 $d = 2$，$x = 0$ 时函数值为 $0$，所以 $\sin c$ 需要满足 $3\sin c + 2 = 0$。
-
-等等，让我换一种思路。如果我们使用 $y = a\sin(b(x - \phi)) + d$，其中 $\phi$ 是相移。
-
-取 $a = 3$，$b = \frac{1}{2}$，$d = 2$。
-
-函数在 $x = 0$ 处值为 $0$ 且上升：
-
-$$
-y = 3\sin\left(\frac{1}{2}(x - \phi)\right) + 2
-$$
-
-$$
-3\sin\left(-\frac{1}{2}\phi\right) + 2 = 0 \Rightarrow \sin\left(-\frac{\phi}{2}\right) = -\frac{2}{3}
-$$
-
-这有点复杂。其实更简单的方法是：标准正弦函数 $y = \sin x$ 在 $x = 0$ 处为 $0$ 且上升。如果 $d = 2$ 且 $a = 3$，那么在 $x = 0$ 时 $y = 0$ 意味着 $3\sin(-\phi b) + 2 = 0$。
-
-让我用更简单的方法。如果使用余弦型函数 $y = a\cos(bx + c) + d$，标准余弦在 $x = 0$ 处取最大值。但这不符合"值为 0 且上升"的条件。
-
-实际上，用 $y = 3\sin\left(\frac{x}{2}\right) + 2$ 的话，在 $x = 0$ 时 $y = 3\sin 0 + 2 = 2 \neq 0$，不符合条件。
-
-题目的条件说"在 $x = 0$ 处的函数值为 $0$ 且正在上升"，这说明正弦函数在 $x = 0$ 时经过中心线并上升。
-
-对于 $y = a\sin(bx + c) + d$，经过 $(0, 0)$：
-$$
-a\sin c + d = 0 \Rightarrow \sin c = -\frac{d}{a} = -\frac{2}{3}
-$$
-
-这个 $c$ 不是标准角。让我们用一个更简单的设定。取 $a = 3$，$b = \frac{1}{2}$，$d = 2$，且要求 $y(0) = 0$：
-
-$$
-3\sin(c) + 2 = 0 \Rightarrow \sin c = -\frac{2}{3}
-$$
-
-$c = \arcsin(-2/3)$ 不是一个特殊角。这对于例题来说不太理想。
-
-让我换一个更简洁的设定。将条件改为"图像经过 $(0, 2)$ 且正在上升"（即在中轴线上），这样 $c = 0$ 即可。或者用另一种方式满足条件。
-
-让我重新构造这个例题使其更简洁：
 
 ---
 
@@ -1202,6 +1217,28 @@ $$
 
 ---
 
+### 练习题 8.3（三角函数的图像）
+
+1. 求下列函数的振幅（如适用）、周期、相移和垂直平移：
+   (a) $y = 3\sin\left(2x - \frac{\pi}{3}\right) + 1$
+   (b) $y = -2\cos\left(\frac{x}{2} + \frac{\pi}{4}\right) - 3$
+   (c) $y = 4\tan(3x) + 2$
+
+2. 写出一个正弦型函数表达式：振幅 $4$，周期 $\pi$，中轴线 $y = -2$，且 $x=0$ 时 $y=-2$ 并正在上升。
+
+3. 求 $y = 2\tan\left(3x + \frac{\pi}{6}\right)$ 的周期及一个周期内的渐近线方程。
+
+4. 描述从 $y = \cos x$ 到 $y = -3\cos(2x) + 1$ 的变换过程。
+
+5. 对 $y = 2\sin\left(\frac{x}{2} + \frac{\pi}{4}\right) - 1$ 在 $[0, 4\pi]$ 内：
+   (a) 求关键点坐标 (b) 求最大值和最小值
+
+6. 余弦型函数 $y = a\cos(bx) + d$ 过 $(0, 7)$ 和 $(\pi, -1)$，周期 $2\pi$。求 $a, b, d$。
+
+7. 求 $y = \tan\left(2x - \frac{\pi}{3}\right)$ 在 $[0, \pi]$ 内的渐近线和 $x$ 轴交点。
+
+---
+
 ## 8.4 三角恒等式
 
 ### 8.4.1 三个基本勾股恒等式
@@ -1244,7 +1281,34 @@ $$
 
 即 $\csc^2\theta = 1 + \cot^2\theta$。
 
-> ✅ **考试提示**：这三个恒等式在考纲的**公式表**中提供，考试时可以直接引用。
+> **📋 三个恒等式的所有代数变形**
+>
+> 初学者最容易忽略的是：恒等式可以灵活变形，在不同场景下选择最合适的写法。
+>
+> **恒等式一：$\sin^2\theta + \cos^2\theta = 1$**
+>
+> $$
+> \boxed{\sin^2\theta = 1 - \cos^2\theta}, \qquad
+> \boxed{\cos^2\theta = 1 - \sin^2\theta}
+> $$
+>
+> **恒等式二：$\sec^2\theta = 1 + \tan^2\theta$**
+>
+> $$
+> \boxed{\tan^2\theta = \sec^2\theta - 1}, \qquad
+> \boxed{\sec^2\theta - \tan^2\theta = 1}
+> $$
+>
+> **恒等式三：$\csc^2\theta = 1 + \cot^2\theta$**
+>
+> $$
+> \boxed{\cot^2\theta = \csc^2\theta - 1}, \qquad
+> \boxed{\csc^2\theta - \cot^2\theta = 1}
+> $$
+>
+> **统一记忆框架**：三个恒等式是一家人——从 $\sin^2\theta + \cos^2\theta = 1$ 出发，
+> 两边除以 $\cos^2\theta$ 得 $\tan^2\theta + 1 = \sec^2\theta$，
+> 两边除以 $\sin^2\theta$ 得 $1 + \cot^2\theta = \csc^2\theta$。
 
 ### 8.4.2 二倍角公式
 
@@ -1306,6 +1370,39 @@ $$
 \boxed{\tan(2\theta) = \frac{2\tan\theta}{1 - \tan^2\theta}}
 $$
 
+---
+
+> **📌 和角公式完整形式（含 $A-B$）**
+>
+> 上述推导中使用了 $A+B$ 形式。$A-B$ 形式由代入 $-B$ 得到：
+>
+> $$
+> \sin(A \pm B) = \sin A\cos B \pm \cos A\sin B
+> $$
+>
+> $$
+> \cos(A \pm B) = \cos A\cos B \mp \sin A\sin B
+> $$
+>
+> $$
+> \tan(A \pm B) = \frac{\tan A \pm \tan B}{1 \mp \tan A\tan B}
+> $$
+
+> **📌 $\cos(2\theta)$ 三种形式的选用策略**
+>
+> | 题目特征 | 推荐形式 | 理由 |
+> |:---------|:--------|:-----|
+> | 需消去（或出现）$\sin\theta$ | $\cos(2\theta) = 1 - 2\sin^2\theta$ | 直接替换 $\sin^2\theta$ |
+> | 需消去（或出现）$\cos\theta$ | $\cos(2\theta) = 2\cos^2\theta - 1$ | 直接替换 $\cos^2\theta$ |
+> | 需展开或保持对称 | $\cos(2\theta) = \cos^2\theta - \sin^2\theta$ | 与 $\sin(2\theta)=2\sin\theta\cos\theta$ 形式对称 |
+> | 化简 $\dfrac{?}{1 - \cos(2\theta)}$ | 用 $1 - 2\sin^2\theta$ | $\Rightarrow$ 分母 $= 2\sin^2\theta$ |
+> | 化简 $\dfrac{?}{1 + \cos(2\theta)}$ | 用 $2\cos^2\theta - 1$ | $\Rightarrow$ 分母 $= 2\cos^2\theta$ |
+
+> **⚠️ $\tan(2\theta)$ 的定义域**
+>
+> 当 $\tan\theta = \pm 1$ 时，分母 $1 - \tan^2\theta = 0$，$\tan(2\theta)$ 无定义。
+> 即 $\theta = \dfrac{\pi}{4} + \dfrac{n\pi}{2}$（$45^\circ + 90^\circ n$）处有垂直渐近线。
+
 ### 8.4.3 半角公式（由二倍角公式反推）
 
 从 $\cos(2\theta) = 2\cos^2\theta - 1$ 解出 $\cos^2\theta$：
@@ -1320,7 +1417,7 @@ $$
 2\sin^2\theta = 1 - \cos(2\theta) \;\Rightarrow\; \boxed{\sin^2\theta = \frac{1 - \cos(2\theta)}{2}}
 $$
 
-这两个公式在**积分**中非常重要——它们用来降低三角函数的幂次。
+这两个公式在**降次**中非常有用——它们将 $\sin^2\theta$、$\cos^2\theta$ 等二次型降为一次型 $\cos(2\theta)$，常用于**化简表达式**和**解二次型三角方程**。
 
 ### 8.4.4 例题
 
@@ -1505,6 +1602,28 @@ $$
 $$
 
 **答案**：$\sin^2\theta$
+
+---
+
+### 练习题 8.4（三角恒等式）
+
+1. 已知 $\sin\theta = \frac{3}{5}$ 且 $\frac{\pi}{2} < \theta < \pi$，求：
+   (a) $\cos\theta$ (b) $\sin(2\theta)$ (c) $\cos(2\theta)$ (d) $\tan(2\theta)$
+
+2. 已知 $\tan\theta = 3$，求 $\sin(2\theta)$ 和 $\cos(2\theta)$。
+
+3. 化简：
+   (a) $\frac{1 - \sin^2\theta}{\cos\theta}$
+   (b) $\frac{\sec^2\theta - 1}{\tan^2\theta}$
+   (c) $\sin^2\theta\cos^2\theta$（用 $\cos(4\theta)$ 表示）
+
+4. 用 $\cos(2\theta)$ 表示 $3\sin^2\theta - 2\cos^2\theta$。
+
+5. 证明 $\sin^4\theta - \cos^4\theta = \sin^2\theta - \cos^2\theta$，并求 $\theta = \frac{\pi}{6}$ 时的值。
+
+6. 已知 $\cos\theta = -\frac{4}{5}$ 且 $\theta$ 在第三象限，求 $\sin(2\theta)$ 和 $\cos(2\theta)$。
+
+7. 化简 $\frac{\sin(2\theta)}{\sin\theta} - \frac{\cos(2\theta)}{\cos\theta}$。
 
 ---
 
@@ -2963,14 +3082,14 @@ $\sin x = -1$ 在 $[0, 2\pi)$ 内的解：$x = \frac{3\pi}{2}$。
 | 含 $a\sin(k\theta) + b\cos(k\theta) = 0$ | 两边除以 $\cos(k\theta)$ 得 $\tan(k\theta) = -\frac{b}{a}$ |
 | 含 $\sin(2\theta)$ 或 $\cos(2\theta)$ | 用二倍角公式展开或降次 |
 
-### 8.5.6 注意事项
+### 8.5.9 注意事项
 
 1. **定义域**：排除函数无定义的点。例如 $\tan x$ 在 $x = \frac{\pi}{2} + n\pi$ 处无定义，$\sec x$ 同样。
 2. **平方增根**：如果方程两边平方，可能引入增根，需要验根。
 3. **两边乘以表达式**：如果乘以可能为零的表达式，可能会丢失解或引入增根。
 4. **周期性**：注意在给定区间内，每个周期都会产生新的解。
 
-### 8.5.7 例题
+### 8.5.10 复习例题
 
 ---
 
@@ -3323,6 +3442,33 @@ $$
 > 2. **忽略定义域**：$\tan$、$\sec$、$\csc$、$\cot$ 在某些点无定义，这些点必须从解集中排除
 > 3. **两边除以变量**：如例题 7 中除以 $\cos(3\theta)$ 时，需要单独检查 $\cos(3\theta) = 0$ 的情况
 > 4. **符号错误**：使用 ASTC 法则时注意每个象限的符号
+
+---
+
+### 练习题 8.5（解三角方程）
+
+在 $0 \leq x < 2\pi$ 范围内解下列方程：
+
+1. $\sin x = \frac{1}{2}$
+2. $\cos x = -\frac{\sqrt{2}}{2}$
+3. $\tan x = \sqrt{3}$
+4. $\sec x = -2$
+5. $\csc x = \sqrt{2}$
+6. $\cot x = -1$
+7. $2\sin^2 x - \sin x - 1 = 0$
+8. $\sin^2 x = \frac{1}{4}$
+9. $\cos^2 x = \frac{3}{4}$（用两种方法）
+10. $3\tan^2 x - 1 = 0$
+11. $2\cos^2 x + \cos x - 1 = 0$
+12. $\cos 2x = \frac{\sqrt{3}}{2}$
+13. $\sin 2x = -\frac{1}{2}$
+14. $\tan 3x = 1$
+15. $2\sin^2 x + 3\cos x = 0$
+16. $\cos 2\theta + 3\cos\theta + 2 = 0$
+17. $\sin\theta + \cos\theta = 0$
+18. $3\sec^2 x + \tan x - 5 = 0$
+19. $\csc^2 x - 2\cot^2 x = 1$
+20. $2\sin x\cos x - \cos x = 0$
 
 ---
 
@@ -3687,6 +3833,28 @@ $$
 
 ---
 
+### 练习题 8.6（证明三角恒等式）
+
+证明下列恒等式：
+
+1. $\tan\theta + \cot\theta = \sec\theta\csc\theta$
+
+2. $\dfrac{1}{1 - \sin\theta} + \dfrac{1}{1 + \sin\theta} = 2\sec^2\theta$
+
+3. $\dfrac{\sin\theta}{1 + \cos\theta} + \dfrac{1 + \cos\theta}{\sin\theta} = 2\csc\theta$
+
+4. $\cos^4\theta - \sin^4\theta = \cos(2\theta)$
+
+5. $\dfrac{1 + \tan^2\theta}{1 + \cot^2\theta} = \tan^2\theta$
+
+6. $\dfrac{\sin(2\theta)}{\sin\theta} - \dfrac{\cos(2\theta)}{\cos\theta} = \sec\theta$
+
+7. $\sec^2\theta + \csc^2\theta = \sec^2\theta\csc^2\theta$
+
+8. $(\sin\theta + \cos\theta)^2 + (\sin\theta - \cos\theta)^2 = 2$
+
+---
+
 ## 本章知识结构总览
 
 ```
@@ -3738,6 +3906,119 @@ $$
 
 ---
 ---
+
+## 练习题答案
+
+### 练习题 8.1 答案
+
+1. (a) $\dfrac{\pi}{4}$ (b) $\dfrac{2\pi}{3}$ (c) $\dfrac{7\pi}{6}$ (d) $\dfrac{7\pi}{4}$
+
+2. (a) $135^\circ$ (b) $210^\circ$ (c) $300^\circ$ (d) $165^\circ$
+
+3. (a) $s = 8 \times 1.5 = 12$ cm (b) $A = \frac{1}{2} \times 64 \times 1.5 = 48$ cm²
+
+4. $\theta = \frac{12\pi}{9} = \frac{4\pi}{3}$ 弧度；$A = \frac{1}{2} \times 81 \times \frac{4\pi}{3} = 54\pi$ cm²
+
+5. (a) $\theta = \frac{24}{18} = \frac{4}{3}$ 弧度 (b) $s = 6 \times \frac{4}{3} = 8$ cm
+
+6. $A_{\text{弓}} = \frac{1}{2} \times 100 \times \frac{2\pi}{5} - \frac{1}{2} \times 100 \times \sin\frac{2\pi}{5} = 20\pi - 50\sin\frac{2\pi}{5}$ cm²
+
+7. $A = \frac{1}{2}(49 - 16) \times \frac{\pi}{4} = \frac{33\pi}{8}$ cm²
+
+8. (a) $\theta = \frac{20}{r} - 2$ (b) $A = 10r - r^2$，$r = 5$ 时 $A_{\max} = 25$ cm²
+
+### 练习题 8.2 答案
+
+1. $\cos\theta = \frac{5}{13}$，$\tan\theta = \frac{12}{5}$，$\sec\theta = \frac{13}{5}$，$\csc\theta = \frac{13}{12}$，$\cot\theta = \frac{5}{12}$
+
+2. $\sin\theta = -\frac{4}{5}$，$\tan\theta = \frac{4}{3}$，$\sec\theta = -\frac{5}{3}$，$\csc\theta = -\frac{5}{4}$，$\cot\theta = \frac{3}{4}$
+
+3. $\sin\theta = \frac{5}{13}$，$\cos\theta = -\frac{12}{13}$，$\sec\theta = -\frac{13}{12}$
+
+4. $\cos\theta = \frac{1}{2}$，$\sin\theta = -\frac{\sqrt{3}}{2}$，$\tan\theta = -\sqrt{3}$，$\csc\theta = -\frac{2\sqrt{3}}{3}$，$\cot\theta = -\frac{\sqrt{3}}{3}$
+
+5. (a) $-\frac{\sqrt{3}}{2}$ (b) $-\frac{\sqrt{2}}{2}$ (c) $-\frac{\sqrt{3}}{3}$ (d) $-\frac{1}{2}$ (e) $\frac{\sqrt{2}}{2}$ (f) $-1$
+
+6. $\theta \approx 3.61$ 弧度
+
+7. (a) 第三象限：$\sin-$, $\cos-$, $\tan+$ (b) 第四：$\sin-$, $\cos+$, $\tan-$
+   (c) 第四：$\sin-$, $\cos+$, $\tan-$ (d) 第三：$\sin-$, $\cos-$, $\tan+$
+   (e) 第四：$\sin-$, $\cos+$, $\tan-$ (f) 第四：$\sin-$, $\cos+$, $\tan-$
+
+### 练习题 8.3 答案
+
+1. (a) 振幅 $3$，周期 $\pi$，相移 $\frac{\pi}{6}$（右），垂直平移 $1$（上）
+   (b) 振幅 $2$，周期 $4\pi$，相移 $-\frac{\pi}{2}$（左），垂直平移 $-3$（下）
+   (c) 无振幅，周期 $\frac{\pi}{3}$，无相移，垂直平移 $2$（上）
+
+2. $y = 4\sin(2x) - 2$
+
+3. 周期 $T = \frac{\pi}{3}$；渐近线 $x = \frac{\pi}{9} + \frac{n\pi}{3}$，一个周期内 $x = \frac{\pi}{9}, \frac{4\pi}{9}$
+
+4. (1) $y = \cos x \to y = \cos(2x)$（水平压缩）(2) $\to y = -3\cos(2x)$（拉伸+翻转）(3) $\to y = -3\cos(2x) + 1$（上移）
+
+5. (a) $(0, \sqrt{2}-1), (\pi, 1), (2\pi, -1), (3\pi, -3), (4\pi, -1)$ (b) 最大值 $1$，最小值 $-3$
+
+6. $a = 4$, $b = 1$, $d = 3$，$y = 4\cos x + 3$
+
+7. 渐近线 $x = \frac{5\pi}{12}, \frac{11\pi}{12}$；$x$ 轴交点 $x = \frac{\pi}{6}, \frac{2\pi}{3}$
+
+### 练习题 8.4 答案
+
+1. (a) $\cos\theta = -\frac{4}{5}$ (b) $\sin(2\theta) = -\frac{24}{25}$ (c) $\cos(2\theta) = \frac{7}{25}$ (d) $\tan(2\theta) = -\frac{24}{7}$
+
+2. $\sin(2\theta) = \frac{3}{5}$，$\cos(2\theta) = -\frac{4}{5}$
+
+3. (a) $\cos\theta$ (b) $1$ (c) $\frac{1 - \cos(4\theta)}{8}$
+
+4. $\frac{1}{2} - \frac{5}{2}\cos(2\theta)$
+
+5. 左 $= (\sin^2\theta - \cos^2\theta)(\sin^2\theta + \cos^2\theta) = \sin^2\theta - \cos^2\theta$；$\theta = \frac{\pi}{6}$ 时值为 $-\frac{1}{2}$
+
+6. $\sin(2\theta) = \frac{24}{25}$，$\cos(2\theta) = \frac{7}{25}$
+
+7. $\sec\theta$
+
+### 练习题 8.5 答案
+
+1. $\frac{\pi}{6}, \frac{5\pi}{6}$ 
+2. $\frac{3\pi}{4}, \frac{5\pi}{4}$
+3. $\frac{\pi}{3}, \frac{4\pi}{3}$
+4. $\frac{2\pi}{3}, \frac{4\pi}{3}$
+5. $\frac{\pi}{4}, \frac{3\pi}{4}$
+6. $\frac{3\pi}{4}, \frac{7\pi}{4}$
+7. $\frac{\pi}{2}, \frac{7\pi}{6}, \frac{11\pi}{6}$
+8. $\frac{\pi}{6}, \frac{5\pi}{6}, \frac{7\pi}{6}, \frac{11\pi}{6}$
+9. $\frac{\pi}{6}, \frac{5\pi}{6}, \frac{7\pi}{6}, \frac{11\pi}{6}$
+10. $\frac{\pi}{6}, \frac{5\pi}{6}, \frac{7\pi}{6}, \frac{11\pi}{6}$
+11. $\frac{\pi}{3}, \frac{5\pi}{3}, \pi$
+12. $\frac{\pi}{12}, \frac{11\pi}{12}, \frac{13\pi}{12}, \frac{23\pi}{12}$
+13. $\frac{7\pi}{12}, \frac{11\pi}{12}, \frac{19\pi}{12}, \frac{23\pi}{12}$
+14. $\frac{\pi}{12}, \frac{5\pi}{12}, \frac{3\pi}{4}, \frac{13\pi}{12}, \frac{17\pi}{12}, \frac{7\pi}{4}$
+15. $\frac{2\pi}{3}, \frac{4\pi}{3}$
+16. $\frac{2\pi}{3}, \frac{4\pi}{3}, \pi$
+17. $\frac{3\pi}{4}, \frac{7\pi}{4}$
+18. $0.5880, 3.7296, \frac{3\pi}{4}, \frac{7\pi}{4}$
+19. $\frac{\pi}{2}, \frac{3\pi}{2}$
+20. $\frac{\pi}{2}, \frac{3\pi}{2}, \frac{\pi}{6}, \frac{5\pi}{6}$
+
+### 练习题 8.6 答案
+
+1. 左 $= \frac{\sin\theta}{\cos\theta} + \frac{\cos\theta}{\sin\theta} = \frac{\sin^2\theta + \cos^2\theta}{\sin\theta\cos\theta} = \frac{1}{\sin\theta\cos\theta} = \sec\theta\csc\theta$ $\blacksquare$
+
+2. 左 $= \frac{(1 + \sin\theta) + (1 - \sin\theta)}{(1 - \sin\theta)(1 + \sin\theta)} = \frac{2}{1 - \sin^2\theta} = \frac{2}{\cos^2\theta} = 2\sec^2\theta$ $\blacksquare$
+
+3. 左 $= \frac{\sin^2\theta + (1 + \cos\theta)^2}{\sin\theta(1 + \cos\theta)} = \frac{2 + 2\cos\theta}{\sin\theta(1 + \cos\theta)} = \frac{2}{\sin\theta} = 2\csc\theta$ $\blacksquare$
+
+4. 左 $= (\cos^2\theta - \sin^2\theta)(\cos^2\theta + \sin^2\theta) = \cos^2\theta - \sin^2\theta = \cos(2\theta)$ $\blacksquare$
+
+5. 左 $= \frac{\sec^2\theta}{\csc^2\theta} = \frac{1/\cos^2\theta}{1/\sin^2\theta} = \frac{\sin^2\theta}{\cos^2\theta} = \tan^2\theta$ $\blacksquare$
+
+6. 左 $= \frac{2\sin\theta\cos\theta}{\sin\theta} - \frac{2\cos^2\theta - 1}{\cos\theta} = 2\cos\theta - \frac{2\cos^2\theta - 1}{\cos\theta} = \frac{1}{\cos\theta} = \sec\theta$ $\blacksquare$
+
+7. 左 $= \frac{1}{\cos^2\theta} + \frac{1}{\sin^2\theta} = \frac{\sin^2\theta + \cos^2\theta}{\sin^2\theta\cos^2\theta} = \frac{1}{\sin^2\theta\cos^2\theta} = \sec^2\theta\csc^2\theta$ $\blacksquare$
+
+8. 左 $= (\sin^2\theta + 2\sin\theta\cos\theta + \cos^2\theta) + (\sin^2\theta - 2\sin\theta\cos\theta + \cos^2\theta) = 2(\sin^2\theta + \cos^2\theta) = 2$ $\blacksquare$
 
 ---
 
