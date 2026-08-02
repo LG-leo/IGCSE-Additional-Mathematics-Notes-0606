@@ -20,17 +20,17 @@ Each chapter follows the structure: **Concept Definition → Formula Derivation 
 - [Chapter 1: Sequences, Permutations, Combinations, and the Binomial Theorem](#chapter-1-sequences-permutations-combinations-and-the-binomial-theorem)
 - [Chapter 2: Vectors and Rates of Change](#chapter-2-vectors-and-rates-of-change)
 - [Chapter 3: Quadratic Functions (Including Polynomial Factors)](#chapter-3-quadratic-functions-including-polynomial-factors)
-- [Chapter 4: Functions (Linear, Cubic, Exponential, Logarithmic)](#chapter-4-functions-linear-cubic-exponential-logarithmic)
-- [Chapter 5: Differentiation (Derivatives)](#chapter-5-differentiation-derivatives)
-- [Chapter 6: Equations and Inequalities (Graphical Methods)](#chapter-6-equations-and-inequalities-graphical-methods)
-- [Chapter 7: Integration (Indefinite and Definite Integrals)](#chapter-7-integration-indefinite-and-definite-integrals)
-- [Chapter 8: Trigonometry (Including Radians)](#chapter-8-trigonometry-including-radians)
+- [Chapter 4: Equations and Inequalities (Graphical Methods)](#chapter-4-equations-and-inequalities-graphical-methods)
+- [Chapter 5: Functions (Linear, Cubic, Exponential, Logarithmic)](#chapter-5-functions-linear-cubic-exponential-logarithmic)
+- [Chapter 6: Trigonometry (Including Radians)](#chapter-6-trigonometry-including-radians)
+- [Chapter 7: Differentiation (Derivatives)](#chapter-7-differentiation-derivatives)
+- [Chapter 8: Integration (Indefinite and Definite Integrals)](#chapter-8-integration-indefinite-and-definite-integrals)
 - [Chapter 9: Geometry (Straight Lines and Circles)](#chapter-9-geometry-straight-lines-and-circles)
 - [Chapter 10: Comprehensive Applications](#chapter-10-comprehensive-applications)
 
 ---
 
-# Chapter 6: Equations and Inequalities (Graphical Methods)
+# Chapter 4: Equations and Inequalities (Graphical Methods)
 
 ## Introduction
 
@@ -112,9 +112,9 @@ An interval is a subset of the real numbers, represented by a continuous segment
 
 ---
 
-## 6.1 Absolute Value Equations
+## 4.1 Absolute Value Equations
 
-### 6.1.1 Definition and Geometric Meaning of Absolute Value
+### 4.1.1 Definition and Geometric Meaning of Absolute Value
 
 Geometrically, the absolute value $|A|$ represents the **distance** from point $A$ to the origin on the number line. Algebraically, it is defined as:
 
@@ -133,7 +133,7 @@ Important properties of absolute value:
 
 The core idea behind solving absolute value equations is **removing the absolute value sign**, usually achieved through case analysis or squaring both sides.
 
-### 6.1.2 Type $|ax + b| = c \quad (c \ge 0)$
+### 4.1.2 Type $|ax + b| = c \quad (c \ge 0)$
 
 This is the simplest absolute value equation. By definition, $|ax + b| = c$ is equivalent to:
 
@@ -199,7 +199,7 @@ Note: When $c = 0$, there is only one solution, because $4x + 3$ equals both $0$
 
 ---
 
-### 6.1.3 Type $|ax + b| = cx + d$
+### 4.1.3 Type $|ax + b| = cx + d$
 
 When the right-hand side also contains a variable, we cannot simply split into two equations — we must ensure the right-hand side is non-negative (absolute value is always non-negative, so the right-hand side must also be non-negative).
 
@@ -305,7 +305,7 @@ Therefore the solutions are $x = \frac{1}{4}$ and $x = -\frac{3}{2}$.
 
 ---
 
-### 6.1.4 Type $|ax + b| = |cx + d|$
+### 4.1.4 Type $|ax + b| = |cx + d|$
 
 When two absolute values are equal, it means the two expressions are either equal or opposites. No case analysis conditions are needed.
 
@@ -366,7 +366,7 @@ Therefore the solutions are $x = 6$ and $x = \frac{4}{3}$.
 
 ---
 
-### 6.1.5 Type $|ax^2 + bx + c| = d$
+### 4.1.5 Type $|ax^2 + bx + c| = d$
 
 When the expression inside the absolute value is a quadratic function, the approach is the same: removing the absolute value gives two quadratic equations.
 
@@ -430,11 +430,11 @@ Therefore the solutions are $x = 4, -4, \sqrt{2}, -\sqrt{2}$.
 
 ---
 
-## 6.2 Absolute Value Inequalities
+## 4.2 Absolute Value Inequalities
 
 The core idea of absolute value inequalities: **transform the absolute value inequality into a system of inequalities without absolute value**, then solve using the number line or graphs.
 
-### 6.2.1 Basic Types $|ax + b| > c$ and $|ax + b| \le c$
+### 4.2.1 Basic Types $|ax + b| > c$ and $|ax + b| \le c$
 
 **Core rules** ($c > 0$):
 
@@ -517,7 +517,7 @@ Solution set: $x \in (-\infty, -1) \cup (9, \infty)$.
 
 ---
 
-### 6.2.2 Type $k|ax + b| \le |cx + d| \quad (k > 0)$
+### 4.2.2 Type $k|ax + b| \le |cx + d| \quad (k > 0)$
 
 When both sides have absolute values, the most reliable method is **squaring both sides**, using the property $|A|^2 = A^2$ to obtain an inequality without absolute values.
 
@@ -649,7 +649,7 @@ i.e., $x \in \left[-\frac{1}{5}, 7\right]$.
 
 ---
 
-### 6.2.3 Type $|ax + b| \le cx + d$
+### 4.2.3 Type $|ax + b| \le cx + d$
 
 The right-hand side of this type of inequality is a linear expression. There are two methods: algebraic case analysis and graphical method.
 
@@ -731,7 +731,7 @@ Therefore the solution set is $x \ge \frac{3}{2}$, i.e., $x \in \left[\frac{3}{2
 
 ---
 
-### 6.2.4 Type $|ax^2 + bx + c| > d$ and $|ax^2 + bx + c| \le d$
+### 4.2.4 Type $|ax^2 + bx + c| > d$ and $|ax^2 + bx + c| \le d$
 
 Approach: Remove the absolute value to obtain two quadratic inequalities, solve each separately, then take the union or intersection.
 
@@ -847,11 +847,11 @@ Therefore the solution set is $x \in \left[-2, \frac{3}{2}\right]$.
 
 ---
 
-## 6.3 Substitution to Reduce to a Quadratic Equation
+## 4.3 Substitution to Reduce to a Quadratic Equation
 
 Some equations do not initially look like quadratic equations, but through clever **substitution** they can be transformed into familiar quadratic equations. The core of the substitution method is identifying a repeated structure in the expression, letting $u$ represent it, thereby simplifying the original equation.
 
-### 6.3.1 Exponential Substitution
+### 4.3.1 Exponential Substitution
 
 Equations of the form $a^{2x} + b \cdot a^x + c = 0$ can be solved by letting $u = a^x$ ($u > 0$), then $a^{2x} = (a^x)^2 = u^2$.
 
@@ -950,7 +950,7 @@ Therefore the solutions are $x = -1$ and $x = 1$.
 
 ---
 
-### 6.3.2 Logarithmic Substitution
+### 4.3.2 Logarithmic Substitution
 
 Equations of the form $(\ln x)^2 + a \ln x + b = 0$ or $2(\ln 5x)^2 + \ln 5x - 6 = 0$ can be solved by letting $u = \ln(g(x))$.
 
@@ -1054,7 +1054,7 @@ Verification: $\log_3 3 + \log_3 3 = 1 + 1 = 2$ ✓.
 
 ---
 
-### 6.3.3 Radical Substitution
+### 4.3.3 Radical Substitution
 
 For equations of the form $x - 6\sqrt{x} + 8 = 0$, let $u = \sqrt{x}$ ($u \ge 0$), then $x = u^2$.
 
@@ -1142,7 +1142,7 @@ Verification: $2(\frac{1}{4}) + 3\sqrt{\frac{1}{4}} - 2 = \frac{1}{2} + \frac{3}
 
 ---
 
-### 6.3.4 Fraction Substitution
+### 4.3.4 Fraction Substitution
 
 For equations of the form $x^2 + \frac{1}{x^2} + a\left(x + \frac{1}{x}\right) + b = 0$, use the relationship $(x + \frac{1}{x})^2 = x^2 + 2 + \frac{1}{x^2}$ and let $u = x + \frac{1}{x}$.
 
@@ -1192,7 +1192,7 @@ Therefore the solutions are $x = 2 + \sqrt{3}$ and $x = 2 - \sqrt{3}$.
 
 ---
 
-### 6.3.5 Trigonometric Substitution (Using Identities)
+### 4.3.5 Trigonometric Substitution (Using Identities)
 
 For equations of the form $\sin^2 x + \sin x - 2 = 0$, let $u = \sin x$, but note the domain restriction $u \in [-1, 1]$.
 
@@ -1245,9 +1245,9 @@ Therefore the solutions are $x = \frac{\pi}{6}, \frac{\pi}{2}, \frac{5\pi}{6}$.
 
 ---
 
-## 6.4 Cubic Polynomial Graphs and Inequalities
+## 4.4 Cubic Polynomial Graphs and Inequalities
 
-### 6.4.1 Graph Features of Products of Three Linear Factors
+### 4.4.1 Graph Features of Products of Three Linear Factors
 
 A cubic polynomial $f(x) = (x - a)(x - b)(x - c)$ (where $a < b < c$) has the following graph features:
 
@@ -1329,7 +1329,7 @@ Note the leading coefficient is negative: $-(x)(x)(x) = -x^3$. $x$-intercepts ar
 
 ---
 
-### 6.4.2 Graphs of Absolute Value Cubic Functions $y = |f(x)|$
+### 4.4.2 Graphs of Absolute Value Cubic Functions $y = |f(x)|$
 
 The graph of $y = |f(x)|$ is obtained by reflecting the parts of $y = f(x)$ that lie below the $x$-axis upward about the $x$-axis:
 
@@ -1402,7 +1402,7 @@ Let $M_1$ be the maximum value of $f(x)$ on $(-1, 2)$, and $M_2$ be the maximum 
 
 ---
 
-### 6.4.3 Graphical Solution of Cubic Inequalities
+### 4.4.3 Graphical Solution of Cubic Inequalities
 
 For $f(x) \ge d$ (or $>, \le, <$), where $f(x)$ is the product of three linear factors:
 
@@ -1472,13 +1472,13 @@ $f(x) \le 0$ holds for $x \in (-\infty, -\frac{1}{2}] \cup [2, 3]$.
 
 ---
 
-## 6.5 Simultaneous Equations
+## 4.5 Simultaneous Equations
 
-### 6.5.1 Graphical Meaning of Simultaneous Equations
+### 4.5.1 Graphical Meaning of Simultaneous Equations
 
 The solution to two simultaneous equations $\begin{cases} y = f(x) \\ y = g(x) \end{cases}$ is the coordinates of the **intersection points** of the two function graphs.
 
-### 6.5.2 Line with Line
+### 4.5.2 Line with Line
 
 The most common methods for solving systems of two linear equations are **elimination** and **substitution**.
 
@@ -1556,7 +1556,7 @@ Therefore the solution is $(x, y) = (6, 3)$.
 
 ---
 
-### 6.5.3 Line with Curve
+### 4.5.3 Line with Curve
 
 The general method is **substitution**: solve for one variable from the linear equation and substitute into the quadratic equation, obtaining a quadratic equation in one variable. The discriminant $\Delta$ determines the number of intersection points:
 
@@ -1663,7 +1663,7 @@ The intersection points are $(-1, 3)$ and $(-\frac{11}{5}, \frac{3}{5})$.
 
 ---
 
-### 6.5.4 Curve with Curve
+### 4.5.4 Curve with Curve
 
 When both equations are quadratic (or of higher degree), substituting may yield a higher-degree equation, but it can usually be simplified through factorisation or clever substitution.
 

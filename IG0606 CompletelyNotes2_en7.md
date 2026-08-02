@@ -20,17 +20,17 @@ Each chapter follows the structure: **Concept Definition → Formula Derivation 
 - [Chapter 1: Sequences, Permutations, Combinations, and the Binomial Theorem](#chapter-1-sequences-permutations-combinations-and-the-binomial-theorem)
 - [Chapter 2: Vectors and Rates of Change](#chapter-2-vectors-and-rates-of-change)
 - [Chapter 3: Quadratic Functions (Including Polynomial Factors)](#chapter-3-quadratic-functions-including-polynomial-factors)
-- [Chapter 4: Functions (Linear, Cubic, Exponential, Logarithmic)](#chapter-4-functions-linear-cubic-exponential-logarithmic)
-- [Chapter 5: Differentiation (Derivatives)](#chapter-5-differentiation-derivatives)
-- [Chapter 6: Equations and Inequalities (Graphical Methods)](#chapter-6-equations-and-inequalities-graphical-methods)
-- [Chapter 7: Integration (Indefinite and Definite Integrals)](#chapter-7-integration-indefinite-and-definite-integrals)
-- [Chapter 8: Trigonometry (Including Radians)](#chapter-8-trigonometry-including-radians)
+- [Chapter 4: Equations and Inequalities (Graphical Methods)](#chapter-4-equations-and-inequalities-graphical-methods)
+- [Chapter 5: Functions (Linear, Cubic, Exponential, Logarithmic)](#chapter-5-functions-linear-cubic-exponential-logarithmic)
+- [Chapter 6: Trigonometry (Including Radians)](#chapter-6-trigonometry-including-radians)
+- [Chapter 7: Differentiation (Derivatives)](#chapter-7-differentiation-derivatives)
+- [Chapter 8: Integration (Indefinite and Definite Integrals)](#chapter-8-integration-indefinite-and-definite-integrals)
 - [Chapter 9: Geometry (Straight Lines and Circles)](#chapter-9-geometry-straight-lines-and-circles)
 - [Chapter 10: Comprehensive Applications](#chapter-10-comprehensive-applications)
 
 ---
 
-# Chapter 7: Integration (Indefinite and Definite Integrals) [Revised and Expanded Edition]
+# Chapter 8: Integration (Indefinite and Definite Integrals) [Revised and Expanded Edition]
 
 ---
 
@@ -74,9 +74,9 @@ But the significance of integration goes far beyond being just a reverse operati
 
 ---
 
-## 7.1 Indefinite Integrals (Antiderivatives)
+## 8.1 Indefinite Integrals (Antiderivatives)
 
-### 7.1.1 From Differentiation to Integration — The Essence of the Inverse Operation
+### 8.1.1 From Differentiation to Integration — The Essence of the Inverse Operation
 
 We start with the most fundamental question.
 
@@ -104,7 +104,7 @@ Where:
 
 > **Formal definition**: A function $F(x)$ is called an **antiderivative** of $f(x)$ if $F'(x) = f(x)$ for all $x$ in the domain. The set of all antiderivatives of $f(x)$ is called the **indefinite integral**, denoted by $\displaystyle \int f(x) \, dx = F(x) + C$.
 
-### 7.1.2 The Inverse Relationship Between Integration and Differentiation — Verification
+### 8.1.2 The Inverse Relationship Between Integration and Differentiation — Verification
 
 Since integration is the inverse of differentiation, every integration formula can be verified by differentiation. This is the most reliable way to check whether an integration result is correct.
 
@@ -193,7 +193,7 @@ Verification: $\dfrac{d}{dx}\left(\dfrac{(2x+1)^3}{6}\right) = \dfrac{3(2x+1)^2 
 
 ---
 
-### 7.1.3 Linearity of Integration
+### 8.1.3 Linearity of Integration
 
 Integration satisfies **linearity**. This property derives from the linearity of differentiation and is the most fundamental rule in integration:
 
@@ -313,7 +313,7 @@ $$
 
 ---
 
-## 7.2 Basic Integration Formulas (Complete Derivations with Many Examples)
+## 8.2 Basic Integration Formulas (Complete Derivations with Many Examples)
 
 This section is **the most core content of this chapter**. All formulas must be memorised thoroughly, as the examination **does not provide a formula sheet**. For each formula, I will provide:
 1. The formula itself
@@ -322,7 +322,7 @@ This section is **the most core content of this chapter**. All formulas must be 
 
 ---
 
-### 7.2.1 Power Rule for Integration: $\displaystyle \int x^n \, dx \quad (n \neq -1)$
+### 8.2.1 Power Rule for Integration: $\displaystyle \int x^n \, dx \quad (n \neq -1)$
 
 **Formula**:
 
@@ -454,7 +454,7 @@ $$
 
 ---
 
-### 7.2.2 Special Case: $\displaystyle \int \frac{1}{x} \, dx$
+### 8.2.2 Special Case: $\displaystyle \int \frac{1}{x} \, dx$
 
 **Formula**:
 
@@ -554,7 +554,7 @@ Notice that here $x^{-2}$ uses the power rule ($n=-2 \neq -1$), and only $\dfrac
 
 ---
 
-### 7.2.3 Integrating Linear Composite Forms: $\displaystyle \int (ax+b)^n \, dx$
+### 8.2.3 Integrating Linear Composite Forms: $\displaystyle \int (ax+b)^n \, dx$
 
 **Formula** ($n \neq -1$):
 
@@ -676,7 +676,7 @@ $$
 
 ---
 
-### 7.2.4 Integrating Exponential Functions: $\displaystyle \int e^{ax+b} \, dx$
+### 8.2.4 Integrating Exponential Functions: $\displaystyle \int e^{ax+b} \, dx$
 
 **Formula**:
 
@@ -782,7 +782,7 @@ $$
 
 ---
 
-### 7.2.5 Integrating Trigonometric Functions
+### 8.2.5 Integrating Trigonometric Functions
 
 The three basic trigonometric integration formulas are all derived by reversing the derivative formulas learned in Chapter 5.
 
@@ -986,7 +986,7 @@ $$
 
 ---
 
-### 7.2.6 Super Comprehensive Examples (Complete Skills Check)
+### 8.2.6 Super Comprehensive Examples (Complete Skills Check)
 
 The following examples cover all types of integration techniques in this chapter. It is recommended to try them yourself first before checking the solutions.
 
@@ -1068,9 +1068,9 @@ $$
 
 ---
 
-## 7.3 Definite Integrals
+## 8.3 Definite Integrals
 
-### 7.3.1 From Indefinite to Definite Integrals — The Fundamental Theorem of Calculus
+### 8.3.1 From Indefinite to Definite Integrals — The Fundamental Theorem of Calculus
 
 An **indefinite integral** $\displaystyle \int f(x) \, dx$ gives a **family of functions** (containing an arbitrary constant $C$), while a **definite integral** $\displaystyle \int_a^b f(x) \, dx$ gives a **numerical value** — it represents the "accumulated effect" of the function $f(x)$ over the interval $[a, b]$.
 
@@ -1112,7 +1112,7 @@ $$
 
 ---
 
-### 7.3.2 Properties of Definite Integrals
+### 8.3.2 Properties of Definite Integrals
 
 **Property 1 (Linearity)**:
 
@@ -1150,7 +1150,7 @@ $$
 
 ---
 
-### 7.3.3 Procedure for Computing Definite Integrals
+### 8.3.3 Procedure for Computing Definite Integrals
 
 General steps for computing definite integrals:
 
@@ -1257,7 +1257,7 @@ $$
 
 ---
 
-### 7.3.4 Definite Integrals and Signed Area
+### 8.3.4 Definite Integrals and Signed Area
 
 The definite integral $\int_a^b f(x) \, dx$ gives the **signed area**:
 
@@ -1293,11 +1293,11 @@ $$
 
 ---
 
-## 7.4 Plane Area
+## 8.4 Plane Area
 
 This section is one of the most important geometric applications of definite integrals. We will systematically learn how to use integration to compute the area of various plane figures.
 
-### 7.4.1 Area Between a Curve and the $x$-axis
+### 8.4.1 Area Between a Curve and the $x$-axis
 
 **Case 1**: $f(x) \geq 0$ on $[a,b]$
 
@@ -1435,7 +1435,7 @@ Total area: $A = 4 + 4 = 8$
 
 ---
 
-### 7.4.2 Area Between a Line and a Curve
+### 8.4.2 Area Between a Line and a Curve
 
 **Core method**: If on the interval $[a,b]$, the curve $y = f(x)$ lies above the line $y = g(x)$ (i.e., $f(x) \geq g(x)$), then the area between them is:
 
@@ -1506,7 +1506,7 @@ $$
 
 ---
 
-### 7.4.3 Area Between Two Curves
+### 8.4.3 Area Between Two Curves
 
 When two curves $y = f(x)$ and $y = g(x)$ have multiple intersection points over an interval, piecewise handling is required — on each subinterval, determine which curve is above and which is below.
 
@@ -1553,7 +1553,7 @@ $$
 
 ---
 
-### 7.4.4 Sum of Multiple Areas (Syllabus Focus)
+### 8.4.4 Sum of Multiple Areas (Syllabus Focus)
 
 The syllabus explicitly requires "a sum of two areas." The key step in such problems is **correctly splitting the interval**.
 
@@ -1605,7 +1605,7 @@ $$
 
 ---
 
-### 7.4.5 Summary of Strategies for Plane Area Problems
+### 8.4.5 Summary of Strategies for Plane Area Problems
 
 | Scenario | Identifying Feature | Method |
 |------|---------|------|
@@ -1618,7 +1618,7 @@ $$
 
 ---
 
-### 7.5 Application of Definite Integrals to Kinematics
+### 8.5 Application of Definite Integrals to Kinematics
 
 > **Syllabus reference 14.14**: Use differentiation and integration to solve kinematics problems (displacement, velocity, acceleration).
 

@@ -35,6 +35,13 @@ You are free to **share** and **adapt** for **non-commercial purposes**, with at
 
 ---
 
+## FINAL DRAFT：
+
+- 1. See `Release/LAST 1.0_2eddition(2.1final)`
+- 2. See `Release/LAST 1.1_2eddition(2.1final+)`
+
+---
+
 ## 📖 Why this note exists
 
 > **Honest opinion:** The official Cambridge IGCSE Additional Mathematics (3rd edition) textbook is, frankly, poorly structured. Whole book are missing more than 50% of the contents + no order — with skipped steps, scrambled order, and unclear explanations.
@@ -77,7 +84,9 @@ To view the formulas properly:
 | Platform | Link |
 | :--- | :--- |
 | **GitHub** | [LG-leo/IGCSE-Additional-Mathematics-Notes-0606](https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606) |
-| **GitCode (China mirror)** | [gitcode.com/.../IG0606ADD_NOTEwithCAMcoursebook](https://gitcode.com/oiiioiiiooiiioio/IG0606ADD_NOTEwithCAMcoursebook) |
+| **GitCode (China mirror)** | `stop update` [gitcode.com/.../IG0606ADD_NOTEwithCAMcoursebook](https://gitcode.com/oiiioiiiooiiioio/IG0606ADD_NOTEwithCAMcoursebook) |
+
+* Gitcode cannot get the later( than May 2026) updates because ERROR425.
 
 ---
 

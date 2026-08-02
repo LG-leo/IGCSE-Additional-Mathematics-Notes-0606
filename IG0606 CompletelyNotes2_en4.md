@@ -20,17 +20,17 @@ Each chapter follows the structure: **Concept Definition → Formula Derivation 
 - [Chapter 1: Sequences, Permutations, Combinations, and the Binomial Theorem](#chapter-1-sequences-permutations-combinations-and-the-binomial-theorem)
 - [Chapter 2: Vectors and Rates of Change](#chapter-2-vectors-and-rates-of-change)
 - [Chapter 3: Quadratic Functions (Including Polynomial Factors)](#chapter-3-quadratic-functions-including-polynomial-factors)
-- [Chapter 4: Functions (Linear, Cubic, Exponential, Logarithmic)](#chapter-4-functions-linear-cubic-exponential-logarithmic)
-- [Chapter 5: Differentiation (Derivatives)](#chapter-5-differentiation-derivatives)
-- [Chapter 6: Equations and Inequalities (Graphical Methods)](#chapter-6-equations-and-inequalities-graphical-methods)
-- [Chapter 7: Integration (Indefinite and Definite Integrals)](#chapter-7-integration-indefinite-and-definite-integrals)
-- [Chapter 8: Trigonometry (Including Radians)](#chapter-8-trigonometry-including-radians)
+- [Chapter 4: Equations and Inequalities (Graphical Methods)](#chapter-4-equations-and-inequalities-graphical-methods)
+- [Chapter 5: Functions (Linear, Cubic, Exponential, Logarithmic)](#chapter-5-functions-linear-cubic-exponential-logarithmic)
+- [Chapter 6: Trigonometry (Including Radians)](#chapter-6-trigonometry-including-radians)
+- [Chapter 7: Differentiation (Derivatives)](#chapter-7-differentiation-derivatives)
+- [Chapter 8: Integration (Indefinite and Definite Integrals)](#chapter-8-integration-indefinite-and-definite-integrals)
 - [Chapter 9: Geometry (Straight Lines and Circles)](#chapter-9-geometry-straight-lines-and-circles)
 - [Chapter 10: Comprehensive Applications](#chapter-10-comprehensive-applications)
 
 ---
 
-# Chapter 4: Functions (Linear, Cubic, Exponential, Logarithmic)
+# Chapter 5: Functions (Linear, Cubic, Exponential, Logarithmic)
 
 ## Syllabus Mapping
 
@@ -54,9 +54,9 @@ This chapter covers all content from **Topic 1: Functions** and **Topic 6: Logar
 
 ---
 
-## 4.1 Fundamental Concepts of Functions
+## 5.1 Fundamental Concepts of Functions
 
-### 4.1.1 What is a Function?
+### 5.1.1 What is a Function?
 
 A function is a special type of relation: it maps **each** input value $x$ in the **domain** to **exactly one** output value $y = f(x)$. We say $y$ is the **image** of $x$.
 
@@ -76,7 +76,7 @@ For each value of $x$ in the domain, the relation gives exactly one value of $y$
 - $x = y^2$ **is not** a function: e.g., when $x=4$, $y$ can be $2$ or $-2$, one $x$ corresponds to two $y$'s.
 - $y = \pm\sqrt{x}$ **is not** a function: each positive $x$ corresponds to two $y$ values.
 
-### 4.1.2 One–One (Injective) and Many–One Functions
+### 5.1.2 One–One (Injective) and Many–One Functions
 
 - **One–one function (injective)**: Different $x$ values in the domain correspond to different $y$ values. That is: if $x_1 \neq x_2$, then $f(x_1) \neq f(x_2)$. Test method — **horizontal line test**: any horizontal line intersects the graph at most once.
 
@@ -84,7 +84,7 @@ For each value of $x$ in the domain, the relation gives exactly one value of $y$
 
 > ⚠️ **Only one–one functions have inverses**. This is because the inverse function needs to uniquely map each output value back to an input value — if the original function is many–one, the inverse would be one–many, which violates the definition of a function.
 
-### 4.1.3 Function Notation
+### 5.1.3 Function Notation
 
 Function notation used in IGCSE 0606 includes:
 
@@ -96,7 +96,7 @@ Function notation used in IGCSE 0606 includes:
 
 > ⚠️ **Important**: The notation $f^2(x)$ **does not apply to trigonometric functions**. For example, $\sin^2 x$ means $(\sin x)^2$, not $\sin(\sin x)$.
 
-### 4.1.4 Finding Domain and Range
+### 5.1.4 Finding Domain and Range
 
 Restrictions to consider when finding the domain:
 
@@ -223,9 +223,9 @@ This is the **upper semicircle** with centre at the origin and radius $2$. The m
 
 ---
 
-## 4.2 Linear Functions and Cubic Functions
+## 5.2 Linear Functions and Cubic Functions
 
-### 4.2.1 Linear Functions $f(x) = mx + c$
+### 5.2.1 Linear Functions $f(x) = mx + c$
 
 Linear functions are the simplest type of function. Their graph is a straight line.
 
@@ -249,7 +249,7 @@ $$
 y - y_0 = m(x - x_0)
 $$
 
-### 4.2.2 Cubic Functions $f(x) = ax^3 + bx^2 + cx + d$ ($a \neq 0$)
+### 5.2.2 Cubic Functions $f(x) = ax^3 + bx^2 + cx + d$ ($a \neq 0$)
 
 The graph of a cubic function has an S-shape (or inverted S-shape). Its derivative $f'(x) = 3ax^2 + 2bx + c$ is a quadratic function, which may have two zeros (corresponding to local extreme points), or only one, or no real zeros.
 
@@ -418,7 +418,7 @@ $$
 
 ---
 
-## 4.3 Exponential Functions and Logarithmic Functions
+## 5.3 Exponential Functions and Logarithmic Functions
 
 > **Prerequisite Knowledge**: If you are already familiar with exponential operations (e.g., $2^3 = 8$) and logarithms (e.g., $\log_2 8 = 3$), you can skip ahead directly to §4.3.1. If this is your first encounter, the following content will help you build an intuitive understanding.
 
@@ -490,7 +490,7 @@ Exponential function $a^x$         Logarithmic function $\log_a x$
 
 ---
 
-### 4.3.1 Exponential Functions $f(x) = a^x$ ($a > 0$, $a \neq 1$)
+### 5.3.1 Exponential Functions $f(x) = a^x$ ($a > 0$, $a \neq 1$)
 
 The core characteristic of an exponential function is that the rate of growth (or decay) is proportional to the function value itself.
 
@@ -519,7 +519,7 @@ $$
 
 When $a = e$, $\ln e = 1$, and the derivative simplifies to $e^x$ itself.
 
-### 4.3.2 Detailed Derivation of the Natural Exponential Function $e^x$
+### 5.3.2 Detailed Derivation of the Natural Exponential Function $e^x$
 
 **Question**: Does there exist a number $e$ such that the derivative of $e^x$ equals $e^x$?
 
@@ -563,7 +563,7 @@ $$
 - $n = 100$: $(1.01)^{100} \approx 2.705$
 - $n = 10000$: $(1.0001)^{10000} \approx 2.718$
 
-### 4.3.3 Logarithmic Functions $f(x) = \log_a x$ ($a > 0$, $a \neq 1$)
+### 5.3.3 Logarithmic Functions $f(x) = \log_a x$ ($a > 0$, $a \neq 1$)
 
 The logarithmic function is the **inverse** of the exponential function:
 
@@ -598,7 +598,7 @@ By the definition of the logarithm, $p = \log_a q$, so point $(q, p)$ lies on $y
 Point $(p, q)$ reflected across the line $y = x$ is exactly $(q, p)$ (because the coordinates are swapped).
 Therefore the graphs of the two functions are symmetrical about $y = x$.
 
-### 4.3.4 Detailed Derivation of Logarithmic Laws
+### 5.3.4 Detailed Derivation of Logarithmic Laws
 
 The essence of logarithm laws is **downgrading** the operation — multiplication becomes addition, division becomes subtraction, and exponents become coefficients.
 
@@ -648,7 +648,7 @@ $$
 a^{\log_a x} = x \quad (x > 0), \qquad \log_a (a^x) = x \quad (x \in \mathbb{R})
 $$
 
-### 4.3.5 Solving Exponential Equations $a^x = b$
+### 5.3.5 Solving Exponential Equations $a^x = b$
 
 **Basic method**: Take logarithms of both sides, then use the power law to bring the exponent down as a coefficient.
 
@@ -935,9 +935,9 @@ The $x$-intercept is $(1 + e^{-3/2}, 0)$ (approximately $(1.223, 0)$).
 
 ---
 
-## 4.4 Inverse Functions and Composite Functions
+## 5.4 Inverse Functions and Composite Functions
 
-### 4.4.1 Inverse Functions
+### 5.4.1 Inverse Functions
 
 **Definition**: If a function $f$ is one–one (injective), then it has an inverse $f^{-1}$, satisfying:
 
@@ -985,7 +985,7 @@ If $f$ is not one–one (i.e., there exist $x_1 \neq x_2$ such that $f(x_1) = f(
 
 > ⚠️ **Key point**: Sometimes the domain of the original function must be **restricted** to make $f$ one–one, so that an inverse exists. For example, $f(x) = x^2$ is not one–one on all of $\mathbb{R}$, but restricting to $x \geq 0$ makes it one–one, and the inverse becomes $\sqrt{x}$.
 
-### 4.4.2 Composite Functions
+### 5.4.2 Composite Functions
 
 **Definition**: $(f \circ g)(x) = f(g(x))$, read as "$f$ composed with $g$", also written as $fg(x)$.
 
@@ -1298,9 +1298,9 @@ $\text{Domain}(f) = [0, \infty)$, $\text{Domain}(gf) = [0, 9) \cup (9, \infty) \
 
 ---
 
-## 4.5 Graphs of Absolute Value Functions $y = |f(x)|$
+## 5.5 Graphs of Absolute Value Functions $y = |f(x)|$
 
-### 4.5.1 Basic Principles
+### 5.5.1 Basic Principles
 
 $y = |f(x)|$ is defined as:
 
@@ -1318,7 +1318,7 @@ $$
 - At points where $f(x) = 0$ (i.e., $x$-intercepts), the absolute value graph forms **cusps** — because the slope suddenly changes sign on either side.
 - The range of $|f(x)|$ is $[0, \infty)$ (if the original function can take arbitrarily large positive values) or $[0, \text{finite maximum}]$.
 
-### 4.5.2 Characteristics of Absolute Value Graphs for Different Function Types
+### 5.5.2 Characteristics of Absolute Value Graphs for Different Function Types
 
 | Original function type | Features of $|f(x)|$ |
 |-----------|----------------|
@@ -1331,7 +1331,7 @@ $$
 | **Exponential** $|a^x|$ | Same as $a^x$ (since $a^x > 0$) |
 | **Logarithmic** $|\log_a x|$ | Cusp at $x$-intercept, part where $x < 1$ reflected upward |
 
-### 4.5.3 Solving Absolute Value Equations and Inequalities
+### 5.5.3 Solving Absolute Value Equations and Inequalities
 
 **Equation $|f(x)| = k$ ($k > 0$)**: Equivalent to $f(x) = k$ or $f(x) = -k$.
 

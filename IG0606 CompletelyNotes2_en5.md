@@ -20,17 +20,17 @@ Each chapter follows the structure: **Concept Definition → Formula Derivation 
 - [Chapter 1: Sequences, Permutations, Combinations, and the Binomial Theorem](#chapter-1-sequences-permutations-combinations-and-the-binomial-theorem)
 - [Chapter 2: Vectors and Rates of Change](#chapter-2-vectors-and-rates-of-change)
 - [Chapter 3: Quadratic Functions (Including Polynomial Factors)](#chapter-3-quadratic-functions-including-polynomial-factors)
-- [Chapter 4: Functions (Linear, Cubic, Exponential, Logarithmic)](#chapter-4-functions-linear-cubic-exponential-logarithmic)
-- [Chapter 5: Differentiation (Derivatives)](#chapter-5-differentiation-derivatives)
-- [Chapter 6: Equations and Inequalities (Graphical Methods)](#chapter-6-equations-and-inequalities-graphical-methods)
-- [Chapter 7: Integration (Indefinite and Definite Integrals)](#chapter-7-integration-indefinite-and-definite-integrals)
-- [Chapter 8: Trigonometry (Including Radians)](#chapter-8-trigonometry-including-radians)
+- [Chapter 4: Equations and Inequalities (Graphical Methods)](#chapter-4-equations-and-inequalities-graphical-methods)
+- [Chapter 5: Functions (Linear, Cubic, Exponential, Logarithmic)](#chapter-5-functions-linear-cubic-exponential-logarithmic)
+- [Chapter 6: Trigonometry (Including Radians)](#chapter-6-trigonometry-including-radians)
+- [Chapter 7: Differentiation (Derivatives)](#chapter-7-differentiation-derivatives)
+- [Chapter 8: Integration (Indefinite and Definite Integrals)](#chapter-8-integration-indefinite-and-definite-integrals)
 - [Chapter 9: Geometry (Straight Lines and Circles)](#chapter-9-geometry-straight-lines-and-circles)
 - [Chapter 10: Comprehensive Applications](#chapter-10-comprehensive-applications)
 
 ---
 
-# Chapter 5: Differentiation (Derivatives)
+# Chapter 7: Differentiation (Derivatives)
 
 ## Syllabus Mapping
 
@@ -68,9 +68,9 @@ This chapter starts from the basic concept of the derivative, then covers the pr
 
 ---
 
-## 5.1 The Concept of the Derivative and Notation
+## 7.1 The Concept of the Derivative and Notation
 
-### 5.1.1 From Average Rate of Change to Instantaneous Rate of Change
+### 7.1.1 From Average Rate of Change to Instantaneous Rate of Change
 
 Rate of change is a concept we are very familiar with. For example, if a car travels 120 kilometres in 2 hours, its **average speed** is:
 
@@ -94,7 +94,7 @@ $$
 
 Here $\lim_{\delta x \to 0}$ means "as $\delta x$ tends to $0$". Whether this limit exists (i.e., whether the derivative exists) depends on whether the function is "smooth" at that point.
 
-### 5.1.2 Geometric Meaning of the Derivative
+### 7.1.2 Geometric Meaning of the Derivative
 
 Geometrically, the derivative $f'(a)$ is the **slope of the tangent line** to the curve $y = f(x)$ at the point $(a, f(a))$.
 
@@ -102,7 +102,7 @@ Geometrically, the derivative $f'(a)$ is the **slope of the tangent line** to th
 - If $f'(a) < 0$, the curve is **decreasing** at that point (the tangent slopes downward to the right).
 - If $f'(a) = 0$, the curve is **horizontal** at that point (could be a maximum, a minimum, or a saddle point).
 
-### 5.1.3 Notation
+### 7.1.3 Notation
 
 There are several notations for derivatives commonly seen in exams:
 
@@ -115,7 +115,7 @@ There are several notations for derivatives commonly seen in exams:
 
 > ⚠️ **Important understanding**: The notation $\frac{dy}{dx}$ is not a fraction, but a single symbol representing the result of the operation "differentiate with respect to $x$". However, in small increment approximations, we can treat it as a "ratio" ($\delta y \approx \frac{dy}{dx} \cdot \delta x$), which is very effective for linear approximations.
 
-### 5.1.4 Intuitive Understanding of Limits
+### 7.1.4 Intuitive Understanding of Limits
 
 In the process of differentiation, we often encounter the indeterminate form $\frac{0}{0}$. The usual method is to **factorise and cancel** before substituting.
 
@@ -239,11 +239,11 @@ $$
 
 ---
 
-## 5.2 Product Rule and Quotient Rule
+## 7.2 Product Rule and Quotient Rule
 
 When two functions are multiplied or divided, their derivatives cannot be found by simply differentiating each part separately and then multiplying or dividing. Special rules are needed.
 
-### 5.2.1 Product Rule
+### 7.2.1 Product Rule
 
 Let $y = u \cdot v$, where $u$ and $v$ are both functions of $x$. Then:
 
@@ -279,7 +279,7 @@ $$
 (uv)' = u(x) \cdot v'(x) + v(x) \cdot u'(x) = uv' + vu'
 $$
 
-### 5.2.2 Quotient Rule
+### 7.2.2 Quotient Rule
 
 Let $y = \frac{u}{v}$, where $u$ and $v$ are both functions of $x$, and $v \neq 0$. Then:
 
@@ -450,11 +450,11 @@ $$
 
 ---
 
-## 5.3 Basic Differentiation Formulas
+## 7.3 Basic Differentiation Formulas
 
 Now that we have the concept of the derivative, we need an efficient set of tools for differentiation, rather than using the limit definition every time. Below are the most basic differentiation formulas, which must be mastered thoroughly.
 
-### 5.3.1 Derivation of the Power Rule
+### 7.3.1 Derivation of the Power Rule
 
 For $f(x) = x^n$, where $n$ is a positive integer, we first derive using the Binomial Theorem.
 
@@ -501,7 +501,7 @@ The following table shows common cases:
 | $\frac{1}{x^2}$ | $x^{-2}$ | $-2x^{-3} = -\frac{2}{x^3}$ | $n = -2$ |
 | $\sqrt[3]{x}$ | $x^{1/3}$ | $\frac{1}{3}x^{-2/3} = \frac{1}{3\sqrt[3]{x^2}}$ | $n = \frac{1}{3}$ |
 
-### 5.3.2 Constant Multiple and Sum/Difference Rules
+### 7.3.2 Constant Multiple and Sum/Difference Rules
 
 Differentiating linear combinations of functions is very straightforward:
 
@@ -519,7 +519,7 @@ $$
 f'(x) = 3 \cdot (2x) - 4 \cdot (1) + 0 = 6x - 4
 $$
 
-### 5.3.3 Derivatives of Trigonometric Functions
+### 7.3.3 Derivatives of Trigonometric Functions
 
 **Core condition**: All angles in trigonometric functions **must be in radians**.
 
@@ -549,7 +549,7 @@ $$
 
 Similarly, $\frac{d}{dx}(\cos x) = -\sin x$ can be derived.
 
-For $\tan x$, we use $\tan x = \frac{\sin x}{\cos x}$ and the quotient rule (see Section 5.2).
+For $\tan x$, we use $\tan x = \frac{\sin x}{\cos x}$ and the quotient rule (see Section 7.2).
 
 Summary of standard formulas:
 
@@ -565,7 +565,7 @@ $$
 \boxed{\frac{d}{dx}(\tan x) = \sec^2 x}
 $$
 
-### 5.3.4 Derivatives of Exponential and Logarithmic Functions
+### 7.3.4 Derivatives of Exponential and Logarithmic Functions
 
 $$
 \boxed{\frac{d}{dx}(e^x) = e^x}
@@ -822,9 +822,9 @@ Note: If it were $2x^3$, the derivative would be $6x^2$ — they are different.
 
 ---
 
-## 5.4 Chain Rule
+## 7.4 Chain Rule
 
-### 5.4.1 Principle of the Chain Rule
+### 7.4.1 Principle of the Chain Rule
 
 When we want to differentiate a composite function — for example, $y = (2x+1)^3$ or $y = \sin(3x)$ — we need the **chain rule**.
 
@@ -842,7 +842,7 @@ $$
 
 That is: **the derivative of the outer function with respect to the intermediate variable, multiplied by the derivative of the intermediate variable with respect to the independent variable**.
 
-### 5.4.2 Intuitive Understanding of the Chain Rule
+### 7.4.2 Intuitive Understanding of the Chain Rule
 
 Why does the chain rule work? Consider small changes:
 
@@ -857,7 +857,7 @@ $$
 
 As $\delta x \to 0$, the approximation becomes an exact equality.
 
-### 5.4.3 Common Application Patterns of the Chain Rule
+### 7.4.3 Common Application Patterns of the Chain Rule
 
 The following six patterns cover the most common applications of the chain rule in IGCSE Additional Mathematics. Each pattern is accompanied by a complete step-by-step derivation and a typical example.
 
@@ -1151,7 +1151,7 @@ $$
 \frac{dy}{dx} = 5\sec^2(5x)
 $$
 
-### 5.4.4 Multi-layer Chain Rule
+### 7.4.4 Multi-layer Chain Rule
 
 When a function has three or more layers of composition, the chain rule can be applied multiple times in succession. For example, $y = f(g(h(x)))$:
 
@@ -1303,16 +1303,16 @@ $$
 
 ---
 
-## 5.5 Tangents and Normals
+## 7.5 Tangents and Normals
 
-### 5.5.1 Basic Knowledge
+### 7.5.1 Basic Knowledge
 
 Given a smooth curve $y = f(x)$ and a point $P(a, f(a))$ on it:
 
 - **Tangent**: The line that passes through $P$ with slope $f'(a)$. The tangent is the **best linear approximation** to the curve at that point.
 - **Normal**: The line that passes through $P$ and is perpendicular to the tangent.
 
-### 5.5.2 Standard Three-Step Method (When the Point of Tangency is Known)
+### 7.5.2 Standard Three-Step Method (When the Point of Tangency is Known)
 
 When the problem says "the tangent at point $P$", $P$ is the point of tangency. The solution steps are:
 
@@ -1334,13 +1334,13 @@ Special cases:
 - If $f'(a) = 0$ (tangent is horizontal), the normal is the vertical line $x = a$.
 - If $f'(a)$ does not exist (e.g., a cusp), the tangent is vertical and the normal is horizontal.
 
-### 5.5.3 Why is the Tangent Slope Equal to the Derivative?
+### 7.5.3 Why is the Tangent Slope Equal to the Derivative?
 
 Geometrically, the line connecting two points $(a, f(a))$ and $(a+\delta x, f(a+\delta x))$ on the curve has slope $\frac{f(a+\delta x) - f(a)}{\delta x}$. As $\delta x$ approaches $0$, this line approaches the tangent line, and its slope approaches the derivative $f'(a)$.
 
 Algebraically, the tangent equation $y = f(a) + f'(a)(x-a)$ has the same function value and the same first derivative as the curve at $x=a$, making it the "best linear approximation."
 
-### 5.5.4 Important Pitfall: When the Point of Tangency is Unknown
+### 7.5.4 Important Pitfall: When the Point of Tangency is Unknown
 
 If the problem says "the tangent passing through point $P$" (rather than "at point $P$"), then $P$ **may not be the point of tangency**. In this case:
 
@@ -1489,9 +1489,9 @@ Intersection with $y$-axis: set $x = 0$, $y = 0 - 1 = -1$, i.e., $(0, -1)$.
 
 ---
 
-## 5.6 Stationary Points (Maxima and Minima)
+## 7.6 Stationary Points (Maxima and Minima)
 
-### 5.6.1 What is a Stationary Point?
+### 7.6.1 What is a Stationary Point?
 
 A **stationary point** is a point on the graph where the tangent is horizontal (slope zero). At a stationary point, the function value may be a local maximum, a local minimum, or neither (the latter case is not examined in IGCSE).
 
@@ -1500,7 +1500,7 @@ A **stationary point** is a point on the graph where the tangent is horizontal (
 2. Solve $f'(x) = 0$.
 3. Each solution $x = a$ corresponds to a stationary point $(a, f(a))$.
 
-### 5.6.2 Distinguishing Between Maxima and Minima
+### 7.6.2 Distinguishing Between Maxima and Minima
 
 There are two methods to distinguish between maxima and minima.
 
@@ -1531,7 +1531,7 @@ The second derivative $f''(x)$ is the derivative of the first derivative. It tel
 - $f''(a) > 0$ means $f'(x)$ is increasing at $x=a$. Since $f'(a)=0$, $f'$ changes from negative to positive → minimum.
 - $f''(a) < 0$ means $f'(x)$ is decreasing at $x=a$. Since $f'(a)=0$, $f'$ changes from positive to negative → maximum.
 
-### 5.6.3 Finding the Second Derivative
+### 7.6.3 Finding the Second Derivative
 
 The second derivative is the derivative of the first derivative. In notation:
 
@@ -1905,9 +1905,9 @@ Thus $a = -3$, $b = 9$. $f(x) = x^3 - 3x^2 + 9$.
 
 ---
 
-## 5.7 Connected Rates of Change and Small Increments Approximation
+## 7.7 Connected Rates of Change and Small Increments Approximation
 
-### 5.7.1 Connected Rates of Change
+### 7.7.1 Connected Rates of Change
 
 Connected rates of change problems deal with the **rates of change of multiple interrelated quantities**. The core idea is: if $y$ depends on $u$ through some relationship, and $u$ in turn depends on $x$, then we can link $\frac{dy}{dx}$ to $\frac{dy}{du}$ and $\frac{du}{dx}$ through the chain rule.
 
@@ -1927,7 +1927,7 @@ $$
 3. Differentiate both sides of the relationship with respect to time $t$ (implicit differentiation).
 4. Substitute the known values and solve for the unknown rate of change.
 
-### 5.7.2 Small Increments and Approximations
+### 7.7.2 Small Increments and Approximations
 
 Another important application of the derivative is using the tangent line to approximate the change in a function near a given point.
 
@@ -2158,9 +2158,9 @@ So the maximum approximate error in the volume is about $10\pi \approx 31.4$ cm�
 
 ---
 
-## 5.8 Practical Maxima and Minima Problems
+## 7.8 Practical Maxima and Minima Problems
 
-### 5.8.1 Problem-solving Approach
+### 7.8.1 Problem-solving Approach
 
 Practical maxima and minima problems apply calculus to real-world optimisation problems — for example, how to use the least material to make a container, how to maximise profit given a certain cost, how to determine the fastest route, etc.
 
@@ -2556,7 +2556,7 @@ $$
 
 ## Answers to Practice Problems
 
-### 5.1 Concept of Derivative and Notation
+### 7.1 Concept of Derivative and Notation
 
 1. $f'(1) = 4$
    - $f(1+\delta x) = (1+\delta x)^2 + 2(1+\delta x) = 1 + 2\delta x + (\delta x)^2 + 2 + 2\delta x = 3 + 4\delta x + (\delta x)^2$
@@ -2570,7 +2570,7 @@ $$
    - $\lim_{x \to 4} \frac{x^2 - 16}{x - 4} = \lim_{x \to 4} \frac{(x-4)(x+4)}{x-4} = \lim_{x \to 4} (x+4) = 8$
 
 
-### 5.2 Product Rule and Quotient Rule
+### 7.2 Product Rule and Quotient Rule
 
 1. $y' = 2xe^x + x^2e^x = xe^x(2 + x)$
 2. $y' = \frac{3(x-2) - 3x(1)}{(x-2)^2} = \frac{3x-6-3x}{(x-2)^2} = -\frac{6}{(x-2)^2}$
@@ -2579,7 +2579,7 @@ $$
 5. $y' = e^x\sin x + e^x\cos x = e^x(\sin x + \cos x)$
 
 
-### 5.3 Basic Differentiation Formulas
+### 7.3 Basic Differentiation Formulas
 
 1. $f'(x) = 12x^2 - 4x + 5$
 
@@ -2591,7 +2591,7 @@ $$
 4. $p'(x) = 2e^x + 4^x\ln 4 - \frac{1}{3x}$
 
 
-### 5.4 Chain Rule
+### 7.4 Chain Rule
 
 1. $y' = 20(5x+2)^3$
 2. $y = (3x-1)^{-1/2}$, $y' = -\frac{3}{2}(3x-1)^{-3/2} = -\frac{3}{2\sqrt{(3x-1)^3}}$
@@ -2600,7 +2600,7 @@ $$
 5. $y' = 3\cos^2(2x) \cdot (-\sin(2x)) \cdot 2 = -6\cos^2(2x)\sin(2x) = -3\cos(2x)\sin(4x)$
 
 
-### 5.5 Tangents and Normals
+### 7.5 Tangents and Normals
 
 1. $f(x) = x^3$, $f'(x) = 3x^2$, $f'(2) = 12$
    - Tangent: $y - 8 = 12(x - 2)$, i.e., $y = 12x - 16$
@@ -2623,7 +2623,7 @@ $$
    - $a = 1 - \sqrt{3}$: slope $m = -2\sqrt{3}$, tangent $y = -2\sqrt{3}x + 2\sqrt{3} - 4$
 
 
-### 5.6 Stationary Points
+### 7.6 Stationary Points
 
 1. $f'(x) = 3x^2 - 12x + 9 = 3(x-1)(x-3)$
    $x = 1$: $f(1) = 5$, $f''(1) = 6-12 = -6 < 0$ → maximum
@@ -2641,7 +2641,7 @@ $$
    $x = 2$: $f(2) = 16 - 12 - 24 + 5 = -15$, $f''(2) = 24 - 6 = 18 > 0$ → minimum $-15$
 
 
-### 5.7 Connected Rates of Change and Small Increments Approximation
+### 7.7 Connected Rates of Change and Small Increments Approximation
 
 1. $A = s^2$, $\frac{dA}{dt} = 2s\frac{ds}{dt} = 2(10)(3) = 60$ cm²/s
 
@@ -2653,7 +2653,7 @@ $$
    $16\pi = 4\pi(2)^2\frac{dr}{dt} = 16\pi\frac{dr}{dt}$ → $\frac{dr}{dt} = 1$ m/s
 
 
-### 5.8 Practical Maxima and Minima Problems
+### 7.8 Practical Maxima and Minima Problems
 
 1. Let length be $x$, width be $y$, $2x + 2y = 120$, $y = 60 - x$
    $A = xy = x(60-x) = 60x - x^2$

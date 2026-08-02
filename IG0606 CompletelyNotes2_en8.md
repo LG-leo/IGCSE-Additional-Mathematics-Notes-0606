@@ -20,17 +20,17 @@ Each chapter follows the structure: **Concept Definition → Formula Derivation 
 - [Chapter 1: Sequences, Permutations, Combinations, and the Binomial Theorem](#chapter-1-sequences-permutations-combinations-and-the-binomial-theorem)
 - [Chapter 2: Vectors and Rates of Change](#chapter-2-vectors-and-rates-of-change)
 - [Chapter 3: Quadratic Functions (Including Polynomial Factors)](#chapter-3-quadratic-functions-including-polynomial-factors)
-- [Chapter 4: Functions (Linear, Cubic, Exponential, Logarithmic)](#chapter-4-functions-linear-cubic-exponential-logarithmic)
-- [Chapter 5: Differentiation (Derivatives)](#chapter-5-differentiation-derivatives)
-- [Chapter 6: Equations and Inequalities (Graphical Methods)](#chapter-6-equations-and-inequalities-graphical-methods)
-- [Chapter 7: Integration (Indefinite and Definite Integrals)](#chapter-7-integration-indefinite-and-definite-integrals)
-- [Chapter 8: Trigonometry (Including Radians)](#chapter-8-trigonometry-including-radians)
+- [Chapter 4: Equations and Inequalities (Graphical Methods)](#chapter-4-equations-and-inequalities-graphical-methods)
+- [Chapter 5: Functions (Linear, Cubic, Exponential, Logarithmic)](#chapter-5-functions-linear-cubic-exponential-logarithmic)
+- [Chapter 6: Trigonometry (Including Radians)](#chapter-6-trigonometry-including-radians)
+- [Chapter 7: Differentiation (Derivatives)](#chapter-7-differentiation-derivatives)
+- [Chapter 8: Integration (Indefinite and Definite Integrals)](#chapter-8-integration-indefinite-and-definite-integrals)
 - [Chapter 9: Geometry (Straight Lines and Circles)](#chapter-9-geometry-straight-lines-and-circles)
 - [Chapter 10: Comprehensive Applications](#chapter-10-comprehensive-applications)
 
 ---
 
-# Chapter 8: Trigonometry (Including Radians)
+# Chapter 6: Trigonometry (Including Radians)
 
 ---
 
@@ -54,9 +54,9 @@ Trigonometry is one of the most instrumental and widely applicable chapters in A
 
 ---
 
-## 8.1 Radians (Arc Length, Sector Area, Composite Figures)
+## 6.1 Radians (Arc Length, Sector Area, Composite Figures)
 
-### 8.1.1 Why Use Radians?
+### 6.1.1 Why Use Radians?
 
 In elementary geometry, we are used to measuring angles in **degrees**. However, in higher mathematics, **radians** are the natural unit. There are two reasons:
 
@@ -70,7 +70,7 @@ $$
 
 If degrees were used, the formula would become $\frac{d}{dx}\sin x^\circ = \frac{\pi}{180}\cos x^\circ$, introducing the extra constant factor $\pi/180$. Therefore, in the IGCSE Additional Mathematics calculus section, **all angles must be in radians**.
 
-### 8.1.2 Definition of a Radian
+### 6.1.2 Definition of a Radian
 
 **Definition**: One radian is the angle subtended at the centre of a circle when the arc length equals the radius.
 
@@ -115,7 +115,7 @@ $$
 
 **Memory tip**: Remember $\pi = 180^\circ$, then work out the proportion. For example, $30^\circ = \frac{180^\circ}{6} = \frac{\pi}{6}$.
 
-### 8.1.3 Derivation of the Arc Length Formula
+### 6.1.3 Derivation of the Arc Length Formula
 
 In a circle of radius $r$, the full circumference is $2\pi r$, corresponding to a central angle of $2\pi$ radians.
 
@@ -139,7 +139,7 @@ $$
 
 where $\theta$ **must be in radians**.
 
-### 8.1.4 Derivation of the Sector Area Formula
+### 6.1.4 Derivation of the Sector Area Formula
 
 **Method 1 (Proportion method)**: The area of a full circle is $\pi r^2$, corresponding to $2\pi$ radians. The ratio of the sector area $A$ to the full circle area equals the ratio of $\theta$ to $2\pi$:
 
@@ -163,7 +163,7 @@ $$
 \boxed{A = \frac{1}{2}r^2\theta}
 $$
 
-### 8.1.5 Area of a Segment
+### 6.1.5 Area of a Segment
 
 In a sector, the line segment joining the two endpoints of the arc is called the **chord**. The region between the chord and the arc is called a **segment**.
 
@@ -185,7 +185,7 @@ $$
 
 > ⚠️ **Note**: $\theta$ in this formula must be in radians, and it is the central angle of the sector.
 
-### 8.1.6 Problem-Solving Strategy for Composite Figures
+### 6.1.6 Problem-Solving Strategy for Composite Figures
 
 When encountering composite figures containing arcs, sectors, and triangles, the general approach is:
 
@@ -195,7 +195,7 @@ When encountering composite figures containing arcs, sectors, and triangles, the
 4. **Calculate separately**: Use the arc length, sector area, and triangle area formulas to compute each part
 5. **Combine results**: Add or subtract according to the geometric relationships
 
-### 8.1.7 Worked Examples
+### 6.1.7 Worked Examples
 
 ---
 
@@ -407,9 +407,9 @@ $$
 
 ---
 
-## 8.2 The Six Trigonometric Functions (Any Angle)
+## 6.2 The Six Trigonometric Functions (Any Angle)
 
-### 8.2.1 From Acute-Angle Ratios to Trigonometric Functions of Any Angle
+### 6.2.1 From Acute-Angle Ratios to Trigonometric Functions of Any Angle
 
 In a right-angled triangle, for an acute angle $\theta$, our initial definitions are:
 
@@ -423,7 +423,7 @@ But this definition has a serious limitation — it only applies to angles $0^\c
 
 **The breakthrough**: We place angles in a **coordinate system** and use the **unit circle** to redefine trigonometric functions, thereby extending the domain to all real numbers.
 
-### 8.2.2 The Unit Circle Definition
+### 6.2.2 The Unit Circle Definition
 
 A **unit circle** is a circle with centre at the origin and radius $1$, with equation:
 
@@ -448,7 +448,7 @@ When $\theta$ is an acute angle, the point $P$ on the unit circle forms a right-
 
 And when $\theta$ is any angle, the coordinates $x$ and $y$ can be positive, zero, or negative — the signs of the trigonometric functions change accordingly. This is exactly what we want!
 
-### 8.2.3 Complete Definition of the Six Trigonometric Functions
+### 6.2.3 Complete Definition of the Six Trigonometric Functions
 
 Starting from $\sin\theta$ and $\cos\theta$, we can define four more functions:
 
@@ -487,7 +487,7 @@ $$
 | Secant | $\sec\theta$ | $1/x$ | $x \neq 0$, i.e., $\theta \neq \frac{\pi}{2} + n\pi$ |
 | Cotangent | $\cot\theta$ | $x/y$ | $y \neq 0$, i.e., $\theta \neq n\pi$ |
 
-### 8.2.4 Derivation of Exact Values for Special Angles
+### 6.2.4 Derivation of Exact Values for Special Angles
 
 **Special triangle method**:
 
@@ -541,7 +541,7 @@ When $\theta = \frac{\pi}{2}$, the terminal side coincides with the positive $y$
 | $\cos\theta$ | $1$ | $\dfrac{\sqrt{3}}{2}$ | $\dfrac{\sqrt{2}}{2}$ | $\dfrac{1}{2}$ | $0$ | $-1$ | $0$ |
 | $\tan\theta$ | $0$ | $\dfrac{1}{\sqrt{3}}$ | $1$ | $\sqrt{3}$ | undefined | $0$ | undefined |
 
-### 8.2.5 Sign Rules — ASTC
+### 6.2.5 Sign Rules — ASTC
 
 The signs of trigonometric functions in the four quadrants are determined by the signs of the $x$ and $y$ coordinates on the unit circle.
 
@@ -563,7 +563,7 @@ Complete sign table for all six functions:
 | III | $-$ | $-$ | $+$ | $-$ | $-$ | $+$ |
 | IV | $-$ | $+$ | $-$ | $+$ | $-$ | $-$ |
 
-### 8.2.6 Reference Angle Method
+### 6.2.6 Reference Angle Method
 
 A **reference angle** is the smallest acute angle between the terminal side of a given angle and the $x$-axis, usually denoted by $\alpha$, with $0 \leq \alpha \leq \frac{\pi}{2}$.
 
@@ -597,7 +597,7 @@ For any angle $\theta$ (taken in $[0, 2\pi)$), the reference angle $\alpha$ is:
 >
 > **Self-check**: After computing $\alpha$, verify that $0 \leq \alpha \leq \dfrac{\pi}{2}$ — if not, you used the wrong formula.
 
-### 8.2.7 Worked Examples
+### 6.2.7 Worked Examples
 
 ---
 
@@ -848,9 +848,9 @@ $$
 
 ---
 
-## 8.3 Graphs of Trigonometric Functions (Amplitude, Period, Asymptotes)
+## 6.3 Graphs of Trigonometric Functions (Amplitude, Period, Asymptotes)
 
-### 8.3.1 Graphs of Basic Trigonometric Functions
+### 6.3.1 Graphs of Basic Trigonometric Functions
 
 #### $y = \sin x$
 
@@ -939,7 +939,7 @@ Graph shape: In each period $(-\frac{\pi}{2}, \frac{\pi}{2})$, the function rise
 - $y = \csc x = \frac{1}{\sin x}$: vertical asymptotes where $\sin x = 0$ ($x = n\pi$), range $(-\infty, -1] \cup [1, \infty)$, period $2\pi$, odd function
 - $y = \cot x = \frac{\cos x}{\sin x}$: vertical asymptotes where $\sin x = 0$ ($x = n\pi$), range $\mathbb{R}$, period $\pi$, odd function
 
-### 8.3.2 Transformations of Trigonometric Functions
+### 6.3.2 Transformations of Trigonometric Functions
 
 Consider the general form $y = a\sin(bx + c) + d$ (also applicable to $\cos$ and $\tan$, though $\tan$ has no concept of amplitude).
 
@@ -994,7 +994,7 @@ The parameter $d$ shifts the entire graph up ($d > 0$) or down ($d < 0$) by $|d|
 | $-\dfrac{c}{b}$ | Phase shift | $>0$ shift right, $<0$ shift left |
 | $d$ | Vertical shift | New midline is $y = d$ |
 
-### 8.3.3 Method for Sketching Graphs
+### 6.3.3 Method for Sketching Graphs
 
 **Steps for sketching $y = a\sin(bx + c) + d$**:
 
@@ -1004,7 +1004,7 @@ The parameter $d$ shifts the entire graph up ($d > 0$) or down ($d < 0$) by $|d|
 4. Starting from the shifted start point, mark a key point every $T/4$
 5. Connect the points with a smooth wave
 
-### 8.3.4 Worked Examples
+### 6.3.4 Worked Examples
 
 ---
 
@@ -1233,9 +1233,9 @@ $$
 
 ---
 
-## 8.4 Trigonometric Identities
+## 6.4 Trigonometric Identities
 
-### 8.4.1 Three Basic Pythagorean Identities
+### 6.4.1 Three Basic Pythagorean Identities
 
 **Identity 1: $\sin^2\theta + \cos^2\theta = 1$**
 
@@ -1306,7 +1306,7 @@ i.e., $\csc^2\theta = 1 + \cot^2\theta$.
 > divide by $\cos^2\theta$ to get $\tan^2\theta + 1 = \sec^2\theta$,
 > divide by $\sin^2\theta$ to get $1 + \cot^2\theta = \csc^2\theta$.
 
-### 8.4.2 Double Angle Formulas
+### 6.4.2 Double Angle Formulas
 
 Although the syllabus does not explicitly list the double angle formulas, these can be derived from the basic identities and are very commonly used in solving equations and proving identities.
 
@@ -1366,7 +1366,7 @@ $$
 \boxed{\tan(2\theta) = \frac{2\tan\theta}{1 - \tan^2\theta}}
 $$
 
-### 8.4.3 Half-Angle Formulas (Derived from Double Angle Formulas)
+### 6.4.3 Half-Angle Formulas (Derived from Double Angle Formulas)
 
 From $\cos(2\theta) = 2\cos^2\theta - 1$, solving for $\cos^2\theta$:
 
@@ -1382,7 +1382,7 @@ $$
 
 These two formulas are very important in **integration** — they are used to reduce the power of trigonometric functions.
 
-### 8.4.4 Worked Examples
+### 6.4.4 Worked Examples
 
 ---
 
@@ -1590,9 +1590,9 @@ $$
 
 ---
 
-## 8.5 Solving Trigonometric Equations
+## 6.5 Solving Trigonometric Equations
 
-### 8.5.1 Overall Solution Strategy (Review)
+### 6.5.1 Overall Solution Strategy (Review)
 
 The core process for solving trigonometric equations is as follows:
 
@@ -1624,7 +1624,7 @@ Check the domain, exclude invalid solutions
 
 ---
 
-### 8.5.2 Basic Form $\sin x = k$ ($-1 \leq k \leq 1$)
+### 6.5.2 Basic Form $\sin x = k$ ($-1 \leq k \leq 1$)
 
 #### Geometric Derivation — Understanding from the Unit Circle
 
@@ -1835,7 +1835,7 @@ Quadrant II: $x_2 = \pi - \alpha \approx 3.1416 - 0.4115 = 2.7301 \approx 2.73$
 
 ---
 
-### 8.5.3 Basic Form $\cos x = k$ ($-1 \leq k \leq 1$)
+### 6.5.3 Basic Form $\cos x = k$ ($-1 \leq k \leq 1$)
 
 #### Geometric Derivation — Understanding from the Unit Circle
 
@@ -2072,7 +2072,7 @@ For $\cos x = \frac{\sqrt{3}}{2}$: $\alpha = \frac{\pi}{6}$ (since $\cos\frac{\p
 
 ---
 
-### 8.5.4 Basic Form $\tan x = k$ ($k \in \mathbb{R}$)
+### 6.5.4 Basic Form $\tan x = k$ ($k \in \mathbb{R}$)
 
 #### Fundamental Differences from $\sin$ and $\cos$
 
@@ -2308,7 +2308,7 @@ On $[0, 2\pi)$, all three basic forms have 2 solutions (except special cases lik
 
 ---
 
-### 8.5.5 Equations Involving $\sec$, $\csc$, $\cot$
+### 6.5.5 Equations Involving $\sec$, $\csc$, $\cot$
 
 $\sec x$, $\csc x$, $\cot x$ are the reciprocals of $\cos x$, $\sin x$, $\tan x$ respectively. To solve such equations, we usually first take the reciprocal to convert to a basic form, but extra attention must be paid to the **domain**.
 
@@ -2402,7 +2402,7 @@ $$
 
 ---
 
-### 8.5.6 Equations Using Identities (Syllabus Focus)
+### 6.5.6 Equations Using Identities (Syllabus Focus)
 
 When the equation contains trigonometric functions of different names or higher powers, we need to use identities to unify the function name or reduce the power. This is a key focus area explicitly required by the syllabus.
 
@@ -2944,7 +2944,7 @@ Substitute into the original equation:
 
 ---
 
-### 8.5.7 Solving Trigonometric Equations — Common Errors and How to Avoid Them
+### 6.5.7 Solving Trigonometric Equations — Common Errors and How to Avoid Them
 
 | Error type | Wrong example | Correct approach |
 |---------|---------|---------|
@@ -2958,7 +2958,7 @@ Substitute into the original equation:
 
 ---
 
-### 8.5.8 Solving Trigonometric Equations — Method Summary Flowchart
+### 6.5.8 Solving Trigonometric Equations — Method Summary Flowchart
 
 ```
                     ┌─────────────────────────────┐
@@ -3020,14 +3020,14 @@ Substitute into the original equation:
 | $a\sin(k\theta) + b\cos(k\theta) = 0$ | Divide by $\cos(k\theta)$ to get $\tan(k\theta) = -\frac{b}{a}$ |
 | Contains $\sin(2\theta)$ or $\cos(2\theta)$ | Expand or reduce power using double angle formulas |
 
-### 8.5.9 Notes of Caution
+### 6.5.9 Notes of Caution
 
 1. **Domain**: Exclude points where the function is undefined. For example, $\tan x$ is undefined at $x = \frac{\pi}{2} + n\pi$, and so is $\sec x$.
 2. **Extraneous roots from squaring**: If both sides of an equation are squared, extraneous roots may be introduced — verify your answers.
 3. **Multiplying by an expression**: If you multiply by an expression that could be zero, you may lose or gain solutions.
 4. **Periodicity**: Remember that within a given interval, every period produces new solutions.
 
-### 8.5.10 Review Examples
+### 6.5.10 Review Examples
 
 ---
 
@@ -3410,9 +3410,9 @@ Solve the following equations for $0 \leq x < 2\pi$:
 
 ---
 
-## 8.6 Proving Trigonometric Identities
+## 6.6 Proving Trigonometric Identities
 
-### 8.6.1 Overview of Proof Strategies
+### 6.6.1 Overview of Proof Strategies
 
 Proving trigonometric identities does not have a fixed algorithm, but the following strategies are generally effective:
 
@@ -3426,7 +3426,7 @@ Proving trigonometric identities does not have a fixed algorithm, but the follow
 | **Strategy 6: Multiply numerator and denominator by the conjugate** | Denominator contains $1 \pm \sin\theta$ or $1 \pm \cos\theta$ | Multiply by $1 \mp \sin\theta$ or $1 \mp \cos\theta$ |
 | **Strategy 7: Use double angle formulas** | Angles are inconsistent | Expand $2\theta$ or reduce powers |
 
-### 8.6.2 Writing Standards for Proofs
+### 6.6.2 Writing Standards for Proofs
 
 When writing a proof, follow these conventions:
 
@@ -3435,7 +3435,7 @@ When writing a proof, follow these conventions:
 3. End with a form identical to the other side
 4. Conclude with "$\blacksquare$" or "QED"
 
-### 8.6.3 Detailed Proof Examples
+### 6.6.3 Detailed Proof Examples
 
 ---
 
