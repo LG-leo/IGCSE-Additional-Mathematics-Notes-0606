@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <link rel="canonical" href="{{ page.canonical_url | default(config.site_url, true) }}">
+  <meta name="msvalidate.01" content="CAAB53FA05D993C4390715E328742117">
+  <meta name="keywords" content="IGCSE Additional Mathematics, 0606, IGCSE 0606 notes, additional maths notes, IGCSE add math, free IGCSE notes, syllabus 2028-2030, past paper notes, 附加数学笔记">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ config.site_name }}">
+  <meta property="og:title" content="{% if page and page.title and not page.is_homepage %}{{ page.title }} · {{ config.site_name }}{% else %}{{ config.site_name }}{% endif %}">
+  <meta property="og:description" content="{% if page and page.meta and page.meta.description %}{{ page.meta.description }}{% else %}{{ config.site_description }}{% endif %}">
+  <meta property="og:url" content="{{ page.canonical_url | default(config.site_url, true) }}">
+  <meta name="twitter:card" content="summary">
+  {% if page and page.is_homepage %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "IGCSE Additional Mathematics (0606) Notes",
+    "alternateName": ["IGCSE 0606 Notes", "IGCSE 附加数学笔记", "IGCSE Additional Maths Notes"],
+    "description": "Free, open-source, syllabus-aligned IGCSE Additional Mathematics (0606) notes with full derivations, step-by-step solutions and common pitfalls, in Chinese and English.",
+    "url": "https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/",
+    "inLanguage": ["zh-CN", "en"],
+    "learningResourceType": "Notes",
+    "educationalLevel": "IGCSE",
+    "educationalUse": "self-study",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "author": {
+      "@type": "Person",
+      "name": "Leo Yang",
+      "alternateName": "LG-leo",
+      "url": "https://github.com/LG-leo"
+    },
+    "about": {
+      "@type": "Course",
+      "name": "Cambridge IGCSE Additional Mathematics (0606)",
+      "provider": {
+        "@type": "Organization",
+        "name": "Cambridge International",
+        "url": "https://www.cambridgeinternational.org/programmes-and-qualifications/cambridge-igcse-mathematics-additional-0606/"
+      }
+    }
+  }
+  </script>
+  {% endif %}
+{% endblock %}

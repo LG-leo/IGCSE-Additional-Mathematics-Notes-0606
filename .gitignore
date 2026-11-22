@@ -1,0 +1,13 @@
+# Generated at build time by tools/build_docs.py — do not commit
+docs/cn/
+docs/en/
+site/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS / editor
+.DS_Store

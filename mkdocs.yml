@@ -1,14 +1,102 @@
-site_name: "IGCSE-additional-math-note"
-theme: material  # 选择一个好看的默认主题
+site_name: IGCSE Additional Mathematics (0606) Notes
+site_url: https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/
+site_description: >-
+  Free, open-source, syllabus-aligned IGCSE Additional Mathematics (0606) notes:
+  full derivations, step-by-step solutions and common pitfalls, in Chinese and English.
+site_author: Leo Yang (LG-leo)
+repo_url: https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606
+repo_name: LG-leo/IGCSE-Additional-Mathematics-Notes-0606
+edit_uri: ""
+copyright: © 2026 Leo Yang · Licensed under CC BY-NC-SA 4.0
+use_directory_urls: true
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: zh
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+nav:
+  - 首页 / Home: index.md
+  - 中文笔记 (Chinese):
+      - "第 1 章：数列、排列、组合与二项式定理": cn/ch01.md
+      - "第 2 章：向量与变化率": cn/ch02.md
+      - "第 3 章：二次函数": cn/ch03.md
+      - "第 4 章：方程与不等式（图形法）": cn/ch04.md
+      - "第 5 章：函数（线性、三次、指数、对数）": cn/ch05.md
+      - "第 6 章：三角学（含弧度法）": cn/ch06.md
+      - "第 7 章：微分（导数）": cn/ch07.md
+      - "第 8 章：积分（不定积分与定积分）": cn/ch08.md
+      - "第 9 章：几何（直线与圆）": cn/ch09.md
+      - "第 10 章：综合应用": cn/ch10.md
+  - English Notes:
+      - "Chapter 1: Sequences, Permutations, Combinations, and the Binomial Theorem": en/ch01.md
+      - "Chapter 2: Vectors and Rates of Change": en/ch02.md
+      - "Chapter 3: Quadratic Functions (Including Polynomial Factors)": en/ch03.md
+      - "Chapter 4: Equations and Inequalities (Graphical Methods)": en/ch04.md
+      - "Chapter 5: Functions (Linear, Cubic, Exponential, Logarithmic)": en/ch05.md
+      - "Chapter 6: Trigonometry (Including Radians)": en/ch06.md
+      - "Chapter 7: Differentiation (Derivatives)": en/ch07.md
+      - "Chapter 8: Integration (Indefinite and Definite Integrals)": en/ch08.md
+      - "Chapter 9: Geometry (Straight Lines and Circles)": en/ch09.md
+      - "Chapter 10: Comprehensive Applications": en/ch10.md
 
 markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - md_in_html
+  - footnotes
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
   - pymdownx.arithmatex:
       generic: true
+  - pymdownx.caret
+  - pymdownx.tilde
+  - pymdownx.smartsymbols
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
 extra_javascript:
   - javascripts/config.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
-extra_javascript:
-  - javascripts/config.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
-  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+plugins:
+  - search:
+      lang:
+        - en
+        - zh

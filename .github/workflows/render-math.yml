@@ -1,13 +1,16 @@
-name: Render Markdown with Math
+name: Build and Deploy Notes Site
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
 
 jobs:
   build-and-deploy:
@@ -19,11 +22,15 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
 
       - name: Install dependencies
-        run: |
-          pip install mkdocs==1.5.3 mkdocs-material==9.5.18
+        run: pip install -r requirements.txt
+
+      - name: Stage chapter pages into docs/
+        run: python tools/build_docs.py
 
       - name: Build site with MkDocs
         run: mkdocs build
@@ -35,3 +42,5 @@ jobs:
           publish_dir: ./site
           publish_branch: gh-pages
           force_orphan: true
+          user_name: "github-actions[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
