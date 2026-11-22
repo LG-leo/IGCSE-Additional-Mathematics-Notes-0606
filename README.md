@@ -1,6 +1,10 @@
 # 📚 IGCSE Additional Mathematics (0606) — Complete Notes
 
 > A **patch** for the official Cambridge textbook: reorganized by syllabus Topics 1–14, filling in missing steps, question types, and common pitfalls.
+>
+> 🌐 **Read online (formulas rendered with MathJax):** https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/
+>
+> If GitHub's Markdown view shows raw `$...$` source, use the website above — every chapter is also available as a normal HTML page.
 
 <a href="https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606">
   <img src="https://img.shields.io/github/stars/LG-leo/IGCSE-Additional-Mathematics-Notes-0606?style=social" alt="GitHub stars">

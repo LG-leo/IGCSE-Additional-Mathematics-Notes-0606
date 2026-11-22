@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IGCSE Additional Mathematics (0606) Notes — moved</title>
+  <link rel="canonical" href="https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/">
+  <meta name="robots" content="noindex">
+  <style>body{font-family:-apple-system,"PingFang SC",sans-serif;max-width:40rem;margin:4rem auto;padding:0 1.2rem;line-height:1.7}</style>
+</head>
+<body>
+  <h1>This page has moved</h1>
+  <p>The IGCSE Additional Mathematics (0606) notes are now at
+    <a href="https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/">lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/</a>.</p>
+  <p id="target"></p>
+  <script>
+    (function () {
+      var NEW_BASE = "https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/";
+      var OLD_PREFIX = "/IG0606ADD-with-CAM-coursebook-NOTE/";
+      var path = decodeURIComponent(location.pathname || "");
+
+      // Strip the old repository prefix (tolerates a missing trailing slash).
+      if (path.indexOf(OLD_PREFIX) === 0) {
+        path = path.slice(OLD_PREFIX.length);
+      } else {
+        path = path.replace(/^\/+/, "");
+      }
+
+      // Map every old chapter file to its new page URL.
+      var map = {};
+      for (var i = 1; i <= 10; i++) {
+        var cn = String(i).padStart(2, "0");
+        map["IG0606 CompletelyNotes2_ch" + i + ".md"] = "cn/ch" + cn + "/";
+        map["IG0606 CompletelyNotes2_en" + i + ".md"] = "en/ch" + cn + "/";
+      }
+      map["IG0606 CompletelyNotes2_cha10.md"] = "cn/ch10/";
+      map["IG0606 CompletelyNotes2_ena10.md"] = "en/ch10/";
+
+      var target = NEW_BASE;
+      if (map[path]) {
+        target = NEW_BASE + map[path];
+      } else if (path === "" || path === "index.html" || path === "README.md") {
+        target = NEW_BASE;
+      }
+
+      document.getElementById("target").innerHTML =
+        'Redirecting to <a href="' + target + '">' + target + "</a> …";
+      location.replace(target + location.search + location.hash);
+    })();
+  </script>
+</body>
+</html>

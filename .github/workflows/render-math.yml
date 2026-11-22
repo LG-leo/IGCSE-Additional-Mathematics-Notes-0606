@@ -44,3 +44,34 @@ jobs:
           force_orphan: true
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
+
+      # Optional: tell Bing/IndexNow that the pages changed. Never fail the deploy.
+      - name: Submit URLs to IndexNow (non-blocking)
+        continue-on-error: true
+        run: |
+          sleep 20
+          python3 - <<'PY'
+          import json
+          import re
+          import urllib.request
+
+          KEY = "75dbfddc6a49929b004eae3f66c85192"
+          BASE = "https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/"
+          urls = re.findall(r"<loc>(.*?)</loc>", open("site/sitemap.xml", encoding="utf-8").read())
+          if not urls:
+              raise SystemExit("no URLs found in sitemap")
+          payload = json.dumps({
+              "host": "lg-leo.github.io",
+              "key": KEY,
+              "keyLocation": BASE + f"{KEY}.txt",
+              "urlList": urls,
+          }).encode("utf-8")
+          request = urllib.request.Request(
+              "https://api.indexnow.org/indexnow",
+              data=payload,
+              headers={"Content-Type": "application/json; charset=utf-8"},
+          )
+          with urllib.request.urlopen(request, timeout=30) as response:
+              print(f"IndexNow: submitted {len(urls)} URLs, HTTP {response.status}")
+          PY
+
