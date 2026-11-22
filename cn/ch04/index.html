@@ -1,0 +1,4074 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="在前面的章节中，我们学习了用代数方法解方程和不等式——因式分解、求根公式、配方法等。然而，许多方程和不等式在代数上难以直接处理，尤其是涉及绝对值、三次多项式以及复杂代换的情形。图形法提供了一种强有力的替代思路：通过函数的图像直观地理解方程的解和不等式的解集。图形法并不总是给出精确值，但它能帮助我们迅速把握解的整体结构，">
+      
+      
+        <meta name="author" content="Leo Yang (LG-leo)">
+      
+      
+        <link rel="canonical" href="https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/cn/ch04/">
+      
+      
+        <link rel="prev" href="../ch03/">
+      
+      
+        <link rel="next" href="../ch05/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>第 4 章：方程与不等式（图形法） - IGCSE Additional Mathematics (0606) Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <meta name="msvalidate.01" content="621C3B7D85DC9958CF27B288AE3660D6">
+  <meta name="keywords" content="IGCSE Additional Mathematics, 0606, IGCSE 0606 notes, additional maths notes, IGCSE add math, free IGCSE notes, syllabus 2028-2030, past paper notes, 附加数学笔记">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="IGCSE Additional Mathematics (0606) Notes">
+  <meta property="og:title" content="第 4 章：方程与不等式（图形法） · IGCSE Additional Mathematics (0606) Notes">
+  <meta property="og:description" content="在前面的章节中，我们学习了用代数方法解方程和不等式——因式分解、求根公式、配方法等。然而，许多方程和不等式在代数上难以直接处理，尤其是涉及绝对值、三次多项式以及复杂代换的情形。图形法提供了一种强有力的替代思路：通过函数的图像直观地理解方程的解和不等式的解集。图形法并不总是给出精确值，但它能帮助我们迅速把握解的整体结构，">
+  <meta property="og:url" content="https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/cn/ch04/">
+  <meta name="twitter:card" content="summary">
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#4" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="IGCSE Additional Mathematics (0606) Notes" class="md-header__button md-logo" aria-label="IGCSE Additional Mathematics (0606) Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IGCSE Additional Mathematics (0606) Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第 4 章：方程与不等式（图形法）
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LG-leo/IGCSE-Additional-Mathematics-Notes-0606
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页 / Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../ch01/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  中文笔记 (Chinese)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../en/ch01/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  English Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="IGCSE Additional Mathematics (0606) Notes" class="md-nav__button md-logo" aria-label="IGCSE Additional Mathematics (0606) Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    IGCSE Additional Mathematics (0606) Notes
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LG-leo/IGCSE-Additional-Mathematics-Notes-0606
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页 / Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    中文笔记 (Chinese)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    中文笔记 (Chinese)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 1 章：数列、排列、组合与二项式定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 2 章：向量与变化率
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 3 章：二次函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 4 章：方程与不等式（图形法）
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 4 章：方程与不等式（图形法）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        引言
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cambridge-igcse-additional-mathematics-0606-20282030" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        考纲对照（Cambridge IGCSE Additional Mathematics 0606, 2028–2030）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前置知识：集合与区间表示法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="前置知识：集合与区间表示法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        集合的基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        区间表示法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        集合的运算
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 绝对值方程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 绝对值方程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.1 绝对值的定义与几何意义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412-ax-b-c-quad-c-ge-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.2 类型 \(|ax + b| = c \quad (c \ge 0)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#413-ax-b-cx-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.3 类型 \(|ax + b| = cx + d\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#414-ax-b-cx-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.4 类型 \(|ax + b| = |cx + d|\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#415-ax2-bx-c-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.5 类型 \(|ax^2 + bx + c| = d\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 绝对值不等式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 绝对值不等式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421-ax-b-c-ax-b-le-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.1 基本类型 \(|ax + b| &gt; c\) 和 \(|ax + b| \le c\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-kax-b-le-cx-d-quad-k-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.2 类型 \(k|ax + b| \le |cx + d| \quad (k &gt; 0)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#423-ax-b-le-cx-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.3 类型 \(|ax + b| \le cx + d\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#424-ax2-bx-c-d-ax2-bx-c-le-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.4 类型 \(|ax^2 + bx + c| &gt; d\) 和 \(|ax^2 + bx + c| \le d\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 代换法化为一元二次方程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 代换法化为一元二次方程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#431" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.1 指数型代换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#432" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.2 对数型代换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#433" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.3 根式型代换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#434" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.4 分式型代换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#435" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.5 三角型代换（使用恒等式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 三次多项式图像与不等式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4 三次多项式图像与不等式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#441" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.1 三个线性因式乘积的图像特征
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#442-y-fx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.2 绝对值三次函数 \(y = |f(x)|\) 的图像
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#443" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.3 三次不等式的图形解法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 联立方程组
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5 联立方程组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#451" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5.1 联立方程组的图形意义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#452" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5.2 直线与直线的联立
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#453" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5.3 直线与曲线的联立
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#454" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5.4 曲线与曲线的联立
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="练习题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A组：绝对值方程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B组：绝对值不等式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C组：代换法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D组：三次多项式图像与不等式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E组：联立方程组
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习题答案
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="练习题答案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A组答案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B组答案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C组答案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D组答案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E组答案
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 5 章：函数（线性、三次、指数、对数）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 6 章：三角学（含弧度法）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 7 章：微分（导数）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 8 章：积分（不定积分与定积分）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 9 章：几何（直线与圆）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 10 章：综合应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    English Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    English Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1: Sequences, Permutations, Combinations, and the Binomial Theorem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2: Vectors and Rates of Change
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3: Quadratic Functions (Including Polynomial Factors)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 4: Equations and Inequalities (Graphical Methods)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5: Functions (Linear, Cubic, Exponential, Logarithmic)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6: Trigonometry (Including Radians)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 7: Differentiation (Derivatives)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 8: Integration (Indefinite and Definite Integrals)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 9: Geometry (Straight Lines and Circles)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 10: Comprehensive Applications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        引言
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cambridge-igcse-additional-mathematics-0606-20282030" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        考纲对照（Cambridge IGCSE Additional Mathematics 0606, 2028–2030）
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        前置知识：集合与区间表示法
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="前置知识：集合与区间表示法">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        集合的基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        区间表示法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        集合的运算
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#41" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 绝对值方程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.1 绝对值方程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#411" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.1 绝对值的定义与几何意义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#412-ax-b-c-quad-c-ge-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.2 类型 \(|ax + b| = c \quad (c \ge 0)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#413-ax-b-cx-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.3 类型 \(|ax + b| = cx + d\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#414-ax-b-cx-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.4 类型 \(|ax + b| = |cx + d|\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#415-ax2-bx-c-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.5 类型 \(|ax^2 + bx + c| = d\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#42" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 绝对值不等式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.2 绝对值不等式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#421-ax-b-c-ax-b-le-c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.1 基本类型 \(|ax + b| &gt; c\) 和 \(|ax + b| \le c\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#422-kax-b-le-cx-d-quad-k-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.2 类型 \(k|ax + b| \le |cx + d| \quad (k &gt; 0)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#423-ax-b-le-cx-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.3 类型 \(|ax + b| \le cx + d\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#424-ax2-bx-c-d-ax2-bx-c-le-d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2.4 类型 \(|ax^2 + bx + c| &gt; d\) 和 \(|ax^2 + bx + c| \le d\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#43" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 代换法化为一元二次方程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.3 代换法化为一元二次方程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#431" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.1 指数型代换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#432" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.2 对数型代换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#433" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.3 根式型代换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#434" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.4 分式型代换
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#435" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3.5 三角型代换（使用恒等式）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#44" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4 三次多项式图像与不等式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.4 三次多项式图像与不等式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#441" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.1 三个线性因式乘积的图像特征
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#442-y-fx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.2 绝对值三次函数 \(y = |f(x)|\) 的图像
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#443" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.4.3 三次不等式的图形解法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#45" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5 联立方程组
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.5 联立方程组">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#451" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5.1 联立方程组的图形意义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#452" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5.2 直线与直线的联立
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#453" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5.3 直线与曲线的联立
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#454" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.5.4 曲线与曲线的联立
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习题
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="练习题">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A组：绝对值方程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B组：绝对值不等式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C组：代换法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D组：三次多项式图像与不等式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E组：联立方程组
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习题答案
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="练习题答案">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A组答案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        B组答案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        C组答案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        D组答案
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        E组答案
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="4">第 4 章：方程与不等式（图形法）<a class="headerlink" href="#4" title="Permanent link">&para;</a></h1>
+<h2 id="_1">引言<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>在前面的章节中，我们学习了用代数方法解方程和不等式——因式分解、求根公式、配方法等。然而，许多方程和不等式在代数上难以直接处理，尤其是涉及绝对值、三次多项式以及复杂代换的情形。<strong>图形法</strong>提供了一种强有力的替代思路：通过函数的图像直观地理解方程的解和不等式的解集。图形法并不总是给出精确值，但它能帮助我们迅速把握解的整体结构，并为代数运算提供几何直觉。</p>
+<p>本章我们将综合运用前几章的知识——特别是<strong>第3章（二次函数）</strong>中的判别式和因式分解、<strong>第4章（函数）</strong>中的绝对值函数图像，以及<strong>第5章（微分）</strong>中的导数工具——来系统地处理五类问题：绝对值方程、绝对值不等式、代换法化为一元二次方程、三次多项式图像与不等式、以及联立方程组的图形解法。</p>
+<hr />
+<h2 id="cambridge-igcse-additional-mathematics-0606-20282030">考纲对照（Cambridge IGCSE Additional Mathematics 0606, 2028–2030）<a class="headerlink" href="#cambridge-igcse-additional-mathematics-0606-20282030" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>考纲条目</th>
+<th>内容</th>
+<th>对应本节</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>4.1</td>
+<td>解 $</td>
+<td>ax+b</td>
+</tr>
+<tr>
+<td>4.2</td>
+<td>解 $k</td>
+<td>ax+b</td>
+</tr>
+<tr>
+<td>4.3</td>
+<td>用代换法构造并求解一元二次方程</td>
+<td>6.3</td>
+</tr>
+<tr>
+<td>4.4</td>
+<td>绘制三次多项式（三个线性因式乘积）及其绝对值图像</td>
+<td>6.4</td>
+</tr>
+<tr>
+<td>4.5</td>
+<td>图形法解三次不等式 <span class="arithmatex">\(f(x) \ge d\)</span>、<span class="arithmatex">\(f(x) &gt; d\)</span>、<span class="arithmatex">\(f(x) \le d\)</span>、<span class="arithmatex">\(f(x) &lt; d\)</span></td>
+<td>6.4</td>
+</tr>
+<tr>
+<td>5.1</td>
+<td>用消元法或代入法解二元联立方程组</td>
+<td>6.5</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_2">前置知识：集合与区间表示法<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>解不等式时，我们通常用<strong>区间</strong>或<strong>集合</strong>来表示解集。本节回顾集合的基本记号和区间表示法，是本章所有内容的基础。</p>
+</blockquote>
+<h3 id="_3">集合的基本概念<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p><strong>集合</strong>（set）是由某些确定的、互不相同的对象组成的整体。集合中的对象称为<strong>元素</strong>。</p>
+<ul>
+<li><span class="arithmatex">\(a \in A\)</span>：<span class="arithmatex">\(a\)</span> 属于集合 <span class="arithmatex">\(A\)</span>（<span class="arithmatex">\(a\)</span> 是 <span class="arithmatex">\(A\)</span> 的元素）</li>
+<li><span class="arithmatex">\(a \notin A\)</span>：<span class="arithmatex">\(a\)</span> 不属于集合 <span class="arithmatex">\(A\)</span></li>
+</ul>
+<p><strong>常用数集</strong>：</p>
+<ul>
+<li><span class="arithmatex">\(\mathbb{N} = \{1, 2, 3, 4, \dots\}\)</span>：自然数集</li>
+<li><span class="arithmatex">\(\mathbb{Z} = \{\dots, -2, -1, 0, 1, 2, \dots\}\)</span>：整数集</li>
+<li><span class="arithmatex">\(\mathbb{Q}\)</span>：有理数集（可以写成分数形式的数）</li>
+<li><span class="arithmatex">\(\mathbb{R}\)</span>：实数集（包括有理数和无理数）</li>
+<li><span class="arithmatex">\(\mathbb{R}^+\)</span>：正实数集</li>
+<li><span class="arithmatex">\(\emptyset\)</span>：空集（不含任何元素的集合）</li>
+</ul>
+<p><strong>集合的表示法</strong>：</p>
+<p><strong>列举法</strong>：<span class="arithmatex">\(A = \{1, 2, 3, 4, 5\}\)</span></p>
+<p><strong>描述法</strong>：<span class="arithmatex">\(A = \{x \mid x \text{ 是大于 0 且小于 6 的整数}\}\)</span>，或更一般地 <span class="arithmatex">\(A = \{x \in \mathbb{R} \mid x^2 &lt; 4\}\)</span>（表示所有满足 <span class="arithmatex">\(x^2 &lt; 4\)</span> 的实数 <span class="arithmatex">\(x\)</span>）。</p>
+<h3 id="_4">区间表示法<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>区间是实数集的子集，用数轴上的连续段来表示。</p>
+<table>
+<thead>
+<tr>
+<th>区间类型</th>
+<th>不等式表示</th>
+<th>区间记号</th>
+<th>数轴表示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>闭区间</td>
+<td><span class="arithmatex">\(a \le x \le b\)</span></td>
+<td><span class="arithmatex">\([a, b]\)</span></td>
+<td>两端点用实心点</td>
+</tr>
+<tr>
+<td>开区间</td>
+<td><span class="arithmatex">\(a &lt; x &lt; b\)</span></td>
+<td><span class="arithmatex">\((a, b)\)</span></td>
+<td>两端点用空心点</td>
+</tr>
+<tr>
+<td>左闭右开</td>
+<td><span class="arithmatex">\(a \le x &lt; b\)</span></td>
+<td><span class="arithmatex">\([a, b)\)</span></td>
+<td>左实心、右空心</td>
+</tr>
+<tr>
+<td>左开右闭</td>
+<td><span class="arithmatex">\(a &lt; x \le b\)</span></td>
+<td><span class="arithmatex">\((a, b]\)</span></td>
+<td>左空心、右实心</td>
+</tr>
+<tr>
+<td>无限区间</td>
+<td><span class="arithmatex">\(x \ge a\)</span></td>
+<td><span class="arithmatex">\([a, \infty)\)</span></td>
+<td>向右延伸</td>
+</tr>
+<tr>
+<td>无限区间</td>
+<td><span class="arithmatex">\(x &gt; a\)</span></td>
+<td><span class="arithmatex">\((a, \infty)\)</span></td>
+<td>向右延伸</td>
+</tr>
+<tr>
+<td>无限区间</td>
+<td><span class="arithmatex">\(x \le b\)</span></td>
+<td><span class="arithmatex">\((-\infty, b]\)</span></td>
+<td>向左延伸</td>
+</tr>
+<tr>
+<td>无限区间</td>
+<td><span class="arithmatex">\(x &lt; b\)</span></td>
+<td><span class="arithmatex">\((-\infty, b)\)</span></td>
+<td>向左延伸</td>
+</tr>
+<tr>
+<td>全体实数</td>
+<td><span class="arithmatex">\(x \in \mathbb{R}\)</span></td>
+<td><span class="arithmatex">\((-\infty, \infty)\)</span></td>
+<td>整条数轴</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>注意</strong>：<span class="arithmatex">\(\infty\)</span>（无穷大）不是一个数，而是一个概念，表示"无限延伸"。因此涉及 <span class="arithmatex">\(\infty\)</span> 的一端总是用圆括号（开区间）。</p>
+</blockquote>
+<h3 id="_5">集合的运算<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p><strong>并集</strong> <span class="arithmatex">\(A \cup B = \{x \mid x \in A \text{ 或 } x \in B\}\)</span>：属于 <span class="arithmatex">\(A\)</span> <strong>或</strong>属于 <span class="arithmatex">\(B\)</span> 的所有元素。</p>
+<p><strong>交集</strong> <span class="arithmatex">\(A \cap B = \{x \mid x \in A \text{ 且 } x \in B\}\)</span>：同时属于 <span class="arithmatex">\(A\)</span> <strong>和</strong> <span class="arithmatex">\(B\)</span> 的所有元素。</p>
+<p><strong>示例</strong>：设 <span class="arithmatex">\(A = \{x \mid x &lt; 1\}\)</span>，<span class="arithmatex">\(B = \{x \mid x \ge -2\}\)</span>。</p>
+<ul>
+<li><span class="arithmatex">\(A \cap B = \{x \mid -2 \le x &lt; 1\} = [-2, 1)\)</span></li>
+<li><span class="arithmatex">\(A \cup B = \mathbb{R} = (-\infty, \infty)\)</span></li>
+</ul>
+<p><strong>示例</strong>：解 <span class="arithmatex">\(x^2 - 5x + 6 &gt; 0\)</span> 得 <span class="arithmatex">\(x &lt; 2\)</span> 或 <span class="arithmatex">\(x &gt; 3\)</span>，解集用区间表示为 <span class="arithmatex">\((-\infty, 2) \cup (3, \infty)\)</span>。这里 <span class="arithmatex">\(\cup\)</span> 表示两个区间的"并集"——<span class="arithmatex">\(x\)</span> 只要满足其中一个即可。</p>
+<hr />
+<h2 id="41">4.1 绝对值方程<a class="headerlink" href="#41" title="Permanent link">&para;</a></h2>
+<h3 id="411">4.1.1 绝对值的定义与几何意义<a class="headerlink" href="#411" title="Permanent link">&para;</a></h3>
+<p>绝对值 <span class="arithmatex">\(|A|\)</span> 从几何上看表示数轴上点 <span class="arithmatex">\(A\)</span> 到原点的<strong>距离</strong>。代数上定义为：</p>
+<div class="arithmatex">\[
+|x| = \begin{cases}
+x, &amp; x \ge 0 \\
+-x, &amp; x &lt; 0
+\end{cases}
+\]</div>
+<p>绝对值的重要性质：
+- <span class="arithmatex">\(|A| \ge 0\)</span> 对一切实数 <span class="arithmatex">\(A\)</span> 成立
+- <span class="arithmatex">\(|A|^2 = A^2\)</span>
+- <span class="arithmatex">\(|AB| = |A| \cdot |B|\)</span>
+- <span class="arithmatex">\(\left|\dfrac{A}{B}\right| = \dfrac{|A|}{|B|}\)</span>（<span class="arithmatex">\(B \neq 0\)</span>）</p>
+<p>解绝对值方程的核心思想是<strong>去掉绝对值符号</strong>，这通常通过分类讨论或两边平方来实现。</p>
+<hr />
+<h3 id="412-ax-b-c-quad-c-ge-0">4.1.2 类型 <span class="arithmatex">\(|ax + b| = c \quad (c \ge 0)\)</span><a class="headerlink" href="#412-ax-b-c-quad-c-ge-0" title="Permanent link">&para;</a></h3>
+<p>这是最简单的绝对值方程。根据绝对值的定义，<span class="arithmatex">\(|ax + b| = c\)</span> 等价于：</p>
+<div class="arithmatex">\[
+ax + b = c \quad \text{或} \quad ax + b = -c
+\]</div>
+<p><strong>例题 1</strong>：解方程 <span class="arithmatex">\(|3x - 7| = 5\)</span>。</p>
+<p><strong>解</strong>：</p>
+<div class="arithmatex">\[
+3x - 7 = 5 \quad \text{或} \quad 3x - 7 = -5
+\]</div>
+<div class="arithmatex">\[
+3x = 12 \quad \text{或} \quad 3x = 2
+\]</div>
+<div class="arithmatex">\[
+x = 4 \quad \text{或} \quad x = \frac{2}{3}
+\]</div>
+<p>验证：<span class="arithmatex">\(|3(4) - 7| = |12 - 7| = 5\)</span> ✓，<span class="arithmatex">\(|3(\frac{2}{3}) - 7| = |2 - 7| = 5\)</span> ✓。</p>
+<p><strong>例题 2</strong>：解方程 <span class="arithmatex">\(|4x + 3| = 0\)</span>。</p>
+<p><strong>解</strong>：</p>
+<div class="arithmatex">\[
+4x + 3 = 0
+\]</div>
+<div class="arithmatex">\[
+x = -\frac{3}{4}
+\]</div>
+<p>注意：<span class="arithmatex">\(c = 0\)</span> 时只有一个解，因为 <span class="arithmatex">\(4x + 3\)</span> 既等于 <span class="arithmatex">\(0\)</span> 又等于 <span class="arithmatex">\(-0\)</span>（相同）。验证：<span class="arithmatex">\(|4(-\frac{3}{4}) + 3| = |-3 + 3| = 0\)</span> ✓。</p>
+<hr />
+<h3 id="413-ax-b-cx-d">4.1.3 类型 <span class="arithmatex">\(|ax + b| = cx + d\)</span><a class="headerlink" href="#413-ax-b-cx-d" title="Permanent link">&para;</a></h3>
+<p>当等号右边也含有变量时，不能直接拆成两个方程——因为必须确保右边非负（绝对值永远非负，所以右边也必须非负）。解法一：<strong>分类讨论</strong>（分 <span class="arithmatex">\(ax + b\)</span> 的符号）。解法二：<strong>两边平方</strong>后解二次方程再验根。</p>
+<p><strong>例题 3</strong>：解方程 <span class="arithmatex">\(|2x - 3| = x + 1\)</span>。</p>
+<p><strong>解（分类讨论法）</strong>：</p>
+<p><strong>情况 1</strong>：<span class="arithmatex">\(2x - 3 \ge 0\)</span>，即 <span class="arithmatex">\(x \ge \frac{3}{2}\)</span>。</p>
+<p>此时 <span class="arithmatex">\(|2x - 3| = 2x - 3\)</span>，方程化为：</p>
+<div class="arithmatex">\[
+2x - 3 = x + 1 \Rightarrow x = 4
+\]</div>
+<p>检查前提：<span class="arithmatex">\(4 \ge \frac{3}{2}\)</span> ✓。</p>
+<p><strong>情况 2</strong>：<span class="arithmatex">\(2x - 3 &lt; 0\)</span>，即 <span class="arithmatex">\(x &lt; \frac{3}{2}\)</span>。</p>
+<p>此时 <span class="arithmatex">\(|2x - 3| = -(2x - 3) = -2x + 3\)</span>，方程化为：</p>
+<div class="arithmatex">\[
+-2x + 3 = x + 1 \Rightarrow -3x = -2 \Rightarrow x = \frac{2}{3}
+\]</div>
+<p>检查前提：<span class="arithmatex">\(\frac{2}{3} &lt; \frac{3}{2}\)</span> ✓。</p>
+<p>因此解为 <span class="arithmatex">\(x = 4\)</span> 和 <span class="arithmatex">\(x = \frac{2}{3}\)</span>。</p>
+<p><strong>解（平方验根法）</strong>：</p>
+<p>两边平方：<span class="arithmatex">\((2x - 3)^2 = (x + 1)^2\)</span></p>
+<div class="arithmatex">\[
+4x^2 - 12x + 9 = x^2 + 2x + 1
+\]</div>
+<div class="arithmatex">\[
+3x^2 - 14x + 8 = 0
+\]</div>
+<div class="arithmatex">\[
+(3x - 2)(x - 4) = 0
+\]</div>
+<div class="arithmatex">\[
+x = \frac{2}{3} \quad \text{或} \quad x = 4
+\]</div>
+<p>验证：<span class="arithmatex">\(x = 4\)</span> 时右边 <span class="arithmatex">\(4 + 1 = 5 &gt; 0\)</span> ✓；<span class="arithmatex">\(x = \frac{2}{3}\)</span> 时右边 <span class="arithmatex">\(\frac{2}{3} + 1 = \frac{5}{3} &gt; 0\)</span> ✓。两个解都有效。</p>
+<p><strong>例题 4</strong>：解方程 <span class="arithmatex">\(|x + 2| = 2x - 1\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p><strong>情况 1</strong>：<span class="arithmatex">\(x + 2 \ge 0\)</span>，即 <span class="arithmatex">\(x \ge -2\)</span>。</p>
+<div class="arithmatex">\[
+x + 2 = 2x - 1 \Rightarrow 3 = x \Rightarrow x = 3
+\]</div>
+<p>检查：<span class="arithmatex">\(3 \ge -2\)</span> ✓。验证右边：<span class="arithmatex">\(2(3) - 1 = 5 &gt; 0\)</span> ✓。</p>
+<p><strong>情况 2</strong>：<span class="arithmatex">\(x + 2 &lt; 0\)</span>，即 <span class="arithmatex">\(x &lt; -2\)</span>。</p>
+<div class="arithmatex">\[
+-(x + 2) = 2x - 1 \Rightarrow -x - 2 = 2x - 1 \Rightarrow -1 = 3x \Rightarrow x = -\frac{1}{3}
+\]</div>
+<p>检查前提：<span class="arithmatex">\(-\frac{1}{3} &lt; -2\)</span>？不成立！<span class="arithmatex">\(-\frac{1}{3} &gt; -2\)</span>，所以此解无效。</p>
+<p>因此唯一解为 <span class="arithmatex">\(x = 3\)</span>。</p>
+<p><strong>例题 5</strong>：解方程 <span class="arithmatex">\(|3x + 1| = 2 - x\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p><strong>情况 1</strong>：<span class="arithmatex">\(3x + 1 \ge 0\)</span>，即 <span class="arithmatex">\(x \ge -\frac{1}{3}\)</span>。</p>
+<div class="arithmatex">\[
+3x + 1 = 2 - x \Rightarrow 4x = 1 \Rightarrow x = \frac{1}{4}
+\]</div>
+<p>检查：<span class="arithmatex">\(\frac{1}{4} \ge -\frac{1}{3}\)</span> ✓。右边：<span class="arithmatex">\(2 - \frac{1}{4} = \frac{7}{4} &gt; 0\)</span> ✓。</p>
+<p><strong>情况 2</strong>：<span class="arithmatex">\(3x + 1 &lt; 0\)</span>，即 <span class="arithmatex">\(x &lt; -\frac{1}{3}\)</span>。</p>
+<div class="arithmatex">\[
+-(3x + 1) = 2 - x \Rightarrow -3x - 1 = 2 - x \Rightarrow -2x = 3 \Rightarrow x = -\frac{3}{2}
+\]</div>
+<p>检查：<span class="arithmatex">\(-\frac{3}{2} &lt; -\frac{1}{3}\)</span> ✓。右边：<span class="arithmatex">\(2 - (-\frac{3}{2}) = \frac{7}{2} &gt; 0\)</span> ✓。</p>
+<p>因此解为 <span class="arithmatex">\(x = \frac{1}{4}\)</span> 和 <span class="arithmatex">\(x = -\frac{3}{2}\)</span>。</p>
+<hr />
+<h3 id="414-ax-b-cx-d">4.1.4 类型 <span class="arithmatex">\(|ax + b| = |cx + d|\)</span><a class="headerlink" href="#414-ax-b-cx-d" title="Permanent link">&para;</a></h3>
+<p>两个绝对值相等，意味着两个表达式要么相等，要么互为相反数。无需分类讨论前提条件。</p>
+<div class="arithmatex">\[
+|ax + b| = |cx + d| \quad \Longleftrightarrow \quad ax + b = cx + d \quad \text{或} \quad ax + b = -(cx + d)
+\]</div>
+<p><strong>例题 6</strong>：解方程 <span class="arithmatex">\(|2x + 5| = |x - 3|\)</span>。</p>
+<p><strong>解</strong>：</p>
+<div class="arithmatex">\[
+2x + 5 = x - 3 \quad \text{或} \quad 2x + 5 = -(x - 3)
+\]</div>
+<p><strong>方程 1</strong>：<span class="arithmatex">\(2x + 5 = x - 3 \Rightarrow x = -8\)</span></p>
+<p><strong>方程 2</strong>：<span class="arithmatex">\(2x + 5 = -x + 3 \Rightarrow 3x = -2 \Rightarrow x = -\frac{2}{3}\)</span></p>
+<p>因此解为 <span class="arithmatex">\(x = -8\)</span> 和 <span class="arithmatex">\(x = -\frac{2}{3}\)</span>。</p>
+<p>验证：<span class="arithmatex">\(|2(-8) + 5| = |-11| = 11\)</span>，<span class="arithmatex">\(|(-8) - 3| = |-11| = 11\)</span> ✓。
+<span class="arithmatex">\(|2(-\frac{2}{3}) + 5| = |-\frac{4}{3} + 5| = |\frac{11}{3}| = \frac{11}{3}\)</span>，<span class="arithmatex">\(|-\frac{2}{3} - 3| = |-\frac{11}{3}| = \frac{11}{3}\)</span> ✓。</p>
+<p><strong>例题 7</strong>：解方程 <span class="arithmatex">\(|5x - 2| = |3x + 4|\)</span>。</p>
+<p><strong>解</strong>：</p>
+<div class="arithmatex">\[
+5x - 2 = 3x + 4 \quad \text{或} \quad 5x - 2 = -(3x + 4)
+\]</div>
+<p><strong>方程 1</strong>：<span class="arithmatex">\(5x - 2 = 3x + 4 \Rightarrow 2x = 6 \Rightarrow x = 3\)</span></p>
+<p><strong>方程 2</strong>：<span class="arithmatex">\(5x - 2 = -3x - 4 \Rightarrow 8x = -2 \Rightarrow x = -\frac{1}{4}\)</span></p>
+<p>因此解为 <span class="arithmatex">\(x = 3\)</span> 和 <span class="arithmatex">\(x = -\frac{1}{4}\)</span>。</p>
+<p><strong>例题 8</strong>：解方程 <span class="arithmatex">\(|x + 1| = |2x - 5|\)</span>。</p>
+<p><strong>解</strong>：</p>
+<div class="arithmatex">\[
+x + 1 = 2x - 5 \quad \text{或} \quad x + 1 = -(2x - 5)
+\]</div>
+<p><strong>方程 1</strong>：<span class="arithmatex">\(x + 1 = 2x - 5 \Rightarrow 6 = x \Rightarrow x = 6\)</span></p>
+<p><strong>方程 2</strong>：<span class="arithmatex">\(x + 1 = -2x + 5 \Rightarrow 3x = 4 \Rightarrow x = \frac{4}{3}\)</span></p>
+<p>因此解为 <span class="arithmatex">\(x = 6\)</span> 和 <span class="arithmatex">\(x = \frac{4}{3}\)</span>。</p>
+<hr />
+<h3 id="415-ax2-bx-c-d">4.1.5 类型 <span class="arithmatex">\(|ax^2 + bx + c| = d\)</span><a class="headerlink" href="#415-ax2-bx-c-d" title="Permanent link">&para;</a></h3>
+<p>当绝对值内部是二次函数时，处理思路相同：去掉绝对值后得到两个二次方程。</p>
+<p><strong>例题 9</strong>：解方程 <span class="arithmatex">\(|x^2 - 4x + 3| = 3\)</span>。</p>
+<p><strong>解</strong>：</p>
+<div class="arithmatex">\[
+x^2 - 4x + 3 = 3 \quad \text{或} \quad x^2 - 4x + 3 = -3
+\]</div>
+<p><strong>方程 1</strong>：<span class="arithmatex">\(x^2 - 4x = 0 \Rightarrow x(x - 4) = 0 \Rightarrow x = 0\)</span> 或 <span class="arithmatex">\(x = 4\)</span></p>
+<p><strong>方程 2</strong>：<span class="arithmatex">\(x^2 - 4x + 6 = 0\)</span></p>
+<p>判别式 <span class="arithmatex">\(\Delta = (-4)^2 - 4(1)(6) = 16 - 24 = -8 &lt; 0\)</span>，无实数解。</p>
+<p>因此解为 <span class="arithmatex">\(x = 0\)</span> 和 <span class="arithmatex">\(x = 4\)</span>。</p>
+<p><strong>例题 10</strong>：解方程 <span class="arithmatex">\(|2x^2 - 5x - 3| = 2\)</span>。</p>
+<p><strong>解</strong>：</p>
+<div class="arithmatex">\[
+2x^2 - 5x - 3 = 2 \quad \text{或} \quad 2x^2 - 5x - 3 = -2
+\]</div>
+<p><strong>方程 1</strong>：<span class="arithmatex">\(2x^2 - 5x - 5 = 0\)</span></p>
+<div class="arithmatex">\[
+x = \frac{5 \pm \sqrt{25 - 4(2)(-5)}}{2(2)} = \frac{5 \pm \sqrt{25 + 40}}{4} = \frac{5 \pm \sqrt{65}}{4}
+\]</div>
+<p><strong>方程 2</strong>：<span class="arithmatex">\(2x^2 - 5x - 1 = 0\)</span></p>
+<div class="arithmatex">\[
+x = \frac{5 \pm \sqrt{25 - 4(2)(-1)}}{4} = \frac{5 \pm \sqrt{25 + 8}}{4} = \frac{5 \pm \sqrt{33}}{4}
+\]</div>
+<p>因此有四个解：<span class="arithmatex">\(x = \frac{5 \pm \sqrt{65}}{4}\)</span> 和 <span class="arithmatex">\(x = \frac{5 \pm \sqrt{33}}{4}\)</span>。</p>
+<p><strong>例题 11</strong>：解方程 <span class="arithmatex">\(|x^2 - 9| = 7\)</span>。</p>
+<p><strong>解</strong>：</p>
+<div class="arithmatex">\[
+x^2 - 9 = 7 \quad \text{或} \quad x^2 - 9 = -7
+\]</div>
+<p><strong>方程 1</strong>：<span class="arithmatex">\(x^2 = 16 \Rightarrow x = \pm 4\)</span></p>
+<p><strong>方程 2</strong>：<span class="arithmatex">\(x^2 = 2 \Rightarrow x = \pm \sqrt{2}\)</span></p>
+<p>因此解为 <span class="arithmatex">\(x = 4, -4, \sqrt{2}, -\sqrt{2}\)</span>。</p>
+<hr />
+<h2 id="42">4.2 绝对值不等式<a class="headerlink" href="#42" title="Permanent link">&para;</a></h2>
+<p>绝对值不等式的核心思想：<strong>将绝对值不等式转化为不含绝对值的不等式组</strong>，然后利用数轴或图像求解。</p>
+<h3 id="421-ax-b-c-ax-b-le-c">4.2.1 基本类型 <span class="arithmatex">\(|ax + b| &gt; c\)</span> 和 <span class="arithmatex">\(|ax + b| \le c\)</span><a class="headerlink" href="#421-ax-b-c-ax-b-le-c" title="Permanent link">&para;</a></h3>
+<p><strong>核心规则</strong>（<span class="arithmatex">\(c &gt; 0\)</span>）：</p>
+<div class="arithmatex">\[
+|ax + b| &gt; c \quad \Longleftrightarrow \quad ax + b &lt; -c \quad \text{或} \quad ax + b &gt; c
+\]</div>
+<div class="arithmatex">\[
+|ax + b| \le c \quad \Longleftrightarrow \quad -c \le ax + b \le c
+\]</div>
+<blockquote>
+<p>记忆方法："<strong>大于取两边，小于取中间</strong>"。</p>
+</blockquote>
+<p>对于 <span class="arithmatex">\(k|ax + b| &gt; c\)</span>（<span class="arithmatex">\(k &gt; 0\)</span>，<span class="arithmatex">\(c \ge 0\)</span>），先两边除以 <span class="arithmatex">\(k\)</span> 化为标准形式：<span class="arithmatex">\(|ax + b| &gt; \frac{c}{k}\)</span>。</p>
+<p><strong>例题 1</strong>：解不等式 <span class="arithmatex">\(|2x - 5| &gt; 3\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>"大于取两边"：</p>
+<div class="arithmatex">\[
+2x - 5 &lt; -3 \quad \text{或} \quad 2x - 5 &gt; 3
+\]</div>
+<div class="arithmatex">\[
+2x &lt; 2 \quad \text{或} \quad 2x &gt; 8
+\]</div>
+<div class="arithmatex">\[
+x &lt; 1 \quad \text{或} \quad x &gt; 4
+\]</div>
+<p>解集为 <span class="arithmatex">\(x \in (-\infty, 1) \cup (4, \infty)\)</span>。</p>
+<p><strong>例题 2</strong>：解不等式 <span class="arithmatex">\(3|2x + 1| \le 15\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>先除以 <span class="arithmatex">\(3\)</span>：<span class="arithmatex">\(|2x + 1| \le 5\)</span></p>
+<p>"小于取中间"：</p>
+<div class="arithmatex">\[
+-5 \le 2x + 1 \le 5
+\]</div>
+<p>左边：<span class="arithmatex">\(-5 \le 2x + 1 \Rightarrow -6 \le 2x \Rightarrow x \ge -3\)</span></p>
+<p>右边：<span class="arithmatex">\(2x + 1 \le 5 \Rightarrow 2x \le 4 \Rightarrow x \le 2\)</span></p>
+<p>因此解集为 <span class="arithmatex">\(-3 \le x \le 2\)</span>，即 <span class="arithmatex">\(x \in [-3, 2]\)</span>。</p>
+<p><strong>例题 3</strong>：解不等式 <span class="arithmatex">\(2|4 - x| &gt; 10\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>除以 <span class="arithmatex">\(2\)</span>：<span class="arithmatex">\(|4 - x| &gt; 5\)</span></p>
+<p>"大于取两边"：</p>
+<div class="arithmatex">\[
+4 - x &lt; -5 \quad \text{或} \quad 4 - x &gt; 5
+\]</div>
+<div class="arithmatex">\[
+-x &lt; -9 \quad \text{或} \quad -x &gt; 1
+\]</div>
+<div class="arithmatex">\[
+x &gt; 9 \quad \text{或} \quad x &lt; -1
+\]</div>
+<p>解集为 <span class="arithmatex">\(x \in (-\infty, -1) \cup (9, \infty)\)</span>。</p>
+<hr />
+<h3 id="422-kax-b-le-cx-d-quad-k-0">4.2.2 类型 <span class="arithmatex">\(k|ax + b| \le |cx + d| \quad (k &gt; 0)\)</span><a class="headerlink" href="#422-kax-b-le-cx-d-quad-k-0" title="Permanent link">&para;</a></h3>
+<p>当两边都有绝对值时，最可靠的方法是<strong>两边平方</strong>，利用 <span class="arithmatex">\(|A|^2 = A^2\)</span> 的性质化为不含绝对值的不等式。</p>
+<p><strong>例题 4</strong>：解不等式 <span class="arithmatex">\(|2x - 1| \le |x + 3|\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>两边平方（不等号方向保持不变，因为两边非负）：</p>
+<div class="arithmatex">\[
+(2x - 1)^2 \le (x + 3)^2
+\]</div>
+<div class="arithmatex">\[
+4x^2 - 4x + 1 \le x^2 + 6x + 9
+\]</div>
+<div class="arithmatex">\[
+3x^2 - 10x - 8 \le 0
+\]</div>
+<p>解方程 <span class="arithmatex">\(3x^2 - 10x - 8 = 0\)</span>：</p>
+<div class="arithmatex">\[
+x = \frac{10 \pm \sqrt{100 + 96}}{6} = \frac{10 \pm \sqrt{196}}{6} = \frac{10 \pm 14}{6}
+\]</div>
+<div class="arithmatex">\[
+x = \frac{24}{6} = 4 \quad \text{或} \quad x = \frac{-4}{6} = -\frac{2}{3}
+\]</div>
+<p>二次项系数 <span class="arithmatex">\(3 &gt; 0\)</span>，抛物线开口向上，所以 <span class="arithmatex">\(3x^2 - 10x - 8 \le 0\)</span> 的解为两根之间：</p>
+<div class="arithmatex">\[
+-\frac{2}{3} \le x \le 4
+\]</div>
+<p>即 </p>
+<div class="arithmatex">\[x \in \left[-\frac{2}{3}, 4\right]\]</div>
+<hr />
+<p><strong>例题 5</strong>：解不等式 <span class="arithmatex">\(2|x + 2| &gt; |3x - 1|\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>两边平方：</p>
+<div class="arithmatex">\[
+4(x + 2)^2 &gt; (3x - 1)^2
+\]</div>
+<div class="arithmatex">\[
+4(x^2 + 4x + 4) &gt; 9x^2 - 6x + 1
+\]</div>
+<div class="arithmatex">\[
+4x^2 + 16x + 16 &gt; 9x^2 - 6x + 1
+\]</div>
+<div class="arithmatex">\[
+0 &gt; 5x^2 - 22x - 15
+\]</div>
+<div class="arithmatex">\[
+5x^2 - 22x - 15 &lt; 0
+\]</div>
+<p>解方程 <span class="arithmatex">\(5x^2 - 22x - 15 = 0\)</span>：</p>
+<div class="arithmatex">\[
+x = \frac{22 \pm \sqrt{484 + 300}}{10} = \frac{22 \pm \sqrt{784}}{10} = \frac{22 \pm 28}{10}
+\]</div>
+<div class="arithmatex">\[
+x = \frac{50}{10} = 5 \quad \text{或} \quad x = \frac{-6}{10} = -\frac{3}{5}
+\]</div>
+<p>二次项系数 <span class="arithmatex">\(5 &gt; 0\)</span>，开口向上，所以 <span class="arithmatex">\(5x^2 - 22x - 15 &lt; 0\)</span> 的解为：</p>
+<div class="arithmatex">\[
+-\frac{3}{5} &lt; x &lt; 5
+\]</div>
+<p>即 <span class="arithmatex">\(x \in \left(-\frac{3}{5}, 5\right)\)</span>。</p>
+<p><strong>例题 6</strong>：解不等式 <span class="arithmatex">\(3|x - 1| \le 2|x + 2|\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>两边平方：</p>
+<div class="arithmatex">\[
+9(x - 1)^2 \le 4(x + 2)^2
+\]</div>
+<div class="arithmatex">\[
+9(x^2 - 2x + 1) \le 4(x^2 + 4x + 4)
+\]</div>
+<div class="arithmatex">\[
+9x^2 - 18x + 9 \le 4x^2 + 16x + 16
+\]</div>
+<div class="arithmatex">\[
+5x^2 - 34x - 7 \le 0
+\]</div>
+<p>解方程 <span class="arithmatex">\(5x^2 - 34x - 7 = 0\)</span>：</p>
+<div class="arithmatex">\[
+x = \frac{34 \pm \sqrt{1156 + 140}}{10} = \frac{34 \pm \sqrt{1296}}{10} = \frac{34 \pm 36}{10}
+\]</div>
+<div class="arithmatex">\[
+x = \frac{70}{10} = 7 \quad \text{或} \quad x = \frac{-2}{10} = -\frac{1}{5}
+\]</div>
+<p>二次项系数 <span class="arithmatex">\(5 &gt; 0\)</span>，开口向上，所以 <span class="arithmatex">\(5x^2 - 34x - 7 \le 0\)</span> 的解为：</p>
+<div class="arithmatex">\[
+-\frac{1}{5} \le x \le 7
+\]</div>
+<p>即 <span class="arithmatex">\(x \in \left[-\frac{1}{5}, 7\right]\)</span>。</p>
+<hr />
+<h3 id="423-ax-b-le-cx-d">4.2.3 类型 <span class="arithmatex">\(|ax + b| \le cx + d\)</span><a class="headerlink" href="#423-ax-b-le-cx-d" title="Permanent link">&para;</a></h3>
+<p>这类不等式的右边是线性表达式。解法有代数分类法和图形法两种。</p>
+<p><strong>代数分类法</strong>：根据 <span class="arithmatex">\(ax + b\)</span> 的符号分情况讨论，解出后检查是否满足前提条件。</p>
+<p><strong>图形法</strong>：画出 <span class="arithmatex">\(y = |ax + b|\)</span> 和 <span class="arithmatex">\(y = cx + d\)</span> 的图像，找出前者在后者下方（或上方）的区间。</p>
+<p><strong>例题 7</strong>：解不等式 <span class="arithmatex">\(|x - 3| \le 2x + 1\)</span>。</p>
+<p><strong>解（代数分类法）</strong>：</p>
+<p><strong>情况 1</strong>：<span class="arithmatex">\(x - 3 \ge 0\)</span>，即 <span class="arithmatex">\(x \ge 3\)</span>。</p>
+<div class="arithmatex">\[
+x - 3 \le 2x + 1 \Rightarrow -4 \le x
+\]</div>
+<p>结合前提 <span class="arithmatex">\(x \ge 3\)</span>，得到 <span class="arithmatex">\(x \ge 3\)</span>。</p>
+<p><strong>情况 2</strong>：<span class="arithmatex">\(x - 3 &lt; 0\)</span>，即 <span class="arithmatex">\(x &lt; 3\)</span>。</p>
+<div class="arithmatex">\[
+-(x - 3) \le 2x + 1 \Rightarrow -x + 3 \le 2x + 1 \Rightarrow 2 \le 3x \Rightarrow x \ge \frac{2}{3}
+\]</div>
+<p>结合前提 <span class="arithmatex">\(x &lt; 3\)</span>，得到 <span class="arithmatex">\(\frac{2}{3} \le x &lt; 3\)</span>。</p>
+<p>两种情况取并集：<span class="arithmatex">\(x \ge \frac{2}{3}\)</span>，即 <span class="arithmatex">\(x \in \left[\frac{2}{3}, \infty\right)\)</span>。</p>
+<p><strong>例题 8</strong>：解不等式 <span class="arithmatex">\(|2x + 5| &gt; x + 4\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p><strong>情况 1</strong>：<span class="arithmatex">\(2x + 5 \ge 0\)</span>，即 <span class="arithmatex">\(x \ge -\frac{5}{2}\)</span>。</p>
+<div class="arithmatex">\[
+2x + 5 &gt; x + 4 \Rightarrow x &gt; -1
+\]</div>
+<p>结合前提 <span class="arithmatex">\(x \ge -\frac{5}{2}\)</span>，得到 <span class="arithmatex">\(x &gt; -1\)</span>。</p>
+<p><strong>情况 2</strong>：<span class="arithmatex">\(2x + 5 &lt; 0\)</span>，即 <span class="arithmatex">\(x &lt; -\frac{5}{2}\)</span>。</p>
+<div class="arithmatex">\[
+-(2x + 5) &gt; x + 4 \Rightarrow -2x - 5 &gt; x + 4 \Rightarrow -3x &gt; 9 \Rightarrow x &lt; -3
+\]</div>
+<p>结合前提 <span class="arithmatex">\(x &lt; -\frac{5}{2}\)</span>，得到 <span class="arithmatex">\(x &lt; -3\)</span>。</p>
+<p>解集为 <span class="arithmatex">\(x \in (-\infty, -3) \cup (-1, \infty)\)</span>。</p>
+<p><strong>例题 9</strong>：解不等式 <span class="arithmatex">\(|x + 2| \le 3x - 1\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p><strong>情况 1</strong>：<span class="arithmatex">\(x + 2 \ge 0\)</span>，即 <span class="arithmatex">\(x \ge -2\)</span>。</p>
+<div class="arithmatex">\[
+x + 2 \le 3x - 1 \Rightarrow 3 \le 2x \Rightarrow x \ge \frac{3}{2}
+\]</div>
+<p>结合前提 <span class="arithmatex">\(x \ge -2\)</span>，得到 <span class="arithmatex">\(x \ge \frac{3}{2}\)</span>。</p>
+<p><strong>情况 2</strong>：<span class="arithmatex">\(x + 2 &lt; 0\)</span>，即 <span class="arithmatex">\(x &lt; -2\)</span>。</p>
+<div class="arithmatex">\[
+-(x + 2) \le 3x - 1 \Rightarrow -x - 2 \le 3x - 1 \Rightarrow -1 \le 4x \Rightarrow x \ge -\frac{1}{4}
+\]</div>
+<p>但前提是 <span class="arithmatex">\(x &lt; -2\)</span>，而 <span class="arithmatex">\(-\frac{1}{4} &gt; -2\)</span>，无有效解。</p>
+<p>因此解集为 <span class="arithmatex">\(x \ge \frac{3}{2}\)</span>，即 <span class="arithmatex">\(x \in \left[\frac{3}{2}, \infty\right)\)</span>。</p>
+<hr />
+<h3 id="424-ax2-bx-c-d-ax2-bx-c-le-d">4.2.4 类型 <span class="arithmatex">\(|ax^2 + bx + c| &gt; d\)</span> 和 <span class="arithmatex">\(|ax^2 + bx + c| \le d\)</span><a class="headerlink" href="#424-ax2-bx-c-d-ax2-bx-c-le-d" title="Permanent link">&para;</a></h3>
+<p>处理思路：去掉绝对值，转化为两个二次不等式，分别求解后取并集或交集。</p>
+<p><strong>例题 10</strong>：解不等式 <span class="arithmatex">\(|x^2 - 3x| \le 4\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>由 <span class="arithmatex">\(|f(x)| \le 4\)</span> 得 <span class="arithmatex">\(-4 \le x^2 - 3x \le 4\)</span>。</p>
+<p><strong>左边不等式</strong>：<span class="arithmatex">\(x^2 - 3x \ge -4\)</span></p>
+<div class="arithmatex">\[
+x^2 - 3x + 4 \ge 0
+\]</div>
+<p>判别式 <span class="arithmatex">\(\Delta = 9 - 16 = -7 &lt; 0\)</span>，二次项系数 <span class="arithmatex">\(1 &gt; 0\)</span>，所以 <span class="arithmatex">\(x^2 - 3x + 4 &gt; 0\)</span> 对所有 <span class="arithmatex">\(x\)</span> 恒成立。左边不等式自动满足。</p>
+<p><strong>右边不等式</strong>：<span class="arithmatex">\(x^2 - 3x \le 4\)</span></p>
+<div class="arithmatex">\[
+x^2 - 3x - 4 \le 0
+\]</div>
+<div class="arithmatex">\[
+(x - 4)(x + 1) \le 0
+\]</div>
+<p>解为 <span class="arithmatex">\(-1 \le x \le 4\)</span>。</p>
+<p>因此原不等式的解集为 <span class="arithmatex">\(x \in [-1, 4]\)</span>。</p>
+<p><strong>例题 11</strong>：解不等式 <span class="arithmatex">\(|x^2 - 2x - 3| &gt; 3\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>由 <span class="arithmatex">\(|f(x)| &gt; 3\)</span> 得 <span class="arithmatex">\(x^2 - 2x - 3 &lt; -3\)</span> 或 <span class="arithmatex">\(x^2 - 2x - 3 &gt; 3\)</span>。</p>
+<p><strong>不等式 1</strong>：<span class="arithmatex">\(x^2 - 2x - 3 &lt; -3\)</span></p>
+<div class="arithmatex">\[
+x^2 - 2x &lt; 0 \Rightarrow x(x - 2) &lt; 0 \Rightarrow 0 &lt; x &lt; 2
+\]</div>
+<p><strong>不等式 2</strong>：<span class="arithmatex">\(x^2 - 2x - 3 &gt; 3\)</span></p>
+<div class="arithmatex">\[
+x^2 - 2x - 6 &gt; 0
+\]</div>
+<p>解方程 <span class="arithmatex">\(x^2 - 2x - 6 = 0\)</span>：</p>
+<div class="arithmatex">\[
+x = \frac{2 \pm \sqrt{4 + 24}}{2} = \frac{2 \pm \sqrt{28}}{2} = \frac{2 \pm 2\sqrt{7}}{2} = 1 \pm \sqrt{7}
+\]</div>
+<p>二次项系数 <span class="arithmatex">\(1 &gt; 0\)</span>，开口向上，所以 <span class="arithmatex">\(x^2 - 2x - 6 &gt; 0\)</span> 的解为：</p>
+<div class="arithmatex">\[
+x &lt; 1 - \sqrt{7} \quad \text{或} \quad x &gt; 1 + \sqrt{7}
+\]</div>
+<p>其中 <span class="arithmatex">\(1 - \sqrt{7} \approx 1 - 2.646 = -1.646\)</span>，<span class="arithmatex">\(1 + \sqrt{7} \approx 3.646\)</span>。</p>
+<p>原不等式的解集为两个不等式解集的并集：</p>
+<div class="arithmatex">\[
+x \in (-\infty, 1 - \sqrt{7}) \cup (0, 2) \cup (1 + \sqrt{7}, \infty)
+\]</div>
+<p><strong>例题 12</strong>：解不等式 <span class="arithmatex">\(|2x^2 + x - 1| \le 5\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>由 <span class="arithmatex">\(-5 \le 2x^2 + x - 1 \le 5\)</span>。</p>
+<p><strong>左边不等式</strong>：<span class="arithmatex">\(2x^2 + x - 1 \ge -5\)</span></p>
+<div class="arithmatex">\[
+2x^2 + x + 4 \ge 0
+\]</div>
+<p>判别式 <span class="arithmatex">\(\Delta = 1 - 32 = -31 &lt; 0\)</span>，二次项系数 <span class="arithmatex">\(2 &gt; 0\)</span>，恒成立。</p>
+<p><strong>右边不等式</strong>：<span class="arithmatex">\(2x^2 + x - 1 \le 5\)</span></p>
+<div class="arithmatex">\[
+2x^2 + x - 6 \le 0
+\]</div>
+<p>解方程 <span class="arithmatex">\(2x^2 + x - 6 = 0\)</span>：</p>
+<div class="arithmatex">\[
+x = \frac{-1 \pm \sqrt{1 + 48}}{4} = \frac{-1 \pm \sqrt{49}}{4} = \frac{-1 \pm 7}{4}
+\]</div>
+<div class="arithmatex">\[
+x = \frac{6}{4} = \frac{3}{2} \quad \text{或} \quad x = \frac{-8}{4} = -2
+\]</div>
+<p>二次项系数 <span class="arithmatex">\(2 &gt; 0\)</span>，开口向上，所以 <span class="arithmatex">\(2x^2 + x - 6 \le 0\)</span> 的解为：</p>
+<div class="arithmatex">\[
+-2 \le x \le \frac{3}{2}
+\]</div>
+<p>因此解集为 <span class="arithmatex">\(x \in \left[-2, \frac{3}{2}\right]\)</span>。</p>
+<hr />
+<h2 id="43">4.3 代换法化为一元二次方程<a class="headerlink" href="#43" title="Permanent link">&para;</a></h2>
+<p>有些方程乍看不是二次方程，但通过巧妙的<strong>代换</strong>可以转化为熟悉的一元二次方程。代换法的核心是识别出表达式中重复出现的结构，令其为 <span class="arithmatex">\(u\)</span>，从而将原方程化简。</p>
+<h3 id="431">4.3.1 指数型代换<a class="headerlink" href="#431" title="Permanent link">&para;</a></h3>
+<p>形如 <span class="arithmatex">\(a^{2x} + b \cdot a^x + c = 0\)</span> 的方程，令 <span class="arithmatex">\(u = a^x\)</span>（<span class="arithmatex">\(u &gt; 0\)</span>），则 <span class="arithmatex">\(a^{2x} = (a^x)^2 = u^2\)</span>。</p>
+<p>对于形如 <span class="arithmatex">\(3e^x = 12 - 5e^{-x}\)</span> 的方程，两边乘以 <span class="arithmatex">\(e^x\)</span> 后令 <span class="arithmatex">\(u = e^x\)</span>。</p>
+<p><strong>例题 1</strong>：解方程 <span class="arithmatex">\(4^x - 5 \cdot 2^x + 4 = 0\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>注意 <span class="arithmatex">\(4^x = (2^2)^x = (2^x)^2\)</span>。令 <span class="arithmatex">\(u = 2^x &gt; 0\)</span>，则：</p>
+<div class="arithmatex">\[
+u^2 - 5u + 4 = 0
+\]</div>
+<div class="arithmatex">\[
+(u - 1)(u - 4) = 0
+\]</div>
+<div class="arithmatex">\[
+u = 1 \quad \text{或} \quad u = 4
+\]</div>
+<p>回代 <span class="arithmatex">\(u = 2^x\)</span>：</p>
+<ul>
+<li><span class="arithmatex">\(2^x = 1 \Rightarrow x = 0\)</span>（因为 <span class="arithmatex">\(2^0 = 1\)</span>）</li>
+<li><span class="arithmatex">\(2^x = 4 \Rightarrow x = 2\)</span>（因为 <span class="arithmatex">\(2^2 = 4\)</span>）</li>
+</ul>
+<p>因此解为 <span class="arithmatex">\(x = 0\)</span> 和 <span class="arithmatex">\(x = 2\)</span>。</p>
+<p><strong>例题 2</strong>：解方程 <span class="arithmatex">\(2e^x = 7 - 3e^{-x}\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>两边乘以 <span class="arithmatex">\(e^x\)</span>（<span class="arithmatex">\(e^x &gt; 0\)</span>，不会引入增根）：</p>
+<div class="arithmatex">\[
+2e^{2x} = 7e^x - 3
+\]</div>
+<div class="arithmatex">\[
+2e^{2x} - 7e^x + 3 = 0
+\]</div>
+<p>令 <span class="arithmatex">\(u = e^x &gt; 0\)</span>，则：</p>
+<div class="arithmatex">\[
+2u^2 - 7u + 3 = 0
+\]</div>
+<div class="arithmatex">\[
+(2u - 1)(u - 3) = 0
+\]</div>
+<div class="arithmatex">\[
+u = \frac{1}{2} \quad \text{或} \quad u = 3
+\]</div>
+<p>回代 <span class="arithmatex">\(u = e^x\)</span>：</p>
+<ul>
+<li><span class="arithmatex">\(e^x = \frac{1}{2} \Rightarrow x = \ln \frac{1}{2} = -\ln 2\)</span></li>
+<li><span class="arithmatex">\(e^x = 3 \Rightarrow x = \ln 3\)</span></li>
+</ul>
+<p>因此解为 <span class="arithmatex">\(x = -\ln 2\)</span> 和 <span class="arithmatex">\(x = \ln 3\)</span>。</p>
+<p><strong>例题 3</strong>：解方程 <span class="arithmatex">\(3^{2x+1} - 10 \cdot 3^x + 3 = 0\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>注意 <span class="arithmatex">\(3^{2x+1} = 3 \cdot 3^{2x} = 3(3^x)^2\)</span>。令 <span class="arithmatex">\(u = 3^x &gt; 0\)</span>，则：</p>
+<div class="arithmatex">\[
+3u^2 - 10u + 3 = 0
+\]</div>
+<div class="arithmatex">\[
+(3u - 1)(u - 3) = 0
+\]</div>
+<div class="arithmatex">\[
+u = \frac{1}{3} \quad \text{或} \quad u = 3
+\]</div>
+<p>回代 <span class="arithmatex">\(u = 3^x\)</span>：</p>
+<ul>
+<li><span class="arithmatex">\(3^x = \frac{1}{3} = 3^{-1} \Rightarrow x = -1\)</span></li>
+<li><span class="arithmatex">\(3^x = 3 \Rightarrow x = 1\)</span></li>
+</ul>
+<p>因此解为 <span class="arithmatex">\(x = -1\)</span> 和 <span class="arithmatex">\(x = 1\)</span>。</p>
+<hr />
+<h3 id="432">4.3.2 对数型代换<a class="headerlink" href="#432" title="Permanent link">&para;</a></h3>
+<p>形如 <span class="arithmatex">\((\ln x)^2 + a \ln x + b = 0\)</span> 或 <span class="arithmatex">\(2(\ln 5x)^2 + \ln 5x - 6 = 0\)</span> 的方程，令 <span class="arithmatex">\(u = \ln(g(x))\)</span>。</p>
+<p><strong>例题 4</strong>：解方程 <span class="arithmatex">\((\ln x)^2 - 3\ln x + 2 = 0\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>令 <span class="arithmatex">\(u = \ln x\)</span>，则：</p>
+<div class="arithmatex">\[
+u^2 - 3u + 2 = 0
+\]</div>
+<div class="arithmatex">\[
+(u - 1)(u - 2) = 0
+\]</div>
+<div class="arithmatex">\[
+u = 1 \quad \text{或} \quad u = 2
+\]</div>
+<p>回代 <span class="arithmatex">\(u = \ln x\)</span>：</p>
+<ul>
+<li><span class="arithmatex">\(\ln x = 1 \Rightarrow x = e^1 = e\)</span></li>
+<li><span class="arithmatex">\(\ln x = 2 \Rightarrow x = e^2\)</span></li>
+</ul>
+<p>因此解为 <span class="arithmatex">\(x = e\)</span> 和 <span class="arithmatex">\(x = e^2\)</span>。</p>
+<p><strong>例题 5</strong>：解方程 <span class="arithmatex">\(2(\ln 5x)^2 + \ln 5x - 6 = 0\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>令 <span class="arithmatex">\(u = \ln 5x\)</span>，则：</p>
+<div class="arithmatex">\[
+2u^2 + u - 6 = 0
+\]</div>
+<p>因式分解：</p>
+<div class="arithmatex">\[
+2u^2 + 4u - 3u - 6 = 0
+\]</div>
+<div class="arithmatex">\[
+2u(u + 2) - 3(u + 2) = 0
+\]</div>
+<div class="arithmatex">\[
+(u + 2)(2u - 3) = 0
+\]</div>
+<div class="arithmatex">\[
+u = -2 \quad \text{或} \quad u = \frac{3}{2}
+\]</div>
+<p>回代 <span class="arithmatex">\(u = \ln 5x\)</span>：</p>
+<ul>
+<li><span class="arithmatex">\(\ln 5x = -2 \Rightarrow 5x = e^{-2} \Rightarrow x = \frac{1}{5}e^{-2}\)</span></li>
+<li><span class="arithmatex">\(\ln 5x = \frac{3}{2} \Rightarrow 5x = e^{3/2} \Rightarrow x = \frac{1}{5}e^{3/2}\)</span></li>
+</ul>
+<p>因此解为 <span class="arithmatex">\(x = \frac{1}{5}e^{-2}\)</span> 和 <span class="arithmatex">\(x = \frac{1}{5}e^{3/2}\)</span>。</p>
+<p><strong>例题 6</strong>：解方程 <span class="arithmatex">\(\log_3 x + \log_x 3 = 2\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>利用换底公式 <span class="arithmatex">\(\log_x 3 = \frac{\log_3 3}{\log_3 x} = \frac{1}{\log_3 x}\)</span>。</p>
+<p>令 <span class="arithmatex">\(u = \log_3 x\)</span>（注意 <span class="arithmatex">\(x &gt; 0\)</span> 且 <span class="arithmatex">\(x \neq 1\)</span>，所以 <span class="arithmatex">\(u \neq 0\)</span>），则：</p>
+<div class="arithmatex">\[
+u + \frac{1}{u} = 2
+\]</div>
+<div class="arithmatex">\[
+u^2 + 1 = 2u
+\]</div>
+<div class="arithmatex">\[
+u^2 - 2u + 1 = 0
+\]</div>
+<div class="arithmatex">\[
+(u - 1)^2 = 0
+\]</div>
+<div class="arithmatex">\[
+u = 1
+\]</div>
+<p>回代：<span class="arithmatex">\(\log_3 x = 1 \Rightarrow x = 3^1 = 3\)</span>。</p>
+<p>验证：<span class="arithmatex">\(\log_3 3 + \log_3 3 = 1 + 1 = 2\)</span> ✓。</p>
+<hr />
+<h3 id="433">4.3.3 根式型代换<a class="headerlink" href="#433" title="Permanent link">&para;</a></h3>
+<p>形如 <span class="arithmatex">\(x - 6\sqrt{x} + 8 = 0\)</span> 的方程，令 <span class="arithmatex">\(u = \sqrt{x}\)</span>（<span class="arithmatex">\(u \ge 0\)</span>），则 <span class="arithmatex">\(x = u^2\)</span>。</p>
+<p>更一般地，形如 <span class="arithmatex">\(x^{\frac{2}{3}} - 4x^{\frac{1}{3}} + 2 = 0\)</span> 的方程，令 <span class="arithmatex">\(u = x^{\frac{1}{3}}\)</span>，则 <span class="arithmatex">\(x^{\frac{2}{3}} = u^2\)</span>。</p>
+<p><strong>例题 7</strong>：解方程 <span class="arithmatex">\(x - 7\sqrt{x} + 12 = 0\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>令 <span class="arithmatex">\(u = \sqrt{x} \ge 0\)</span>，则 <span class="arithmatex">\(x = u^2\)</span>。</p>
+<div class="arithmatex">\[
+u^2 - 7u + 12 = 0
+\]</div>
+<div class="arithmatex">\[
+(u - 3)(u - 4) = 0
+\]</div>
+<div class="arithmatex">\[
+u = 3 \quad \text{或} \quad u = 4
+\]</div>
+<p>回代 <span class="arithmatex">\(u = \sqrt{x}\)</span>：</p>
+<ul>
+<li><span class="arithmatex">\(\sqrt{x} = 3 \Rightarrow x = 9\)</span></li>
+<li><span class="arithmatex">\(\sqrt{x} = 4 \Rightarrow x = 16\)</span></li>
+</ul>
+<p>验证：<span class="arithmatex">\(9 - 7\sqrt{9} + 12 = 9 - 21 + 12 = 0\)</span> ✓，<span class="arithmatex">\(16 - 7\sqrt{16} + 12 = 16 - 28 + 12 = 0\)</span> ✓。</p>
+<p><strong>例题 8</strong>：解方程 <span class="arithmatex">\(x^{\frac{2}{3}} - 4x^{\frac{1}{3}} + 3 = 0\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>令 <span class="arithmatex">\(u = x^{\frac{1}{3}}\)</span>，则 <span class="arithmatex">\(x^{\frac{2}{3}} = u^2\)</span>。</p>
+<div class="arithmatex">\[
+u^2 - 4u + 3 = 0
+\]</div>
+<div class="arithmatex">\[
+(u - 1)(u - 3) = 0
+\]</div>
+<div class="arithmatex">\[
+u = 1 \quad \text{或} \quad u = 3
+\]</div>
+<p>回代 <span class="arithmatex">\(u = x^{\frac{1}{3}}\)</span>：</p>
+<ul>
+<li><span class="arithmatex">\(x^{\frac{1}{3}} = 1 \Rightarrow x = 1^3 = 1\)</span></li>
+<li><span class="arithmatex">\(x^{\frac{1}{3}} = 3 \Rightarrow x = 3^3 = 27\)</span></li>
+</ul>
+<p>验证：<span class="arithmatex">\(1^{\frac{2}{3}} - 4(1)^{\frac{1}{3}} + 3 = 1 - 4 + 3 = 0\)</span> ✓，<span class="arithmatex">\(27^{\frac{2}{3}} - 4(27)^{\frac{1}{3}} + 3 = 9 - 12 + 3 = 0\)</span> ✓。</p>
+<p><strong>例题 9</strong>：解方程 <span class="arithmatex">\(2x + 3\sqrt{x} - 2 = 0\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>令 <span class="arithmatex">\(u = \sqrt{x} \ge 0\)</span>，则 <span class="arithmatex">\(x = u^2\)</span>。</p>
+<div class="arithmatex">\[
+2u^2 + 3u - 2 = 0
+\]</div>
+<div class="arithmatex">\[
+(2u - 1)(u + 2) = 0
+\]</div>
+<div class="arithmatex">\[
+u = \frac{1}{2} \quad \text{或} \quad u = -2
+\]</div>
+<p><span class="arithmatex">\(u = \sqrt{x} \ge 0\)</span>，所以 <span class="arithmatex">\(u = -2\)</span> 无效。</p>
+<p>回代：<span class="arithmatex">\(\sqrt{x} = \frac{1}{2} \Rightarrow x = \frac{1}{4}\)</span>。</p>
+<p>验证：<span class="arithmatex">\(2(\frac{1}{4}) + 3\sqrt{\frac{1}{4}} - 2 = \frac{1}{2} + \frac{3}{2} - 2 = 0\)</span> ✓。</p>
+<hr />
+<h3 id="434">4.3.4 分式型代换<a class="headerlink" href="#434" title="Permanent link">&para;</a></h3>
+<p>形如 <span class="arithmatex">\(x^2 + \frac{1}{x^2} + a\left(x + \frac{1}{x}\right) + b = 0\)</span> 的方程，利用 <span class="arithmatex">\((x + \frac{1}{x})^2 = x^2 + 2 + \frac{1}{x^2}\)</span> 的关系，令 <span class="arithmatex">\(u = x + \frac{1}{x}\)</span>。</p>
+<p><strong>例题 10</strong>：解方程 <span class="arithmatex">\(x^2 + \frac{1}{x^2} - 5\left(x + \frac{1}{x}\right) + 6 = 0\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>令 <span class="arithmatex">\(u = x + \frac{1}{x}\)</span>，则 <span class="arithmatex">\(u^2 = x^2 + 2 + \frac{1}{x^2}\)</span>，所以 <span class="arithmatex">\(x^2 + \frac{1}{x^2} = u^2 - 2\)</span>。</p>
+<p>原方程化为：</p>
+<div class="arithmatex">\[
+(u^2 - 2) - 5u + 6 = 0
+\]</div>
+<div class="arithmatex">\[
+u^2 - 5u + 4 = 0
+\]</div>
+<div class="arithmatex">\[
+(u - 1)(u - 4) = 0
+\]</div>
+<div class="arithmatex">\[
+u = 1 \quad \text{或} \quad u = 4
+\]</div>
+<p><strong>回代 <span class="arithmatex">\(u = 1\)</span></strong>：<span class="arithmatex">\(x + \frac{1}{x} = 1\)</span></p>
+<p>两边乘以 <span class="arithmatex">\(x\)</span>（<span class="arithmatex">\(x \neq 0\)</span>）：<span class="arithmatex">\(x^2 + 1 = x \Rightarrow x^2 - x + 1 = 0\)</span>。</p>
+<p>判别式 <span class="arithmatex">\(\Delta = 1 - 4 = -3 &lt; 0\)</span>，无实数解。</p>
+<p><strong>回代 <span class="arithmatex">\(u = 4\)</span></strong>：<span class="arithmatex">\(x + \frac{1}{x} = 4\)</span></p>
+<div class="arithmatex">\[
+x^2 + 1 = 4x \Rightarrow x^2 - 4x + 1 = 0
+\]</div>
+<div class="arithmatex">\[
+x = \frac{4 \pm \sqrt{16 - 4}}{2} = \frac{4 \pm \sqrt{12}}{2} = \frac{4 \pm 2\sqrt{3}}{2} = 2 \pm \sqrt{3}
+\]</div>
+<p>因此解为 <span class="arithmatex">\(x = 2 + \sqrt{3}\)</span> 和 <span class="arithmatex">\(x = 2 - \sqrt{3}\)</span>。</p>
+<hr />
+<h3 id="435">4.3.5 三角型代换（使用恒等式）<a class="headerlink" href="#435" title="Permanent link">&para;</a></h3>
+<p>形如 <span class="arithmatex">\(\sin^2 x + \sin x - 2 = 0\)</span> 的方程，令 <span class="arithmatex">\(u = \sin x\)</span>，但必须注意 <span class="arithmatex">\(u \in [-1, 1]\)</span> 的定义域限制。</p>
+<p><strong>例题 11</strong>：解方程 <span class="arithmatex">\(2\cos^2 x + 3\sin x - 3 = 0\)</span>，<span class="arithmatex">\(x \in [0, 2\pi)\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>利用恒等式 <span class="arithmatex">\(\cos^2 x = 1 - \sin^2 x\)</span>：</p>
+<div class="arithmatex">\[
+2(1 - \sin^2 x) + 3\sin x - 3 = 0
+\]</div>
+<div class="arithmatex">\[
+2 - 2\sin^2 x + 3\sin x - 3 = 0
+\]</div>
+<div class="arithmatex">\[
+-2\sin^2 x + 3\sin x - 1 = 0
+\]</div>
+<p>乘以 <span class="arithmatex">\(-1\)</span>：</p>
+<div class="arithmatex">\[
+2\sin^2 x - 3\sin x + 1 = 0
+\]</div>
+<p>令 <span class="arithmatex">\(u = \sin x\)</span>，<span class="arithmatex">\(u \in [-1, 1]\)</span>：</p>
+<div class="arithmatex">\[
+2u^2 - 3u + 1 = 0
+\]</div>
+<div class="arithmatex">\[
+(2u - 1)(u - 1) = 0
+\]</div>
+<div class="arithmatex">\[
+u = \frac{1}{2} \quad \text{或} \quad u = 1
+\]</div>
+<p>回代：</p>
+<ul>
+<li><span class="arithmatex">\(\sin x = \frac{1}{2}\)</span>：在 <span class="arithmatex">\([0, 2\pi)\)</span> 上，<span class="arithmatex">\(x = \frac{\pi}{6}\)</span> 或 <span class="arithmatex">\(x = \frac{5\pi}{6}\)</span></li>
+<li><span class="arithmatex">\(\sin x = 1\)</span>：在 <span class="arithmatex">\([0, 2\pi)\)</span> 上，<span class="arithmatex">\(x = \frac{\pi}{2}\)</span></li>
+</ul>
+<p>因此解为 <span class="arithmatex">\(x = \frac{\pi}{6}, \frac{\pi}{2}, \frac{5\pi}{6}\)</span>。</p>
+<hr />
+<h2 id="44">4.4 三次多项式图像与不等式<a class="headerlink" href="#44" title="Permanent link">&para;</a></h2>
+<h3 id="441">4.4.1 三个线性因式乘积的图像特征<a class="headerlink" href="#441" title="Permanent link">&para;</a></h3>
+<p>三次多项式 <span class="arithmatex">\(f(x) = (x - a)(x - b)(x - c)\)</span>（其中 <span class="arithmatex">\(a &lt; b &lt; c\)</span>）的图像具有以下特征：</p>
+<ul>
+<li><strong>与 <span class="arithmatex">\(x\)</span> 轴的交点</strong>：<span class="arithmatex">\(x = a, x = b, x = c\)</span>（三个实数根）</li>
+<li><strong>末端行为End Behavior</strong>：若最高次项系数为正，当 <span class="arithmatex">\(x \to \infty\)</span> 时 <span class="arithmatex">\(f(x) \to \infty\)</span>；当 <span class="arithmatex">\(x \to -\infty\)</span> 时 <span class="arithmatex">\(f(x) \to -\infty\)</span></li>
+<li><strong>图像形状</strong>：从第三象限进入，依次穿过 <span class="arithmatex">\(x = a, x = b, x = c\)</span>，进入第一象限</li>
+<li><strong>在每个区间上的符号</strong>：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>区间</th>
+<th><span class="arithmatex">\((-\infty, a)\)</span></th>
+<th><span class="arithmatex">\((a, b)\)</span></th>
+<th><span class="arithmatex">\((b, c)\)</span></th>
+<th><span class="arithmatex">\((c, \infty)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\((x-a)\)</span></td>
+<td>−</td>
+<td>+</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((x-b)\)</span></td>
+<td>−</td>
+<td>−</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((x-c)\)</span></td>
+<td>−</td>
+<td>−</td>
+<td>−</td>
+<td>+</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span> 符号</td>
+<td>−</td>
+<td>+</td>
+<td>−</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>例题 1</strong>：绘制 <span class="arithmatex">\(f(x) = (x + 2)(x - 1)(x - 3)\)</span> 的草图。</p>
+<p><strong>解</strong>：</p>
+<p><strong><span class="arithmatex">\(x\)</span> 截距</strong>：<span class="arithmatex">\(f(x) = 0 \Rightarrow x = -2, 1, 3\)</span></p>
+<p><strong><span class="arithmatex">\(y\)</span> 截距</strong>：<span class="arithmatex">\(f(0) = (0 + 2)(0 - 1)(0 - 3) = 2 \times (-1) \times (-3) = 6\)</span>，点 <span class="arithmatex">\((0, 6)\)</span></p>
+<p><strong>端部行为</strong>：展开后首项为 <span class="arithmatex">\(x^3\)</span>，系数为正。<span class="arithmatex">\(x \to -\infty\)</span> 时 <span class="arithmatex">\(f(x) \to -\infty\)</span>；<span class="arithmatex">\(x \to \infty\)</span> 时 <span class="arithmatex">\(f(x) \to \infty\)</span></p>
+<p><strong>符号表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>区间</th>
+<th><span class="arithmatex">\((-\infty, -2)\)</span></th>
+<th><span class="arithmatex">\((-2, 1)\)</span></th>
+<th><span class="arithmatex">\((1, 3)\)</span></th>
+<th><span class="arithmatex">\((3, \infty)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span></td>
+<td>−</td>
+<td>+</td>
+<td>−</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+<p>图像从第三象限进入，在 <span class="arithmatex">\(x = -2\)</span> 处穿过 <span class="arithmatex">\(x\)</span> 轴向上，经过 <span class="arithmatex">\((0, 6)\)</span>，在 <span class="arithmatex">\(x = 1\)</span> 处再次穿过 <span class="arithmatex">\(x\)</span> 轴向下，到达局部低点后上升，在 <span class="arithmatex">\(x = 3\)</span> 处第三次穿过 <span class="arithmatex">\(x\)</span> 轴，最终向右上方延伸。</p>
+<p><strong>例题 2</strong>：绘制 <span class="arithmatex">\(f(x) = (2x - 1)(x + 1)(x - 2)\)</span> 的草图。</p>
+<p><strong>解</strong>：</p>
+<p><strong><span class="arithmatex">\(x\)</span> 截距</strong>：<span class="arithmatex">\((2x - 1)(x + 1)(x - 2) = 0 \Rightarrow x = \frac{1}{2}, -1, 2\)</span></p>
+<p>排序后：<span class="arithmatex">\(x = -1, \frac{1}{2}, 2\)</span></p>
+<p><strong><span class="arithmatex">\(y\)</span> 截距</strong>：<span class="arithmatex">\(f(0) = (0 - 1)(0 + 1)(0 - 2) = (-1) \times 1 \times (-2) = 2\)</span>，点 <span class="arithmatex">\((0, 2)\)</span></p>
+<p><strong>端部行为</strong>：首项为 <span class="arithmatex">\(2x \cdot x \cdot x = 2x^3\)</span>，系数为正（<span class="arithmatex">\(2 &gt; 0\)</span>）。</p>
+<p><strong>符号表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>区间</th>
+<th><span class="arithmatex">\((-\infty, -1)\)</span></th>
+<th><span class="arithmatex">\((-1, \frac{1}{2})\)</span></th>
+<th><span class="arithmatex">\((\frac{1}{2}, 2)\)</span></th>
+<th><span class="arithmatex">\((2, \infty)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\((2x-1)\)</span></td>
+<td>−</td>
+<td>−</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((x+1)\)</span></td>
+<td>−</td>
+<td>+</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((x-2)\)</span></td>
+<td>−</td>
+<td>−</td>
+<td>−</td>
+<td>+</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span></td>
+<td>−</td>
+<td>+</td>
+<td>−</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>例题 3</strong>：绘制 <span class="arithmatex">\(f(x) = -(x + 3)(x - 1)(x - 4)\)</span> 的草图。</p>
+<p><strong>解</strong>：</p>
+<p>注意首项系数为负：<span class="arithmatex">\(-(x)(x)(x) = -x^3\)</span>。<span class="arithmatex">\(x\)</span> 截距为 <span class="arithmatex">\(-3, 1, 4\)</span>。</p>
+<p><strong>端部行为</strong>：<span class="arithmatex">\(x \to -\infty\)</span> 时 <span class="arithmatex">\(f(x) \to \infty\)</span>（因为负三次项，从第二象限进入）；<span class="arithmatex">\(x \to \infty\)</span> 时 <span class="arithmatex">\(f(x) \to -\infty\)</span>。</p>
+<p><strong><span class="arithmatex">\(y\)</span> 截距</strong>：<span class="arithmatex">\(f(0) = -(3)(-1)(-4) = -(3)(-1)(-4) = -(12) = -12\)</span>，点 <span class="arithmatex">\((0, -12)\)</span></p>
+<p><strong>符号表</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>区间</th>
+<th><span class="arithmatex">\((-\infty, -3)\)</span></th>
+<th><span class="arithmatex">\((-3, 1)\)</span></th>
+<th><span class="arithmatex">\((1, 4)\)</span></th>
+<th><span class="arithmatex">\((4, \infty)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(-(x+3)\)</span></td>
+<td>+（负×负）</td>
+<td>−（负×正）</td>
+<td>−</td>
+<td>−</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((x-1)\)</span></td>
+<td>−</td>
+<td>−</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((x-4)\)</span></td>
+<td>−</td>
+<td>−</td>
+<td>−</td>
+<td>+</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span></td>
+<td>+</td>
+<td>−</td>
+<td>+</td>
+<td>−</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="442-y-fx">4.4.2 绝对值三次函数 <span class="arithmatex">\(y = |f(x)|\)</span> 的图像<a class="headerlink" href="#442-y-fx" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(y = |f(x)|\)</span> 的图像可以通过取 <span class="arithmatex">\(y = f(x)\)</span> 图像中在 <span class="arithmatex">\(x\)</span> 轴以下的部分，关于 <span class="arithmatex">\(x\)</span> 轴向上反射得到：</p>
+<div class="arithmatex">\[
+|f(x)| = \begin{cases}
+f(x), &amp; f(x) \ge 0 \\
+-f(x), &amp; f(x) &lt; 0
+\end{cases}
+\]</div>
+<p><strong>例题 4</strong>：绘制 <span class="arithmatex">\(y = |(x + 2)(x - 1)(x - 3)|\)</span> 的草图。</p>
+<p><strong>解</strong>：</p>
+<p>先画出 <span class="arithmatex">\(f(x) = (x + 2)(x - 1)(x - 3)\)</span> 的图像。</p>
+<p><span class="arithmatex">\(f(x)\)</span> 为负的区间：<span class="arithmatex">\((-\infty, -2)\)</span> 和 <span class="arithmatex">\((1, 3)\)</span>。</p>
+<p>将这些部分关于 <span class="arithmatex">\(x\)</span> 轴反射到上方。</p>
+<p>最终图像特征：
+- <span class="arithmatex">\(x\)</span> 截距保持不变：<span class="arithmatex">\(x = -2, 1, 3\)</span>（在这些点处图像"触碰" <span class="arithmatex">\(x\)</span> 轴但不穿过）
+- 整个图像位于 <span class="arithmatex">\(x\)</span> 轴上方或与 <span class="arithmatex">\(x\)</span> 轴相切
+- 原来 <span class="arithmatex">\((-\infty, -2)\)</span> 和 <span class="arithmatex">\((1, 3)\)</span> 上的波谷变成了波峰
+- 原来 <span class="arithmatex">\((-2, 1)\)</span> 上的波峰保持在上方</p>
+<p><strong>例题 5</strong>：绘制 <span class="arithmatex">\(y = |(x - 1)(x - 2)(x - 4)|\)</span> 的草图，并标注坐标轴交点。</p>
+<p><strong>解</strong>：</p>
+<p><span class="arithmatex">\(f(x) = (x - 1)(x - 2)(x - 4)\)</span> 的 <span class="arithmatex">\(x\)</span> 截距为 <span class="arithmatex">\(1, 2, 4\)</span>。</p>
+<p><span class="arithmatex">\(f(x)\)</span> 的符号：</p>
+<table>
+<thead>
+<tr>
+<th>区间</th>
+<th><span class="arithmatex">\((-\infty, 1)\)</span></th>
+<th><span class="arithmatex">\((1, 2)\)</span></th>
+<th><span class="arithmatex">\((2, 4)\)</span></th>
+<th><span class="arithmatex">\((4, \infty)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span></td>
+<td>−</td>
+<td>+</td>
+<td>−</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+<p><span class="arithmatex">\(f(x)\)</span> 为负的区间：<span class="arithmatex">\((-\infty, 1)\)</span> 和 <span class="arithmatex">\((2, 4)\)</span>。将这些部分向上反射。</p>
+<p><span class="arithmatex">\(y\)</span> 截距：<span class="arithmatex">\(|f(0)| = |(-1)(-2)(-4)| = |-8| = 8\)</span>，点 <span class="arithmatex">\((0, 8)\)</span>。</p>
+<p><strong>例题 6</strong>：判断方程 <span class="arithmatex">\(|(x + 1)(x - 2)(x - 5)| = k\)</span>（<span class="arithmatex">\(k &gt; 0\)</span>）的解的个数如何随 <span class="arithmatex">\(k\)</span> 变化。</p>
+<p><strong>解</strong>：</p>
+<p>画出 <span class="arithmatex">\(y = |(x + 1)(x - 2)(x - 5)|\)</span> 的草图。<span class="arithmatex">\(x\)</span> 截距为 <span class="arithmatex">\(-1, 2, 5\)</span>。</p>
+<p><span class="arithmatex">\(f(x) = (x + 1)(x - 2)(x - 5)\)</span> 的符号：</p>
+<table>
+<thead>
+<tr>
+<th>区间</th>
+<th><span class="arithmatex">\((-\infty, -1)\)</span></th>
+<th><span class="arithmatex">\((-1, 2)\)</span></th>
+<th><span class="arithmatex">\((2, 5)\)</span></th>
+<th><span class="arithmatex">\((5, \infty)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span></td>
+<td>−</td>
+<td>+</td>
+<td>−</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+<p>负区间（向上反射）：<span class="arithmatex">\((-\infty, -1)\)</span> 和 <span class="arithmatex">\((2, 5)\)</span>。</p>
+<p>设 <span class="arithmatex">\(M_1\)</span> 为 <span class="arithmatex">\((-1, 2)\)</span> 区间内 <span class="arithmatex">\(f(x)\)</span> 的最大值，<span class="arithmatex">\(M_2\)</span> 为 <span class="arithmatex">\((2, 5)\)</span> 区间内 <span class="arithmatex">\(|f(x)|\)</span> 的最大值（即原 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\((2,5)\)</span> 上的最小值的绝对值）。</p>
+<ul>
+<li>若 <span class="arithmatex">\(0 &lt; k &lt; \min(M_1, M_2)\)</span>：6 个解（水平线与图像的 6 个交点）</li>
+<li>若 <span class="arithmatex">\(k = M_1\)</span> 或 <span class="arithmatex">\(k = M_2\)</span>：某些交点重合，解数减少</li>
+<li>若 <span class="arithmatex">\(k &gt; \max(M_1, M_2)\)</span>：2 个解</li>
+</ul>
+<blockquote>
+<p><strong>注</strong>：此类问题通常出现在较难的题目中，需要结合导数求局部极值。</p>
+</blockquote>
+<hr />
+<h3 id="443">4.4.3 三次不等式的图形解法<a class="headerlink" href="#443" title="Permanent link">&para;</a></h3>
+<p>对于 <span class="arithmatex">\(f(x) \ge d\)</span>（或 <span class="arithmatex">\(&gt;, \le, &lt;\)</span>），其中 <span class="arithmatex">\(f(x)\)</span> 是三个线性因式的乘积：</p>
+<p><strong>图形解法步骤</strong>：</p>
+<ol>
+<li>画出 <span class="arithmatex">\(y = f(x)\)</span> 的草图（标注三个 <span class="arithmatex">\(x\)</span> 截距和 <span class="arithmatex">\(y\)</span> 截距）</li>
+<li>画出水平线 <span class="arithmatex">\(y = d\)</span></li>
+<li>找出 <span class="arithmatex">\(f(x)\)</span> 图像在水平线上方（对 <span class="arithmatex">\(f(x) &gt; d\)</span>）或下方（对 <span class="arithmatex">\(f(x) &lt; d\)</span>）的区间</li>
+<li>必要时求交点坐标</li>
+</ol>
+<p><strong>例题 7</strong>：解不等式 <span class="arithmatex">\((x + 1)(x - 2)(x - 4) \ge 0\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p><span class="arithmatex">\(f(x) = (x + 1)(x - 2)(x - 4)\)</span>，<span class="arithmatex">\(d = 0\)</span>（即与 <span class="arithmatex">\(x\)</span> 轴比较）。</p>
+<p>三个根为 <span class="arithmatex">\(-1, 2, 4\)</span>，首项系数为正。</p>
+<p>符号表：</p>
+<table>
+<thead>
+<tr>
+<th>区间</th>
+<th><span class="arithmatex">\((-\infty, -1)\)</span></th>
+<th><span class="arithmatex">\((-1, 2)\)</span></th>
+<th><span class="arithmatex">\((2, 4)\)</span></th>
+<th><span class="arithmatex">\((4, \infty)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span></td>
+<td>−</td>
+<td>+</td>
+<td>−</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+<p><span class="arithmatex">\(f(x) \ge 0\)</span> 的解为 <span class="arithmatex">\(x \in [-1, 2] \cup [4, \infty)\)</span>。</p>
+<p><strong>例题 8</strong>：解不等式 <span class="arithmatex">\((x - 1)(x - 3)(x - 5) &lt; 0\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>三个根为 <span class="arithmatex">\(1, 3, 5\)</span>，首项系数为正。</p>
+<p>符号表：</p>
+<table>
+<thead>
+<tr>
+<th>区间</th>
+<th><span class="arithmatex">\((-\infty, 1)\)</span></th>
+<th><span class="arithmatex">\((1, 3)\)</span></th>
+<th><span class="arithmatex">\((3, 5)\)</span></th>
+<th><span class="arithmatex">\((5, \infty)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span></td>
+<td>−</td>
+<td>+</td>
+<td>−</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+<p><span class="arithmatex">\(f(x) &lt; 0\)</span> 的解为 <span class="arithmatex">\(x \in (-\infty, 1) \cup (3, 5)\)</span>。</p>
+<p><strong>例题 9</strong>：已知 <span class="arithmatex">\(f(x) = (2x + 1)(x - 2)(x - 3)\)</span>，解不等式 <span class="arithmatex">\(f(x) \le 0\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>零点：<span class="arithmatex">\(2x + 1 = 0 \Rightarrow x = -\frac{1}{2}\)</span>，以及 <span class="arithmatex">\(x = 2, x = 3\)</span>。</p>
+<p>排序后：<span class="arithmatex">\(-\frac{1}{2}, 2, 3\)</span>。</p>
+<p>首项系数：<span class="arithmatex">\(2x \cdot x \cdot x = 2x^3\)</span>，系数为正。</p>
+<p>符号表：</p>
+<table>
+<thead>
+<tr>
+<th>区间</th>
+<th><span class="arithmatex">\((-\infty, -\frac{1}{2})\)</span></th>
+<th><span class="arithmatex">\((-\frac{1}{2}, 2)\)</span></th>
+<th><span class="arithmatex">\((2, 3)\)</span></th>
+<th><span class="arithmatex">\((3, \infty)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\((2x+1)\)</span></td>
+<td>−</td>
+<td>+</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((x-2)\)</span></td>
+<td>−</td>
+<td>−</td>
+<td>+</td>
+<td>+</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((x-3)\)</span></td>
+<td>−</td>
+<td>−</td>
+<td>−</td>
+<td>+</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(f(x)\)</span></td>
+<td>−</td>
+<td>+</td>
+<td>−</td>
+<td>+</td>
+</tr>
+</tbody>
+</table>
+<p><span class="arithmatex">\(f(x) \le 0\)</span> 的解为 <span class="arithmatex">\(x \in (-\infty, -\frac{1}{2}] \cup [2, 3]\)</span>。</p>
+<hr />
+<h2 id="45">4.5 联立方程组<a class="headerlink" href="#45" title="Permanent link">&para;</a></h2>
+<h3 id="451">4.5.1 联立方程组的图形意义<a class="headerlink" href="#451" title="Permanent link">&para;</a></h3>
+<p>两个联立方程 <span class="arithmatex">\(\begin{cases} y = f(x) \\ y = g(x) \end{cases}\)</span> 的解就是两个函数图像<strong>交点</strong>的坐标。</p>
+<h3 id="452">4.5.2 直线与直线的联立<a class="headerlink" href="#452" title="Permanent link">&para;</a></h3>
+<p>解二元一次方程组最常用的方法是<strong>消元法</strong>和<strong>代入法</strong>。</p>
+<p><strong>例题 1</strong>：解方程组 <span class="arithmatex">\(\begin{cases} 3x + 2y = 7 \\ 5x - 3y = 37 \end{cases}\)</span>。</p>
+<p><strong>解（消元法）</strong>：</p>
+<p>将第一个方程乘以 <span class="arithmatex">\(3\)</span>，第二个方程乘以 <span class="arithmatex">\(2\)</span>：</p>
+<div class="arithmatex">\[
+\begin{cases}
+9x + 6y = 21 \\
+10x - 6y = 74
+\end{cases}
+\]</div>
+<p>相加：<span class="arithmatex">\(19x = 95 \Rightarrow x = 5\)</span></p>
+<p>代入第一个方程：<span class="arithmatex">\(3(5) + 2y = 7 \Rightarrow 15 + 2y = 7 \Rightarrow 2y = -8 \Rightarrow y = -4\)</span></p>
+<p>因此解为 <span class="arithmatex">\((x, y) = (5, -4)\)</span>。</p>
+<p><strong>例题 2</strong>：解方程组 <span class="arithmatex">\(\begin{cases} 2x - 5y = 3 \\ 4x + y = 17 \end{cases}\)</span>。</p>
+<p><strong>解（代入法）</strong>：</p>
+<p>由第二个方程：<span class="arithmatex">\(y = 17 - 4x\)</span>。</p>
+<p>代入第一个方程：</p>
+<div class="arithmatex">\[
+2x - 5(17 - 4x) = 3
+\]</div>
+<div class="arithmatex">\[
+2x - 85 + 20x = 3
+\]</div>
+<div class="arithmatex">\[
+22x = 88
+\]</div>
+<div class="arithmatex">\[
+x = 4
+\]</div>
+<p>代入 <span class="arithmatex">\(y = 17 - 4(4) = 1\)</span></p>
+<p>因此解为 <span class="arithmatex">\((x, y) = (4, 1)\)</span>。</p>
+<p><strong>例题 3</strong>：解方程组 <span class="arithmatex">\(\begin{cases} \dfrac{x}{2} + \dfrac{y}{3} = 4 \\ \dfrac{x}{4} - \dfrac{y}{2} = 0 \end{cases}\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>先消去分母。第一个方程乘以 <span class="arithmatex">\(6\)</span>，第二个方程乘以 <span class="arithmatex">\(4\)</span>：</p>
+<div class="arithmatex">\[
+\begin{cases}
+3x + 2y = 24 \\
+x - 2y = 0
+\end{cases}
+\]</div>
+<p>两式相加：<span class="arithmatex">\(4x = 24 \Rightarrow x = 6\)</span></p>
+<p>代入 <span class="arithmatex">\(x - 2y = 0 \Rightarrow 6 - 2y = 0 \Rightarrow y = 3\)</span></p>
+<p>因此解为 <span class="arithmatex">\((x, y) = (6, 3)\)</span>。</p>
+<hr />
+<h3 id="453">4.5.3 直线与曲线的联立<a class="headerlink" href="#453" title="Permanent link">&para;</a></h3>
+<p>一般用<strong>代入法</strong>：从一次方程中解出一个变量，代入二次方程，得到一个一元二次方程。判别式 <span class="arithmatex">\(\Delta\)</span> 决定交点的个数：</p>
+<ul>
+<li><span class="arithmatex">\(\Delta &gt; 0\)</span>：两个不同交点（相交于两点）</li>
+<li><span class="arithmatex">\(\Delta = 0\)</span>：一个交点（相切）</li>
+<li><span class="arithmatex">\(\Delta &lt; 0\)</span>：无交点（相离）</li>
+</ul>
+<p><strong>例题 4</strong>：求直线 <span class="arithmatex">\(y = 2x - 1\)</span> 与曲线 <span class="arithmatex">\(y = x^2 - 2x + 2\)</span> 的交点。</p>
+<p><strong>解</strong>：</p>
+<p>令 <span class="arithmatex">\(2x - 1 = x^2 - 2x + 2\)</span>：</p>
+<div class="arithmatex">\[
+0 = x^2 - 4x + 3
+\]</div>
+<div class="arithmatex">\[
+(x - 1)(x - 3) = 0
+\]</div>
+<div class="arithmatex">\[
+x = 1 \quad \text{或} \quad x = 3
+\]</div>
+<p>代入 <span class="arithmatex">\(y = 2x - 1\)</span>：</p>
+<ul>
+<li><span class="arithmatex">\(x = 1\)</span>：<span class="arithmatex">\(y = 1\)</span>，交点 <span class="arithmatex">\((1, 1)\)</span></li>
+<li><span class="arithmatex">\(x = 3\)</span>：<span class="arithmatex">\(y = 5\)</span>，交点 <span class="arithmatex">\((3, 5)\)</span></li>
+</ul>
+<p><strong>例题 5</strong>：求 <span class="arithmatex">\(k\)</span> 的值，使得直线 <span class="arithmatex">\(y = 3x + k\)</span> 与曲线 <span class="arithmatex">\(y = x^2 - 4x + 7\)</span> 相切。</p>
+<p><strong>解</strong>：</p>
+<p>令 <span class="arithmatex">\(3x + k = x^2 - 4x + 7\)</span>：</p>
+<div class="arithmatex">\[
+0 = x^2 - 7x + 7 - k
+\]</div>
+<p>相切条件：<span class="arithmatex">\(\Delta = 0\)</span></p>
+<div class="arithmatex">\[
+\Delta = (-7)^2 - 4(1)(7 - k) = 49 - 28 + 4k = 21 + 4k = 0
+\]</div>
+<div class="arithmatex">\[
+k = -\frac{21}{4}
+\]</div>
+<p>当 <span class="arithmatex">\(k = -\frac{21}{4}\)</span> 时，直线与曲线相切。</p>
+<p>切点：<span class="arithmatex">\(x^2 - 7x + 7 - (-\frac{21}{4}) = x^2 - 7x + 7 + \frac{21}{4} = x^2 - 7x + \frac{49}{4} = (x - \frac{7}{2})^2 = 0\)</span></p>
+<p>所以 <span class="arithmatex">\(x = \frac{7}{2}\)</span>，<span class="arithmatex">\(y = 3(\frac{7}{2}) - \frac{21}{4} = \frac{42}{4} - \frac{21}{4} = \frac{21}{4}\)</span>。</p>
+<p>切点为 <span class="arithmatex">\((\frac{7}{2}, \frac{21}{4})\)</span>。</p>
+<p><strong>例题 6</strong>：判断直线 <span class="arithmatex">\(y = 2x + 5\)</span> 与圆 <span class="arithmatex">\(x^2 + (y - 1)^2 = 5\)</span> 的位置关系。</p>
+<p><strong>解</strong>：</p>
+<p>代入 <span class="arithmatex">\(y = 2x + 5\)</span>：</p>
+<div class="arithmatex">\[
+x^2 + (2x + 5 - 1)^2 = 5
+\]</div>
+<div class="arithmatex">\[
+x^2 + (2x + 4)^2 = 5
+\]</div>
+<div class="arithmatex">\[
+x^2 + 4x^2 + 16x + 16 = 5
+\]</div>
+<div class="arithmatex">\[
+5x^2 + 16x + 11 = 0
+\]</div>
+<p>判别式 <span class="arithmatex">\(\Delta = 16^2 - 4(5)(11) = 256 - 220 = 36 &gt; 0\)</span></p>
+<p>因此直线与圆相交于两个不同点。</p>
+<p>解方程 <span class="arithmatex">\(5x^2 + 16x + 11 = 0\)</span>：</p>
+<div class="arithmatex">\[
+x = \frac{-16 \pm \sqrt{36}}{10} = \frac{-16 \pm 6}{10}
+\]</div>
+<div class="arithmatex">\[
+x = -1 \quad \text{或} \quad x = -\frac{11}{5}
+\]</div>
+<p>对应 <span class="arithmatex">\(y = 2(-1) + 5 = 3\)</span> 和 <span class="arithmatex">\(y = 2(-\frac{11}{5}) + 5 = -\frac{22}{5} + 5 = \frac{3}{5}\)</span>。</p>
+<p>交点为 <span class="arithmatex">\((-1, 3)\)</span> 和 <span class="arithmatex">\((-\frac{11}{5}, \frac{3}{5})\)</span>。</p>
+<hr />
+<h3 id="454">4.5.4 曲线与曲线的联立<a class="headerlink" href="#454" title="Permanent link">&para;</a></h3>
+<p>当两个方程都是二次（或更高次）时，代入后可能得到一个高次方程，但通常可以通过因式分解或巧妙的代换来简化。</p>
+<p><strong>例题 7</strong>：解方程组 <span class="arithmatex">\(\begin{cases} x^2 + y^2 = 10 \\ y = 3x \end{cases}\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>代入 <span class="arithmatex">\(y = 3x\)</span> 到圆的方程：</p>
+<div class="arithmatex">\[
+x^2 + (3x)^2 = 10
+\]</div>
+<div class="arithmatex">\[
+x^2 + 9x^2 = 10
+\]</div>
+<div class="arithmatex">\[
+10x^2 = 10
+\]</div>
+<div class="arithmatex">\[
+x^2 = 1
+\]</div>
+<div class="arithmatex">\[
+x = \pm 1
+\]</div>
+<p>对应 <span class="arithmatex">\(y = 3(\pm 1) = \pm 3\)</span>。</p>
+<p>解为 <span class="arithmatex">\((1, 3)\)</span> 和 <span class="arithmatex">\((-1, -3)\)</span>。</p>
+<p><strong>例题 8</strong>：解方程组 <span class="arithmatex">\(\begin{cases} x^2 + y^2 = 41 \\ xy = 20 \end{cases}\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>由 <span class="arithmatex">\(xy = 20\)</span> 得 <span class="arithmatex">\(y = \frac{20}{x}\)</span>（<span class="arithmatex">\(x \neq 0\)</span>）。代入第一个方程：</p>
+<div class="arithmatex">\[
+x^2 + \left(\frac{20}{x}\right)^2 = 41
+\]</div>
+<div class="arithmatex">\[
+x^2 + \frac{400}{x^2} = 41
+\]</div>
+<p>乘以 <span class="arithmatex">\(x^2\)</span>：</p>
+<div class="arithmatex">\[
+x^4 + 400 = 41x^2
+\]</div>
+<div class="arithmatex">\[
+x^4 - 41x^2 + 400 = 0
+\]</div>
+<p>令 <span class="arithmatex">\(u = x^2 \ge 0\)</span>：</p>
+<div class="arithmatex">\[
+u^2 - 41u + 400 = 0
+\]</div>
+<div class="arithmatex">\[
+(u - 16)(u - 25) = 0
+\]</div>
+<div class="arithmatex">\[
+u = 16 \quad \text{或} \quad u = 25
+\]</div>
+<p><span class="arithmatex">\(x^2 = 16 \Rightarrow x = \pm 4\)</span>，对应 <span class="arithmatex">\(y = \frac{20}{\pm 4} = \pm 5\)</span></p>
+<p><span class="arithmatex">\(x^2 = 25 \Rightarrow x = \pm 5\)</span>，对应 <span class="arithmatex">\(y = \frac{20}{\pm 5} = \pm 4\)</span></p>
+<p>因此解为 <span class="arithmatex">\((4, 5)\)</span>、<span class="arithmatex">\((-4, -5)\)</span>、<span class="arithmatex">\((5, 4)\)</span>、<span class="arithmatex">\((-5, -4)\)</span>。</p>
+<p><strong>例题 9</strong>：解方程组 <span class="arithmatex">\(\begin{cases} y - x + 3 = 0 \\ x^2 - 3xy + y^2 + 19 = 0 \end{cases}\)</span>。</p>
+<p><strong>解</strong>：</p>
+<p>由第一个方程：<span class="arithmatex">\(y = x - 3\)</span>。</p>
+<p>代入第二个方程：</p>
+<div class="arithmatex">\[
+x^2 - 3x(x - 3) + (x - 3)^2 + 19 = 0
+\]</div>
+<div class="arithmatex">\[
+x^2 - 3x^2 + 9x + x^2 - 6x + 9 + 19 = 0
+\]</div>
+<div class="arithmatex">\[
+-x^2 + 3x + 28 = 0
+\]</div>
+<p>乘以 <span class="arithmatex">\(-1\)</span>：</p>
+<div class="arithmatex">\[
+x^2 - 3x - 28 = 0
+\]</div>
+<div class="arithmatex">\[
+(x - 7)(x + 4) = 0
+\]</div>
+<div class="arithmatex">\[
+x = 7 \quad \text{或} \quad x = -4
+\]</div>
+<p>对应 <span class="arithmatex">\(y = 7 - 3 = 4\)</span> 和 <span class="arithmatex">\(y = -4 - 3 = -7\)</span>。</p>
+<p>解为 <span class="arithmatex">\((7, 4)\)</span> 和 <span class="arithmatex">\((-4, -7)\)</span>。</p>
+<hr />
+<h2 id="_6">练习题<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="a">A组：绝对值方程<a class="headerlink" href="#a" title="Permanent link">&para;</a></h3>
+<p><strong>A1</strong>：解方程 <span class="arithmatex">\(|4x - 3| = 9\)</span>。</p>
+<p><strong>A2</strong>：解方程 <span class="arithmatex">\(|5 - 3x| = 7\)</span>。</p>
+<p><strong>A3</strong>：解方程 <span class="arithmatex">\(|2x + 1| = x + 5\)</span>。</p>
+<p><strong>A4</strong>：解方程 <span class="arithmatex">\(|x - 4| = 2x - 5\)</span>。</p>
+<p><strong>A5</strong>：解方程 <span class="arithmatex">\(|3x + 2| = |x - 6|\)</span>。</p>
+<p><strong>A6</strong>：解方程 <span class="arithmatex">\(|2x - 5| = |4x + 3|\)</span>。</p>
+<p><strong>A7</strong>：解方程 <span class="arithmatex">\(|x^2 - 5x + 6| = 2\)</span>。</p>
+<p><strong>A8</strong>：解方程 <span class="arithmatex">\(|x^2 - 2x - 3| = 3\)</span>。</p>
+<hr />
+<h3 id="b">B组：绝对值不等式<a class="headerlink" href="#b" title="Permanent link">&para;</a></h3>
+<p><strong>B1</strong>：解不等式 <span class="arithmatex">\(|3x + 1| &gt; 7\)</span>。</p>
+<p><strong>B2</strong>：解不等式 <span class="arithmatex">\(2|5 - x| \le 8\)</span>。</p>
+<p><strong>B3</strong>：解不等式 <span class="arithmatex">\(|2x - 3| \le |x + 2|\)</span>。</p>
+<p><strong>B4</strong>：解不等式 <span class="arithmatex">\(2|x + 1| &gt; |3x - 2|\)</span>。</p>
+<p><strong>B5</strong>：解不等式 <span class="arithmatex">\(|x + 1| \le 2x + 3\)</span>。</p>
+<p><strong>B6</strong>：解不等式 <span class="arithmatex">\(|2x - 3| &gt; x + 1\)</span>。</p>
+<p><strong>B7</strong>：解不等式 <span class="arithmatex">\(|x^2 - 4| \le 5\)</span>。</p>
+<p><strong>B8</strong>：解不等式 <span class="arithmatex">\(|x^2 - 3x| &gt; 2\)</span>。</p>
+<hr />
+<h3 id="c">C组：代换法<a class="headerlink" href="#c" title="Permanent link">&para;</a></h3>
+<p><strong>C1</strong>：解方程 <span class="arithmatex">\(2^{2x} - 6 \cdot 2^x + 8 = 0\)</span>。</p>
+<p><strong>C2</strong>：解方程 <span class="arithmatex">\(e^{2x} - 5e^x + 6 = 0\)</span>。</p>
+<p><strong>C3</strong>：解方程 <span class="arithmatex">\(5e^x = 8 - 3e^{-x}\)</span>。</p>
+<p><strong>C4</strong>：解方程 <span class="arithmatex">\((\ln x)^2 + \ln x - 6 = 0\)</span>。</p>
+<p><strong>C5</strong>：解方程 <span class="arithmatex">\(2(\log_3 x)^2 - 5\log_3 x + 2 = 0\)</span>。</p>
+<p><strong>C6</strong>：解方程 <span class="arithmatex">\(x - 6\sqrt{x} + 5 = 0\)</span>。</p>
+<p><strong>C7</strong>：解方程 <span class="arithmatex">\(x^{\frac{2}{3}} - 2x^{\frac{1}{3}} - 3 = 0\)</span>。</p>
+<p><strong>C8</strong>：解方程 <span class="arithmatex">\(x^2 + \frac{1}{x^2} - 3\left(x + \frac{1}{x}\right) + 2 = 0\)</span>。</p>
+<hr />
+<h3 id="d">D组：三次多项式图像与不等式<a class="headerlink" href="#d" title="Permanent link">&para;</a></h3>
+<p><strong>D1</strong>：画出 <span class="arithmatex">\(f(x) = (x + 3)(x - 2)(x - 5)\)</span> 的草图，标注坐标轴交点。</p>
+<p><strong>D2</strong>：画出 <span class="arithmatex">\(f(x) = (2x + 3)(x - 1)(x - 4)\)</span> 的草图。</p>
+<p><strong>D3</strong>：画出 <span class="arithmatex">\(y = |(x + 3)(x - 2)(x - 5)|\)</span> 的草图。</p>
+<p><strong>D4</strong>：解不等式 <span class="arithmatex">\((x + 2)(x - 1)(x - 4) \ge 0\)</span>。</p>
+<p><strong>D5</strong>：解不等式 <span class="arithmatex">\((x - 1)(x - 3)(x - 6) &lt; 0\)</span>。</p>
+<p><strong>D6</strong>：已知 <span class="arithmatex">\(f(x) = (x + 1)(x - 2)(x - 5)\)</span>，解不等式 <span class="arithmatex">\(f(x) \le 0\)</span>。</p>
+<hr />
+<h3 id="e">E组：联立方程组<a class="headerlink" href="#e" title="Permanent link">&para;</a></h3>
+<p><strong>E1</strong>：解方程组 <span class="arithmatex">\(\begin{cases} 2x + 3y = 8 \\ 5x - 2y = 1 \end{cases}\)</span>。</p>
+<p><strong>E2</strong>：解方程组 <span class="arithmatex">\(\begin{cases} 4x - 3y = 11 \\ 3x + 2y = 21 \end{cases}\)</span>。</p>
+<p><strong>E3</strong>：求直线 <span class="arithmatex">\(y = 3x - 2\)</span> 与抛物线 <span class="arithmatex">\(y = x^2\)</span> 的交点。</p>
+<p><strong>E4</strong>：求直线 <span class="arithmatex">\(y = 2x + 1\)</span> 与曲线 <span class="arithmatex">\(y = x^2 - 3x + 5\)</span> 的交点。</p>
+<p><strong>E5</strong>：求 <span class="arithmatex">\(k\)</span> 的值，使得直线 <span class="arithmatex">\(y = x + k\)</span> 与曲线 <span class="arithmatex">\(y = x^2 - 5x + 7\)</span> 相切。</p>
+<p><strong>E6</strong>：解方程组 <span class="arithmatex">\(\begin{cases} x^2 + y^2 = 13 \\ y = 2x - 1 \end{cases}\)</span>。</p>
+<p><strong>E7</strong>：解方程组 <span class="arithmatex">\(\begin{cases} x^2 + y^2 = 25 \\ xy = 12 \end{cases}\)</span>。</p>
+<p><strong>E8</strong>：解方程组 <span class="arithmatex">\(\begin{cases} x^2 - 2xy + y^2 = 1 \\ x + y = 3 \end{cases}\)</span>。</p>
+<hr />
+<h2 id="_7">练习题答案<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="a_1">A组答案<a class="headerlink" href="#a_1" title="Permanent link">&para;</a></h3>
+<p><strong>A1</strong>：<span class="arithmatex">\(|4x - 3| = 9\)</span></p>
+<p><span class="arithmatex">\(4x - 3 = 9\)</span> 或 <span class="arithmatex">\(4x - 3 = -9\)</span></p>
+<p><span class="arithmatex">\(4x = 12\)</span> 或 <span class="arithmatex">\(4x = -6\)</span></p>
+<p><span class="arithmatex">\(x = 3\)</span> 或 <span class="arithmatex">\(x = -\frac{3}{2}\)</span></p>
+<p><strong>A2</strong>：<span class="arithmatex">\(|5 - 3x| = 7\)</span></p>
+<p><span class="arithmatex">\(5 - 3x = 7\)</span> 或 <span class="arithmatex">\(5 - 3x = -7\)</span></p>
+<p><span class="arithmatex">\(-3x = 2\)</span> 或 <span class="arithmatex">\(-3x = -12\)</span></p>
+<p><span class="arithmatex">\(x = -\frac{2}{3}\)</span> 或 <span class="arithmatex">\(x = 4\)</span></p>
+<p><strong>A3</strong>：<span class="arithmatex">\(|2x + 1| = x + 5\)</span></p>
+<p>情况 1（<span class="arithmatex">\(x \ge -\frac{1}{2}\)</span>）：<span class="arithmatex">\(2x + 1 = x + 5 \Rightarrow x = 4\)</span> ✓</p>
+<p>情况 2（<span class="arithmatex">\(x &lt; -\frac{1}{2}\)</span>）：<span class="arithmatex">\(-(2x + 1) = x + 5 \Rightarrow -2x - 1 = x + 5 \Rightarrow -3x = 6 \Rightarrow x = -2\)</span> ✓</p>
+<p>解：<span class="arithmatex">\(x = 4\)</span> 和 <span class="arithmatex">\(x = -2\)</span></p>
+<p><strong>A4</strong>：<span class="arithmatex">\(|x - 4| = 2x - 5\)</span></p>
+<p>情况 1（<span class="arithmatex">\(x \ge 4\)</span>）：<span class="arithmatex">\(x - 4 = 2x - 5 \Rightarrow -x = -1 \Rightarrow x = 1\)</span>，但 <span class="arithmatex">\(1 \ge 4\)</span> 不成立 ✗</p>
+<p>情况 2（<span class="arithmatex">\(x &lt; 4\)</span>）：<span class="arithmatex">\(-(x - 4) = 2x - 5 \Rightarrow -x + 4 = 2x - 5 \Rightarrow 9 = 3x \Rightarrow x = 3\)</span>，<span class="arithmatex">\(3 &lt; 4\)</span> ✓</p>
+<p>解：<span class="arithmatex">\(x = 3\)</span></p>
+<p><strong>A5</strong>：<span class="arithmatex">\(|3x + 2| = |x - 6|\)</span></p>
+<p><span class="arithmatex">\(3x + 2 = x - 6\)</span> 或 <span class="arithmatex">\(3x + 2 = -(x - 6)\)</span></p>
+<p><span class="arithmatex">\(2x = -8\)</span> 或 <span class="arithmatex">\(3x + 2 = -x + 6\)</span></p>
+<p><span class="arithmatex">\(x = -4\)</span> 或 <span class="arithmatex">\(4x = 4\)</span></p>
+<p><span class="arithmatex">\(x = -4\)</span> 或 <span class="arithmatex">\(x = 1\)</span></p>
+<p><strong>A6</strong>：<span class="arithmatex">\(|2x - 5| = |4x + 3|\)</span></p>
+<p><span class="arithmatex">\(2x - 5 = 4x + 3\)</span> 或 <span class="arithmatex">\(2x - 5 = -(4x + 3)\)</span></p>
+<p><span class="arithmatex">\(-2x = 8\)</span> 或 <span class="arithmatex">\(2x - 5 = -4x - 3\)</span></p>
+<p><span class="arithmatex">\(x = -4\)</span> 或 <span class="arithmatex">\(6x = 2\)</span></p>
+<p><span class="arithmatex">\(x = -4\)</span> 或 <span class="arithmatex">\(x = \frac{1}{3}\)</span></p>
+<p><strong>A7</strong>：<span class="arithmatex">\(|x^2 - 5x + 6| = 2\)</span></p>
+<p><span class="arithmatex">\(x^2 - 5x + 6 = 2\)</span> 或 <span class="arithmatex">\(x^2 - 5x + 6 = -2\)</span></p>
+<p><span class="arithmatex">\(x^2 - 5x + 4 = 0\)</span> 或 <span class="arithmatex">\(x^2 - 5x + 8 = 0\)</span></p>
+<p><span class="arithmatex">\((x - 1)(x - 4) = 0\)</span>，<span class="arithmatex">\(\Delta = 25 - 32 = -7 &lt; 0\)</span>，无解</p>
+<p><span class="arithmatex">\(x = 1\)</span> 或 <span class="arithmatex">\(x = 4\)</span></p>
+<p><strong>A8</strong>：<span class="arithmatex">\(|x^2 - 2x - 3| = 3\)</span></p>
+<p><span class="arithmatex">\(x^2 - 2x - 3 = 3\)</span> 或 <span class="arithmatex">\(x^2 - 2x - 3 = -3\)</span></p>
+<p><span class="arithmatex">\(x^2 - 2x - 6 = 0\)</span> 或 <span class="arithmatex">\(x^2 - 2x = 0\)</span></p>
+<p><span class="arithmatex">\(x = \frac{2 \pm \sqrt{4 + 24}}{2} = \frac{2 \pm \sqrt{28}}{2} = 1 \pm \sqrt{7}\)</span> 或 <span class="arithmatex">\(x(x - 2) = 0 \Rightarrow x = 0\)</span> 或 <span class="arithmatex">\(x = 2\)</span></p>
+<p>解：<span class="arithmatex">\(x = 1 \pm \sqrt{7}, 0, 2\)</span></p>
+<hr />
+<h3 id="b_1">B组答案<a class="headerlink" href="#b_1" title="Permanent link">&para;</a></h3>
+<p><strong>B1</strong>：<span class="arithmatex">\(|3x + 1| &gt; 7\)</span></p>
+<p><span class="arithmatex">\(3x + 1 &lt; -7\)</span> 或 <span class="arithmatex">\(3x + 1 &gt; 7\)</span></p>
+<p><span class="arithmatex">\(3x &lt; -8\)</span> 或 <span class="arithmatex">\(3x &gt; 6\)</span></p>
+<p><span class="arithmatex">\(x &lt; -\frac{8}{3}\)</span> 或 <span class="arithmatex">\(x &gt; 2\)</span></p>
+<p><span class="arithmatex">\(x \in (-\infty, -\frac{8}{3}) \cup (2, \infty)\)</span></p>
+<p><strong>B2</strong>：<span class="arithmatex">\(2|5 - x| \le 8\)</span></p>
+<p><span class="arithmatex">\(|5 - x| \le 4\)</span></p>
+<p><span class="arithmatex">\(-4 \le 5 - x \le 4\)</span></p>
+<p>左边：<span class="arithmatex">\(-4 \le 5 - x \Rightarrow x \le 9\)</span></p>
+<p>右边：<span class="arithmatex">\(5 - x \le 4 \Rightarrow -x \le -1 \Rightarrow x \ge 1\)</span></p>
+<p><span class="arithmatex">\(x \in [1, 9]\)</span></p>
+<p><strong>B3</strong>：<span class="arithmatex">\(|2x - 3| \le |x + 2|\)</span></p>
+<p><span class="arithmatex">\((2x - 3)^2 \le (x + 2)^2\)</span></p>
+<p><span class="arithmatex">\(4x^2 - 12x + 9 \le x^2 + 4x + 4\)</span></p>
+<p><span class="arithmatex">\(3x^2 - 16x + 5 \le 0\)</span></p>
+<p><span class="arithmatex">\((3x - 1)(x - 5) \le 0\)</span></p>
+<p><span class="arithmatex">\(x \in [\frac{1}{3}, 5]\)</span></p>
+<p><strong>B4</strong>：<span class="arithmatex">\(2|x + 1| &gt; |3x - 2|\)</span></p>
+<p><span class="arithmatex">\(4(x + 1)^2 &gt; (3x - 2)^2\)</span></p>
+<p><span class="arithmatex">\(4(x^2 + 2x + 1) &gt; 9x^2 - 12x + 4\)</span></p>
+<p><span class="arithmatex">\(4x^2 + 8x + 4 &gt; 9x^2 - 12x + 4\)</span></p>
+<p><span class="arithmatex">\(0 &gt; 5x^2 - 20x\)</span></p>
+<p><span class="arithmatex">\(5x^2 - 20x &lt; 0\)</span></p>
+<p><span class="arithmatex">\(5x(x - 4) &lt; 0\)</span></p>
+<p><span class="arithmatex">\(0 &lt; x &lt; 4\)</span></p>
+<p><span class="arithmatex">\(x \in (0, 4)\)</span></p>
+<p><strong>B5</strong>：<span class="arithmatex">\(|x + 1| \le 2x + 3\)</span></p>
+<p>情况 1（<span class="arithmatex">\(x \ge -1\)</span>）：<span class="arithmatex">\(x + 1 \le 2x + 3 \Rightarrow -2 \le x\)</span>，结合 <span class="arithmatex">\(x \ge -1\)</span> 得 <span class="arithmatex">\(x \ge -1\)</span></p>
+<p>情况 2（<span class="arithmatex">\(x &lt; -1\)</span>）：<span class="arithmatex">\(-(x + 1) \le 2x + 3 \Rightarrow -x - 1 \le 2x + 3 \Rightarrow -4 \le 3x \Rightarrow x \ge -\frac{4}{3}\)</span></p>
+<p>结合 <span class="arithmatex">\(x &lt; -1\)</span> 得 <span class="arithmatex">\(-\frac{4}{3} \le x &lt; -1\)</span></p>
+<p>并集：<span class="arithmatex">\(x \ge -\frac{4}{3}\)</span>，即 <span class="arithmatex">\(x \in [-\frac{4}{3}, \infty)\)</span></p>
+<p><strong>B6</strong>：<span class="arithmatex">\(|2x - 3| &gt; x + 1\)</span></p>
+<p>情况 1（<span class="arithmatex">\(x \ge \frac{3}{2}\)</span>）：<span class="arithmatex">\(2x - 3 &gt; x + 1 \Rightarrow x &gt; 4\)</span>，结合前提得 <span class="arithmatex">\(x &gt; 4\)</span></p>
+<p>情况 2（<span class="arithmatex">\(x &lt; \frac{3}{2}\)</span>）：<span class="arithmatex">\(-(2x - 3) &gt; x + 1 \Rightarrow -2x + 3 &gt; x + 1 \Rightarrow 2 &gt; 3x \Rightarrow x &lt; \frac{2}{3}\)</span>，结合前提得 <span class="arithmatex">\(x &lt; \frac{2}{3}\)</span></p>
+<p><span class="arithmatex">\(x \in (-\infty, \frac{2}{3}) \cup (4, \infty)\)</span></p>
+<p><strong>B7</strong>：<span class="arithmatex">\(|x^2 - 4| \le 5\)</span></p>
+<p><span class="arithmatex">\(-5 \le x^2 - 4 \le 5\)</span></p>
+<p>左边：<span class="arithmatex">\(x^2 - 4 \ge -5 \Rightarrow x^2 \ge -1\)</span>，恒成立</p>
+<p>右边：<span class="arithmatex">\(x^2 - 4 \le 5 \Rightarrow x^2 \le 9 \Rightarrow -3 \le x \le 3\)</span></p>
+<p><span class="arithmatex">\(x \in [-3, 3]\)</span></p>
+<p><strong>B8</strong>：<span class="arithmatex">\(|x^2 - 3x| &gt; 2\)</span></p>
+<p><span class="arithmatex">\(x^2 - 3x &lt; -2\)</span> 或 <span class="arithmatex">\(x^2 - 3x &gt; 2\)</span></p>
+<p>不等式 1：<span class="arithmatex">\(x^2 - 3x + 2 &lt; 0 \Rightarrow (x - 1)(x - 2) &lt; 0 \Rightarrow 1 &lt; x &lt; 2\)</span></p>
+<p>不等式 2：<span class="arithmatex">\(x^2 - 3x - 2 &gt; 0\)</span></p>
+<p><span class="arithmatex">\(x = \frac{3 \pm \sqrt{9 + 8}}{2} = \frac{3 \pm \sqrt{17}}{2}\)</span></p>
+<p><span class="arithmatex">\(x &lt; \frac{3 - \sqrt{17}}{2}\)</span> 或 <span class="arithmatex">\(x &gt; \frac{3 + \sqrt{17}}{2}\)</span></p>
+<p>其中 <span class="arithmatex">\(\frac{3 - \sqrt{17}}{2} \approx \frac{3 - 4.123}{2} \approx -0.562\)</span>，<span class="arithmatex">\(\frac{3 + \sqrt{17}}{2} \approx \frac{3 + 4.123}{2} \approx 3.562\)</span></p>
+<p>解集为 <span class="arithmatex">\(x \in (-\infty, \frac{3 - \sqrt{17}}{2}) \cup (1, 2) \cup (\frac{3 + \sqrt{17}}{2}, \infty)\)</span></p>
+<hr />
+<h3 id="c_1">C组答案<a class="headerlink" href="#c_1" title="Permanent link">&para;</a></h3>
+<p><strong>C1</strong>：<span class="arithmatex">\(2^{2x} - 6 \cdot 2^x + 8 = 0\)</span></p>
+<p>令 <span class="arithmatex">\(u = 2^x &gt; 0\)</span>：<span class="arithmatex">\(u^2 - 6u + 8 = 0 \Rightarrow (u - 2)(u - 4) = 0\)</span></p>
+<p><span class="arithmatex">\(u = 2\)</span> 或 <span class="arithmatex">\(u = 4\)</span></p>
+<p><span class="arithmatex">\(2^x = 2 \Rightarrow x = 1\)</span>；<span class="arithmatex">\(2^x = 4 \Rightarrow x = 2\)</span></p>
+<p><strong>C2</strong>：<span class="arithmatex">\(e^{2x} - 5e^x + 6 = 0\)</span></p>
+<p>令 <span class="arithmatex">\(u = e^x &gt; 0\)</span>：<span class="arithmatex">\(u^2 - 5u + 6 = 0 \Rightarrow (u - 2)(u - 3) = 0\)</span></p>
+<p><span class="arithmatex">\(u = 2\)</span> 或 <span class="arithmatex">\(u = 3\)</span></p>
+<p><span class="arithmatex">\(e^x = 2 \Rightarrow x = \ln 2\)</span>；<span class="arithmatex">\(e^x = 3 \Rightarrow x = \ln 3\)</span></p>
+<p><strong>C3</strong>：<span class="arithmatex">\(5e^x = 8 - 3e^{-x}\)</span></p>
+<p>乘以 <span class="arithmatex">\(e^x\)</span>：<span class="arithmatex">\(5e^{2x} = 8e^x - 3\)</span></p>
+<p><span class="arithmatex">\(5e^{2x} - 8e^x + 3 = 0\)</span></p>
+<p>令 <span class="arithmatex">\(u = e^x &gt; 0\)</span>：<span class="arithmatex">\(5u^2 - 8u + 3 = 0 \Rightarrow (5u - 3)(u - 1) = 0\)</span></p>
+<p><span class="arithmatex">\(u = \frac{3}{5}\)</span> 或 <span class="arithmatex">\(u = 1\)</span></p>
+<p><span class="arithmatex">\(e^x = \frac{3}{5} \Rightarrow x = \ln \frac{3}{5}\)</span>；<span class="arithmatex">\(e^x = 1 \Rightarrow x = 0\)</span></p>
+<p><strong>C4</strong>：<span class="arithmatex">\((\ln x)^2 + \ln x - 6 = 0\)</span></p>
+<p>令 <span class="arithmatex">\(u = \ln x\)</span>：<span class="arithmatex">\(u^2 + u - 6 = 0 \Rightarrow (u + 3)(u - 2) = 0\)</span></p>
+<p><span class="arithmatex">\(u = -3\)</span> 或 <span class="arithmatex">\(u = 2\)</span></p>
+<p><span class="arithmatex">\(\ln x = -3 \Rightarrow x = e^{-3}\)</span>；<span class="arithmatex">\(\ln x = 2 \Rightarrow x = e^2\)</span></p>
+<p><strong>C5</strong>：<span class="arithmatex">\(2(\log_3 x)^2 - 5\log_3 x + 2 = 0\)</span></p>
+<p>令 <span class="arithmatex">\(u = \log_3 x\)</span>：<span class="arithmatex">\(2u^2 - 5u + 2 = 0 \Rightarrow (2u - 1)(u - 2) = 0\)</span></p>
+<p><span class="arithmatex">\(u = \frac{1}{2}\)</span> 或 <span class="arithmatex">\(u = 2\)</span></p>
+<p><span class="arithmatex">\(\log_3 x = \frac{1}{2} \Rightarrow x = 3^{1/2} = \sqrt{3}\)</span>；<span class="arithmatex">\(\log_3 x = 2 \Rightarrow x = 3^2 = 9\)</span></p>
+<p><strong>C6</strong>：<span class="arithmatex">\(x - 6\sqrt{x} + 5 = 0\)</span></p>
+<p>令 <span class="arithmatex">\(u = \sqrt{x} \ge 0\)</span>：<span class="arithmatex">\(u^2 - 6u + 5 = 0 \Rightarrow (u - 1)(u - 5) = 0\)</span></p>
+<p><span class="arithmatex">\(u = 1\)</span> 或 <span class="arithmatex">\(u = 5\)</span></p>
+<p><span class="arithmatex">\(\sqrt{x} = 1 \Rightarrow x = 1\)</span>；<span class="arithmatex">\(\sqrt{x} = 5 \Rightarrow x = 25\)</span></p>
+<p><strong>C7</strong>：<span class="arithmatex">\(x^{\frac{2}{3}} - 2x^{\frac{1}{3}} - 3 = 0\)</span></p>
+<p>令 <span class="arithmatex">\(u = x^{\frac{1}{3}}\)</span>：<span class="arithmatex">\(u^2 - 2u - 3 = 0 \Rightarrow (u - 3)(u + 1) = 0\)</span></p>
+<p><span class="arithmatex">\(u = 3\)</span> 或 <span class="arithmatex">\(u = -1\)</span></p>
+<p><span class="arithmatex">\(x^{\frac{1}{3}} = 3 \Rightarrow x = 27\)</span>；<span class="arithmatex">\(x^{\frac{1}{3}} = -1 \Rightarrow x = -1\)</span></p>
+<p><strong>C8</strong>：<span class="arithmatex">\(x^2 + \frac{1}{x^2} - 3\left(x + \frac{1}{x}\right) + 2 = 0\)</span></p>
+<p>令 <span class="arithmatex">\(u = x + \frac{1}{x}\)</span>，则 <span class="arithmatex">\(u^2 = x^2 + 2 + \frac{1}{x^2} \Rightarrow x^2 + \frac{1}{x^2} = u^2 - 2\)</span></p>
+<p><span class="arithmatex">\((u^2 - 2) - 3u + 2 = 0 \Rightarrow u^2 - 3u = 0 \Rightarrow u(u - 3) = 0\)</span></p>
+<p><span class="arithmatex">\(u = 0\)</span> 或 <span class="arithmatex">\(u = 3\)</span></p>
+<p><span class="arithmatex">\(u = 0\)</span>：<span class="arithmatex">\(x + \frac{1}{x} = 0 \Rightarrow x^2 + 1 = 0\)</span>，无实数解</p>
+<p><span class="arithmatex">\(u = 3\)</span>：<span class="arithmatex">\(x + \frac{1}{x} = 3 \Rightarrow x^2 - 3x + 1 = 0 \Rightarrow x = \frac{3 \pm \sqrt{5}}{2}\)</span></p>
+<hr />
+<h3 id="d_1">D组答案<a class="headerlink" href="#d_1" title="Permanent link">&para;</a></h3>
+<p><strong>D1</strong>：<span class="arithmatex">\(f(x) = (x + 3)(x - 2)(x - 5)\)</span></p>
+<p><span class="arithmatex">\(x\)</span> 截距：<span class="arithmatex">\(-3, 2, 5\)</span></p>
+<p><span class="arithmatex">\(y\)</span> 截距：<span class="arithmatex">\(f(0) = 3 \times (-2) \times (-5) = 30\)</span>，点 <span class="arithmatex">\((0, 30)\)</span></p>
+<p>首项系数为正。当 <span class="arithmatex">\(x \to -\infty\)</span>，<span class="arithmatex">\(f(x) \to -\infty\)</span>；当 <span class="arithmatex">\(x \to \infty\)</span>，<span class="arithmatex">\(f(x) \to \infty\)</span></p>
+<p>符号：<span class="arithmatex">\((-\infty, -3)\)</span>：−；<span class="arithmatex">\((-3, 2)\)</span>：+；<span class="arithmatex">\((2, 5)\)</span>：−；<span class="arithmatex">\((5, \infty)\)</span>：+</p>
+<p><strong>D2</strong>：<span class="arithmatex">\(f(x) = (2x + 3)(x - 1)(x - 4)\)</span></p>
+<p><span class="arithmatex">\(x\)</span> 截距：<span class="arithmatex">\(-\frac{3}{2}, 1, 4\)</span></p>
+<p><span class="arithmatex">\(y\)</span> 截距：<span class="arithmatex">\(f(0) = 3 \times (-1) \times (-4) = 12\)</span>，点 <span class="arithmatex">\((0, 12)\)</span></p>
+<p>首项系数 <span class="arithmatex">\(2 &gt; 0\)</span>，端部行为同 D1。</p>
+<p>符号：<span class="arithmatex">\((-\infty, -\frac{3}{2})\)</span>：−；<span class="arithmatex">\((-\frac{3}{2}, 1)\)</span>：+；<span class="arithmatex">\((1, 4)\)</span>：−；<span class="arithmatex">\((4, \infty)\)</span>：+</p>
+<p><strong>D3</strong>：<span class="arithmatex">\(y = |(x + 3)(x - 2)(x - 5)|\)</span></p>
+<p>将 <span class="arithmatex">\(f(x)\)</span> 在 <span class="arithmatex">\((-\infty, -3)\)</span> 和 <span class="arithmatex">\((2, 5)\)</span> 上的负值部分向上反射。<span class="arithmatex">\(x\)</span> 截距仍为 <span class="arithmatex">\(-3, 2, 5\)</span>。<span class="arithmatex">\(y\)</span> 截距为 <span class="arithmatex">\(|30| = 30\)</span>。图像全部在 <span class="arithmatex">\(x\)</span> 轴上方（含 <span class="arithmatex">\(x\)</span> 轴上的点）。</p>
+<p><strong>D4</strong>：<span class="arithmatex">\((x + 2)(x - 1)(x - 4) \ge 0\)</span></p>
+<p>根：<span class="arithmatex">\(-2, 1, 4\)</span>，首项系数为正。</p>
+<p>符号：<span class="arithmatex">\((-\infty, -2)\)</span>：−；<span class="arithmatex">\((-2, 1)\)</span>：+；<span class="arithmatex">\((1, 4)\)</span>：−；<span class="arithmatex">\((4, \infty)\)</span>：+</p>
+<p>解：<span class="arithmatex">\(x \in [-2, 1] \cup [4, \infty)\)</span></p>
+<p><strong>D5</strong>：<span class="arithmatex">\((x - 1)(x - 3)(x - 6) &lt; 0\)</span></p>
+<p>根：<span class="arithmatex">\(1, 3, 6\)</span>，首项系数为正。</p>
+<p>符号：<span class="arithmatex">\((-\infty, 1)\)</span>：−；<span class="arithmatex">\((1, 3)\)</span>：+；<span class="arithmatex">\((3, 6)\)</span>：−；<span class="arithmatex">\((6, \infty)\)</span>：+</p>
+<p>解：<span class="arithmatex">\(x \in (-\infty, 1) \cup (3, 6)\)</span></p>
+<p><strong>D6</strong>：<span class="arithmatex">\(f(x) = (x + 1)(x - 2)(x - 5) \le 0\)</span></p>
+<p>根：<span class="arithmatex">\(-1, 2, 5\)</span>，首项系数为正。</p>
+<p>符号：<span class="arithmatex">\((-\infty, -1)\)</span>：−；<span class="arithmatex">\((-1, 2)\)</span>：+；<span class="arithmatex">\((2, 5)\)</span>：−；<span class="arithmatex">\((5, \infty)\)</span>：+</p>
+<p>解：<span class="arithmatex">\(x \in (-\infty, -1] \cup [2, 5]\)</span></p>
+<hr />
+<h3 id="e_1">E组答案<a class="headerlink" href="#e_1" title="Permanent link">&para;</a></h3>
+<p><strong>E1</strong>：<span class="arithmatex">\(\begin{cases} 2x + 3y = 8 \\ 5x - 2y = 1 \end{cases}\)</span></p>
+<p>第一个方程乘以 <span class="arithmatex">\(2\)</span>，第二个乘以 <span class="arithmatex">\(3\)</span>：<span class="arithmatex">\(\begin{cases} 4x + 6y = 16 \\ 15x - 6y = 3 \end{cases}\)</span></p>
+<p>相加：<span class="arithmatex">\(19x = 19 \Rightarrow x = 1\)</span></p>
+<p>代入：<span class="arithmatex">\(2(1) + 3y = 8 \Rightarrow 3y = 6 \Rightarrow y = 2\)</span></p>
+<p>解：<span class="arithmatex">\((1, 2)\)</span></p>
+<p><strong>E2</strong>：<span class="arithmatex">\(\begin{cases} 4x - 3y = 11 \\ 3x + 2y = 21 \end{cases}\)</span></p>
+<p>第一个乘以 <span class="arithmatex">\(2\)</span>，第二个乘以 <span class="arithmatex">\(3\)</span>：<span class="arithmatex">\(\begin{cases} 8x - 6y = 22 \\ 9x + 6y = 63 \end{cases}\)</span></p>
+<p>相加：<span class="arithmatex">\(17x = 85 \Rightarrow x = 5\)</span></p>
+<p>代入：<span class="arithmatex">\(4(5) - 3y = 11 \Rightarrow 20 - 3y = 11 \Rightarrow 3y = 9 \Rightarrow y = 3\)</span></p>
+<p>解：<span class="arithmatex">\((5, 3)\)</span></p>
+<p><strong>E3</strong>：<span class="arithmatex">\(y = 3x - 2\)</span> 与 <span class="arithmatex">\(y = x^2\)</span></p>
+<p><span class="arithmatex">\(x^2 = 3x - 2 \Rightarrow x^2 - 3x + 2 = 0 \Rightarrow (x - 1)(x - 2) = 0\)</span></p>
+<p><span class="arithmatex">\(x = 1\)</span> 或 <span class="arithmatex">\(x = 2\)</span></p>
+<p>交点：<span class="arithmatex">\((1, 1)\)</span> 和 <span class="arithmatex">\((2, 4)\)</span></p>
+<p><strong>E4</strong>：<span class="arithmatex">\(y = 2x + 1\)</span> 与 <span class="arithmatex">\(y = x^2 - 3x + 5\)</span></p>
+<p><span class="arithmatex">\(2x + 1 = x^2 - 3x + 5 \Rightarrow 0 = x^2 - 5x + 4 \Rightarrow (x - 1)(x - 4) = 0\)</span></p>
+<p><span class="arithmatex">\(x = 1\)</span> 或 <span class="arithmatex">\(x = 4\)</span></p>
+<p>交点：<span class="arithmatex">\((1, 3)\)</span> 和 <span class="arithmatex">\((4, 9)\)</span></p>
+<p><strong>E5</strong>：<span class="arithmatex">\(y = x + k\)</span> 与 <span class="arithmatex">\(y = x^2 - 5x + 7\)</span> 相切</p>
+<p><span class="arithmatex">\(x + k = x^2 - 5x + 7 \Rightarrow 0 = x^2 - 6x + 7 - k\)</span></p>
+<p><span class="arithmatex">\(\Delta = (-6)^2 - 4(1)(7 - k) = 36 - 28 + 4k = 8 + 4k = 0\)</span></p>
+<p><span class="arithmatex">\(k = -2\)</span></p>
+<p><strong>E6</strong>：<span class="arithmatex">\(\begin{cases} x^2 + y^2 = 13 \\ y = 2x - 1 \end{cases}\)</span></p>
+<p>代入：<span class="arithmatex">\(x^2 + (2x - 1)^2 = 13 \Rightarrow x^2 + 4x^2 - 4x + 1 = 13 \Rightarrow 5x^2 - 4x - 12 = 0\)</span></p>
+<p><span class="arithmatex">\((5x + 6)(x - 2) = 0 \Rightarrow x = -\frac{6}{5}\)</span> 或 <span class="arithmatex">\(x = 2\)</span></p>
+<p><span class="arithmatex">\(y = 2(-\frac{6}{5}) - 1 = -\frac{12}{5} - 1 = -\frac{17}{5}\)</span>；<span class="arithmatex">\(y = 2(2) - 1 = 3\)</span></p>
+<p>解：<span class="arithmatex">\((-\frac{6}{5}, -\frac{17}{5})\)</span> 和 <span class="arithmatex">\((2, 3)\)</span></p>
+<p><strong>E7</strong>：<span class="arithmatex">\(\begin{cases} x^2 + y^2 = 25 \\ xy = 12 \end{cases}\)</span></p>
+<p>由 <span class="arithmatex">\(xy = 12\)</span> 得 <span class="arithmatex">\(y = \frac{12}{x}\)</span>（<span class="arithmatex">\(x \neq 0\)</span>）</p>
+<p>代入：<span class="arithmatex">\(x^2 + \frac{144}{x^2} = 25 \Rightarrow x^4 - 25x^2 + 144 = 0\)</span></p>
+<p>令 <span class="arithmatex">\(u = x^2 \ge 0\)</span>：<span class="arithmatex">\(u^2 - 25u + 144 = 0 \Rightarrow (u - 9)(u - 16) = 0\)</span></p>
+<p><span class="arithmatex">\(u = 9 \Rightarrow x = \pm 3\)</span>，<span class="arithmatex">\(y = \frac{12}{\pm 3} = \pm 4\)</span></p>
+<p><span class="arithmatex">\(u = 16 \Rightarrow x = \pm 4\)</span>，<span class="arithmatex">\(y = \frac{12}{\pm 4} = \pm 3\)</span></p>
+<p>解：<span class="arithmatex">\((3, 4)\)</span>、<span class="arithmatex">\((-3, -4)\)</span>、<span class="arithmatex">\((4, 3)\)</span>、<span class="arithmatex">\((-4, -3)\)</span></p>
+<p><strong>E8</strong>：<span class="arithmatex">\(\begin{cases} x^2 - 2xy + y^2 = 1 \\ x + y = 3 \end{cases}\)</span></p>
+<p>注意 <span class="arithmatex">\(x^2 - 2xy + y^2 = (x - y)^2 = 1\)</span>，所以 <span class="arithmatex">\(x - y = \pm 1\)</span></p>
+<p>与 <span class="arithmatex">\(x + y = 3\)</span> 联立：</p>
+<p>当 <span class="arithmatex">\(x - y = 1\)</span> 时：<span class="arithmatex">\(\begin{cases} x + y = 3 \\ x - y = 1 \end{cases} \Rightarrow x = 2, y = 1\)</span></p>
+<p>当 <span class="arithmatex">\(x - y = -1\)</span> 时：<span class="arithmatex">\(\begin{cases} x + y = 3 \\ x - y = -1 \end{cases} \Rightarrow x = 1, y = 2\)</span></p>
+<p>解：<span class="arithmatex">\((2, 1)\)</span> 和 <span class="arithmatex">\((1, 2)\)</span></p>
+<hr />
+<h2 id="_8">本章总结<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>知识点</th>
+<th>核心方法</th>
+<th>关键要点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>集合与区间</strong></td>
+<td>集合描述法、区间记号</td>
+<td>开区间用圆括号，闭区间用方括号；<span class="arithmatex">\(\cup\)</span> 表示并集</td>
+</tr>
+<tr>
+<td><strong>6.1 绝对值方程</strong></td>
+<td>分类讨论或两边平方</td>
+<td>$</td>
+</tr>
+<tr>
+<td><strong>6.2 绝对值不等式</strong></td>
+<td>转化为不等式组或平方</td>
+<td>$</td>
+</tr>
+<tr>
+<td><strong>6.3 代换法</strong></td>
+<td>识别重复结构，令 <span class="arithmatex">\(u = g(x)\)</span></td>
+<td>注意回代后解的存在性和定义域（如 <span class="arithmatex">\(u \ge 0\)</span>、<span class="arithmatex">\(u \neq 0\)</span> 等）</td>
+</tr>
+<tr>
+<td><strong>6.4 三次多项式图像与不等式</strong></td>
+<td>找三个 <span class="arithmatex">\(x\)</span> 截距，符号分析</td>
+<td>首项系数决定端部行为；绝对值图像将负部翻转</td>
+</tr>
+<tr>
+<td><strong>6.5 联立方程组</strong></td>
+<td>代入法 + 判别式</td>
+<td><span class="arithmatex">\(\Delta &gt; 0\)</span> 两交点，<span class="arithmatex">\(\Delta = 0\)</span> 相切，<span class="arithmatex">\(\Delta &lt; 0\)</span> 无交点</td>
+</tr>
+</tbody>
+</table>
+<h2 id="-">---<a class="headerlink" href="#-" title="Permanent link">&para;</a></h2>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../ch03/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 第 3 章：二次函数">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                第 3 章：二次函数
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../ch05/" class="md-footer__link md-footer__link--next" aria-label="下一页: 第 5 章：函数（线性、三次、指数、对数）">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                第 5 章：函数（线性、三次、指数、对数）
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 Leo Yang · Licensed under CC BY-NC-SA 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

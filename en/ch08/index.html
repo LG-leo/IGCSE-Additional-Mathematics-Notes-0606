@@ -1,0 +1,3844 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="This chapter corresponds to the following entries from Topic 14: Calculus of the Cambridge IGCSE Additional Mathematics (0606) 2028–2030 syllabus:">
+      
+      
+        <meta name="author" content="Leo Yang (LG-leo)">
+      
+      
+        <link rel="canonical" href="https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/en/ch08/">
+      
+      
+        <link rel="prev" href="../ch07/">
+      
+      
+        <link rel="next" href="../ch09/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>Chapter 8: Integration (Indefinite and Definite Integrals) [Revised and Expanded Edition] - IGCSE Additional Mathematics (0606) Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <meta name="msvalidate.01" content="621C3B7D85DC9958CF27B288AE3660D6">
+  <meta name="keywords" content="IGCSE Additional Mathematics, 0606, IGCSE 0606 notes, additional maths notes, IGCSE add math, free IGCSE notes, syllabus 2028-2030, past paper notes, 附加数学笔记">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="IGCSE Additional Mathematics (0606) Notes">
+  <meta property="og:title" content="Chapter 8: Integration (Indefinite and Definite Integrals) · IGCSE Additional Mathematics (0606) Notes">
+  <meta property="og:description" content="This chapter corresponds to the following entries from Topic 14: Calculus of the Cambridge IGCSE Additional Mathematics (0606) 2028–2030 syllabus:">
+  <meta property="og:url" content="https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/en/ch08/">
+  <meta name="twitter:card" content="summary">
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-8-integration-indefinite-and-definite-integrals-revised-and-expanded-edition" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="IGCSE Additional Mathematics (0606) Notes" class="md-header__button md-logo" aria-label="IGCSE Additional Mathematics (0606) Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IGCSE Additional Mathematics (0606) Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 8: Integration (Indefinite and Definite Integrals) [Revised and Expanded Edition]
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LG-leo/IGCSE-Additional-Mathematics-Notes-0606
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页 / Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../cn/ch01/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  中文笔记 (Chinese)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../ch01/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  English Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="IGCSE Additional Mathematics (0606) Notes" class="md-nav__button md-logo" aria-label="IGCSE Additional Mathematics (0606) Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    IGCSE Additional Mathematics (0606) Notes
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LG-leo/IGCSE-Additional-Mathematics-Notes-0606
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页 / Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    中文笔记 (Chinese)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    中文笔记 (Chinese)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cn/ch01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 1 章：数列、排列、组合与二项式定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cn/ch02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 2 章：向量与变化率
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cn/ch03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 3 章：二次函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cn/ch04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 4 章：方程与不等式（图形法）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cn/ch05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 5 章：函数（线性、三次、指数、对数）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cn/ch06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 6 章：三角学（含弧度法）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cn/ch07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 7 章：微分（导数）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cn/ch08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 8 章：积分（不定积分与定积分）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cn/ch09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 9 章：几何（直线与圆）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cn/ch10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 10 章：综合应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    English Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    English Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1: Sequences, Permutations, Combinations, and the Binomial Theorem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2: Vectors and Rates of Change
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3: Quadratic Functions (Including Polynomial Factors)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 4: Equations and Inequalities (Graphical Methods)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5: Functions (Linear, Cubic, Exponential, Logarithmic)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6: Trigonometry (Including Radians)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 7: Differentiation (Derivatives)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 8: Integration (Indefinite and Definite Integrals)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 8: Integration (Indefinite and Definite Integrals)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#syllabus-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syllabus Mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#81-indefinite-integrals-antiderivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Indefinite Integrals (Antiderivatives)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1 Indefinite Integrals (Antiderivatives)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#811-from-differentiation-to-integration-the-essence-of-the-inverse-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.1 From Differentiation to Integration — The Essence of the Inverse Operation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#812-the-inverse-relationship-between-integration-and-differentiation-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.2 The Inverse Relationship Between Integration and Differentiation — Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#813-linearity-of-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.3 Linearity of Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-basic-integration-formulas-complete-derivations-with-many-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Basic Integration Formulas (Complete Derivations with Many Examples)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.2 Basic Integration Formulas (Complete Derivations with Many Examples)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#821-power-rule-for-integration-displaystyle-int-xn-dx-quad-n-neq-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.1 Power Rule for Integration: \(\displaystyle \int x^n \, dx \quad (n \neq -1)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#822-special-case-displaystyle-int-frac1x-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.2 Special Case: \(\displaystyle \int \frac{1}{x} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-integrating-linear-composite-forms-displaystyle-int-axbn-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.3 Integrating Linear Composite Forms: \(\displaystyle \int (ax+b)^n \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#824-integrating-exponential-functions-displaystyle-int-eaxb-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.4 Integrating Exponential Functions: \(\displaystyle \int e^{ax+b} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#825-integrating-trigonometric-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.5 Integrating Trigonometric Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#826-super-comprehensive-examples-complete-skills-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.6 Super Comprehensive Examples (Complete Skills Check)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-definite-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Definite Integrals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.3 Definite Integrals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#831-from-indefinite-to-definite-integrals-the-fundamental-theorem-of-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.1 From Indefinite to Definite Integrals — The Fundamental Theorem of Calculus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#832-properties-of-definite-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.2 Properties of Definite Integrals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#833-procedure-for-computing-definite-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.3 Procedure for Computing Definite Integrals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#834-definite-integrals-and-signed-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.4 Definite Integrals and Signed Area
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-plane-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Plane Area
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4 Plane Area">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#841-area-between-a-curve-and-the-x-axis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.1 Area Between a Curve and the \(x\)-axis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#842-area-between-a-line-and-a-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.2 Area Between a Line and a Curve
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#843-area-between-two-curves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.3 Area Between Two Curves
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#844-sum-of-multiple-areas-syllabus-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.4 Sum of Multiple Areas (Syllabus Focus)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#845-summary-of-strategies-for-plane-area-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.5 Summary of Strategies for Plane Area Problems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-application-of-definite-integrals-to-kinematics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 Application of Definite Integrals to Kinematics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-core-formula-quick-reference-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chapter Core Formula Quick Reference Table
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practice Problems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#group-a-basic-indefinite-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group A: Basic Indefinite Integrals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-b-advanced-indefinite-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group B: Advanced Indefinite Integrals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-c-definite-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group C: Definite Integrals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-d-plane-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group D: Plane Area
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#answers-to-practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Answers to Practice Problems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Answers to Practice Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#group-a-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group A Answers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-b-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group B Answers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-c-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group C Answers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-d-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group D Answers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-common-mistakes-and-pitfall-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Appendix: Common Mistakes and Pitfall Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Appendix: Common Mistakes and Pitfall Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-self-check-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 Quick Self-Check List
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 9: Geometry (Straight Lines and Circles)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 10: Comprehensive Applications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#syllabus-mapping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Syllabus Mapping
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#81-indefinite-integrals-antiderivatives" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1 Indefinite Integrals (Antiderivatives)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.1 Indefinite Integrals (Antiderivatives)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#811-from-differentiation-to-integration-the-essence-of-the-inverse-operation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.1 From Differentiation to Integration — The Essence of the Inverse Operation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#812-the-inverse-relationship-between-integration-and-differentiation-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.2 The Inverse Relationship Between Integration and Differentiation — Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#813-linearity-of-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.1.3 Linearity of Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#82-basic-integration-formulas-complete-derivations-with-many-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2 Basic Integration Formulas (Complete Derivations with Many Examples)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.2 Basic Integration Formulas (Complete Derivations with Many Examples)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#821-power-rule-for-integration-displaystyle-int-xn-dx-quad-n-neq-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.1 Power Rule for Integration: \(\displaystyle \int x^n \, dx \quad (n \neq -1)\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#822-special-case-displaystyle-int-frac1x-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.2 Special Case: \(\displaystyle \int \frac{1}{x} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#823-integrating-linear-composite-forms-displaystyle-int-axbn-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.3 Integrating Linear Composite Forms: \(\displaystyle \int (ax+b)^n \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#824-integrating-exponential-functions-displaystyle-int-eaxb-dx" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.4 Integrating Exponential Functions: \(\displaystyle \int e^{ax+b} \, dx\)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#825-integrating-trigonometric-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.5 Integrating Trigonometric Functions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#826-super-comprehensive-examples-complete-skills-check" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.2.6 Super Comprehensive Examples (Complete Skills Check)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#83-definite-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3 Definite Integrals
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.3 Definite Integrals">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#831-from-indefinite-to-definite-integrals-the-fundamental-theorem-of-calculus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.1 From Indefinite to Definite Integrals — The Fundamental Theorem of Calculus
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#832-properties-of-definite-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.2 Properties of Definite Integrals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#833-procedure-for-computing-definite-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.3 Procedure for Computing Definite Integrals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#834-definite-integrals-and-signed-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.3.4 Definite Integrals and Signed Area
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#84-plane-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4 Plane Area
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8.4 Plane Area">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#841-area-between-a-curve-and-the-x-axis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.1 Area Between a Curve and the \(x\)-axis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#842-area-between-a-line-and-a-curve" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.2 Area Between a Line and a Curve
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#843-area-between-two-curves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.3 Area Between Two Curves
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#844-sum-of-multiple-areas-syllabus-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.4 Sum of Multiple Areas (Syllabus Focus)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#845-summary-of-strategies-for-plane-area-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.4.5 Summary of Strategies for Plane Area Problems
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#85-application-of-definite-integrals-to-kinematics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8.5 Application of Definite Integrals to Kinematics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#chapter-core-formula-quick-reference-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Chapter Core Formula Quick Reference Table
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practice Problems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practice Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#group-a-basic-indefinite-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group A: Basic Indefinite Integrals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-b-advanced-indefinite-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group B: Advanced Indefinite Integrals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-c-definite-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group C: Definite Integrals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-d-plane-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group D: Plane Area
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#answers-to-practice-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Answers to Practice Problems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Answers to Practice Problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#group-a-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group A Answers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-b-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group B Answers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-c-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group C Answers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#group-d-answers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Group D Answers
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-common-mistakes-and-pitfall-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Appendix: Common Mistakes and Pitfall Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Appendix: Common Mistakes and Pitfall Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-self-check-list" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 Quick Self-Check List
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="chapter-8-integration-indefinite-and-definite-integrals-revised-and-expanded-edition">Chapter 8: Integration (Indefinite and Definite Integrals) [Revised and Expanded Edition]<a class="headerlink" href="#chapter-8-integration-indefinite-and-definite-integrals-revised-and-expanded-edition" title="Permanent link">&para;</a></h1>
+<hr />
+<h2 id="syllabus-mapping">Syllabus Mapping<a class="headerlink" href="#syllabus-mapping" title="Permanent link">&para;</a></h2>
+<p>This chapter corresponds to the following entries from <strong>Topic 14: Calculus</strong> of the <strong>Cambridge IGCSE Additional Mathematics (0606) 2028–2030 syllabus</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Syllabus Ref</th>
+<th>Content</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>14.10</strong></td>
+<td>Understand integration as the reverse process of differentiation</td>
+<td>Indefinite integrals must include an arbitrary constant</td>
+</tr>
+<tr>
+<td><strong>14.11</strong></td>
+<td>Integrate sums of terms in powers of <span class="arithmatex">\(x\)</span></td>
+<td>Includes <span class="arithmatex">\(x^n\)</span>, <span class="arithmatex">\(\dfrac{1}{x}\)</span>, <span class="arithmatex">\(\dfrac{1}{ax+b}\)</span></td>
+</tr>
+<tr>
+<td><strong>14.12</strong></td>
+<td>Integrate functions of the form</td>
+<td><span class="arithmatex">\((ax+b)^n\)</span> (any rational <span class="arithmatex">\(n\)</span>, including <span class="arithmatex">\(n=-1\)</span>), <span class="arithmatex">\(\sin(ax+b)\)</span>, <span class="arithmatex">\(\cos(ax+b)\)</span>, <span class="arithmatex">\(\sec^2(ax+b)\)</span>, <span class="arithmatex">\(e^{ax+b}\)</span></td>
+</tr>
+<tr>
+<td><strong>14.13</strong></td>
+<td>Evaluation of definite integrals and application to plane area</td>
+<td>Between a line and a curve, between two curves, sum of two or more areas</td>
+</tr>
+<tr>
+<td><strong>14.14</strong></td>
+<td>Application of differentiation and integration to kinematics</td>
+<td>Relationships between displacement, velocity and acceleration (see Chapter 10)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>Important</strong>: The syllabus explicitly states that <strong>no formulas will be given</strong> in the List of formulas for the Calculus section. All integration formulas must be <strong>memorised thoroughly</strong>. Angles in trigonometric functions must always be in <strong>radians</strong>.</p>
+</blockquote>
+<hr />
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>In Chapter 5, we learned <strong>differentiation</strong> — given a function <span class="arithmatex">\(f(x)\)</span>, find its rate of change <span class="arithmatex">\(f'(x)\)</span>. Differentiation answers the question "how fast is it changing?" <strong>Integration</strong> is the <strong>reverse operation</strong> of this process: given the derivative <span class="arithmatex">\(f'(x)\)</span>, we want to recover the original function <span class="arithmatex">\(f(x)\)</span>. Therefore, integration is also called <strong>antidifferentiation</strong>.</p>
+<p>But the significance of integration goes far beyond being just a reverse operation. From a broader perspective:</p>
+<ul>
+<li><strong>Geometric meaning</strong>: Definite integrals calculate the <strong>area</strong> under a curve. This is the core problem that took nearly two thousand years to solve — from Archimedes' "method of exhaustion" in ancient Greece to the independent development of calculus by Newton and Leibniz in the 17<sup>th</sup> century.</li>
+<li><strong>Physical meaning</strong>: Given velocity, find displacement; given acceleration, find velocity — these are all processes of <strong>accumulation</strong>. In everyday life, the odometer reading is the accumulation of speed over time.</li>
+<li><strong>Analogy</strong>: If differentiation is like taking a photograph (capturing the change at an instant), then integration is like recording a video (accumulating the change frame by frame).</li>
+</ul>
+<p><strong>Comparison between integration and differentiation</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Concept</th>
+<th>Differentiation (Chapter 5)</th>
+<th>Integration (Chapter 7)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic question</td>
+<td>Given <span class="arithmatex">\(f(x)\)</span>, find <span class="arithmatex">\(f'(x)\)</span></td>
+<td>Given <span class="arithmatex">\(f'(x)\)</span>, find <span class="arithmatex">\(f(x)\)</span></td>
+</tr>
+<tr>
+<td>Geometric meaning</td>
+<td>Find slope of tangent at a point</td>
+<td>Find area under a curve</td>
+</tr>
+<tr>
+<td>Physical meaning</td>
+<td>Given displacement, find velocity/acceleration</td>
+<td>Given acceleration, find velocity/displacement</td>
+</tr>
+<tr>
+<td>Notation</td>
+<td><span class="arithmatex">\(\dfrac{d}{dx}\)</span></td>
+<td><span class="arithmatex">\(\displaystyle \int \cdots dx\)</span></td>
+</tr>
+<tr>
+<td>Operation properties</td>
+<td>Linearity, product rule, quotient rule, chain rule</td>
+<td>Linearity (no simple product/quotient rule counterpart)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Core idea</strong>: Differentiation and integration are inverse operations. Just like addition and subtraction, multiplication and division, they are a pair of "reverse operations." Understanding this inverse relationship is the cornerstone of all of calculus.</p>
+</blockquote>
+<hr />
+<h2 id="81-indefinite-integrals-antiderivatives">8.1 Indefinite Integrals (Antiderivatives)<a class="headerlink" href="#81-indefinite-integrals-antiderivatives" title="Permanent link">&para;</a></h2>
+<h3 id="811-from-differentiation-to-integration-the-essence-of-the-inverse-operation">8.1.1 From Differentiation to Integration — The Essence of the Inverse Operation<a class="headerlink" href="#811-from-differentiation-to-integration-the-essence-of-the-inverse-operation" title="Permanent link">&para;</a></h3>
+<p>We start with the most fundamental question.</p>
+<p><strong>Question</strong>: Given that the derivative of a function <span class="arithmatex">\(F(x)\)</span> is <span class="arithmatex">\(2x\)</span>, i.e., <span class="arithmatex">\(F'(x) = 2x\)</span>, find <span class="arithmatex">\(F(x)\)</span>.</p>
+<p><strong>Thinking process</strong>: In Chapter 5 we learned:</p>
+<div class="arithmatex">\[
+\frac{d}{dx}(x^2) = 2x
+\]</div>
+<p>So <span class="arithmatex">\(x^2\)</span> is an "antiderivative" of <span class="arithmatex">\(2x\)</span>. But the problem is — the derivative of a constant is <span class="arithmatex">\(0\)</span>, so <span class="arithmatex">\(x^2 + 1\)</span>, <span class="arithmatex">\(x^2 - 5\)</span>, <span class="arithmatex">\(x^2 + \pi\)</span> all have derivatives equal to <span class="arithmatex">\(2x\)</span>. This means <span class="arithmatex">\(2x\)</span> has <strong>infinitely many</strong> antiderivatives, differing only by a constant. We denote this arbitrary constant by <span class="arithmatex">\(C\)</span>.</p>
+<p>Using integration notation for this process:</p>
+<div class="arithmatex">\[
+\boxed{\int 2x \, dx = x^2 + C}
+\]</div>
+<p>Where:
+- <span class="arithmatex">\(\int\)</span> is called the <strong>integral sign</strong> (an elongated S, from the Latin <em>summa</em>, meaning "sum")
+- <span class="arithmatex">\(2x\)</span> is called the <strong>integrand</strong>
+- <span class="arithmatex">\(dx\)</span> indicates integration with respect to the variable <span class="arithmatex">\(x\)</span>
+- <span class="arithmatex">\(C\)</span> is called the <strong>constant of integration</strong></p>
+<blockquote>
+<p><strong>Formal definition</strong>: A function <span class="arithmatex">\(F(x)\)</span> is called an <strong>antiderivative</strong> of <span class="arithmatex">\(f(x)\)</span> if <span class="arithmatex">\(F'(x) = f(x)\)</span> for all <span class="arithmatex">\(x\)</span> in the domain. The set of all antiderivatives of <span class="arithmatex">\(f(x)\)</span> is called the <strong>indefinite integral</strong>, denoted by <span class="arithmatex">\(\displaystyle \int f(x) \, dx = F(x) + C\)</span>.</p>
+</blockquote>
+<h3 id="812-the-inverse-relationship-between-integration-and-differentiation-verification">8.1.2 The Inverse Relationship Between Integration and Differentiation — Verification<a class="headerlink" href="#812-the-inverse-relationship-between-integration-and-differentiation-verification" title="Permanent link">&para;</a></h3>
+<p>Since integration is the inverse of differentiation, every integration formula can be verified by differentiation. This is the most reliable way to check whether an integration result is correct.</p>
+<p><strong>Verification procedure</strong>:
+1. Differentiate the result <span class="arithmatex">\(F(x) + C\)</span>
+2. Check whether the derivative equals the integrand <span class="arithmatex">\(f(x)\)</span>
+3. If they are equal, the integration is correct</p>
+<p><strong>Verification example 1</strong>: Verify <span class="arithmatex">\(\displaystyle \int 3x^2 \, dx = x^3 + C\)</span></p>
+<div class="arithmatex">\[
+\frac{d}{dx}(x^3 + C) = 3x^2 \quad \checkmark
+\]</div>
+<p><strong>Verification example 2</strong>: Verify <span class="arithmatex">\(\displaystyle \int \cos x \, dx = \sin x + C\)</span></p>
+<div class="arithmatex">\[
+\frac{d}{dx}(\sin x + C) = \cos x \quad \checkmark
+\]</div>
+<p><strong>Verification example 3</strong>: Verify <span class="arithmatex">\(\displaystyle \int e^{2x} \, dx = \frac{1}{2}e^{2x} + C\)</span></p>
+<div class="arithmatex">\[
+\frac{d}{dx}\left(\frac{1}{2}e^{2x} + C\right) = \frac{1}{2} \cdot e^{2x} \cdot 2 = e^{2x} \quad \checkmark
+\]</div>
+<p>This seemingly simple method is especially important when dealing with complex integrals — if you are unsure about a result, <strong>verifying by differentiation</strong> is always the most reliable check.</p>
+<hr />
+<p><strong>Example 1</strong> (Understanding the concept of antiderivatives): Given <span class="arithmatex">\(f'(x) = 6x^2\)</span> and <span class="arithmatex">\(f(1) = 3\)</span>, find <span class="arithmatex">\(f(x)\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>First find the indefinite integral:</p>
+<div class="arithmatex">\[
+f(x) = \int 6x^2 \, dx = 6 \cdot \frac{x^3}{3} + C = 2x^3 + C
+\]</div>
+<p>Use the condition <span class="arithmatex">\(f(1) = 3\)</span> to determine <span class="arithmatex">\(C\)</span>:</p>
+<div class="arithmatex">\[
+f(1) = 2(1)^3 + C = 2 + C = 3 \Rightarrow C = 1
+\]</div>
+<p>Therefore <span class="arithmatex">\(f(x) = 2x^3 + 1\)</span>.</p>
+<blockquote>
+<p>This is a common question type in exams — given the derivative and an initial condition, find the original function. The key is to first integrate to obtain an expression containing <span class="arithmatex">\(C\)</span>, then substitute the condition to solve for <span class="arithmatex">\(C\)</span>.</p>
+</blockquote>
+<hr />
+<p><strong>Example 2</strong> (Verifying integration by differentiation): Determine whether <span class="arithmatex">\(\displaystyle \int \frac{1}{x^2} \, dx = -\frac{1}{x} + C\)</span> is correct.</p>
+<p><strong>Solution</strong>:</p>
+<p>Differentiate the result:</p>
+<div class="arithmatex">\[
+\frac{d}{dx}\left(-\frac{1}{x} + C\right) = \frac{d}{dx}(-x^{-1} + C) = x^{-2} = \frac{1}{x^2}
+\]</div>
+<p>The derivative equals the integrand, so the integration is correct.</p>
+<hr />
+<p><strong>Example 3</strong> (Finding errors through differentiation): Determine whether <span class="arithmatex">\(\displaystyle \int (2x+1)^2 \, dx = \frac{(2x+1)^3}{3} + C\)</span> is correct.</p>
+<p><strong>Solution</strong>:</p>
+<p>Differentiate the result:</p>
+<div class="arithmatex">\[
+\frac{d}{dx}\left(\frac{(2x+1)^3}{3} + C\right) = \frac{1}{3} \cdot 3(2x+1)^2 \cdot 2 = 2(2x+1)^2 \neq (2x+1)^2
+\]</div>
+<p>There is an extra factor of <span class="arithmatex">\(2\)</span>, so the integration is <strong>incorrect</strong>! The correct approach is:</p>
+<div class="arithmatex">\[
+\int (2x+1)^2 \, dx = \frac{(2x+1)^3}{2 \cdot 3} + C = \frac{(2x+1)^3}{6} + C
+\]</div>
+<p>Verification: <span class="arithmatex">\(\dfrac{d}{dx}\left(\dfrac{(2x+1)^3}{6}\right) = \dfrac{3(2x+1)^2 \cdot 2}{6} = (2x+1)^2 \quad \checkmark\)</span></p>
+<blockquote>
+<p>⚠️ <strong>Lesson</strong>: For integrals of the form <span class="arithmatex">\((ax+b)^n\)</span>, don't forget the extra factor <span class="arithmatex">\(\dfrac{1}{a}\)</span>! This is one of the most common mistakes made by beginners.</p>
+</blockquote>
+<hr />
+<h3 id="813-linearity-of-integration">8.1.3 Linearity of Integration<a class="headerlink" href="#813-linearity-of-integration" title="Permanent link">&para;</a></h3>
+<p>Integration satisfies <strong>linearity</strong>. This property derives from the linearity of differentiation and is the most fundamental rule in integration:</p>
+<div class="arithmatex">\[
+\boxed{\int [a f(x) + b g(x)] \, dx = a \int f(x) \, dx + b \int g(x) \, dx}
+\]</div>
+<p>where <span class="arithmatex">\(a\)</span> and <span class="arithmatex">\(b\)</span> are arbitrary constants.</p>
+<p><strong>Derivation</strong>: Let <span class="arithmatex">\(F'(x) = f(x)\)</span>, <span class="arithmatex">\(G'(x) = g(x)\)</span>. Then by the linearity of differentiation:</p>
+<div class="arithmatex">\[
+\frac{d}{dx}[a F(x) + b G(x)] = a F'(x) + b G'(x) = a f(x) + b g(x)
+\]</div>
+<p>Therefore <span class="arithmatex">\(a F(x) + b G(x)\)</span> is an antiderivative of <span class="arithmatex">\(a f(x) + b g(x)\)</span>, proving the equality.</p>
+<p>This property tells us two things:
+1. <strong>A constant factor can be pulled outside the integral sign</strong>: <span class="arithmatex">\(\displaystyle \int c f(x) \, dx = c \int f(x) \, dx\)</span>
+2. <strong>The integral of a sum equals the sum of the integrals</strong>: <span class="arithmatex">\(\displaystyle \int [f(x) + g(x)] \, dx = \int f(x) \, dx + \int g(x) \, dx\)</span></p>
+<blockquote>
+<p>⚠️ <strong>Important warning</strong>: The linearity of integration <strong>does not mean</strong> that "the integral of a product equals the product of the integrals"!</p>
+<div class="arithmatex">\[
+\int f(x)g(x) \, dx \neq \int f(x) \, dx \cdot \int g(x) \, dx
+\]</div>
+<p>Nor does it mean "the integral of a quotient equals the quotient of the integrals"!</p>
+<div class="arithmatex">\[
+\int \frac{f(x)}{g(x)} \, dx \neq \frac{\int f(x) \, dx}{\int g(x) \, dx}
+\]</div>
+<p>Integrating products and quotients requires more advanced techniques (such as integration by parts), which are not in the IGCSE syllabus. In IGCSE 0606, when encountering a product, you must <strong>expand</strong> first and then integrate term by term.</p>
+</blockquote>
+<hr />
+<p><strong>Example 1</strong> (Basic application of linearity): Find <span class="arithmatex">\(\displaystyle \int (3x^2 - 5x + 2) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\int (3x^2 - 5x + 2) \, dx &amp;= 3 \int x^2 \, dx - 5 \int x \, dx + 2 \int 1 \, dx \\[4pt]
+&amp;= 3 \cdot \frac{x^3}{3} - 5 \cdot \frac{x^2}{2} + 2x + C \\[4pt]
+&amp;= x^3 - \frac{5}{2}x^2 + 2x + C
+\end{aligned}
+\]</div>
+<p><strong>Verification</strong>: <span class="arithmatex">\(\dfrac{d}{dx}\left(x^3 - \dfrac{5}{2}x^2 + 2x + C\right) = 3x^2 - 5x + 2\)</span>. ✓</p>
+<hr />
+<p><strong>Example 2</strong> (Expand first, then integrate — handling products): Find <span class="arithmatex">\(\displaystyle \int (x+3)(x-2) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>First expand:</p>
+<div class="arithmatex">\[
+(x+3)(x-2) = x^2 - 2x + 3x - 6 = x^2 + x - 6
+\]</div>
+<p>Then integrate term by term:</p>
+<div class="arithmatex">\[
+\int (x^2 + x - 6) \, dx = \frac{x^3}{3} + \frac{x^2}{2} - 6x + C
+\]</div>
+<blockquote>
+<p>⚠️ <strong>Cannot</strong> write: <span class="arithmatex">\(\int (x+3)(x-2) \, dx = \int (x+3) \, dx \cdot \int (x-2) \, dx\)</span></p>
+</blockquote>
+<hr />
+<p><strong>Example 3</strong> (Expanding a polynomial then integrating): Find <span class="arithmatex">\(\displaystyle \int (2x-1)^3 \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Method 1 (Expand):</p>
+<div class="arithmatex">\[
+(2x-1)^3 = 8x^3 - 12x^2 + 6x - 1
+\]</div>
+<div class="arithmatex">\[
+\begin{aligned}
+\int (8x^3 - 12x^2 + 6x - 1) \, dx &amp;= 8 \cdot \frac{x^4}{4} - 12 \cdot \frac{x^3}{3} + 6 \cdot \frac{x^2}{2} - x + C \\[4pt]
+&amp;= 2x^4 - 4x^3 + 3x^2 - x + C
+\end{aligned}
+\]</div>
+<p>Method 2 (Using the <span class="arithmatex">\((ax+b)^n\)</span> formula directly, which will be learned in §7.2.3):</p>
+<div class="arithmatex">\[
+\int (2x-1)^3 \, dx = \frac{(2x-1)^4}{2 \cdot 4} + C = \frac{(2x-1)^4}{8} + C
+\]</div>
+<p>The two methods give answers that look different in form but are actually equivalent (expanding both gives the same result). ✓</p>
+<hr />
+<p><strong>Example 4</strong> (Simplify a fraction before integrating): Find <span class="arithmatex">\(\displaystyle \int \frac{x^3 + 3x^2 - 2}{x^2} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>First simplify: <span class="arithmatex">\(\dfrac{x^3 + 3x^2 - 2}{x^2} = x + 3 - \dfrac{2}{x^2} = x + 3 - 2x^{-2}\)</span></p>
+<p>Then integrate term by term:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\int (x + 3 - 2x^{-2}) \, dx &amp;= \frac{x^2}{2} + 3x - 2 \cdot \frac{x^{-1}}{-1} + C \\[4pt]
+&amp;= \frac{x^2}{2} + 3x + \frac{2}{x} + C
+\end{aligned}
+\]</div>
+<blockquote>
+<p>⚠️ <strong>Common mistake</strong>: Do not try to integrate the fraction as a whole! You must first separate the fraction into a sum of individual terms before integrating term by term.</p>
+</blockquote>
+<hr />
+<h2 id="82-basic-integration-formulas-complete-derivations-with-many-examples">8.2 Basic Integration Formulas (Complete Derivations with Many Examples)<a class="headerlink" href="#82-basic-integration-formulas-complete-derivations-with-many-examples" title="Permanent link">&para;</a></h2>
+<p>This section is <strong>the most core content of this chapter</strong>. All formulas must be memorised thoroughly, as the examination <strong>does not provide a formula sheet</strong>. For each formula, I will provide:
+1. The formula itself
+2. Derivation starting from differentiation
+3. At least 3 worked examples (from basic to comprehensive)</p>
+<hr />
+<h3 id="821-power-rule-for-integration-displaystyle-int-xn-dx-quad-n-neq-1">8.2.1 Power Rule for Integration: <span class="arithmatex">\(\displaystyle \int x^n \, dx \quad (n \neq -1)\)</span><a class="headerlink" href="#821-power-rule-for-integration-displaystyle-int-xn-dx-quad-n-neq-1" title="Permanent link">&para;</a></h3>
+<p><strong>Formula</strong>:</p>
+<div class="arithmatex">\[
+\boxed{\int x^n \, dx = \frac{x^{n+1}}{n+1} + C \quad (n \neq -1)}
+\]</div>
+<p><strong>Derivation</strong>: Differentiate the right-hand side:</p>
+<div class="arithmatex">\[
+\frac{d}{dx}\left(\frac{x^{n+1}}{n+1} + C\right) = \frac{n+1}{n+1} x^{n} = x^n
+\]</div>
+<p>The derivative equals the integrand <span class="arithmatex">\(x^n\)</span>, proving the formula.</p>
+<p><strong>Key points to understand</strong>:
+- <strong>Add 1 to the exponent</strong>: <span class="arithmatex">\(n \to n+1\)</span>
+- <strong>Divide by the new exponent</strong>: divide by <span class="arithmatex">\((n+1)\)</span>
+- This formula holds for <strong>all rational numbers</strong> <span class="arithmatex">\(n \neq -1\)</span>, including negative numbers and fractions</p>
+<p><strong>Quick reference table for common exponent forms</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Integrand</th>
+<th>Rewritten as power</th>
+<th>Integration result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(x^5\)</span></td>
+<td><span class="arithmatex">\(x^5\)</span></td>
+<td><span class="arithmatex">\(\dfrac{x^6}{6}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\dfrac{1}{x^3}\)</span></td>
+<td><span class="arithmatex">\(x^{-3}\)</span></td>
+<td><span class="arithmatex">\(\dfrac{x^{-2}}{-2} = -\dfrac{1}{2x^2}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\sqrt{x}\)</span></td>
+<td><span class="arithmatex">\(x^{1/2}\)</span></td>
+<td><span class="arithmatex">\(\dfrac{x^{3/2}}{3/2} = \dfrac{2}{3}x^{3/2}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\dfrac{1}{\sqrt{x}}\)</span></td>
+<td><span class="arithmatex">\(x^{-1/2}\)</span></td>
+<td><span class="arithmatex">\(\dfrac{x^{1/2}}{1/2} = 2\sqrt{x}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\sqrt[3]{x^2}\)</span></td>
+<td><span class="arithmatex">\(x^{2/3}\)</span></td>
+<td><span class="arithmatex">\(\dfrac{x^{5/3}}{5/3} = \dfrac{3}{5}x^{5/3}\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Example 1</strong> (Positive integer exponent): Find <span class="arithmatex">\(\displaystyle \int x^8 \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int x^8 \, dx = \frac{x^{8+1}}{8+1} + C = \frac{x^9}{9} + C
+\]</div>
+<p><strong>Verification</strong>: <span class="arithmatex">\(\dfrac{d}{dx}\left(\dfrac{x^9}{9}\right) = \dfrac{9x^8}{9} = x^8\)</span>. ✓</p>
+<hr />
+<p><strong>Example 2</strong> (Negative exponent): Find <span class="arithmatex">\(\displaystyle \int \frac{1}{x^4} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>First rewrite: <span class="arithmatex">\(\dfrac{1}{x^4} = x^{-4}\)</span></p>
+<div class="arithmatex">\[
+\int x^{-4} \, dx = \frac{x^{-4+1}}{-4+1} + C = \frac{x^{-3}}{-3} + C = -\frac{1}{3x^3} + C
+\]</div>
+<p><strong>Verification</strong>: <span class="arithmatex">\(\dfrac{d}{dx}\left(-\dfrac{1}{3}x^{-3}\right) = -\dfrac{1}{3} \cdot (-3)x^{-4} = x^{-4}\)</span>. ✓</p>
+<blockquote>
+<p>⚠️ <strong>Common mistake</strong>: When <span class="arithmatex">\(n = -4\)</span>, <span class="arithmatex">\(n+1 = -3\)</span> (not <span class="arithmatex">\(-5\)</span>!). Many students mistakenly think that adding 1 makes the exponent more negative, but in fact <span class="arithmatex">\(-4+1 = -3\)</span>. Always writing out the intermediate steps can help avoid this type of error.</p>
+</blockquote>
+<hr />
+<p><strong>Example 3</strong> (Fractional exponent — square root): Find <span class="arithmatex">\(\displaystyle \int \sqrt{x} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p><span class="arithmatex">\(\sqrt{x} = x^{1/2}\)</span></p>
+<div class="arithmatex">\[
+\int x^{1/2} \, dx = \frac{x^{1/2+1}}{1/2+1} + C = \frac{x^{3/2}}{3/2} + C = \frac{2}{3}x^{3/2} + C
+\]</div>
+<p>This can also be written as <span class="arithmatex">\(\dfrac{2}{3}\sqrt{x^3} + C\)</span> or <span class="arithmatex">\(\dfrac{2}{3}x\sqrt{x} + C\)</span>.</p>
+<p><strong>Verification</strong>: <span class="arithmatex">\(\dfrac{d}{dx}\left(\dfrac{2}{3}x^{3/2}\right) = \dfrac{2}{3} \cdot \dfrac{3}{2}x^{1/2} = x^{1/2} = \sqrt{x}\)</span>. ✓</p>
+<hr />
+<p><strong>Example 4</strong> (Fractional exponent — cube root): Find <span class="arithmatex">\(\displaystyle \int \sqrt[3]{x} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p><span class="arithmatex">\(\sqrt[3]{x} = x^{1/3}\)</span></p>
+<div class="arithmatex">\[
+\int x^{1/3} \, dx = \frac{x^{1/3+1}}{1/3+1} + C = \frac{x^{4/3}}{4/3} + C = \frac{3}{4}x^{4/3} + C
+\]</div>
+<hr />
+<p><strong>Example 5</strong> (Negative fractional exponent): Find <span class="arithmatex">\(\displaystyle \int \frac{1}{\sqrt[3]{x^2}} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p><span class="arithmatex">\(\dfrac{1}{\sqrt[3]{x^2}} = \dfrac{1}{x^{2/3}} = x^{-2/3}\)</span></p>
+<div class="arithmatex">\[
+\int x^{-2/3} \, dx = \frac{x^{-2/3+1}}{-2/3+1} + C = \frac{x^{1/3}}{1/3} + C = 3x^{1/3} + C = 3\sqrt[3]{x} + C
+\]</div>
+<p><strong>Verification</strong>: <span class="arithmatex">\(\dfrac{d}{dx}(3x^{1/3}) = 3 \cdot \dfrac{1}{3}x^{-2/3} = x^{-2/3} = \dfrac{1}{\sqrt[3]{x^2}}\)</span>. ✓</p>
+<hr />
+<p><strong>Example 6</strong> (Comprehensive — mixed terms): Find <span class="arithmatex">\(\displaystyle \int \left( 4x^3 + \frac{2}{x^5} - 3\sqrt{x} + \frac{1}{\sqrt{x}} \right) dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>First rewrite each term in power form:</p>
+<div class="arithmatex">\[
+4x^3 + 2x^{-5} - 3x^{1/2} + x^{-1/2}
+\]</div>
+<p>Integrate term by term:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\int 4x^3 \, dx &amp;= 4 \cdot \frac{x^4}{4} = x^4 \\[4pt]
+\int 2x^{-5} \, dx &amp;= 2 \cdot \frac{x^{-4}}{-4} = -\frac{1}{2}x^{-4} = -\frac{1}{2x^4} \\[4pt]
+\int -3x^{1/2} \, dx &amp;= -3 \cdot \frac{x^{3/2}}{3/2} = -3 \cdot \frac{2}{3}x^{3/2} = -2x^{3/2} \\[4pt]
+\int x^{-1/2} \, dx &amp;= \frac{x^{1/2}}{1/2} = 2x^{1/2} = 2\sqrt{x}
+\end{aligned}
+\]</div>
+<p>Combine the results:</p>
+<div class="arithmatex">\[
+\int \left( 4x^3 + \frac{2}{x^5} - 3\sqrt{x} + \frac{1}{\sqrt{x}} \right) dx = x^4 - \frac{1}{2x^4} - 2x^{3/2} + 2\sqrt{x} + C
+\]</div>
+<hr />
+<h3 id="822-special-case-displaystyle-int-frac1x-dx">8.2.2 Special Case: <span class="arithmatex">\(\displaystyle \int \frac{1}{x} \, dx\)</span><a class="headerlink" href="#822-special-case-displaystyle-int-frac1x-dx" title="Permanent link">&para;</a></h3>
+<p><strong>Formula</strong>:</p>
+<div class="arithmatex">\[
+\boxed{\int \frac{1}{x} \, dx = \ln |x| + C}
+\]</div>
+<p><strong>Why is <span class="arithmatex">\(n=-1\)</span> a special case?</strong></p>
+<p>Recall the power rule: <span class="arithmatex">\(\displaystyle \int x^n \, dx = \frac{x^{n+1}}{n+1} + C\)</span>. If <span class="arithmatex">\(n = -1\)</span>, then <span class="arithmatex">\(n+1 = 0\)</span>, making the denominator zero — the formula breaks down! Therefore the integral of <span class="arithmatex">\(\dfrac{1}{x}\)</span> needs to be handled separately.</p>
+<p><strong>Derivation</strong>: Recall the derivative of <span class="arithmatex">\(\ln x\)</span>.</p>
+<p>When <span class="arithmatex">\(x &gt; 0\)</span>:</p>
+<div class="arithmatex">\[
+\frac{d}{dx}(\ln x) = \frac{1}{x}
+\]</div>
+<p>When <span class="arithmatex">\(x &lt; 0\)</span>, <span class="arithmatex">\(|x| = -x &gt; 0\)</span>, by the chain rule:</p>
+<div class="arithmatex">\[
+\frac{d}{dx}[\ln (-x)] = \frac{1}{-x} \cdot (-1) = \frac{1}{x}
+\]</div>
+<p>Both cases can be uniformly written as <span class="arithmatex">\(\dfrac{d}{dx}(\ln |x|) = \dfrac{1}{x}\)</span>, therefore <span class="arithmatex">\(\displaystyle \int \frac{1}{x} \, dx = \ln |x| + C\)</span>.</p>
+<blockquote>
+<p>⚠️ <strong>The absolute value sign cannot be omitted!</strong> It ensures the formula still holds when <span class="arithmatex">\(x\)</span> is negative.</p>
+</blockquote>
+<p><strong>Comparison with the Power Rule</strong>:</p>
+<div class="arithmatex">\[
+\int x^2 \, dx = \frac{x^3}{3} + C, \quad \int x^1 \, dx = \frac{x^2}{2} + C, \quad \int x^0 \, dx = x + C, \quad \int x^{-1} \, dx = \ln|x| + C
+\]</div>
+<p>Note that <span class="arithmatex">\(x^0 = 1\)</span>, whose integral is <span class="arithmatex">\(x\)</span>, not <span class="arithmatex">\(\ln|x|\)</span> — only <span class="arithmatex">\(x^{-1}\)</span> gives <span class="arithmatex">\(\ln|x|\)</span>.</p>
+<hr />
+<p><strong>Example 1</strong> (Basic form): Find <span class="arithmatex">\(\displaystyle \int \frac{5}{x} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int \frac{5}{x} \, dx = 5 \int \frac{1}{x} \, dx = 5\ln |x| + C
+\]</div>
+<hr />
+<p><strong>Example 2</strong> (Mixed with power functions): Find <span class="arithmatex">\(\displaystyle \int \left( x^3 - \frac{2}{x} \right) dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int \left( x^3 - \frac{2}{x} \right) dx = \frac{x^4}{4} - 2\ln|x| + C
+\]</div>
+<hr />
+<p><strong>Example 3</strong> (Simplify before integrating — common exam type): Find <span class="arithmatex">\(\displaystyle \int \frac{x^2 + 3x - 1}{x} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>First simplify:</p>
+<div class="arithmatex">\[
+\frac{x^2 + 3x - 1}{x} = x + 3 - \frac{1}{x}
+\]</div>
+<p>Then integrate:</p>
+<div class="arithmatex">\[
+\int \left( x + 3 - \frac{1}{x} \right) dx = \frac{x^2}{2} + 3x - \ln|x| + C
+\]</div>
+<blockquote>
+<p>⚠️ <strong>Common mistake</strong>: Some students try to apply the power rule directly to <span class="arithmatex">\(\dfrac{x^2+3x-1}{x}\)</span> as a whole — this is not allowed! You must first simplify it into a sum of individual terms.</p>
+</blockquote>
+<hr />
+<p><strong>Example 4</strong> (Carefully distinguish <span class="arithmatex">\(\dfrac{1}{x}\)</span> from <span class="arithmatex">\(x^{-2}\)</span>): Find <span class="arithmatex">\(\displaystyle \int \frac{x^3 - 2x^2 + 1}{x^2} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Simplify:</p>
+<div class="arithmatex">\[
+\frac{x^3 - 2x^2 + 1}{x^2} = x - 2 + \frac{1}{x^2} = x - 2 + x^{-2}
+\]</div>
+<p>Integrate:</p>
+<div class="arithmatex">\[
+\int (x - 2 + x^{-2}) \, dx = \frac{x^2}{2} - 2x + \frac{x^{-1}}{-1} + C = \frac{x^2}{2} - 2x - \frac{1}{x} + C
+\]</div>
+<p>Notice that here <span class="arithmatex">\(x^{-2}\)</span> uses the power rule (<span class="arithmatex">\(n=-2 \neq -1\)</span>), and only <span class="arithmatex">\(\dfrac{1}{x} = x^{-1}\)</span> uses <span class="arithmatex">\(\ln|x|\)</span>. Do not confuse the two!</p>
+<hr />
+<h3 id="823-integrating-linear-composite-forms-displaystyle-int-axbn-dx">8.2.3 Integrating Linear Composite Forms: <span class="arithmatex">\(\displaystyle \int (ax+b)^n \, dx\)</span><a class="headerlink" href="#823-integrating-linear-composite-forms-displaystyle-int-axbn-dx" title="Permanent link">&para;</a></h3>
+<p><strong>Formula</strong> (<span class="arithmatex">\(n \neq -1\)</span>):</p>
+<div class="arithmatex">\[
+\boxed{\int (ax+b)^n \, dx = \frac{(ax+b)^{n+1}}{a(n+1)} + C \quad (n \neq -1)}
+\]</div>
+<p>When <span class="arithmatex">\(n = -1\)</span>:</p>
+<div class="arithmatex">\[
+\boxed{\int \frac{1}{ax+b} \, dx = \frac{1}{a} \ln |ax+b| + C}
+\]</div>
+<p><strong>Derivation</strong> (using substitution thinking):</p>
+<p>Let <span class="arithmatex">\(u = ax+b\)</span>, then <span class="arithmatex">\(du = a \, dx\)</span>, i.e., <span class="arithmatex">\(dx = \dfrac{du}{a}\)</span>.</p>
+<div class="arithmatex">\[
+\int (ax+b)^n \, dx = \int u^n \cdot \frac{du}{a} = \frac{1}{a} \int u^n \, du = \frac{1}{a} \cdot \frac{u^{n+1}}{n+1} + C = \frac{(ax+b)^{n+1}}{a(n+1)} + C
+\]</div>
+<p><strong>Intuitive understanding</strong>: Compare with <span class="arithmatex">\(\int x^n \, dx = \dfrac{x^{n+1}}{n+1}\)</span>. Here <span class="arithmatex">\(x\)</span> is replaced by <span class="arithmatex">\((ax+b)\)</span>, but an extra factor of <span class="arithmatex">\(\dfrac{1}{a}\)</span> appears. This <span class="arithmatex">\(\dfrac{1}{a}\)</span> comes from the reverse of the chain rule — because the derivative of <span class="arithmatex">\((ax+b)\)</span> is <span class="arithmatex">\(a\)</span>, so in the reverse operation we must divide by <span class="arithmatex">\(a\)</span>.</p>
+<p><strong>Memory aid</strong>: "Add 1 to the exponent, divide by the new exponent, then divide by <span class="arithmatex">\(a\)</span>."</p>
+<hr />
+<p><strong>Example 1</strong> (Positive integer <span class="arithmatex">\(n\)</span>): Find <span class="arithmatex">\(\displaystyle \int (5x+2)^3 \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Here <span class="arithmatex">\(a=5\)</span>, <span class="arithmatex">\(n=3\)</span>.</p>
+<div class="arithmatex">\[
+\int (5x+2)^3 \, dx = \frac{(5x+2)^{4}}{5 \cdot 4} + C = \frac{(5x+2)^4}{20} + C
+\]</div>
+<p><strong>Verification</strong>: <span class="arithmatex">\(\dfrac{d}{dx}\left[\dfrac{(5x+2)^4}{20}\right] = \dfrac{4(5x+2)^3 \cdot 5}{20} = \dfrac{20(5x+2)^3}{20} = (5x+2)^3\)</span>. ✓</p>
+<hr />
+<p><strong>Example 2</strong> (Negative integer <span class="arithmatex">\(n\)</span>): Find <span class="arithmatex">\(\displaystyle \int \frac{1}{(3x-1)^4} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Rewrite as <span class="arithmatex">\((3x-1)^{-4}\)</span>, <span class="arithmatex">\(a=3\)</span>, <span class="arithmatex">\(n=-4\)</span>.</p>
+<div class="arithmatex">\[
+\int (3x-1)^{-4} \, dx = \frac{(3x-1)^{-3}}{3 \cdot (-3)} + C = -\frac{1}{9}(3x-1)^{-3} + C = -\frac{1}{9(3x-1)^3} + C
+\]</div>
+<hr />
+<p><strong>Example 3</strong> (Fractional <span class="arithmatex">\(n\)</span> — radical form): Find <span class="arithmatex">\(\displaystyle \int \sqrt{4x+3} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p><span class="arithmatex">\(\sqrt{4x+3} = (4x+3)^{1/2}\)</span>, <span class="arithmatex">\(a=4\)</span>, <span class="arithmatex">\(n=\dfrac{1}{2}\)</span>.</p>
+<div class="arithmatex">\[
+\int (4x+3)^{1/2} \, dx = \frac{(4x+3)^{3/2}}{4 \cdot (3/2)} + C = \frac{(4x+3)^{3/2}}{6} + C
+\]</div>
+<p>i.e., <span class="arithmatex">\(\dfrac{1}{6}(4x+3)^{3/2} + C\)</span>.</p>
+<hr />
+<p><strong>Example 4</strong> (<span class="arithmatex">\(n=-1\)</span> case — logarithmic form): Find <span class="arithmatex">\(\displaystyle \int \frac{1}{2x+5} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p><span class="arithmatex">\(a=2\)</span>, use <span class="arithmatex">\(\displaystyle \int \frac{1}{ax+b} \, dx = \frac{1}{a}\ln|ax+b| + C\)</span>.</p>
+<div class="arithmatex">\[
+\int \frac{1}{2x+5} \, dx = \frac{1}{2} \ln|2x+5| + C
+\]</div>
+<p><strong>Verification</strong>: <span class="arithmatex">\(\dfrac{d}{dx}\left(\dfrac{1}{2}\ln|2x+5|\right) = \dfrac{1}{2} \cdot \dfrac{1}{2x+5} \cdot 2 = \dfrac{1}{2x+5}\)</span>. ✓</p>
+<hr />
+<p><strong>Example 5</strong> (Comprehensive — two terms mixed): Find <span class="arithmatex">\(\displaystyle \int \left( \frac{1}{(3x-2)^2} + \frac{4}{x+1} \right) dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>First term: <span class="arithmatex">\(\displaystyle \int (3x-2)^{-2} \, dx = \frac{(3x-2)^{-1}}{3 \cdot (-1)} + C_1 = -\frac{1}{3(3x-2)} + C_1\)</span></p>
+<p>Second term: <span class="arithmatex">\(\displaystyle \int \frac{4}{x+1} \, dx = 4\ln|x+1| + C_2\)</span></p>
+<p>Combine:</p>
+<div class="arithmatex">\[
+\int \left( \frac{1}{(3x-2)^2} + \frac{4}{x+1} \right) dx = -\frac{1}{3(3x-2)} + 4\ln|x+1| + C
+\]</div>
+<hr />
+<p><strong>Example 6</strong> (Requires simplifying before using formula): Find <span class="arithmatex">\(\displaystyle \int \frac{2x+3}{(x+1)^2} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>This type of problem requires first decomposing the fraction into partial fractions:</p>
+<div class="arithmatex">\[
+\frac{2x+3}{(x+1)^2} = \frac{2(x+1)+1}{(x+1)^2} = \frac{2}{x+1} + \frac{1}{(x+1)^2}
+\]</div>
+<p>Then integrate term by term:</p>
+<div class="arithmatex">\[
+\int \frac{2}{x+1} \, dx = 2\ln|x+1|, \quad \int (x+1)^{-2} \, dx = \frac{(x+1)^{-1}}{-1} = -\frac{1}{x+1}
+\]</div>
+<p>Result:</p>
+<div class="arithmatex">\[
+\int \frac{2x+3}{(x+1)^2} \, dx = 2\ln|x+1| - \frac{1}{x+1} + C
+\]</div>
+<hr />
+<h3 id="824-integrating-exponential-functions-displaystyle-int-eaxb-dx">8.2.4 Integrating Exponential Functions: <span class="arithmatex">\(\displaystyle \int e^{ax+b} \, dx\)</span><a class="headerlink" href="#824-integrating-exponential-functions-displaystyle-int-eaxb-dx" title="Permanent link">&para;</a></h3>
+<p><strong>Formula</strong>:</p>
+<div class="arithmatex">\[
+\boxed{\int e^{ax+b} \, dx = \frac{1}{a} e^{ax+b} + C \quad (a \neq 0)}
+\]</div>
+<p><strong>Derivation</strong>: Differentiate the right-hand side:</p>
+<div class="arithmatex">\[
+\frac{d}{dx}\left(\frac{1}{a} e^{ax+b} + C\right) = \frac{1}{a} \cdot e^{ax+b} \cdot a = e^{ax+b}
+\]</div>
+<p><strong>Understanding</strong>: Similar to the <span class="arithmatex">\((ax+b)^n\)</span> case, dividing by <span class="arithmatex">\(a\)</span> is because the chain rule gives <span class="arithmatex">\((ax+b)' = a\)</span>, and the reverse operation produces the factor <span class="arithmatex">\(\frac{1}{a}\)</span>.</p>
+<p>In fact, these two formulas can be understood uniformly: when integrating a linear composite function <span class="arithmatex">\(f(ax+b)\)</span>, the result always contains an extra factor <span class="arithmatex">\(\frac{1}{a}\)</span>.</p>
+<blockquote>
+<p><strong>Additional knowledge</strong> (for awareness only, not in IGCSE): For a general base <span class="arithmatex">\(a^x\)</span> (<span class="arithmatex">\(a&gt;0, a\neq1\)</span>), <span class="arithmatex">\(\displaystyle \int a^x \, dx = \frac{a^x}{\ln a} + C\)</span>. This is because <span class="arithmatex">\(\dfrac{d}{dx}(a^x) = a^x \ln a\)</span>.</p>
+</blockquote>
+<hr />
+<p><strong>Example 1</strong> (Basic): Find <span class="arithmatex">\(\displaystyle \int e^{4x} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int e^{4x} \, dx = \frac{1}{4} e^{4x} + C
+\]</div>
+<hr />
+<p><strong>Example 2</strong> (Negative coefficient): Find <span class="arithmatex">\(\displaystyle \int e^{-2x} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p><span class="arithmatex">\(a = -2\)</span>, so <span class="arithmatex">\(\dfrac{1}{a} = -\dfrac{1}{2}\)</span>.</p>
+<div class="arithmatex">\[
+\int e^{-2x} \, dx = -\frac{1}{2} e^{-2x} + C
+\]</div>
+<hr />
+<p><strong>Example 3</strong> (With constant term): Find <span class="arithmatex">\(\displaystyle \int e^{3x-2} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p><span class="arithmatex">\(a=3\)</span>, <span class="arithmatex">\(b=-2\)</span>.</p>
+<div class="arithmatex">\[
+\int e^{3x-2} \, dx = \frac{1}{3} e^{3x-2} + C
+\]</div>
+<hr />
+<p><strong>Example 4</strong> (Fractional coefficient): Find <span class="arithmatex">\(\displaystyle \int e^{\frac{x}{3} + \pi} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p><span class="arithmatex">\(a = \dfrac{1}{3}\)</span>, <span class="arithmatex">\(\dfrac{1}{a} = 3\)</span>.</p>
+<div class="arithmatex">\[
+\int e^{\frac{x}{3} + \pi} \, dx = 3 e^{\frac{x}{3} + \pi} + C
+\]</div>
+<hr />
+<p><strong>Example 5</strong> (Exponential and polynomial mixed): Find <span class="arithmatex">\(\displaystyle \int (2x^4 - 3e^{2x} + e) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Note that <span class="arithmatex">\(e\)</span> is a constant (Euler's number, <span class="arithmatex">\(e \approx 2.718\)</span>), so <span class="arithmatex">\(\int e \, dx = ex\)</span>.</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\int 2x^4 \, dx &amp;= 2 \cdot \frac{x^5}{5} = \frac{2}{5}x^5 \\[4pt]
+\int -3e^{2x} \, dx &amp;= -3 \cdot \frac{1}{2} e^{2x} = -\frac{3}{2}e^{2x} \\[4pt]
+\int e \, dx &amp;= ex
+\end{aligned}
+\]</div>
+<p>Result:</p>
+<div class="arithmatex">\[
+\int (2x^4 - 3e^{2x} + e) \, dx = \frac{2}{5}x^5 - \frac{3}{2}e^{2x} + ex + C
+\]</div>
+<hr />
+<p><strong>Example 6</strong> (Exponential mixed — positive and negative exponents): Find <span class="arithmatex">\(\displaystyle \int (e^{3x} + e^{-3x}) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int e^{3x} \, dx = \frac{1}{3}e^{3x}, \quad \int e^{-3x} \, dx = -\frac{1}{3}e^{-3x}
+\]</div>
+<p>Result:</p>
+<div class="arithmatex">\[
+\int (e^{3x} + e^{-3x}) \, dx = \frac{1}{3}e^{3x} - \frac{1}{3}e^{-3x} + C = \frac{1}{3}(e^{3x} - e^{-3x}) + C
+\]</div>
+<hr />
+<h3 id="825-integrating-trigonometric-functions">8.2.5 Integrating Trigonometric Functions<a class="headerlink" href="#825-integrating-trigonometric-functions" title="Permanent link">&para;</a></h3>
+<p>The three basic trigonometric integration formulas are all derived by reversing the derivative formulas learned in Chapter 5.</p>
+<p><strong>Quick reference table</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>Derivative formula</th>
+<th>Corresponding integral formula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(\dfrac{d}{dx}(\sin x) = \cos x\)</span></td>
+<td><span class="arithmatex">\(\displaystyle \int \cos x \, dx = \sin x + C\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\dfrac{d}{dx}(\cos x) = -\sin x\)</span></td>
+<td><span class="arithmatex">\(\displaystyle \int \sin x \, dx = -\cos x + C\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\dfrac{d}{dx}(\tan x) = \sec^2 x\)</span></td>
+<td><span class="arithmatex">\(\displaystyle \int \sec^2 x \, dx = \tan x + C\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>For the more general <span class="arithmatex">\(ax+b\)</span> form, all three formulas follow the "divide by <span class="arithmatex">\(a\)</span>" pattern.</p>
+<hr />
+<h4 id="1-displaystyle-int-sinaxb-dx">(1) <span class="arithmatex">\(\displaystyle \int \sin(ax+b) \, dx\)</span><a class="headerlink" href="#1-displaystyle-int-sinaxb-dx" title="Permanent link">&para;</a></h4>
+<p><strong>Formula</strong>:</p>
+<div class="arithmatex">\[
+\boxed{\int \sin(ax+b) \, dx = -\frac{1}{a} \cos(ax+b) + C}
+\]</div>
+<p><strong>Derivation</strong>: Assume the antiderivative is <span class="arithmatex">\(k \cos(ax+b)\)</span>. Differentiating gives:</p>
+<div class="arithmatex">\[
+\frac{d}{dx}[k \cos(ax+b)] = k \cdot [-\sin(ax+b)] \cdot a = -ak \sin(ax+b)
+\]</div>
+<p>We want <span class="arithmatex">\(-ak = 1\)</span>, i.e., <span class="arithmatex">\(k = -\dfrac{1}{a}\)</span>. Therefore the antiderivative is <span class="arithmatex">\(-\dfrac{1}{a}\cos(ax+b)\)</span>.</p>
+<p><strong>Verification</strong>:</p>
+<div class="arithmatex">\[
+\frac{d}{dx}\left(-\frac{1}{a}\cos(ax+b) + C\right) = -\frac{1}{a} \cdot [-\sin(ax+b)] \cdot a = \sin(ax+b) \quad \checkmark
+\]</div>
+<p><strong>Key points to remember</strong>:
+- <span class="arithmatex">\(\sin\)</span> integrates to <span class="arithmatex">\(-\cos\)</span> (note the negative sign)
+- Then divide by <span class="arithmatex">\(a\)</span></p>
+<hr />
+<p><strong>Example 1</strong> (Basic): Find <span class="arithmatex">\(\displaystyle \int \sin(2x) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int \sin(2x) \, dx = -\frac{1}{2} \cos(2x) + C
+\]</div>
+<hr />
+<p><strong>Example 2</strong> (With phase shift): Find <span class="arithmatex">\(\displaystyle \int \sin(3x + \pi) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p><span class="arithmatex">\(a=3\)</span>, <span class="arithmatex">\(b=\pi\)</span>.</p>
+<div class="arithmatex">\[
+\int \sin(3x + \pi) \, dx = -\frac{1}{3} \cos(3x + \pi) + C
+\]</div>
+<p>Using <span class="arithmatex">\(\cos(\theta+\pi) = -\cos\theta\)</span>, this simplifies to <span class="arithmatex">\(\dfrac{1}{3}\cos(3x) + C\)</span>, though this is not necessary.</p>
+<hr />
+<p><strong>Example 3</strong> (With coefficient): Find <span class="arithmatex">\(\displaystyle \int -5\sin\left(\frac{x}{2}\right) dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p><span class="arithmatex">\(a = \dfrac{1}{2}\)</span>, <span class="arithmatex">\(\dfrac{1}{a} = 2\)</span>.</p>
+<div class="arithmatex">\[
+\int -5\sin\left(\frac{x}{2}\right) dx = -5 \cdot \left(-2\cos\left(\frac{x}{2}\right)\right) + C = 10\cos\left(\frac{x}{2}\right) + C
+\]</div>
+<hr />
+<h4 id="2-displaystyle-int-cosaxb-dx">(2) <span class="arithmatex">\(\displaystyle \int \cos(ax+b) \, dx\)</span><a class="headerlink" href="#2-displaystyle-int-cosaxb-dx" title="Permanent link">&para;</a></h4>
+<p><strong>Formula</strong>:</p>
+<div class="arithmatex">\[
+\boxed{\int \cos(ax+b) \, dx = \frac{1}{a} \sin(ax+b) + C}
+\]</div>
+<p><strong>Derivation</strong>: Assume the antiderivative is <span class="arithmatex">\(k \sin(ax+b)\)</span>. Differentiating gives:</p>
+<div class="arithmatex">\[
+\frac{d}{dx}[k \sin(ax+b)] = k \cdot \cos(ax+b) \cdot a = ak \cos(ax+b)
+\]</div>
+<p>Set <span class="arithmatex">\(ak = 1\)</span>, giving <span class="arithmatex">\(k = \dfrac{1}{a}\)</span>.</p>
+<p><strong>Verification</strong>:</p>
+<div class="arithmatex">\[
+\frac{d}{dx}\left(\frac{1}{a}\sin(ax+b) + C\right) = \frac{1}{a} \cdot \cos(ax+b) \cdot a = \cos(ax+b) \quad \checkmark
+\]</div>
+<p><strong>Key points to remember</strong>:
+- <span class="arithmatex">\(\cos\)</span> integrates to <span class="arithmatex">\(\sin\)</span> (no negative sign)
+- Then divide by <span class="arithmatex">\(a\)</span></p>
+<hr />
+<p><strong>Example 1</strong> (Basic): Find <span class="arithmatex">\(\displaystyle \int \cos(5x) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int \cos(5x) \, dx = \frac{1}{5} \sin(5x) + C
+\]</div>
+<hr />
+<p><strong>Example 2</strong> (With phase shift and coefficient): Find <span class="arithmatex">\(\displaystyle \int 3\cos(2x-1) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int 3\cos(2x-1) \, dx = 3 \cdot \frac{1}{2} \sin(2x-1) + C = \frac{3}{2} \sin(2x-1) + C
+\]</div>
+<hr />
+<p><strong>Example 3</strong> (Using even function property): Find <span class="arithmatex">\(\displaystyle \int \cos(-3x) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Using <span class="arithmatex">\(\cos(-\theta) = \cos\theta\)</span> (cosine is an even function):</p>
+<div class="arithmatex">\[
+\int \cos(-3x) \, dx = \int \cos(3x) \, dx = \frac{1}{3} \sin(3x) + C
+\]</div>
+<p>Or directly using the formula with <span class="arithmatex">\(a=-3\)</span>:</p>
+<div class="arithmatex">\[
+\int \cos(-3x) \, dx = \frac{1}{-3} \sin(-3x) + C = -\frac{1}{3}[-\sin(3x)] + C = \frac{1}{3}\sin(3x) + C
+\]</div>
+<p>Both methods give the same result.</p>
+<hr />
+<h4 id="3-displaystyle-int-sec2axb-dx">(3) <span class="arithmatex">\(\displaystyle \int \sec^2(ax+b) \, dx\)</span><a class="headerlink" href="#3-displaystyle-int-sec2axb-dx" title="Permanent link">&para;</a></h4>
+<p><strong>Formula</strong>:</p>
+<div class="arithmatex">\[
+\boxed{\int \sec^2(ax+b) \, dx = \frac{1}{a} \tan(ax+b) + C}
+\]</div>
+<p><strong>Derivation</strong>: <span class="arithmatex">\(\dfrac{d}{dx}(\tan x) = \sec^2 x\)</span>, therefore:</p>
+<div class="arithmatex">\[
+\frac{d}{dx}\left(\frac{1}{a} \tan(ax+b)\right) = \frac{1}{a} \cdot \sec^2(ax+b) \cdot a = \sec^2(ax+b)
+\]</div>
+<p><strong>Key points to remember</strong>:
+- <span class="arithmatex">\(\sec^2\)</span> integrates to <span class="arithmatex">\(\tan\)</span> (no negative sign)
+- Then divide by <span class="arithmatex">\(a\)</span></p>
+<hr />
+<p><strong>Example 1</strong> (Basic): Find <span class="arithmatex">\(\displaystyle \int \sec^2(3x) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int \sec^2(3x) \, dx = \frac{1}{3} \tan(3x) + C
+\]</div>
+<hr />
+<p><strong>Example 2</strong> (With phase shift): Find <span class="arithmatex">\(\displaystyle \int \sec^2\left(2x - \frac{\pi}{4}\right) dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int \sec^2\left(2x - \frac{\pi}{4}\right) dx = \frac{1}{2} \tan\left(2x - \frac{\pi}{4}\right) + C
+\]</div>
+<hr />
+<p><strong>Example 3</strong> (Comprehensive): Find <span class="arithmatex">\(\displaystyle \int (2\sec^2 x - 3\sec^2(4x)) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int 2\sec^2 x \, dx = 2\tan x, \quad \int -3\sec^2(4x) \, dx = -3 \cdot \frac{1}{4} \tan(4x) = -\frac{3}{4}\tan(4x)
+\]</div>
+<p>Result:</p>
+<div class="arithmatex">\[
+\int (2\sec^2 x - 3\sec^2(4x)) \, dx = 2\tan x - \frac{3}{4}\tan(4x) + C
+\]</div>
+<hr />
+<h3 id="826-super-comprehensive-examples-complete-skills-check">8.2.6 Super Comprehensive Examples (Complete Skills Check)<a class="headerlink" href="#826-super-comprehensive-examples-complete-skills-check" title="Permanent link">&para;</a></h3>
+<p>The following examples cover all types of integration techniques in this chapter. It is recommended to try them yourself first before checking the solutions.</p>
+<hr />
+<p><strong>Example 1</strong> (Six-term mix — all types): Find <span class="arithmatex">\(\displaystyle \int \left( 8x^7 - \frac{3}{x^4} + 5e^{2x} + 2\sin 3x - 4\cos\left(\frac{x}{2}\right) + 6\sec^2(5x) \right) dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Process each term:</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Integration process</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(8x^7\)</span></td>
+<td><span class="arithmatex">\(8 \cdot \dfrac{x^8}{8}\)</span></td>
+<td><span class="arithmatex">\(x^8\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(-\dfrac{3}{x^4} = -3x^{-4}\)</span></td>
+<td><span class="arithmatex">\(-3 \cdot \dfrac{x^{-3}}{-3}\)</span></td>
+<td><span class="arithmatex">\(\dfrac{1}{x^3}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(5e^{2x}\)</span></td>
+<td><span class="arithmatex">\(5 \cdot \dfrac{1}{2}e^{2x}\)</span></td>
+<td><span class="arithmatex">\(\dfrac{5}{2}e^{2x}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(2\sin 3x\)</span></td>
+<td><span class="arithmatex">\(2 \cdot \left(-\dfrac{1}{3}\cos 3x\right)\)</span></td>
+<td><span class="arithmatex">\(-\dfrac{2}{3}\cos 3x\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(-4\cos\left(\dfrac{x}{2}\right)\)</span></td>
+<td><span class="arithmatex">\(-4 \cdot \dfrac{1}{1/2}\sin\left(\dfrac{x}{2}\right) = -4 \cdot 2\sin\left(\dfrac{x}{2}\right)\)</span></td>
+<td><span class="arithmatex">\(-8\sin\left(\dfrac{x}{2}\right)\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(6\sec^2(5x)\)</span></td>
+<td><span class="arithmatex">\(6 \cdot \dfrac{1}{5}\tan(5x)\)</span></td>
+<td><span class="arithmatex">\(\dfrac{6}{5}\tan(5x)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Combine:</p>
+<div class="arithmatex">\[
+\boxed{x^8 + \frac{1}{x^3} + \frac{5}{2}e^{2x} - \frac{2}{3}\cos 3x - 8\sin\left(\frac{x}{2}\right) + \frac{6}{5}\tan(5x) + C}
+\]</div>
+<hr />
+<p><strong>Example 2</strong> (Expand first, then integrate — polynomial product): Find <span class="arithmatex">\(\displaystyle \int (x^2 - 1)(x^2 + 2) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Expand: <span class="arithmatex">\((x^2 - 1)(x^2 + 2) = x^4 + 2x^2 - x^2 - 2 = x^4 + x^2 - 2\)</span></p>
+<p>Integrate:</p>
+<div class="arithmatex">\[
+\int (x^4 + x^2 - 2) \, dx = \frac{x^5}{5} + \frac{x^3}{3} - 2x + C
+\]</div>
+<hr />
+<p><strong>Example 3</strong> (Simplify fraction first, then integrate): Find <span class="arithmatex">\(\displaystyle \int \frac{2x^4 - 3x^2 + 5x - 1}{x^2} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Simplify:</p>
+<div class="arithmatex">\[
+\frac{2x^4 - 3x^2 + 5x - 1}{x^2} = 2x^2 - 3 + \frac{5}{x} - \frac{1}{x^2} = 2x^2 - 3 + 5x^{-1} - x^{-2}
+\]</div>
+<p>Integrate:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\int (2x^2 - 3 + 5x^{-1} - x^{-2}) \, dx &amp;= 2 \cdot \frac{x^3}{3} - 3x + 5\ln|x| - \frac{x^{-1}}{-1} + C \\[4pt]
+&amp;= \frac{2}{3}x^3 - 3x + 5\ln|x| + \frac{1}{x} + C
+\end{aligned}
+\]</div>
+<hr />
+<p><strong>Example 4</strong> (<span class="arithmatex">\((ax+b)^n\)</span> mixed with trigonometric and exponential): Find <span class="arithmatex">\(\displaystyle \int \left( (3x+1)^4 + \frac{2}{5x-3} - \sin\left(4x-\frac{\pi}{6}\right) \right) dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>First term: <span class="arithmatex">\(\displaystyle \int (3x+1)^4 \, dx = \frac{(3x+1)^5}{3 \cdot 5} + C_1 = \frac{(3x+1)^5}{15} + C_1\)</span></p>
+<p>Second term: <span class="arithmatex">\(\displaystyle \int \frac{2}{5x-3} \, dx = 2 \cdot \frac{1}{5} \ln|5x-3| + C_2 = \frac{2}{5}\ln|5x-3| + C_2\)</span></p>
+<p>Third term: <span class="arithmatex">\(\displaystyle \int -\sin\left(4x-\frac{\pi}{6}\right) dx = -\left(-\frac{1}{4}\right)\cos\left(4x-\frac{\pi}{6}\right) + C_3 = \frac{1}{4}\cos\left(4x-\frac{\pi}{6}\right) + C_3\)</span></p>
+<p>Combine:</p>
+<div class="arithmatex">\[
+\int \left( (3x+1)^4 + \frac{2}{5x-3} - \sin\left(4x-\frac{\pi}{6}\right) \right) dx = \frac{(3x+1)^5}{15} + \frac{2}{5}\ln|5x-3| + \frac{1}{4}\cos\left(4x-\frac{\pi}{6}\right) + C
+\]</div>
+<hr />
+<h2 id="83-definite-integrals">8.3 Definite Integrals<a class="headerlink" href="#83-definite-integrals" title="Permanent link">&para;</a></h2>
+<h3 id="831-from-indefinite-to-definite-integrals-the-fundamental-theorem-of-calculus">8.3.1 From Indefinite to Definite Integrals — The Fundamental Theorem of Calculus<a class="headerlink" href="#831-from-indefinite-to-definite-integrals-the-fundamental-theorem-of-calculus" title="Permanent link">&para;</a></h3>
+<p>An <strong>indefinite integral</strong> <span class="arithmatex">\(\displaystyle \int f(x) \, dx\)</span> gives a <strong>family of functions</strong> (containing an arbitrary constant <span class="arithmatex">\(C\)</span>), while a <strong>definite integral</strong> <span class="arithmatex">\(\displaystyle \int_a^b f(x) \, dx\)</span> gives a <strong>numerical value</strong> — it represents the "accumulated effect" of the function <span class="arithmatex">\(f(x)\)</span> over the interval <span class="arithmatex">\([a, b]\)</span>.</p>
+<p>The bridge connecting them is the <strong>Fundamental Theorem of Calculus (FTC)</strong>, also known as the <strong>Newton-Leibniz formula</strong>:</p>
+<div class="arithmatex">\[
+\boxed{\int_a^b f(x) \, dx = F(b) - F(a)}
+\]</div>
+<p>where <span class="arithmatex">\(F'(x) = f(x)\)</span>, i.e., <span class="arithmatex">\(F(x)\)</span> is any antiderivative of <span class="arithmatex">\(f(x)\)</span>.</p>
+<p><strong>Intuitive derivation</strong>:</p>
+<p>Consider the function <span class="arithmatex">\(A(x) = \int_a^x f(t) \, dt\)</span>, which represents the accumulated area from <span class="arithmatex">\(a\)</span> to <span class="arithmatex">\(x\)</span>. When <span class="arithmatex">\(x\)</span> increases by a small amount <span class="arithmatex">\(h\)</span>:</p>
+<div class="arithmatex">\[
+A(x+h) - A(x) \approx f(x) \cdot h
+\]</div>
+<p>Therefore:</p>
+<div class="arithmatex">\[
+\lim_{h \to 0} \frac{A(x+h) - A(x)}{h} = f(x)
+\]</div>
+<p>i.e., <span class="arithmatex">\(A'(x) = f(x)\)</span>. So <span class="arithmatex">\(A(x)\)</span> is an antiderivative of <span class="arithmatex">\(f(x)\)</span>. Let <span class="arithmatex">\(F(x)\)</span> be any antiderivative of <span class="arithmatex">\(f(x)\)</span>, then <span class="arithmatex">\(F(x) = A(x) + C\)</span>. Hence:</p>
+<div class="arithmatex">\[
+F(b) - F(a) = [A(b) + C] - [A(a) + C] = A(b) - A(a) = A(b) - 0 = \int_a^b f(x) \, dx
+\]</div>
+<p><strong>Common notation</strong>:</p>
+<div class="arithmatex">\[
+\int_a^b f(x) \, dx = \big[ F(x) \big]_{a}^{b} = \big[ F(x) \big]_{x=a}^{x=b} = F(b) - F(a)
+\]</div>
+<blockquote>
+<p>⚠️ <strong>Key distinction</strong>: In definite integrals, <strong>do not add the constant of integration <span class="arithmatex">\(C\)</span></strong>, because it cancels out when computing <span class="arithmatex">\(F(b)-F(a)\)</span>.</p>
+</blockquote>
+<hr />
+<h3 id="832-properties-of-definite-integrals">8.3.2 Properties of Definite Integrals<a class="headerlink" href="#832-properties-of-definite-integrals" title="Permanent link">&para;</a></h3>
+<p><strong>Property 1 (Linearity)</strong>:</p>
+<div class="arithmatex">\[
+\int_a^b [c f(x) + d g(x)] \, dx = c \int_a^b f(x) \, dx + d \int_a^b g(x) \, dx
+\]</div>
+<p><strong>Property 2 (Interval additivity)</strong> — one of the most important properties:</p>
+<div class="arithmatex">\[
+\int_a^b f(x) \, dx = \int_a^c f(x) \, dx + \int_c^b f(x) \, dx
+\]</div>
+<p>This theorem is crucial for handling cases where the function changes sign. When <span class="arithmatex">\(f(x)\)</span> changes sign on <span class="arithmatex">\([a,b]\)</span>, we need to split the interval at the zeros — this is precisely the application of Property 2.</p>
+<p><strong>Property 3 (Reverse interval)</strong>:</p>
+<div class="arithmatex">\[
+\int_a^b f(x) \, dx = -\int_b^a f(x) \, dx
+\]</div>
+<p><strong>Derivation</strong>: <span class="arithmatex">\(\int_a^b f(x) \, dx = F(b)-F(a) = -[F(a)-F(b)] = -\int_b^a f(x) \, dx\)</span>.</p>
+<p><strong>Property 4 (Zero interval)</strong>:</p>
+<div class="arithmatex">\[
+\int_a^a f(x) \, dx = 0
+\]</div>
+<p><strong>Property 5 (Comparison property)</strong>: If <span class="arithmatex">\(f(x) \geq g(x)\)</span> on <span class="arithmatex">\([a,b]\)</span>, then:</p>
+<div class="arithmatex">\[
+\int_a^b f(x) \, dx \geq \int_a^b g(x) \, dx
+\]</div>
+<hr />
+<h3 id="833-procedure-for-computing-definite-integrals">8.3.3 Procedure for Computing Definite Integrals<a class="headerlink" href="#833-procedure-for-computing-definite-integrals" title="Permanent link">&para;</a></h3>
+<p>General steps for computing definite integrals:</p>
+<ol>
+<li><strong>Find the antiderivative</strong>: Find an antiderivative <span class="arithmatex">\(F(x)\)</span> of the integrand <span class="arithmatex">\(f(x)\)</span> (without adding <span class="arithmatex">\(C\)</span>)</li>
+<li><strong>Substitute the limits</strong>: Compute <span class="arithmatex">\(F(b) - F(a)\)</span></li>
+<li><strong>Simplify the result</strong>: Give the final numerical value or simplified expression</li>
+</ol>
+<hr />
+<p><strong>Example 1</strong> (Simple power function — geometric verification): Evaluate <span class="arithmatex">\(\displaystyle \int_1^4 (2x+1) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>First find the antiderivative: <span class="arithmatex">\(\displaystyle \int (2x+1) \, dx = x^2 + x + C\)</span></p>
+<p>So:</p>
+<div class="arithmatex">\[
+\int_1^4 (2x+1) \, dx = \big[ x^2 + x \big]_{1}^{4} = (16 + 4) - (1 + 1) = 20 - 2 = 18
+\]</div>
+<p><strong>Geometric verification</strong>: <span class="arithmatex">\(y=2x+1\)</span> is a straight line. At <span class="arithmatex">\(x=1\)</span>, <span class="arithmatex">\(y=3\)</span>; at <span class="arithmatex">\(x=4\)</span>, <span class="arithmatex">\(y=9\)</span>; interval length <span class="arithmatex">\(3\)</span>. Trapezoid area <span class="arithmatex">\(= \dfrac{3+9}{2} \times 3 = 18\)</span>, consistent with the integration result. ✓</p>
+<hr />
+<p><strong>Example 2</strong> (Quadratic function): Evaluate <span class="arithmatex">\(\displaystyle \int_{-1}^{2} (x^2 - 2x + 3) \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\int_{-1}^{2} (x^2 - 2x + 3) \, dx &amp;= \left[ \frac{x^3}{3} - x^2 + 3x \right]_{-1}^{2} \\[4pt]
+&amp;= \left( \frac{8}{3} - 4 + 6 \right) - \left( -\frac{1}{3} - 1 - 3 \right) \\[4pt]
+&amp;= \left( \frac{8}{3} + 2 \right) - \left( -\frac{1}{3} - 4 \right) \\[4pt]
+&amp;= \frac{14}{3} - \left( -\frac{13}{3} \right) = \frac{27}{3} = 9
+\end{aligned}
+\]</div>
+<hr />
+<p><strong>Example 3</strong> (Trigonometric function): Evaluate <span class="arithmatex">\(\displaystyle \int_0^{\pi} \cos x \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int_0^{\pi} \cos x \, dx = \big[ \sin x \big]_{0}^{\pi} = \sin \pi - \sin 0 = 0 - 0 = 0
+\]</div>
+<p><strong>Geometric meaning</strong>: The cosine function on <span class="arithmatex">\([0,\pi]\)</span> is positive on <span class="arithmatex">\([0,\pi/2]\)</span> and negative on <span class="arithmatex">\([\pi/2,\pi]\)</span>. The positive and negative areas exactly cancel out, so the signed area is zero.</p>
+<hr />
+<p><strong>Example 4</strong> (Exponential and <span class="arithmatex">\(1/x\)</span> mixed): Evaluate <span class="arithmatex">\(\displaystyle \int_1^2 \left( e^{3x} + \frac{2}{x} \right) dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\int_1^2 \left( e^{3x} + \frac{2}{x} \right) dx &amp;= \left[ \frac{1}{3} e^{3x} + 2\ln|x| \right]_1^2 \\[4pt]
+&amp;= \left( \frac{1}{3} e^{6} + 2\ln 2 \right) - \left( \frac{1}{3} e^{3} + 2\ln 1 \right) \\[4pt]
+&amp;= \frac{1}{3}(e^6 - e^3) + 2\ln 2
+\end{aligned}
+\]</div>
+<p>(Note that <span class="arithmatex">\(\ln 1 = 0\)</span>)</p>
+<hr />
+<p><strong>Example 5</strong> (<span class="arithmatex">\((ax+b)^n\)</span> form — comparison of two methods): Evaluate <span class="arithmatex">\(\displaystyle \int_0^1 (3x+2)^4 \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Method 1 (Using the formula directly): <span class="arithmatex">\(a=3\)</span>, <span class="arithmatex">\(n=4\)</span>.</p>
+<div class="arithmatex">\[
+\int (3x+2)^4 \, dx = \frac{(3x+2)^5}{3 \cdot 5} = \frac{(3x+2)^5}{15}
+\]</div>
+<div class="arithmatex">\[
+\int_0^1 (3x+2)^4 \, dx = \left[ \frac{(3x+2)^5}{15} \right]_0^1 = \frac{5^5}{15} - \frac{2^5}{15} = \frac{3125}{15} - \frac{32}{15} = \frac{3093}{15} = \frac{1031}{5}
+\]</div>
+<p>Method 2 (Expand): <span class="arithmatex">\((3x+2)^4 = 81x^4 + 216x^3 + 216x^2 + 96x + 16\)</span></p>
+<div class="arithmatex">\[
+\int_0^1 (81x^4 + 216x^3 + 216x^2 + 96x + 16) \, dx = \left[ \frac{81x^5}{5} + 54x^4 + 72x^3 + 48x^2 + 16x \right]_0^1
+\]</div>
+<div class="arithmatex">\[
+= \frac{81}{5} + 54 + 72 + 48 + 16 = \frac{81}{5} + 190 = \frac{81}{5} + \frac{950}{5} = \frac{1031}{5}
+\]</div>
+<p>Both methods give the same result. ✓</p>
+<hr />
+<p><strong>Example 6</strong> (Definite integral with <span class="arithmatex">\(\ln\)</span>): Evaluate <span class="arithmatex">\(\displaystyle \int_2^4 \frac{1}{x-1} \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int_2^4 \frac{1}{x-1} \, dx = \big[ \ln|x-1| \big]_2^4 = \ln 3 - \ln 1 = \ln 3
+\]</div>
+<hr />
+<h3 id="834-definite-integrals-and-signed-area">8.3.4 Definite Integrals and Signed Area<a class="headerlink" href="#834-definite-integrals-and-signed-area" title="Permanent link">&para;</a></h3>
+<p>The definite integral <span class="arithmatex">\(\int_a^b f(x) \, dx\)</span> gives the <strong>signed area</strong>:</p>
+<ul>
+<li>When <span class="arithmatex">\(f(x) \geq 0\)</span>, the integral value is positive, equal to the actual area between the curve and the <span class="arithmatex">\(x\)</span>-axis</li>
+<li>When <span class="arithmatex">\(f(x) \leq 0\)</span>, the integral value is negative, and its absolute value equals the actual area</li>
+<li>When <span class="arithmatex">\(f(x)\)</span> changes sign, the positive and negative parts cancel each other out</li>
+</ul>
+<p><strong>Example</strong>: Evaluate <span class="arithmatex">\(\displaystyle \int_{-2}^{3} (x-1) \, dx\)</span> and explain its geometric meaning.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+\int_{-2}^{3} (x-1) \, dx = \left[ \frac{x^2}{2} - x \right]_{-2}^3 = \left( \frac{9}{2} - 3 \right) - \left( 2 + 2 \right) = \frac{3}{2} - 4 = -\frac{5}{2}
+\]</div>
+<p>The result is <span class="arithmatex">\(-\dfrac{5}{2}\)</span>, indicating that on the interval <span class="arithmatex">\([-2,3]\)</span>, the area below the <span class="arithmatex">\(x\)</span>-axis is <span class="arithmatex">\(\dfrac{5}{2}\)</span> square units more than the area above. The function <span class="arithmatex">\(y=x-1\)</span> crosses the <span class="arithmatex">\(x\)</span>-axis at <span class="arithmatex">\(x=1\)</span>; on <span class="arithmatex">\([-2,1]\)</span> the curve is below the axis, and on <span class="arithmatex">\([1,3]\)</span> the curve is above.</p>
+<hr />
+<p><strong>Example 2</strong> (Using symmetry to simplify computation): Evaluate <span class="arithmatex">\(\displaystyle \int_{-a}^{a} x^3 \, dx\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Since <span class="arithmatex">\(x^3\)</span> is an odd function (<span class="arithmatex">\((-x)^3 = -x^3\)</span>), its integral over the symmetric interval <span class="arithmatex">\([-a,a]\)</span> is zero:</p>
+<div class="arithmatex">\[
+\int_{-a}^{a} x^3 \, dx = \left[ \frac{x^4}{4} \right]_{-a}^{a} = \frac{a^4}{4} - \frac{a^4}{4} = 0
+\]</div>
+<blockquote>
+<p><strong>General rules</strong>: The definite integral of an odd function over a symmetric interval is zero; the definite integral of an even function over a symmetric interval equals twice the integral over the half-interval.
+- <span class="arithmatex">\(f\)</span> is odd: <span class="arithmatex">\(\int_{-a}^{a} f(x) \, dx = 0\)</span>
+- <span class="arithmatex">\(f\)</span> is even: <span class="arithmatex">\(\int_{-a}^{a} f(x) \, dx = 2\int_{0}^{a} f(x) \, dx\)</span></p>
+</blockquote>
+<hr />
+<h2 id="84-plane-area">8.4 Plane Area<a class="headerlink" href="#84-plane-area" title="Permanent link">&para;</a></h2>
+<p>This section is one of the most important geometric applications of definite integrals. We will systematically learn how to use integration to compute the area of various plane figures.</p>
+<h3 id="841-area-between-a-curve-and-the-x-axis">8.4.1 Area Between a Curve and the <span class="arithmatex">\(x\)</span>-axis<a class="headerlink" href="#841-area-between-a-curve-and-the-x-axis" title="Permanent link">&para;</a></h3>
+<p><strong>Case 1</strong>: <span class="arithmatex">\(f(x) \geq 0\)</span> on <span class="arithmatex">\([a,b]\)</span></p>
+<div class="arithmatex">\[
+A = \int_a^b f(x) \, dx
+\]</div>
+<p><strong>Case 2</strong>: <span class="arithmatex">\(f(x) \leq 0\)</span> on <span class="arithmatex">\([a,b]\)</span></p>
+<div class="arithmatex">\[
+A = -\int_a^b f(x) \, dx = \int_a^b |f(x)| \, dx
+\]</div>
+<p><strong>Case 3</strong>: <span class="arithmatex">\(f(x)\)</span> changes sign on <span class="arithmatex">\([a,b]\)</span> (general case)</p>
+<div class="arithmatex">\[
+A = \int_a^b |f(x)| \, dx
+\]</div>
+<p><strong>Standard solution procedure</strong>:
+1. <strong>Solve <span class="arithmatex">\(f(x) = 0\)</span></strong>: Find all intersection points of the curve with the <span class="arithmatex">\(x\)</span>-axis
+2. <strong>Split the interval</strong>: Use the zeros to divide the integration interval into several subintervals
+3. <strong>Determine the sign</strong>: On each subinterval, take a test point to determine whether <span class="arithmatex">\(f(x)\)</span> is positive or negative
+4. <strong>Integrate by segments</strong>: Integrate directly on positive intervals; take the absolute value (add a negative sign) on negative intervals
+5. <strong>Sum</strong>: Add the areas of all subintervals</p>
+<hr />
+<p><strong>Example 1</strong> (Entirely above the <span class="arithmatex">\(x\)</span>-axis): Find the area bounded by the curve <span class="arithmatex">\(y = x^2 + 1\)</span> and the <span class="arithmatex">\(x\)</span>-axis from <span class="arithmatex">\(x=0\)</span> to <span class="arithmatex">\(x=2\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>On <span class="arithmatex">\([0,2]\)</span>, <span class="arithmatex">\(x^2 + 1 \geq 1 &gt; 0\)</span>, so integrate directly:</p>
+<div class="arithmatex">\[
+A = \int_0^2 (x^2 + 1) \, dx = \left[ \frac{x^3}{3} + x \right]_0^2 = \left( \frac{8}{3} + 2 \right) - 0 = \frac{14}{3}
+\]</div>
+<hr />
+<p><strong>Example 2</strong> (Entirely below the <span class="arithmatex">\(x\)</span>-axis): Find the area bounded by the curve <span class="arithmatex">\(y = -e^x\)</span> and the <span class="arithmatex">\(x\)</span>-axis from <span class="arithmatex">\(x=-1\)</span> to <span class="arithmatex">\(x=1\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>On <span class="arithmatex">\([-1,1]\)</span>, <span class="arithmatex">\(-e^x &lt; 0\)</span>, so the area is:</p>
+<div class="arithmatex">\[
+A = -\int_{-1}^{1} (-e^x) \, dx = \int_{-1}^{1} e^x \, dx = \big[ e^x \big]_{-1}^{1} = e - e^{-1}
+\]</div>
+<hr />
+<p><strong>Example 3</strong> (Sign change — piecewise approach): Find the total area bounded by the curve <span class="arithmatex">\(y = x^2 - 1\)</span> and the <span class="arithmatex">\(x\)</span>-axis on <span class="arithmatex">\([-2, 2]\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p><strong>Step 1</strong>: Find zeros. <span class="arithmatex">\(x^2 - 1 = 0 \Rightarrow x = \pm 1\)</span>.</p>
+<p><strong>Step 2</strong>: The interval <span class="arithmatex">\([-2,2]\)</span> is split by the three points <span class="arithmatex">\(-2,-1,1,2\)</span> into three subintervals: <span class="arithmatex">\([-2,-1]\)</span>, <span class="arithmatex">\([-1,1]\)</span>, <span class="arithmatex">\([1,2]\)</span>.</p>
+<p><strong>Step 3</strong>: Determine the sign.
+- On <span class="arithmatex">\([-2,-1]\)</span>, take <span class="arithmatex">\(x=-1.5\)</span>: <span class="arithmatex">\(f(-1.5) = 2.25-1 = 1.25 &gt; 0\)</span>, above the axis
+- On <span class="arithmatex">\([-1,1]\)</span>, take <span class="arithmatex">\(x=0\)</span>: <span class="arithmatex">\(f(0) = -1 &lt; 0\)</span>, below the axis
+- On <span class="arithmatex">\([1,2]\)</span>, take <span class="arithmatex">\(x=1.5\)</span>: <span class="arithmatex">\(f(1.5) = 2.25-1 = 1.25 &gt; 0\)</span>, above the axis</p>
+<p><strong>Step 4</strong>:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+A &amp;= \int_{-2}^{-1} (x^2-1) \, dx + \int_{-1}^{1} -(x^2-1) \, dx + \int_{1}^{2} (x^2-1) \, dx \\[4pt]
+&amp;= \left[ \frac{x^3}{3} - x \right]_{-2}^{-1} + \left[ -\frac{x^3}{3} + x \right]_{-1}^{1} + \left[ \frac{x^3}{3} - x \right]_{1}^{2}
+\end{aligned}
+\]</div>
+<p>First part: <span class="arithmatex">\(\left( -\frac{1}{3} + 1 \right) - \left( -\frac{8}{3} + 2 \right) = \frac{2}{3} - \left( -\frac{2}{3} \right) = \frac{4}{3}\)</span></p>
+<p>Second part: <span class="arithmatex">\(\left( -\frac{1}{3} + 1 \right) - \left( \frac{1}{3} - 1 \right) = \frac{2}{3} - \left( -\frac{2}{3} \right) = \frac{4}{3}\)</span></p>
+<p>Third part: <span class="arithmatex">\(\left( \frac{8}{3} - 2 \right) - \left( \frac{1}{3} - 1 \right) = \frac{2}{3} - \left( -\frac{2}{3} \right) = \frac{4}{3}\)</span></p>
+<p>Total area:</p>
+<div class="arithmatex">\[
+A = \frac{4}{3} + \frac{4}{3} + \frac{4}{3} = 4
+\]</div>
+<hr />
+<p><strong>Example 4</strong> (Typical exam question — downward-opening parabola): Find the area bounded by the curve <span class="arithmatex">\(y = 9 - x^2\)</span> and the <span class="arithmatex">\(x\)</span>-axis.</p>
+<p><strong>Solution</strong>:</p>
+<p>Intersections with the <span class="arithmatex">\(x\)</span>-axis: <span class="arithmatex">\(9 - x^2 = 0 \Rightarrow x = \pm 3\)</span>.</p>
+<p>On <span class="arithmatex">\([-3,3]\)</span>, <span class="arithmatex">\(9 - x^2 \geq 0\)</span>, so:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+A &amp;= \int_{-3}^{3} (9 - x^2) \, dx = \left[ 9x - \frac{x^3}{3} \right]_{-3}^{3} \\[4pt]
+&amp;= \left( 27 - 9 \right) - \left( -27 + 9 \right) \\[4pt]
+&amp;= 18 - (-18) = 36
+\end{aligned}
+\]</div>
+<p>The area is <span class="arithmatex">\(36\)</span> square units.</p>
+<hr />
+<p><strong>Example 5</strong> (Cubic function — three zeros, two intervals): Find the total area bounded by the curve <span class="arithmatex">\(y = x^3 - 4x\)</span> and the <span class="arithmatex">\(x\)</span>-axis on <span class="arithmatex">\([-2,2]\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p><strong>Step 1</strong>: <span class="arithmatex">\(x^3 - 4x = x(x^2-4) = x(x-2)(x+2) = 0\)</span>, zeros at <span class="arithmatex">\(x = -2, 0, 2\)</span>.</p>
+<p><strong>Step 2</strong>: The interval is split into <span class="arithmatex">\([-2,0]\)</span> and <span class="arithmatex">\([0,2]\)</span>.</p>
+<p><strong>Step 3</strong>:
+- On <span class="arithmatex">\([-2,0]\)</span>, take <span class="arithmatex">\(x=-1\)</span>: <span class="arithmatex">\(f(-1) = -1 + 4 = 3 &gt; 0\)</span>
+- On <span class="arithmatex">\([0,2]\)</span>, take <span class="arithmatex">\(x=1\)</span>: <span class="arithmatex">\(f(1) = 1 - 4 = -3 &lt; 0\)</span></p>
+<p><strong>Step 4</strong>:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+A &amp;= \int_{-2}^{0} (x^3 - 4x) \, dx + \int_{0}^{2} -(x^3 - 4x) \, dx \\[4pt]
+&amp;= \left[ \frac{x^4}{4} - 2x^2 \right]_{-2}^{0} + \left[ -\frac{x^4}{4} + 2x^2 \right]_{0}^{2}
+\end{aligned}
+\]</div>
+<p>First part: <span class="arithmatex">\((0) - \left( \frac{16}{4} - 8 \right) = -(4-8) = 4\)</span></p>
+<p>Second part: <span class="arithmatex">\(\left( -\frac{16}{4} + 8 \right) - 0 = (-4+8) = 4\)</span></p>
+<p>Total area: <span class="arithmatex">\(A = 4 + 4 = 8\)</span></p>
+<hr />
+<h3 id="842-area-between-a-line-and-a-curve">8.4.2 Area Between a Line and a Curve<a class="headerlink" href="#842-area-between-a-line-and-a-curve" title="Permanent link">&para;</a></h3>
+<p><strong>Core method</strong>: If on the interval <span class="arithmatex">\([a,b]\)</span>, the curve <span class="arithmatex">\(y = f(x)\)</span> lies above the line <span class="arithmatex">\(y = g(x)\)</span> (i.e., <span class="arithmatex">\(f(x) \geq g(x)\)</span>), then the area between them is:</p>
+<div class="arithmatex">\[
+\boxed{A = \int_a^b [f(x) - g(x)] \, dx}
+\]</div>
+<p><strong>Solution procedure</strong>:
+1. Find intersection points: solve <span class="arithmatex">\(f(x) = g(x)\)</span>
+2. Determine the integration interval
+3. Determine which function is above and which is below (take a test point in the interval)
+4. Integrate the difference (upper minus lower)</p>
+<hr />
+<p><strong>Example 1</strong> (Curve above): Find the area bounded by the curve <span class="arithmatex">\(y = x^2 + 1\)</span> and the line <span class="arithmatex">\(y = x + 3\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p><strong>Step 1</strong>: Intersection points: <span class="arithmatex">\(x^2 + 1 = x + 3 \Rightarrow x^2 - x - 2 = 0 \Rightarrow (x-2)(x+1) = 0\)</span>, giving <span class="arithmatex">\(x = -1\)</span> or <span class="arithmatex">\(x = 2\)</span>.</p>
+<p><strong>Step 2</strong>: The interval is <span class="arithmatex">\([-1,2]\)</span>.</p>
+<p><strong>Step 3</strong>: Test with <span class="arithmatex">\(x=0\)</span>: <span class="arithmatex">\(f(0) = 1\)</span>, <span class="arithmatex">\(g(0) = 3\)</span>, so <span class="arithmatex">\(g(x) = x+3\)</span> is above.</p>
+<p><strong>Step 4</strong>:</p>
+<div class="arithmatex">\[
+\begin{aligned}
+A &amp;= \int_{-1}^{2} [(x+3) - (x^2+1)] \, dx \\[4pt]
+&amp;= \int_{-1}^{2} (2 + x - x^2) \, dx \\[4pt]
+&amp;= \left[ 2x + \frac{x^2}{2} - \frac{x^3}{3} \right]_{-1}^{2} \\[4pt]
+&amp;= \left( 4 + 2 - \frac{8}{3} \right) - \left( -2 + \frac{1}{2} + \frac{1}{3} \right) \\[4pt]
+&amp;= \frac{10}{3} - \left( -\frac{7}{6} \right) = \frac{10}{3} + \frac{7}{6} = \frac{27}{6} = \frac{9}{2}
+\end{aligned}
+\]</div>
+<hr />
+<p><strong>Example 2</strong> (Line above — classic problem): Find the area bounded by the line <span class="arithmatex">\(y = 2x\)</span> and the curve <span class="arithmatex">\(y = x^2\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Intersection points: <span class="arithmatex">\(x^2 = 2x \Rightarrow x^2 - 2x = 0 \Rightarrow x(x-2) = 0\)</span>, giving <span class="arithmatex">\(x=0\)</span> and <span class="arithmatex">\(x=2\)</span>.</p>
+<p>On <span class="arithmatex">\([0,2]\)</span>, test with <span class="arithmatex">\(x=1\)</span>: <span class="arithmatex">\(f(1)=1\)</span>, <span class="arithmatex">\(g(1)=2\)</span>, so <span class="arithmatex">\(y=2x\)</span> is above.</p>
+<div class="arithmatex">\[
+A = \int_0^2 (2x - x^2) \, dx = \left[ x^2 - \frac{x^3}{3} \right]_0^2 = \left( 4 - \frac{8}{3} \right) - 0 = \frac{4}{3}
+\]</div>
+<hr />
+<p><strong>Example 3</strong> (Root function and line): Find the area bounded by the curve <span class="arithmatex">\(y = \sqrt{x}\)</span> and the line <span class="arithmatex">\(y = \dfrac{x}{2}\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Intersection points: <span class="arithmatex">\(\sqrt{x} = \dfrac{x}{2} \Rightarrow 2\sqrt{x} = x \Rightarrow x = 2\sqrt{x} \Rightarrow x - 2\sqrt{x} = 0 \Rightarrow \sqrt{x}(\sqrt{x} - 2) = 0\)</span>, giving <span class="arithmatex">\(x=0\)</span> or <span class="arithmatex">\(x=4\)</span>.</p>
+<p>On <span class="arithmatex">\([0,4]\)</span>, test with <span class="arithmatex">\(x=1\)</span>: <span class="arithmatex">\(\sqrt{1}=1\)</span>, <span class="arithmatex">\(\dfrac{1}{2}=0.5\)</span>, so <span class="arithmatex">\(y=\sqrt{x}\)</span> is above.</p>
+<div class="arithmatex">\[
+\begin{aligned}
+A &amp;= \int_0^4 \left( \sqrt{x} - \frac{x}{2} \right) dx = \int_0^4 \left( x^{1/2} - \frac{x}{2} \right) dx \\[4pt]
+&amp;= \left[ \frac{2}{3}x^{3/2} - \frac{x^2}{4} \right]_0^4 = \left( \frac{2}{3} \cdot 8 - \frac{16}{4} \right) - 0 = \frac{16}{3} - 4 = \frac{4}{3}
+\end{aligned}
+\]</div>
+<hr />
+<h3 id="843-area-between-two-curves">8.4.3 Area Between Two Curves<a class="headerlink" href="#843-area-between-two-curves" title="Permanent link">&para;</a></h3>
+<p>When two curves <span class="arithmatex">\(y = f(x)\)</span> and <span class="arithmatex">\(y = g(x)\)</span> have multiple intersection points over an interval, piecewise handling is required — on each subinterval, determine which curve is above and which is below.</p>
+<hr />
+<p><strong>Example 1</strong> (Symmetric curves): Find the area bounded by <span class="arithmatex">\(y = x^2\)</span> and <span class="arithmatex">\(y = 4 - x^2\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Intersection points: <span class="arithmatex">\(x^2 = 4 - x^2 \Rightarrow 2x^2 = 4 \Rightarrow x^2 = 2 \Rightarrow x = \pm\sqrt{2}\)</span>.</p>
+<p>On <span class="arithmatex">\([-\sqrt{2}, \sqrt{2}]\)</span>, test with <span class="arithmatex">\(x=0\)</span>: <span class="arithmatex">\(f(0)=0\)</span>, <span class="arithmatex">\(g(0)=4\)</span>, so <span class="arithmatex">\(y=4-x^2\)</span> is above.</p>
+<div class="arithmatex">\[
+\begin{aligned}
+A &amp;= \int_{-\sqrt{2}}^{\sqrt{2}} [(4 - x^2) - x^2] \, dx = \int_{-\sqrt{2}}^{\sqrt{2}} (4 - 2x^2) \, dx \\[4pt]
+&amp;= \left[ 4x - \frac{2x^3}{3} \right]_{-\sqrt{2}}^{\sqrt{2}} \\[4pt]
+&amp;= \left( 4\sqrt{2} - \frac{4\sqrt{2}}{3} \right) - \left( -4\sqrt{2} + \frac{4\sqrt{2}}{3} \right) \\[4pt]
+&amp;= \frac{8\sqrt{2}}{3} - \left( -\frac{8\sqrt{2}}{3} \right) = \frac{16\sqrt{2}}{3}
+\end{aligned}
+\]</div>
+<hr />
+<p><strong>Example 2</strong> (Upper/lower relationship changes — needs piecewise splitting): Find the total area bounded by <span class="arithmatex">\(y = x^3\)</span> and <span class="arithmatex">\(y = x\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Intersection points: <span class="arithmatex">\(x^3 = x \Rightarrow x^3 - x = 0 \Rightarrow x(x-1)(x+1) = 0\)</span>, giving <span class="arithmatex">\(x = -1, 0, 1\)</span>.</p>
+<p>The interval is split into <span class="arithmatex">\([-1,0]\)</span> and <span class="arithmatex">\([0,1]\)</span>.</p>
+<ul>
+<li>On <span class="arithmatex">\([-1,0]\)</span>, test with <span class="arithmatex">\(x=-0.5\)</span>: <span class="arithmatex">\(f(-0.5) = -0.125\)</span>, <span class="arithmatex">\(g(-0.5) = -0.5\)</span>, <span class="arithmatex">\(y=x^3\)</span> is above (since <span class="arithmatex">\(-0.125 &gt; -0.5\)</span>)</li>
+<li>On <span class="arithmatex">\([0,1]\)</span>, test with <span class="arithmatex">\(x=0.5\)</span>: <span class="arithmatex">\(f(0.5)=0.125\)</span>, <span class="arithmatex">\(g(0.5)=0.5\)</span>, <span class="arithmatex">\(y=x\)</span> is above</li>
+</ul>
+<div class="arithmatex">\[
+\begin{aligned}
+A &amp;= \int_{-1}^{0} (x^3 - x) \, dx + \int_{0}^{1} (x - x^3) \, dx \\[4pt]
+&amp;= \left[ \frac{x^4}{4} - \frac{x^2}{2} \right]_{-1}^{0} + \left[ \frac{x^2}{2} - \frac{x^4}{4} \right]_{0}^{1} \\[4pt]
+&amp;= \left(0 - \left(\frac{1}{4} - \frac{1}{2}\right)\right) + \left(\left(\frac{1}{2} - \frac{1}{4}\right) - 0\right) \\[4pt]
+&amp;= \frac{1}{4} + \frac{1}{4} = \frac{1}{2}
+\end{aligned}
+\]</div>
+<hr />
+<h3 id="844-sum-of-multiple-areas-syllabus-focus">8.4.4 Sum of Multiple Areas (Syllabus Focus)<a class="headerlink" href="#844-sum-of-multiple-areas-syllabus-focus" title="Permanent link">&para;</a></h3>
+<p>The syllabus explicitly requires "a sum of two areas." The key step in such problems is <strong>correctly splitting the interval</strong>.</p>
+<hr />
+<p><strong>Example 1</strong> (Cubic function with <span class="arithmatex">\(x\)</span>-axis — three segments): Find the total area bounded by the curve <span class="arithmatex">\(y = x^3 - x^2 - 2x\)</span> and the <span class="arithmatex">\(x\)</span>-axis.</p>
+<p><strong>Solution</strong>:</p>
+<p>Factorise: <span class="arithmatex">\(x^3 - x^2 - 2x = x(x^2 - x - 2) = x(x-2)(x+1)\)</span>, zeros at <span class="arithmatex">\(x = -1, 0, 2\)</span>.</p>
+<ul>
+<li>On <span class="arithmatex">\([-1,0]\)</span>, <span class="arithmatex">\(f(-0.5) = 0.625 &gt; 0\)</span></li>
+<li>On <span class="arithmatex">\([0,2]\)</span>, <span class="arithmatex">\(f(1) = -2 &lt; 0\)</span></li>
+</ul>
+<div class="arithmatex">\[
+\begin{aligned}
+A &amp;= \int_{-1}^{0} (x^3 - x^2 - 2x) \, dx + \int_{0}^{2} -(x^3 - x^2 - 2x) \, dx \\[4pt]
+&amp;= \left[ \frac{x^4}{4} - \frac{x^3}{3} - x^2 \right]_{-1}^{0} + \left[ -\frac{x^4}{4} + \frac{x^3}{3} + x^2 \right]_{0}^{2}
+\end{aligned}
+\]</div>
+<p>First part: <span class="arithmatex">\((0) - \left( \frac{1}{4} + \frac{1}{3} - 1 \right) = -\left( -\frac{5}{12} \right) = \frac{5}{12}\)</span></p>
+<p>Second part: <span class="arithmatex">\(\left( -\frac{16}{4} + \frac{8}{3} + 4 \right) - 0 = \left( -4 + 4 \right) + \frac{8}{3} = \frac{8}{3}\)</span></p>
+<p>Total area: <span class="arithmatex">\(A = \dfrac{5}{12} + \dfrac{8}{3} = \dfrac{5}{12} + \dfrac{32}{12} = \dfrac{37}{12}\)</span></p>
+<hr />
+<p><strong>Example 2</strong> (Quadratic function — three segments): Find the total area bounded by the curve <span class="arithmatex">\(y = x^2 - 4x + 3\)</span> and the <span class="arithmatex">\(x\)</span>-axis on <span class="arithmatex">\([0,4]\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Zeros: <span class="arithmatex">\(x^2 - 4x + 3 = (x-1)(x-3) = 0\)</span>, giving <span class="arithmatex">\(x=1, 3\)</span>.</p>
+<p>The interval <span class="arithmatex">\([0,4]\)</span> is split into <span class="arithmatex">\([0,1]\)</span>, <span class="arithmatex">\([1,3]\)</span>, <span class="arithmatex">\([3,4]\)</span>.</p>
+<ul>
+<li><span class="arithmatex">\([0,1]\)</span>: <span class="arithmatex">\(f(0.5) = 1.25 &gt; 0\)</span></li>
+<li><span class="arithmatex">\([1,3]\)</span>: <span class="arithmatex">\(f(2) = -1 &lt; 0\)</span></li>
+<li><span class="arithmatex">\([3,4]\)</span>: <span class="arithmatex">\(f(3.5) = 1.25 &gt; 0\)</span></li>
+</ul>
+<div class="arithmatex">\[
+\begin{aligned}
+A &amp;= \int_0^1 (x^2 - 4x + 3) dx + \int_1^3 -(x^2 - 4x + 3) dx + \int_3^4 (x^2 - 4x + 3) dx \\[4pt]
+&amp;= \left[ \frac{x^3}{3} - 2x^2 + 3x \right]_0^1 + \left[ -\frac{x^3}{3} + 2x^2 - 3x \right]_1^3 + \left[ \frac{x^3}{3} - 2x^2 + 3x \right]_3^4 \\[4pt]
+&amp;= \frac{4}{3} + \frac{4}{3} + \frac{4}{3} = 4
+\end{aligned}
+\]</div>
+<hr />
+<h3 id="845-summary-of-strategies-for-plane-area-problems">8.4.5 Summary of Strategies for Plane Area Problems<a class="headerlink" href="#845-summary-of-strategies-for-plane-area-problems" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Scenario</th>
+<th>Identifying Feature</th>
+<th>Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Curve above <span class="arithmatex">\(x\)</span>-axis</td>
+<td><span class="arithmatex">\(f(x) \geq 0\)</span></td>
+<td><span class="arithmatex">\(A = \int_a^b f(x) \, dx\)</span></td>
+</tr>
+<tr>
+<td>Curve below <span class="arithmatex">\(x\)</span>-axis</td>
+<td><span class="arithmatex">\(f(x) \leq 0\)</span></td>
+<td><span class="arithmatex">\(A = -\int_a^b f(x) \, dx\)</span></td>
+</tr>
+<tr>
+<td>Curve crosses <span class="arithmatex">\(x\)</span>-axis</td>
+<td><span class="arithmatex">\(f(x)\)</span> changes sign</td>
+<td>Split at zeros, take absolute values separately</td>
+</tr>
+<tr>
+<td>Line and curve</td>
+<td>Two functions given</td>
+<td><span class="arithmatex">\(A = \int_a^b [f(x)-g(x)] \, dx\)</span> (upper minus lower)</td>
+</tr>
+<tr>
+<td>Two curves, multiple intersections</td>
+<td>Multiple intersection points</td>
+<td>Piecewise handling, upper minus lower on each segment</td>
+</tr>
+<tr>
+<td>Sum of multiple areas</td>
+<td>Three or more subintervals</td>
+<td>Integrate each separately, then add</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="85-application-of-definite-integrals-to-kinematics">8.5 Application of Definite Integrals to Kinematics<a class="headerlink" href="#85-application-of-definite-integrals-to-kinematics" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p><strong>Syllabus reference 14.14</strong>: Use differentiation and integration to solve kinematics problems (displacement, velocity, acceleration).</p>
+</blockquote>
+<p>In Chapter 5, we learned to use <strong>differentiation</strong> to find velocity and acceleration from displacement. <strong>Integration</strong> provides the reverse path: given acceleration, find velocity; given velocity, find displacement.</p>
+<p><strong>Core relationships</strong> (to be discussed in detail in Chapter 10):</p>
+<div class="arithmatex">\[
+a(t) = \frac{dv}{dt}, \quad v(t) = \frac{ds}{dt}
+\]</div>
+<p>Reverse:</p>
+<div class="arithmatex">\[
+v(t) = \int a(t) \, dt, \quad s(t) = \int v(t) \, dt
+\]</div>
+<hr />
+<p><strong>Example 1</strong> (Given acceleration, find velocity and displacement): A particle moves along a straight line with acceleration <span class="arithmatex">\(a(t) = 12t^2 - 6\)</span>. At <span class="arithmatex">\(t=0\)</span>, the velocity is <span class="arithmatex">\(v=2\)</span> and the displacement is <span class="arithmatex">\(s=1\)</span>. Find <span class="arithmatex">\(v(t)\)</span> and <span class="arithmatex">\(s(t)\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<div class="arithmatex">\[
+v(t) = \int (12t^2 - 6) \, dt = 4t^3 - 6t + C
+\]</div>
+<p>From <span class="arithmatex">\(v(0) = 2\)</span>, we get <span class="arithmatex">\(C = 2\)</span>, so <span class="arithmatex">\(v(t) = 4t^3 - 6t + 2\)</span>.</p>
+<div class="arithmatex">\[
+s(t) = \int (4t^3 - 6t + 2) \, dt = t^4 - 3t^2 + 2t + D
+\]</div>
+<p>From <span class="arithmatex">\(s(0) = 1\)</span>, we get <span class="arithmatex">\(D = 1\)</span>, so <span class="arithmatex">\(s(t) = t^4 - 3t^2 + 2t + 1\)</span>.</p>
+<hr />
+<p><strong>Example 2</strong> (Finding displacement from <span class="arithmatex">\(v(t)\)</span>): A particle's velocity is <span class="arithmatex">\(v(t) = t^2 - 5t + 6\)</span>. Find the net displacement from <span class="arithmatex">\(t=1\)</span> to <span class="arithmatex">\(t=4\)</span>.</p>
+<p><strong>Solution</strong>:</p>
+<p>Net displacement <span class="arithmatex">\(= \displaystyle \int_1^4 (t^2 - 5t + 6) \, dt = \left[ \frac{t^3}{3} - \frac{5t^2}{2} + 6t \right]_1^4\)</span></p>
+<div class="arithmatex">\[
+= \left( \frac{64}{3} - \frac{80}{2} + 24 \right) - \left( \frac{1}{3} - \frac{5}{2} + 6 \right) = \left( \frac{64}{3} - 40 + 24 \right) - \left( \frac{1}{3} + \frac{1}{2} \right)
+\]</div>
+<div class="arithmatex">\[
+= \left( \frac{64}{3} - 16 \right) - \frac{5}{6} = \frac{16}{3} - \frac{5}{6} = \frac{32}{6} - \frac{5}{6} = \frac{27}{6} = \frac{9}{2}
+\]</div>
+<p>The net displacement is <span class="arithmatex">\(\dfrac{9}{2}\)</span> units in the positive direction.</p>
+<hr />
+<p>(More content on kinematics will be discussed in depth in Chapter 10.)</p>
+<hr />
+<h2 id="chapter-core-formula-quick-reference-table">Chapter Core Formula Quick Reference Table<a class="headerlink" href="#chapter-core-formula-quick-reference-table" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Integrand</th>
+<th>Indefinite Integral</th>
+<th>Conditions/Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(x^n\)</span></td>
+<td><span class="arithmatex">\(\displaystyle \frac{x^{n+1}}{n+1} + C\)</span></td>
+<td><span class="arithmatex">\(n \neq -1\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\dfrac{1}{x}\)</span></td>
+<td>$\displaystyle \ln</td>
+<td>x</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(e^{ax+b}\)</span></td>
+<td><span class="arithmatex">\(\displaystyle \frac{1}{a}e^{ax+b} + C\)</span></td>
+<td><span class="arithmatex">\(a \neq 0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\sin(ax+b)\)</span></td>
+<td><span class="arithmatex">\(\displaystyle -\frac{1}{a}\cos(ax+b) + C\)</span></td>
+<td><span class="arithmatex">\(a \neq 0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\cos(ax+b)\)</span></td>
+<td><span class="arithmatex">\(\displaystyle \frac{1}{a}\sin(ax+b) + C\)</span></td>
+<td><span class="arithmatex">\(a \neq 0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\sec^2(ax+b)\)</span></td>
+<td><span class="arithmatex">\(\displaystyle \frac{1}{a}\tan(ax+b) + C\)</span></td>
+<td><span class="arithmatex">\(a \neq 0\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\((ax+b)^n\)</span></td>
+<td><span class="arithmatex">\(\displaystyle \frac{(ax+b)^{n+1}}{a(n+1)} + C\)</span></td>
+<td><span class="arithmatex">\(n \neq -1\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(\dfrac{1}{ax+b}\)</span></td>
+<td>$\displaystyle \frac{1}{a}\ln</td>
+<td>ax+b</td>
+</tr>
+<tr>
+<td>Definite integral <span class="arithmatex">\(\int_a^b f(x) \, dx\)</span></td>
+<td><span class="arithmatex">\(F(b) - F(a)\)</span></td>
+<td><span class="arithmatex">\(F'(x) = f(x)\)</span>, no <span class="arithmatex">\(C\)</span></td>
+</tr>
+<tr>
+<td>Plane area (upper <span class="arithmatex">\(-\)</span> lower)</td>
+<td><span class="arithmatex">\(\displaystyle \int_a^b [f(x)-g(x)] \, dx\)</span></td>
+<td>First confirm <span class="arithmatex">\(f(x) \geq g(x)\)</span></td>
+</tr>
+<tr>
+<td>Area for sign-changing curve with <span class="arithmatex">\(x\)</span>-axis</td>
+<td>Split at zeros, take absolute values</td>
+<td>First find zeros</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="practice-problems">Practice Problems<a class="headerlink" href="#practice-problems" title="Permanent link">&para;</a></h2>
+<p>The following practice problems are graded by difficulty, covering all knowledge points in this chapter. <strong>Answers are at the end.</strong></p>
+<hr />
+<h3 id="group-a-basic-indefinite-integrals">Group A: Basic Indefinite Integrals<a class="headerlink" href="#group-a-basic-indefinite-integrals" title="Permanent link">&para;</a></h3>
+<ol>
+<li><span class="arithmatex">\(\displaystyle \int x^9 \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \frac{1}{x^5} \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \sqrt[5]{x} \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \frac{1}{\sqrt[3]{x}} \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int (4x^3 - 3x^2 + 2x - 1) \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \frac{6}{x} \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int e^{7x} \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int e^{-\frac{x}{3}} \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \sin(4x) \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \cos\left(\frac{x}{3}\right) dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \sec^2(6x) \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int (5x-2)^3 \, dx\)</span></li>
+</ol>
+<hr />
+<h3 id="group-b-advanced-indefinite-integrals">Group B: Advanced Indefinite Integrals<a class="headerlink" href="#group-b-advanced-indefinite-integrals" title="Permanent link">&para;</a></h3>
+<ol>
+<li><span class="arithmatex">\(\displaystyle \int \left( 2x^6 - 5x^{-4} + \frac{3}{x^2} \right) dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \left( \frac{1}{3x} + e^{4x} \right) dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \left( \sin\frac{x}{2} + \cos 2x \right) dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \frac{1}{(2x+3)^3} \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \left( 2e^{3x-1} - 5\sin\left(2x+\frac{\pi}{4}\right) + 3\sec^2(1-2x) \right) dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \frac{x^4 + 2x^2 - 3}{x^2} \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int (e^x - 1)^2 \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \frac{5}{\sqrt{3x+2}} \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \left( \frac{3}{2x-1} + \frac{1}{(x+2)^4} \right) dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int \frac{2x^2+3x+1}{x} \, dx\)</span></li>
+</ol>
+<hr />
+<h3 id="group-c-definite-integrals">Group C: Definite Integrals<a class="headerlink" href="#group-c-definite-integrals" title="Permanent link">&para;</a></h3>
+<ol>
+<li><span class="arithmatex">\(\displaystyle \int_0^4 3x \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int_1^3 (2x-1) \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int_{-1}^2 (x^2 + 2) \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int_0^{\pi/2} \cos x \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int_0^2 e^{3x} \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int_1^4 \frac{3}{\sqrt{x}} \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int_0^{\pi/3} \sec^2 x \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int_{-1}^1 (x^5 - x^3) \, dx\)</span> (use symmetry)</li>
+<li><span class="arithmatex">\(\displaystyle \int_0^1 (4x-1)^3 \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int_0^{\pi/4} \sin\left(2x+\frac{\pi}{4}\right) dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int_2^5 \frac{2}{x-1} \, dx\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \int_0^1 (e^{2x} + e^{-x}) \, dx\)</span></li>
+</ol>
+<hr />
+<h3 id="group-d-plane-area">Group D: Plane Area<a class="headerlink" href="#group-d-plane-area" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Find the area bounded by the curve <span class="arithmatex">\(y = x^2 + 2\)</span> and the <span class="arithmatex">\(x\)</span>-axis from <span class="arithmatex">\(x=0\)</span> to <span class="arithmatex">\(x=2\)</span>.</li>
+<li>Find the area bounded by the curve <span class="arithmatex">\(y = 4 - x^2\)</span> and the <span class="arithmatex">\(x\)</span>-axis.</li>
+<li>Find the total area bounded by the curve <span class="arithmatex">\(y = x^2 - 2x - 3\)</span> and the <span class="arithmatex">\(x\)</span>-axis.</li>
+<li>Find the total area bounded by the curve <span class="arithmatex">\(y = x^2 - 2x\)</span> and the <span class="arithmatex">\(x\)</span>-axis on <span class="arithmatex">\([-1, 3]\)</span>.</li>
+<li>Find the area bounded by the line <span class="arithmatex">\(y = 2x + 3\)</span> and the curve <span class="arithmatex">\(y = x^2\)</span>.</li>
+<li>Find the area bounded by the curve <span class="arithmatex">\(y = x^2 - 4x + 5\)</span> and the line <span class="arithmatex">\(y = x + 1\)</span>.</li>
+<li>Find the area bounded by the curves <span class="arithmatex">\(y = x^2\)</span> and <span class="arithmatex">\(y = 2x - x^2\)</span>.</li>
+<li>Find the total area bounded by <span class="arithmatex">\(y = x^3 - 4x\)</span> and the <span class="arithmatex">\(x\)</span>-axis.</li>
+<li>Find the area bounded by <span class="arithmatex">\(y = 4x - x^2\)</span> and the line <span class="arithmatex">\(y = x\)</span>.</li>
+<li>Find the area bounded by <span class="arithmatex">\(y = x^2\)</span> and the line <span class="arithmatex">\(y = 4\)</span>.</li>
+</ol>
+<hr />
+<h2 id="answers-to-practice-problems">Answers to Practice Problems<a class="headerlink" href="#answers-to-practice-problems" title="Permanent link">&para;</a></h2>
+<h3 id="group-a-answers">Group A Answers<a class="headerlink" href="#group-a-answers" title="Permanent link">&para;</a></h3>
+<ol>
+<li><span class="arithmatex">\(\displaystyle \frac{x^{10}}{10} + C\)</span></li>
+<li><span class="arithmatex">\(\displaystyle -\frac{1}{4x^4} + C\)</span>
+   <strong>Detailed</strong>: <span class="arithmatex">\(\int x^{-5} dx = \dfrac{x^{-4}}{-4} = -\dfrac{1}{4x^4}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{5}{6}x^{6/5} + C\)</span>
+   <strong>Detailed</strong>: <span class="arithmatex">\(\sqrt[5]{x} = x^{1/5}\)</span>, <span class="arithmatex">\(\int x^{1/5} dx = \dfrac{x^{6/5}}{6/5} = \dfrac{5}{6}x^{6/5}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{3}{2}x^{2/3} + C\)</span>
+   <strong>Detailed</strong>: <span class="arithmatex">\(\dfrac{1}{\sqrt[3]{x}} = x^{-1/3}\)</span>, <span class="arithmatex">\(\int x^{-1/3} dx = \dfrac{x^{2/3}}{2/3} = \dfrac{3}{2}x^{2/3}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle x^4 - x^3 + x^2 - x + C\)</span></li>
+<li><span class="arithmatex">\(6\ln|x| + C\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{1}{7}e^{7x} + C\)</span></li>
+<li><span class="arithmatex">\(\displaystyle -3e^{-\frac{x}{3}} + C\)</span>
+   <strong>Detailed</strong>: <span class="arithmatex">\(\int e^{-\frac{x}{3}} dx = \dfrac{1}{-1/3} e^{-\frac{x}{3}} = -3e^{-\frac{x}{3}}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle -\frac{1}{4}\cos(4x) + C\)</span></li>
+<li><span class="arithmatex">\(\displaystyle 3\sin\left(\frac{x}{3}\right) + C\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int \cos\left(\frac{x}{3}\right) dx = \dfrac{1}{1/3}\sin\left(\frac{x}{3}\right) = 3\sin\left(\frac{x}{3}\right)\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{1}{6}\tan(6x) + C\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{(5x-2)^4}{20} + C\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int (5x-2)^3 dx = \dfrac{(5x-2)^4}{5 \cdot 4} = \dfrac{(5x-2)^4}{20}\)</span></li>
+</ol>
+<hr />
+<h3 id="group-b-answers">Group B Answers<a class="headerlink" href="#group-b-answers" title="Permanent link">&para;</a></h3>
+<ol>
+<li><span class="arithmatex">\(\displaystyle \frac{2}{7}x^7 + \frac{5}{3x^3} - \frac{3}{x} + C\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int 2x^6 dx = \frac{2}{7}x^7\)</span>, <span class="arithmatex">\(\int -5x^{-4} dx = -5 \cdot \frac{x^{-3}}{-3} = \frac{5}{3}x^{-3} = \frac{5}{3x^3}\)</span>, <span class="arithmatex">\(\int 3x^{-2} dx = 3 \cdot \frac{x^{-1}}{-1} = -\frac{3}{x}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{1}{3}\ln|x| + \frac{1}{4}e^{4x} + C\)</span></li>
+<li><span class="arithmatex">\(\displaystyle -2\cos\frac{x}{2} + \frac{1}{2}\sin 2x + C\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int \sin\frac{x}{2} dx = -\dfrac{1}{1/2}\cos\frac{x}{2} = -2\cos\frac{x}{2}\)</span>, <span class="arithmatex">\(\int \cos 2x dx = \frac{1}{2}\sin 2x\)</span></li>
+<li><span class="arithmatex">\(\displaystyle -\frac{1}{4(2x+3)^2} + C\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int (2x+3)^{-3} dx = \dfrac{(2x+3)^{-2}}{2 \cdot (-2)} = -\dfrac{1}{4}(2x+3)^{-2} = -\dfrac{1}{4(2x+3)^2}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{2}{3}e^{3x-1} + \frac{5}{2}\cos\left(2x+\frac{\pi}{4}\right) - \frac{3}{2}\tan(1-2x) + C\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int 2e^{3x-1} dx = 2 \cdot \frac{1}{3}e^{3x-1} = \frac{2}{3}e^{3x-1}\)</span>
+    <span class="arithmatex">\(\int -5\sin(2x+\frac{\pi}{4}) dx = -5 \cdot (-\frac{1}{2})\cos(2x+\frac{\pi}{4}) = \frac{5}{2}\cos(2x+\frac{\pi}{4})\)</span>
+    <span class="arithmatex">\(\int 3\sec^2(1-2x) dx = 3 \cdot \frac{1}{-2}\tan(1-2x) = -\frac{3}{2}\tan(1-2x)\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{x^3}{3} + 2x + \frac{3}{x} + C\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\dfrac{x^4+2x^2-3}{x^2} = x^2 + 2 - 3x^{-2}\)</span>, integrating gives <span class="arithmatex">\(\frac{x^3}{3} + 2x + \frac{3}{x} + C\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{1}{2}e^{2x} - 2e^x + x + C\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\((e^x-1)^2 = e^{2x} - 2e^x + 1\)</span>, <span class="arithmatex">\(\int e^{2x} dx = \frac{1}{2}e^{2x}\)</span>, <span class="arithmatex">\(\int -2e^x dx = -2e^x\)</span>, <span class="arithmatex">\(\int 1 dx = x\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{10}{3}\sqrt{3x+2} + C\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int 5(3x+2)^{-1/2} dx = 5 \cdot \dfrac{(3x+2)^{1/2}}{3 \cdot (1/2)} = 5 \cdot \dfrac{2}{3}\sqrt{3x+2} = \frac{10}{3}\sqrt{3x+2}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{3}{2}\ln|2x-1| - \frac{1}{3(x+2)^3} + C\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int \frac{3}{2x-1} dx = 3 \cdot \frac{1}{2}\ln|2x-1| = \frac{3}{2}\ln|2x-1|\)</span>
+    <span class="arithmatex">\(\int (x+2)^{-4} dx = \dfrac{(x+2)^{-3}}{-3} = -\dfrac{1}{3(x+2)^3}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle x^2 + 3x + \ln|x| + C\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\dfrac{2x^2+3x+1}{x} = 2x + 3 + \frac{1}{x}\)</span>, integrating gives <span class="arithmatex">\(x^2 + 3x + \ln|x| + C\)</span></li>
+</ol>
+<hr />
+<h3 id="group-c-answers">Group C Answers<a class="headerlink" href="#group-c-answers" title="Permanent link">&para;</a></h3>
+<ol>
+<li><span class="arithmatex">\(24\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int_0^4 3x \, dx = \left[\frac{3x^2}{2}\right]_0^4 = \frac{48}{2} = 24\)</span></li>
+<li><span class="arithmatex">\(6\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int_1^3 (2x-1) dx = [x^2 - x]_1^3 = (9-3) - (1-1) = 6\)</span></li>
+<li><span class="arithmatex">\(9\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int_{-1}^2 (x^2+2) dx = \left[\frac{x^3}{3}+2x\right]_{-1}^2 = \left(\frac{8}{3}+4\right) - \left(-\frac{1}{3}-2\right) = \frac{20}{3} + \frac{7}{3} = \frac{27}{3} = 9\)</span></li>
+<li><span class="arithmatex">\(1\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int_0^{\pi/2} \cos x \, dx = [\sin x]_0^{\pi/2} = 1 - 0 = 1\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{1}{3}(e^6 - 1)\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int_0^2 e^{3x} dx = \left[\frac{1}{3}e^{3x}\right]_0^2 = \frac{1}{3}e^6 - \frac{1}{3}e^0 = \frac{1}{3}(e^6-1)\)</span></li>
+<li><span class="arithmatex">\(6\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int_1^4 3x^{-1/2} dx = [6\sqrt{x}]_1^4 = 6 \cdot 2 - 6 \cdot 1 = 12 - 6 = 6\)</span></li>
+<li><span class="arithmatex">\(\sqrt{3}\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int_0^{\pi/3} \sec^2 x \, dx = [\tan x]_0^{\pi/3} = \sqrt{3} - 0 = \sqrt{3}\)</span></li>
+<li><span class="arithmatex">\(0\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(x^5 - x^3\)</span> is odd, integral over symmetric interval <span class="arithmatex">\([-1,1]\)</span> is zero.</li>
+<li><span class="arithmatex">\(5\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int_0^1 (4x-1)^3 dx = \left[\frac{(4x-1)^4}{4 \cdot 4}\right]_0^1 = \left[\frac{(4x-1)^4}{16}\right]_0^1 = \frac{3^4}{16} - \frac{(-1)^4}{16} = \frac{81}{16} - \frac{1}{16} = \frac{80}{16} = 5\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{\sqrt{2}}{2}\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int_0^{\pi/4} \sin(2x+\frac{\pi}{4}) dx = \left[-\frac{1}{2}\cos(2x+\frac{\pi}{4})\right]_0^{\pi/4}\)</span>
+    <span class="arithmatex">\(= -\frac{1}{2}\left[\cos(\frac{\pi}{2}+\frac{\pi}{4}) - \cos\frac{\pi}{4}\right] = -\frac{1}{2}\left[-\frac{\sqrt{2}}{2} - \frac{\sqrt{2}}{2}\right] = -\frac{1}{2}(-\sqrt{2}) = \frac{\sqrt{2}}{2}\)</span></li>
+<li><span class="arithmatex">\(2\ln 4 = 4\ln 2\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int_2^5 \frac{2}{x-1} dx = [2\ln|x-1|]_2^5 = 2\ln 4 - 2\ln 1 = 2\ln 4 = 4\ln 2\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{1}{2}(e^2 + 1) - \frac{1}{e}\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(\int_0^1 (e^{2x} + e^{-x}) dx = \left[\frac{1}{2}e^{2x} - e^{-x}\right]_0^1 = \left(\frac{1}{2}e^2 - e^{-1}\right) - \left(\frac{1}{2} - 1\right) = \frac{1}{2}e^2 - \frac{1}{e} + \frac{1}{2} = \frac{1}{2}(e^2+1) - \frac{1}{e}\)</span></li>
+</ol>
+<hr />
+<h3 id="group-d-answers">Group D Answers<a class="headerlink" href="#group-d-answers" title="Permanent link">&para;</a></h3>
+<ol>
+<li><span class="arithmatex">\(\displaystyle \frac{20}{3}\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(A = \int_0^2 (x^2+2) dx = \left[\frac{x^3}{3}+2x\right]_0^2 = \frac{8}{3} + 4 = \frac{20}{3}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{32}{3}\)</span>
+    <strong>Detailed</strong>: Intersects <span class="arithmatex">\(x\)</span>-axis at <span class="arithmatex">\(x=\pm2\)</span>. <span class="arithmatex">\(A = \int_{-2}^2 (4-x^2) dx = \left[4x-\frac{x^3}{3}\right]_{-2}^2 = (8-\frac{8}{3}) - (-8+\frac{8}{3}) = \frac{16}{3} + \frac{16}{3} = \frac{32}{3}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{32}{3}\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(x^2-2x-3 = (x-3)(x+1)=0\)</span>, zeros <span class="arithmatex">\(x=-1,3\)</span>. On <span class="arithmatex">\([-1,3]\)</span>, <span class="arithmatex">\(f(x)\leq0\)</span>.
+    <span class="arithmatex">\(A = -\int_{-1}^3 (x^2-2x-3) dx = \int_{-1}^3 (-x^2+2x+3) dx = \left[-\frac{x^3}{3}+x^2+3x\right]_{-1}^3\)</span>
+    <span class="arithmatex">\(= (-9+9+9) - (\frac{1}{3}+1-3) = 9 - (-\frac{5}{3}) = \frac{32}{3}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle 4\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(x^2-2x = x(x-2)=0\)</span>, zeros <span class="arithmatex">\(x=0,2\)</span>.
+    On <span class="arithmatex">\([-1,0]\)</span> <span class="arithmatex">\(f(x)\geq0\)</span>, on <span class="arithmatex">\([0,2]\)</span> <span class="arithmatex">\(f(x)\leq0\)</span>, on <span class="arithmatex">\([2,3]\)</span> <span class="arithmatex">\(f(x)\geq0\)</span>.
+    <span class="arithmatex">\(A = \int_{-1}^0 (x^2-2x) dx + \int_0^2 -(x^2-2x) dx + \int_2^3 (x^2-2x) dx\)</span>
+    <span class="arithmatex">\(= \left[\frac{x^3}{3}-x^2\right]_{-1}^0 + \left[-\frac{x^3}{3}+x^2\right]_0^2 + \left[\frac{x^3}{3}-x^2\right]_2^3\)</span>
+    <span class="arithmatex">\(= \frac{4}{3} + \frac{4}{3} + \frac{4}{3} = 4\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{32}{3}\)</span>
+    <strong>Detailed</strong>: Intersection: <span class="arithmatex">\(x^2 = 2x+3 \Rightarrow x^2-2x-3=0 \Rightarrow (x-3)(x+1)=0\)</span>, <span class="arithmatex">\(x=-1,3\)</span>.
+    On <span class="arithmatex">\([-1,3]\)</span>, <span class="arithmatex">\(y=2x+3\)</span> is above.
+    <span class="arithmatex">\(A = \int_{-1}^3 [(2x+3)-x^2] dx = \left[x^2+3x-\frac{x^3}{3}\right]_{-1}^3\)</span>
+    <span class="arithmatex">\(= (9+9-9) - (1-3+\frac{1}{3}) = 9 - (-\frac{5}{3}) = \frac{32}{3}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{9}{2}\)</span>
+    <strong>Detailed</strong>: Intersection: <span class="arithmatex">\(x^2-4x+5 = x+1 \Rightarrow x^2-5x+4=0 \Rightarrow (x-1)(x-4)=0\)</span>, <span class="arithmatex">\(x=1,4\)</span>.
+    On <span class="arithmatex">\([1,4]\)</span>, <span class="arithmatex">\(y=x+1\)</span> is above (test <span class="arithmatex">\(x=2\)</span>: <span class="arithmatex">\(f(2)=1\)</span>, <span class="arithmatex">\(g(2)=3\)</span>).
+    <span class="arithmatex">\(A = \int_1^4 [(x+1)-(x^2-4x+5)] dx = \int_1^4 (-x^2+5x-4) dx\)</span>
+    <span class="arithmatex">\(= \left[-\frac{x^3}{3}+\frac{5x^2}{2}-4x\right]_1^4\)</span>
+    <span class="arithmatex">\(= \left(-\frac{64}{3}+40-16\right) - \left(-\frac{1}{3}+\frac{5}{2}-4\right)\)</span>
+    <span class="arithmatex">\(= \frac{8}{3} - \left(-\frac{11}{6}\right) = \frac{8}{3} + \frac{11}{6} = \frac{27}{6} = \frac{9}{2}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{1}{3}\)</span>
+    <strong>Detailed</strong>: Intersection: <span class="arithmatex">\(x^2 = 2x-x^2 \Rightarrow 2x^2-2x=0 \Rightarrow 2x(x-1)=0\)</span>, <span class="arithmatex">\(x=0,1\)</span>.
+    On <span class="arithmatex">\([0,1]\)</span>, <span class="arithmatex">\(y=2x-x^2\)</span> is above (test <span class="arithmatex">\(x=0.5\)</span>: <span class="arithmatex">\(0.25\)</span> vs <span class="arithmatex">\(0.75\)</span>).
+    <span class="arithmatex">\(A = \int_0^1 [(2x-x^2)-x^2] dx = \int_0^1 (2x-2x^2) dx = \left[x^2-\frac{2x^3}{3}\right]_0^1 = 1 - \frac{2}{3} = \frac{1}{3}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle 8\)</span>
+    <strong>Detailed</strong>: <span class="arithmatex">\(x^3-4x = x(x-2)(x+2)=0\)</span>, zeros <span class="arithmatex">\(x=-2,0,2\)</span>.
+    On <span class="arithmatex">\([-2,0]\)</span> <span class="arithmatex">\(f(x)\geq0\)</span>, on <span class="arithmatex">\([0,2]\)</span> <span class="arithmatex">\(f(x)\leq0\)</span>.
+    <span class="arithmatex">\(A = \int_{-2}^0 (x^3-4x)dx + \int_0^2 -(x^3-4x)dx\)</span>
+    <span class="arithmatex">\(= \left[\frac{x^4}{4}-2x^2\right]_{-2}^0 + \left[-\frac{x^4}{4}+2x^2\right]_0^2\)</span>
+    <span class="arithmatex">\(= (0-(4-8)) + ((-4+8)-0) = 4 + 4 = 8\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{9}{2}\)</span>
+    <strong>Detailed</strong>: Intersection: <span class="arithmatex">\(4x-x^2 = x \Rightarrow 3x-x^2=0 \Rightarrow x(3-x)=0\)</span>, <span class="arithmatex">\(x=0,3\)</span>.
+    On <span class="arithmatex">\([0,3]\)</span>, <span class="arithmatex">\(y=4x-x^2\)</span> is above.
+    <span class="arithmatex">\(A = \int_0^3 [(4x-x^2)-x] dx = \int_0^3 (3x-x^2) dx = \left[\frac{3x^2}{2}-\frac{x^3}{3}\right]_0^3 = \frac{27}{2} - 9 = \frac{9}{2}\)</span></li>
+<li><span class="arithmatex">\(\displaystyle \frac{32}{3}\)</span>
+    <strong>Detailed</strong>: Intersection: <span class="arithmatex">\(x^2 = 4 \Rightarrow x = \pm 2\)</span>.
+    On <span class="arithmatex">\([-2,2]\)</span>, <span class="arithmatex">\(y=4\)</span> is above.
+    <span class="arithmatex">\(A = \int_{-2}^2 (4 - x^2) dx = \left[4x - \frac{x^3}{3}\right]_{-2}^2 = (8-\frac{8}{3}) - (-8+\frac{8}{3}) = \frac{16}{3} + \frac{16}{3} = \frac{32}{3}\)</span></li>
+</ol>
+<hr />
+<h2 id="appendix-common-mistakes-and-pitfall-guide">Appendix: Common Mistakes and Pitfall Guide<a class="headerlink" href="#appendix-common-mistakes-and-pitfall-guide" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Type of Mistake</th>
+<th>❌ Incorrect</th>
+<th>✅ Correct</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Forgetting <span class="arithmatex">\(+C\)</span></td>
+<td><span class="arithmatex">\(\int 2x \, dx = x^2\)</span></td>
+<td><span class="arithmatex">\(\int 2x \, dx = x^2 + C\)</span></td>
+<td>Indefinite integral is a family of functions, not a single function</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Misapplying power rule to <span class="arithmatex">\(1/x\)</span></td>
+<td><span class="arithmatex">\(\int x^{-1} dx = \frac{x^0}{0}\)</span></td>
+<td><span class="arithmatex">\(\int \frac{1}{x} dx = \ln\|x\| + C\)</span></td>
+<td>When <span class="arithmatex">\(n=-1\)</span>, denominator is zero, formula fails</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Omitting <span class="arithmatex">\(1/a\)</span> in <span class="arithmatex">\((ax+b)^n\)</span></td>
+<td><span class="arithmatex">\(\int (2x+1)^3 = \frac{(2x+1)^4}{4}\)</span></td>
+<td><span class="arithmatex">\(\int (2x+1)^3 = \frac{(2x+1)^4}{8}\)</span></td>
+<td>Reverse chain rule produces factor <span class="arithmatex">\(1/a\)</span></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Wrong sign for <span class="arithmatex">\(\sin\)</span> integral</td>
+<td><span class="arithmatex">\(\int \sin(2x) = \frac{1}{2}\cos(2x)\)</span></td>
+<td><span class="arithmatex">\(\int \sin(2x) = -\frac{1}{2}\cos(2x)\)</span></td>
+<td>Antiderivative of <span class="arithmatex">\(\sin\)</span> is <span class="arithmatex">\(-\cos\)</span>, not <span class="arithmatex">\(\cos\)</span></td>
+</tr>
+<tr>
+<td>5</td>
+<td>Adding <span class="arithmatex">\(C\)</span> in definite integrals</td>
+<td><span class="arithmatex">\(\int_1^2 2x = [x^2+C]_1^2\)</span></td>
+<td><span class="arithmatex">\(\int_1^2 2x = [x^2]_1^2 = 4-1=3\)</span></td>
+<td><span class="arithmatex">\(C\)</span> cancels out in subtraction, no need to write</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Not splitting area for sign changes</td>
+<td>Directly compute <span class="arithmatex">\(\int_{-2}^2 (x^2-1) dx\)</span></td>
+<td>Split at <span class="arithmatex">\(x=\pm1\)</span> and take absolute values</td>
+<td>Definite integral gives signed area, not actual area</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Wrong identification of upper/lower function</td>
+<td>Assume <span class="arithmatex">\(f\)</span> is above</td>
+<td>Use a test point to confirm</td>
+<td>Area must be positive; upper minus lower must not be reversed</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Integrating a product separately</td>
+<td><span class="arithmatex">\(\int (x+1)(x-1)dx = \int(x+1)dx \cdot \int(x-1)dx\)</span></td>
+<td>Expand first, then integrate</td>
+<td>No product rule for integration</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Omitting absolute value in <span class="arithmatex">\(\ln\)</span></td>
+<td><span class="arithmatex">\(\int\frac{1}{x}dx = \ln x + C\)</span></td>
+<td><span class="arithmatex">\(\int\frac{1}{x}dx = \ln\|x\| + C\)</span></td>
+<td><span class="arithmatex">\(\ln x\)</span> is undefined when <span class="arithmatex">\(x&lt;0\)</span></td>
+</tr>
+<tr>
+<td>10</td>
+<td>Angle mode for trig functions</td>
+<td>Calculator in degree mode</td>
+<td>Must use radian mode</td>
+<td>Integration formulas are derived using radians</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="quick-self-check-list">🔧 Quick Self-Check List<a class="headerlink" href="#quick-self-check-list" title="Permanent link">&para;</a></h3>
+<p>Ask yourself these questions before solving a problem:</p>
+<ul>
+<li>[ ] Did I add the constant of integration <span class="arithmatex">\(C\)</span>? (indefinite integrals)</li>
+<li>[ ] Did I omit <span class="arithmatex">\(C\)</span> for definite integrals?</li>
+<li>[ ] Did I check for the special case <span class="arithmatex">\(n=-1\)</span>?</li>
+<li>[ ] Did I divide by <span class="arithmatex">\(a\)</span> for <span class="arithmatex">\((ax+b)^n\)</span>?</li>
+<li>[ ] Did I add a negative sign for <span class="arithmatex">\(\sin\)</span> integrals?</li>
+<li>[ ] For area problems, did I check whether the curve is above or below the <span class="arithmatex">\(x\)</span>-axis?</li>
+<li>[ ] For area between two curves, did I confirm which one is above?</li>
+<li>[ ] Do I need to split the interval for piecewise handling?</li>
+</ul>
+<blockquote>
+<p><strong>Final advice</strong>: After completing every integration, develop the habit of <strong>verifying by differentiation</strong>. This not only helps you find errors but also deepens your understanding of the core idea that "integration is the reverse operation of differentiation."</p>
+</blockquote>
+<h2 id="-">---<a class="headerlink" href="#-" title="Permanent link">&para;</a></h2>
+<hr />
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../ch07/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Chapter 7: Differentiation (Derivatives)">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                Chapter 7: Differentiation (Derivatives)
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../ch09/" class="md-footer__link md-footer__link--next" aria-label="下一页: Chapter 9: Geometry (Straight Lines and Circles)">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                Chapter 9: Geometry (Straight Lines and Circles)
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 Leo Yang · Licensed under CC BY-NC-SA 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

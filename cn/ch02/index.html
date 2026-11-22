@@ -1,0 +1,4349 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="本章对应剑桥 IGCSE 附加数学（0606）2028–2030 考纲的以下内容：">
+      
+      
+        <meta name="author" content="Leo Yang (LG-leo)">
+      
+      
+        <link rel="canonical" href="https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/cn/ch02/">
+      
+      
+        <link rel="prev" href="../ch01/">
+      
+      
+        <link rel="next" href="../ch03/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+      
+        <title>第 2 章：向量与变化率 - IGCSE Additional Mathematics (0606) Notes</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  
+  <meta name="msvalidate.01" content="621C3B7D85DC9958CF27B288AE3660D6">
+  <meta name="keywords" content="IGCSE Additional Mathematics, 0606, IGCSE 0606 notes, additional maths notes, IGCSE add math, free IGCSE notes, syllabus 2028-2030, past paper notes, 附加数学笔记">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="IGCSE Additional Mathematics (0606) Notes">
+  <meta property="og:title" content="第 2 章：向量与变化率 · IGCSE Additional Mathematics (0606) Notes">
+  <meta property="og:description" content="本章对应剑桥 IGCSE 附加数学（0606）2028–2030 考纲的以下内容：">
+  <meta property="og:url" content="https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/cn/ch02/">
+  <meta name="twitter:card" content="summary">
+  
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="IGCSE Additional Mathematics (0606) Notes" class="md-header__button md-logo" aria-label="IGCSE Additional Mathematics (0606) Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            IGCSE Additional Mathematics (0606) Notes
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第 2 章：向量与变化率
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LG-leo/IGCSE-Additional-Mathematics-Notes-0606
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页 / Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../ch01/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  中文笔记 (Chinese)
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../en/ch01/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  English Notes
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="IGCSE Additional Mathematics (0606) Notes" class="md-nav__button md-logo" aria-label="IGCSE Additional Mathematics (0606) Notes" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    IGCSE Additional Mathematics (0606) Notes
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    LG-leo/IGCSE-Additional-Mathematics-Notes-0606
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页 / Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    中文笔记 (Chinese)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    中文笔记 (Chinese)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 1 章：数列、排列、组合与二项式定理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 2 章：向量与变化率
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 2 章：向量与变化率
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        考纲对照
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        引言
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 变化率入门（微积分铺垫）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 变化率入门（微积分铺垫）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.1 为何研究变化率？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.2 从平均变化率到瞬时变化率
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.3 导数的一般定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#214" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.4 用定义求导——基础推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#215" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.5 幂法则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#216" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.6 变化率在向量中的应用：运动学
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#217" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.7 从加速度到速度和位置（积分铺垫）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 例题 2.4：变化率入门
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 二维向量基础
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 二维向量基础">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1 什么是向量？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#222" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.2 位置向量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#223" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.3 向量的模（大小）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#224" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.4 单位向量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#225" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.5 向量的加法与减法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#226" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.6 向量的数乘
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#227" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.7 向量相等
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#228" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.8 垂直向量（正交向量）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        利用点积求两向量夹角
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 例题 2.1：向量基础运算
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 向量的实际运用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 向量的实际运用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1 向量几何——深度解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 例题 2.2：向量几何应用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.2 速度的合成与分解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 例题 2.3：速度合成与相撞问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 本章练习题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习题答案
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本章总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        考纲覆盖核对
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心公式速查表
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        学习路线图
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 3 章：二次函数
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 4 章：方程与不等式（图形法）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 5 章：函数（线性、三次、指数、对数）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 6 章：三角学（含弧度法）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 7 章：微分（导数）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 8 章：积分（不定积分与定积分）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 9 章：几何（直线与圆）
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ch10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第 10 章：综合应用
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    English Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    English Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 1: Sequences, Permutations, Combinations, and the Binomial Theorem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch02/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 2: Vectors and Rates of Change
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 3: Quadratic Functions (Including Polynomial Factors)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 4: Equations and Inequalities (Graphical Methods)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch05/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 5: Functions (Linear, Cubic, Exponential, Logarithmic)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch06/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 6: Trigonometry (Including Radians)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch07/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 7: Differentiation (Derivatives)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch08/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 8: Integration (Indefinite and Definite Integrals)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch09/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 9: Geometry (Straight Lines and Circles)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../en/ch10/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chapter 10: Comprehensive Applications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        考纲对照
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        引言
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#21" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 变化率入门（微积分铺垫）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.1 变化率入门（微积分铺垫）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#211" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.1 为何研究变化率？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#212" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.2 从平均变化率到瞬时变化率
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#213" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.3 导数的一般定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#214" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.4 用定义求导——基础推导
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#215" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.5 幂法则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#216" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.6 变化率在向量中的应用：运动学
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#217" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1.7 从加速度到速度和位置（积分铺垫）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 例题 2.4：变化率入门
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#22" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2 二维向量基础
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.2 二维向量基础">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#221" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.1 什么是向量？
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#222" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.2 位置向量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#223" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.3 向量的模（大小）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#224" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.4 单位向量
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#225" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.5 向量的加法与减法
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#226" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.6 向量的数乘
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#227" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.7 向量相等
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#228" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.2.8 垂直向量（正交向量）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        利用点积求两向量夹角
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 例题 2.1：向量基础运算
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#23" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3 向量的实际运用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 向量的实际运用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.1 向量几何——深度解析
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 例题 2.2：向量几何应用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.3.2 速度的合成与分解
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 例题 2.3：速度合成与相撞问题
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#24_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.4 本章练习题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_36" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        练习题答案
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_37" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="本章总结">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_38" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        考纲覆盖核对
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心公式速查表
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_40" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        学习路线图
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ---
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="2">第 2 章：向量与变化率<a class="headerlink" href="#2" title="Permanent link">&para;</a></h1>
+<h2 id="_1">考纲对照<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>本章对应剑桥 IGCSE 附加数学（0606）2028–2030 考纲的以下内容：</p>
+<table>
+<thead>
+<tr>
+<th>考纲编号</th>
+<th>内容</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>13.1</strong></td>
+<td>理解并使用向量记号</td>
+<td>列向量、<span class="arithmatex">\(\mathbf{i}\)</span>-<span class="arithmatex">\(\mathbf{j}\)</span> 形式、<span class="arithmatex">\(\overrightarrow{AB}\)</span>、<span class="arithmatex">\(p\)</span> 等形式</td>
+</tr>
+<tr>
+<td><strong>13.2</strong></td>
+<td>位置向量与单位向量</td>
+<td>求单位向量 $\hat{\mathbf{a}} = \frac{\mathbf{a}}{</td>
+</tr>
+<tr>
+<td><strong>13.3</strong></td>
+<td>向量的模、加法、减法与数乘</td>
+<td>含向量相等、向量几何问题（给定图形）</td>
+</tr>
+<tr>
+<td><strong>13.4</strong></td>
+<td>速度的合成与分解</td>
+<td>求合向量、利用速度向量求位置、相撞问题</td>
+</tr>
+<tr>
+<td><strong>14.1</strong></td>
+<td>导函数的思想（变化率入门）</td>
+<td>极限的直观理解，不要求从第一原理求导</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_2">引言<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>在现实世界中，许多量不仅有大小，还有方向。从飞机航行时的风速修正，到两艘船在海上是否可能相撞，再到抛体运动的轨迹分析——这些问题的数学语言都是<strong>向量</strong>。</p>
+<p>本章将从零开始构建二维向量的完整知识体系。我们先学习向量的基本表示方法和运算规则（含垂直向量的判定），然后把这些工具应用于几何问题和运动学问题（速度合成、相撞检测）。最后，我们将视角从"静态的向量"转向"动态的变化率"——当位置向量随时间变化时，它的变化率就是速度，而速度的变化率就是加速度。反过来，已知加速度，我们可通过积分求出速度和位置。这个思想将直接通向第 5 章的微分学与第 7 章的积分学。</p>
+<hr />
+<h2 id="21">2.1 变化率入门（微积分铺垫）<a class="headerlink" href="#21" title="Permanent link">&para;</a></h2>
+<h3 id="211">2.1.1 为何研究变化率？<a class="headerlink" href="#211" title="Permanent link">&para;</a></h3>
+<p>在物理世界中，很少有事物是静止的。一辆行驶的汽车，它的位置在变化；一个充气的气球，它的体积在变化；一个加热的金属棒，它的温度在变化。<strong>变化率</strong>就是描述"一个量随另一个量变化得有多快"的数学工具。</p>
+<p>在 2.2 和 2.3 节中，我们用向量描述了位置、速度和加速度。现在我们要问一个更深入的问题：<strong>如何精确地定义"瞬时"变化率？</strong></p>
+<hr />
+<h3 id="212">2.1.2 从平均变化率到瞬时变化率<a class="headerlink" href="#212" title="Permanent link">&para;</a></h3>
+<p>让我们从一个具体的运动学例子开始。</p>
+<p>一个质点沿直线运动，它的位移 <span class="arithmatex">\(s\)</span>（单位：米）与时间 <span class="arithmatex">\(t\)</span>（单位：秒）的关系为：</p>
+<div class="arithmatex">\[
+s(t) = t^2
+\]</div>
+<p>我们想知道 <span class="arithmatex">\(t = 1\)</span> 秒这一<strong>瞬间</strong>的速度。</p>
+<h4 id="_3">第一步：平均速度<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<p>如果取一个时间区间 <span class="arithmatex">\([1, 1 + \Delta t]\)</span>，质点在区间内的平均速度是：</p>
+<div class="arithmatex">\[
+\text{平均速度} = \frac{s(1 + \Delta t) - s(1)}{\Delta t}
+\]</div>
+<p>代入 <span class="arithmatex">\(s(t) = t^2\)</span>：</p>
+<div class="arithmatex">\[
+\frac{(1 + \Delta t)^2 - 1^2}{\Delta t} = \frac{1 + 2\Delta t + (\Delta t)^2 - 1}{\Delta t} = \frac{2\Delta t + (\Delta t)^2}{\Delta t} = 2 + \Delta t
+\]</div>
+<h4 id="delta-t">第二步：让 <span class="arithmatex">\(\Delta t\)</span> 越来越小<a class="headerlink" href="#delta-t" title="Permanent link">&para;</a></h4>
+<p>我们让 <span class="arithmatex">\(\Delta t\)</span> 逐渐趋近于 0，观察平均速度的变化：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(\Delta t\)</span>（秒）</th>
+<th style="text-align: center;">平均速度（m/s）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0.1</td>
+<td style="text-align: center;"><span class="arithmatex">\(2 + 0.1 = 2.1\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">0.01</td>
+<td style="text-align: center;"><span class="arithmatex">\(2 + 0.01 = 2.01\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">0.001</td>
+<td style="text-align: center;"><span class="arithmatex">\(2 + 0.001 = 2.001\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;">0.0001</td>
+<td style="text-align: center;"><span class="arithmatex">\(2 + 0.0001 = 2.0001\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(\to 0\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\to 2\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>随着 <span class="arithmatex">\(\Delta t\)</span> 越来越接近 0，平均速度越来越接近 <strong>2</strong>。</p>
+<h4 id="_4">第三步：极限<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<p>当 <span class="arithmatex">\(\Delta t\)</span> 趋近于 0 时，平均速度 <span class="arithmatex">\(2 + \Delta t\)</span> 趋近于 2。我们记：</p>
+<div class="arithmatex">\[
+v(1) = \lim_{\Delta t \to 0} \frac{s(1 + \Delta t) - s(1)}{\Delta t} = \lim_{\Delta t \to 0} (2 + \Delta t) = 2
+\]</div>
+<p>这个极限值就是质点在 <span class="arithmatex">\(t = 1\)</span> 时的<strong>瞬时速度</strong>。</p>
+<blockquote>
+<p><strong>重要理解</strong>：我们从不令 <span class="arithmatex">\(\Delta t = 0\)</span>（那样会得到 <span class="arithmatex">\(0/0\)</span>，没有意义）。我们让 <span class="arithmatex">\(\Delta t\)</span> 无限趋近于 0，观察比值趋近于哪个固定值。这个"趋近的目标"就是导数。</p>
+<p>用极限的语言说：<strong>当 <span class="arithmatex">\(\Delta t\)</span> 趋近于 0 时，平均速度的极限就是瞬时速度。</strong></p>
+</blockquote>
+<hr />
+<h3 id="213">2.1.3 导数的一般定义<a class="headerlink" href="#213" title="Permanent link">&para;</a></h3>
+<p>一般地，对于函数 <span class="arithmatex">\(y = f(x)\)</span>，它在 <span class="arithmatex">\(x = a\)</span> 处的<strong>导数</strong>（即瞬时变化率）定义为：</p>
+<div class="arithmatex">\[
+f'(a) = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}
+\]</div>
+<p>其中 <span class="arithmatex">\(h\)</span> 就是前面例子中的 <span class="arithmatex">\(\Delta x\)</span> 或 <span class="arithmatex">\(\Delta t\)</span>。</p>
+<p>如果这个极限存在，我们就说 <span class="arithmatex">\(f\)</span> 在 <span class="arithmatex">\(x = a\)</span> 处<strong>可导</strong>。</p>
+<p><strong>导数的记号</strong>：
+- 莱布尼茨记号：<span class="arithmatex">\(\dfrac{dy}{dx}\)</span> 或 <span class="arithmatex">\(\dfrac{d}{dx}f(x)\)</span>
+- 拉格朗日记号：<span class="arithmatex">\(f'(x)\)</span>
+- 牛顿记号（常用于物理）：<span class="arithmatex">\(\dot{y}\)</span></p>
+<blockquote>
+<p>在考纲 14.1 中，只要求对极限有直观理解，不要求从第一原理求导。但我们这里仍会展示几个基本推导，帮助你建立直觉。</p>
+</blockquote>
+<hr />
+<h3 id="214">2.1.4 用定义求导——基础推导<a class="headerlink" href="#214" title="Permanent link">&para;</a></h3>
+<p>让我们用极限定义推导几个基本函数的导数。</p>
+<h4 id="1fx-x2">推导 1：<span class="arithmatex">\(f(x) = x^2\)</span><a class="headerlink" href="#1fx-x2" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+\begin{aligned}
+f'(x) &amp;= \lim_{h \to 0} \frac{(x + h)^2 - x^2}{h} \\
+&amp;= \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h} \\
+&amp;= \lim_{h \to 0} \frac{2xh + h^2}{h} \\
+&amp;= \lim_{h \to 0} (2x + h) \\
+&amp;= 2x
+\end{aligned}
+\]</div>
+<p>因此 <span class="arithmatex">\(\dfrac{d}{dx}(x^2) = 2x\)</span>。</p>
+<p><strong>几何意义</strong>：函数 <span class="arithmatex">\(y = x^2\)</span> 在任意点 <span class="arithmatex">\(x\)</span> 处的切线斜率为 <span class="arithmatex">\(2x\)</span>。在 <span class="arithmatex">\(x = 1\)</span> 处斜率为 <span class="arithmatex">\(2\)</span>，在 <span class="arithmatex">\(x = 3\)</span> 处斜率为 <span class="arithmatex">\(6\)</span>。</p>
+<h4 id="2fx-x3">推导 2：<span class="arithmatex">\(f(x) = x^3\)</span><a class="headerlink" href="#2fx-x3" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+\begin{aligned}
+f'(x) &amp;= \lim_{h \to 0} \frac{(x + h)^3 - x^3}{h}
+\end{aligned}
+\]</div>
+<p>展开 <span class="arithmatex">\((x + h)^3 = x^3 + 3x^2h + 3xh^2 + h^3\)</span>：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+f'(x) &amp;= \lim_{h \to 0} \frac{x^3 + 3x^2h + 3xh^2 + h^3 - x^3}{h} \\
+&amp;= \lim_{h \to 0} \frac{3x^2h + 3xh^2 + h^3}{h} \\
+&amp;= \lim_{h \to 0} (3x^2 + 3xh + h^2) \\
+&amp;= 3x^2
+\end{aligned}
+\]</div>
+<p>因此 <span class="arithmatex">\(\dfrac{d}{dx}(x^3) = 3x^2\)</span>。</p>
+<h4 id="3fx-dfrac1xx-neq-0">推导 3：<span class="arithmatex">\(f(x) = \dfrac{1}{x}\)</span>（<span class="arithmatex">\(x \neq 0\)</span>）<a class="headerlink" href="#3fx-dfrac1xx-neq-0" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+\begin{aligned}
+f'(x) &amp;= \lim_{h \to 0} \frac{\frac{1}{x + h} - \frac{1}{x}}{h}
+\end{aligned}
+\]</div>
+<p>先通分分子：</p>
+<div class="arithmatex">\[
+\frac{1}{x + h} - \frac{1}{x} = \frac{x - (x + h)}{x(x + h)} = \frac{-h}{x(x + h)}
+\]</div>
+<p>所以：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+f'(x) &amp;= \lim_{h \to 0} \frac{-h}{x(x + h)} \cdot \frac{1}{h} \\
+&amp;= \lim_{h \to 0} \frac{-1}{x(x + h)} \\
+&amp;= -\frac{1}{x^2}
+\end{aligned}
+\]</div>
+<p>因此 <span class="arithmatex">\(\dfrac{d}{dx}\left(\dfrac{1}{x}\right) = -\dfrac{1}{x^2}\)</span>。</p>
+<hr />
+<h3 id="215">2.1.5 幂法则<a class="headerlink" href="#215" title="Permanent link">&para;</a></h3>
+<p>从上面的推导中，我们可以观察出一个模式：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(f(x)\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(f'(x)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(x^2\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(2x\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(x^3\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(3x^2\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(x^1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span>（即 <span class="arithmatex">\(1 \cdot x^0\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(\dfrac{1}{x} = x^{-1}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(-\dfrac{1}{x^2} = -x^{-2}\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>这个模式就是<strong>幂法则</strong>：对任意实数 <span class="arithmatex">\(n\)</span>，</p>
+<div class="arithmatex">\[
+\boxed{\frac{d}{dx}(x^n) = n x^{n-1}}
+\]</div>
+<blockquote>
+<p><strong>幂法则的完整推导</strong>（利用二项式定理，仅对正整数 <span class="arithmatex">\(n\)</span>）：</p>
+<p>考虑 <span class="arithmatex">\(f(x) = x^n\)</span>，其中 <span class="arithmatex">\(n\)</span> 为正整数。利用二项式定理展开 <span class="arithmatex">\((x + h)^n\)</span>：
+$$
+(x + h)^n = x^n + n x^{n-1}h + \binom{n}{2}x<sup>{n-2}h</sup>2 + \binom{n}{3}x<sup>{n-3}h</sup>3 + \dots + h^n
+$$
+因此：
+$$
+\begin{aligned}
+f'(x) &amp;= \lim_{h \to 0} \frac{x^n + n x^{n-1}h + \binom{n}{2}x<sup>{n-2}h</sup>2 + \dots + h^n - x^n}{h} \
+&amp;= \lim_{h \to 0} \left( n x^{n-1} + \binom{n}{2}x^{n-2}h + \binom{n}{3}x<sup>{n-3}h</sup>2 + \dots + h^{n-1} \right) \
+&amp;= n x^{n-1}
+\end{aligned}
+$$
+因为所有含 <span class="arithmatex">\(h\)</span> 的项在 <span class="arithmatex">\(h \to 0\)</span> 时都趋于 0。</p>
+</blockquote>
+<hr />
+<h3 id="216">2.1.6 变化率在向量中的应用：运动学<a class="headerlink" href="#216" title="Permanent link">&para;</a></h3>
+<p>现在回到向量的语境中。如果质点的位置向量 <span class="arithmatex">\(\mathbf{r}(t)\)</span> 随时间变化，那么它的速度向量和加速度向量就是位置向量对时间的变化率。</p>
+<p>设 <span class="arithmatex">\(\mathbf{r}(t) = x(t)\mathbf{i} + y(t)\mathbf{j}\)</span>，则：</p>
+<div class="arithmatex">\[
+\mathbf{v}(t) = \frac{d\mathbf{r}}{dt} = \frac{dx}{dt}\mathbf{i} + \frac{dy}{dt}\mathbf{j}
+\]</div>
+<div class="arithmatex">\[
+\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = \frac{d^2\mathbf{r}}{dt^2} = \frac{d^2x}{dt^2}\mathbf{i} + \frac{d^2y}{dt^2}\mathbf{j}
+\]</div>
+<p><strong>注视：i是x的意思，没有其他意思。j是y的意思，没有其他意思。不参加运算</strong></p>
+<p>也就是说，对向量函数求导，就是对它的各个分量分别求导。</p>
+<hr />
+<h3 id="217">2.1.7 从加速度到速度和位置（积分铺垫）<a class="headerlink" href="#217" title="Permanent link">&para;</a></h3>
+<p>在物理中，加速度 <span class="arithmatex">\(\mathbf{a}(t)\)</span> 是速度 <span class="arithmatex">\(\mathbf{v}(t)\)</span> 的变化率。如果我们知道加速度并想恢复出速度，需要做微分的逆运算——这称为<strong>积分</strong>（将在第 7 章详细学习）。</p>
+<p>基本关系是：</p>
+<ul>
+<li>速度 <span class="arithmatex">\(\mathbf{v}(t) = \int \mathbf{a}(t) \, dt + \mathbf{v}_0\)</span>（其中 <span class="arithmatex">\(\mathbf{v}_0\)</span> 是初始速度）</li>
+<li>位置 <span class="arithmatex">\(\mathbf{r}(t) = \int \mathbf{v}(t) \, dt + \mathbf{r}_0\)</span>（其中 <span class="arithmatex">\(\mathbf{r}_0\)</span> 是初始位置）</li>
+</ul>
+<p>或者用定积分的形式（更适合已知确定时间段的问题）：</p>
+<div class="arithmatex">\[
+\mathbf{v}(t) = \mathbf{v}_0 + \int_0^t \mathbf{a}(u) \, du,
+\quad
+\mathbf{r}(t) = \mathbf{r}_0 + \int_0^t \mathbf{v}(u) \, du
+\]</div>
+<p>这里先建立直观理解：<strong>微分</strong>是求变化率（位置 → 速度 → 加速度），<strong>积分</strong>是求累积量（加速度 → 速度 → 位置），两者互为逆运算。</p>
+<hr />
+<h3 id="24">📌 例题 2.4：变化率入门<a class="headerlink" href="#24" title="Permanent link">&para;</a></h3>
+<p><strong>例题 1</strong>（用极限定义求瞬时速度）</p>
+<p>一个质点的位移（单位：米）与时间（单位：秒）的关系为 <span class="arithmatex">\(s(t) = 3t^2 - 2t + 1\)</span>。</p>
+<p>（a）求从 <span class="arithmatex">\(t = 2\)</span> 到 <span class="arithmatex">\(t = 2 + h\)</span> 的平均速度。
+（b）利用极限求 <span class="arithmatex">\(t = 2\)</span> 时的瞬时速度。</p>
+<p><strong>思路分析</strong>：
+- 平均速度 = <span class="arithmatex">\(\dfrac{s(2+h) - s(2)}{h}\)</span>
+- 瞬时速度 = <span class="arithmatex">\(\displaystyle\lim_{h \to 0}\)</span> 平均速度</p>
+<p><strong>解</strong>：</p>
+<p>（a）</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\text{平均速度} &amp;= \frac{s(2 + h) - s(2)}{h} \\
+&amp;= \frac{[3(2+h)^2 - 2(2+h) + 1] - [3(4) - 4 + 1]}{h} \\
+&amp;= \frac{[3(4 + 4h + h^2) - 4 - 2h + 1] - [12 - 4 + 1]}{h} \\
+&amp;= \frac{[12 + 12h + 3h^2 - 4 - 2h + 1] - 9}{h} \\
+&amp;= \frac{[9 + 10h + 3h^2] - 9}{h} \\
+&amp;= \frac{10h + 3h^2}{h} = 10 + 3h
+\end{aligned}
+\]</div>
+<p>（b）瞬时速度是 <span class="arithmatex">\(h \to 0\)</span> 时平均速度的极限：</p>
+<div class="arithmatex">\[
+v(2) = \lim_{h \to 0} (10 + 3h) = 10\,\text{m/s}
+\]</div>
+<p>因此质点在 <span class="arithmatex">\(t = 2\)</span> 秒时的瞬时速度为 <span class="arithmatex">\(10\,\text{m/s}\)</span>。</p>
+<blockquote>
+<p><strong>验证</strong>：用幂法则直接求导：<span class="arithmatex">\(s'(t) = 6t - 2\)</span>，<span class="arithmatex">\(s'(2) = 12 - 2 = 10\)</span>，一致。✓</p>
+</blockquote>
+<hr />
+<p><strong>例题 2</strong>（用极限定义求一般导数 + 幂法则验证）</p>
+<p>用导数的极限定义求 <span class="arithmatex">\(f(x) = 4x - x^2\)</span> 的导数 <span class="arithmatex">\(f'(x)\)</span>。</p>
+<p><strong>解</strong>：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+f'(x) &amp;= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h} \\
+&amp;= \lim_{h \to 0} \frac{[4(x + h) - (x + h)^2] - [4x - x^2]}{h} \\
+&amp;= \lim_{h \to 0} \frac{4x + 4h - (x^2 + 2xh + h^2) - 4x + x^2}{h} \\
+&amp;= \lim_{h \to 0} \frac{4h - 2xh - h^2}{h} \\
+&amp;= \lim_{h \to 0} (4 - 2x - h) \\
+&amp;= 4 - 2x
+\end{aligned}
+\]</div>
+<p>因此 <span class="arithmatex">\(f'(x) = 4 - 2x\)</span>。</p>
+<p><strong>验证</strong>：使用幂法则对 <span class="arithmatex">\(f(x) = 4x - x^2\)</span> 逐项求导：
+- <span class="arithmatex">\(\dfrac{d}{dx}(4x) = 4 \cdot 1 \cdot x^{0} = 4\)</span>
+- <span class="arithmatex">\(\dfrac{d}{dx}(-x^2) = -2x^{1} = -2x\)</span>
+- 相加得 <span class="arithmatex">\(f'(x) = 4 - 2x\)</span>，与极限结果一致。✓</p>
+<hr />
+<h2 id="22">2.2 二维向量基础<a class="headerlink" href="#22" title="Permanent link">&para;</a></h2>
+<h3 id="221">2.2.1 什么是向量？<a class="headerlink" href="#221" title="Permanent link">&para;</a></h3>
+<p>向量（vector）是一个既有<strong>大小</strong>又有<strong>方向</strong>的量。与它相对的是标量（scalar），标量只有大小没有方向。例如：</p>
+<ul>
+<li><strong>向量</strong>：位移、速度、力</li>
+<li><strong>标量</strong>：距离、速率、质量、温度</li>
+</ul>
+<p>在二维平面中，向量有多种等价的表示方式。</p>
+<h4 id="1">表示法 1：列向量<a class="headerlink" href="#1" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[
+\mathbf{v} = \begin{pmatrix} x \\ y \end{pmatrix}
+\]</div>
+<p>其中 <span class="arithmatex">\(x\)</span> 是水平分量，<span class="arithmatex">\(y\)</span> 是垂直分量。这种表示法在解方程组时非常方便，因为我们可以直接对分量进行操作。</p>
+<h4 id="2mathbfi-mathbfj">表示法 2：<span class="arithmatex">\(\mathbf{i}\)</span>-<span class="arithmatex">\(\mathbf{j}\)</span> 形式<a class="headerlink" href="#2mathbfi-mathbfj" title="Permanent link">&para;</a></h4>
+<p>定义两个基本单位向量：</p>
+<div class="arithmatex">\[
+\mathbf{i} = \begin{pmatrix} 1 \\ 0 \end{pmatrix}, \quad \mathbf{j} = \begin{pmatrix} 0 \\ 1 \end{pmatrix}
+\]</div>
+<p><span class="arithmatex">\(\mathbf{i}\)</span> 指向正 <span class="arithmatex">\(x\)</span> 轴方向（向右），<span class="arithmatex">\(\mathbf{j}\)</span> 指向正 <span class="arithmatex">\(y\)</span> 轴方向（向上）。那么任意向量可以写为：</p>
+<div class="arithmatex">\[
+\mathbf{v} = x\mathbf{i} + y\mathbf{j}
+\]</div>
+<p><strong>两种表示法的等价性</strong>：</p>
+<div class="arithmatex">\[
+x\mathbf{i} + y\mathbf{j} = \begin{pmatrix} x \\ y \end{pmatrix}
+\]</div>
+<p>例如，向量 <span class="arithmatex">\(3\mathbf{i} - 2\mathbf{j}\)</span> 与列向量 <span class="arithmatex">\(\begin{pmatrix} 3 \\ -2 \end{pmatrix}\)</span> 是同一个向量。</p>
+<h4 id="3">表示法 3：有向线段<a class="headerlink" href="#3" title="Permanent link">&para;</a></h4>
+<p>从点 <span class="arithmatex">\(A\)</span> 到点 <span class="arithmatex">\(B\)</span> 的向量记作 <span class="arithmatex">\(\overrightarrow{AB}\)</span>。它等于终点位置减去起点位置：</p>
+<div class="arithmatex">\[
+\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A
+\]</div>
+<blockquote>
+<p><strong>为什么是"终点减起点"？</strong> 假设你想从家 <span class="arithmatex">\(A\)</span> 走到学校 <span class="arithmatex">\(B\)</span>。你的位移（从 <span class="arithmatex">\(A\)</span> 到 <span class="arithmatex">\(B\)</span>）就是你最终到达的位置（学校的位置）减去你出发时的位置（家的位置）。如果 <span class="arithmatex">\(A\)</span> 在 <span class="arithmatex">\((1,1)\)</span>，<span class="arithmatex">\(B\)</span> 在 <span class="arithmatex">\((4,5)\)</span>，那么你需要向右走 <span class="arithmatex">\(3\)</span> 个单位、向上走 <span class="arithmatex">\(4\)</span> 个单位，即 <span class="arithmatex">\(\overrightarrow{AB} = (3,4)\)</span>。</p>
+</blockquote>
+<hr />
+<h3 id="222">2.2.2 位置向量<a class="headerlink" href="#222" title="Permanent link">&para;</a></h3>
+<p>设 <span class="arithmatex">\(O\)</span> 为原点。任意点 <span class="arithmatex">\(P(x, y)\)</span> 的<strong>位置向量</strong>是：</p>
+<div class="arithmatex">\[
+\mathbf{r} = \overrightarrow{OP} = \begin{pmatrix} x \\ y \end{pmatrix} = x\mathbf{i} + y\mathbf{j}
+\]</div>
+<p>位置向量告诉我们点 <span class="arithmatex">\(P\)</span> 相对于原点的位置。这里的关键区分是：<strong>点</strong> <span class="arithmatex">\(P(x, y)\)</span> 是空间中的一个位置，而<strong>向量</strong> <span class="arithmatex">\(\mathbf{r} = (x, y)\)</span> 是从原点到该点的有向线段——它包含了位移的信息。</p>
+<blockquote>
+<p><strong>点和向量的区别</strong>：点是一个位置，像地图上的一个坐标。向量是一个位移，像"向右 3 步，向上 2 步"。同一个向量可以从任何起点出发，但同一个点只能在一个位置。</p>
+</blockquote>
+<hr />
+<h3 id="223">2.2.3 向量的模（大小）<a class="headerlink" href="#223" title="Permanent link">&para;</a></h3>
+<p>向量 <span class="arithmatex">\(\mathbf{v} = x\mathbf{i} + y\mathbf{j}\)</span> 的模（或称长度、大小）由勾股定理给出：</p>
+<div class="arithmatex">\[
+|\mathbf{v}| = \sqrt{x^2 + y^2}
+\]</div>
+<p>模一定是非负实数。当且仅当向量是零向量 <span class="arithmatex">\(\mathbf{0} = \begin{pmatrix} 0 \\ 0 \end{pmatrix}\)</span> 时，模为零。</p>
+<blockquote>
+<p><strong>为什么是 <span class="arithmatex">\(\sqrt{x^2 + y^2}\)</span>？</strong> 把向量 <span class="arithmatex">\(\mathbf{v}\)</span> 看作从原点 <span class="arithmatex">\((0,0)\)</span> 到点 <span class="arithmatex">\((x,y)\)</span> 的线段。这条线段就是直角三角形的斜边，两条直角边的长度分别是 <span class="arithmatex">\(|x|\)</span> 和 <span class="arithmatex">\(|y|\)</span>。根据勾股定理，斜边长度 <span class="arithmatex">\(= \sqrt{x^2 + y^2}\)</span>。</p>
+</blockquote>
+<hr />
+<h3 id="224">2.2.4 单位向量<a class="headerlink" href="#224" title="Permanent link">&para;</a></h3>
+<p><strong>单位向量</strong>是模为 1 的向量。给定任意非零向量 <span class="arithmatex">\(\mathbf{v}\)</span>，我们可以构造与它同方向的单位向量 <span class="arithmatex">\(\hat{\mathbf{v}}\)</span>：</p>
+<div class="arithmatex">\[
+\hat{\mathbf{v}} = \frac{\mathbf{v}}{|\mathbf{v}|}
+\]</div>
+<p>也就是说，将原向量除以它自己的模。这个操作称为<strong>归一化</strong>。</p>
+<blockquote>
+<p><strong>为什么这样定义？</strong> 设 <span class="arithmatex">\(\hat{\mathbf{v}} = \frac{\mathbf{v}}{|\mathbf{v}|}\)</span>，那么
+$$
+|\hat{\mathbf{v}}| = \frac{|\mathbf{v}|}{|\mathbf{v}|} = 1
+$$
+方向保持不变，因为我们在用正标量除以原向量。</p>
+<p><strong>类比</strong>：就像把一段绳子切成单位长度的小段。如果你有一根 5 米长的绳子，把它切成 5 等份，每份就是 1 米，方向与原来相同。</p>
+</blockquote>
+<hr />
+<h3 id="225">2.2.5 向量的加法与减法<a class="headerlink" href="#225" title="Permanent link">&para;</a></h3>
+<p>两个向量的加法，就是将它们的对应分量分别相加：</p>
+<div class="arithmatex">\[
+\begin{pmatrix} x_1 \\ y_1 \end{pmatrix} + \begin{pmatrix} x_2 \\ y_2 \end{pmatrix} = \begin{pmatrix} x_1 + x_2 \\ y_1 + y_2 \end{pmatrix}
+\]</div>
+<p>减法同理：</p>
+<div class="arithmatex">\[
+\begin{pmatrix} x_1 \\ y_1 \end{pmatrix} - \begin{pmatrix} x_2 \\ y_2 \end{pmatrix} = \begin{pmatrix} x_1 - x_2 \\ y_1 - y_2 \end{pmatrix}
+\]</div>
+<p><strong>几何意义——为什么是"平行四边形法则"？</strong></p>
+<p>想象两个人同时拉一个箱子。一个人用力 <span class="arithmatex">\(\mathbf{a}\)</span> 向东拉，另一个人用力 <span class="arithmatex">\(\mathbf{b}\)</span> 向北拉。箱子实际受到的合力就是 <span class="arithmatex">\(\mathbf{a} + \mathbf{b}\)</span>。</p>
+<ul>
+<li><strong>加法——平行四边形法则</strong>：以两个向量为邻边作平行四边形，从起点出发的对角线即为它们的和。</li>
+<li><strong>减法——三角形法则</strong>：<span class="arithmatex">\(\mathbf{a} - \mathbf{b}\)</span> 等于从 <span class="arithmatex">\(\mathbf{b}\)</span> 的终点指向 <span class="arithmatex">\(\mathbf{a}\)</span> 的终点的向量。</li>
+</ul>
+<p><strong>实用的口诀</strong>：
+- 对于位移向量：<strong>终点减起点</strong>。从 <span class="arithmatex">\(A\)</span> 到 <span class="arithmatex">\(B\)</span> 的向量 <span class="arithmatex">\(\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A\)</span>
+- 对于加法：首尾相连，从第一个起点指向最后一个终点</p>
+<hr />
+<h3 id="226">2.2.6 向量的数乘<a class="headerlink" href="#226" title="Permanent link">&para;</a></h3>
+<p>向量乘以一个标量 <span class="arithmatex">\(c\)</span>，相当于每个分量都乘以 <span class="arithmatex">\(c\)</span>：</p>
+<div class="arithmatex">\[
+c \begin{pmatrix} x \\ y \end{pmatrix} = \begin{pmatrix} cx \\ cy \end{pmatrix}
+\]</div>
+<p>数乘的几何效果：
+- 如果 <span class="arithmatex">\(c &gt; 0\)</span>，向量沿原方向拉伸（<span class="arithmatex">\(c &gt; 1\)</span>）或压缩（<span class="arithmatex">\(0 &lt; c &lt; 1\)</span>）
+- 如果 <span class="arithmatex">\(c &lt; 0\)</span>，向量反向</p>
+<p>数乘后的模：</p>
+<div class="arithmatex">\[
+|c\mathbf{v}| = |c| \cdot |\mathbf{v}|
+\]</div>
+<blockquote>
+<p><strong>为什么模会乘以 <span class="arithmatex">\(|c|\)</span> 而不是 <span class="arithmatex">\(c\)</span>？</strong> 因为如果 <span class="arithmatex">\(c = -2\)</span>，向量的长度变为原来的 2 倍，方向反转。长度是正数，所以取 <span class="arithmatex">\(|c| = 2\)</span>。</p>
+</blockquote>
+<hr />
+<h3 id="227">2.2.7 向量相等<a class="headerlink" href="#227" title="Permanent link">&para;</a></h3>
+<p>两个向量相等当且仅当它们的对应分量分别相等。即：</p>
+<div class="arithmatex">\[
+\begin{pmatrix} x_1 \\ y_1 \end{pmatrix} = \begin{pmatrix} x_2 \\ y_2 \end{pmatrix} \iff x_1 = x_2 \quad \text{且} \quad y_1 = y_2
+\]</div>
+<p>这称为<strong>向量相等原理</strong>（equating like vectors）——它是解向量方程的核心工具。</p>
+<blockquote>
+<p><strong>为什么这个原理如此有用？</strong> 一个向量方程实际上包含了两个独立的标量方程（一个对应 <span class="arithmatex">\(x\)</span> 分量，一个对应 <span class="arithmatex">\(y\)</span> 分量）。这让我们能从两个方向分别求解未知数。</p>
+</blockquote>
+<hr />
+<h3 id="228">2.2.8 垂直向量（正交向量）<a class="headerlink" href="#228" title="Permanent link">&para;</a></h3>
+<h4 id="_5">什么是垂直？<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p>两个非零向量 <span class="arithmatex">\(\mathbf{u}\)</span> 和 <span class="arithmatex">\(\mathbf{v}\)</span> 垂直（或称正交）当且仅当它们之间的夹角是 <span class="arithmatex">\(90^\circ\)</span>。</p>
+<h4 id="_6">如何判断垂直？——点积<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<p>要判断两个向量是否垂直，我们需要一个既能用坐标计算、又能反映角度关系的运算——这就是<strong>点积</strong>（也称为内积或标量积）。</p>
+<h5 id="_7">点积的定义<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h5>
+<p>两个向量的<strong>点积（内积，dot product）</strong> 定义为对应分量乘积之和：</p>
+<div class="arithmatex">\[
+\boxed{\mathbf{u} \cdot \mathbf{v} = u_x v_x + u_y v_y}
+\]</div>
+<blockquote>
+<p><strong>直观理解</strong>：点积衡量的是两个向量在"方向上的对齐程度"。
+- 如果两个向量指向大致相同的方向（夹角 <span class="arithmatex">\(&lt; 90^\circ\)</span>），点积为正
+- 如果两个向量<strong>垂直</strong>（夹角 <span class="arithmatex">\(= 90^\circ\)</span>），点积为零
+- 如果两个向量指向大致相反的方向（夹角 <span class="arithmatex">\(&gt; 90^\circ\)</span>），点积为负</p>
+</blockquote>
+<p>点积的结果是一个<strong>标量</strong>（不是向量），因此也称为"标量积"（scalar product）。这与向量的加减法不同——向量的加减法结果仍然是向量，而点积将两个向量"压缩"成了一个数值。</p>
+<blockquote>
+<p><strong>为什么叫"点积"？</strong> 因为书写时在向量之间用一个点 <span class="arithmatex">\(\cdot\)</span> 表示乘法，区别于叉积 <span class="arithmatex">\(\times\)</span>。</p>
+</blockquote>
+<h5 id="_8">垂直的判定条件<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h5>
+<p>利用点积，垂直的判定变得极其简洁：</p>
+<div class="arithmatex">\[
+\boxed{\mathbf{u} \perp \mathbf{v} \iff \mathbf{u} \cdot \mathbf{v} = 0}
+\]</div>
+<blockquote>
+<p><strong>记忆口诀</strong>："点积为零，垂直成立"。</p>
+<p>这个条件之所以成立，是因为当夹角为 <span class="arithmatex">\(90^\circ\)</span> 时，<span class="arithmatex">\(\cos 90^\circ = 0\)</span>，而点积的几何定义恰好包含 <span class="arithmatex">\(\cos\theta\)</span> 因子。下面我们来详细推导这个关系。</p>
+<p><strong>为什么点积为零代表垂直？</strong></p>
+<p>从几何角度理解，点积还有另一个等价的定义：
+$$
+\mathbf{u} \cdot \mathbf{v} = |\mathbf{u}| |\mathbf{v}| \cos\theta
+$$
+其中 <span class="arithmatex">\(\theta\)</span> 是两个向量之间的夹角。</p>
+<p>推导这个等价关系：利用余弦定理。设 <span class="arithmatex">\(\mathbf{u}\)</span> 和 <span class="arithmatex">\(\mathbf{v}\)</span> 的夹角为 <span class="arithmatex">\(\theta\)</span>，则向量 <span class="arithmatex">\(\mathbf{u} - \mathbf{v}\)</span> 的模满足：
+$$
+|\mathbf{u} - \mathbf{v}|^2 = |\mathbf{u}|^2 + |\mathbf{v}|^2 - 2|\mathbf{u}||\mathbf{v}|\cos\theta
+$$
+同时展开左边：
+$$
+|\mathbf{u} - \mathbf{v}|^2 = (u_x - v_x)^2 + (u_y - v_y)^2 = (u_x^2 + u_y^2) + (v_x^2 + v_y^2) - 2(u_x v_x + u_y v_y)
+$$
+比较两式，得：
+$$
+|\mathbf{u}|^2 + |\mathbf{v}|^2 - 2|\mathbf{u}||\mathbf{v}|\cos\theta = |\mathbf{u}|^2 + |\mathbf{v}|^2 - 2(u_x v_x + u_y v_y)
+$$
+因此 <span class="arithmatex">\(u_x v_x + u_y v_y = |\mathbf{u}||\mathbf{v}|\cos\theta\)</span>。</p>
+<p>当 <span class="arithmatex">\(\theta = 90^\circ\)</span> 时，<span class="arithmatex">\(\cos 90^\circ = 0\)</span>，所以点积为零。</p>
+</blockquote>
+<hr />
+<h4 id="_9">点积的基本性质<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<p>点积运算满足以下重要性质（这些性质在解题中非常有用）：</p>
+<p><strong>性质 1：交换律（Commutative）</strong></p>
+<div class="arithmatex">\[
+\mathbf{u} \cdot \mathbf{v} = \mathbf{v} \cdot \mathbf{u}
+\]</div>
+<p>因为 <span class="arithmatex">\(u_x v_x + u_y v_y = v_x u_x + v_y u_y\)</span>，实数乘法本身满足交换律。</p>
+<p><strong>性质 2：分配律（Distributive）</strong></p>
+<div class="arithmatex">\[
+\mathbf{u} \cdot (\mathbf{v} + \mathbf{w}) = \mathbf{u} \cdot \mathbf{v} + \mathbf{u} \cdot \mathbf{w}
+\]</div>
+<p><strong>性质 3：与数乘的结合律</strong></p>
+<div class="arithmatex">\[
+(c\mathbf{u}) \cdot \mathbf{v} = c(\mathbf{u} \cdot \mathbf{v}) = \mathbf{u} \cdot (c\mathbf{v})
+\]</div>
+<p><strong>性质 4：向量与自身的点积</strong></p>
+<div class="arithmatex">\[
+\mathbf{v} \cdot \mathbf{v} = v_x^2 + v_y^2 = |\mathbf{v}|^2
+\]</div>
+<blockquote>
+<p><strong>为什么这个性质特别有用？</strong> 它建立了点积与向量模长之间的桥梁。当我们想求 <span class="arithmatex">\(|\mathbf{a} + \mathbf{b}|\)</span> 时，可以先算 <span class="arithmatex">\((\mathbf{a} + \mathbf{b}) \cdot (\mathbf{a} + \mathbf{b})\)</span>：
+$$
+|\mathbf{a} + \mathbf{b}|^2 = (\mathbf{a} + \mathbf{b}) \cdot (\mathbf{a} + \mathbf{b}) = \mathbf{a} \cdot \mathbf{a} + 2\mathbf{a} \cdot \mathbf{b} + \mathbf{b} \cdot \mathbf{b} = |\mathbf{a}|^2 + 2\mathbf{a} \cdot \mathbf{b} + |\mathbf{b}|^2
+$$
+这在物理中就是<strong>余弦定理的向量形式</strong>。</p>
+</blockquote>
+<p><strong>性质 5：零向量点积——最重要的逻辑基石</strong></p>
+<p>这个性质看起来"太显然了"，以至于很多学生觉得它不值得讲。但恰恰相反，<strong>性质5是整个点积体系中最重要的"逻辑基石"</strong>，它和性质4（自己点自己）合在一起，定义了什么叫做"长度"和"零"。下面从四个层次把它彻底讲透。</p>
+<h5 id="_10">第一层：代数硬算（最直接）<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h5>
+<p>设零向量为 <span class="arithmatex">\(\mathbf{0} = (0, 0)\)</span>，任意向量 <span class="arithmatex">\(\mathbf{v} = (v_x, v_y)\)</span>，直接代入坐标点积公式：</p>
+<div class="arithmatex">\[
+\mathbf{0} \cdot \mathbf{v} = 0 \times v_x + 0 \times v_y = 0 + 0 = 0
+\]</div>
+<p>无论 <span class="arithmatex">\(v_x\)</span> 和 <span class="arithmatex">\(v_y\)</span> 是多大、多小的数，乘以 0 统统归零。<strong>这就是"零向量"在代数上的绝对清零能力。</strong></p>
+<h5 id="_11">第二层：几何与物理直觉（看本质）<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h5>
+<p>套用点积的几何公式：</p>
+<div class="arithmatex">\[
+\mathbf{0} \cdot \mathbf{v} = |\mathbf{0}| \cdot |\mathbf{v}| \cdot \cos\theta
+\]</div>
+<p>因为零向量的长度 <span class="arithmatex">\(|\mathbf{0}| = 0\)</span>，那么：</p>
+<div class="arithmatex">\[
+0 \cdot |\mathbf{v}| \cdot \cos\theta = 0
+\]</div>
+<blockquote>
+<p><strong>物理类比</strong>：想象你用尽全力推一个箱子（力向量是 <span class="arithmatex">\(\mathbf{v}\)</span>），但箱子的<strong>位移为零</strong>（位移向量是 <span class="arithmatex">\(\mathbf{0}\)</span>）。无论你推力多大，做功（功 = 力 <span class="arithmatex">\(\cdot\)</span> 位移）永远是 0。<strong>"长度为零"意味着"根本没有发生作用"，所以点积必然为零。</strong></p>
+</blockquote>
+<h5 id="_12">第三层：⚠️ 最容易踩的坑（逻辑澄清）<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h5>
+<p>这是最关键的认知分水岭。<strong>请注意区分两个完全不同的"0"：</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">情况</th>
+<th style="text-align: left;">表达式</th>
+<th style="text-align: left;">含义</th>
+<th style="text-align: left;">几何角度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>性质5</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{0} \cdot \mathbf{v} = 0\)</span></td>
+<td style="text-align: left;">因为<strong>零向量本身长度为0</strong>，导致乘积为0</td>
+<td style="text-align: left;">没有夹角可言（零向量没有方向）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>垂直判定</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{u} \cdot \mathbf{v} = 0\)</span>（<span class="arithmatex">\(\mathbf{u}, \mathbf{v}\)</span> 均非零）</td>
+<td style="text-align: left;">因为<strong>夹角为90°</strong>，<span class="arithmatex">\(\cos 90^\circ = 0\)</span>，导致乘积为0</td>
+<td style="text-align: left;">两个箭头在空间中形成直角</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>绝不能说"零向量与任何向量垂直"是因为夹角是90°</strong>——零向量连方向都没有，哪来的90°？
+严谨的数学说法是：<strong>我们"约定"零向量与任何向量都正交（代数方便），但几何上它不指向任何角度。</strong></p>
+<p>性质5的成立，靠的是"长度为0"，而不是"角度为90°"。这两者虽然在代数结果上都写成0，但<strong>背后的物理原因截然不同</strong>。</p>
+</blockquote>
+<h5 id="5-4">第四层：性质5 + 性质4 = 定义了"正定性"（数学大厦的基石）<a class="headerlink" href="#5-4" title="Permanent link">&para;</a></h5>
+<p>在高等数学（泛函分析、线性代数）中，点积（内积）必须满足一条铁律——<strong>正定性（Positive-definiteness）</strong>，即：</p>
+<ol>
+<li><span class="arithmatex">\(\mathbf{v} \cdot \mathbf{v} \ge 0\)</span>（永远非负，来自性质4）</li>
+<li>且 <span class="arithmatex">\(\mathbf{v} \cdot \mathbf{v} = 0\)</span> <strong>当且仅当</strong> <span class="arithmatex">\(\mathbf{v} = \mathbf{0}\)</span></li>
+</ol>
+<p>你发现了吗？<strong>性质5正是为了配合性质4，来反向锁定"零向量"的。</strong>
+如果没有性质5，那么当我们算出点积为0时，就搞不清到底是因为"向量长度为0"，还是因为"夹角为90°"。有了性质5，我们就能在代数世界里准确地区分出"零元素"。</p>
+<blockquote>
+<p><strong>生动的板书总结</strong>：</p>
+<p><strong>性质5：零向量是点积运算中的"吸收元"。</strong>
+- 任何向量跟它相乘，结果必为 0。
+- 原因：<strong>长度为 0</strong>，而非角度为 90°。
+- 功能：与其他性质共同保证，我们可以通过 <span class="arithmatex">\(\sqrt{\mathbf{v} \cdot \mathbf{v}}\)</span> 唯一地确定向量的长度，并且只有当 <span class="arithmatex">\(\mathbf{v} = \mathbf{0}\)</span> 时长度才为 0。</p>
+</blockquote>
+<hr />
+<h3 id="_13">利用点积求两向量夹角<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<p>将点积的代数定义和几何定义结合起来，我们可以求出两个向量之间的夹角 <span class="arithmatex">\(\theta\)</span>（<span class="arithmatex">\(0^\circ \leq \theta \leq 180^\circ\)</span>）：</p>
+<div class="arithmatex">\[
+\boxed{\cos\theta = \frac{\mathbf{u} \cdot \mathbf{v}}{|\mathbf{u}| |\mathbf{v}|}}
+\]</div>
+<p><strong>推导</strong>：由 <span class="arithmatex">\(\mathbf{u} \cdot \mathbf{v} = |\mathbf{u}||\mathbf{v}|\cos\theta\)</span>，两边同除以 <span class="arithmatex">\(|\mathbf{u}||\mathbf{v}|\)</span> 即得。</p>
+<p><strong>特殊角度</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(\theta\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(\cos\theta\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(\mathbf{u} \cdot \mathbf{v}\)</span></th>
+<th style="text-align: center;">关系</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(0^\circ\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(= \|\mathbf{u}\| \cdot \|\mathbf{v}\|\)</span></td>
+<td style="text-align: center;">同向平行</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(90^\circ\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(= 0\)</span></td>
+<td style="text-align: center;"><strong>垂直（正交）</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(180^\circ\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(-1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(= -\|\mathbf{u}\| \cdot \|\mathbf{v}\|\)</span></td>
+<td style="text-align: center;">反向平行</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>记忆方法</strong>：
+- 点积为正 <span class="arithmatex">\(\implies\)</span> 夹角小于 <span class="arithmatex">\(90^\circ\)</span>（两向量方向大致相同）
+- 点积为零 <span class="arithmatex">\(\implies\)</span> 夹角等于 <span class="arithmatex">\(90^\circ\)</span>（两向量垂直）
+- 点积为负 <span class="arithmatex">\(\implies\)</span> 夹角大于 <span class="arithmatex">\(90^\circ\)</span>（两向量方向大致相反）</p>
+</blockquote>
+<hr />
+<h4 id="_14">水平向量与垂直向量<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h4>
+<p>一个特殊的例子：<strong>水平向量</strong>的 <span class="arithmatex">\(y\)</span> 分量为零，即 <span class="arithmatex">\(\mathbf{h} = (h_x, 0)\)</span>（<span class="arithmatex">\(h_x \neq 0\)</span>），它的方向平行于 <span class="arithmatex">\(x\)</span> 轴。<strong>垂直向量</strong>的 <span class="arithmatex">\(x\)</span> 分量为零，即 <span class="arithmatex">\(\mathbf{v} = (0, v_y)\)</span>（<span class="arithmatex">\(v_y \neq 0\)</span>），它的方向平行于 <span class="arithmatex">\(y\)</span> 轴。</p>
+<p>水平向量总是垂直于垂直向量。用点积验证：</p>
+<div class="arithmatex">\[
+(h_x, 0) \cdot (0, v_y) = h_x \cdot 0 + 0 \cdot v_y = 0
+\]</div>
+<blockquote>
+<p><strong>直观理解</strong>：水平向量沿着 <span class="arithmatex">\(x\)</span> 轴方向，垂直向量沿着 <span class="arithmatex">\(y\)</span> 轴方向。在平面直角坐标系中，<span class="arithmatex">\(x\)</span> 轴和 <span class="arithmatex">\(y\)</span> 轴本身就互相垂直，因此与它们平行的向量自然也互相垂直。这就像棋盘上的横线和竖线——每条横线都与每条竖线垂直相交。</p>
+<p><strong>⚠️ 注意事项</strong>：这里要求 <span class="arithmatex">\(h_x \neq 0\)</span> 且 <span class="arithmatex">\(v_y \neq 0\)</span>。如果 <span class="arithmatex">\(h_x = 0\)</span>，则 <span class="arithmatex">\(\mathbf{h} = (0, 0)\)</span> 退化为零向量；如果 <span class="arithmatex">\(v_y = 0\)</span>，则 <span class="arithmatex">\(\mathbf{v} = (0, 0)\)</span> 也退化为零向量。零向量没有固定方向，不属于"水平向量"或"垂直向量"的讨论范畴。</p>
+<p><strong>💡 几何意义</strong>：从斜率的角度看，水平向量的斜率 <span class="arithmatex">\(k_h = \dfrac{0}{h_x} = 0\)</span>，而垂直向量的斜率 <span class="arithmatex">\(k_v = \dfrac{v_y}{0}\)</span> 是未定义的（无穷大）。零乘以无穷大并不等于 <span class="arithmatex">\(-1\)</span>，因此斜率公式 <span class="arithmatex">\(k_1 \cdot k_2 = -1\)</span> 在这里不适用——这正是我们单独讨论"水平 <span class="arithmatex">\(\perp\)</span> 垂直"这一特殊情况的原因。</p>
+</blockquote>
+<hr />
+<h4 id="_15">通过斜率判断垂直<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h4>
+<p>如果两个非零向量都不与坐标轴平行（即 <span class="arithmatex">\(x\)</span> 和 <span class="arithmatex">\(y\)</span> 分量均不为零），我们也可以用斜率来判断垂直。设向量 <span class="arithmatex">\(\mathbf{u}\)</span> 的斜率为 <span class="arithmatex">\(k_1 = \frac{u_y}{u_x}\)</span>，向量 <span class="arithmatex">\(\mathbf{v}\)</span> 的斜率为 <span class="arithmatex">\(k_2 = \frac{v_y}{v_x}\)</span>，那么：</p>
+<div class="arithmatex">\[
+\boxed{\mathbf{u} \perp \mathbf{v} \iff k_1 \cdot k_2 = -1}
+\]</div>
+<blockquote>
+<p><strong>推导</strong>：由点积为零的条件：
+$$
+u_x v_x + u_y v_y = 0 \implies u_x v_x = -u_y v_y \implies \frac{u_y}{u_x} \cdot \frac{v_y}{v_x} = -1
+$$
+即 <span class="arithmatex">\(k_1 \cdot k_2 = -1\)</span>。</p>
+<p><strong>🔗 与坐标几何的联系</strong>：如果你曾在坐标几何中学过"两条直线垂直当且仅当它们的斜率乘积为 <span class="arithmatex">\(-1\)</span>"，你会发现这里完全一致。事实上，向量 <span class="arithmatex">\(\mathbf{u}\)</span> 所在直线的斜率正是 <span class="arithmatex">\(\dfrac{u_y}{u_x}\)</span>，向量 <span class="arithmatex">\(\mathbf{v}\)</span> 所在直线的斜率正是 <span class="arithmatex">\(\dfrac{v_y}{v_x}\)</span>。因此，<strong>向量垂直的斜率条件与直线垂直的斜率条件本质上是同一个结论</strong>。</p>
+<p><strong>📌 应用示例</strong>：已知 <span class="arithmatex">\(\mathbf{u} = (2, 4)\)</span>，<span class="arithmatex">\(\mathbf{v} = (6, -3)\)</span>。
+- <span class="arithmatex">\(k_1 = \dfrac{4}{2} = 2\)</span>，<span class="arithmatex">\(k_2 = \dfrac{-3}{6} = -\dfrac{1}{2}\)</span>
+- <span class="arithmatex">\(k_1 \cdot k_2 = 2 \times \left(-\dfrac{1}{2}\right) = -1\)</span> ✓
+- 因此 <span class="arithmatex">\(\mathbf{u} \perp \mathbf{v}\)</span>。用点积验证：<span class="arithmatex">\((2)(6) + (4)(-3) = 12 - 12 = 0\)</span>，一致。</p>
+<p><strong>⚠️ 该方法的局限性</strong>：如果其中一个向量是水平向量（<span class="arithmatex">\(k = 0\)</span>）或垂直向量（<span class="arithmatex">\(k\)</span> 未定义），斜率乘积法不适用。例如 <span class="arithmatex">\(\mathbf{u} = (3, 0)\)</span>（水平）和 <span class="arithmatex">\(\mathbf{v} = (0, 5)\)</span>（垂直）显然是垂直的，但 <span class="arithmatex">\(k_1 = 0\)</span>，<span class="arithmatex">\(k_2\)</span> 未定义，无法计算乘积。此时应退回点积法或直接使用"水平 <span class="arithmatex">\(\perp\)</span> 垂直"的结论。</p>
+<p><strong>关于零向量的说明</strong>：零向量 <span class="arithmatex">\(\mathbf{0} = (0, 0)\)</span> 没有固定方向。按照惯例，在技术讨论中它被视为与所有向量既平行又垂直，但在实际解题中我们通常排除它。</p>
+</blockquote>
+<hr />
+<h4 id="_16">垂直向量判定方法速查<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">方法</th>
+<th style="text-align: left;">条件</th>
+<th style="text-align: left;">适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>点积为零</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{u} \cdot \mathbf{v} = 0\)</span></td>
+<td style="text-align: left;">通用（任何向量）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>斜率乘积为 <span class="arithmatex">\(-1\)</span></strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(k_1 \cdot k_2 = -1\)</span></td>
+<td style="text-align: left;">两向量均不与坐标轴平行</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>水平 <span class="arithmatex">\(\perp\)</span> 垂直</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\((h_x, 0) \cdot (0, v_y) = 0\)</span></td>
+<td style="text-align: left;">特殊情况</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="21_1">📌 例题 2.1：向量基础运算<a class="headerlink" href="#21_1" title="Permanent link">&para;</a></h3>
+<p><strong>例题 1</strong>（向量表示、模与单位向量）</p>
+<p>已知两点 <span class="arithmatex">\(A(1, 2)\)</span> 和 <span class="arithmatex">\(B(5, -1)\)</span>。</p>
+<p>（a）求向量 <span class="arithmatex">\(\overrightarrow{AB}\)</span> 用 <span class="arithmatex">\(\mathbf{i}\)</span>-<span class="arithmatex">\(\mathbf{j}\)</span> 形式表示。
+（b）求 <span class="arithmatex">\(|\overrightarrow{AB}|\)</span>。
+（c）求与 <span class="arithmatex">\(\overrightarrow{AB}\)</span> 同方向的单位向量。</p>
+<p><strong>思路分析</strong>：
+- 从 <span class="arithmatex">\(A\)</span> 到 <span class="arithmatex">\(B\)</span> 的向量 = <span class="arithmatex">\(B\)</span> 的位置减 <span class="arithmatex">\(A\)</span> 的位置
+- 模 = 各分量平方和的平方根
+- 单位向量 = 原向量除以模</p>
+<p><strong>解</strong>：</p>
+<p>（a）</p>
+<div class="arithmatex">\[
+\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A = (5\mathbf{i} - \mathbf{j}) - (\mathbf{i} + 2\mathbf{j}) = (5-1)\mathbf{i} + (-1-2)\mathbf{j} = 4\mathbf{i} - 3\mathbf{j}
+\]</div>
+<p>（b）</p>
+<div class="arithmatex">\[
+|\overrightarrow{AB}| = \sqrt{4^2 + (-3)^2} = \sqrt{16 + 9} = \sqrt{25} = 5
+\]</div>
+<p>（c）同方向的单位向量为：</p>
+<div class="arithmatex">\[
+\hat{\mathbf{v}} = \frac{4\mathbf{i} - 3\mathbf{j}}{5} = \frac{4}{5}\mathbf{i} - \frac{3}{5}\mathbf{j}
+\]</div>
+<p>验证模长：<span class="arithmatex">\(\sqrt{(4/5)^2 + (-3/5)^2} = \sqrt{16/25 + 9/25} = \sqrt{25/25} = 1\)</span>。✓</p>
+<hr />
+<p><strong>例题 2</strong>（向量加法、数乘与向量相等——解方程组）</p>
+<p>已知 <span class="arithmatex">\(\mathbf{a} = 2\mathbf{i} + 3\mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{b} = -\mathbf{i} + 2\mathbf{j}\)</span>。求：</p>
+<p>（a）<span class="arithmatex">\(\mathbf{a} + \mathbf{b}\)</span>
+（b）<span class="arithmatex">\(2\mathbf{a} - 3\mathbf{b}\)</span>
+（c）实数 <span class="arithmatex">\(p\)</span> 和 <span class="arithmatex">\(q\)</span> 使得 <span class="arithmatex">\(p\mathbf{a} + q\mathbf{b} = 7\mathbf{i} + 8\mathbf{j}\)</span></p>
+<p><strong>思路分析</strong>：
+- 加法和数乘都是对分量分别操作
+- 对于第（c）问，先展开左侧，利用向量相等原理（<span class="arithmatex">\(\mathbf{i}\)</span> 和 <span class="arithmatex">\(\mathbf{j}\)</span> 的系数分别相等）建立方程组</p>
+<p><strong>解</strong>：</p>
+<p>（a）</p>
+<div class="arithmatex">\[
+\mathbf{a} + \mathbf{b} = (2\mathbf{i} + 3\mathbf{j}) + (-\mathbf{i} + 2\mathbf{j}) = (2-1)\mathbf{i} + (3+2)\mathbf{j} = \mathbf{i} + 5\mathbf{j}
+\]</div>
+<p>（b）</p>
+<div class="arithmatex">\[
+2\mathbf{a} - 3\mathbf{b} = 2(2\mathbf{i} + 3\mathbf{j}) - 3(-\mathbf{i} + 2\mathbf{j}) = (4\mathbf{i} + 6\mathbf{j}) + (3\mathbf{i} - 6\mathbf{j}) = 7\mathbf{i} + 0\mathbf{j} = 7\mathbf{i}
+\]</div>
+<p>（c）设 <span class="arithmatex">\(p\mathbf{a} + q\mathbf{b} = 7\mathbf{i} + 8\mathbf{j}\)</span>，即：</p>
+<div class="arithmatex">\[
+p(2\mathbf{i} + 3\mathbf{j}) + q(-\mathbf{i} + 2\mathbf{j}) = 7\mathbf{i} + 8\mathbf{j}
+\]</div>
+<p>先展开括号：</p>
+<div class="arithmatex">\[
+2p\mathbf{i} + 3p\mathbf{j} - q\mathbf{i} + 2q\mathbf{j} = 7\mathbf{i} + 8\mathbf{j}
+\]</div>
+<p>合并 <span class="arithmatex">\(\mathbf{i}\)</span> 和 <span class="arithmatex">\(\mathbf{j}\)</span> 的系数：</p>
+<div class="arithmatex">\[
+(2p - q)\mathbf{i} + (3p + 2q)\mathbf{j} = 7\mathbf{i} + 8\mathbf{j}
+\]</div>
+<p>利用向量相等原理，<span class="arithmatex">\(\mathbf{i}\)</span> 的系数必须相等，<span class="arithmatex">\(\mathbf{j}\)</span> 的系数也必须相等：</p>
+<div class="arithmatex">\[
+\begin{cases}
+2p - q = 7 \quad \text{（① $\mathbf{i}$ 系数相等）} \\[4pt]
+3p + 2q = 8 \quad \text{（② $\mathbf{j}$ 系数相等）}
+\end{cases}
+\]</div>
+<p>解这个方程组。从①式得 <span class="arithmatex">\(q = 2p - 7\)</span>，代入②式：</p>
+<div class="arithmatex">\[
+3p + 2(2p - 7) = 8 \implies 3p + 4p - 14 = 8 \implies 7p = 22 \implies p = \frac{22}{7}
+\]</div>
+<p>于是 <span class="arithmatex">\(q = 2 \times \frac{22}{7} - 7 = \frac{44}{7} - \frac{49}{7} = -\frac{5}{7}\)</span>。</p>
+<p>因此 <span class="arithmatex">\(p = \frac{22}{7}\)</span>，<span class="arithmatex">\(q = -\frac{5}{7}\)</span>。✓</p>
+<hr />
+<p><strong>例题 3</strong>（位置向量、位移与垂直向量判定）</p>
+<p>三点 <span class="arithmatex">\(P\)</span>、<span class="arithmatex">\(Q\)</span>、<span class="arithmatex">\(R\)</span> 的位置向量分别为 <span class="arithmatex">\(\mathbf{p} = 3\mathbf{i} + \mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{q} = 5\mathbf{i} - 2\mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{r} = -2\mathbf{i} + 4\mathbf{j}\)</span>。</p>
+<p>（a）求 <span class="arithmatex">\(\overrightarrow{PQ}\)</span> 和 <span class="arithmatex">\(\overrightarrow{PR}\)</span>。
+（b）已知 <span class="arithmatex">\(\overrightarrow{PS} = 2\overrightarrow{PQ}\)</span>，求 <span class="arithmatex">\(S\)</span> 的位置向量。
+（c）判断 <span class="arithmatex">\(\overrightarrow{PQ}\)</span> 与 <span class="arithmatex">\(\overrightarrow{PR}\)</span> 是否垂直。</p>
+<p><strong>思路分析</strong>：
+- <span class="arithmatex">\(\overrightarrow{PQ} = \mathbf{q} - \mathbf{p}\)</span>（终点减起点）
+- <span class="arithmatex">\(\overrightarrow{PS} = \mathbf{s} - \mathbf{p}\)</span>，代入已知条件解出 <span class="arithmatex">\(\mathbf{s}\)</span>
+- 垂直判定：计算点积，若为零则垂直</p>
+<p><strong>解</strong>：</p>
+<p>（a）</p>
+<div class="arithmatex">\[
+\overrightarrow{PQ} = \mathbf{q} - \mathbf{p} = (5\mathbf{i} - 2\mathbf{j}) - (3\mathbf{i} + \mathbf{j}) = 2\mathbf{i} - 3\mathbf{j}
+\]</div>
+<div class="arithmatex">\[
+\overrightarrow{PR} = \mathbf{r} - \mathbf{p} = (-2\mathbf{i} + 4\mathbf{j}) - (3\mathbf{i} + \mathbf{j}) = -5\mathbf{i} + 3\mathbf{j}
+\]</div>
+<p>（b）设 <span class="arithmatex">\(S\)</span> 的位置向量为 <span class="arithmatex">\(\mathbf{s}\)</span>。由 <span class="arithmatex">\(\overrightarrow{PS} = \mathbf{s} - \mathbf{p}\)</span> 且 <span class="arithmatex">\(\overrightarrow{PS} = 2\overrightarrow{PQ}\)</span>，得：</p>
+<div class="arithmatex">\[
+\mathbf{s} - \mathbf{p} = 2(2\mathbf{i} - 3\mathbf{j}) = 4\mathbf{i} - 6\mathbf{j}
+\]</div>
+<p>所以：</p>
+<div class="arithmatex">\[
+\mathbf{s} = \mathbf{p} + (4\mathbf{i} - 6\mathbf{j}) = (3\mathbf{i} + \mathbf{j}) + (4\mathbf{i} - 6\mathbf{j}) = 7\mathbf{i} - 5\mathbf{j}
+\]</div>
+<p>因此 <span class="arithmatex">\(S\)</span> 的坐标为 <span class="arithmatex">\((7, -5)\)</span>。</p>
+<p>（c）计算点积：</p>
+<div class="arithmatex">\[
+\overrightarrow{PQ} \cdot \overrightarrow{PR} = (2)(-5) + (-3)(3) = -10 - 9 = -19 \neq 0
+\]</div>
+<p>因为点积不为零，所以 <span class="arithmatex">\(\overrightarrow{PQ}\)</span> 与 <span class="arithmatex">\(\overrightarrow{PR}\)</span> <strong>不垂直</strong>。</p>
+<blockquote>
+<p><strong>如果用斜率法验证</strong>：
+<span class="arithmatex">\(k_{PQ} = \dfrac{-3}{2} = -1.5\)</span>
+<span class="arithmatex">\(k_{PR} = \dfrac{3}{-5} = -0.6\)</span>
+<span class="arithmatex">\(k_{PQ} \cdot k_{PR} = (-1.5)(-0.6) = 0.9 \neq -1\)</span>
+同样得出不垂直。✓</p>
+</blockquote>
+<hr />
+<h2 id="23">2.3 向量的实际运用<a class="headerlink" href="#23" title="Permanent link">&para;</a></h2>
+<h3 id="231">2.3.1 向量几何——深度解析<a class="headerlink" href="#231" title="Permanent link">&para;</a></h3>
+<p>向量是解决平面几何问题的强大工具。通过将几何关系转化为向量方程，我们可以用代数方法精确求解，避免画图的不精确性。</p>
+<h4 id="_17">核心思想<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h4>
+<p><strong>向量几何的本质</strong>：用向量运算（加减、数乘）来表示几何关系。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">几何关系</th>
+<th style="text-align: left;">向量表达</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">从 <span class="arithmatex">\(A\)</span> 到 <span class="arithmatex">\(B\)</span> 的线段</td>
+<td style="text-align: left;"><span class="arithmatex">\(\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(A\)</span> 和 <span class="arithmatex">\(B\)</span> 的中点 <span class="arithmatex">\(M\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{r}_M = \dfrac{\mathbf{r}_A + \mathbf{r}_B}{2}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(P\)</span> 分 <span class="arithmatex">\(AB\)</span> 为 <span class="arithmatex">\(m:n\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{r}_P = \dfrac{n\mathbf{r}_A + m\mathbf{r}_B}{m+n}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(AB \parallel CD\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\overrightarrow{AB} = k \cdot \overrightarrow{CD}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(AB \perp CD\)</span></td>
+<td style="text-align: left;"><span class="arithmatex">\(\overrightarrow{AB} \cdot \overrightarrow{CD} = 0\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;"><span class="arithmatex">\(A,B,C\)</span> 共线</td>
+<td style="text-align: left;"><span class="arithmatex">\(\overrightarrow{AB} = k \cdot \overrightarrow{BC}\)</span>（存在 <span class="arithmatex">\(k\)</span>）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_18">中点公式——为什么是这样？<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h4>
+<p>设 <span class="arithmatex">\(M\)</span> 是 <span class="arithmatex">\(AB\)</span> 的中点。从 <span class="arithmatex">\(A\)</span> 到 <span class="arithmatex">\(M\)</span> 的位移是 <span class="arithmatex">\(\overrightarrow{AB}\)</span> 的一半：</p>
+<div class="arithmatex">\[
+\mathbf{r}_M = \mathbf{r}_A + \frac{1}{2}\overrightarrow{AB} = \mathbf{r}_A + \frac{1}{2}(\mathbf{r}_B - \mathbf{r}_A) = \frac{2\mathbf{r}_A + \mathbf{r}_B - \mathbf{r}_A}{2} = \frac{\mathbf{r}_A + \mathbf{r}_B}{2}
+\]</div>
+<h4 id="_19">分点公式——详细推导<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h4>
+<p>设点 <span class="arithmatex">\(P\)</span> 分线段 <span class="arithmatex">\(AB\)</span> 为 <span class="arithmatex">\(AP:PB = m:n\)</span>（即 <span class="arithmatex">\(P\)</span> 靠近 <span class="arithmatex">\(A\)</span> 的方向上，<span class="arithmatex">\(AP\)</span> 占 <span class="arithmatex">\(m\)</span> 份，<span class="arithmatex">\(PB\)</span> 占 <span class="arithmatex">\(n\)</span> 份）。</p>
+<p>这意味着 <span class="arithmatex">\(P\)</span> 位于从 <span class="arithmatex">\(A\)</span> 到 <span class="arithmatex">\(B\)</span> 的 <span class="arithmatex">\(\dfrac{m}{m+n}\)</span> 处（从 <span class="arithmatex">\(A\)</span> 算起）。所以：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\mathbf{r}_P &amp;= \mathbf{r}_A + \frac{m}{m+n}\overrightarrow{AB} \\
+&amp;= \mathbf{r}_A + \frac{m}{m+n}(\mathbf{r}_B - \mathbf{r}_A) \\
+&amp;= \frac{(m+n)\mathbf{r}_A + m\mathbf{r}_B - m\mathbf{r}_A}{m+n} \\
+&amp;= \frac{n\mathbf{r}_A + m\mathbf{r}_B}{m+n}
+\end{aligned}
+\]</div>
+<blockquote>
+<p><strong>记忆技巧</strong>：分点公式中，<span class="arithmatex">\(A\)</span> 的系数是 <span class="arithmatex">\(n\)</span>（对面那段的比例），<span class="arithmatex">\(B\)</span> 的系数是 <span class="arithmatex">\(m\)</span>（对面那段的比例）。交叉相乘！</p>
+<p>例如 <span class="arithmatex">\(AP:PB = 2:3\)</span>（<span class="arithmatex">\(m=2, n=3\)</span>），则：
+$<span class="arithmatex">\(\mathbf{r}_P = \frac{3\mathbf{r}_A + 2\mathbf{r}_B}{5}\)</span>$
+<span class="arithmatex">\(A\)</span> 的系数是 <span class="arithmatex">\(3\)</span>（对面的 <span class="arithmatex">\(PB\)</span> 是 <span class="arithmatex">\(3\)</span> 份），<span class="arithmatex">\(B\)</span> 的系数是 <span class="arithmatex">\(2\)</span>（对面的 <span class="arithmatex">\(AP\)</span> 是 <span class="arithmatex">\(2\)</span> 份）。</p>
+</blockquote>
+<h4 id="overrightarrowab-k-cdot-overrightarrowcd">平行向量——为什么写成 <span class="arithmatex">\(\overrightarrow{AB} = k \cdot \overrightarrow{CD}\)</span>？<a class="headerlink" href="#overrightarrowab-k-cdot-overrightarrowcd" title="Permanent link">&para;</a></h4>
+<p>两个非零向量 <span class="arithmatex">\(\mathbf{a}\)</span> 和 <span class="arithmatex">\(\mathbf{b}\)</span> <strong>平行</strong>（即方向相同或相反）当且仅当存在一个实数 <span class="arithmatex">\(k\)</span> 使得：</p>
+<div class="arithmatex">\[
+\boxed{\mathbf{a} = k\mathbf{b}}
+\]</div>
+<p>即一个向量是另一个向量的标量倍。</p>
+<blockquote>
+<p><strong>🔍 深入理解</strong>：这个式子的含义可以从两个角度解读：</p>
+<p><strong>几何角度</strong>：平行意味着两个向量的方向线重合或平行。方向相同（<span class="arithmatex">\(k &gt; 0\)</span>）时，两个向量指向同一侧；方向相反（<span class="arithmatex">\(k &lt; 0\)</span>）时，两个向量指向相反侧。<span class="arithmatex">\(|k|\)</span> 的大小决定了两向量长度的比值：<span class="arithmatex">\(|\mathbf{a}| = |k| \cdot |\mathbf{b}|\)</span>。</p>
+<p><strong>代数角度</strong>：写成坐标形式，<span class="arithmatex">\(\mathbf{a} = (a_x, a_y)\)</span>，<span class="arithmatex">\(\mathbf{b} = (b_x, b_y)\)</span>，则 <span class="arithmatex">\(\mathbf{a} = k\mathbf{b}\)</span> 给出：
+$$
+(a_x, a_y) = (k b_x, k b_y)
+$$
+因此 <span class="arithmatex">\(\dfrac{a_x}{b_x} = \dfrac{a_y}{b_y} = k\)</span>（分母不为零）。也就是说，<strong>对应分量成比例</strong>。</p>
+<p><strong>为什么要用 <span class="arithmatex">\(\overrightarrow{AB} = k \cdot \overrightarrow{CD}\)</span> 来表示 <span class="arithmatex">\(AB \parallel CD\)</span>？</strong></p>
+<p>线段 <span class="arithmatex">\(AB\)</span> 的方向由向量 <span class="arithmatex">\(\overrightarrow{AB}\)</span> 决定，线段 <span class="arithmatex">\(CD\)</span> 的方向由向量 <span class="arithmatex">\(\overrightarrow{CD}\)</span> 决定。两条线段平行，意味着这两个方向向量平行（即存在标量 <span class="arithmatex">\(k\)</span> 使 <span class="arithmatex">\(\overrightarrow{AB} = k \cdot \overrightarrow{CD}\)</span>）。</p>
+<blockquote>
+<p><strong>注意</strong>：这里的 <span class="arithmatex">\(k\)</span> 可以是任何非零实数。
+- <span class="arithmatex">\(k &gt; 0\)</span>：<span class="arithmatex">\(\overrightarrow{AB}\)</span> 与 <span class="arithmatex">\(\overrightarrow{CD}\)</span> <strong>同向</strong>
+- <span class="arithmatex">\(k &lt; 0\)</span>：<span class="arithmatex">\(\overrightarrow{AB}\)</span> 与 <span class="arithmatex">\(\overrightarrow{CD}\)</span> <strong>反向</strong>（但仍平行）
+- 如果同时要求两线段长度相等（如平行四边形的对边），则 <span class="arithmatex">\(|k| = 1\)</span></p>
+</blockquote>
+<p><strong>📌 示例</strong>：已知 <span class="arithmatex">\(\overrightarrow{AB} = (6, 9)\)</span>，<span class="arithmatex">\(\overrightarrow{CD} = (2, 3)\)</span>。
+因为 <span class="arithmatex">\(\dfrac{6}{2} = \dfrac{9}{3} = 3\)</span>，所以 <span class="arithmatex">\(\overrightarrow{AB} = 3 \cdot \overrightarrow{CD}\)</span>，故 <span class="arithmatex">\(AB \parallel CD\)</span>。此时 <span class="arithmatex">\(k = 3 &gt; 0\)</span>，两线段同向，且 <span class="arithmatex">\(AB\)</span> 的长度是 <span class="arithmatex">\(CD\)</span> 的 <span class="arithmatex">\(3\)</span> 倍。</p>
+</blockquote>
+<hr />
+<h4 id="overrightarrowab-cdot-overrightarrowcd-0">垂直——为什么写成 <span class="arithmatex">\(\overrightarrow{AB} \cdot \overrightarrow{CD} = 0\)</span>？<a class="headerlink" href="#overrightarrowab-cdot-overrightarrowcd-0" title="Permanent link">&para;</a></h4>
+<p>两条线段 <span class="arithmatex">\(AB\)</span> 和 <span class="arithmatex">\(CD\)</span> 垂直（即夹角为 <span class="arithmatex">\(90^\circ\)</span>）当且仅当它们的方向向量点积为零：</p>
+<div class="arithmatex">\[
+\boxed{\overrightarrow{AB} \cdot \overrightarrow{CD} = 0}
+\]</div>
+<blockquote>
+<p><strong>🔍 与点积的联系</strong>：在 2.2.8 节中我们已经学过，两个非零向量 <span class="arithmatex">\(\mathbf{u}\)</span> 和 <span class="arithmatex">\(\mathbf{v}\)</span> 垂直 <span class="arithmatex">\(\iff\)</span> <span class="arithmatex">\(\mathbf{u} \cdot \mathbf{v} = 0\)</span>。这里完全相同，只是将 <span class="arithmatex">\(\mathbf{u}\)</span> 替换为 <span class="arithmatex">\(\overrightarrow{AB}\)</span>，将 <span class="arithmatex">\(\mathbf{v}\)</span> 替换为 <span class="arithmatex">\(\overrightarrow{CD}\)</span>。</p>
+<p>回顾点积的几何定义：
+$$
+\overrightarrow{AB} \cdot \overrightarrow{CD} = |\overrightarrow{AB}| \cdot |\overrightarrow{CD}| \cdot \cos\theta
+$$
+其中 <span class="arithmatex">\(\theta\)</span> 是两向量之间的夹角。当 <span class="arithmatex">\(\theta = 90^\circ\)</span> 时，<span class="arithmatex">\(\cos 90^\circ = 0\)</span>，因此点积为零。</p>
+<p><strong>注意</strong>：点积的结果是<strong>标量</strong>（一个数），不是向量。因此 <span class="arithmatex">\(\overrightarrow{AB} \cdot \overrightarrow{CD} = 0\)</span> 是一个标量方程。</p>
+<p><strong>⚠️ 与平行条件的对比</strong>：
+- <strong>平行</strong>：<span class="arithmatex">\(\overrightarrow{AB} = k \cdot \overrightarrow{CD}\)</span>（向量方程，涉及比例关系）
+- <strong>垂直</strong>：<span class="arithmatex">\(\overrightarrow{AB} \cdot \overrightarrow{CD} = 0\)</span>（标量方程，仅要求乘积为零）</p>
+<p>平行条件需要找到一个具体的 <span class="arithmatex">\(k\)</span> 值，而垂直条件只需要计算一个数值并检查是否为零——通常比平行条件更容易验证。</p>
+<p><strong>📌 示例</strong>：已知 <span class="arithmatex">\(\overrightarrow{AB} = (3, 1)\)</span>，<span class="arithmatex">\(\overrightarrow{CD} = (2, -6)\)</span>。
+计算点积：<span class="arithmatex">\(3 \times 2 + 1 \times (-6) = 6 - 6 = 0\)</span>。
+因此 <span class="arithmatex">\(\overrightarrow{AB} \cdot \overrightarrow{CD} = 0\)</span>，故 <span class="arithmatex">\(AB \perp CD\)</span>。✓</p>
+</blockquote>
+<hr />
+<h4 id="overrightarrowab-k-cdot-overrightarrowbc">三点共线的判定——为什么是 <span class="arithmatex">\(\overrightarrow{AB} = k \cdot \overrightarrow{BC}\)</span>？<a class="headerlink" href="#overrightarrowab-k-cdot-overrightarrowbc" title="Permanent link">&para;</a></h4>
+<p>三点 <span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(B\)</span>、<span class="arithmatex">\(C\)</span> 共线（即位于同一直线上）当且仅当存在一个实数 <span class="arithmatex">\(k\)</span> 使得：</p>
+<div class="arithmatex">\[
+\boxed{\overrightarrow{AB} = k \cdot \overrightarrow{BC}}
+\]</div>
+<p>或等价地，<span class="arithmatex">\(\overrightarrow{AB}\)</span> 与 <span class="arithmatex">\(\overrightarrow{AC}\)</span> 平行（或 <span class="arithmatex">\(\overrightarrow{AB}\)</span> 与 <span class="arithmatex">\(\overrightarrow{BC}\)</span> 平行）。</p>
+<blockquote>
+<p><strong>🔍 为什么？</strong> 如果 <span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(B\)</span>、<span class="arithmatex">\(C\)</span> 三点共线，那么从 <span class="arithmatex">\(A\)</span> 到 <span class="arithmatex">\(B\)</span> 的位移和从 <span class="arithmatex">\(B\)</span> 到 <span class="arithmatex">\(C\)</span> 的位移沿着同一条直线。这意味着 <span class="arithmatex">\(\overrightarrow{AB}\)</span> 和 <span class="arithmatex">\(\overrightarrow{BC}\)</span> 的方向要么相同（<span class="arithmatex">\(k &gt; 0\)</span>），要么相反（<span class="arithmatex">\(k &lt; 0\)</span>）。因此存在标量 <span class="arithmatex">\(k\)</span> 使 <span class="arithmatex">\(\overrightarrow{AB} = k \cdot \overrightarrow{BC}\)</span>。</p>
+<p>反过来，如果 <span class="arithmatex">\(\overrightarrow{AB} = k \cdot \overrightarrow{BC}\)</span>，则两个向量平行。又因为它们共享点 <span class="arithmatex">\(B\)</span>（<span class="arithmatex">\(\overrightarrow{AB}\)</span> 的终点是 <span class="arithmatex">\(B\)</span>，<span class="arithmatex">\(\overrightarrow{BC}\)</span> 的起点是 <span class="arithmatex">\(B\)</span>），所以 <span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(B\)</span>、<span class="arithmatex">\(C\)</span> 必然在同一直线上。</p>
+<p><strong>关键点</strong>：平行 + 公共点 <span class="arithmatex">\(\implies\)</span> 共线。如果没有公共点，平行只能说明两线段方向相同，不能保证三点共线。</p>
+<p><strong>💡 三种等价判定方式</strong>（根据已知条件灵活选用）：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">判定方式</th>
+<th style="text-align: left;">条件</th>
+<th style="text-align: left;">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">方式一</td>
+<td style="text-align: left;"><span class="arithmatex">\(\overrightarrow{AB} = k \cdot \overrightarrow{BC}\)</span></td>
+<td style="text-align: left;">需要 <span class="arithmatex">\(B\)</span> 是公共点（最常用）</td>
+</tr>
+<tr>
+<td style="text-align: left;">方式二</td>
+<td style="text-align: left;"><span class="arithmatex">\(\overrightarrow{AB} = k \cdot \overrightarrow{AC}\)</span></td>
+<td style="text-align: left;">需要 <span class="arithmatex">\(A\)</span> 是公共点</td>
+</tr>
+<tr>
+<td style="text-align: left;">方式三</td>
+<td style="text-align: left;"><span class="arithmatex">\(\overrightarrow{AC} = k \cdot \overrightarrow{BC}\)</span></td>
+<td style="text-align: left;">需要 <span class="arithmatex">\(C\)</span> 是公共点</td>
+</tr>
+</tbody>
+</table>
+<p>三种方式本质上一样——都利用了"平行 + 公共点"的原理。选择哪种方式通常取决于哪组向量更容易计算。</p>
+<p><strong>📌 示例</strong>：已知 <span class="arithmatex">\(A(1, 2)\)</span>，<span class="arithmatex">\(B(3, 4)\)</span>，<span class="arithmatex">\(C(7, 8)\)</span>。
+$$
+\overrightarrow{AB} = (3-1, 4-2) = (2, 2), \quad \overrightarrow{BC} = (7-3, 8-4) = (4, 4)
+$$
+观察发现 <span class="arithmatex">\(\overrightarrow{BC} = 2 \cdot (2, 2) = 2 \cdot \overrightarrow{AB}\)</span>，即 <span class="arithmatex">\(\overrightarrow{AB} = \frac{1}{2} \cdot \overrightarrow{BC}\)</span>（取 <span class="arithmatex">\(k = \frac{1}{2}\)</span>）。因此 <span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(B\)</span>、<span class="arithmatex">\(C\)</span> 三点共线。</p>
+<p><strong>验证</strong>：也可用 <span class="arithmatex">\(\overrightarrow{AC}\)</span> 验证。
+<span class="arithmatex">\(\overrightarrow{AC} = (7-1, 8-2) = (6, 6) = 3 \cdot (2, 2) = 3 \cdot \overrightarrow{AB}\)</span>，同样得出共线。✓</p>
+</blockquote>
+<hr />
+<h3 id="22_1">📌 例题 2.2：向量几何应用<a class="headerlink" href="#22_1" title="Permanent link">&para;</a></h3>
+<p><strong>例题 1</strong>（平行四边形与中点——配图说明）</p>
+<p>在平行四边形 <span class="arithmatex">\(ABCD\)</span> 中，<span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(B\)</span>、<span class="arithmatex">\(C\)</span> 的位置向量分别为 <span class="arithmatex">\(\mathbf{a} = \mathbf{i} + 2\mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{b} = 4\mathbf{i} + 3\mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{c} = 6\mathbf{i} + \mathbf{j}\)</span>。求：</p>
+<p>（a）<span class="arithmatex">\(D\)</span> 的位置向量
+（b）对角线 <span class="arithmatex">\(AC\)</span> 与 <span class="arithmatex">\(BD\)</span> 的交点 <span class="arithmatex">\(M\)</span> 的位置向量</p>
+<p><strong>思路分析</strong>：</p>
+<blockquote>
+<p>先理解平行四边形的结构。顶点按 <span class="arithmatex">\(A \to B \to C \to D \to A\)</span> 的顺序排列。</p>
+<p><strong>平行四边形的关键性质</strong>：对边平行且相等。
+- <span class="arithmatex">\(AB \parallel DC\)</span> 且 <span class="arithmatex">\(AB = DC\)</span>
+- <span class="arithmatex">\(AD \parallel BC\)</span> 且 <span class="arithmatex">\(AD = BC\)</span></p>
+<p>这意味着 <span class="arithmatex">\(\overrightarrow{AD} = \overrightarrow{BC}\)</span> 或 <span class="arithmatex">\(\overrightarrow{AB} = \overrightarrow{DC}\)</span>。</p>
+<p>另外，平行四边形的对角线<strong>互相平分</strong>，即 <span class="arithmatex">\(AC\)</span> 的中点 = <span class="arithmatex">\(BD\)</span> 的中点。</p>
+</blockquote>
+<p><strong>解</strong>：</p>
+<p>（a）在平行四边形 <span class="arithmatex">\(ABCD\)</span> 中，对边 <span class="arithmatex">\(AD\)</span> 和 <span class="arithmatex">\(BC\)</span> 平行且相等，所以 <span class="arithmatex">\(\overrightarrow{AD} = \overrightarrow{BC}\)</span>。</p>
+<p>先求 <span class="arithmatex">\(\overrightarrow{BC} = \mathbf{c} - \mathbf{b}\)</span>：</p>
+<div class="arithmatex">\[
+\overrightarrow{BC} = (6\mathbf{i} + \mathbf{j}) - (4\mathbf{i} + 3\mathbf{j}) = 2\mathbf{i} - 2\mathbf{j}
+\]</div>
+<p>因为 <span class="arithmatex">\(\overrightarrow{AD} = \overrightarrow{BC} = 2\mathbf{i} - 2\mathbf{j}\)</span>，而 <span class="arithmatex">\(\overrightarrow{AD} = \mathbf{d} - \mathbf{a}\)</span>，所以：</p>
+<div class="arithmatex">\[
+\mathbf{d} = \mathbf{a} + \overrightarrow{AD} = (\mathbf{i} + 2\mathbf{j}) + (2\mathbf{i} - 2\mathbf{j}) = 3\mathbf{i}
+\]</div>
+<p>所以 <span class="arithmatex">\(D\)</span> 的坐标为 <span class="arithmatex">\((3, 0)\)</span>。</p>
+<p><strong>验证</strong>：也可用 <span class="arithmatex">\(\overrightarrow{AB} = \overrightarrow{DC}\)</span> 来求。
+<span class="arithmatex">\(\overrightarrow{AB} = \mathbf{b} - \mathbf{a} = (4\mathbf{i} + 3\mathbf{j}) - (\mathbf{i} + 2\mathbf{j}) = 3\mathbf{i} + \mathbf{j}\)</span>
+<span class="arithmatex">\(\overrightarrow{DC} = \mathbf{c} - \mathbf{d}\)</span>，所以 <span class="arithmatex">\(\mathbf{c} - \mathbf{d} = 3\mathbf{i} + \mathbf{j}\)</span>，解得 <span class="arithmatex">\(\mathbf{d} = \mathbf{c} - (3\mathbf{i} + \mathbf{j}) = (6\mathbf{i} + \mathbf{j}) - (3\mathbf{i} + \mathbf{j}) = 3\mathbf{i}\)</span>，一致。✓</p>
+<p>（b）平行四边形的对角线互相平分。因此 <span class="arithmatex">\(M\)</span> 既是 <span class="arithmatex">\(AC\)</span> 的中点，也是 <span class="arithmatex">\(BD\)</span> 的中点。</p>
+<p>用 <span class="arithmatex">\(AC\)</span> 的中点计算：</p>
+<div class="arithmatex">\[
+\mathbf{m} = \frac{\mathbf{a} + \mathbf{c}}{2} = \frac{(\mathbf{i} + 2\mathbf{j}) + (6\mathbf{i} + \mathbf{j})}{2} = \frac{7\mathbf{i} + 3\mathbf{j}}{2} = 3.5\mathbf{i} + 1.5\mathbf{j}
+\]</div>
+<p>验证用 <span class="arithmatex">\(BD\)</span> 的中点：<span class="arithmatex">\(\frac{\mathbf{b} + \mathbf{d}}{2} = \frac{(4\mathbf{i} + 3\mathbf{j}) + 3\mathbf{i}}{2} = \frac{7\mathbf{i} + 3\mathbf{j}}{2}\)</span>，一致。✓</p>
+<hr />
+<p><strong>例题 2</strong>（共线判定与比值——如何证明三点共线）</p>
+<p>三点 <span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(B\)</span>、<span class="arithmatex">\(C\)</span> 的位置向量分别为 <span class="arithmatex">\(\mathbf{a} = 2\mathbf{i} + \mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{b} = 5\mathbf{i} + 4\mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{c} = 8\mathbf{i} + 7\mathbf{j}\)</span>。</p>
+<p>（a）证明 <span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(B\)</span>、<span class="arithmatex">\(C\)</span> 三点共线。
+（b）求 <span class="arithmatex">\(AB:BC\)</span> 的比值。</p>
+<p><strong>思路分析</strong>：</p>
+<blockquote>
+<p>证明三点共线的标准方法：
+1. 计算 <span class="arithmatex">\(\overrightarrow{AB}\)</span> 和 <span class="arithmatex">\(\overrightarrow{BC}\)</span>（或 <span class="arithmatex">\(\overrightarrow{AB}\)</span> 和 <span class="arithmatex">\(\overrightarrow{AC}\)</span>）
+2. 判断它们是否平行（即是否存在标量 <span class="arithmatex">\(k\)</span> 使得一个等于另一个乘以 <span class="arithmatex">\(k\)</span>）
+3. 如果平行且有一个公共点（<span class="arithmatex">\(B\)</span> 是 <span class="arithmatex">\(\overrightarrow{AB}\)</span> 和 <span class="arithmatex">\(\overrightarrow{BC}\)</span> 的公共点），则三点共线</p>
+</blockquote>
+<p><strong>解</strong>：</p>
+<p>（a）计算向量：</p>
+<div class="arithmatex">\[
+\overrightarrow{AB} = \mathbf{b} - \mathbf{a} = (5\mathbf{i} + 4\mathbf{j}) - (2\mathbf{i} + \mathbf{j}) = 3\mathbf{i} + 3\mathbf{j}
+\]</div>
+<div class="arithmatex">\[
+\overrightarrow{BC} = \mathbf{c} - \mathbf{b} = (8\mathbf{i} + 7\mathbf{j}) - (5\mathbf{i} + 4\mathbf{j}) = 3\mathbf{i} + 3\mathbf{j}
+\]</div>
+<p>观察发现 <span class="arithmatex">\(\overrightarrow{BC} = \overrightarrow{AB}\)</span>，即 <span class="arithmatex">\(\overrightarrow{BC} = 1 \cdot \overrightarrow{AB}\)</span>。存在标量 <span class="arithmatex">\(k = 1\)</span> 使得 <span class="arithmatex">\(\overrightarrow{BC} = k\overrightarrow{AB}\)</span>，所以 <span class="arithmatex">\(\overrightarrow{AB} \parallel \overrightarrow{BC}\)</span>。又因为这两个向量都通过点 <span class="arithmatex">\(B\)</span>，故 <span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(B\)</span>、<span class="arithmatex">\(C\)</span> 共线。</p>
+<blockquote>
+<p><strong>注意</strong>：也可以验证 <span class="arithmatex">\(\overrightarrow{AC}\)</span> 与 <span class="arithmatex">\(\overrightarrow{AB}\)</span> 的关系。
+<span class="arithmatex">\(\overrightarrow{AC} = \mathbf{c} - \mathbf{a} = (8\mathbf{i} + 7\mathbf{j}) - (2\mathbf{i} + \mathbf{j}) = 6\mathbf{i} + 6\mathbf{j} = 2(3\mathbf{i} + 3\mathbf{j}) = 2\overrightarrow{AB}\)</span>
+同样得出共线结论。</p>
+</blockquote>
+<p>（b）因为 <span class="arithmatex">\(\overrightarrow{BC} = \overrightarrow{AB}\)</span>，且方向相同，所以 <span class="arithmatex">\(\overrightarrow{AB}\)</span> 和 <span class="arithmatex">\(\overrightarrow{BC}\)</span> 的长度相等。即 <span class="arithmatex">\(AB = BC\)</span>，因此 <span class="arithmatex">\(AB:BC = 1:1\)</span>。</p>
+<p>换句话说，<span class="arithmatex">\(B\)</span> 是线段 <span class="arithmatex">\(AC\)</span> 的中点。</p>
+<hr />
+<p><strong>例题 3</strong>（分点公式 + 垂直验证——综合应用）</p>
+<p>在 <span class="arithmatex">\(\triangle OAB\)</span> 中，<span class="arithmatex">\(C\)</span> 在 <span class="arithmatex">\(OA\)</span> 上且 <span class="arithmatex">\(OC:CA = 2:1\)</span>，<span class="arithmatex">\(D\)</span> 在 <span class="arithmatex">\(AB\)</span> 上且 <span class="arithmatex">\(AD:DB = 3:1\)</span>。设 <span class="arithmatex">\(\overrightarrow{OA} = \mathbf{a}\)</span>，<span class="arithmatex">\(\overrightarrow{OB} = \mathbf{b}\)</span>。</p>
+<p>（a）用 <span class="arithmatex">\(\mathbf{a}\)</span> 和 <span class="arithmatex">\(\mathbf{b}\)</span> 表示 <span class="arithmatex">\(\overrightarrow{OD}\)</span>。
+（b）用 <span class="arithmatex">\(\mathbf{a}\)</span> 和 <span class="arithmatex">\(\mathbf{b}\)</span> 表示 <span class="arithmatex">\(\overrightarrow{CD}\)</span>。
+（c）已知 <span class="arithmatex">\(\mathbf{a} = 3\mathbf{i} + 2\mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{b} = \mathbf{i} + 6\mathbf{j}\)</span>，判断 <span class="arithmatex">\(\overrightarrow{OC}\)</span> 与 <span class="arithmatex">\(\overrightarrow{OD}\)</span> 是否垂直。</p>
+<p><strong>思路分析</strong>：</p>
+<blockquote>
+<p>这是一个"用基底表示向量"的典型问题。<span class="arithmatex">\(\mathbf{a}\)</span> 和 <span class="arithmatex">\(\mathbf{b}\)</span> 是基底，所有其他向量都要用它们表示。</p>
+<p>关键步骤：
+1. 确定分点 <span class="arithmatex">\(C\)</span> 在 <span class="arithmatex">\(OA\)</span> 上的位置：<span class="arithmatex">\(OC:CA = 2:1\)</span> 意味着 <span class="arithmatex">\(OC = \frac{2}{3}OA\)</span>
+2. 确定分点 <span class="arithmatex">\(D\)</span> 在 <span class="arithmatex">\(AB\)</span> 上的位置：<span class="arithmatex">\(AD:DB = 3:1\)</span> 意味着 <span class="arithmatex">\(AD = \frac{3}{4}AB\)</span>
+3. 用分点公式或直接加减法表示向量
+4. 垂直判定：代入具体数值后计算点积</p>
+</blockquote>
+<p><strong>解</strong>：</p>
+<p>（a）先表示 <span class="arithmatex">\(D\)</span> 的位置。</p>
+<p>方法一（分点公式）：<span class="arithmatex">\(D\)</span> 分 <span class="arithmatex">\(AB\)</span> 为 <span class="arithmatex">\(AD:DB = 3:1\)</span>，即从 <span class="arithmatex">\(A\)</span> 到 <span class="arithmatex">\(B\)</span> 的方向上，<span class="arithmatex">\(D\)</span> 位于 <span class="arithmatex">\(\frac{3}{4}\)</span> 处。</p>
+<p>由分点公式（<span class="arithmatex">\(m=3, n=1\)</span>）：</p>
+<div class="arithmatex">\[
+\mathbf{r}_D = \frac{n\mathbf{r}_A + m\mathbf{r}_B}{m+n} = \frac{1 \cdot \mathbf{a} + 3 \cdot \mathbf{b}}{3+1} = \frac{\mathbf{a} + 3\mathbf{b}}{4}
+\]</div>
+<p>方法二（直接法）：从 <span class="arithmatex">\(A\)</span> 出发走到 <span class="arithmatex">\(B\)</span> 的 <span class="arithmatex">\(\frac{3}{4}\)</span> 处。</p>
+<div class="arithmatex">\[
+\overrightarrow{OD} = \overrightarrow{OA} + \frac{3}{4}\overrightarrow{AB}
+\]</div>
+<p>而 <span class="arithmatex">\(\overrightarrow{AB} = \overrightarrow{OB} - \overrightarrow{OA} = \mathbf{b} - \mathbf{a}\)</span>，所以：</p>
+<div class="arithmatex">\[
+\overrightarrow{OD} = \mathbf{a} + \frac{3}{4}(\mathbf{b} - \mathbf{a}) = \mathbf{a} + \frac{3}{4}\mathbf{b} - \frac{3}{4}\mathbf{a} = \frac{1}{4}\mathbf{a} + \frac{3}{4}\mathbf{b}
+\]</div>
+<p>注意 <span class="arithmatex">\(\frac{\mathbf{a} + 3\mathbf{b}}{4} = \frac{1}{4}\mathbf{a} + \frac{3}{4}\mathbf{b}\)</span>，两种方法结果一致。✓</p>
+<p>（b）<span class="arithmatex">\(C\)</span> 在 <span class="arithmatex">\(OA\)</span> 上且 <span class="arithmatex">\(OC:CA = 2:1\)</span>，所以 <span class="arithmatex">\(C\)</span> 分 <span class="arithmatex">\(\overrightarrow{OA}\)</span> 为 <span class="arithmatex">\(2:1\)</span>（从 <span class="arithmatex">\(O\)</span> 算起）。因此：</p>
+<div class="arithmatex">\[
+\overrightarrow{OC} = \frac{2}{3}\overrightarrow{OA} = \frac{2}{3}\mathbf{a}
+\]</div>
+<p>于是：</p>
+<div class="arithmatex">\[
+\overrightarrow{CD} = \overrightarrow{OD} - \overrightarrow{OC} = \left(\frac{1}{4}\mathbf{a} + \frac{3}{4}\mathbf{b}\right) - \frac{2}{3}\mathbf{a}
+\]</div>
+<p>通分计算 <span class="arithmatex">\(\mathbf{a}\)</span> 的系数：<span class="arithmatex">\(\frac{1}{4} - \frac{2}{3} = \frac{3}{12} - \frac{8}{12} = -\frac{5}{12}\)</span>。</p>
+<p>所以：</p>
+<div class="arithmatex">\[
+\overrightarrow{CD} = -\frac{5}{12}\mathbf{a} + \frac{3}{4}\mathbf{b}
+\]</div>
+<p>（c）代入 <span class="arithmatex">\(\mathbf{a} = 3\mathbf{i} + 2\mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{b} = \mathbf{i} + 6\mathbf{j}\)</span>：</p>
+<p>先求 <span class="arithmatex">\(\overrightarrow{OC}\)</span>：</p>
+<div class="arithmatex">\[
+\overrightarrow{OC} = \frac{2}{3}(3\mathbf{i} + 2\mathbf{j}) = 2\mathbf{i} + \frac{4}{3}\mathbf{j}
+\]</div>
+<p>再求 <span class="arithmatex">\(\overrightarrow{OD}\)</span>：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\overrightarrow{OD} &amp;= \frac{1}{4}(3\mathbf{i} + 2\mathbf{j}) + \frac{3}{4}(\mathbf{i} + 6\mathbf{j}) \\
+&amp;= \left(\frac{3}{4} + \frac{3}{4}\right)\mathbf{i} + \left(\frac{1}{2} + \frac{9}{2}\right)\mathbf{j} \\
+&amp;= \frac{6}{4}\mathbf{i} + \frac{10}{2}\mathbf{j} \\
+&amp;= \frac{3}{2}\mathbf{i} + 5\mathbf{j}
+\end{aligned}
+\]</div>
+<p>计算点积：</p>
+<div class="arithmatex">\[
+\overrightarrow{OC} \cdot \overrightarrow{OD} = \left(2\right)\left(\frac{3}{2}\right) + \left(\frac{4}{3}\right)(5) = 3 + \frac{20}{3} = \frac{9}{3} + \frac{20}{3} = \frac{29}{3} \neq 0
+\]</div>
+<p>点积不为零，所以 <span class="arithmatex">\(\overrightarrow{OC}\)</span> 与 <span class="arithmatex">\(\overrightarrow{OD}\)</span> <strong>不垂直</strong>。</p>
+<hr />
+<h3 id="232">2.3.2 速度的合成与分解<a class="headerlink" href="#232" title="Permanent link">&para;</a></h3>
+<p>速度是一个向量。当一个物体同时参与两个或更多运动时，它的合速度是这些速度的向量和。</p>
+<h4 id="_20">相对速度公式<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h4>
+<p>设物体 <span class="arithmatex">\(A\)</span> 相对于参考系 <span class="arithmatex">\(C\)</span> 的速度为 <span class="arithmatex">\(\mathbf{v}_{A/C}\)</span>，物体 <span class="arithmatex">\(A\)</span> 相对于物体 <span class="arithmatex">\(B\)</span> 的速度为 <span class="arithmatex">\(\mathbf{v}_{A/B}\)</span>，物体 <span class="arithmatex">\(B\)</span> 相对于参考系 <span class="arithmatex">\(C\)</span> 的速度为 <span class="arithmatex">\(\mathbf{v}_{B/C}\)</span>，则：</p>
+<div class="arithmatex">\[
+\mathbf{v}_{A/C} = \mathbf{v}_{A/B} + \mathbf{v}_{B/C}
+\]</div>
+<blockquote>
+<p><strong>直观理解</strong>：
+- 你在火车上行走，速度为 <span class="arithmatex">\(\mathbf{v}_{A/B}\)</span>（你相对于火车）
+- 火车相对于地面行驶，速度为 <span class="arithmatex">\(\mathbf{v}_{B/C}\)</span>（火车相对于地面）
+- 你相对于地面的速度 <span class="arithmatex">\(\mathbf{v}_{A/C}\)</span> 就是两者之和</p>
+<p><strong>另一个例子</strong>：一艘船在河中行驶。
+- 船在静水中的速度 = <span class="arithmatex">\(\mathbf{v}_{B/W}\)</span>（船相对于水）
+- 水流速度 = <span class="arithmatex">\(\mathbf{v}_{W/G}\)</span>（水相对于地面）
+- 船相对于地面的实际速度 = <span class="arithmatex">\(\mathbf{v}_{B/W} + \mathbf{v}_{W/G}\)</span></p>
+</blockquote>
+<h4 id="_21">速度的分解<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h4>
+<p>与合成相反，将一个速度向量分解为两个互相垂直的分量（通常沿水平方向和垂直方向）称为<strong>速度的分解</strong>（resolution of velocities）。</p>
+<h5 id="_22">为什么要分解速度？<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h5>
+<p>在实际问题中，我们经常需要分别考察运动在不同方向上的行为。例如：</p>
+<ul>
+<li><strong>抛体运动</strong>：水平方向不受力（匀速直线运动），垂直方向受重力（匀加速运动）——只有将初速度分解为水平和垂直分量，才能分别分析这两个方向的运动。</li>
+<li><strong>斜面上的运动</strong>：需要将速度分解为沿斜面方向和垂直于斜面方向。</li>
+<li><strong>导航</strong>：飞机需要将速度分解为平行和垂直于航线的分量，以修正风的影响。</li>
+</ul>
+<p>分解的<strong>核心思想</strong>是：<strong>一个向量可以用两个互相垂直的分量唯一表示</strong>，这两个分量的作用相互独立，可以分别分析后再合成。</p>
+<h5 id="_23">标准分解：水平与垂直<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h5>
+<p>设速度 <span class="arithmatex">\(\mathbf{v}\)</span> 的大小为 <span class="arithmatex">\(v\)</span>（速率），与水平方向的夹角为 <span class="arithmatex">\(\theta\)</span>，则：</p>
+<div class="arithmatex">\[
+\boxed{\mathbf{v} = (v\cos\theta)\mathbf{i} + (v\sin\theta)\mathbf{j}}
+\]</div>
+<p>其中 <span class="arithmatex">\(v_x = v\cos\theta\)</span> 是水平分量，<span class="arithmatex">\(v_y = v\sin\theta\)</span> 是垂直分量。</p>
+<blockquote>
+<p><strong>🎯 核心直觉——一根棍子的故事</strong></p>
+<p>想象你有一根长度为 <span class="arithmatex">\(v\)</span> 的棍子，一端靠在地板上，另一端靠在墙上，棍子与地板（水平方向）的夹角为 <span class="arithmatex">\(\theta\)</span>。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    墙
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    |\
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    | \
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    |  \  棍子（长度 v）
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    |   \
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    |    \
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    |θ    \
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    ———————— 地板
+</code></pre></div>
+<p>这根棍子在<strong>地板上的影子</strong>（水平投影）的长度就是 <span class="arithmatex">\(v\cos\theta\)</span>——这是<strong>水平分量</strong>。
+这根棍子在<strong>墙上的影子</strong>（垂直投影）的长度就是 <span class="arithmatex">\(v\sin\theta\)</span>——这是<strong>垂直分量</strong>。</p>
+<p>这正是三角函数的几何定义：
+- <strong><span class="arithmatex">\(\cos\theta\)</span> = 邻边 / 斜边</strong>：在直角三角形中，邻边（水平投影）= 斜边（棍子长度）<span class="arithmatex">\(\times \cos\theta\)</span>
+- <strong><span class="arithmatex">\(\sin\theta\)</span> = 对边 / 斜边</strong>：在直角三角形中，对边（垂直投影）= 斜边（棍子长度）<span class="arithmatex">\(\times \sin\theta\)</span></p>
+<p>无论棍子怎么倾斜，它在墙上和地板上的影子长度之和的平方（勾股定理）始终等于棍子长度的平方：
+$$
+(v\cos\theta)^2 + (v\sin\theta)^2 = v<sup>2(\cos</sup>2\theta + \sin^2\theta) = v^2
+$$
+这正是三角恒等式 <span class="arithmatex">\(\cos^2\theta + \sin^2\theta = 1\)</span> 的几何来源！</p>
+<blockquote>
+<p><strong>💡 记忆方法</strong>：把速度向量想象成这根棍子。
+- <strong><span class="arithmatex">\(\cos\)</span> 连着水平方向</strong>（地板）——<span class="arithmatex">\(\cos\)</span> 开头是 c，像"地"板的英文 "ground" 的 g 的镜像？更简单的记法：<strong>"cos 是 contact（接触），紧贴地面"</strong>
+- <strong><span class="arithmatex">\(\sin\)</span> 连着垂直方向</strong>（墙）——<span class="arithmatex">\(\sin\)</span> 开头是 s，像"上"（shàng）的拼音首字母
+- 角度 <span class="arithmatex">\(\theta\)</span> 是从水平方向（地板）开始测量的</p>
+</blockquote>
+<p><strong>正式推导</strong>：将速度向量 <span class="arithmatex">\(\mathbf{v}\)</span> 置于坐标系中，起点在原点，与水平方向（<span class="arithmatex">\(x\)</span> 轴正方向）夹角为 <span class="arithmatex">\(\theta\)</span>。从终点向 <span class="arithmatex">\(x\)</span> 轴和 <span class="arithmatex">\(y\)</span> 轴分别作垂线，得到一个直角三角形。棍子就是斜边，地板上的影子是水平直角边，墙上的影子是垂直直角边。</p>
+<ul>
+<li>水平分量 <span class="arithmatex">\(v_x\)</span>（地板上的影子）：<span class="arithmatex">\(v_x = v \cdot \cos\theta\)</span></li>
+<li>垂直分量 <span class="arithmatex">\(v_y\)</span>（墙上的影子）：<span class="arithmatex">\(v_y = v \cdot \sin\theta\)</span></li>
+</ul>
+<p>根据勾股定理验证：
+$$
+v_x^2 + v_y^2 = (v\cos\theta)^2 + (v\sin\theta)^2 = v<sup>2(\cos</sup>2\theta + \sin^2\theta) = v^2
+$$
+因此 <span class="arithmatex">\(|\mathbf{v}| = \sqrt{v_x^2 + v_y^2} = v\)</span>，与原速率一致。✓</p>
+</blockquote>
+<h5 id="_24">分量符号的判断<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h5>
+<p>分量的正负由角度 <span class="arithmatex">\(\theta\)</span> 所在的象限决定：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(\theta\)</span> 范围</th>
+<th style="text-align: center;">象限</th>
+<th style="text-align: center;"><span class="arithmatex">\(\cos\theta\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(\sin\theta\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(v_x\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(v_y\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(0^\circ &lt; \theta &lt; 90^\circ\)</span></td>
+<td style="text-align: center;">第一象限</td>
+<td style="text-align: center;"><span class="arithmatex">\(+\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(+\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(+\)</span>（向右）</td>
+<td style="text-align: center;"><span class="arithmatex">\(+\)</span>（向上）</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(90^\circ &lt; \theta &lt; 180^\circ\)</span></td>
+<td style="text-align: center;">第二象限</td>
+<td style="text-align: center;"><span class="arithmatex">\(-\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(+\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(-\)</span>（向左）</td>
+<td style="text-align: center;"><span class="arithmatex">\(+\)</span>（向上）</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(180^\circ &lt; \theta &lt; 270^\circ\)</span></td>
+<td style="text-align: center;">第三象限</td>
+<td style="text-align: center;"><span class="arithmatex">\(-\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(-\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(-\)</span>（向左）</td>
+<td style="text-align: center;"><span class="arithmatex">\(-\)</span>（向下）</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(270^\circ &lt; \theta &lt; 360^\circ\)</span></td>
+<td style="text-align: center;">第四象限</td>
+<td style="text-align: center;"><span class="arithmatex">\(+\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(-\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(+\)</span>（向右）</td>
+<td style="text-align: center;"><span class="arithmatex">\(-\)</span>（向下）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>记忆口诀</strong>："<strong>右正左负，上正下负</strong>"。<span class="arithmatex">\(+\mathbf{i}\)</span> 指向右，<span class="arithmatex">\(-\mathbf{i}\)</span> 指向左；<span class="arithmatex">\(+\mathbf{j}\)</span> 指向上，<span class="arithmatex">\(-\mathbf{j}\)</span> 指向下。</p>
+</blockquote>
+<h5 id="_25">由分量求合速度的大小和方向<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h5>
+<p>分解的逆过程——已知两个分量 <span class="arithmatex">\(v_x\)</span> 和 <span class="arithmatex">\(v_y\)</span>，求原速度的大小和方向：</p>
+<div class="arithmatex">\[
+\boxed{v = \sqrt{v_x^2 + v_y^2}}, \qquad
+\boxed{\theta = \arctan\left(\frac{v_y}{v_x}\right)}
+\]</div>
+<p>其中 <span class="arithmatex">\(\theta\)</span> 为速度与水平方向的夹角。</p>
+<blockquote>
+<p><strong>⚠️ 注意事项</strong>：</p>
+<p><strong>1. 反正切的角度范围</strong></p>
+<p>函数 <span class="arithmatex">\(\arctan\)</span> 的返回值范围是 <span class="arithmatex">\((-90^\circ, 90^\circ)\)</span>，仅覆盖第一和第四象限。如果 <span class="arithmatex">\(v_x &lt; 0\)</span>（即速度指向左方），直接计算 <span class="arithmatex">\(\arctan(v_y/v_x)\)</span> 会得到第二或第三象限的角度，但 <span class="arithmatex">\(\arctan\)</span> 会返回一个负角（第四象限）。<strong>此时需要加 <span class="arithmatex">\(180^\circ\)</span>（<span class="arithmatex">\(\pi\)</span> 弧度）来修正</strong>。</p>
+<p>正确的处理方法：
+$$
+\theta = \begin{cases}
+\arctan\left(\dfrac{v_y}{v_x}\right), &amp; v_x &gt; 0 \[8pt]
+\arctan\left(\dfrac{v_y}{v_x}\right) + 180^\circ, &amp; v_x &lt; 0
+\end{cases}
+$$</p>
+<p>如果 <span class="arithmatex">\(v_x = 0\)</span>，则速度沿垂直方向：
+- <span class="arithmatex">\(v_y &gt; 0 \implies \theta = 90^\circ\)</span>
+- <span class="arithmatex">\(v_y &lt; 0 \implies \theta = 270^\circ\)</span>（或 <span class="arithmatex">\(-90^\circ\)</span>）</p>
+<p>许多计算器有 <span class="arithmatex">\(\text{atan2}(y, x)\)</span> 函数，它自动处理象限问题，推荐使用。</p>
+<p><strong>2. 分解与合成是互逆运算</strong></p>
+<div class="arithmatex">\[
+\boxed{\text{分解：}\quad (v, \theta) \xrightarrow{\text{投影}} (v\cos\theta, v\sin\theta)}
+$$
+$$
+\boxed{\text{合成：}\quad (v_x, v_y) \xrightarrow{\text{勾股定理+反正切}} (v, \theta)}
+\]</div>
+<p>两者互为逆运算，构成了向量分析的基本操作循环。</p>
+</blockquote>
+<h5 id="_26">沿任意方向的分解<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h5>
+<p>虽然水平和垂直分解是最常用的，但在某些问题中，将速度沿<strong>其他互相垂直的方向</strong>分解更方便。</p>
+<p>例如，一个物体沿倾角为 <span class="arithmatex">\(\alpha\)</span> 的斜面运动，速度大小为 <span class="arithmatex">\(v\)</span>，方向沿斜面向上。此时分解为<strong>沿斜面方向</strong>和<strong>垂直于斜面方向</strong>更为自然：</p>
+<ul>
+<li>沿斜面方向的分量：<span class="arithmatex">\(v_{\parallel} = v\)</span>（全部沿斜面）</li>
+<li>垂直于斜面的分量：<span class="arithmatex">\(v_{\perp} = 0\)</span></li>
+</ul>
+<p>但如果物体的速度方向与斜面夹角为 <span class="arithmatex">\(\phi\)</span>，则需要将速度向这两个方向投影：</p>
+<blockquote>
+<p>设 <span class="arithmatex">\(x'\)</span> 轴沿斜面向上，<span class="arithmatex">\(y'\)</span> 轴垂直于斜面向上。速度 <span class="arithmatex">\(\mathbf{v}\)</span> 与 <span class="arithmatex">\(x'\)</span> 轴夹角为 <span class="arithmatex">\(\phi\)</span>，则：
+$$
+\mathbf{v} = (v\cos\phi)\,\mathbf{i}' + (v\sin\phi)\,\mathbf{j}'
+$$
+其中 <span class="arithmatex">\(\mathbf{i}'\)</span> 是沿斜面方向的单位向量，<span class="arithmatex">\(\mathbf{j}'\)</span> 是垂直斜面方向的单位向量。</p>
+</blockquote>
+<p><strong>一般原则</strong>：选择分解方向时，应使尽可能多的分量在后续计算中保持简单（例如，使某个方向上的加速度为零，或使某个方向上的运动为匀速）。</p>
+<h5 id="_27">任意方向速度分量的通用公式<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h5>
+<p>更一般地，对于任意方向（与 <span class="arithmatex">\(x\)</span> 轴夹角为 <span class="arithmatex">\(\theta\)</span>）的速度 <span class="arithmatex">\(\mathbf{v}\)</span>，我们可以将其分解到<strong>任意两个互相垂直的方向</strong>上。</p>
+<p>设 <span class="arithmatex">\(\mathbf{u}\)</span> 是某个方向的单位向量（与 <span class="arithmatex">\(x\)</span> 轴夹角为 <span class="arithmatex">\(\alpha\)</span>），<span class="arithmatex">\(\mathbf{u}_\perp\)</span> 是垂直于 <span class="arithmatex">\(\mathbf{u}\)</span> 的单位向量（与 <span class="arithmatex">\(x\)</span> 轴夹角为 <span class="arithmatex">\(\alpha + 90^\circ\)</span>）。那么 <span class="arithmatex">\(\mathbf{v}\)</span> 在 <span class="arithmatex">\(\mathbf{u}\)</span> 方向上的分量大小为：</p>
+<div class="arithmatex">\[
+v_{\parallel} = \mathbf{v} \cdot \mathbf{u} = |\mathbf{v}| \cos(\theta - \alpha)
+\]</div>
+<p>在 <span class="arithmatex">\(\mathbf{u}_\perp\)</span> 方向上的分量大小为：</p>
+<div class="arithmatex">\[
+v_{\perp} = \mathbf{v} \cdot \mathbf{u}_\perp = |\mathbf{v}| \sin(\theta - \alpha)
+\]</div>
+<blockquote>
+<p><strong>证明</strong>：<span class="arithmatex">\(\mathbf{v}\)</span> 与 <span class="arithmatex">\(\mathbf{u}\)</span> 的夹角为 <span class="arithmatex">\(|\theta - \alpha|\)</span>，因此 <span class="arithmatex">\(\mathbf{v}\)</span> 在 <span class="arithmatex">\(\mathbf{u}\)</span> 上的投影长度为 <span class="arithmatex">\(|\mathbf{v}|\cos(\theta - \alpha)\)</span>。同理，<span class="arithmatex">\(\mathbf{v}\)</span> 与 <span class="arithmatex">\(\mathbf{u}_\perp\)</span> 的夹角为 <span class="arithmatex">\(|\theta - \alpha - 90^\circ|\)</span>，投影长度为 <span class="arithmatex">\(|\mathbf{v}|\sin(\theta - \alpha)\)</span>。</p>
+</blockquote>
+<h5 id="_28">分解的验证——分量合成回去<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h5>
+<p>分解是否正确，可以通过将分量重新合成来验证。任何正确的分解都必须满足：</p>
+<div class="arithmatex">\[
+v_x^2 + v_y^2 = v^2 \quad \text{（模长不变）}
+\]</div>
+<p>以及方向的一致性。这为我们提供了一种检验分解是否正确的便捷方法。</p>
+<blockquote>
+<p><strong>📌 验证示例</strong>：设 <span class="arithmatex">\(\mathbf{v} = 20\,\text{m/s}\)</span>，<span class="arithmatex">\(\theta = 30^\circ\)</span>。</p>
+<p>分解得 <span class="arithmatex">\(v_x = 20\cos 30^\circ = 10\sqrt{3} \approx 17.32\)</span>，<span class="arithmatex">\(v_y = 20\sin 30^\circ = 10\)</span>。</p>
+<p>验证模长：<span class="arithmatex">\(\sqrt{(10\sqrt{3})^2 + 10^2} = \sqrt{300 + 100} = \sqrt{400} = 20\)</span> ✓</p>
+<p>验证角度：<span class="arithmatex">\(\tan\theta = \frac{10}{10\sqrt{3}} = \frac{1}{\sqrt{3}} \implies \theta = 30^\circ\)</span> ✓</p>
+</blockquote>
+<h5 id="_29">常见特殊角度的分解速查<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">角度 <span class="arithmatex">\(\theta\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(\cos\theta\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(\sin\theta\)</span></th>
+<th style="text-align: center;">水平分量 <span class="arithmatex">\(v_x\)</span></th>
+<th style="text-align: center;">垂直分量 <span class="arithmatex">\(v_y\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(0^\circ\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(v\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(30^\circ\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\dfrac{\sqrt{3}}{2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\dfrac{1}{2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\dfrac{\sqrt{3}}{2}v\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\dfrac{1}{2}v\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(45^\circ\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\dfrac{\sqrt{2}}{2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\dfrac{\sqrt{2}}{2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\dfrac{\sqrt{2}}{2}v\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\dfrac{\sqrt{2}}{2}v\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(60^\circ\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\dfrac{1}{2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\dfrac{\sqrt{3}}{2}\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\dfrac{1}{2}v\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(\dfrac{\sqrt{3}}{2}v\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(90^\circ\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(v\)</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(180^\circ\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(-1\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(-v\)</span></td>
+<td style="text-align: center;"><span class="arithmatex">\(0\)</span></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>记忆技巧</strong>：
+- 当 <span class="arithmatex">\(\theta = 0^\circ\)</span>（水平向右运动）时，速度全部在水平方向，垂直分量为零
+- 当 <span class="arithmatex">\(\theta = 90^\circ\)</span>（竖直向上运动）时，速度全部在垂直方向，水平分量为零
+- 当 <span class="arithmatex">\(\theta = 45^\circ\)</span> 时，水平分量等于垂直分量，均为 <span class="arithmatex">\(\dfrac{v}{\sqrt{2}}\)</span></p>
+</blockquote>
+<hr />
+<h4 id="_30">相撞问题（追及相遇问题）<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h4>
+<p>相撞问题是速度合成与分解的一个直接应用。它在现实生活中无处不在：</p>
+<ul>
+<li><strong>导弹拦截</strong>：拦截弹需要在特定时刻飞到目标位置，才能击中目标</li>
+<li><strong>空中交通管制</strong>：航管员需要判断两架飞机是否会在空中相撞，并提前调整航线</li>
+<li><strong>海上搜救</strong>：搜救船需要计算出与遇险船只的相遇时间和位置</li>
+<li><strong>自动驾驶</strong>：车辆需要预测其他车辆的轨迹，避免碰撞</li>
+</ul>
+<p>所有这些问题的核心都是同一个数学问题——判断两个运动物体是否会在<strong>同一时刻到达同一位置</strong>。</p>
+<h5 id="1-gps">1. 核心逻辑——用"GPS定位"来理解<a class="headerlink" href="#1-gps" title="Permanent link">&para;</a></h5>
+<p>想象你打开手机地图，上面有两个行人的实时位置在移动：</p>
+<ul>
+<li><strong>物体的位置</strong> <span class="arithmatex">\(\mathbf{r}(t)\)</span>：就是它在地图上的 <strong>"实时坐标"</strong>。这个坐标会随时间 <span class="arithmatex">\(t\)</span> 变化——<span class="arithmatex">\(t\)</span> 不同，位置就不同。</li>
+<li><strong>初始位置</strong> <span class="arithmatex">\(\mathbf{r}_0\)</span>：是它在 <strong>"0 秒时"</strong>（即开始计时的那一刻）的出发坐标。这是整个运动的"起点"。</li>
+<li><strong>速度向量</strong> <span class="arithmatex">\(\mathbf{v}\)</span>：就是它 <strong>"每秒移动多少米"</strong>，并且指明了移动的方向。速度向量就像 GPS 上的"方向箭头"——箭头的长度是速率，箭头的指向是运动方向。</li>
+</ul>
+<p>因此，匀速直线运动的位置公式 <span class="arithmatex">\(\mathbf{r}(t) = \mathbf{r}_0 + \mathbf{v}t\)</span> 翻译成人话就是：</p>
+<blockquote>
+<p><strong>"现在的坐标 = 出发时的坐标 + 走了多长时间 × 每秒走多少"</strong></p>
+<p><strong>🌰 一个具体的例子</strong>：假设一艘船从点 <span class="arithmatex">\((2, 1)\)</span> 出发，以速度 <span class="arithmatex">\(\mathbf{v} = (3, 4)\)</span> 航行。
+- <span class="arithmatex">\(t = 0\)</span> 秒时：位置是 <span class="arithmatex">\((2, 1)\)</span>（还没出发）
+- <span class="arithmatex">\(t = 1\)</span> 秒时：位置是 <span class="arithmatex">\((2+3, 1+4) = (5, 5)\)</span>（向右走了 3，向上走了 4）
+- <span class="arithmatex">\(t = 2\)</span> 秒时：位置是 <span class="arithmatex">\((2+6, 1+8) = (8, 9)\)</span>
+- 一般地：<span class="arithmatex">\(\mathbf{r}(t) = (2, 1) + (3, 4)t = (2+3t, 1+4t)\)</span></p>
+<p>你看，每过 1 秒，<span class="arithmatex">\(x\)</span> 坐标增加 3，<span class="arithmatex">\(y\)</span> 坐标增加 4——速度向量 <span class="arithmatex">\((3, 4)\)</span> 就是在告诉我们"每秒怎么走"。</p>
+</blockquote>
+<h5 id="2_1">2. 相撞的数学条件——"同时同地"<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h5>
+<p>两个运动物体相撞，说白了就是两个要求：<strong>同一时刻 + 同一位置</strong>。缺一不可。</p>
+<p>用数学语言说：存在某个时刻 <span class="arithmatex">\(t\)</span>，使得两个物体的位置向量<strong>相等</strong>。即：</p>
+<div class="arithmatex">\[
+\boxed{\mathbf{r}_1(t) = \mathbf{r}_2(t)}
+\]</div>
+<blockquote>
+<p><strong>💡 直觉理解</strong>：你在微信上和朋友约见面。
+- "同一位置" = 你们都到了咖啡店
+- "同一时刻" = 你们同时推门进去
+- 如果你下午 2 点到咖啡店，朋友下午 3 点才来——你们确实都到了咖啡店（同一位置），但没碰上（不同时刻）。这不叫"撞见"，这叫"错过"。</p>
+</blockquote>
+<p>对于匀速直线运动，位置向量满足 <span class="arithmatex">\(\mathbf{r}(t) = \mathbf{r}_0 + \mathbf{v}t\)</span>，因此相撞条件展开为：</p>
+<div class="arithmatex">\[
+\mathbf{r}_{01} + \mathbf{v}_1 t = \mathbf{r}_{02} + \mathbf{v}_2 t
+\]</div>
+<p>这个方程看起来只是一个式子，但它实际上<strong>同时管着两个方向</strong>——<span class="arithmatex">\(x\)</span> 方向和 <span class="arithmatex">\(y\)</span> 方向。这就引出了下一个关键问题。</p>
+<h5 id="3_1">3. 为什么会有"两个分量方程"？——"两把锁一把钥匙"<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h5>
+<p>你可能觉得奇怪：为什么一个等式 <span class="arithmatex">\(\mathbf{r}_1(t) = \mathbf{r}_2(t)\)</span> 会变成两个方程？</p>
+<p>这是因为位置向量 <span class="arithmatex">\(\mathbf{r}\)</span> 是一个 <strong>二维坐标</strong> <span class="arithmatex">\((x, y)\)</span>。两个向量相等，意味着它们的<strong>每个分量都必须对应相等</strong>——这就像两把锁需要同一把钥匙同时打开：</p>
+<div class="arithmatex">\[
+\begin{pmatrix} x_1(t) \\ y_1(t) \end{pmatrix} = \begin{pmatrix} x_2(t) \\ y_2(t) \end{pmatrix}
+\quad\Longleftrightarrow\quad
+\begin{cases}
+x_1(t) = x_2(t) \\[4pt]
+y_1(t) = y_2(t)
+\end{cases}
+\]</div>
+<p>这背后的底层逻辑其实就是<strong>速度分解</strong>——把"斜着跑"的运动拆成"水平跑"和"竖直跑"，然后分别判断两个物体是否能在同一时刻到达同一 <span class="arithmatex">\(x\)</span> 坐标和同一 <span class="arithmatex">\(y\)</span> 坐标：</p>
+<div class="arithmatex">\[
+\begin{cases}
+x\text{方向：} &amp; x_{01} + v_{1x}\,t = x_{02} + v_{2x}\,t \\[4pt]
+y\text{方向：} &amp; y_{01} + v_{1y}\,t = y_{02} + v_{2y}\,t
+\end{cases}
+\]</div>
+<blockquote>
+<p><strong>🎯 几何直观</strong>：
+- <strong>第一个方程（<span class="arithmatex">\(x\)</span> 方向）</strong>：两个物体在水平方向上的投影——它们是否会在同一时刻经过同一竖直线？
+- <strong>第二个方程（<span class="arithmatex">\(y\)</span> 方向）</strong>：两个物体在竖直方向上的投影——它们是否会在同一时刻经过同一水平线？</p>
+<p>只有<strong>同时</strong>满足这两个条件，两个物体才会在<strong>同一时刻到达平面上的同一点</strong>。</p>
+<p>这就好比两个人要在三维空间中的某一点握手——他们的 <span class="arithmatex">\(x\)</span> 坐标要在同一时间相等 <strong>且</strong> <span class="arithmatex">\(y\)</span> 坐标也要在同一时间相等。两个条件就像两把独立的锁，必须用同一把钥匙（同一个 <span class="arithmatex">\(t\)</span>）同时打开。</p>
+</blockquote>
+<p><strong>用生活的例子来想：</strong></p>
+<p>假设你和朋友约在某个路口见面。路口有确定的 <span class="arithmatex">\(x\)</span> 坐标和 <span class="arithmatex">\(y\)</span> 坐标。</p>
+<ul>
+<li>如果你在 <span class="arithmatex">\(t=2\)</span> 分钟时走到了那个 <span class="arithmatex">\(x\)</span> 坐标，但朋友在 <span class="arithmatex">\(t=5\)</span> 分钟时才走到那个 <span class="arithmatex">\(x\)</span> 坐标——你们在 <span class="arithmatex">\(x\)</span> 方向上错过了</li>
+<li>就算你们同时走到了同一个 <span class="arithmatex">\(x\)</span>，但如果 <span class="arithmatex">\(y\)</span> 方向上差了 10 米——你们还是没碰上</li>
+<li><strong>只有 <span class="arithmatex">\(x\)</span> 和 <span class="arithmatex">\(y\)</span> 都在同一时刻对齐了，才算真正撞上了</strong></li>
+</ul>
+<h5 id="4">4. 考场三步走（不跳步完整版）<a class="headerlink" href="#4" title="Permanent link">&para;</a></h5>
+<h6 id="_31">先看一张"全景图"——两道轨迹如何交汇<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h6>
+<p>想象二维平面上有两个物体 <span class="arithmatex">\(A\)</span> 和 <span class="arithmatex">\(B\)</span>，它们各自从起点出发，沿直线运动。下图展示了它们各自的轨迹线：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    y
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>    ^
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    |   B 的轨迹线
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    |     \
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    |      \        ← 这里是可能的相撞点？
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    |       \         （需要同时满足 x 和 y 相等）
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    |   A 的轨迹线 —
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>    |   ———————————→
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>    |
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>    ——————————————————→ x
+</code></pre></div>
+<p>更具体地，看看两个物体的位置随时间的变化：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>物体 A:   ●——→——→——→——→——→
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>          t=0  t=1  t=2  t=3  t=4
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>物体 B:         ●——→——→——→——→
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>               t=0  t=1  t=2  t=3
+</code></pre></div>
+<p>如果它们在<strong>同一个 <span class="arithmatex">\(t\)</span></strong> 到达了<strong>同一个 <span class="arithmatex">\((x,y)\)</span></strong>，就是相撞。</p>
+<hr />
+<p><strong>第一步：拆速度</strong> 🔧</p>
+<p>把每个速度向量拆成 <span class="arithmatex">\(x\)</span> 分量和 <span class="arithmatex">\(y\)</span> 分量。这是整个解题的<strong>地基工程</strong>。</p>
+<p><strong>情景 1</strong>：题目给了速度大小 <span class="arithmatex">\(v\)</span> 和方向角 <span class="arithmatex">\(\theta\)</span>（如 "<span class="arithmatex">\(20\,\text{m/s}\)</span>，与水平成 <span class="arithmatex">\(30^\circ\)</span>"）</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>         ↑ v_y = v sinθ
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>         │
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>         │  ↗ 速度 v
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>         │ ↗
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>         │θ╱
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>  ——————→————
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>  v_x = v cosθ
+</code></pre></div>
+<p>用三角函数拆解：</p>
+<div class="arithmatex">\[
+v_x = v\cos\theta, \qquad v_y = v\sin\theta
+\]</div>
+<p><strong>情景 2</strong>：题目直接给坐标形式（如 <span class="arithmatex">\(\mathbf{v} = 3\mathbf{i} + 4\mathbf{j}\)</span>）</p>
+<p>直接读出：<span class="arithmatex">\(v_x = 3\)</span>，<span class="arithmatex">\(v_y = 4\)</span>。</p>
+<blockquote>
+<p><strong>⚠️ 这里最容易出错！</strong> 如果给的是"<span class="arithmatex">\(10\,\text{m/s}\)</span> 向东北方向"，不要直接拿 <span class="arithmatex">\(10\)</span> 去代公式——必须先求出 <span class="arithmatex">\(\theta = 45^\circ\)</span>，然后 <span class="arithmatex">\(v_x = 10\cos45^\circ = 10 \times \frac{\sqrt{2}}{2} = 5\sqrt{2}\)</span>。</p>
+</blockquote>
+<hr />
+<p><strong>第二步：写出两个"时间方程"</strong> 📝</p>
+<p>现在分别盯着 <span class="arithmatex">\(x\)</span> 方向和 <span class="arithmatex">\(y\)</span> 方向，写出它们各自的"相遇条件"。</p>
+<p>设物体 1 的初始坐标为 <span class="arithmatex">\((x_1, y_1)\)</span>，速度分量为 <span class="arithmatex">\((u_x, u_y)\)</span>；
+物体 2 的初始坐标为 <span class="arithmatex">\((x_2, y_2)\)</span>，速度分量为 <span class="arithmatex">\((v_x, v_y)\)</span>。</p>
+<blockquote>
+<p><strong>视觉辅助</strong>：把两个物体在 <span class="arithmatex">\(x\)</span> 方向上的运动想象成<strong>两条水平线上的点</strong>：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>x 方向上的投影：
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>物体1:  x1 ●—————————————→  速度 u_x
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>物体2:  x2 ●—————————————→  速度 v_x
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        ——它们在 x 方向上是否会在同一时刻相遇？——
+</code></pre></div>
+<p>同理，<span class="arithmatex">\(y\)</span> 方向上的投影：
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>y 方向上的投影：
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>物体1:  y1 ●—————————————→  速度 u_y
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>物体2:  y2 ●—————————————→  速度 v_y
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>        ——它们在 y 方向上是否会在同一时刻相遇？——
+</code></pre></div></p>
+</blockquote>
+<p>两个方向的方程：</p>
+<div class="arithmatex">\[
+\begin{cases}
+x_1 + u_x \cdot t = x_2 + v_x \cdot t \quad &amp;\text{（水平方程）} \\[4pt]
+y_1 + u_y \cdot t = y_2 + v_y \cdot t \quad &amp;\text{（竖直方程）}
+\end{cases}
+\]</div>
+<p>分别解出两个时间：</p>
+<ul>
+<li>从水平方程解出 <span class="arithmatex">\(t_1\)</span>——这是两物体 <span class="arithmatex">\(x\)</span> 坐标相等的时间</li>
+<li>从竖直方程解出 <span class="arithmatex">\(t_2\)</span>——这是两物体 <span class="arithmatex">\(y\)</span> 坐标相等的时间</li>
+</ul>
+<blockquote>
+<p><strong>💡 为什么非要解两个 <span class="arithmatex">\(t\)</span>？</strong> 因为"相撞"要求两个物体同时在同一 <span class="arithmatex">\((x,y)\)</span> 点。<span class="arithmatex">\(x\)</span> 相等只保证了它们在<strong>同一竖直线</strong>上，<span class="arithmatex">\(y\)</span> 相等只保证了它们在<strong>同一水平线</strong>上。两条线相交才能确定一个点。</p>
+</blockquote>
+<hr />
+<p><strong>第三步：判定结果</strong> ✅</p>
+<div class="arithmatex">\[
+\boxed{\text{相撞} \iff t_1 = t_2 \geq 0}
+\]</div>
+<p>把两个时间拿来对比，有三种可能的情景：</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>情景 1：相撞 ✅
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>  水平方向 t₁ = 2 ──────┐
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>                         ├── 同一时刻！撞上了！
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>  竖直方向 t₂ = 2 ──────┘
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>情景 2：不相撞 ❌
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>  水平方向 t₁ = 2 ──────┐
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>                         ├── 不同时刻！错过了！
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>  竖直方向 t₂ = 1.67 ───┘
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>情景 3：不相撞（t 为负数）
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>  水平方向 t₁ = -1 ──────┐
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>                         ├── 负时间！那是过去的事！
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>  竖直方向 t₂ = -2 ──────┘
+</code></pre></div>
+<p>详细说明：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><span class="arithmatex">\(t_1\)</span> 与 <span class="arithmatex">\(t_2\)</span></th>
+<th style="text-align: center;"><span class="arithmatex">\(t \geq 0\)</span>?</th>
+<th style="text-align: center;">结果</th>
+<th style="text-align: left;">解释</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(t_1 = t_2\)</span></td>
+<td style="text-align: center;">是</td>
+<td style="text-align: center;">✅ <strong>相撞</strong></td>
+<td style="text-align: left;">同时同地，完美碰撞</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(t_1 = t_2\)</span></td>
+<td style="text-align: center;">否</td>
+<td style="text-align: center;">❌ 不相撞</td>
+<td style="text-align: left;">它们在出发前就在一起（如停在同一起点），但不是"未来的"相撞</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="arithmatex">\(t_1 \neq t_2\)</span></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">❌ <strong>不相撞</strong></td>
+<td style="text-align: left;"><span class="arithmatex">\(x\)</span> 和 <span class="arithmatex">\(y\)</span> 在不同的时间对齐，即使经过同一点也是"一前一后"错过</td>
+</tr>
+<tr>
+<td style="text-align: center;">无解（如 <span class="arithmatex">\(0=5\)</span>）</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">❌ <strong>不相撞</strong></td>
+<td style="text-align: left;">两个物体在某个方向上永远不可能对齐（比如平行运动）</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>🔑 关键区分</strong>："相撞"要求<strong>同时</strong>在同一位置。如果两船在不同时间到达同一点，那只叫"相遇"而非"相撞"。</p>
+</blockquote>
+<hr />
+<p><strong>🎯 完整范例演练（用刚才的例题 3 来走一遍流程）</strong></p>
+<p>题目：船 <span class="arithmatex">\(P\)</span> 从 <span class="arithmatex">\((0,0)\)</span> 出发，速度 <span class="arithmatex">\(\mathbf{v}_P = (3\mathbf{i} + 4\mathbf{j})\)</span>；船 <span class="arithmatex">\(Q\)</span> 从 <span class="arithmatex">\((10,5)\)</span> 出发，速度 <span class="arithmatex">\(\mathbf{v}_Q = (-2\mathbf{i} + \mathbf{j})\)</span>。同时出发，相撞吗？</p>
+<p><strong>第一步：拆速度</strong>
+- <span class="arithmatex">\(P\)</span>：<span class="arithmatex">\(v_{Px} = 3\)</span>，<span class="arithmatex">\(v_{Py} = 4\)</span>
+- <span class="arithmatex">\(Q\)</span>：<span class="arithmatex">\(v_{Qx} = -2\)</span>，<span class="arithmatex">\(v_{Qy} = 1\)</span></p>
+<p><strong>第二步：写方程</strong>
+$$
+\begin{cases}
+0 + 3t = 10 - 2t \quad &amp;\Rightarrow\quad 5t = 10 \quad \Rightarrow\quad t_1 = 2 \[4pt]
+0 + 4t = 5 + t \quad &amp;\Rightarrow\quad 3t = 5 \quad \Rightarrow\quad t_2 = \dfrac{5}{3}
+\end{cases}
+$$</p>
+<p><strong>第三步：判定</strong>
+<span class="arithmatex">\(t_1 = 2 \neq t_2 = \frac{5}{3}\)</span>，且 <span class="arithmatex">\(\frac{5}{3} \approx 1.67 &lt; 2\)</span>。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>时间线：
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>P 的 x 坐标：t=0 → 0,  t=1 → 3,  t=2 → 6  ← P 到了 x=6
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>Q 的 x 坐标：t=0 → 10, t=1 → 8,  t=2 → 6  ← Q 也到了 x=6（同时！）
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>P 的 y 坐标：t=0 → 0,  t=1 → 4,  t=1.67 → 6.67,  t=2 → 8
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>Q 的 y 坐标：t=0 → 5,  t=1 → 6,  t=1.67 → 6.67,  t=2 → 7
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>                                          ↑ 同时到了 y=6.67
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>                                但此时 P 的 x 还在 5，Q 的 x 在 6.67！没碰上！
+</code></pre></div>
+<p><strong>结论</strong>：<span class="arithmatex">\(t=2\)</span> 时 <span class="arithmatex">\(x\)</span> 相同但 <span class="arithmatex">\(y\)</span> 不同（<span class="arithmatex">\(8 \neq 7\)</span>）；<span class="arithmatex">\(t=\frac{5}{3}\)</span> 时 <span class="arithmatex">\(y\)</span> 相同但 <span class="arithmatex">\(x\)</span> 不同（<span class="arithmatex">\(5 \neq 6.67\)</span>）。两个方向始终不在同一时间对齐 → <strong>不相撞</strong> 🚫</p>
+<h5 id="5">5. ⚠️ 最容易丢分的"送命题"陷阱<a class="headerlink" href="#5" title="Permanent link">&para;</a></h5>
+<p>考试中，如果解出 <span class="arithmatex">\(t_1 \neq t_2\)</span>，<strong>千万别直接写"不相撞"就收工！</strong> 出题人在这里埋了三个常见坑，每一个都能让你丢掉整道题的分数：</p>
+<hr />
+<p><strong>坑 1：追问最短距离</strong></p>
+<p>如果两个物体不相撞，接下来 99% 的几率会问：<strong>"求它们之间的最短距离"</strong>。</p>
+<p>为什么不相撞还要算距离？因为出题人想考你：<strong>虽然它们永远不会碰到，但它们在运动过程中会有一个"最近的时候"</strong>——就像两艘船在海上交错而过，最近的时候可能只差几米。</p>
+<h5 id="_32">距离函数的建立<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h5>
+<p>此时需要用勾股定理写出两物体在任意时刻 <span class="arithmatex">\(t\)</span> 的<strong>直线距离</strong>：</p>
+<div class="arithmatex">\[
+d(t) = \sqrt{[\Delta x(t)]^2 + [\Delta y(t)]^2}
+\]</div>
+<p>其中 <span class="arithmatex">\(\Delta x(t) = x_1(t) - x_2(t)\)</span>，<span class="arithmatex">\(\Delta y(t) = y_1(t) - y_2(t)\)</span>。</p>
+<blockquote>
+<p><strong>💡 核心技巧</strong>：求 <span class="arithmatex">\(d(t)\)</span> 的最小值，等价于求 <span class="arithmatex">\([d(t)]^2\)</span> 的最小值（因为平方函数 <span class="arithmatex">\(f(x)=x^2\)</span> 在 <span class="arithmatex">\(x \geq 0\)</span> 上是单调递增的，最小值点相同）。而 <span class="arithmatex">\([d(t)]^2\)</span> 没有根号，运算起来方便得多。记 <span class="arithmatex">\(D(t) = [d(t)]^2\)</span>，则：
+$$
+D(t) = [\Delta x(t)]^2 + [\Delta y(t)]^2
+$$</p>
+</blockquote>
+<hr />
+<h5 id="dt">方法一：配方法（适用于 <span class="arithmatex">\(D(t)\)</span> 是二次函数时）<a class="headerlink" href="#dt" title="Permanent link">&para;</a></h5>
+<p>当两个物体都做匀速直线运动时，<span class="arithmatex">\(\Delta x(t)\)</span> 和 <span class="arithmatex">\(\Delta y(t)\)</span> 都是 <span class="arithmatex">\(t\)</span> 的线性函数，因此 <span class="arithmatex">\(D(t)\)</span> 是 <span class="arithmatex">\(t\)</span> 的<strong>二次函数</strong>：</p>
+<div class="arithmatex">\[
+D(t) = at^2 + bt + c
+\]</div>
+<p>通过配方法将其化为顶点式：</p>
+<div class="arithmatex">\[
+D(t) = a\left(t + \frac{b}{2a}\right)^2 + \left(c - \frac{b^2}{4a}\right)
+\]</div>
+<p>若 <span class="arithmatex">\(a &gt; 0\)</span>（二次项系数为正，开口向上），则最小值在 <span class="arithmatex">\(t = -\dfrac{b}{2a}\)</span> 处取得，最小值为 <span class="arithmatex">\(c - \dfrac{b^2}{4a}\)</span>。最后开平方根得到最短距离 <span class="arithmatex">\(d_{\min} = \sqrt{D_{\min}}\)</span>。</p>
+<blockquote>
+<p><strong>⚠️ 注意</strong>：算出的 <span class="arithmatex">\(t\)</span> 必须 <span class="arithmatex">\(\geq 0\)</span> 才有意义！如果 <span class="arithmatex">\(t &lt; 0\)</span>，说明最近距离发生在出发之前，那么实际的最短距离应该取 <span class="arithmatex">\(t = 0\)</span> 时的距离。</p>
+</blockquote>
+<hr />
+<h5 id="5_1">方法二：求导法（通用方法，适用于第 5 章后）<a class="headerlink" href="#5_1" title="Permanent link">&para;</a></h5>
+<h6 id="_33">求导速成——只需两条规则<a class="headerlink" href="#_33" title="Permanent link">&para;</a></h6>
+<p><strong>求导</strong>（differentiation）就是求一个函数的变化率。对于多项式函数，求导遵循两条极其简单的规则：</p>
+<blockquote>
+<p><strong>规则 1：降幂</strong>——<span class="arithmatex">\(t^n\)</span> 的导数 = <span class="arithmatex">\(n \cdot t^{n-1}\)</span>
+即指数 <span class="arithmatex">\(n\)</span> 拿到前面乘，指数本身减 1。</p>
+<p>例如：<span class="arithmatex">\(t^2 \to 2t\)</span>，<span class="arithmatex">\(t^3 \to 3t^2\)</span>，<span class="arithmatex">\(t^1 \to 1 \cdot t^0 = 1\)</span>。</p>
+<p><strong>规则 2：常数消失</strong>——常数项求导后变为 0。</p>
+<p>例如：<span class="arithmatex">\(5\)</span> 的导数是 <span class="arithmatex">\(0\)</span>，<span class="arithmatex">\(125\)</span> 的导数是 <span class="arithmatex">\(0\)</span>。</p>
+</blockquote>
+<p><strong>哪些函数可以用这两条规则？</strong> 所有<strong>多项式</strong>（形如 <span class="arithmatex">\(at^n + bt^{n-1} + \dots + c\)</span>）都可以，例如 <span class="arithmatex">\(34t^2 - 130t + 125\)</span> 就是一个二次多项式，逐项求导即可。</p>
+<blockquote>
+<p><strong>💡 直观理解</strong>：导数就是函数在某一点的"瞬时变化率"——好比车速表显示的不是"过去一小时的平均速度"，而是"此刻的瞬时速度"。对于距离函数 <span class="arithmatex">\(s(t)\)</span>，<span class="arithmatex">\(s'(t)\)</span> 就是速度；对于 <span class="arithmatex">\(D(t)\)</span>，<span class="arithmatex">\(D'(t)\)</span> 就是距离平方的变化率。令 <span class="arithmatex">\(D'(t) = 0\)</span>，就找到 <span class="arithmatex">\(D(t)\)</span> 取最小值（或最大值）的时刻。</p>
+</blockquote>
+<h6 id="_34">实际操作——三步走<a class="headerlink" href="#_34" title="Permanent link">&para;</a></h6>
+<p>对 <span class="arithmatex">\(D(t) = at^2 + bt + c\)</span> 求导：</p>
+<ol>
+<li>对 <span class="arithmatex">\(at^2\)</span> 用<strong>规则 1</strong>（降幂）：指数 2 拿到前面乘 <span class="arithmatex">\(a\)</span>，指数减为 1 → <span class="arithmatex">\(2at\)</span></li>
+<li>对 <span class="arithmatex">\(bt\)</span> 用<strong>规则 1</strong>（降幂）：指数 1 拿到前面乘 <span class="arithmatex">\(b\)</span>，指数减为 0 → <span class="arithmatex">\(b\)</span></li>
+<li>对 <span class="arithmatex">\(c\)</span> 用<strong>规则 2</strong>（常数消失）：→ <span class="arithmatex">\(0\)</span></li>
+</ol>
+<p>合起来 <span class="arithmatex">\(D'(t) = 2at + b\)</span>。令 <span class="arithmatex">\(D'(t) = 0\)</span> 解得 <span class="arithmatex">\(t = -\dfrac{b}{2a}\)</span>，与配方法结果一致。</p>
+<p>如果 <span class="arithmatex">\(D(t)\)</span> 不是二次函数（例如有变速运动，出现 <span class="arithmatex">\(t^3\)</span> 或更高次项），配方法不再适用，但求导法依然有效——这正是求导法的强大之处。</p>
+<hr />
+<h5 id="3_2">🎯 完整示例（接例题 3 的数据）<a class="headerlink" href="#3_2" title="Permanent link">&para;</a></h5>
+<p>船 <span class="arithmatex">\(P\)</span> 从 <span class="arithmatex">\((0,0)\)</span> 出发，速度 <span class="arithmatex">\((3,4)\)</span>；船 <span class="arithmatex">\(Q\)</span> 从 <span class="arithmatex">\((10,5)\)</span> 出发，速度 <span class="arithmatex">\((-2,1)\)</span>。已知它们不相撞，求两船之间的最短距离。</p>
+<p><strong>第一步：写出位置差</strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+\Delta x(t) &amp;= x_P(t) - x_Q(t) = 3t - (10 - 2t) = 5t - 10 \\[4pt]
+\Delta y(t) &amp;= y_P(t) - y_Q(t) = 4t - (5 + t) = 3t - 5
+\end{aligned}
+\]</div>
+<p><strong>第二步：建立 <span class="arithmatex">\(D(t)\)</span></strong></p>
+<div class="arithmatex">\[
+\begin{aligned}
+D(t) &amp;= (5t - 10)^2 + (3t - 5)^2 \\[4pt]
+&amp;= (25t^2 - 100t + 100) + (9t^2 - 30t + 25) \\[4pt]
+&amp;= 34t^2 - 130t + 125
+\end{aligned}
+\]</div>
+<blockquote>
+<p>验证：<span class="arithmatex">\(a = 34 &gt; 0\)</span>，开口向上，有最小值。</p>
+</blockquote>
+<p><strong>第三步：方法一——配方法</strong></p>
+<p>回忆配方法的标准流程：<span class="arithmatex">\(at^2 + bt + c = a\left(t + \dfrac{b}{2a}\right)^2 + \left(c - \dfrac{b^2}{4a}\right)\)</span>。</p>
+<p>这里 <span class="arithmatex">\(a = 34\)</span>，<span class="arithmatex">\(b = -130\)</span>，<span class="arithmatex">\(c = 125\)</span>。先算 <span class="arithmatex">\(\dfrac{b}{2a} = \dfrac{-130}{2 \times 34} = -\dfrac{130}{68} = -\dfrac{65}{34}\)</span>。</p>
+<p>然后一步步代入：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+D(t) &amp;= 34t^2 - 130t + 125 \\[4pt]
+&amp;= 34\left(t^2 - \frac{130}{34}t\right) + 125 \qquad\text{（提取 $a$：括号内是 $t^2 + \frac{b}{a}t$）}\\[4pt]
+&amp;= 34\left(t^2 - \frac{65}{17}t\right) + 125 \qquad\text{（化简 $\frac{130}{34} = \frac{65}{17}$）}\\[4pt]
+&amp;= 34\left[t^2 - \frac{65}{17}t + \left(\frac{65}{34}\right)^2 - \left(\frac{65}{34}\right)^2\right] + 125 \qquad\text{（加/减 $(\frac{b}{2a})^2$）}\\[4pt]
+&amp;= 34\left[\left(t - \frac{65}{34}\right)^2 - \left(\frac{65}{34}\right)^2\right] + 125 \qquad\text{（括号内配成完全平方）}\\[4pt]
+&amp;= 34\left(t - \frac{65}{34}\right)^2 - 34 \times \frac{65^2}{34^2} + 125 \qquad\text{（展开中括号）}\\[4pt]
+&amp;= 34\left(t - \frac{65}{34}\right)^2 - \frac{65^2}{34} + 125 \\[4pt]
+&amp;= 34\left(t - \frac{65}{34}\right)^2 + 125 - \frac{4225}{34} \\[4pt]
+&amp;= 34\left(t - \frac{65}{34}\right)^2 + \frac{4250}{34} - \frac{4225}{34} \qquad\text{（$125 = \frac{4250}{34}$）}\\[4pt]
+&amp;= 34\left(t - \frac{65}{34}\right)^2 + \frac{25}{34}
+\end{aligned}
+\]</div>
+<p>因此当 <span class="arithmatex">\(t = \dfrac{65}{34} \approx 1.912\)</span> 时，<span class="arithmatex">\(D_{\min} = \dfrac{25}{34}\)</span>。</p>
+<p>当 <span class="arithmatex">\(t = \dfrac{65}{34} \approx 1.912\)</span> 时，<span class="arithmatex">\(D_{\min} = \dfrac{25}{34}\)</span>。</p>
+<p><strong>第三步（替代）：方法二——求导法</strong></p>
+<div class="arithmatex">\[
+D'(t) = 68t - 130 = 0 \;\Longrightarrow\; t = \frac{130}{68} = \frac{65}{34} \approx 1.912
+\]</div>
+<p>代入 <span class="arithmatex">\(t = \dfrac{65}{34}\)</span> 到 <span class="arithmatex">\(D(t) = 34t^2 - 130t + 125\)</span>：</p>
+<div class="arithmatex">\[
+\begin{aligned}
+D_{\min} &amp;= 34\left(\frac{65}{34}\right)^2 - 130\left(\frac{65}{34}\right) + 125 \\[4pt]
+&amp;= 34 \times \frac{65^2}{34^2} - \frac{130 \times 65}{34} + 125 \\[4pt]
+&amp;= \frac{65^2}{34} - \frac{8450}{34} + \frac{4250}{34} \qquad\text{（$65^2 = 4225$，$125 = \frac{4250}{34}$）}\\[4pt]
+&amp;= \frac{4225}{34} - \frac{8450}{34} + \frac{4250}{34} \\[4pt]
+&amp;= \frac{4225 - 8450 + 4250}{34} \\[4pt]
+&amp;= \frac{25}{34}
+\end{aligned}
+\]</div>
+<p>结果与配方法一致。</p>
+<p><strong>第四步：求最短距离</strong></p>
+<div class="arithmatex">\[
+d_{\min} = \sqrt{D_{\min}} = \sqrt{\frac{25}{34}} = \frac{5}{\sqrt{34}} \approx 0.857\ \text{km}
+\]</div>
+<blockquote>
+<p><strong>验证合理性</strong>：<span class="arithmatex">\(t \approx 1.912\)</span> 小时 &gt; 0，且在 <span class="arithmatex">\(t_1 = 2\)</span> 和 <span class="arithmatex">\(t_2 \approx 1.667\)</span> 之间，符合"最近点发生在两个方向各自对齐的时间之间"的直觉。</p>
+</blockquote>
+<p><strong>第五步：写出答案</strong></p>
+<p>两船之间的最短距离为 <span class="arithmatex">\(\dfrac{5}{\sqrt{34}}\,\text{km}\)</span>（约 <span class="arithmatex">\(0.857\,\text{km}\)</span>），发生在出发后约 <span class="arithmatex">\(1.912\)</span> 小时。</p>
+<hr />
+<h5 id="_35">📊 方法对比总结<a class="headerlink" href="#_35" title="Permanent link">&para;</a></h5>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">方法</th>
+<th style="text-align: left;">优点</th>
+<th style="text-align: left;">缺点</th>
+<th style="text-align: left;">适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>配方法</strong></td>
+<td style="text-align: left;">不需要微积分，初中数学即可</td>
+<td style="text-align: left;">计算量稍大，容易算错</td>
+<td style="text-align: left;">二次函数（匀速直线运动）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>求导法</strong></td>
+<td style="text-align: left;">步骤简洁，不易出错</td>
+<td style="text-align: left;">需要知道求导运算</td>
+<td style="text-align: left;">任意可导函数（含变速运动）</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>几何法</strong>（了解）</td>
+<td style="text-align: left;">直观，无计算</td>
+<td style="text-align: left;">仅适用于特殊情形</td>
+<td style="text-align: left;">两轨迹为直线时可用垂线段</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>💡 考场建议</strong>：
+- 如果你还没学微积分（第 5 章之前），用<strong>配方法</strong>
+- 如果你已经学了微积分，用<strong>求导法</strong>更快更安全
+- 无论用哪种方法，<strong>一定要检查算出的 <span class="arithmatex">\(t\)</span> 是否 <span class="arithmatex">\(\geq 0\)</span></strong>——如果 <span class="arithmatex">\(t &lt; 0\)</span>，最短距离就是 <span class="arithmatex">\(t = 0\)</span> 时的距离
+- 距离公式中的<strong>根号别忘了加</strong>！<span class="arithmatex">\(D_{\min}\)</span> 是平方距离，开根号才是真实距离</p>
+</blockquote>
+<hr />
+<p><strong>坑 2：速度分解时忘用 <span class="arithmatex">\(\sin\)</span> 和 <span class="arithmatex">\(\cos\)</span></strong></p>
+<p>这是新手最常犯的错误，没有之一！</p>
+<p>如果题目给的是速度的大小 <span class="arithmatex">\(v\)</span> 和方向角 <span class="arithmatex">\(\theta\)</span>（比如 "<span class="arithmatex">\(10\,\text{m/s}\)</span>，与水平方向成 <span class="arithmatex">\(30^\circ\)</span>"），你必须先用 <span class="arithmatex">\(\sin\)</span>、<span class="arithmatex">\(\cos\)</span> 拆成 <span class="arithmatex">\(x\)</span> 和 <span class="arithmatex">\(y\)</span> 分量：</p>
+<div class="arithmatex">\[
+v_x = v\cos\theta, \qquad v_y = v\sin\theta
+\]</div>
+<p><strong>直接拿 <span class="arithmatex">\(\theta\)</span> 或者 <span class="arithmatex">\(v\)</span> 去代入方程</strong>是完全错误的！</p>
+<blockquote>
+<p><strong>❌ 典型错误</strong>：
+- 把 <span class="arithmatex">\(\theta\)</span> 当成速度：<span class="arithmatex">\(x_1 + \theta \cdot t = x_2 + \dots\)</span> ❌
+- 直接用 <span class="arithmatex">\(v\)</span> 而不分解：<span class="arithmatex">\(x_1 + v \cdot t = x_2 + \dots\)</span> ❌（这是把速度当成纯水平方向了）</p>
+<p><strong>✅ 正确做法</strong>：
+- 先写出 <span class="arithmatex">\(\mathbf{v} = (v\cos\theta)\mathbf{i} + (v\sin\theta)\mathbf{j}\)</span>
+- 然后 <span class="arithmatex">\(v_x = v\cos\theta\)</span>，<span class="arithmatex">\(v_y = v\sin\theta\)</span>
+- 最后代入两个分量方程</p>
+</blockquote>
+<p><strong>记住</strong>：速度分解是解决一切向量运动问题的第一步——就像穿衣服先系第一颗扣子，第一颗歪了后面全歪。</p>
+<hr />
+<p><strong>坑 3：<span class="arithmatex">\(t\)</span> 为负数的情况</strong></p>
+<p>解出的 <span class="arithmatex">\(t\)</span> 如果为负，说明它们在<strong>出发之前</strong>曾经在同一位置——这就像说"你们昨天在那个路口碰见过"，但问题问的是"今天出发后会不会相撞"，昨天的相遇不算数！</p>
+<p>必须要求 <span class="arithmatex">\(t \geq 0\)</span> 才算是未来的相撞。</p>
+<blockquote>
+<p><strong>完整判定逻辑</strong>：
+$$
+\text{相撞} \iff t_1 = t_2 \;\text{且}\; t_1 \geq 0
+$$</p>
+<ul>
+<li><span class="arithmatex">\(t_1 = t_2 &lt; 0\)</span>：它们在出发<strong>前</strong>就在一起（比如停在同一个起点），但这不叫未来的相撞</li>
+<li><span class="arithmatex">\(t_1 = t_2 = 0\)</span>：它们在起点就重合了（一开始就撞上了），这算相撞</li>
+<li><span class="arithmatex">\(t_1 = t_2 &gt; 0\)</span>：标准相撞情况</li>
+<li><span class="arithmatex">\(t_1 \neq t_2\)</span>：无论正负，都不相撞</li>
+</ul>
+</blockquote>
+<hr />
+<h3 id="23_1">📌 例题 2.3：速度合成与相撞问题<a class="headerlink" href="#23_1" title="Permanent link">&para;</a></h3>
+<p><strong>例题 1</strong>（速度合成——船与水流）</p>
+<p>一艘船在静水中的速度是 <span class="arithmatex">\(6\,\text{m/s}\)</span> 向东。水流以 <span class="arithmatex">\(4\,\text{m/s}\)</span> 的速度向北流动。求船相对于地面的速度的大小和方向。</p>
+<p><strong>思路分析</strong>：
+- 船相对于水的速度 <span class="arithmatex">\(\mathbf{v}_{B/W}\)</span> = 向东 <span class="arithmatex">\(6\)</span> m/s
+- 水相对于地面的速度 <span class="arithmatex">\(\mathbf{v}_{W/G}\)</span> = 向北 <span class="arithmatex">\(4\)</span> m/s
+- 船相对于地面的速度 <span class="arithmatex">\(\mathbf{v}_{B/G} = \mathbf{v}_{B/W} + \mathbf{v}_{W/G}\)</span></p>
+<p><strong>解</strong>：</p>
+<p>设正东方向为 <span class="arithmatex">\(+x\)</span> 轴，正北方向为 <span class="arithmatex">\(+y\)</span> 轴。</p>
+<p>船相对于水的速度：<span class="arithmatex">\(\mathbf{v}_{B/W} = 6\mathbf{i}\)</span>
+水流相对于地面的速度：<span class="arithmatex">\(\mathbf{v}_{W/G} = 4\mathbf{j}\)</span></p>
+<p>由速度合成公式：</p>
+<div class="arithmatex">\[
+\mathbf{v}_{B/G} = \mathbf{v}_{B/W} + \mathbf{v}_{W/G} = 6\mathbf{i} + 4\mathbf{j}
+\]</div>
+<p>合速度的大小（速率）：</p>
+<div class="arithmatex">\[
+|\mathbf{v}_{B/G}| = \sqrt{6^2 + 4^2} = \sqrt{36 + 16} = \sqrt{52} = 2\sqrt{13} \approx 7.21\,\text{m/s}
+\]</div>
+<p>合速度的方向：设 <span class="arithmatex">\(\theta\)</span> 为与正东方向的夹角（逆时针为正）。</p>
+<div class="arithmatex">\[
+\tan\theta = \frac{4}{6} = \frac{2}{3} \implies \theta = \arctan\left(\frac{2}{3}\right) \approx 33.69^\circ
+\]</div>
+<p>因此船相对于地面的速度大小为 <span class="arithmatex">\(2\sqrt{13}\,\text{m/s}\)</span>，方向为北偏东 <span class="arithmatex">\(33.69^\circ\)</span>（即从正东方向逆时针旋转 <span class="arithmatex">\(33.69^\circ\)</span>）。</p>
+<blockquote>
+<p><strong>生活实例</strong>：这就是为什么船过河时，如果直接朝对岸开，会被水流冲偏。要想直接到达正对岸，船头必须朝上游方向倾斜。</p>
+</blockquote>
+<hr />
+<p><strong>例题 2</strong>（速度分解——斜抛的初速度）</p>
+<p>一个球以初速度 <span class="arithmatex">\(20\,\text{m/s}\)</span>、与水平方向成 <span class="arithmatex">\(30^\circ\)</span> 角斜向上抛出。</p>
+<p>（a）求初速度的水平分量和垂直分量。
+（b）写出初速度的向量形式。</p>
+<p><strong>思路分析</strong>：
+- 速度的大小是 <span class="arithmatex">\(20\)</span>，方向是 <span class="arithmatex">\(30^\circ\)</span> 仰角
+- 水平分量 <span class="arithmatex">\(v_x = v\cos\theta\)</span>，垂直分量 <span class="arithmatex">\(v_y = v\sin\theta\)</span></p>
+<p><strong>解</strong>：</p>
+<p>（a）设水平向右为 <span class="arithmatex">\(+x\)</span> 轴，竖直向上为 <span class="arithmatex">\(+y\)</span> 轴。</p>
+<p>水平分量：</p>
+<div class="arithmatex">\[
+v_x = v\cos\theta = 20 \times \cos 30^\circ = 20 \times \frac{\sqrt{3}}{2} = 10\sqrt{3} \approx 17.32\,\text{m/s}
+\]</div>
+<p>垂直分量：</p>
+<div class="arithmatex">\[
+v_y = v\sin\theta = 20 \times \sin 30^\circ = 20 \times \frac{1}{2} = 10\,\text{m/s}
+\]</div>
+<p><strong>注意，sin 和 cos度数必须一致</strong>，前提是<strong>是同一个直角三角形的两条边（对边和邻边）除以斜边得到的。</strong>。<strong>如果你遇到一道题，它给的 θ 是 “与竖直方向的夹角”，那你的公式就得对调（变成 <span class="arithmatex">\(v_x\)</span>​=v<span class="arithmatex">\(sinθ\)</span>，<span class="arithmatex">\(v_y\)</span>=v<span class="arithmatex">\(cos⁡θ\)</span>）</strong></p>
+<p>（b）初速度的向量形式：</p>
+<div class="arithmatex">\[
+\mathbf{v}_0 = 10\sqrt{3}\,\mathbf{i} + 10\,\mathbf{j}\,\text{m/s}
+\]</div>
+<blockquote>
+<p><strong>物理意义</strong>：
+- 如果没有空气阻力，水平分量 <span class="arithmatex">\(v_x\)</span> 在整个运动过程中保持不变（因为水平方向不受力）
+- 而垂直分量 <span class="arithmatex">\(v_y\)</span> 受重力影响以 <span class="arithmatex">\(-g\)</span> 的加速度变化（<span class="arithmatex">\(g \approx 9.8\,\text{m/s}^2\)</span>）
+- 所以任意时刻的速度为 <span class="arithmatex">\(\mathbf{v}(t) = 10\sqrt{3}\,\mathbf{i} + (10 - gt)\,\mathbf{j}\)</span>
+- 这为第 10 章的运动学问题奠定了基础</p>
+</blockquote>
+<hr />
+<p><strong>例题 3</strong>（相撞问题——两船是否会相撞）</p>
+<p>船 <span class="arithmatex">\(P\)</span> 从点 <span class="arithmatex">\((0, 0)\)</span> 出发，以速度 <span class="arithmatex">\(\mathbf{v}_P = (3\mathbf{i} + 4\mathbf{j})\,\text{km/h}\)</span> 航行。船 <span class="arithmatex">\(Q\)</span> 从点 <span class="arithmatex">\((10, 5)\,\text{km}\)</span> 出发，以速度 <span class="arithmatex">\(\mathbf{v}_Q = (-2\mathbf{i} + \mathbf{j})\,\text{km/h}\)</span> 航行。两船同时出发，判断它们是否会相撞。</p>
+<p><strong>思路分析</strong>：
+1. 写出两船的位置向量（都是 <span class="arithmatex">\(\mathbf{r}_0 + \mathbf{v}t\)</span> 的形式）
+2. 令 <span class="arithmatex">\(\mathbf{r}_P(t) = \mathbf{r}_Q(t)\)</span>
+3. 得到两个分量方程，分别解 <span class="arithmatex">\(t\)</span>
+4. 如果 <span class="arithmatex">\(t\)</span> 值一致且 <span class="arithmatex">\(\geq 0\)</span>，相撞；否则不相撞</p>
+<p><strong>解</strong>：</p>
+<p>设 <span class="arithmatex">\(t\)</span> 为出发后的时间（小时）。</p>
+<p><span class="arithmatex">\(P\)</span> 的位置向量（从原点出发）：</p>
+<div class="arithmatex">\[
+\mathbf{r}_P(t) = \begin{pmatrix} 0 \\ 0 \end{pmatrix} + \begin{pmatrix} 3 \\ 4 \end{pmatrix} t = \begin{pmatrix} 3t \\ 4t \end{pmatrix}
+\]</div>
+<p><span class="arithmatex">\(Q\)</span> 的位置向量（从 <span class="arithmatex">\((10,5)\)</span> 出发）：</p>
+<div class="arithmatex">\[
+\mathbf{r}_Q(t) = \begin{pmatrix} 10 \\ 5 \end{pmatrix} + \begin{pmatrix} -2 \\ 1 \end{pmatrix} t = \begin{pmatrix} 10 - 2t \\ 5 + t \end{pmatrix}
+\]</div>
+<p>如果两船相撞，则存在某个 <span class="arithmatex">\(t \geq 0\)</span> 使得 <span class="arithmatex">\(\mathbf{r}_P(t) = \mathbf{r}_Q(t)\)</span>，即：</p>
+<div class="arithmatex">\[
+\begin{pmatrix} 3t \\ 4t \end{pmatrix} = \begin{pmatrix} 10 - 2t \\ 5 + t \end{pmatrix}
+\]</div>
+<p>这给出两个分量方程：</p>
+<div class="arithmatex">\[
+\begin{cases}
+x\text{分量：} &amp; 3t = 10 - 2t \implies 5t = 10 \implies t = 2 \\[4pt]
+y\text{分量：} &amp; 4t = 5 + t \implies 3t = 5 \implies t = \dfrac{5}{3}
+\end{cases}
+\]</div>
+<p>两个 <span class="arithmatex">\(t\)</span> 值不相等（<span class="arithmatex">\(2 \neq \frac{5}{3}\)</span>），因此不存在同时满足两个分量方程的时刻。两船不会相撞。</p>
+<blockquote>
+<p><strong>为什么不相撞？</strong> 即使 <span class="arithmatex">\(x\)</span> 坐标在 <span class="arithmatex">\(t=2\)</span> 时相等，<span class="arithmatex">\(y\)</span> 坐标在 <span class="arithmatex">\(t=2\)</span> 时分别为 <span class="arithmatex">\(4\times 2 = 8\)</span> 和 <span class="arithmatex">\(5+2=7\)</span>，不相等。所以两船永远不会在同一时刻到达同一点。</p>
+</blockquote>
+<hr />
+<p><strong>例题 3</strong>（向量的变化率 + 积分逆运算）</p>
+<p>一个质点在平面内运动，它的位置向量为：</p>
+<div class="arithmatex">\[
+\mathbf{r}(t) = (t^3 - 3t)\mathbf{i} + (t^2 - 2t)\mathbf{j}
+\]</div>
+<p>其中 <span class="arithmatex">\(t\)</span> 以秒为单位，位置以米为单位。</p>
+<p>（a）求速度向量 <span class="arithmatex">\(\mathbf{v}(t)\)</span>。
+（b）求加速度向量 <span class="arithmatex">\(\mathbf{a}(t)\)</span>。
+（c）求 <span class="arithmatex">\(t = 2\)</span> 秒时的速度和加速度向量。
+（d）已知该质点的加速度恒为 <span class="arithmatex">\(\mathbf{a}(t) = 6t\mathbf{i} + 2\mathbf{j}\)</span>，初速度 <span class="arithmatex">\(\mathbf{v}_0 = -3\mathbf{i} - 2\mathbf{j}\)</span>，初始位置 <span class="arithmatex">\(\mathbf{r}_0 = \mathbf{0}\)</span>。用积分求 <span class="arithmatex">\(\mathbf{v}(t)\)</span> 和 <span class="arithmatex">\(\mathbf{r}(t)\)</span>，验证与（a）（b）一致。</p>
+<p><strong>思路分析</strong>：
+- 速度 = 位置的导数（分量分别求导）
+- 加速度 = 速度的导数（分量分别求导）
+- 积分是微分的逆运算：已知加速度，积分一次得速度（加常数），再积分一次得位置（加常数）
+- 常数由初始条件确定</p>
+<p><strong>解</strong>：</p>
+<p>（a）速度是位置对时间的导数，对各分量分别求导：</p>
+<div class="arithmatex">\[
+\mathbf{v}(t) = \frac{d\mathbf{r}}{dt} = \frac{d}{dt}(t^3 - 3t)\,\mathbf{i} + \frac{d}{dt}(t^2 - 2t)\,\mathbf{j}
+\]</div>
+<p>使用幂法则：
+- <span class="arithmatex">\(\dfrac{d}{dt}(t^3) = 3t^2\)</span>
+- <span class="arithmatex">\(\dfrac{d}{dt}(-3t) = -3\)</span>
+- <span class="arithmatex">\(\dfrac{d}{dt}(t^2) = 2t\)</span>
+- <span class="arithmatex">\(\dfrac{d}{dt}(-2t) = -2\)</span></p>
+<p>因此：</p>
+<div class="arithmatex">\[
+\mathbf{v}(t) = (3t^2 - 3)\mathbf{i} + (2t - 2)\mathbf{j}
+\]</div>
+<p>（b）加速度是速度对时间的导数：</p>
+<div class="arithmatex">\[
+\mathbf{a}(t) = \frac{d\mathbf{v}}{dt} = \frac{d}{dt}(3t^2 - 3)\,\mathbf{i} + \frac{d}{dt}(2t - 2)\,\mathbf{j}
+\]</div>
+<div class="arithmatex">\[
+\mathbf{a}(t) = (6t)\mathbf{i} + 2\mathbf{j}
+\]</div>
+<p>（c）代入 <span class="arithmatex">\(t = 2\)</span>：</p>
+<div class="arithmatex">\[
+\mathbf{v}(2) = (3 \times 4 - 3)\mathbf{i} + (4 - 2)\mathbf{j} = 9\mathbf{i} + 2\mathbf{j}\,\text{m/s}
+\]</div>
+<p>速度的大小：<span class="arithmatex">\(|\mathbf{v}(2)| = \sqrt{9^2 + 2^2} = \sqrt{81 + 4} = \sqrt{85} \approx 9.22\,\text{m/s}\)</span></p>
+<div class="arithmatex">\[
+\mathbf{a}(2) = (6 \times 2)\mathbf{i} + 2\mathbf{j} = 12\mathbf{i} + 2\mathbf{j}\,\text{m/s}^2
+\]</div>
+<p>加速度的大小：<span class="arithmatex">\(|\mathbf{a}(2)| = \sqrt{12^2 + 2^2} = \sqrt{144 + 4} = \sqrt{148} = 2\sqrt{37} \approx 12.17\,\text{m/s}^2\)</span></p>
+<p>（d）已知 <span class="arithmatex">\(\mathbf{a}(t) = (6t)\mathbf{i} + 2\mathbf{j}\)</span>，对加速度积分求速度：</p>
+<div class="arithmatex">\[
+\mathbf{v}(t) = \int \mathbf{a}(t) \, dt = \left(\int 6t \, dt\right)\mathbf{i} + \left(\int 2 \, dt\right)\mathbf{j}
+\]</div>
+<div class="arithmatex">\[
+= (3t^2 + C_1)\mathbf{i} + (2t + C_2)\mathbf{j}
+\]</div>
+<p>由 <span class="arithmatex">\(\mathbf{v}_0 = \mathbf{v}(0) = -3\mathbf{i} - 2\mathbf{j}\)</span>，代入 <span class="arithmatex">\(t = 0\)</span> 得 <span class="arithmatex">\(C_1 = -3\)</span>，<span class="arithmatex">\(C_2 = -2\)</span>。所以：</p>
+<div class="arithmatex">\[
+\mathbf{v}(t) = (3t^2 - 3)\mathbf{i} + (2t - 2)\mathbf{j}
+\]</div>
+<p>与（a）一致。✓</p>
+<p>再对速度积分求位置：</p>
+<div class="arithmatex">\[
+\mathbf{r}(t) = \int \mathbf{v}(t) \, dt = \left(\int (3t^2 - 3) \, dt\right)\mathbf{i} + \left(\int (2t - 2) \, dt\right)\mathbf{j}
+\]</div>
+<div class="arithmatex">\[
+= (t^3 - 3t + D_1)\mathbf{i} + (t^2 - 2t + D_2)\mathbf{j}
+\]</div>
+<p>由 <span class="arithmatex">\(\mathbf{r}_0 = \mathbf{r}(0) = \mathbf{0}\)</span>，代入 <span class="arithmatex">\(t = 0\)</span> 得 <span class="arithmatex">\(D_1 = 0\)</span>，<span class="arithmatex">\(D_2 = 0\)</span>。所以：</p>
+<div class="arithmatex">\[
+\mathbf{r}(t) = (t^3 - 3t)\mathbf{i} + (t^2 - 2t)\mathbf{j}
+\]</div>
+<p>与原始位置函数一致。✓</p>
+<hr />
+<h2 id="24_1">2.4 本章练习题<a class="headerlink" href="#24_1" title="Permanent link">&para;</a></h2>
+<p>以下练习题按考试难度编写，涵盖本章所有知识点，题号前面标注了对应的考纲编号。</p>
+<hr />
+<p><strong>13.1–13.3 题组：向量基础与几何</strong></p>
+<p><strong>1.</strong> 已知 <span class="arithmatex">\(\mathbf{a} = 2\mathbf{i} - \mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{b} = \mathbf{i} + 3\mathbf{j}\)</span>。</p>
+<p>（a）求 <span class="arithmatex">\(\mathbf{a} + 2\mathbf{b}\)</span>。
+（b）求 <span class="arithmatex">\(|2\mathbf{a} - \mathbf{b}|\)</span>。
+（c）求与 <span class="arithmatex">\(3\mathbf{a} + \mathbf{b}\)</span> 同方向的单位向量。</p>
+<hr />
+<p><strong>2.</strong> 在 <span class="arithmatex">\(\triangle ABC\)</span> 中，<span class="arithmatex">\(P\)</span> 是 <span class="arithmatex">\(BC\)</span> 的中点，<span class="arithmatex">\(Q\)</span> 是 <span class="arithmatex">\(CA\)</span> 的中点。设 <span class="arithmatex">\(\overrightarrow{AB} = \mathbf{p}\)</span>，<span class="arithmatex">\(\overrightarrow{AC} = \mathbf{q}\)</span>。</p>
+<p>（a）用 <span class="arithmatex">\(\mathbf{p}\)</span> 和 <span class="arithmatex">\(\mathbf{q}\)</span> 表示 <span class="arithmatex">\(\overrightarrow{BC}\)</span>。
+（b）用 <span class="arithmatex">\(\mathbf{p}\)</span> 和 <span class="arithmatex">\(\mathbf{q}\)</span> 表示 <span class="arithmatex">\(\overrightarrow{PQ}\)</span>。
+（c）证明 <span class="arithmatex">\(PQ \parallel AB\)</span> 且 <span class="arithmatex">\(PQ = \frac{1}{2} AB\)</span>。</p>
+<hr />
+<p><strong>3.</strong> 三点 <span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(B\)</span>、<span class="arithmatex">\(C\)</span> 的位置向量分别为 <span class="arithmatex">\(\mathbf{a} = 3\mathbf{i} + 2\mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{b} = 5\mathbf{i} + 6\mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{c} = 9\mathbf{i} + 14\mathbf{j}\)</span>。</p>
+<p>（a）证明 <span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(B\)</span>、<span class="arithmatex">\(C\)</span> 三点共线。
+（b）求 <span class="arithmatex">\(AB:BC\)</span> 的比值。</p>
+<hr />
+<p><strong>13.3–13.4 题组：向量几何与运动</strong></p>
+<p><strong>4.</strong> 在 <span class="arithmatex">\(\triangle OAB\)</span> 中，<span class="arithmatex">\(P\)</span> 在 <span class="arithmatex">\(OA\)</span> 上且 <span class="arithmatex">\(OP:PA = 1:2\)</span>，<span class="arithmatex">\(Q\)</span> 在 <span class="arithmatex">\(AB\)</span> 上且 <span class="arithmatex">\(AQ:QB = 2:3\)</span>。设 <span class="arithmatex">\(\overrightarrow{OA} = \mathbf{a}\)</span>，<span class="arithmatex">\(\overrightarrow{OB} = \mathbf{b}\)</span>。</p>
+<p>（a）用 <span class="arithmatex">\(\mathbf{a}\)</span> 和 <span class="arithmatex">\(\mathbf{b}\)</span> 表示 <span class="arithmatex">\(\overrightarrow{OP}\)</span>。
+（b）用 <span class="arithmatex">\(\mathbf{a}\)</span> 和 <span class="arithmatex">\(\mathbf{b}\)</span> 表示 <span class="arithmatex">\(\overrightarrow{OQ}\)</span>。
+（c）用 <span class="arithmatex">\(\mathbf{a}\)</span> 和 <span class="arithmatex">\(\mathbf{b}\)</span> 表示 <span class="arithmatex">\(\overrightarrow{PQ}\)</span>。</p>
+<hr />
+<p><strong>5.</strong> 船 <span class="arithmatex">\(A\)</span> 从点 <span class="arithmatex">\((0, 5)\)</span> 出发，以速度 <span class="arithmatex">\(\mathbf{v}_A = (2\mathbf{i} + 3\mathbf{j})\,\text{km/h}\)</span> 航行。船 <span class="arithmatex">\(B\)</span> 从点 <span class="arithmatex">\((10, 0)\)</span> 出发，以速度 <span class="arithmatex">\(\mathbf{v}_B = (-3\mathbf{i} + 4\mathbf{j})\,\text{km/h}\)</span> 航行。两船同时出发。</p>
+<p>（a）写出两船的位置向量 <span class="arithmatex">\(\mathbf{r}_A(t)\)</span> 和 <span class="arithmatex">\(\mathbf{r}_B(t)\)</span>。
+（b）判断两船是否会相撞。</p>
+<hr />
+<p><strong>6.</strong> 一艘船在静水中的速度为 <span class="arithmatex">\(10\,\text{m/s}\)</span>，船头指向正北方向。水流的速度为 <span class="arithmatex">\(6\,\text{m/s}\)</span> 流向正东方向。</p>
+<p>（a）求船相对于地面的合速度向量。
+（b）求合速度的大小和方向（与正北方向的夹角）。</p>
+<hr />
+<p><strong>14.1 题组：变化率入门</strong></p>
+<p><strong>7.</strong> 一个质点的位移 <span class="arithmatex">\(s\)</span>（米）与时间 <span class="arithmatex">\(t\)</span>（秒）的关系为 <span class="arithmatex">\(s(t) = 4t^2 + 3t\)</span>。</p>
+<p>（a）求从 <span class="arithmatex">\(t = 1\)</span> 到 <span class="arithmatex">\(t = 1 + h\)</span> 的平均速度。
+（b）利用极限求 <span class="arithmatex">\(t = 1\)</span> 时的瞬时速度。</p>
+<hr />
+<p><strong>8.</strong> 一个质点在平面内运动，它的位置向量为：</p>
+<div class="arithmatex">\[
+\mathbf{r}(t) = (2t^2 + t)\mathbf{i} + (3t - 1)\mathbf{j}
+\]</div>
+<p>（a）求速度向量 <span class="arithmatex">\(\mathbf{v}(t)\)</span>。
+（b）求加速度向量 <span class="arithmatex">\(\mathbf{a}(t)\)</span>。
+（c）求 <span class="arithmatex">\(t = 2\)</span> 时速度的大小。</p>
+<hr />
+<p><strong>综合题</strong></p>
+<p><strong>9.</strong> 在平行四边形 <span class="arithmatex">\(ABCD\)</span> 中，<span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(B\)</span>、<span class="arithmatex">\(C\)</span> 的位置向量分别为 <span class="arithmatex">\(\mathbf{a} = 2\mathbf{i} + \mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{b} = 5\mathbf{i} + 3\mathbf{j}\)</span>，<span class="arithmatex">\(\mathbf{c} = 4\mathbf{i} + 6\mathbf{j}\)</span>。</p>
+<p>（a）求 <span class="arithmatex">\(D\)</span> 的位置向量。
+（b）判断 <span class="arithmatex">\(\overrightarrow{AB}\)</span> 与 <span class="arithmatex">\(\overrightarrow{AD}\)</span> 是否垂直。
+（c）求平行四边形 <span class="arithmatex">\(ABCD\)</span> 的面积。</p>
+<blockquote>
+<p>提示：平行四边形的面积 <span class="arithmatex">\(= |\overrightarrow{AB}| \times |\overrightarrow{AD}| \times \sin\theta\)</span>，其中 <span class="arithmatex">\(\theta\)</span> 是两边的夹角。或者用行列式公式：面积 <span class="arithmatex">\(= |x_1 y_2 - x_2 y_1|\)</span>，其中 <span class="arithmatex">\(\overrightarrow{AB} = (x_1, y_1)\)</span>，<span class="arithmatex">\(\overrightarrow{AD} = (x_2, y_2)\)</span>。</p>
+</blockquote>
+<hr />
+<h2 id="_36">练习题答案<a class="headerlink" href="#_36" title="Permanent link">&para;</a></h2>
+<p><strong>1.</strong></p>
+<p>（a）<span class="arithmatex">\(\mathbf{a} + 2\mathbf{b} = (2\mathbf{i} - \mathbf{j}) + 2(\mathbf{i} + 3\mathbf{j}) = (2\mathbf{i} - \mathbf{j}) + (2\mathbf{i} + 6\mathbf{j}) = 4\mathbf{i} + 5\mathbf{j}\)</span></p>
+<p>（b）<span class="arithmatex">\(2\mathbf{a} - \mathbf{b} = 2(2\mathbf{i} - \mathbf{j}) - (\mathbf{i} + 3\mathbf{j}) = (4\mathbf{i} - 2\mathbf{j}) - (\mathbf{i} + 3\mathbf{j}) = 3\mathbf{i} - 5\mathbf{j}\)</span></p>
+<p><span class="arithmatex">\(|2\mathbf{a} - \mathbf{b}| = \sqrt{3^2 + (-5)^2} = \sqrt{9 + 25} = \sqrt{34}\)</span></p>
+<p>（c）<span class="arithmatex">\(3\mathbf{a} + \mathbf{b} = 3(2\mathbf{i} - \mathbf{j}) + (\mathbf{i} + 3\mathbf{j}) = (6\mathbf{i} - 3\mathbf{j}) + (\mathbf{i} + 3\mathbf{j}) = 7\mathbf{i}\)</span></p>
+<p><span class="arithmatex">\(|7\mathbf{i}| = 7\)</span>，所以单位向量 <span class="arithmatex">\(= \frac{7\mathbf{i}}{7} = \mathbf{i}\)</span></p>
+<hr />
+<p><strong>2.</strong></p>
+<p>（a）<span class="arithmatex">\(\overrightarrow{BC} = \overrightarrow{BA} + \overrightarrow{AC} = -\overrightarrow{AB} + \overrightarrow{AC} = -\mathbf{p} + \mathbf{q}\)</span></p>
+<p>（b）<span class="arithmatex">\(P\)</span> 是 <span class="arithmatex">\(BC\)</span> 的中点，所以 <span class="arithmatex">\(\mathbf{r}_P = \frac{\mathbf{r}_B + \mathbf{r}_C}{2}\)</span>。<span class="arithmatex">\(Q\)</span> 是 <span class="arithmatex">\(CA\)</span> 的中点，所以 <span class="arithmatex">\(\mathbf{r}_Q = \frac{\mathbf{r}_C + \mathbf{r}_A}{2}\)</span>。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\overrightarrow{PQ} &amp;= \mathbf{r}_Q - \mathbf{r}_P \\
+&amp;= \frac{\mathbf{r}_C + \mathbf{r}_A}{2} - \frac{\mathbf{r}_B + \mathbf{r}_C}{2} \\
+&amp;= \frac{\mathbf{r}_A - \mathbf{r}_B}{2} \\
+&amp;= \frac{1}{2}\overrightarrow{BA} = -\frac{1}{2}\overrightarrow{AB} = -\frac{1}{2}\mathbf{p}
+\end{aligned}
+\]</div>
+<p>（c）由（b）得 <span class="arithmatex">\(\overrightarrow{PQ} = -\frac{1}{2}\mathbf{p} = -\frac{1}{2}\overrightarrow{AB}\)</span>，所以 <span class="arithmatex">\(\overrightarrow{PQ} \parallel \overrightarrow{AB}\)</span> 且 <span class="arithmatex">\(|\overrightarrow{PQ}| = \frac{1}{2}|\overrightarrow{AB}|\)</span>，即 <span class="arithmatex">\(PQ = \frac{1}{2}AB\)</span>。✓</p>
+<blockquote>
+<p>这条性质叫做<strong>三角形中位线定理</strong>：三角形两边中点的连线平行于第三边且等于第三边的一半。</p>
+</blockquote>
+<hr />
+<p><strong>3.</strong></p>
+<p>（a）</p>
+<div class="arithmatex">\[
+\overrightarrow{AB} = \mathbf{b} - \mathbf{a} = (5\mathbf{i} + 6\mathbf{j}) - (3\mathbf{i} + 2\mathbf{j}) = 2\mathbf{i} + 4\mathbf{j}
+\]</div>
+<div class="arithmatex">\[
+\overrightarrow{BC} = \mathbf{c} - \mathbf{b} = (9\mathbf{i} + 14\mathbf{j}) - (5\mathbf{i} + 6\mathbf{j}) = 4\mathbf{i} + 8\mathbf{j}
+\]</div>
+<p><span class="arithmatex">\(\overrightarrow{BC} = 2(2\mathbf{i} + 4\mathbf{j}) = 2\overrightarrow{AB}\)</span>，存在 <span class="arithmatex">\(k = 2\)</span> 使得 <span class="arithmatex">\(\overrightarrow{BC} = k\overrightarrow{AB}\)</span>，所以 <span class="arithmatex">\(A\)</span>、<span class="arithmatex">\(B\)</span>、<span class="arithmatex">\(C\)</span> 共线。</p>
+<p>（b）<span class="arithmatex">\(|\overrightarrow{AB}| = \sqrt{2^2 + 4^2} = \sqrt{4 + 16} = \sqrt{20} = 2\sqrt{5}\)</span></p>
+<p><span class="arithmatex">\(|\overrightarrow{BC}| = \sqrt{4^2 + 8^2} = \sqrt{16 + 64} = \sqrt{80} = 4\sqrt{5}\)</span></p>
+<p>所以 <span class="arithmatex">\(AB:BC = 2\sqrt{5}:4\sqrt{5} = 1:2\)</span></p>
+<hr />
+<p><strong>4.</strong></p>
+<p>（a）<span class="arithmatex">\(OP:PA = 1:2\)</span>，所以 <span class="arithmatex">\(OP:OA = 1:3\)</span>，即 <span class="arithmatex">\(\overrightarrow{OP} = \frac{1}{3}\mathbf{a}\)</span></p>
+<p>（b）<span class="arithmatex">\(AQ:QB = 2:3\)</span>，所以 <span class="arithmatex">\(AQ:AB = 2:5\)</span>，<span class="arithmatex">\(Q\)</span> 从 <span class="arithmatex">\(A\)</span> 到 <span class="arithmatex">\(B\)</span> 的 <span class="arithmatex">\(\frac{2}{5}\)</span> 处。</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\overrightarrow{OQ} &amp;= \overrightarrow{OA} + \frac{2}{5}\overrightarrow{AB} \\
+&amp;= \mathbf{a} + \frac{2}{5}(\mathbf{b} - \mathbf{a}) \\
+&amp;= \mathbf{a} + \frac{2}{5}\mathbf{b} - \frac{2}{5}\mathbf{a} \\
+&amp;= \frac{3}{5}\mathbf{a} + \frac{2}{5}\mathbf{b}
+\end{aligned}
+\]</div>
+<p>（c）</p>
+<div class="arithmatex">\[
+\overrightarrow{PQ} = \overrightarrow{OQ} - \overrightarrow{OP} = \left(\frac{3}{5}\mathbf{a} + \frac{2}{5}\mathbf{b}\right) - \frac{1}{3}\mathbf{a} = \left(\frac{3}{5} - \frac{1}{3}\right)\mathbf{a} + \frac{2}{5}\mathbf{b}
+\]</div>
+<p>通分：<span class="arithmatex">\(\frac{3}{5} - \frac{1}{3} = \frac{9}{15} - \frac{5}{15} = \frac{4}{15}\)</span></p>
+<p>所以 <span class="arithmatex">\(\overrightarrow{PQ} = \frac{4}{15}\mathbf{a} + \frac{2}{5}\mathbf{b}\)</span></p>
+<hr />
+<p><strong>5.</strong></p>
+<p>（a）</p>
+<div class="arithmatex">\[
+\mathbf{r}_A(t) = \begin{pmatrix} 0 \\ 5 \end{pmatrix} + \begin{pmatrix} 2 \\ 3 \end{pmatrix} t = \begin{pmatrix} 2t \\ 5 + 3t \end{pmatrix}
+\]</div>
+<div class="arithmatex">\[
+\mathbf{r}_B(t) = \begin{pmatrix} 10 \\ 0 \end{pmatrix} + \begin{pmatrix} -3 \\ 4 \end{pmatrix} t = \begin{pmatrix} 10 - 3t \\ 4t \end{pmatrix}
+\]</div>
+<p>（b）令 <span class="arithmatex">\(\mathbf{r}_A(t) = \mathbf{r}_B(t)\)</span>：</p>
+<div class="arithmatex">\[
+\begin{cases}
+2t = 10 - 3t \implies 5t = 10 \implies t = 2 \\[4pt]
+5 + 3t = 4t \implies 5 = t \implies t = 5
+\end{cases}
+\]</div>
+<p>两个 <span class="arithmatex">\(t\)</span> 值不相等（<span class="arithmatex">\(2 \neq 5\)</span>），所以两船不会相撞。</p>
+<hr />
+<p><strong>6.</strong></p>
+<p>（a）设正北为 <span class="arithmatex">\(+y\)</span> 轴，正东为 <span class="arithmatex">\(+x\)</span> 轴。</p>
+<p>船相对于水的速度：<span class="arithmatex">\(\mathbf{v}_{B/W} = 10\mathbf{j}\)</span>
+水相对于地面的速度：<span class="arithmatex">\(\mathbf{v}_{W/G} = 6\mathbf{i}\)</span></p>
+<p>合速度：<span class="arithmatex">\(\mathbf{v}_{B/G} = 6\mathbf{i} + 10\mathbf{j}\)</span></p>
+<p>（b）大小：<span class="arithmatex">\(|\mathbf{v}_{B/G}| = \sqrt{6^2 + 10^2} = \sqrt{36 + 100} = \sqrt{136} = 2\sqrt{34} \approx 11.66\,\text{m/s}\)</span></p>
+<p>方向：设 <span class="arithmatex">\(\theta\)</span> 为与正北方向的夹角。</p>
+<div class="arithmatex">\[
+\tan\theta = \frac{6}{10} = 0.6 \implies \theta = \arctan(0.6) \approx 30.96^\circ
+\]</div>
+<p>所以方向为东偏北 <span class="arithmatex">\(30.96^\circ\)</span>（或北偏东 <span class="arithmatex">\(59.04^\circ\)</span>）。</p>
+<hr />
+<p><strong>7.</strong></p>
+<p>（a）</p>
+<div class="arithmatex">\[
+\begin{aligned}
+\frac{s(1+h) - s(1)}{h} &amp;= \frac{[4(1+h)^2 + 3(1+h)] - [4 + 3]}{h} \\
+&amp;= \frac{[4(1 + 2h + h^2) + 3 + 3h] - 7}{h} \\
+&amp;= \frac{4 + 8h + 4h^2 + 3 + 3h - 7}{h} \\
+&amp;= \frac{11h + 4h^2}{h} = 11 + 4h
+\end{aligned}
+\]</div>
+<p>（b）<span class="arithmatex">\(v(1) = \displaystyle\lim_{h \to 0} (11 + 4h) = 11\,\text{m/s}\)</span></p>
+<p>验证：<span class="arithmatex">\(s'(t) = 8t + 3\)</span>，<span class="arithmatex">\(s'(1) = 8 + 3 = 11\)</span> ✓</p>
+<hr />
+<p><strong>8.</strong></p>
+<p>（a）<span class="arithmatex">\(\mathbf{v}(t) = \dfrac{d\mathbf{r}}{dt} = (4t + 1)\mathbf{i} + 3\mathbf{j}\)</span></p>
+<p>（b）<span class="arithmatex">\(\mathbf{a}(t) = \dfrac{d\mathbf{v}}{dt} = 4\mathbf{i}\)</span></p>
+<p>（c）<span class="arithmatex">\(\mathbf{v}(2) = (4 \times 2 + 1)\mathbf{i} + 3\mathbf{j} = 9\mathbf{i} + 3\mathbf{j}\)</span></p>
+<p><span class="arithmatex">\(|\mathbf{v}(2)| = \sqrt{9^2 + 3^2} = \sqrt{81 + 9} = \sqrt{90} = 3\sqrt{10} \approx 9.49\,\text{m/s}\)</span></p>
+<hr />
+<p><strong>9.</strong></p>
+<p>（a）平行四边形 <span class="arithmatex">\(ABCD\)</span> 中，<span class="arithmatex">\(\overrightarrow{AD} = \overrightarrow{BC}\)</span>。</p>
+<div class="arithmatex">\[
+\overrightarrow{BC} = \mathbf{c} - \mathbf{b} = (4\mathbf{i} + 6\mathbf{j}) - (5\mathbf{i} + 3\mathbf{j}) = -\mathbf{i} + 3\mathbf{j}
+\]</div>
+<p>所以 <span class="arithmatex">\(\mathbf{d} = \mathbf{a} + \overrightarrow{BC} = (2\mathbf{i} + \mathbf{j}) + (-\mathbf{i} + 3\mathbf{j}) = \mathbf{i} + 4\mathbf{j}\)</span></p>
+<p>（b）<span class="arithmatex">\(\overrightarrow{AB} = \mathbf{b} - \mathbf{a} = (5\mathbf{i} + 3\mathbf{j}) - (2\mathbf{i} + \mathbf{j}) = 3\mathbf{i} + 2\mathbf{j}\)</span></p>
+<p><span class="arithmatex">\(\overrightarrow{AD} = \mathbf{d} - \mathbf{a} = (\mathbf{i} + 4\mathbf{j}) - (2\mathbf{i} + \mathbf{j}) = -\mathbf{i} + 3\mathbf{j}\)</span></p>
+<p>点积：<span class="arithmatex">\(\overrightarrow{AB} \cdot \overrightarrow{AD} = (3)(-1) + (2)(3) = -3 + 6 = 3 \neq 0\)</span></p>
+<p>所以 <span class="arithmatex">\(\overrightarrow{AB}\)</span> 与 <span class="arithmatex">\(\overrightarrow{AD}\)</span> <strong>不垂直</strong>。</p>
+<p>（c）方法一（用叉积的行列式公式）：</p>
+<div class="arithmatex">\[
+\text{面积} = |x_1 y_2 - x_2 y_1|
+\]</div>
+<p>其中 <span class="arithmatex">\(\overrightarrow{AB} = (3, 2)\)</span>，<span class="arithmatex">\(\overrightarrow{AD} = (-1, 3)\)</span>。</p>
+<div class="arithmatex">\[
+\text{面积} = |3 \times 3 - 2 \times (-1)| = |9 + 2| = 11
+\]</div>
+<p>方法二（用 <span class="arithmatex">\(|\overrightarrow{AB}| \cdot |\overrightarrow{AD}| \cdot \sin\theta\)</span>）：</p>
+<div class="arithmatex">\[
+|\overrightarrow{AB}| = \sqrt{3^2 + 2^2} = \sqrt{13}, \quad |\overrightarrow{AD}| = \sqrt{(-1)^2 + 3^2} = \sqrt{10}
+\]</div>
+<p>由点积 <span class="arithmatex">\(\overrightarrow{AB} \cdot \overrightarrow{AD} = |\overrightarrow{AB}||\overrightarrow{AD}|\cos\theta\)</span>：</p>
+<div class="arithmatex">\[
+3 = \sqrt{13} \cdot \sqrt{10} \cdot \cos\theta \implies \cos\theta = \frac{3}{\sqrt{130}}
+\]</div>
+<div class="arithmatex">\[
+\sin\theta = \sqrt{1 - \cos^2\theta} = \sqrt{1 - \frac{9}{130}} = \sqrt{\frac{121}{130}} = \frac{11}{\sqrt{130}}
+\]</div>
+<div class="arithmatex">\[
+\text{面积} = \sqrt{13} \cdot \sqrt{10} \cdot \frac{11}{\sqrt{130}} = \sqrt{130} \cdot \frac{11}{\sqrt{130}} = 11
+\]</div>
+<p>平行四边形的面积为 <span class="arithmatex">\(11\)</span> 平方单位。✓</p>
+<hr />
+<h2 id="_37">本章总结<a class="headerlink" href="#_37" title="Permanent link">&para;</a></h2>
+<h3 id="_38">考纲覆盖核对<a class="headerlink" href="#_38" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">考纲编号</th>
+<th>内容</th>
+<th style="text-align: center;">对应节次</th>
+<th style="text-align: center;">例题</th>
+<th style="text-align: center;">练习题</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">13.1</td>
+<td>向量记号</td>
+<td style="text-align: center;">2.2.1</td>
+<td style="text-align: center;">2.1(1)</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">13.2</td>
+<td>位置向量与单位向量</td>
+<td style="text-align: center;">2.2.2, 2.2.4</td>
+<td style="text-align: center;">2.1(1)</td>
+<td style="text-align: center;">1&copy;</td>
+</tr>
+<tr>
+<td style="text-align: center;">13.3</td>
+<td>模、加减、数乘、向量几何</td>
+<td style="text-align: center;">2.2.3, 2.2.5–2.2.8, 2.3.1</td>
+<td style="text-align: center;">2.1, 2.2</td>
+<td style="text-align: center;">1–4, 9</td>
+</tr>
+<tr>
+<td style="text-align: center;">13.4</td>
+<td>速度合成与分解、相撞问题</td>
+<td style="text-align: center;">2.3.2</td>
+<td style="text-align: center;">2.3</td>
+<td style="text-align: center;">5, 6</td>
+</tr>
+<tr>
+<td style="text-align: center;">14.1</td>
+<td>变化率与极限思想</td>
+<td style="text-align: center;">2.1</td>
+<td style="text-align: center;">2.4</td>
+<td style="text-align: center;">7, 8</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_39">核心公式速查表<a class="headerlink" href="#_39" title="Permanent link">&para;</a></h3>
+<p><strong>向量部分</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">概念</th>
+<th style="text-align: left;">公式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">向量表示</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{v} = x\mathbf{i} + y\mathbf{j} = \begin{pmatrix} x \\ y \end{pmatrix}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">模</td>
+<td style="text-align: left;">$</td>
+</tr>
+<tr>
+<td style="text-align: left;">单位向量</td>
+<td style="text-align: left;">$\hat{\mathbf{v}} = \dfrac{\mathbf{v}}{</td>
+</tr>
+<tr>
+<td style="text-align: left;">位移</td>
+<td style="text-align: left;"><span class="arithmatex">\(\overrightarrow{AB} = \mathbf{r}_B - \mathbf{r}_A\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">中点</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{r}_M = \dfrac{\mathbf{r}_A + \mathbf{r}_B}{2}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">分点（<span class="arithmatex">\(AP:PB = m:n\)</span>）</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{r}_P = \dfrac{n\mathbf{r}_A + m\mathbf{r}_B}{m+n}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">平行条件</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{a} = k\mathbf{b}\)</span>（存在标量 <span class="arithmatex">\(k\)</span>）</td>
+</tr>
+<tr>
+<td style="text-align: left;">垂直条件（点积）</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{u} \cdot \mathbf{v} = u_x v_x + u_y v_y = 0\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">斜率法判垂直</td>
+<td style="text-align: left;"><span class="arithmatex">\(k_1 \cdot k_2 = -1\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">速度合成</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{v}_{A/C} = \mathbf{v}_{A/B} + \mathbf{v}_{B/C}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">速度分解</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{v} = (v\cos\theta)\mathbf{i} + (v\sin\theta)\mathbf{j}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">匀速直线运动</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{r}(t) = \mathbf{r}_0 + \mathbf{v}t\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">相撞条件</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{r}_1(t) = \mathbf{r}_2(t)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>变化率部分</strong>：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">概念</th>
+<th style="text-align: left;">公式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">导数定义</td>
+<td style="text-align: left;"><span class="arithmatex">\(f'(a) = \displaystyle\lim_{h \to 0} \dfrac{f(a + h) - f(a)}{h}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">幂法则</td>
+<td style="text-align: left;"><span class="arithmatex">\(\dfrac{d}{dx}(x^n) = n x^{n-1}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">速度（向量）</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{v}(t) = \dfrac{d\mathbf{r}}{dt} = \dfrac{dx}{dt}\mathbf{i} + \dfrac{dy}{dt}\mathbf{j}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">加速度（向量）</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{a}(t) = \dfrac{d\mathbf{v}}{dt} = \dfrac{d^2x}{dt^2}\mathbf{i} + \dfrac{d^2y}{dt^2}\mathbf{j}\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">积分求速度</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{v}(t) = \int \mathbf{a}(t) \, dt + \mathbf{v}_0\)</span></td>
+</tr>
+<tr>
+<td style="text-align: left;">积分求位置</td>
+<td style="text-align: left;"><span class="arithmatex">\(\mathbf{r}(t) = \int \mathbf{v}(t) \, dt + \mathbf{r}_0\)</span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="_40">学习路线图<a class="headerlink" href="#_40" title="Permanent link">&para;</a></h3>
+<p>从本章出发，后续章节将这样深化你的理解：</p>
+<ul>
+<li><strong>第 5 章（微分）</strong>：系统学习求导法则（链式法则、积法则、商法则），以及用导数求切线、法线和极值</li>
+<li><strong>第 7 章（积分）</strong>：学习微分的逆运算——积分，掌握从加速度求速度和位置的完整方法</li>
+<li><strong>第 10 章（综合应用）</strong>：将向量和微积分结合，解决完整的运动学问题</li>
+</ul>
+<h2 id="-">---<a class="headerlink" href="#-" title="Permanent link">&para;</a></h2>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../ch01/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 第 1 章：数列、排列、组合与二项式定理">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                第 1 章：数列、排列、组合与二项式定理
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../ch03/" class="md-footer__link md-footer__link--next" aria-label="下一页: 第 3 章：二次函数">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                第 3 章：二次函数
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      © 2026 Leo Yang · Licensed under CC BY-NC-SA 4.0
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.highlight", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

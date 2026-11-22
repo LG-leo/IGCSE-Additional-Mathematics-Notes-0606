@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Explicitly allow the main search crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/sitemap.xml
