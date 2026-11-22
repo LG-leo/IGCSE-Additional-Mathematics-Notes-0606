@@ -15,6 +15,7 @@
   <script>
     (function () {
       var NEW_BASE = "https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/";
+      var GITHUB_BASE = "https://github.com/LG-leo/IGCSE-Additional-Mathematics-Notes-0606/blob/main/";
       var OLD_PREFIX = "/IG0606ADD-with-CAM-coursebook-NOTE/";
       var path = decodeURIComponent(location.pathname || "");
 
@@ -25,21 +26,38 @@
         path = path.replace(/^\/+/, "");
       }
 
-      // Map every old chapter file to its new page URL.
-      var map = {};
-      for (var i = 1; i <= 10; i++) {
-        var cn = String(i).padStart(2, "0");
-        map["IG0606 CompletelyNotes2_ch" + i + ".md"] = "cn/ch" + cn + "/";
-        map["IG0606 CompletelyNotes2_en" + i + ".md"] = "en/ch" + cn + "/";
-      }
-      map["IG0606 CompletelyNotes2_cha10.md"] = "cn/ch10/";
-      map["IG0606 CompletelyNotes2_ena10.md"] = "en/ch10/";
+      // Old file name -> new chapter page.
+      // NOTE: the old file numbers do not match the chapter numbers in the file
+      // (e.g. "ch4" contains chapter 5), so the map is spelled out explicitly.
+      var map = {
+        "IG0606 CompletelyNotes2_ch1.md": "cn/ch01/",
+        "IG0606 CompletelyNotes2_ch2.md": "cn/ch02/",
+        "IG0606 CompletelyNotes2_ch3.md": "cn/ch03/",
+        "IG0606 CompletelyNotes2_ch4.md": "cn/ch05/",
+        "IG0606 CompletelyNotes2_ch5.md": "cn/ch07/",
+        "IG0606 CompletelyNotes2_ch6.md": "cn/ch04/",
+        "IG0606 CompletelyNotes2_ch7.md": "cn/ch08/",
+        "IG0606 CompletelyNotes2_ch8.md": "cn/ch06/",
+        "IG0606 CompletelyNotes2_ch9.md": "cn/ch09/",
+        "IG0606 CompletelyNotes2_cha10.md": "cn/ch10/",
+        "IG0606 CompletelyNotes2_en1.md": "en/ch01/",
+        "IG0606 CompletelyNotes2_en2.md": "en/ch02/",
+        "IG0606 CompletelyNotes2_en3.md": "en/ch03/",
+        "IG0606 CompletelyNotes2_en4.md": "en/ch05/",
+        "IG0606 CompletelyNotes2_en5.md": "en/ch07/",
+        "IG0606 CompletelyNotes2_en6.md": "en/ch04/",
+        "IG0606 CompletelyNotes2_en7.md": "en/ch08/",
+        "IG0606 CompletelyNotes2_en8.md": "en/ch06/",
+        "IG0606 CompletelyNotes2_en9.md": "en/ch09/",
+        "IG0606 CompletelyNotes2_ena10.md": "en/ch10/"
+      };
 
       var target = NEW_BASE;
       if (map[path]) {
         target = NEW_BASE + map[path];
-      } else if (path === "" || path === "index.html" || path === "README.md") {
-        target = NEW_BASE;
+      } else if (/\.pdf$/i.test(path)) {
+        // Syllabus PDFs still live in the repository.
+        target = GITHUB_BASE + encodeURIComponent(path);
       }
 
       document.getElementById("target").innerHTML =

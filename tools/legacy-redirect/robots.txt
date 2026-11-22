@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# The notes now live here; this repository only exists to redirect old links.
+Sitemap: https://lg-leo.github.io/IGCSE-Additional-Mathematics-Notes-0606/sitemap.xml
